@@ -1,0 +1,87 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for imgur.",
+	"text": {
+		"plugins": {
+			"imgur_upload": {
+				"name": "imgur",
+				"description": "imgur simple uploader",
+				"help-url": "https://oyunkulturu.com",
+				"properties": {
+					"client-id": {
+						"name": "Client-ID",
+						"desc": "get id https://imgur.com/account/settings/apps"
+						}
+				},
+				"aceCategories": {
+					"upload": "upload",
+					"delete": "delete",
+					"success":"success",
+					"fail":"fail"
+				},
+				"conditions": {
+					"on_url_upload0": {
+						"list-name": "On image uploaded",
+						"display-text": "On image uploaded",
+						"description": "Triggered after 'Upload image with url or sprite' action if the upload was successfully"
+						},
+					"error_upload1": {
+						"list-name": "On image upload failed",
+						"display-text": "On image upload failed",
+						"description": "Triggered if an error in upload image"
+						},
+					"on_delete2": {
+						"list-name": "On image deleted",
+						"display-text": "On image deleted",
+						"description": "Triggered after 'Delete image' action if the delete was successfully"
+						},
+					"error_delete3": {
+						"list-name": "On image delete failed",
+						"display-text": "On image delete failed",
+						"description": "Triggered if an error in delete image"
+						}
+				},
+				"actions": {
+					"url_upload0": {
+						"list-name": "Upload image with url",
+						"display-text": "upload image to url or base64 image {0}",
+						"description": "Upload image with url",
+						"params": {
+							"image_url_or_base64_link0": { "name":"image url or base64 link", "desc":"a URL for an image or base64 image (up to 10MB)"}
+						}
+					},
+					"img_delete1": {
+						"list-name": "Delete image",
+						"display-text": "hash {0} to delete image",
+						"description": "Delete image",
+						"params": {
+							"image_hashcode0": { "name":"image hashcode", "desc":"hash to delete image"}
+						}
+					},
+					"sp_upload2": {
+						"list-name": "sprite upload",
+						"display-text": "sprite {0} upload",
+						"description": "sprite upload",
+						"params": {
+							"image_0": { "name":"A sprite object for upload", "desc":"Upload image with sprite"}
+						}
+					}
+				},
+				"expressions": {
+					"imagelink0": {
+						"description": "the URL to uploaded image",
+						"translated-name": "imagelink"
+						},
+					"hashcode1": {
+						"description": "return the hashcode for image delete",
+						"translated-name": "hashcode"
+						},
+					"errorcode2": {
+						"description": "return the error message",
+						"translated-name": "errorcode"
+						}
+				}
+			}
+		}
+	}
+}

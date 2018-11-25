@@ -1,0 +1,101 @@
+{
+	"upload": {
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "url_upload0",
+				"scriptName": "url_upload",
+				"highlight": true,
+				"params": [
+					{"id":"image_url_or_base64_link0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "sp_upload2",
+				"scriptName": "sp_upload",
+				"highlight": false,
+				"params": [
+					{"id":"image_0", "type":"object"}
+				]
+			}
+		]
+	},
+	"delete":{
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "img_delete1",
+				"scriptName": "img_delete",
+				"highlight": false,
+				"params": [
+					{"id":"image_hashcode0", "type":"string"}
+				]
+			}
+		]
+	},
+	"success":{
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "on_url_upload0",
+				"scriptName": "on_url_upload",
+				"isTrigger": "true",
+				"highlight": true
+			},
+			{
+				"c2id": 2,
+				"id": "on_delete2",
+				"scriptName": "on_delete",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "imagelink0",
+				"expressionName": "imagelink",
+				"scriptName": "imagelink",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 1,
+				"id": "hashcode1",
+				"expressionName": "hashcode",
+				"scriptName": "hashcode",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"fail":{
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "error_upload1",
+				"scriptName": "error_upload",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "error_delete3",
+				"scriptName": "error_delete",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "errorcode2",
+				"expressionName": "errorcode",
+				"scriptName": "errorcode",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}
