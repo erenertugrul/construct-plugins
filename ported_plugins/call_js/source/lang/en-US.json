@@ -1,0 +1,40 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Call JS.",
+	"text": {
+		"plugins": {
+			"cjs": {
+				"name": "Call JS",
+				"description": "Calls a script.",
+				"help-url": "http://dev.liebhard.net/",
+				"properties": {
+					"scriptfile": {
+						"name": "Scriptfile",
+						"desc": "The name of the external Javascriptfile."
+						}
+				},
+				"aceCategories": {
+					"data": "Data"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"executejs0": {
+						"list-name": "Execute",
+						"display-text": "Execute {0}",
+						"description": "Execute a Javascript-script!",
+						"params": {
+							"value0": { "name":"Value", "desc":"Enter a string to execute."}
+						}
+					}
+				},
+				"expressions": {
+					"readexecutionreturn0": {
+						"description": "Read the return value.",
+						"translated-name": "ReadExecutionReturn"
+						}
+				}
+			}
+		}
+	}
+}

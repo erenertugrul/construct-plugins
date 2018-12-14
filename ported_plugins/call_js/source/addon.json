@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Call JS",
+	"id": "cjs",
+	"version": "1.0.0.0",
+	"author": "Joe7",
+	"website": "http://dev.liebhard.net/",
+	"documentation": "http://dev.liebhard.net/",
+	"description": "Calls a script.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

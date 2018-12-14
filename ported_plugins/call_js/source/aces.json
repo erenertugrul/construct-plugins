@@ -1,0 +1,27 @@
+{
+	"data": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "executejs0",
+				"scriptName": "ExecuteJS",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "readexecutionreturn0",
+				"expressionName": "ReadExecutionReturn",
+				"scriptName": "ReadExecutionReturn",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	}
+}
