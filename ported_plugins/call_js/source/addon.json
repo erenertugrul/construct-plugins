@@ -15,6 +15,12 @@
 					],
 	"file-list": [
 		"c2runtime/runtime.js",
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
 		"lang/en-US.json",
 		"aces.json",
 		"addon.json",

@@ -26,6 +26,7 @@
 			this._info.SetSupportsEffects(false);
 			this._info.SetMustPreDraw(false);
 			this._info.SetCanBeBundled(false);
+			this._info.SetSupportedRuntimes(["c2", "c3"]);
 			SDK.Lang.PushContext(".properties");
 			this._info.SetProperties([
 				new SDK.PluginProperty("text", "scriptfile", "myScripts.js")
