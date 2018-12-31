@@ -1,0 +1,112 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Rex_Date.",
+	"text": {
+		"plugins": {
+			"rex_date": {
+				"name": "Date",
+				"description": "Get system data and time",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_date.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"timer": "Timer",
+					"date": "Date",
+					"time": "Time",
+					"unixtimestamp": "UnixTimestamp",
+					"local": "Local"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"start-timer": {
+						"list-name": "Start",
+						"display-text": "Start timer [b]{0}[/b]",
+						"description": "Start a timer.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The name of timer."}
+						}
+					},
+					"pause-timer": {
+						"list-name": "Pause",
+						"display-text": "Pause timer [b]{0}[/b]",
+						"description": "Pause a timer.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The name of timer."}
+						}
+					},
+					"resume-timer": {
+						"list-name": "Resume",
+						"display-text": "Resume timer [b]{0}[/b]",
+						"description": "Resume a timer.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The name of timer."}
+						}
+					}
+				},
+				"expressions": {
+					"year": {
+						"description": "Get current year, or add unix timestamp at first parameter to transfer year from unix timestamp.",
+						"translated-name": "Year"
+						},
+					"month": {
+						"description": "Get current month, or add unix timestamp at first parameter to transfer month from unix timestamp.",
+						"translated-name": "Month"
+						},
+					"date": {
+						"description": "Get current day number, or add unix timestamp at first parameter to transfer day number from unix timestamp.",
+						"translated-name": "Date"
+						},
+					"day": {
+						"description": "Get current day name, or add unix timestamp at first parameter to transfer day name from unix timestamp.",
+						"translated-name": "Day"
+						},
+					"hours": {
+						"description": "Get current hours, or add unix timestamp at first parameter to transfer hours from unix timestamp.",
+						"translated-name": "Hours"
+						},
+					"minutes": {
+						"description": "Get current minutes, or add unix timestamp at first parameter to transfer minutes from unix timestamp.",
+						"translated-name": "Minutes"
+						},
+					"seconds": {
+						"description": "Get current seconds, or add unix timestamp at first parameter to transfer seconds from unix timestamp.",
+						"translated-name": "Seconds"
+						},
+					"milliseconds": {
+						"description": "Get current milliseconds, or add unix timestamp at first parameter to transfer milliseconds from unix timestamp.",
+						"translated-name": "Milliseconds"
+						},
+					"timer": {
+						"description": "Get escaped seconds of timer.",
+						"translated-name": "Timer",
+						"params": {
+							"name0": { "name":"Name", "desc":"The name of timer."}
+						}
+						},
+					"current-ticks": {
+						"description": "Get current ticks of timer in milliseconds. (Date.getTime())",
+						"translated-name": "CurTicks"
+						},
+					"unixtimestamp": {
+						"description": "Get current number of milliseconds since the epoch.",
+						"translated-name": "UnixTimestamp"
+						},
+					"date2unixtimestamp": {
+						"description": "Convert date to unix timestamp, the full parameters are \"Year,Month,Day,Hours,Minutes,Seconds,Milliseconds\"",
+						"translated-name": "Date2UnixTimestamp",
+						"params": {
+							"year0": { "name":"Year", "desc":"Year, start with 0."},
+							"month1": { "name":"Month", "desc":"Month, start with 1."},
+							"day2": { "name":"Day", "desc":"Day, start with 1."}
+						}
+						},
+					"local-expression": {
+						"description": "Transfer current date to local expression, or add unix timestamp at 1st parameter to transfer from unix timestamp.",
+						"translated-name": "LocalExpression"
+						}
+				}
+			}
+		}
+	}
+}

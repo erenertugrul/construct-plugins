@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Date",
+	"id": "Rex_Date",
+	"version": "1.0.0.0",
+	"author": "Rex.Rainbow",
+    "website": "https://rexrainbow.github.io/C3RexDoc/plugins.md/index.html",
+    "documentation": "https://rexrainbow.github.io/C3RexDoc/plugins.md/rex_date.html",
+	"description": "Get system data and time",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"instance.js",
+		"plugin.js",
+		"type.js"
+	]					
+}
