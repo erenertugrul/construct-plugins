@@ -4,7 +4,7 @@
 {
 	const PLUGIN_ID = "cjs";
 	const PLUGIN_VERSION = "1.0.0.0";
-	const PLUGIN_CATEGORY = "general";
+	const PLUGIN_CATEGORY = "web";
 
 	let app = null;
 
