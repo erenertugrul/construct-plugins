@@ -1,0 +1,28 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Time away L",
+	"id": "Rex_TimeAwayL",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "http://c2rexplugins.weebly.com/rex_timeawayl.html",
+	"documentation": "http://c2rexplugins.weebly.com/rex_timeawayl.html",
+	"description": "Get elapsed interval of turned off game from local storage.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c2runtime/localForage.js",
+		"c3runtime/localForage.js",			
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

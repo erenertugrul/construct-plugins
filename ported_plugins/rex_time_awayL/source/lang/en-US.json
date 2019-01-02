@@ -1,0 +1,135 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Time away L.",
+	"text": {
+		"plugins": {
+			"rex_timeawayl": {
+				"name": "Time away L",
+				"description": "Get elapsed interval of turned off game from local storage.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_timeawayl.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"timer": "Timer",
+					"local-storage": "Local storage",
+					"valid": "Valid"
+				},
+				"conditions": {
+					"on-error": {
+						"list-name": "On error",
+						"display-text": "On error",
+						"description": "Triggered if any error occurs while accessing local storage."
+						},
+					"on-get-timer": {
+						"list-name": "On get time",
+						"display-text": "On get time [b]{0}[/b]",
+						"description": "Triggered after \"action: Get timer\", get elapsed time by \"expression:ElapsedTime\".",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+						},
+					"on-start-timer": {
+						"list-name": "On start timer",
+						"display-text": "On start timer [b]{0}[/b]",
+						"description": "Triggered after \"action: Start\", when the timer has been written to local storage.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+						},
+					"on-remove-timer": {
+						"list-name": "On remove timer",
+						"display-text": "On remove timer [b]{0}[/b]",
+						"description": "Triggered after \"action: Remove\", when the timer has been deleted from local storage.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+						},
+					"on-pause-timer": {
+						"list-name": "On pause timer",
+						"display-text": "On pause timer [b]{0}[/b]",
+						"description": "Triggered after \"action: Pause\", when the timer has been written to local storage.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+						},
+					"on-resume-timer": {
+						"list-name": "On resume timer",
+						"display-text": "On resume timer [b]{0}[/b]",
+						"description": "Triggered after \"action: Resume\", when the timer has been written to local storage.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+						},
+					"is-valid": {
+						"list-name": "Is valid",
+						"display-text": "Is valid {0}",
+						"description": "Return true if get valid timer.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+						}
+				},
+				"actions": {
+					"start-timer": {
+						"list-name": "Start",
+						"display-text": "Start timer [b]{0}[/b]",
+						"description": "Start timer.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+					},
+					"remove-timer": {
+						"list-name": "Remove",
+						"display-text": "Remove timer [b]{0}[/b]",
+						"description": "Remove timer.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+					},
+					"pause-timer": {
+						"list-name": "Pause",
+						"display-text": "Pause timer [b]{0}[/b]",
+						"description": "Pause timer.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+					},
+					"resume-timer": {
+						"list-name": "Resume",
+						"display-text": "Resume timer [b]{0}[/b]",
+						"description": "Resume timer.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+					},
+					"get-or-start-timer": {
+						"list-name": "Get or start",
+						"display-text": "Get or start timer [b]{0}[/b]",
+						"description": "Get or start timer if the timer does not exist.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+					},
+					"get-timer": {
+						"list-name": "Get",
+						"display-text": "Get timer [b]{0}[/b]",
+						"description": "Get timer.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key name of local storage"}
+						}
+					}
+				},
+				"expressions": {
+					"error-message": {
+						"description": "In 'On error', an error message if any available.",
+						"translated-name": "ErrorMessage"
+						},
+					"elapsed-time": {
+						"description": "Get elapsed time of timer, in seconds. Add timer name at 1st paramete.",
+						"translated-name": "ElapsedTime"
+						}
+				}
+			}
+		}
+	}
+}

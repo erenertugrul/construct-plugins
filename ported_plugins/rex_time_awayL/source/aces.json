@@ -1,0 +1,163 @@
+{
+	"timer": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "on-get-timer",
+				"scriptName": "OnGetTimer",
+				"isTrigger": "true",
+				"highlight": true,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "on-start-timer",
+				"scriptName": "OnStartTimer",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "on-remove-timer",
+				"scriptName": "OnRemoveTimer",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "on-pause-timer",
+				"scriptName": "OnPauseTimer",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "on-resume-timer",
+				"scriptName": "OnResumeTimer",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "start-timer",
+				"scriptName": "StartTimer",
+				"highlight": true,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "remove-timer",
+				"scriptName": "RemoveTimer",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "pause-timer",
+				"scriptName": "PauseTimer",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "resume-timer",
+				"scriptName": "ResumeTimer",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "get-or-start-timer",
+				"scriptName": "GetORStartTimer",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "get-timer",
+				"scriptName": "GetTimer",
+				"highlight": true,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "elapsed-time",
+				"expressionName": "ElapsedTime",
+				"scriptName": "ElapsedTime",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"local-storage": {
+		"conditions": [
+			{
+				"c2id": 5,
+				"id": "on-error",
+				"scriptName": "OnError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "error-message",
+				"expressionName": "ErrorMessage",
+				"scriptName": "ErrorMessage",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"valid": {
+		"conditions": [
+			{
+				"c2id": 21,
+				"id": "is-valid",
+				"scriptName": "IsValid",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	}
+}
