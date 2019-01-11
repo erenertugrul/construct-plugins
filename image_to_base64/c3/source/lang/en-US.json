@@ -5,8 +5,8 @@
 		"plugins": {
 			"erenertugrul_base64_image": {
 				"name": "base64 Image",
-				"description": "An example third-party plugin.",
-				"help-url": "https://www.construct.net",
+				"description": "image to base64 convert",
+				"help-url": "https://github.com/erenertugrul",
 				"aceCategories": {
 					"upload":"Upload",
 					"success":"success"

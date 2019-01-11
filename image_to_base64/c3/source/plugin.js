@@ -13,7 +13,7 @@
 	////////////////////////////////////////////
 	
 	const PLUGIN_VERSION = "1.0.0.0";
-	const PLUGIN_CATEGORY = "general";
+	const PLUGIN_CATEGORY = "other";
 	
 	const PLUGIN_CLASS = SDK.Plugins.erenertugrul_base64_image = class base64_image extends SDK.IPluginBase
 	{
