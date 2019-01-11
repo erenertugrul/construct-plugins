@@ -1,0 +1,45 @@
+﻿{
+	"upload": {
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "file_640",
+				"scriptName": "file_64",
+				"highlight": true,
+				"params": [
+					{"id":"image_url_or_base64_link0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "sprite_base641",
+				"scriptName": "sprite_base64",
+				"highlight": false,
+				"params": [
+					{"id":"image_0", "type":"object"}
+				]
+			}
+		]
+	},
+	"success":{
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "on_base640",
+				"scriptName": "on_base64",
+				"isTrigger": "true",
+				"highlight": true
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "base_64_link0",
+				"expressionName": "base_64_link",
+				"scriptName": "base_64_link",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

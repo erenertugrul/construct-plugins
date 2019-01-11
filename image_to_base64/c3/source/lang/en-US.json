@@ -1,0 +1,52 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for base64 Image.",
+	"text": {
+		"plugins": {
+			"erenertugrul_base64_image": {
+				"name": "base64 Image",
+				"description": "An example third-party plugin.",
+				"help-url": "https://www.construct.net",
+				"aceCategories": {
+					"upload":"Upload",
+					"success":"success"
+				},
+				"conditions": {
+					"on_base640": {
+						"list-name": "On base64 converted",
+						"display-text": "On base64 converted",
+						"description": "Triggered  if the convert was successfully"
+					}
+				},
+				"actions": {
+					"file_640": 
+					{
+						"list-name": "file to base64",
+						"display-text": "file  url {0}",
+						"description": "file to base64",
+						"params": 
+						{
+							"image_url_or_base64_link0": { "name":"file  url", "desc":"file to base64"}
+						}
+					},
+					"sprite_base641": 
+					{
+						"list-name": "sprite to base64",
+						"display-text": "sprite {0} to base64 convert",
+						"description": "sprite to base64",
+						"params": 
+						{
+							"image_0": { "name":"A sprite object", "desc":"sprite to base64"}
+						}
+					}
+				},
+				"expressions": {
+					"base_64_link0": {
+						"description": "return the base64 link",
+						"translated-name": "base_64_link"
+					}
+				}
+			}
+		}
+	}
+}
