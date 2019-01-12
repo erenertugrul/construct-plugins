@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="637" height="637">
+  <path fill="#fff" d="M0 0v637h637V0H0z"/>
+  <path fill="#c3c3c3" d="M19 20v20h20V20H19m40 0v20h40V20H59m60 0v20h40V20h-40m60 0v20h40V20h-40m60 0v20h40V20h-40m60 0v20h40V20h-40m60 0v20h40V20h-40m60 0v20h40V20h-40m60 0v20h40V20h-40m60 0v20h40V20h-40m60 0v20h20V20h-20M19 60v40h20V60H19m80 0v320H59v20h40v60h20v-60h440v-20H119V60H99m500 0v40h20V60h-20z"/>
+  <path fill="#b5e61d" d="M459 80v20h100V80H459m-120 20v20h120v-20H339z"/>
+  <path fill="#c3c3c3" d="M19 120v40h20v-40H19z"/>
+  <path fill="#b5e61d" d="M279 120v20h60v-20h-60z"/>
+  <path fill="#c3c3c3" d="M599 120v40h20v-40h-20z"/>
+  <path fill="#b5e61d" d="M239 140v20h40v-20h-40m-20 20v20h20v-20h-20z"/>
+  <path fill="#c3c3c3" d="M19 180v40h20v-40H19z"/>
+  <path fill="#b5e61d" d="M199 180v20h20v-20h-20z"/>
+  <path fill="#c3c3c3" d="M599 180v40h20v-40h-20z"/>
+  <path fill="#b5e61d" d="M179 200v40h20v-40h-20z"/>
+  <path fill="#c3c3c3" d="M19 240v40h20v-40H19z"/>
+  <path fill="#b5e61d" d="M159 240v40h20v-40h-20m180 0v20h80v60H259v20h160v-20h20v20h60v-20h20v-60h-20v-20h-60v20h-20v-20h-80z"/>
+  <path fill="#c3c3c3" d="M599 240v40h20v-40h-20z"/>
+  <path fill="#b5e61d" d="M139 280v40h20v-40h-20m160 0v20h100v-20H299z"/>
+  <path fill="#c3c3c3" d="M19 300v40h20v-40H19m580 0v40h20v-40h-20z"/>
+  <path fill="#b5e61d" d="M119 320v60h20v-60h-20z"/>
+  <path fill="#c3c3c3" d="M19 360v40h20v-40H19m580 0v40h20v-40h-20M19 420v40h20v-40H19z"/>
+  <path fill="#b5e61d" d="M79 420v40h20v-40H79z"/>
+  <path fill="#c3c3c3" d="M599 420v40h20v-40h-20M19 480v40h20v-40H19z"/>
+  <path d="M79 480v20h40v80h20v-80h40v-20H79m120 0v80h20v20h20v-20h20v20h20v-20h20v-80h-20v80h-20v-40h-20v40h-20v-80h-20m120 0v100h60v-20h-40v-20h20v-20h-20v-20h40v-20h-60m80 0v100h60v-20h-40v-20h20v-20h-20v-20h40v-20h-60m80 0v100h20v-40h20v20h20v20h20V480h-20v40h-20v-20h-20v-20h-20z"/>
+  <path fill="#c3c3c3" d="M599 480v40h20v-40h-20M19 540v40h20v-40H19m580 0v40h20v-40h-20M19 600v20h20v-20H19m40 0v20h40v-20H59m60 0v20h40v-20h-40m60 0v20h40v-20h-40m60 0v20h40v-20h-40m60 0v20h40v-20h-40m60 0v20h40v-20h-40m60 0v20h40v-20h-40m60 0v20h40v-20h-40m60 0v20h40v-20h-40m60 0v20h20v-20h-20z"/>
+</svg>

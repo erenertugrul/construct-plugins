@@ -1,0 +1,564 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for LiteTween.",
+	"text": {
+		"behaviors": {
+			"lunarray_litetween": {
+				"name": "Lite Tween",
+				"description": "Tween an object's position, size, angle or other properties using an easing function.",
+				"help-url": "https://www.scirra.com/forum/behavior-litetween_t70700",
+				"properties": {
+					"active-on-start": {
+						"name": "Active on start",
+						"desc": "Enable the behavior at the beginning of the layout.",
+						"items": {
+							"no": "No",
+							"yes": "Yes",
+							"ping-pong": "Ping Pong",
+							"loop": "Loop",
+							"flip-flop": "Flip Flop"
+						}
+					},
+					"tweened-property": {
+						"name": "Tweened Property",
+						"desc": "Select what property of the object to modify.",
+						"items": {
+							"position": "Position",
+							"size": "Size",
+							"width": "Width",
+							"height": "Height",
+							"angle": "Angle",
+							"opacity": "Opacity",
+							"value": "Value",
+							"horizontal": "Horizontal",
+							"vertical": "Vertical",
+							"scale": "Scale"
+						}
+					},
+					"function": {
+						"name": "Function",
+						"desc": "Select the kind of easing function used to calculate the movement.",
+						"items": {
+							"linear": "Linear",
+							"easeinquad": "EaseInQuad",
+							"easeoutquad": "EaseOutQuad",
+							"easeinoutquad": "EaseInOutQuad",
+							"easeincubic": "EaseInCubic",
+							"easeoutcubic": "EaseOutCubic",
+							"easeinoutcubic": "EaseInOutCubic",
+							"easeinquart": "EaseInQuart",
+							"easeoutquart": "EaseOutQuart",
+							"easeinoutquart": "EaseInOutQuart",
+							"easeinquint": "EaseInQuint",
+							"easeoutquint": "EaseOutQuint",
+							"easeinoutquint": "EaseInOutQuint",
+							"easeincircle": "EaseInCircle",
+							"easeoutcircle": "EaseOutCircle",
+							"easeinoutcircle": "EaseInOutCircle",
+							"easeinback": "EaseInBack",
+							"easeoutback": "EaseOutBack",
+							"easeinoutback": "EaseInOutBack",
+							"easeinelastic": "EaseInElastic",
+							"easeoutelastic": "EaseOutElastic",
+							"easeinoutelastic": "EaseInOutElastic",
+							"easeinbounce": "EaseInBounce",
+							"easeoutbounce": "EaseOutBounce",
+							"easeinoutbounce": "EaseInOutBounce",
+							"easeinsmoothstep": "EaseInSmoothstep",
+							"easeoutsmoothstep": "EaseOutSmoothstep",
+							"easeinoutsmoothstep": "EaseInOutSmoothstep"
+						}
+					},
+					"target": {
+						"name": "Target",
+						"desc": "Tween target position, angle, size, etc."
+					},
+					"target-mode": {
+						"name": "Target Mode",
+						"desc": "Tween target mode, absolute or relative.",
+						"items": {
+							"absolute": "Absolute",
+							"relative": "Relative"
+						}
+					},
+					"duration": {
+						"name": "Duration",
+						"desc": "Duration of tween in seconds."
+					},
+					"enforce-mode": {
+						"name": "Enforce mode",
+						"desc": "Enforce or compromise the resulting coordinate/size etc, if something other changed the object's tweened property (i.e: other tween, behavior, etc).",
+						"items": {
+							"compromise": "Compromise",
+							"enforce": "Enforce"
+						}
+					}
+				},
+				"aceCategories": {
+					"parameter": "Parameter",
+					"playback-control": "Playback control",
+					"tween-management": "Tween Management"
+				},
+				"conditions": {
+					"is-active": {
+						"list-name": "Is active",
+						"display-text": "{my} is active",
+						"description": "True if the movement is currently active."
+					},
+					"compare-progress": {
+						"list-name": "Compare progress",
+						"display-text": "On {my} progress {0} {1}",
+						"description": "Compare the current progress of the tween process.",
+						"params": {
+							"comparison": {
+								"name": "Comparison",
+								"desc": "Select how to compare the tweening progress."
+							},
+							"value": {
+								"name": "Value",
+								"desc": "Value to compare the progress to."
+							}
+						}
+					},
+					"on-tween-start": {
+						"list-name": "On tween start",
+						"display-text": "On {my} start",
+						"description": "Triggered when tween starts."
+					},
+					"on-tween-end": {
+						"list-name": "On tween end",
+						"display-text": "On {my} end",
+						"description": "Triggered when the tween finished and is entering cooldown state."
+					},
+					"on-tween-reverse-start": {
+						"list-name": "On tween reverse start",
+						"display-text": "On {my} reverse start",
+						"description": "Triggered when tween start reversing."
+					},
+					"on-tween-reverse-end": {
+						"list-name": "On tween reverse end",
+						"display-text": "On {my} reverse end",
+						"description": "Triggered when the tween end reversing."
+					},
+					"is-reversing": {
+						"list-name": "Is reversing",
+						"display-text": "{my} is reversing",
+						"description": "True if the tween is currently reversing."
+					},
+					"on-threshold": {
+						"list-name": "On threshold",
+						"display-text": "On {my} pass threshold {0} {1}",
+						"description": "Compare the current progress of the tween process, then fire event when it pass that threshold.",
+						"params": {
+							"comparison": {
+								"name": "Comparison",
+								"desc": "Select how to compare the tweening progress."
+							},
+							"value": {
+								"name": "Value",
+								"desc": "Value to compare the progress to."
+							}
+						}
+					}
+				},
+				"actions": {
+					"set-active": {
+						"list-name": "Set active",
+						"display-text": "Set {my} <b>{0}</b>",
+						"description": "Enable or disable the movement. (WARNING: ported but appears commented on original plugin code)",
+						"params": {
+							"state": {
+								"name": "State",
+								"desc": "Set whether the movement is active or inactive.",
+								"items": {
+									"inactive": "Inactive",
+									"active": "Active"
+								}
+							}
+						}
+					},
+					"set-duration": {
+						"list-name": "Set duration",
+						"display-text": "{my} Set duration to <b>{0}</b> second(s)",
+						"description": "Set the time in seconds for the duration of the tween.",
+						"params": {
+							"duration": {
+								"name": "Duration",
+								"desc": "The time in seconds for the duration of the tween."
+							}
+						}
+					},
+					"set-target": {
+						"list-name": "Set target",
+						"display-text": "{my} Set target {0}({1}) to <b>{2}</b>",
+						"description": "Set the target value of the tween.",
+						"params": {
+							"target-is": {
+								"name": "Target is",
+								"desc": "Set target type",
+								"items": {
+									"x": "X",
+									"y": "Y",
+									"angle": "Angle",
+									"opacity": "Opacity",
+									"width-scale-x": "Width/Scale X",
+									"height-scale-y": "Height/Scale Y",
+									"value": "Value"
+								}
+							},
+							"relativity": {
+								"name": "Relativity",
+								"desc": "Set if the target is relative or absolute.",
+								"items": {
+									"absolute": "Absolute",
+									"relative": "Relative"
+								}
+							},
+							"value": {
+								"name": "Value",
+								"desc": "Value of position, angle, or whatever to tween to."
+							}
+						}
+					},
+					"set-tweened-property": {
+						"list-name": "Set tweened property",
+						"display-text": "{my} Set tweened property to <b>{0}</b>",
+						"description": "Set the type of tweened property.",
+						"params": {
+							"tweened-property": {
+								"name": "Tweened property",
+								"desc": "Select the tweened property to.",
+								"items": {
+									"position": "Position",
+									"size-pixel": "Size(Pixel)",
+									"width": "Width",
+									"height": "Height",
+									"angle": "Angle",
+									"opacity": "Opacity",
+									"value": "Value",
+									"horizontal": "Horizontal",
+									"vertical": "Vertical",
+									"scale": "Scale"
+								}
+							}
+						}
+					},
+					"set-easing": {
+						"list-name": "Set easing",
+						"display-text": "{my} Set easing function to <b>{0}</b>",
+						"description": "Set the easing function used to calculate movement.",
+						"params": {
+							"easing-function": {
+								"name": "Function",
+								"desc": "Select the easing function to apply.",
+								"items": {
+									"linear": "Linear",
+									"easeinquad": "EaseInQuad",
+									"easeoutquad": "EaseOutQuad",
+									"easeinoutquad": "EaseInOutQuad",
+									"easeincubic": "EaseInCubic",
+									"easeoutcubic": "EaseOutCubic",
+									"easeinoutcubic": "EaseInOutCubic",
+									"easeinquart": "EaseInQuart",
+									"easeoutquart": "EaseOutQuart",
+									"easeinoutquart": "EaseInOutQuart",
+									"easeinquint": "EaseInQuint",
+									"easeoutquint": "EaseOutQuint",
+									"easeinoutquint": "EaseInOutQuint",
+									"easeincircle": "EaseInCircle",
+									"easeoutcircle": "EaseOutCircle",
+									"easeinoutcircle": "EaseInOutCircle",
+									"easeinback": "EaseInBack",
+									"easeoutback": "EaseOutBack",
+									"easeinoutback": "EaseInOutBack",
+									"easeinelastic": "EaseInElastic",
+									"easeoutelastic": "EaseOutElastic",
+									"easeinoutelastic": "EaseInOutElastic",
+									"easeinbounce": "EaseInBounce",
+									"easeoutbounce": "EaseOutBounce",
+									"easeinoutbounce": "EaseInOutBounce",
+									"easeinsmoothstep": "EaseInSmoothstep",
+									"easeoutsmoothstep": "EaseOutSmoothstep",
+									"easeinoutsmoothstep": "EaseInOutSmoothstep"
+								}
+							}
+						}
+					},
+					"set-enforce": {
+						"list-name": "Set enforce",
+						"display-text": "{my} Set enforce mode to <b>{0}</b>",
+						"description": "Set whether to enforce tween to object or compromise results.",
+						"params": {
+							"enforce-mode": {
+								"name": "Enforce mode",
+								"desc": "Set to enforce or compromise tween result.",
+								"items": {
+									"compromise": "Compromise",
+									"enforce": "Enforce"
+								}
+							}
+						}
+					},
+					"start": {
+						"list-name": "Start",
+						"display-text": "{my} <b>{0}</b> {1}",
+						"description": "Start the tween.",
+						"params": {
+							"start-mode": {
+								"name": "Target is",
+								"desc": "Set target type",
+								"items": {
+									"start-from-the-beginning": "Start from the beginning",
+									"resume-at-current-progress": "Resume at current progress",
+									"ping-pong": "Ping pong",
+									"loop": "Loop",
+									"flip-flop": "Flip Flop"
+								}
+							},
+							"force-use-current": {
+								"name": "Force use current",
+								"desc": "Set whether to always recalculate current position/size/etc or use last recorded ones.",
+								"items": {
+									"start-from-last-recorded": "Start from last recorded",
+									"start-from-current": "Start from current"
+								}
+							}
+						}
+					},
+					"reverse": {
+						"list-name": "Reverse",
+						"display-text": "{my} <b>{0}</b>",
+						"description": "Reverse the tween.",
+						"params": {
+							"reverse-mode": {
+								"name": "Reverse mode",
+								"desc": "Set wether to reverse from the tween end, or from current position.",
+								"items": {
+									"reverse-from-current": "Reverse from current",
+									"reverse-from-the-end": "Reverse from the end"
+								}
+							}
+						}
+					},
+					"stop": {
+						"list-name": "Stop",
+						"display-text": "{my} <b>{0}</b>",
+						"description": "Stop the tween.",
+						"params": {
+							"stop-mode": {
+								"name": "Stop Mode",
+								"desc": "Set wether to stop at the beginning, current position or tween target.",
+								"items": {
+									"pause-at-current-position": "Pause at current position",
+									"stop-at-tween-start": "Stop at tween start",
+									"stop-at-tween-target": "Stop at tween target"
+								}
+							}
+						}
+					},
+					"seek": {
+						"list-name": "Seek",
+						"display-text": "{my} Seek to <b>{0}</b>",
+						"description": "Seek the tween.",
+						"params": {
+							"seek-to": {
+								"name": "Seek to",
+								"desc": "Seek target, from begining (0) to end (1), regardless of duration"
+							}
+						}
+					},
+					"set-value": {
+						"list-name": "Set value",
+						"display-text": "{my} set value to <b>{0}</b>",
+						"description": "Set value for tween value case.",
+						"params": {
+							"value": {
+								"name": "Value",
+								"desc": "Set the the tweened value"
+							}
+						}
+					},
+					"create-initialize-tween": {
+						"list-name": "Create/Initialize tween",
+						"display-text": "{my} Initialize tween {0} ({1} {2} {3} {4})",
+						"description": "Set all parameter at once.",
+						"params": {
+							"tweened-property": {
+								"name": "Tweened property",
+								"desc": "Select the tweened property to.",
+								"items": {
+									"position": "Position",
+									"size-pixel": "Size(Pixel)",
+									"width": "Width",
+									"height": "Height",
+									"angle": "Angle",
+									"opacity": "Opacity",
+									"value": "Value",
+									"horizontal": "Horizontal",
+									"vertical": "Vertical",
+									"scale": "Scale"
+								}
+							},
+							"easing-function": {
+								"name": "Function",
+								"desc": "Select the easing function to apply.",
+								"items": {
+									"linear": "Linear",
+									"easeinquad": "EaseInQuad",
+									"easeoutquad": "EaseOutQuad",
+									"easeinoutquad": "EaseInOutQuad",
+									"easeincubic": "EaseInCubic",
+									"easeoutcubic": "EaseOutCubic",
+									"easeinoutcubic": "EaseInOutCubic",
+									"easeinquart": "EaseInQuart",
+									"easeoutquart": "EaseOutQuart",
+									"easeinoutquart": "EaseInOutQuart",
+									"easeinquint": "EaseInQuint",
+									"easeoutquint": "EaseOutQuint",
+									"easeinoutquint": "EaseInOutQuint",
+									"easeincircle": "EaseInCircle",
+									"easeoutcircle": "EaseOutCircle",
+									"easeinoutcircle": "EaseInOutCircle",
+									"easeinback": "EaseInBack",
+									"easeoutback": "EaseOutBack",
+									"easeinoutback": "EaseInOutBack",
+									"easeinelastic": "EaseInElastic",
+									"easeoutelastic": "EaseOutElastic",
+									"easeinoutelastic": "EaseInOutElastic",
+									"easeinbounce": "EaseInBounce",
+									"easeoutbounce": "EaseOutBounce",
+									"easeinoutbounce": "EaseInOutBounce",
+									"easeinsmoothstep": "EaseInSmoothstep",
+									"easeoutsmoothstep": "EaseOutSmoothstep",
+									"easeinoutsmoothstep": "EaseInOutSmoothstep"
+								}
+							},
+							"target": {
+								"name": "Target",
+								"desc": "Target value of position, angle, or whatever to tween to (for position it is x,y)."
+							},
+							"duration": {
+								"name": "Duration",
+								"desc": "The time in seconds for the duration of the tween."
+							},
+							"enforce-mode": {
+								"name": "Enforce mode",
+								"desc": "Set to enforce or compromise tween result.",
+								"items": {
+									"compromise": "Compromise",
+									"enforce": "Enforce"
+								}
+							}
+						}
+					},
+					"set-easing-parameter": {
+						"list-name": "Set easing parameter",
+						"display-text": "{my} Set easing parameter {0} ({1} {2} {3} {4})",
+						"description": "Set easing parameter to tweak the wobbles etc.",
+						"params": {
+							"easing-function": {
+								"name": "Function",
+								"desc": "Select the easing function to apply.",
+								"items": {
+									"linear": "Linear",
+									"easeinquad": "EaseInQuad",
+									"easeoutquad": "EaseOutQuad",
+									"easeinoutquad": "EaseInOutQuad",
+									"easeincubic": "EaseInCubic",
+									"easeoutcubic": "EaseOutCubic",
+									"easeinoutcubic": "EaseInOutCubic",
+									"easeinquart": "EaseInQuart",
+									"easeoutquart": "EaseOutQuart",
+									"easeinoutquart": "EaseInOutQuart",
+									"easeinquint": "EaseInQuint",
+									"easeoutquint": "EaseOutQuint",
+									"easeinoutquint": "EaseInOutQuint",
+									"easeincircle": "EaseInCircle",
+									"easeoutcircle": "EaseOutCircle",
+									"easeinoutcircle": "EaseInOutCircle",
+									"easeinback": "EaseInBack",
+									"easeoutback": "EaseOutBack",
+									"easeinoutback": "EaseInOutBack",
+									"easeinelastic": "EaseInElastic",
+									"easeoutelastic": "EaseOutElastic",
+									"easeinoutelastic": "EaseInOutElastic",
+									"easeinbounce": "EaseInBounce",
+									"easeoutbounce": "EaseOutBounce",
+									"easeinoutbounce": "EaseInOutBounce",
+									"easeinsmoothstep": "EaseInSmoothstep",
+									"easeoutsmoothstep": "EaseOutSmoothstep",
+									"easeinoutsmoothstep": "EaseInOutSmoothstep"
+								}
+							},
+							"arguments-a": {
+								"name": "Arguments a",
+								"desc": "The a parameter"
+							},
+							"arguments-p": {
+								"name": "Arguments p",
+								"desc": "The p parameter"
+							},
+							"arguments-t": {
+								"name": "Arguments t",
+								"desc": "The t parameter"
+							},
+							"arguments-s": {
+								"name": "Arguments s",
+								"desc": "The s parameter"
+							}
+						}
+					},
+					"reset-easing-parameter": {
+						"list-name": "Reset easing parameter",
+						"display-text": "{my} Reset easing parameter",
+						"description": "Reset easing parameter to default value"
+					}
+				},
+				"expressions": {
+					"get-progress": {
+						"description": "Return the current progress of the tween as a number from 0 to 1.",
+						"translated-name": "Progress"
+					},
+					"get-value": {
+						"description": "Return the current tweened value for the tween value case.",
+						"translated-name": "Value"
+					},
+					"get-target": {
+						"description": "Return the current target value for the tween.",
+						"translated-name": "Target"
+					},
+					"get-duration": {
+						"description": "Return the duration for the tween.",
+						"translated-name": "Duration"
+					},
+					"get-state": {
+						"description": "Return the duration for the tween.",
+						"translated-name": "State"
+					},
+					"get-tween": {
+						"description": "Return tween as in lerp.",
+						"translated-name": "Tween",
+						"params": {
+							"a": {
+								"name": "A",
+								"desc": "The lower bound value for tween"
+							},
+							"b": {
+								"name": "B",
+								"desc": "The upper bound value for tween"
+							},
+							"x": {
+								"name": "X",
+								"desc": "The factor value"
+							},
+							"type": {
+								"name": "Type",
+								"desc": "The tween type"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
