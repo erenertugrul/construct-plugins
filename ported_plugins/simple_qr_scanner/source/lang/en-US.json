@@ -1,0 +1,56 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for SimpleQRScanner.",
+	"text": {
+		"plugins": {
+			"simpleqrscanner": {
+				"name": "SimpleQRScanner",
+				"description": "Plugin to call a native QRCode scanner",
+				"help-url": "http://www.imaginakids.com.br/",
+				"properties": {
+					"title": {
+						"name": "Title",
+						"desc": "Title text when scanning."
+						},
+					"description": {
+						"name": "Description",
+						"desc": "Description text when scanning."
+						}
+				},
+				"aceCategories": {
+					"qr_code": "QR Code"
+				},
+				"conditions": {
+					"ondecoded0": {
+						"list-name": "QR Decoded Success",
+						"display-text": "QR Code has been decoded",
+						"description": "QR Code has been decoded"
+						},
+					"ondecodeerror1": {
+						"list-name": "QR Decoded Error",
+						"display-text": "Error decoding the QR Code",
+						"description": "Error decoding the QR Code"
+						},
+					"ondecodecancel2": {
+						"list-name": "QR Decoded Cancel",
+						"display-text": "QR Code decoding was cancelled",
+						"description": "QR Code decoding was cancelled"
+						}
+				},
+				"actions": {
+					"qrdecode0": {
+						"list-name": "Decode",
+						"display-text": "Decode QR Code",
+						"description": "Decode QR Code."
+					}
+				},
+				"expressions": {
+					"decodedqrcode0": {
+						"description": "Return the decoded QR Code.",
+						"translated-name": "decodedQRCode"
+						}
+				}
+			}
+		}
+	}
+}

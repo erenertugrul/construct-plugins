@@ -1,0 +1,45 @@
+{
+	"qr_code": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "ondecoded0",
+				"scriptName": "onDecoded",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "ondecodeerror1",
+				"scriptName": "onDecodeError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "ondecodecancel2",
+				"scriptName": "onDecodeCancel",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "qrdecode0",
+				"scriptName": "qrDecode",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "decodedqrcode0",
+				"expressionName": "decodedQRCode",
+				"scriptName": "decodedQRCode",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}
