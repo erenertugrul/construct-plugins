@@ -1,0 +1,51 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for lg_Shake.",
+	"text": {
+		"behaviors": {
+			"lgshake": {
+				"name": "lg_Shake",
+				"description": "Shake an object in the X and Y axis.",
+				"help-url": "http://www.twitter.com/luizhgama",
+				"properties": {
+					"ınitial-state": {
+						"name": "Initial state",
+						"desc": "Whether to initially have the behavior enabled or disabled.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+					"shake0": {
+						"list-name": "Shake",
+						"display-text": "Shake {my} with magnitude [i]{0}[/i] for [i]{1}[/i] seconds axis {4} ({2})({3})",
+						"description": "Shake the screen for a duration of time.",
+						"params": {
+							"magnitude0": { "name":"Magnitude", "desc":"The strength of the shake, in maximum pixels to scroll away."},
+							"duration1": { "name":"Duration", "desc":"The time the shake should last, in seconds."},
+							"mode4": { "name":"Mode", "desc":"Select whether the magnitude gradually reduces to zero over the duration, or stays constant.", "items":{"reducing magnitude":"Reducing magnitude","constant magnitude":"Constant magnitude"}},
+							"enforce_position7": { "name":"Enforce Position", "desc":"Select whether the shake will force object original position to stay the same during and after shake.", "items":{"do not enforce position":"Do not enforce position","enforce position":"Enforce position"}},
+							"axis0": { "name":"Shake Axis", "desc":"Select shake axis", "items":{"X,Y":"X,Y","Only X":"X","Only Y":"Y"}}
+						}
+					},
+					"setenabled1": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} {0}",
+						"description": "Enable or disable the behavior.",
+						"params": {
+							"state2": { "name":"State", "desc":"Whether to enable or disable the behavior.", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

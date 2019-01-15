@@ -1,0 +1,32 @@
+{
+	"": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "shake0",
+				"scriptName": "Shake",
+				"highlight": false,
+				"params": [
+					{"id":"magnitude0", "type":"number", "initialValue":"10"},
+					{"id":"duration1", "type":"number", "initialValue":"0.5"},
+					{"id":"mode4", "type":"combo", "items":["reducing magnitude","constant magnitude"]},
+					{"id":"enforce_position7", "type":"combo", "items":["do not enforce position","enforce position"]},
+					{"id":"axis0", "type":"combo", "items":["X,Y","Only X","Only Y"]}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "setenabled1",
+				"scriptName": "SetEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}
