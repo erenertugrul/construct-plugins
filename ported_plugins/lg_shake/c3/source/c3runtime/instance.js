@@ -51,8 +51,6 @@
 		Tick2()
 		{
 			const dt = this._runtime.GetDt(this._inst);
-
-			//
 			if (!this.enabled)
 			return;
 		
@@ -65,6 +63,7 @@
 			if (now >= this.behavior.shakeStart && now < this.behavior.shakeEnd)
 			{
 				var mag = this.behavior.shakeMag * Math.min(time, 1); //._timeScale
+
 				
 				// Mode 0 - reducing magnitude - lerp to zero
 				if (this.behavior.shakeMode === 0){
