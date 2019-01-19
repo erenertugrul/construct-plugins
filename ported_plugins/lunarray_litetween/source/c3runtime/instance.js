@@ -97,10 +97,9 @@
 			      case 7: parsed = this.inst.GetX() + "," + this.inst.GetY(); break;
 			      case 8: parsed = this.inst.GetX() + "," + this.inst.GetY(); break;
 			      case 9: 
-			      // its not working. todo fix it.
-			        /*if  (this._inst._currentAnimationFrame !== undefined) //this.inst.curFrame
-			          parsed = (this.inst.GetWidth()/this.inst._inst._sdkInst._currentAnimationFrame._imageInfo._width) + "," +(this.inst.GetHeight()/this.inst._inst._sdkInst._currentAnimationFrame._imageInfo._height)
-			        else*/ 
+			        /*if  (this._inst.GetObjectClass().GetFirstAnimationFrame() !== undefined) todo fix it. 
+			          parsed = (this.inst.GetWidth()/this._inst.GetWorldInfo().GetInstance().GetCurrentImageInfo().GetWidth()) + "," +(this.inst.GetHeight()/this._inst.GetWorldInfo().GetInstance().GetCurrentImageInfo().GetHeight())
+			        else */
 			          parsed = "1,1"; 
 			        break;
 			      default:  break;
@@ -341,8 +340,8 @@
 		      if (this.inst.GetWidth() < 0) scalex = inst.initialparam1 + (inst.targetparam1 + inst.initialparam1) * -factor;
 		      if (this.inst.GetHeight() < 0)  scaley = inst.initialparam2 + (inst.targetparam2 + inst.initialparam2) * -factor;
 		      if (inst.enforce) {
-		       this.inst.SetWidth(this.inst._inst._sdkInst._currentAnimationFrame._imageInfo._width * scalex);
-		       this.inst.SetHeight(this.inst._inst._sdkInst._currentAnimationFrame._imageInfo._height * scaley);
+		       this.inst.SetWidth(this._inst.GetWorldInfo().GetInstance().GetCurrentImageInfo().GetWidth() * scalex);
+		       this.inst.SetHeight(this._inst.GetWorldInfo().GetInstance().GetCurrentImageInfo().GetHeight() * scaley);
 
 		      } 
 		      else {
