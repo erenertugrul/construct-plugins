@@ -212,7 +212,8 @@ cr.plugins_.SimpleQRScanner = function(runtime)
 			"result": "String"            //( QR code(success); reason(error); cancel(cancel) )
 		}
 		*/
-		cordova.plugins.gizscanqrcode.scan(
+		if (this.runtime.isCordova){
+			cordova.plugins.gizscanqrcode.scan(
 			{
 			"baseColor": "#4e8dec",
 
@@ -345,7 +346,9 @@ cr.plugins_.SimpleQRScanner = function(runtime)
 					self.runtime.trigger(cr.plugins_.SimpleQRScanner.prototype.cnds.onDecodeCancel, inst);
 				}
 			}
-		);
+		);	
+		}
+
 	};
 
 	pluginProto.acts = new Acts();
