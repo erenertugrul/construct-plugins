@@ -1,0 +1,39 @@
+﻿{
+	"custom": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "notifier",
+				"scriptName": "notifier",
+				"highlight": false,
+				"params": [
+					{"id":"title", "type":"string"},
+					{"id":"msg", "type":"string"},
+					{"id":"type","type":"combo","initialValue": "default","items": ["default", "info", "success", "warning", "danger"]},
+					{"id":"icon","type":"string"},
+					{"id":"timeout","type":"number"}
+				]
+			},
+			{
+				"id": "hide_notifier",
+				"scriptName": "hide_notifier",
+				"highlight": false
+			},
+			{
+				"id": "sprite-notifier",
+				"scriptName": "sprite_notifier",
+				"highlight": false,
+				"params": [
+					{"id":"title", "type":"string"},
+					{"id":"msg", "type":"string"},
+					{"id":"type","type":"combo","initialValue": "default","items": ["default", "info", "success", "warning", "danger"]},
+					{"id":"icon", "type":"object"},
+					{"id":"timeout","type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

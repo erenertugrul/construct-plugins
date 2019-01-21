@@ -1,0 +1,62 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Notifier.",
+	"text": {
+		"plugins": {
+			"erenertugrul_notifier": {
+				"name": "Notifier",
+				"description": "Beautiful notifications with CSS and Vanilla JavaScript!",
+				"help-url": "https://github.com/erenertugrul",
+				"properties": {
+				},
+				"aceCategories": {
+					"custom": "Main"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"notifier": {
+						"list-name": "notifier",
+						"display-text": "Show notification Title: {0} Msg: {1} type: {2} icon: {3} timeout: {4}",
+						"description": "Show notification",
+						"params": 
+						{
+							"title": { "name":"title", "desc":"Notification's title"},
+							"msg": { "name":"msg", "desc":"Notification's text"},
+							"type": {
+								"name": "type",
+								"desc": "Notification's color",
+								"items": {"default": "default","info": "info","success": "success","warning": "warning","danger": "danger"}
+							},
+							"icon": { "name":"icon", "desc":"Path to the image that will be displayed inside the notification"},
+							"timeout": { "name":"timeout", "desc":"Time in seconds to close the notification automatically"}
+						}
+					},
+					"hide_notifier": {
+						"list-name": "Hide Notifier",
+						"display-text": "Hide notification",
+						"description": "Hide notification"
+					},
+					"sprite-notifier": {
+						"list-name": "Sprite Notifier",
+						"display-text": "Show notification Title: {0} Msg: {1} type: {2} icon: {3} timeout: {4} ",
+						"description": "Show notification",
+						"params": 
+						{
+							"title": { "name":"title", "desc":"Notification's title"},
+							"msg": { "name":"msg", "desc":"Notification's text"},
+							"type": {
+								"name": "type","desc": "Notification's color","items": {"default": "default","info": "info","success": "success","warning": "warning","danger": "danger"}
+							},
+							"icon": { "name":"A sprite object", "desc":"sprite that will be displayed inside the notification"},
+							"timeout": { "name":"timeout", "desc":"Time in seconds to close the notification automatically"}
+						}
+					}
+				},
+
+				"expressions": {
+				}
+			}
+		}
+	}
+}

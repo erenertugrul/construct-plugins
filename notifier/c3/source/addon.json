@@ -1,0 +1,34 @@
+﻿{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Notifier",
+	"id": "erenertugrul_notifier",
+	"version": "1.0.0.0",
+	"author": "Eren Ertuğrul",
+	"website": "https://erenertugrul.com.tr",
+	"documentation": "https://github.com/erenertugrul",
+	"description": "Beautiful notifications",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"notifier.js",
+		"notifier.css",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"instance.js",
+		"plugin.js",
+		"type.js"
+	]
+}
