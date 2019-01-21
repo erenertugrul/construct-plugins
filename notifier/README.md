@@ -1,6 +1,8 @@
 notifier.js for construct 3
 
-for now just c3runtime. c2runtime version soon.
+for now just c3runtime. 
+
+soon c2runtime version.
 
 http://csilva2810.github.io/notifier/docs/en/index.html
 
