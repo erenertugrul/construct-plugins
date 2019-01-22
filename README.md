@@ -41,7 +41,7 @@
 </tbody>
 </table>
 
-# Converted plugins
+# converted plugins
 
 <table>
 <thead>
