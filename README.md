@@ -33,10 +33,10 @@
 </tr>
 <tr>
 <td>notifier</td>
-<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/notifier/c3/dist/notifier_v1.1.c3addon">notifier.c3addon</a></td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/notifier/c3/dist/notifier_v1.2.c3addon">notifier.c3addon</a></td>
 <td style="text-align:right">:soon:</td>
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
-<td style="text-align:right">:x:</td>
+<td style="text-align:right">:white_check_mark:</td>
 </tr>
 </tbody>
 </table>
