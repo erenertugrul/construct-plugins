@@ -165,14 +165,19 @@ cr.plugins_.erenertugrul_base64_image = function(runtime)
 	};
 	Acts.prototype.sprite_base64 = function (obj)
 	{
-		if (obj) {
-			var inst = obj.getFirstPicked();
-			if (!inst || !inst.curFrame)
-				return;
+		var inst = obj.getFirstPicked();
+		if (inst) {
 			var frame = inst.curFrame;
 			base64_link = frame.getDataUri();
 			this.runtime.trigger(cr.plugins_.erenertugrul_base64_image.prototype.cnds.on_base64, this);
 
+		}
+		else{
+			var _layer = this.runtime.getLayerByNumber(0);
+			var a = this.runtime.createInstance(obj, _layer, -500, -500);
+			var frame = a.curFrame;
+			base64_link = frame.getDataUri();
+			this.runtime.trigger(cr.plugins_.erenertugrul_base64_image.prototype.cnds.on_base64, this);
 		}
 	};
 

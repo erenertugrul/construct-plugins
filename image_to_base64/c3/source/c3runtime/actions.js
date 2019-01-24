@@ -45,6 +45,17 @@
 
 				}); 
 			}
+			else{
+				var a = this._runtime.CreateInstance(obj, 0, -500, -500);
+				var d = a.GetCurrentImageInfo();
+					d && d.ExtractImageToCanvas().then((d) => {
+					c = d.toDataURL("image/png");
+					base64_link = c;
+					this.Trigger(C3.Plugins.erenertugrul_base64_image.Cnds.on_base64);
+
+				});
+
+			}
 		}
 	};
 }
