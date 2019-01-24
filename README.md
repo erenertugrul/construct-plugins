@@ -17,7 +17,7 @@
 <tbody>
 
 <td style="text-align:center">image_to_base64</td>
-<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/image_to_base64/c3/dist/image_base64_v1.c3addon">image_base64.c3addon</a></td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/image_to_base64/c3/dist/image_base64_v1.1.c3addon">image_base64.c3addon</a></td>
 <td style="text-align:right">:soon:</td>
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
