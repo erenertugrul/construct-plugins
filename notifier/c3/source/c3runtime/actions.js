@@ -25,6 +25,14 @@
 					this._notificationId = _notifier["show"](title ,msg,_t, c, (timeout*1000));
 				}); 
 			}
+			else{
+				var a = this._runtime.CreateInstance(obj, 0, -500, -500);
+				var d = a.GetCurrentImageInfo();
+				d && d.ExtractImageToCanvas().then((d) => {
+					c = d.toDataURL("image/png");
+				});
+				this._notificationId = _notifier["show"](title ,msg,_t, c, (timeout*1000));
+			}
 		}
 	};
 }
