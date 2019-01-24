@@ -6,14 +6,15 @@ assert2(cr.plugins_, "cr.plugins_ not created");
 
 /////////////////////////////////////
 // Plugin class
-cr.plugins_.MyCompany_SingleGlobal = function(runtime)
+cr.plugins_.erenertugrul_notifier = function(runtime)
 {
 	this.runtime = runtime;
 };
-
+var _type = ["","info","success","warning","danger"]
+var _notifier = window["notifier"];
 (function ()
 {
-	var pluginProto = cr.plugins_.MyCompany_SingleGlobal.prototype;
+	var pluginProto = cr.plugins_.erenertugrul_notifier.prototype;
 		
 	/////////////////////////////////////
 	// Object type class
@@ -37,7 +38,7 @@ cr.plugins_.MyCompany_SingleGlobal = function(runtime)
 		this.runtime = type.runtime;
 		
 		// Initialise object properties
-		this.testProperty = 0;
+		this._notificationId = null;
 	};
 	
 	var instanceProto = pluginProto.Instance.prototype;
@@ -45,7 +46,6 @@ cr.plugins_.MyCompany_SingleGlobal = function(runtime)
 	instanceProto.onCreate = function()
 	{
 		// Read properties set in C3
-		this.testProperty = this.properties[0];
 	};
 	
 	instanceProto.saveToJSON = function ()
@@ -67,20 +67,39 @@ cr.plugins_.MyCompany_SingleGlobal = function(runtime)
 	// Conditions
 	function Cnds() {};
 	
-	Cnds.prototype.IsLargeNumber = function (number)
-	{
-		return number > 100;
-	};
-	
+
 	pluginProto.cnds = new Cnds();
 
 	//////////////////////////////////////
 	// Actions
 	function Acts() {};
 
-	Acts.prototype.Alert = function ()
+	Acts.prototype.notifier = function (title,msg,type,icon,timeout)
 	{
-		alert("Test property = " + this.testProperty);
+		var _t = _type[type]
+		this._notificationId = _notifier["show"](title ,msg,_t,icon, (timeout*1000));	
+	};
+	Acts.prototype.hide_notifier = function ()
+	{
+		_notifier["hide"](this._notificationId);
+	};
+	Acts.prototype.sprite_notifier = function (title,msg,type,icon,timeout)
+	{
+		var _t = _type[type]
+		var c = null;
+		var inst = icon.getFirstPicked();
+		if (inst) {
+			var frame = inst.curFrame;
+			c = frame.getDataUri();
+			this._notificationId = _notifier["show"](title ,msg,_t, c, (timeout*1000));
+		}
+		else{
+			var _layer = this.runtime.getLayerByNumber(0);
+			var a = this.runtime.createInstance(icon, _layer, -500, -500);
+			var frame = a.curFrame;
+			c = frame.getDataUri();
+			this._notificationId = _notifier["show"](title ,msg,_t, c, (timeout*1000));
+		}
 	};
 	
 	pluginProto.acts = new Acts();
@@ -89,11 +108,7 @@ cr.plugins_.MyCompany_SingleGlobal = function(runtime)
 	// Expressions
 	function Exps() {};
 	
-	Exps.prototype.Double = function (ret, number)
-	{
-		ret.set_float(number * 2);
-	};
-	
+
 	pluginProto.exps = new Exps();
 
 }());
