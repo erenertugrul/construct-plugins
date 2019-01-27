@@ -1,0 +1,32 @@
+{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "Pin to image point",
+	"id": "Rex_pin2imgpt",
+	"version": "1.0.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://dl.dropbox.com/u/5779181/C2Repo/rex_pin2imgpt.html",
+	"documentation": "https://dl.dropbox.com/u/5779181/C2Repo/rex_pin2imgpt.html",
+	"description": "Stick to another object's image point.",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c3runtime/behavior.js",
+		"c3runtime/actions.js",
+		"c3runtime/conditions.js",
+		"c3runtime/expressions.js",
+		"c3runtime/instance.js",
+		"c3runtime/type.js",
+		"icon.png",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"behavior.js",
+		"type.js",
+		"instance.js"
+	]
+}

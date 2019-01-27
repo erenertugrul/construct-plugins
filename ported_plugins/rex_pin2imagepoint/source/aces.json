@@ -1,0 +1,57 @@
+{
+	"pin": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "pin1",
+				"scriptName": "Pin",
+				"highlight": false,
+				"params": [
+					{"id":"obj", "type":"object"},
+					{"id":"imgpt", "type":"any"},
+					{"id":"mode_", "type":"combo", "items":["position only","position & angle"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"unpin": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 10,
+				"id": "unpin10",
+				"scriptName": "Unpin",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "ispinned0",
+				"scriptName": "IsPinned",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "pinneduid0",
+				"expressionName": "PinnedUID",
+				"scriptName": "PinnedUID",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

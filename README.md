@@ -105,6 +105,16 @@
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
 </tbody>
+<tbody>
+<tr>
+  <td>rex_pin2imagepoint</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/rex_pin2imagepoint/dist/rex_pin2imagepoint.c3addon">rex_pin2imagepoint.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
 <!--- 
 <tbody>
 <tr>

@@ -1,5 +1,5 @@
 "use strict";
-
+var gizscan = window["cordova"]
 {
 	C3.Plugins.SimpleQRScanner.Instance = class SimpleQRScannerInstance extends C3.SDKInstanceBase
 	{

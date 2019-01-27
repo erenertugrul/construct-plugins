@@ -6,9 +6,9 @@
 		qrDecode()
 		{
 			var self = this;
-			//var gizscan = window["cordova"]["plugins"]["gizscanqrcode"] minify support ?
-			if (this._runtime.IsCordova()){
-				cordova.plugins.gizscanqrcode.scan(
+			//cordova.plugins.gizscanqrcode.scan minify support
+			if (this._runtime.IsCordova()){ //
+				gizscan["plugins"]["gizscanqrcode"]["scan"](
 				{
 					"baseColor": "#4e8dec",
 
