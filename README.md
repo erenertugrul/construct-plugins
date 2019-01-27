@@ -105,6 +105,7 @@
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
 </tbody>
+<!--- 
 <tbody>
 <tr>
   <td>simple_qr_scanner</td>
@@ -115,4 +116,5 @@
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
 </tbody>
+-->
 </table>
