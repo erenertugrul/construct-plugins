@@ -14,6 +14,9 @@
 			this.mode = null;
 			this.inst = this._inst;
 			
+			const b = this._runtime.Dispatcher();
+			this._disposables = new C3.CompositeDisposable(C3.Disposable.From(b, "instancedestroy", (a) => this._OnInstanceDestroyed(a.instance)), 
+			C3.Disposable.From(b, "afterload", () => this._OnAfterLoad()))
 			var self = this;
 			this._StartTicking2();
 		}
@@ -55,7 +58,7 @@
 			{
 				this.pinObject = this._runtime.GetInstanceByUID(this.pinObjectUid);
 
-				assert2(this.pinObject, "Failed to find pin object by UID");
+				//assert2(this.pinObject, "Failed to find pin object by UID");
 			}
 			
 			this.pinObjectUid = -1;	

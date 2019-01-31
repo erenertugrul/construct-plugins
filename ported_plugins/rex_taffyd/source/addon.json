@@ -1,0 +1,33 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Taffydb",
+	"id": "Rex_taffydb",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_taffydb.html",
+	"documentation": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_taffydb.html",
+	"description": "Database. Reference from http://www.taffydb.com/",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"taffy.js",
+		"c2runtime/runtime.js",
+		"c3runtime/plugin.js",
+		"c3runtime/actions.js",
+		"c3runtime/conditions.js",
+		"c3runtime/expressions.js",
+		"c3runtime/instance.js",
+		"c3runtime/type.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

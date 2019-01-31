@@ -1,0 +1,635 @@
+{
+	"ınsert_-_csv": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "ınsertcsv1",
+				"scriptName": "InsertCSV",
+				"highlight": false,
+				"params": [
+					{"id":"csv_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"eval3", "type":"combo", "items":["no","yes"]},
+					{"id":"delimiter4", "type":"string", "initialValue":"\",\""}
+				]
+			},
+			{
+				"c2id": 200,
+				"id": "ınsertcsv_definetype200",
+				"scriptName": "InsertCSV_DefineType",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"type4", "type":"combo", "items":["string","number","any (eval)"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ınsert_-_json": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "ınsertjson2",
+				"scriptName": "InsertJSON",
+				"highlight": false,
+				"params": [
+					{"id":"json_string0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "removeall3",
+				"scriptName": "RemoveAll",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ındex_keys": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "setındexkeys4",
+				"scriptName": "SetIndexKeys",
+				"highlight": false,
+				"params": [
+					{"id":"keys0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove_-_row_ıd": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 5,
+				"id": "removebyrowıd5",
+				"scriptName": "RemoveByRowID",
+				"highlight": false,
+				"params": [
+					{"id":"row_ıd0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "removebyrowındex6",
+				"scriptName": "RemoveByRowIndex",
+				"highlight": false,
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"save_-_prepare_item": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "setvalue11",
+				"scriptName": "SetValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"},
+					{"id":"condition5", "type":"combo", "items":["","if greater","if less"]}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "setbooleanvalue12",
+				"scriptName": "SetBooleanValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"boolean3", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "ıncvalue18",
+				"scriptName": "IncValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 19,
+				"id": "setjson19",
+				"scriptName": "SetJSON",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"json1", "type":"string", "initialValue":"\"{}\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"save": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 13,
+				"id": "save13",
+				"scriptName": "Save",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 10,
+				"id": "lastsavedrowıd10",
+				"expressionName": "LastSavedRowID",
+				"scriptName": "LastSavedRowID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"update_queried_rows": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 14,
+				"id": "updatequeriedrows14",
+				"scriptName": "UpdateQueriedRows",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "updatequeriedrows_booleanvalue15",
+				"scriptName": "UpdateQueriedRows_BooleanValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"boolean3", "type":"combo", "items":["false","true"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"save_-_row_ıd": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 16,
+				"id": "setrowıd16",
+				"scriptName": "SetRowID",
+				"highlight": false,
+				"params": [
+					{"id":"row_ıd0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "setrowındex17",
+				"scriptName": "SetRowIndex",
+				"highlight": false,
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"filter_-_1._new": {
+		"conditions": [
+			{
+				"c2id": 21,
+				"id": "newfilters21",
+				"scriptName": "NewFilters",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "newfilters21",
+				"scriptName": "NewFilters",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"filter_-_2._key": {
+		"conditions": [
+			{
+				"c2id": 22,
+				"id": "addvaluecomparsion22",
+				"scriptName": "AddValueComparsion",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"conditions7", "type":"combo", "items":["equal to","not equal to","greater than","less than","greater than or equal to","less than or equal to"]},
+					{"id":"value8", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 23,
+				"id": "addbooleanvaluecomparsion23",
+				"scriptName": "AddBooleanValueComparsion",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"compared_value3", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 24,
+				"id": "addvalueınclude24",
+				"scriptName": "AddValueInclude",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 25,
+				"id": "addregextest25",
+				"scriptName": "AddRegexTest",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"regex1", "type":"string", "initialValue":"\"\""},
+					{"id":"flags2", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 22,
+				"id": "addvaluecomparsion22",
+				"scriptName": "AddValueComparsion",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"conditions7", "type":"combo", "items":["equal to","not equal to","greater than","less than","greater than or equal to","less than or equal to"]},
+					{"id":"value8", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 23,
+				"id": "addbooleanvaluecomparsion23",
+				"scriptName": "AddBooleanValueComparsion",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"compared_value3", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 24,
+				"id": "addvalueınclude24",
+				"scriptName": "AddValueInclude",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 25,
+				"id": "addregextest25",
+				"scriptName": "AddRegexTest",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"regex1", "type":"string", "initialValue":"\"\""},
+					{"id":"flags2", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"filter_-_3._order": {
+		"conditions": [
+			{
+				"c2id": 31,
+				"id": "addorder31",
+				"scriptName": "AddOrder",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"order5", "type":"combo", "items":["descending","ascending","logical descending","logical ascending"]}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 31,
+				"id": "addorder31",
+				"scriptName": "AddOrder",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"order5", "type":"combo", "items":["descending","ascending","logical descending","logical ascending"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove_-_queried_rows": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 101,
+				"id": "removequeriedrows101",
+				"scriptName": "RemoveQueriedRows",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"database": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 211,
+				"id": "linktodatabase211",
+				"scriptName": "LinkToDatabase",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 211,
+				"id": "databasename211",
+				"expressionName": "DatabaseName",
+				"scriptName": "DatabaseName",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"for_each_row": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "foreachrow1",
+				"scriptName": "ForEachRow",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"table": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "at1",
+				"expressionName": "At",
+				"scriptName": "At",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"queried_rows_-_for_each_row": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "currowcontent2",
+				"expressionName": "CurRowContent",
+				"scriptName": "CurRowContent",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 13,
+				"id": "currowındex13",
+				"expressionName": "CurRowIndex",
+				"scriptName": "CurRowIndex",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "currowıd14",
+				"expressionName": "CurRowID",
+				"scriptName": "CurRowID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"queried_rows_-_ındex": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "ındex2queriedrowcontent3",
+				"expressionName": "Index2QueriedRowContent",
+				"scriptName": "Index2QueriedRowContent",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "queriedrowsındex2rowıd12",
+				"expressionName": "QueriedRowsIndex2RowID",
+				"scriptName": "QueriedRowsIndex2RowID",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "ındex2queriedrowıd15",
+				"expressionName": "Index2QueriedRowID",
+				"scriptName": "Index2QueriedRowID",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"queried_rows": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 4,
+				"id": "queriedrowscount4",
+				"expressionName": "QueriedRowsCount",
+				"scriptName": "QueriedRowsCount",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "queriedsum5",
+				"expressionName": "QueriedSum",
+				"scriptName": "QueriedSum",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "queriedmin6",
+				"expressionName": "QueriedMin",
+				"scriptName": "QueriedMin",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "queriedmax7",
+				"expressionName": "QueriedMax",
+				"scriptName": "QueriedMax",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "queriedrowsasjson8",
+				"expressionName": "QueriedRowsAsJSON",
+				"scriptName": "QueriedRowsAsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"key_name": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 9,
+				"id": "keyrowıd9",
+				"expressionName": "KeyRowID",
+				"scriptName": "KeyRowID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"row_ıd": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "ıd2rowcontent11",
+				"expressionName": "ID2RowContent",
+				"scriptName": "ID2RowContent",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"row_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"all_data": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 101,
+				"id": "allrowsasjson101",
+				"expressionName": "AllRowsAsJSON",
+				"scriptName": "AllRowsAsJSON",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 102,
+				"id": "allrowscount102",
+				"expressionName": "AllRowsCount",
+				"scriptName": "AllRowsCount",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

@@ -1,0 +1,400 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Taffydb.",
+	"text": {
+		"plugins": {
+			"rex_taffydb": {
+				"name": "Taffydb",
+				"description": "Database. Reference from http://www.taffydb.com/",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_taffydb.html",
+				"properties": {
+					"database-name": {
+						"name": "Database name",
+						"desc": "Database reference. Sets \"\" to be a private database."
+						},
+					"ındex-keys": {
+						"name": "Index keys",
+						"desc": "Index keys, separated by \",\""
+						}
+				},
+				"aceCategories": {
+					"ınsert_-_csv": "Insert - CSV",
+					"ınsert_-_json": "Insert - JSON",
+					"remove": "Remove",
+					"ındex_keys": "Index keys",
+					"remove_-_row_ıd": "Remove - row ID",
+					"save_-_prepare_item": "Save - prepare item",
+					"save": "Save",
+					"update_queried_rows": "Update queried rows",
+					"save_-_row_ıd": "Save - row ID",
+					"filter_-_1._new": "Filter - 1. new",
+					"filter_-_2._key": "Filter - 2. key",
+					"filter_-_3._order": "Filter - 3. order",
+					"remove_-_queried_rows": "Remove - queried rows",
+					"database": "Database",
+					"for_each_row": "For each row",
+					"table": "Table",
+					"queried_rows_-_for_each_row": "Queried rows - For each row",
+					"queried_rows_-_ındex": "Queried rows - Index",
+					"queried_rows": "Queried rows",
+					"key_name": "Key name",
+					"row_ıd": "Row ID",
+					"all_data": "All data"
+				},
+				"conditions": {
+					"foreachrow1": {
+						"list-name": "For each row",
+						"display-text": "For each row",
+						"description": "Repeat the event for each queried row."
+						},
+					"newfilters21": {
+						"list-name": "1. New",
+						"display-text": "Filter- 1. Create a new row filter",
+						"description": "Create a new row filter."
+						},
+					"addvaluecomparsion22": {
+						"list-name": "2. value compare",
+						"display-text": "Filter- 2. key [i]{0}[/i]: value is [i]{1}[/i] [i]{2}[/i]",
+						"description": "Add a value compared for this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"conditions7": { "name":"Conditions", "desc":"Condition type.", "items":{"equal to":"equal to","not equal to":"not equal to","greater than":"greater than","less than":"less than","greater than or equal to":"greater than or equal to","less than or equal to":"less than or equal to"}},
+							"value8": { "name":"Value", "desc":"The value to comparsion, could be number or string."}
+						}
+						},
+					"addbooleanvaluecomparsion23": {
+						"list-name": "2. boolean value compare",
+						"display-text": "Filter- 2. key [i]{0}[/i]: value is [i]{1}[/i]",
+						"description": "Add a boolean value compared for this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"compared_value3": { "name":"Compared value", "desc":"Compared value.", "items":{"false":"false","true":"true"}}
+						}
+						},
+					"addvalueınclude24": {
+						"list-name": "2. value include",
+						"display-text": "Filter- 2. key [i]{0}[/i]: value include [i]{1}[/i]",
+						"description": "Add a value including of this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+						},
+					"addregextest25": {
+						"list-name": "2. regex matched",
+						"display-text": "Filter- 2. key [i]{0}[/i]: regex matched with regex [i]{1}[/i], flags [i]{2}[/i]",
+						"description": "Add a regex matched for this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"regex1": { "name":"Regex", "desc":"Test string with regular expression."},
+							"flags2": { "name":"Flags", "desc":"Test flags with regular expression."}
+						}
+						},
+					"addorder31": {
+						"list-name": "3. order",
+						"display-text": "Filter- 3. sort with [i]{1}[/i] order by key [i]{0}[/i]",
+						"description": "Order items.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"order5": { "name":"Order", "desc":"Order of items.", "items":{"descending":"descending","ascending":"ascending","logical descending":"logical descending","logical ascending":"logical ascending"}}
+						}
+						}
+				},
+				"actions": {
+					"ınsertcsv1": {
+						"list-name": "Insert CSV data",
+						"display-text": "Insert data to [i]{0}[/i] (CSV format with eval mode to [i]{1}[/i], delimiter to [i]{2}[/i])",
+						"description": "Insert data from CSV string.",
+						"params": {
+							"csv_string0": { "name":"CSV string", "desc":"The CSV string for inserting."},
+							"eval3": { "name":"Eval", "desc":"Eval the string.", "items":{"no":"No","yes":"Yes"}},
+							"delimiter4": { "name":"Delimiter", "desc":"Delimiter for splitting items."}
+						}
+					},
+					"ınsertjson2": {
+						"list-name": "Insert JSON data",
+						"display-text": "Insert data to [i]{0}[/i] (JSON format)",
+						"description": "Insert data from JSON string.",
+						"params": {
+							"json_string0": { "name":"JSON string", "desc":"The JSON string for inserting."}
+						}
+					},
+					"removeall3": {
+						"list-name": "Remove all",
+						"display-text": "Remove all rows",
+						"description": "Remove all rows."
+					},
+					"setındexkeys4": {
+						"list-name": "Set index keys",
+						"display-text": "Set index keys to [i]{0}[/i]",
+						"description": "Set index keys.",
+						"params": {
+							"keys0": { "name":"Keys", "desc":"Index keys, separated by \",\""}
+						}
+					},
+					"removebyrowıd5": {
+						"list-name": "Remove by row ID",
+						"display-text": "Remove row by row ID: [i]{0}[/i]",
+						"description": "Remove row by row ID.",
+						"params": {
+							"row_ıd0": { "name":"Row ID", "desc":"Row ID"}
+						}
+					},
+					"removebyrowındex6": {
+						"list-name": "Remove by row index",
+						"display-text": "Remove row by row index to [i]{0}[/i]",
+						"description": "Remove row by row index.",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Index of queried rows."}
+						}
+					},
+					"setvalue11": {
+						"list-name": "Set value",
+						"display-text": "Prepare- Set key [i]{0}[/i] to [i]{1}[/i] [i]{2}[/i]",
+						"description": "Set value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."},
+							"condition5": { "name":"Condition", "desc":"Set value if new value is greater or less then old value.", "items":{"":"","if greater":"if greater","if less":"if less"}}
+						}
+					},
+					"setbooleanvalue12": {
+						"list-name": "Set boolean value",
+						"display-text": "Prepare- Set key [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Set boolean value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"False","true":"True"}}
+						}
+					},
+					"save13": {
+						"list-name": "Save",
+						"display-text": "Save- Save prepared item",
+						"description": "Save prepared item into server."
+					},
+					"updatequeriedrows14": {
+						"list-name": "Update value",
+						"display-text": "Update key [i]{0}[/i] to [i]{1}[/i] in all queried rows",
+						"description": "Update queried rows.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"updatequeriedrows_booleanvalue15": {
+						"list-name": "Update boolean value",
+						"display-text": "Update key [i]{0}[/i] to [i]{1}[/i] in all queried rows",
+						"description": "Update queried rows.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"False","true":"True"}}
+						}
+					},
+					"setrowıd16": {
+						"list-name": "Set row ID",
+						"display-text": "Prepare- Set row ID to [i]{0}[/i]",
+						"description": "Set row ID.",
+						"params": {
+							"row_ıd0": { "name":"Row ID", "desc":"Row ID"}
+						}
+					},
+					"setrowındex17": {
+						"list-name": "Set row index",
+						"display-text": "Prepare- Set index of queried rows to [i]{0}[/i]",
+						"description": "Convert index of queried rows to row ID for saving. Append row if row ID had not found.",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Index of queried rows."}
+						}
+					},
+					"ıncvalue18": {
+						"list-name": "Add to",
+						"display-text": "Prepare- Add [i]{1}[/i] to key [i]{0}[/i]",
+						"description": "Add value to key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"setjson19": {
+						"list-name": "Set JSON",
+						"display-text": "Prepare- Set JSON [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Set JSON value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"json1": { "name":"JSON", "desc":"The JSON value to set."}
+						}
+					},
+					"newfilters21": {
+						"list-name": "1. New",
+						"display-text": "Filter- 1. Create a new row filter",
+						"description": "Create a new row filter."
+					},
+					"addvaluecomparsion22": {
+						"list-name": "2. value compare",
+						"display-text": "Filter- 2. key [i]{0}[/i]: value is [i]{1}[/i] [i]{2}[/i]",
+						"description": "Add a value compared for this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"conditions7": { "name":"Conditions", "desc":"Condition type.", "items":{"equal to":"equal to","not equal to":"not equal to","greater than":"greater than","less than":"less than","greater than or equal to":"greater than or equal to","less than or equal to":"less than or equal to"}},
+							"value8": { "name":"Value", "desc":"The value to comparsion, could be number or string."}
+						}
+					},
+					"addbooleanvaluecomparsion23": {
+						"list-name": "2. boolean value compare",
+						"display-text": "Filter- 2. key [i]{0}[/i]: value is [i]{1}[/i]",
+						"description": "Add a boolean value compared for this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"compared_value3": { "name":"Compared value", "desc":"Compared value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"addvalueınclude24": {
+						"list-name": "2. value include",
+						"display-text": "Filter- 2. key [i]{0}[/i]: value include [i]{1}[/i]",
+						"description": "Add a value including of this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"addregextest25": {
+						"list-name": "2. regex matched",
+						"display-text": "Filter- 2. key [i]{0}[/i]: regex matched with regex [i]{1}[/i], flags [i]{2}[/i]",
+						"description": "Add a regex matched for this key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"regex1": { "name":"Regex", "desc":"Test string with regular expression."},
+							"flags2": { "name":"Flags", "desc":"Test flags with regular expression."}
+						}
+					},
+					"addorder31": {
+						"list-name": "3. order",
+						"display-text": "Filter- 3. sort with [i]{1}[/i] order by key [i]{0}[/i]",
+						"description": "Order items.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"order5": { "name":"Order", "desc":"Order of items.", "items":{"descending":"descending","ascending":"ascending","logical descending":"logical descending","logical ascending":"logical ascending"}}
+						}
+					},
+					"removequeriedrows101": {
+						"list-name": "Remove queried rows",
+						"display-text": "Remove- remove queried rows",
+						"description": "Remove queried rows."
+					},
+					"ınsertcsv_definetype200": {
+						"list-name": "Define type",
+						"display-text": "Define key [i]{0}[/i] to [i]{1}[/i] type",
+						"description": "Define value type of a key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"type4": { "name":"Type", "desc":"Type.", "items":{"string":"string","number":"number","any (eval)":"any (eval)"}}
+						}
+					},
+					"linktodatabase211": {
+						"list-name": "Link to database",
+						"display-text": "Link to database [i]{0}[/i]",
+						"description": "Link to database.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Database reference. Sets \"\" to be a private database."}
+						}
+					}
+				},
+				"expressions": {
+					"at1": {
+						"description": "Get value from current database. Add index keys then add 1 data key. Add an optional default value at the last.",
+						"translated-name": "At"
+						},
+					"currowcontent2": {
+						"description": "Get current row content in JSON string in a For Each loop. Add 1st parameter to get value at the specific key. Add 2nd parameter for default value if this key is not existed.",
+						"translated-name": "CurRowContent"
+						},
+					"ındex2queriedrowcontent3": {
+						"description": "Get queried rows content by index in JSON format. Add 2nd parameter to get value at the specific key. Add 3rd parameter for default value if this key is not existed.",
+						"translated-name": "Index2QueriedRowContent",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Index of queried rows."}
+						}
+						},
+					"queriedrowscount4": {
+						"description": "Get current queried rows count.",
+						"translated-name": "QueriedRowsCount"
+						},
+					"queriedsum5": {
+						"description": "Get sum in current queried rows of a key.",
+						"translated-name": "QueriedSum",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+						},
+					"queriedmin6": {
+						"description": "Get min in current queried rows of a key.",
+						"translated-name": "QueriedMin",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+						},
+					"queriedmax7": {
+						"description": "Get max in current queried rows of a key.",
+						"translated-name": "QueriedMax",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+						},
+					"queriedrowsasjson8": {
+						"description": "Get JSON string of queried rows.",
+						"translated-name": "QueriedRowsAsJSON"
+						},
+					"keyrowıd9": {
+						"description": "Get key name of row ID.",
+						"translated-name": "KeyRowID"
+						},
+					"lastsavedrowıd10": {
+						"description": "Get last saved row ID.",
+						"translated-name": "LastSavedRowID"
+						},
+					"ıd2rowcontent11": {
+						"description": "Get rows content by row ID in JSON format. Add 2nd parameter to get value at the specific key. Add 3rd parameter for default value if this key is not existed.",
+						"translated-name": "ID2RowContent",
+						"params": {
+							"row_ıd0": { "name":"Row ID", "desc":"Row ID."}
+						}
+						},
+					"queriedrowsındex2rowıd12": {
+						"description": "Get rowID by Index of queried rows. Return \"\" if the specific row had not existed.",
+						"translated-name": "QueriedRowsIndex2RowID",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Index of queried rows."}
+						}
+						},
+					"currowındex13": {
+						"description": "Get index oif current row in a For Each loop.",
+						"translated-name": "CurRowIndex"
+						},
+					"currowıd14": {
+						"description": "Get current rowID in a For Each loop.",
+						"translated-name": "CurRowID"
+						},
+					"ındex2queriedrowıd15": {
+						"description": "Get rowID by Index of queried rows. Return \"\" if the specific row had not existed.",
+						"translated-name": "Index2QueriedRowID",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Index of queried rows."}
+						}
+						},
+					"allrowsasjson101": {
+						"description": "Get JSON string of all rows.",
+						"translated-name": "AllRowsAsJSON"
+						},
+					"allrowscount102": {
+						"description": "Get count of all rows.",
+						"translated-name": "AllRowsCount"
+						},
+					"databasename211": {
+						"description": "Get current linked database name.",
+						"translated-name": "DatabaseName"
+						}
+				}
+			}
+		}
+	}
+}
