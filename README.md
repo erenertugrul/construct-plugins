@@ -17,7 +17,7 @@
 <tbody>
 
 <td style="text-align:center">image_to_base64</td>
-<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/plugins/raw/master/image_to_base64/c3/dist/image_base64_v1.1.c3addon">image_base64.c3addon</a></td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/image_to_base64/c3/dist/image_base64_v1.1.c3addon">image_base64.c3addon</a></td>
 <td style="text-align:right">:soon:</td>
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
@@ -26,14 +26,14 @@
 <tbody>
 <tr>
 <td>imgur_uploader</td>
-<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/plugins/raw/master/imgur_uploader/c3/dist/imgur_uploader_v1.c3addon">imgur_uploader.c3addon</a></td>
-<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/plugins/raw/master/imgur_uploader/c2/dist/imgur_uploader_v1.c2addon">imgur_uploader.c2addon</a></td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/imgur_uploader/c3/dist/imgur_uploader_v1.c3addon">imgur_uploader.c3addon</a></td>
+<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/imgur_uploader/c2/dist/imgur_uploader_v1.c2addon">imgur_uploader.c2addon</a></td>
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
 <tr>
 <td>notifier</td>
-<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/plugins/raw/master/notifier/c3/dist/notifier_v1.2.c3addon">notifier.c3addon</a></td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/notifier/c3/dist/notifier_v1.2.c3addon">notifier.c3addon</a></td>
 <td style="text-align:right">:soon:</td>
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
