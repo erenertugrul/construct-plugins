@@ -70,7 +70,7 @@
 <tbody>
 <tr>
 
-<td>lg_shake</td>behaviors/
+<td>lg_shake</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/lg_shake/c3/dist/lg_shake.c3addon">lg_shake.c3addon</a></td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
