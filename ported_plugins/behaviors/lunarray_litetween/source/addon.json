@@ -1,0 +1,32 @@
+﻿{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "LiteTween",
+	"id": "lunarray_LiteTween",
+	"version": "1.7",
+	"author": "lunarray",
+	"website": "https://www.scirra.com/forum/behavior-litetween_t70700",
+	"documentation": "https://www.scirra.com/forum/behavior-litetween_t70700",
+	"description": "Tween an object's position, size, angle or other properties using an easing function.",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c3runtime/behavior.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.svg",
+		"instance.js",
+		"behavior.js",
+		"type.js"
+	]
+}

@@ -1,0 +1,174 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for RotateTo.",
+	"text": {
+		"behaviors": {
+			"rex_rotateto": {
+				"name": "RotateTo",
+				"description": "Spin sprite to specific angle",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_rotateto.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"max-speed": {
+						"name": "Max speed",
+						"desc": "Maximum speed, in degree per second."
+						},
+					"acceleration": {
+						"name": "Acceleration",
+						"desc": "Acceleration, in degree per second per second."
+						},
+					"deceleration": {
+						"name": "Deceleration",
+						"desc": "Deceleration, in degree per second per second."
+						}
+				},
+				"aceCategories": {
+					"speed": "Speed",
+					"target_angle": "Target angle",
+					"stop": "Stop",
+					"target": "Target",
+					"current": "Current",
+					"setting": "Setting"
+				},
+				"conditions": {
+					"onhittarget0": {
+						"list-name": "On hit target angle",
+						"display-text": "On {my} hit angle",
+						"description": "Triggered when hit target angle."
+						},
+					"comparespeed1": {
+						"list-name": "Compare speed",
+						"display-text": "{my} speed {0} {1}",
+						"description": "Compare the current speed of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current speed."},
+							"speed1": { "name":"Speed", "desc":"The speed, in degree per second, to compare the current speed to."}
+						}
+						},
+					"ısrotating3": {
+						"list-name": "Is rotating",
+						"display-text": "Is {my} rotating",
+						"description": "Is object rotating."
+						}
+				},
+				"actions": {
+					"setactivated0": {
+						"list-name": "Set enable",
+						"display-text": "Set {my} enable to [i]{0}[/i]",
+						"description": "Enable the object's RotateTo behavior.",
+						"params": {
+							"activated2": { "name":"Activated", "desc":"Enable the behavior.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"setmaxspeed1": {
+						"list-name": "Set maximum speed",
+						"display-text": "Set {my} maximum speed to [i]{0}[/i]",
+						"description": "Set the object's maximum speed.",
+						"params": {
+							"max_speed0": { "name":"Max speed", "desc":"Maximum speed, in degree per second."}
+						}
+					},
+					"setacceleration2": {
+						"list-name": "Set acceleration",
+						"display-text": "Set {my} acceleration to [i]{0}[/i]",
+						"description": "Set the object's acceleration.",
+						"params": {
+							"acceleration0": { "name":"Acceleration", "desc":"The acceleration setting, in degree per second per second."}
+						}
+					},
+					"setdeceleration3": {
+						"list-name": "Set deceleration",
+						"display-text": "Set {my} deceleration to [i]{0}[/i]",
+						"description": "Set the object's deceleration.",
+						"params": {
+							"deceleration0": { "name":"Deceleration", "desc":"The deceleration setting, in degrees per second per second."}
+						}
+					},
+					"settargetangle4": {
+						"list-name": "Rotate to angle",
+						"display-text": "Set {my} target angle to [i]{0}[/i], [i]{1}[/i]",
+						"description": "Set target angle to rotate toward.",
+						"params": {
+							"angle0": { "name":"Angle", "desc":"The angle to rotate toward."},
+							"clockwise4": { "name":"Clockwise", "desc":"Rotate clockwise or anti-clockwise.", "items":{"anti-clockwise":"Anti-Clockwise","clockwise":"Clockwise","nearest side":"Nearest side"}}
+						}
+					},
+					"setcurrentspeed5": {
+						"list-name": "Set current speed",
+						"display-text": "Set {my} current speed to [i]{0}[/i]",
+						"description": "Set the object's Current speed.",
+						"params": {
+							"current_speed0": { "name":"Current speed", "desc":"Current speed, in degree per second."}
+						}
+					},
+					"settargetangleonobject6": {
+						"list-name": "Rotate to object",
+						"display-text": "Set {my} target angle to [i]{0}[/i], [i]{1}[/i]",
+						"description": "Set target angle to rotate toward.",
+						"params": {
+							"target0": { "name":"Target", "desc":"Target object."},
+							"clockwise4": { "name":"Clockwise", "desc":"Rotate clockwise or anti-clockwise.", "items":{"anti-clockwise":"Anti-Clockwise","clockwise":"Clockwise","nearest side":"Nearest side"}}
+						}
+					},
+					"settargetanglebydeltaangle7": {
+						"list-name": "Rotate by delta angle",
+						"display-text": "Set {my} target angle by delta [i]{0}[/i],  [i]{1}[/i]",
+						"description": "Set target angle to rotate toward by delta angle.",
+						"params": {
+							"da0": { "name":"dA", "desc":"The delta angle to rotate toward, in degree."},
+							"clockwise4": { "name":"Clockwise", "desc":"Rotate clockwise or anti-clockwise.", "items":{"anti-clockwise":"Anti-Clockwise","clockwise":"Clockwise","nearest side":"Nearest side"}}
+						}
+					},
+					"settargetangletopos8": {
+						"list-name": "Rotate toward to position",
+						"display-text": "Set {my} target angle toward to ([i]{0}[/i], [i]{1}[/i]), [i]{2}[/i]",
+						"description": "Set target angle toward to position.",
+						"params": {
+							"x0": { "name":"X", "desc":"X co-ordinate of target position."},
+							"y1": { "name":"Y", "desc":"Y co-ordinate of target position."},
+							"clockwise5": { "name":"Clockwise", "desc":"Rotate clockwise or anti-clockwise.", "items":{"anti-clockwise":"Anti-Clockwise","clockwise":"Clockwise","nearest side":"Nearest side"}}
+						}
+					},
+					"stop9": {
+						"list-name": "Stop",
+						"display-text": "{my} stop",
+						"description": "Stop moving."
+					}
+				},
+				"expressions": {
+					"activated0": {
+						"description": "The current activated state of behavior.",
+						"translated-name": "Activated"
+						},
+					"speed1": {
+						"description": "The current object speed, in degree per second.",
+						"translated-name": "Speed"
+						},
+					"maxspeed2": {
+						"description": "The maximum speed setting, in degree per second.",
+						"translated-name": "MaxSpeed"
+						},
+					"acc3": {
+						"description": "The acceleration setting, in degree per second per second.",
+						"translated-name": "Acc"
+						},
+					"dec4": {
+						"description": "The deceleration setting, in degree per second per second.",
+						"translated-name": "Dec"
+						},
+					"targetangle5": {
+						"description": "The angle to spin toward.",
+						"translated-name": "TargetAngle"
+						}
+				}
+			}
+		}
+	}
+}

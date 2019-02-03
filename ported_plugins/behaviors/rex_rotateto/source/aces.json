@@ -1,0 +1,221 @@
+{
+	"": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "ısrotating3",
+				"scriptName": "IsRotating",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setactivated0",
+				"scriptName": "SetActivated",
+				"highlight": false,
+				"params": [
+					{"id":"activated2", "type":"combo", "items":["no","yes"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"speed": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "comparespeed1",
+				"scriptName": "CompareSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"speed1", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setmaxspeed1",
+				"scriptName": "SetMaxSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"max_speed0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setacceleration2",
+				"scriptName": "SetAcceleration",
+				"highlight": false,
+				"params": [
+					{"id":"acceleration0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "setdeceleration3",
+				"scriptName": "SetDeceleration",
+				"highlight": false,
+				"params": [
+					{"id":"deceleration0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "setcurrentspeed5",
+				"scriptName": "SetCurrentSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"current_speed0", "type":"number", "initialValue":"180"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"target_angle": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "settargetangle4",
+				"scriptName": "SetTargetAngle",
+				"highlight": false,
+				"params": [
+					{"id":"angle0", "type":"number"},
+					{"id":"clockwise4", "type":"combo", "items":["anti-clockwise","clockwise","nearest side"]}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "settargetangleonobject6",
+				"scriptName": "SetTargetAngleOnObject",
+				"highlight": false,
+				"params": [
+					{"id":"target0", "type":"object"},
+					{"id":"clockwise4", "type":"combo", "items":["anti-clockwise","clockwise","nearest side"]}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "settargetanglebydeltaangle7",
+				"scriptName": "SetTargetAngleByDeltaAngle",
+				"highlight": false,
+				"params": [
+					{"id":"da0", "type":"number", "initialValue":"0"},
+					{"id":"clockwise4", "type":"combo", "items":["anti-clockwise","clockwise","nearest side"]}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "settargetangletopos8",
+				"scriptName": "SetTargetAngleToPos",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"},
+					{"id":"clockwise5", "type":"combo", "items":["anti-clockwise","clockwise","nearest side"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"stop": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 9,
+				"id": "stop9",
+				"scriptName": "Stop",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"target": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onhittarget0",
+				"scriptName": "OnHitTarget",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 5,
+				"id": "targetangle5",
+				"expressionName": "TargetAngle",
+				"scriptName": "TargetAngle",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"current": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "activated0",
+				"expressionName": "Activated",
+				"scriptName": "Activated",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 1,
+				"id": "speed1",
+				"expressionName": "Speed",
+				"scriptName": "Speed",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"setting": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "maxspeed2",
+				"expressionName": "MaxSpeed",
+				"scriptName": "MaxSpeed",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "acc3",
+				"expressionName": "Acc",
+				"scriptName": "Acc",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "dec4",
+				"expressionName": "Dec",
+				"scriptName": "Dec",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

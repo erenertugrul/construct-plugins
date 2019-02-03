@@ -1,0 +1,346 @@
+﻿{
+	"": {
+		"conditions": [
+			{
+				"id": "is-active",
+				"c2id": 0,
+				"scriptName": "IsActive"
+			},
+			{
+				"id": "compare-progress",
+				"c2id": 1,
+				"scriptName": "CompareProgress",
+				"params": [
+					{ "id": "comparison", "type": "cmp" },
+					{ "id": "value", "type": "number" }
+				]
+			},
+			{
+				"id": "on-tween-start",
+				"c2id": 2,
+				"isTrigger": true,
+				"scriptName": "OnStart"
+			},
+			{
+				"id": "on-tween-end",
+				"c2id": 4,
+				"isTrigger": true,
+				"scriptName": "OnEnd"
+			},
+			{
+				"id": "on-tween-reverse-start",
+				"c2id": 5,
+				"isTrigger": true,
+				"scriptName": "OnReverseStart"
+			},
+			{
+				"id": "on-tween-reverse-end",
+				"c2id": 6,
+				"isTrigger": true,
+				"scriptName": "OnReverseEnd"
+			},
+			{
+				"id": "is-reversing",
+				"c2id": 7,
+				"scriptName": "IsReversing"
+			},
+			{
+				"id": "on-threshold",
+				"c2id": 8,
+				"isFakeTrigger": true,
+				"scriptName": "OnThreshold",
+				"params": [
+					{ "id": "comparison", "type": "cmp" },
+					{ "id": "value", "type": "number" }
+				]
+			}
+		],
+		"expressions": [
+			{
+				"id": "get-progress",
+				"c2id": 0,
+				"expressionName": "Progress",
+				"scriptName": "Progress",
+				"returnType": "number"
+			},
+			{
+				"id": "get-value",
+				"c2id": 1,
+				"expressionName": "Value",
+				"scriptName": "Value",
+				"returnType": "number"
+			},
+			{
+				"id": "get-target",
+				"c2id": 2,
+				"expressionName": "Target",
+				"scriptName": "Target",
+				"returnType": "number"
+			},
+			{
+				"id": "get-duration",
+				"c2id": 3,
+				"expressionName": "Duration",
+				"scriptName": "Duration",
+				"returnType": "number"
+			},
+			{
+				"id": "get-state",
+				"c2id": 4,
+				"expressionName": "State",
+				"scriptName": "State",
+				"returnType": "string"
+			},
+			{
+				"id": "get-tween",
+				"c2id": 5,
+				"expressionName": "Tween",
+				"scriptName": "Tween",
+				"returnType": "number",
+				"params": [
+					{
+						"id": "a",
+						"type": "number"
+					},
+					{
+						"id": "b",
+						"type": "number"
+					},
+					{
+						"id": "x",
+						"type": "number"
+					},
+					{
+						"id": "type",
+						"type": "number"
+					}
+				]
+			}
+		]
+	},
+	"parameter": {
+		"actions": [
+			{
+				"id": "set-duration",
+				"c2id": 1,
+				"scriptName": "SetDuration",
+				"params": [
+					{ "id": "duration", "type": "number" }
+				]
+			},
+			{
+				"id": "set-target",
+				"c2id": 3,
+				"scriptName": "SetTarget",
+				"params": [
+					{
+						"id": "target-is",
+						"type": "combo",
+						"initialValue": "x",
+						"items": ["x", "y", "angle", "opacity", "width-scale-x", "height-scale-y", "value"]
+					},
+					{
+						"id": "relativity",
+						"type": "combo",
+						"initialValue": "absolute",
+						"items": ["absolute", "relative"]
+					},
+					{ "id": "value", "type": "number" }
+				]
+			},
+			{
+				"id": "set-tweened-property",
+				"c2id": 4,
+				"scriptName": "SetTweenedProperty",
+				"params": [
+					{
+						"id": "tweened-property",
+						"type": "combo",
+						"initialValue": "position",
+						"items": ["position", "size-pixel", "width", "height", "angle", "opacity", "value", "horizontal", "vertical", "scale"]
+					}
+				]
+			},
+			{
+				"id": "set-easing",
+				"c2id": 5,
+				"scriptName": "SetEasing",
+				"params": [
+					{
+						"id": "easing-function",
+						"type": "combo",
+						"initialValue": "linear",
+						"items": ["linear", "easeinquad", "easeoutquad", "easeinoutquad", 
+						"easeincubic", "easeoutcubic", "easeinoutcubic", "easeinquart", 
+						"easeoutquart", "easeinoutquart", "easeinquint", "easeoutquint", 
+						"easeinoutquint", "easeincircle", "easeoutcircle", "easeinoutcircle", 
+						"easeinback", "easeoutback", "easeinoutback", "easeinelastic", 
+						"easeoutelastic", "easeinoutelastic", "easeinbounce", "easeoutbounce", 
+						"easeinoutbounce", "easeinsmoothstep", "easeoutsmoothstep", "easeinoutsmoothstep"]
+					}
+				]
+			},
+			{
+				"id": "set-enforce",
+				"c2id": 6,
+				"scriptName": "SetEnforce",
+				"params": [
+					{
+						"id": "enforce-mode",
+						"type": "combo",
+						"initialValue": "compromise",
+						"items": ["compromise", "enforce"]
+					}
+				]
+			},
+			{
+				"id": "set-value",
+				"c2id": 16,
+				"scriptName": "SetValue",
+				"params": [
+					{ "id": "value", "type": "number" }
+				]
+			},
+			{
+				"id": "set-easing-parameter",
+				"c2id": 27,
+				"scriptName": "SetEasingParam",
+				"params": [
+					{
+						"id": "easing-function",
+						"type": "combo",
+						"initialValue": "linear",
+						"items": ["linear", "easeinquad", "easeoutquad", "easeinoutquad", 
+						"easeincubic", "easeoutcubic", "easeinoutcubic", "easeinquart", 
+						"easeoutquart", "easeinoutquart", "easeinquint", "easeoutquint", 
+						"easeinoutquint", "easeincircle", "easeoutcircle", "easeinoutcircle", 
+						"easeinback", "easeoutback", "easeinoutback", "easeinelastic", 
+						"easeoutelastic", "easeinoutelastic", "easeinbounce", "easeoutbounce", 
+						"easeinoutbounce", "easeinsmoothstep", "easeoutsmoothstep", "easeinoutsmoothstep"]
+					},
+					{
+						"id": "arguments-a",
+						"type": "number"
+					},
+					{
+						"id": "arguments-p",
+						"type": "number"
+					},
+					{
+						"id": "arguments-t",
+						"type": "number"
+					},
+					{
+						"id": "arguments-s",
+						"type": "number"
+					}
+				]
+			},
+			{
+				"id": "reset-easing-parameter",
+				"c2id": 28,
+				"scriptName": "ResetEasingParam"
+			}
+		]
+	},
+	"playback-control": {
+		"actions": [
+			{
+				"id": "start",
+				"c2id": 10,
+				"scriptName": "Start",
+				"params": [
+					{
+						"id": "start-mode",
+						"type": "combo",
+						"initialValue": "start-from-the-beginning",
+						"items": ["start-from-the-beginning", "resume-at-current-progress", "ping-pong", "loop", "flip-flop"]
+					},
+					{
+						"id": "force-use-current",
+						"type": "combo",
+						"initialValue": "start-from-last-recorded",
+						"items": ["start-from-last-recorded", "start-from-current"]
+					}
+				]
+			},
+			{
+				"id": "reverse",
+				"c2id": 11,
+				"scriptName": "Reverse",
+				"params": [
+					{
+						"id": "reverse-mode",
+						"type": "combo",
+						"initialValue": "reverse-from-current",
+						"items": ["reverse-from-current", "reverse-from-the-end"]
+					}
+				]
+			},
+			{
+				"id": "stop",
+				"c2id": 14,
+				"scriptName": "Stop",
+				"params": [
+					{
+						"id": "stop-mode",
+						"type": "combo",
+						"initialValue": "pause-at-current-position",
+						"items": ["pause-at-current-position", "stop-at-tween-start", "stop-at-tween-target"]
+					}
+				]
+			},
+			{
+				"id": "seek",
+				"c2id": 15,
+				"scriptName": "ProgressTo",
+				"params": [
+					{ "id": "seek-to", "type": "number" }
+				]
+			}
+		]
+	},
+	"tween-management": {
+		"actions": [
+			{
+				"id": "create-initialize-tween",
+				"c2id": 26,
+				"scriptName": "SetParameter",
+				"params": [
+					{
+						"id": "tweened-property",
+						"type": "combo",
+						"initialValue": "position",
+						"items": ["position", "size-pixel", "width", "height", "angle", "opacity", "value", "horizontal", "vertical", "scale"]
+					},
+					{
+						"id": "easing-function",
+						"type": "combo",
+						"initialValue": "linear",
+						"items": ["linear", "easeinquad", "easeoutquad", "easeinoutquad", 
+						"easeincubic", "easeoutcubic", "easeinoutcubic", "easeinquart", 
+						"easeoutquart", "easeinoutquart", "easeinquint", "easeoutquint", 
+						"easeinoutquint", "easeincircle", "easeoutcircle", "easeinoutcircle", 
+						"easeinback", "easeoutback", "easeinoutback", "easeinelastic", 
+						"easeoutelastic", "easeinoutelastic", "easeinbounce", "easeoutbounce", 
+						"easeinoutbounce", "easeinsmoothstep", "easeoutsmoothstep", "easeinoutsmoothstep"]
+					},
+					{ 
+						"id": "target",
+						"type": "string"
+					},
+					{
+						"id": "duration",
+						"type": "number"
+					},
+					{
+						"id": "enforce-mode",
+						"type": "combo",
+						"initialValue": "compromise",
+						"items": ["compromise", "enforce"]
+					}
+				]
+			}
+		]
+	}
+}
