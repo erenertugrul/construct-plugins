@@ -214,12 +214,16 @@ cr.plugins_.imgur_upload = function(runtime)
 	Acts.prototype.sp_upload = function (obj)
 	{
 		var imageDataUri = null;
-		if (obj)
+		var inst = obj.getFirstPicked();
+		if (inst)
 		{
-			var inst = obj.getFirstPicked();
-			if (!inst || !inst.curFrame)
-				return;
 			var frame = inst.curFrame;
+			imageDataUri = frame.getDataUri();
+		}
+		else{
+			var _layer = this.runtime.getLayerByNumber(0);
+			var a = this.runtime.createInstance(obj, _layer, -500, -500);
+			var frame = a.curFrame;
 			imageDataUri = frame.getDataUri();
 		}
 		fetch('https://api.imgur.com/3/image', {

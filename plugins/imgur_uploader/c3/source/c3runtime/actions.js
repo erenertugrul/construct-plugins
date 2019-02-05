@@ -102,6 +102,35 @@
 				request()
 				});
 			}
+			else{
+				var a = this._runtime.CreateInstance(obj, 0, -500, -500);
+				var d = a.GetCurrentImageInfo();
+				d && d.ExtractImageToCanvas().then((d) => {
+					c = d.toDataURL("image/png");
+					im = c.substring(22,c.length);
+					const request = async () => {
+					    const response = await fetch("https://api.imgur.com/3/image",{
+													method: "POST",
+													mode: "cors",
+													headers: {
+													"Authorization": "Client-ID "+this.client_id
+													},
+													body: im
+												});
+						const json = await response["json"]();
+						if (json.status == "200"){
+							image_link = json["data"]["link"];
+							delete_hash = json["data"]["deletehash"];
+							await this.TriggerAsync(C3.Plugins.imgur_upload.Cnds.on_url_upload)
+						}
+						else{
+							any_error = json["data"]["error"];
+							await this.TriggerAsync(C3.Plugins.imgur_upload.Cnds.error_upload);
+						}
+					}
+				request()
+				});
+			}
 		},
 		img_delete(url)		
 		{

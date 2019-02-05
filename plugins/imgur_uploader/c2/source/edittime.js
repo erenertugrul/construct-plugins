@@ -3,7 +3,7 @@
 	return {
 		"name":			"imgur",
 		"id":			"imgur_upload",
-		"version":		"1.0",
+		"version":		"1.1",
 		"description":	"imgur simple image uploader",
 		"author":		"Eren Ertugrul",
 		"help url":		"https://oyunkulturu.com",
