@@ -26,8 +26,8 @@
 <tbody>
 <tr>
 <td>imgur_uploader</td>
-<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/imgur_uploader/c3/dist/imgur_uploader_v1.c3addon">imgur_uploader.c3addon</a></td>
-<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/imgur_uploader/c2/dist/imgur_uploader_v1.c2addon">imgur_uploader.c2addon</a></td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/imgur_uploader/c3/dist/imgur_uploader_v1.1.c3addon">imgur_uploader.c3addon</a></td>
+<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/imgur_uploader/c2/dist/imgur_uploader_v1.1.c2addon">imgur_uploader.c2addon</a></td>
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
