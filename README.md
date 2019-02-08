@@ -135,6 +135,16 @@
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
 </tbody>
+<tbody>
+<tr>
+  <td>sweet alert 2</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/sweet%20alert%202/dist/sweetalert2.c3addon">sweetalert2.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
 <!--- 
 <tbody>
 <tr>
