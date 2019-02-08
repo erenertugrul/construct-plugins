@@ -1,0 +1,286 @@
+{
+	"open": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "close3",
+				"scriptName": "Close",
+				"highlight": false
+			},
+			{
+				"c2id": 0,
+				"id": "ınput0",
+				"scriptName": "Input",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"message_type7", "type":"combo", "items":["normal","success","error","warning","ınfo","question"]},
+					{"id":"title8", "type":"string"},
+					{"id":"text9", "type":"string"},
+					{"id":"button_confirm10", "type":"string"},
+					{"id":"button_cancel11", "type":"string"},
+					{"id":"allow_cancel_with_escape_key14", "type":"combo", "items":["false","true"]},
+					{"id":"allow_cancel_with_outside_click17", "type":"combo", "items":["false","true"]},
+					{"id":"error_message20", "type":"combo", "items":["false","true"]},
+					{"id":"ınput_n21", "type":"variadic"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "radio1",
+				"scriptName": "Radio",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"message_type7", "type":"combo", "items":["normal","success","error","warning","ınfo","question"]},
+					{"id":"title8", "type":"string"},
+					{"id":"text9", "type":"string"},
+					{"id":"button_confirm10", "type":"string"},
+					{"id":"button_cancel11", "type":"string"},
+					{"id":"allow_cancel_with_escape_key14", "type":"combo", "items":["false","true"]},
+					{"id":"allow_cancel_with_outside_click17", "type":"combo", "items":["false","true"]},
+					{"id":"error_message20", "type":"combo", "items":["false","true"]},
+					{"id":"ınput_n21", "type":"variadic"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "timer2",
+				"scriptName": "Timer",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"message_type7", "type":"combo", "items":["normal","success","error","warning","ınfo","question"]},
+					{"id":"title8", "type":"string"},
+					{"id":"text9", "type":"string"},
+					{"id":"allow_cancel_with_escape_key12", "type":"combo", "items":["false","true"]},
+					{"id":"allow_cancel_with_outside_click15", "type":"combo", "items":["false","true"]},
+					{"id":"timer16", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "progress4",
+				"scriptName": "Progress",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"button_cancel1", "type":"string"},
+					{"id":"button_back2", "type":"string"},
+					{"id":"button_next3", "type":"string"},
+					{"id":"button_confirm4", "type":"string"},
+					{"id":"allow_cancel_with_escape_key7", "type":"combo", "items":["false","true"]},
+					{"id":"allow_cancel_with_outside_click10", "type":"combo", "items":["false","true"]},
+					{"id":"html_n11", "type":"variadic"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"appearance": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 5,
+				"id": "style5",
+				"scriptName": "Style",
+				"highlight": false,
+				"params": [
+					{"id":"position9", "type":"combo", "items":["top","top-left","top-right","center","center-left","center-right","bottom","bottom-left","bottom-right"]},
+					{"id":"background10", "type":"string", "initialValue":"\"rgb(255, 255, 255)\""},
+					{"id":"color11", "type":"string", "initialValue":"\"rgb(56, 56, 56)\""},
+					{"id":"width12", "type":"string", "initialValue":"\"50%\""},
+					{"id":"ınvert_buttons_positions15", "type":"combo", "items":["false","true"]},
+					{"id":"cancel_background_color16", "type":"string", "initialValue":"\"rgb(160, 160, 160)\""},
+					{"id":"confirm_background_color17", "type":"string", "initialValue":"\"rgb(40, 120, 240)\""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "styleposition8",
+				"scriptName": "StylePosition",
+				"highlight": false,
+				"params": [
+					{"id":"position0", "type":"string", "initialValue":"\"center\""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "stylebackground9",
+				"scriptName": "StyleBackground",
+				"highlight": false,
+				"params": [
+					{"id":"background0", "type":"string", "initialValue":"\"rgb(255, 255, 255)\""}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "stylecolor10",
+				"scriptName": "StyleColor",
+				"highlight": false,
+				"params": [
+					{"id":"text_color0", "type":"string", "initialValue":"\"rgb(56, 56, 56)\""}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "stylewidth11",
+				"scriptName": "StyleWidth",
+				"highlight": false,
+				"params": [
+					{"id":"width0", "type":"string", "initialValue":"\"540px\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "styleınvert12",
+				"scriptName": "StyleInvert",
+				"highlight": false,
+				"params": [
+					{"id":"ınvert_buttons0", "type":"string", "initialValue":"\"false\""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "stylecancel13",
+				"scriptName": "StyleCancel",
+				"highlight": false,
+				"params": [
+					{"id":"cancel_background_color0", "type":"string", "initialValue":"\"rgb(160, 160, 160)\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "styleconfirm14",
+				"scriptName": "StyleConfirm",
+				"highlight": false,
+				"params": [
+					{"id":"confirm_background_color0", "type":"string", "initialValue":"\"rgb(40, 120, 240)\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"steps": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 7,
+				"id": "progressstepsclear7",
+				"scriptName": "ProgressStepsClear",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "progresssteps6",
+				"scriptName": "ProgressSteps",
+				"highlight": false,
+				"params": [
+					{"id":"error_message2", "type":"combo", "items":["false","true"]},
+					{"id":"ınput_n3", "type":"variadic"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"alert": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onclose0",
+				"scriptName": "OnClose",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "oncancel1",
+				"scriptName": "OnCancel",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "onconfirm2",
+				"scriptName": "OnConfirm",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "ısopen3",
+				"scriptName": "IsOpen",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "ontimeout4",
+				"scriptName": "OnTimeOut",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "onopen5",
+				"scriptName": "OnOpen",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "getlastvalue0",
+				"expressionName": "GetLastValue",
+				"scriptName": "GetLastValue",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 1,
+				"id": "getlastvalueat1",
+				"expressionName": "GetLastValueAt",
+				"scriptName": "GetLastValueAt",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"position0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "getcount2",
+				"expressionName": "GetCount",
+				"scriptName": "GetCount",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "gettag3",
+				"expressionName": "GetTag",
+				"scriptName": "GetTag",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

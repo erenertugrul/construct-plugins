@@ -1,0 +1,35 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Sweet Alert",
+	"id": "SweetAlert",
+	"version": "0.20.0.0",
+	"author": "PlayLive and Andrews Vinícius",
+	"website": "https://www.scirra.com/forum/plugin-sweetalert2_t181346?sid=7723b4cdd806cea1fa6138ac6ac4e3cc",
+	"documentation": "https://www.scirra.com/forum/plugin-sweetalert2_t181346?sid=7723b4cdd806cea1fa6138ac6ac4e3cc",
+	"description": "A beautiful and customizable replacement for javascript's popup boxes.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"SweetAlert.css",
+		"SweetAlert.js",
+		"jquery-1.6.3.min.js",
+		"c2runtime/runtime.js",
+		"c3runtime/plugin.js",
+		"c3runtime/actions.js",
+		"c3runtime/conditions.js",
+		"c3runtime/expressions.js",
+		"c3runtime/instance.js",
+		"c3runtime/type.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

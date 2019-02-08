@@ -1,0 +1,237 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Sweet Alert.",
+	"text": {
+		"plugins": {
+			"sweetalert": {
+				"name": "Sweet Alert",
+				"description": "A beautiful and customizable replacement for javascript's popup boxes.",
+				"help-url": "https://www.scirra.com/forum/plugin-sweetalert2_t181346?sid=7723b4cdd806cea1fa6138ac6ac4e3cc",
+				"properties": {
+				},
+				"aceCategories": {
+					"open": "Open",
+					"appearance": "Appearance",
+					"steps": "Steps",
+					"alert": "Alert"
+				},
+				"conditions": {
+					"onclose0": {
+						"list-name": "On Close",
+						"display-text": "On alert close",
+						"description": "Callback to execute when the alert was closed."
+						},
+					"oncancel1": {
+						"list-name": "On Cancel",
+						"display-text": "On alert cancel {0}",
+						"description": "Callback to execute when the cancel alert button is clicked.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different alert requests."}
+						}
+						},
+					"onconfirm2": {
+						"list-name": "On Confim",
+						"display-text": "On alert confim {0}",
+						"description": "Callback to execute when the confirm alert button is clicked.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different alert requests."}
+						}
+						},
+					"ısopen3": {
+						"list-name": "Is Open",
+						"display-text": "Is Open",
+						"description": "Check if the alert is open."
+						},
+					"ontimeout4": {
+						"list-name": "On Time Out",
+						"display-text": "On alert time out {0}",
+						"description": "Callback to execute when the alert was closed by time out.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different alert requests."}
+						}
+						},
+					"onopen5": {
+						"list-name": "On Open",
+						"display-text": "On alert open",
+						"description": "Callback to execute when the alert was opened."
+						}
+				},
+				"actions": {
+					"close3": {
+						"list-name": "Close",
+						"display-text": "Close",
+						"description": "Close alert."
+					},
+					"style5": {
+						"list-name": "Set style",
+						"display-text": "Set style { position: {0} | background: {1} | color: {2} | width: {3} | invert-buttons: {4} | cancel-color: {5} | confirm-color: {6} }",
+						"description": "Set a style on the control.",
+						"params": {
+							"position9": { "name":"Position", "desc":"Choose the alert position.", "items":{"top":"Top","top-left":"Top-Left","top-right":"Top-Right","center":"Center","center-left":"Center-Left","center-right":"Center-Right","bottom":"Bottom","bottom-left":"Bottom-Left","bottom-right":"Bottom-Right"}},
+							"background10": { "name":"Background", "desc":"Background color."},
+							"color11": { "name":"Color", "desc":"Text color."},
+							"width12": { "name":"Width", "desc":"Alert width."},
+							"ınvert_buttons_positions15": { "name":"Invert buttons positions", "desc":"Set to true if you want to invert default buttons positions (confirm-button on the left side).", "items":{"false":"false","true":"true"}},
+							"cancel_background_color16": { "name":"Cancel background color", "desc":"Cancel background color."},
+							"confirm_background_color17": { "name":"Confirm background color", "desc":"Confirm background color."}
+						}
+					},
+					"styleposition8": {
+						"list-name": "Position",
+						"display-text": "Set style { position: {0} }",
+						"description": "Choose the alert position.",
+						"params": {
+							"position0": { "name":"Position", "desc":"top | top-left | top-right | center | center-left | center-right | bottom | bottom-left | bottom-right"}
+						}
+					},
+					"stylebackground9": {
+						"list-name": "Background",
+						"display-text": "Set style { background: {0} }",
+						"description": "Set background color by CSS.",
+						"params": {
+							"background0": { "name":"Background", "desc":"Set background color by CSS."}
+						}
+					},
+					"stylecolor10": {
+						"list-name": "Color",
+						"display-text": "Set style { color: {0} }",
+						"description": "Set text color by CSS.",
+						"params": {
+							"text_color0": { "name":"Text color", "desc":"Set text color by CSS."}
+						}
+					},
+					"stylewidth11": {
+						"list-name": "Width",
+						"display-text": "Set style { width: {0} }",
+						"description": "Set width size by CSS.",
+						"params": {
+							"width0": { "name":"Width", "desc":"Set width size by CSS. (px or %)"}
+						}
+					},
+					"styleınvert12": {
+						"list-name": "Invert buttons",
+						"display-text": "Set style { invert-buttons: {0} }",
+						"description": "Set to true if you want to invert default buttons positions (confirm-button on the left side).",
+						"params": {
+							"ınvert_buttons0": { "name":"Invert buttons", "desc":"(\"true\" or \"false\") | (1 or 0)."}
+						}
+					},
+					"stylecancel13": {
+						"list-name": "Cancel",
+						"display-text": "Set style { cancel-color: {0} }",
+						"description": "Set cancel background color by CSS.",
+						"params": {
+							"cancel_background_color0": { "name":"Cancel background color", "desc":"Set cancel background color by CSS."}
+						}
+					},
+					"styleconfirm14": {
+						"list-name": "Confirm",
+						"display-text": "Set style { confirm-color: {0} }",
+						"description": "Set confirm background color by CSS.",
+						"params": {
+							"confirm_background_color0": { "name":"Confirm background color", "desc":"Set confirm background color by CSS."}
+						}
+					},
+					"ınput0": {
+						"list-name": "Open with inputs",
+						"display-text": "Show alert with inputs ([i]{0}[/i]) {1} {2} {3} {4} {5} {6} {7} {8} {...}",
+						"description": "A replacement for the 'prompt' function.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different alert requests."},
+							"message_type7": { "name":"Message type", "desc":"The message type.", "items":{"normal":"Normal","success":"Success","error":"Error","warning":"Warning","ınfo":"Info","question":"Question"}},
+							"title8": { "name":"Title", "desc":"Enter the string title."},
+							"text9": { "name":"Text", "desc":"Enter the string text."},
+							"button_confirm10": { "name":"Button confirm", "desc":"Enter the html code on the 'Confirm' button."},
+							"button_cancel11": { "name":"Button cancel", "desc":"Enter the html code on the 'Cancel' button. Leave it blank if do not want to cancel button."},
+							"allow_cancel_with_escape_key14": { "name":"Allow cancel with escape key", "desc":"If set to false, the user can't dismiss the modal by pressing the escape key.", "items":{"false":"false","true":"true"}},
+							"allow_cancel_with_outside_click17": { "name":"Allow cancel with outside click", "desc":"If set to false, the user can't dismiss the modal by clicking outside it.", "items":{"false":"false","true":"true"}},
+							"error_message20": { "name":"Error message", "desc":"Enable or disable errors messages.", "items":{"false":"false","true":"true"}},
+							"ınput_n21": { "name":"Input {n}", "desc":"A input to add for the alert call. #{n}\ntext,My text | number,9999 | password,your-password | email,email@server.com | url,https://www.google.com"}
+						}
+					},
+					"radio1": {
+						"list-name": "Open with radios",
+						"display-text": "Show alert with radios ([i]{0}[/i]) {1} {2} {3} {4} {5} {6} {7} {8} {...}",
+						"description": "A replacement for the 'prompt' function.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different alert requests."},
+							"message_type7": { "name":"Message type", "desc":"The message type.", "items":{"normal":"Normal","success":"Success","error":"Error","warning":"Warning","ınfo":"Info","question":"Question"}},
+							"title8": { "name":"Title", "desc":"Enter the string title."},
+							"text9": { "name":"Text", "desc":"Enter the string text."},
+							"button_confirm10": { "name":"Button confirm", "desc":"Enter the html code on the 'Confirm' button."},
+							"button_cancel11": { "name":"Button cancel", "desc":"Enter the html code on the 'Cancel' button. Leave it blank if do not want to cancel button."},
+							"allow_cancel_with_escape_key14": { "name":"Allow cancel with escape key", "desc":"If set to false, the user can't dismiss the modal by pressing the escape key.", "items":{"false":"false","true":"true"}},
+							"allow_cancel_with_outside_click17": { "name":"Allow cancel with outside click", "desc":"If set to false, the user can't dismiss the modal by clicking outside it.", "items":{"false":"false","true":"true"}},
+							"error_message20": { "name":"Error message", "desc":"Enable or disable errors messages.", "items":{"false":"false","true":"true"}},
+							"ınput_n21": { "name":"Input {n}", "desc":"A input to add for the alert call. #{n}"}
+						}
+					},
+					"timer2": {
+						"list-name": "Open with timer",
+						"display-text": "Show alert with timer ([i]{0}[/i]) - close in {6} seconds {1} {2} {3} {4} {5}",
+						"description": "A replacement for the 'prompt' function.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different alert requests."},
+							"message_type7": { "name":"Message type", "desc":"The message type.", "items":{"normal":"Normal","success":"Success","error":"Error","warning":"Warning","ınfo":"Info","question":"Question"}},
+							"title8": { "name":"Title", "desc":"Enter the string title."},
+							"text9": { "name":"Text", "desc":"Enter the string text."},
+							"allow_cancel_with_escape_key12": { "name":"Allow cancel with escape key", "desc":"If set to false, the user can't dismiss the modal by pressing the escape key.", "items":{"false":"false","true":"true"}},
+							"allow_cancel_with_outside_click15": { "name":"Allow cancel with outside click", "desc":"If set to false, the user can't dismiss the modal by clicking outside it.", "items":{"false":"false","true":"true"}},
+							"timer16": { "name":"Timer", "desc":"Enter the number in seconds to close automatically. 0 to manually close."}
+						}
+					},
+					"progressstepsclear7": {
+						"list-name": "Clear steps",
+						"display-text": "Clear steps",
+						"description": "A replacement for the 'prompt' function."
+					},
+					"progresssteps6": {
+						"list-name": "Add steps",
+						"display-text": "Add progress steps {0} {...}",
+						"description": "A replacement for the 'prompt' function.",
+						"params": {
+							"error_message2": { "name":"Error message", "desc":"Enable or disable errors messages.", "items":{"false":"false","true":"true"}},
+							"ınput_n3": { "name":"Input {n}", "desc":"A input to add for the alert call. #{n}\ntext,My text | number,9999 | password,your-password | email,email@server.com | url,https://www.google.com"}
+						}
+					},
+					"progress4": {
+						"list-name": "Open with progress steps",
+						"display-text": "Show alert with progress steps ([i]{0}[/i]) {1} {2} {3} {4} {5} {6} {...}",
+						"description": "A replacement for the 'prompt' function.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different alert requests."},
+							"button_cancel1": { "name":"Button cancel", "desc":"Enter the html code on the 'Cancel' button."},
+							"button_back2": { "name":"Button back", "desc":"Enter the html code on the 'Back' button."},
+							"button_next3": { "name":"Button next", "desc":"Enter the html code on the 'Next' button."},
+							"button_confirm4": { "name":"Button confirm", "desc":"Enter the html code on the 'Confirm' button."},
+							"allow_cancel_with_escape_key7": { "name":"Allow cancel with escape key", "desc":"If set to false, the user can't dismiss the modal by pressing the escape key.", "items":{"false":"false","true":"true"}},
+							"allow_cancel_with_outside_click10": { "name":"Allow cancel with outside click", "desc":"If set to false, the user can't dismiss the modal by clicking outside it.", "items":{"false":"false","true":"true"}},
+							"html_n11": { "name":"HTML {n}", "desc":""}
+						}
+					}
+				},
+				"expressions": {
+					"getlastvalue0": {
+						"description": "Get a last input alert message text.",
+						"translated-name": "GetLastValue"
+						},
+					"getlastvalueat1": {
+						"description": "Get a last input alert message text.",
+						"translated-name": "GetLastValueAt",
+						"params": {
+							"position0": { "name":"Position", "desc":"Enter the position to get the last value."}
+						}
+						},
+					"getcount2": {
+						"description": "Get the count of values.",
+						"translated-name": "GetCount"
+						},
+					"gettag3": {
+						"description": "Get the tag name.",
+						"translated-name": "GetTag"
+						}
+				}
+			}
+		}
+	}
+}
