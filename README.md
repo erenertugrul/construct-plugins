@@ -160,4 +160,22 @@
 -->
 </table>
 
-<center><a href="https://www.patreon.com/oyun" target="_blank"><img src="https://i.imgur.com/mpU6Ee3.png"></a></center>
+# For donate
+<table>
+<thead>
+<tr>
+<th>patreon</th>
+<th style="text-align:center" colspan="2">itch.io</th>
+</tr>
+
+</thead>
+<tbody>
+
+<td style="text-align:center"><a href="https://www.patreon.com/oyun" target="_blank"><img src="https://i.imgur.com/mpU6Ee3.png"></img></a></td>
+<td style="text-align:center"><a href="https://oyun.itch.io/construct-plugins" target="_blank"><img src="https://i.imgur.com/Bkh6F9A.png"></img></a></td>
+
+</tr>
+</tbody>
+</table>
+
+
