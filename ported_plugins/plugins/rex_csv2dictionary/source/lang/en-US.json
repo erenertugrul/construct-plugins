@@ -1,0 +1,75 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for CSV to Dictionary.",
+	"text": {
+		"plugins": {
+			"rex_csv2dictionary": {
+				"name": "CSV to Dictionary",
+				"description": "Transfer csv string to dictionary object",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_csv2dictionary.html",
+				"properties": {
+					"delimiter": {
+						"name": "Delimiter",
+						"desc": "Set delimiter for splitting items."
+						},
+					"eval-mode": {
+						"name": "Eval mode",
+						"desc": "Enable \"Eval mode\" for parsing value.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"csv_to_dictionary": "CSV to Dictionary",
+					"delimiter": "Delimiter",
+					"for_each_cell": "For each cell"
+				},
+				"conditions": {
+					"foreachcell1": {
+						"list-name": "For each cell",
+						"display-text": "For each cell in [i]{0}[/i]",
+						"description": "Repeat the event for each cell in the csv table.",
+						"params": {
+							"data0": { "name":"Data", "desc":"Data in CSV format"}
+						}
+						}
+				},
+				"actions": {
+					"csv2dictionary1": {
+						"list-name": "Put csv data into dictionary",
+						"display-text": "Put csv data [i]{0}[/i] into dictionary [i]{1}[/i]",
+						"description": "Put csv data into dictionary.",
+						"params": {
+							"data0": { "name":"Data", "desc":"Data in CSV format"},
+							"dictionary1": { "name":"Dictionary", "desc":"Dictionary object"}
+						}
+					},
+					"setdelimiter11": {
+						"list-name": "Set delimiter",
+						"display-text": "Set delimiter to [i]{0}[/i]",
+						"description": "Set delimiter for splitting items.",
+						"params": {
+							"delimiter0": { "name":"Delimiter", "desc":"Set delimiter for splitting items."}
+						}
+					}
+				},
+				"expressions": {
+					"curkey1": {
+						"description": "Get the current key in a For Each loop.",
+						"translated-name": "CurKey"
+						},
+					"curvalue2": {
+						"description": "Get the current cell value in a For Each loop.",
+						"translated-name": "CurValue"
+						},
+					"delimiter11": {
+						"description": "Get delimiter.",
+						"translated-name": "Delimiter"
+						}
+				}
+			}
+		}
+	}
+}

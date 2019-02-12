@@ -1,0 +1,80 @@
+{
+	"csv_to_dictionary": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "csv2dictionary1",
+				"scriptName": "CSV2Dictionary",
+				"highlight": false,
+				"params": [
+					{"id":"data0", "type":"string", "initialValue":""},
+					{"id":"dictionary1", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"delimiter": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "setdelimiter11",
+				"scriptName": "SetDelimiter",
+				"highlight": false,
+				"params": [
+					{"id":"delimiter0", "type":"string", "initialValue":"\",\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "delimiter11",
+				"expressionName": "Delimiter",
+				"scriptName": "Delimiter",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"for_each_cell": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "foreachcell1",
+				"scriptName": "ForEachCell",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"data0", "type":"string", "initialValue":""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "curkey1",
+				"expressionName": "CurKey",
+				"scriptName": "CurKey",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "curvalue2",
+				"expressionName": "CurValue",
+				"scriptName": "CurValue",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	}
+}
