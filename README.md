@@ -1,9 +1,9 @@
 Im making free construct plugins.
 Also convert construct2 plugins (c3runtime).
 
-You can free download and see all my converted plugins.
+You can free download my plugins and converted plugins.
 
-If you want  to support me, you can make a donation at patreon or itch.io
+If you want to support me, you can make a donation at patreon or itch.io
 
 # construct plugins
 <table>
