@@ -1,0 +1,107 @@
+{
+	"csv_to_array": {
+		"conditions": [
+		],
+		"actions": [
+
+			{
+				"c2id": 2,
+				"id": "csv2array2",
+				"scriptName": "CSV2Array",
+				"highlight": false,
+				"params": [
+					{"id":"data0", "type":"string", "initialValue":""},
+					{"id":"array1", "type":"object"},
+					{"id":"mapping4", "type":"combo", "items":["row to x, col to y","row to y, col to x"]},
+					{"id":"z5", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"delimiter": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "setdelimiter11",
+				"scriptName": "SetDelimiter",
+				"highlight": false,
+				"params": [
+					{"id":"delimiter0", "type":"string", "initialValue":"\",\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "delimiter11",
+				"expressionName": "Delimiter",
+				"scriptName": "Delimiter",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"for_each_cell": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "foreachcell1",
+				"scriptName": "ForEachCell",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"data0", "type":"string", "initialValue":""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "curx1",
+				"expressionName": "CurX",
+				"scriptName": "CurX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "cury2",
+				"expressionName": "CurY",
+				"scriptName": "CurY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "curvalue3",
+				"expressionName": "CurValue",
+				"scriptName": "CurValue",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 4,
+				"id": "width4",
+				"expressionName": "Width",
+				"scriptName": "Width",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "height5",
+				"expressionName": "Height",
+				"scriptName": "Height",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}
