@@ -28,13 +28,13 @@
 		SaveToJson()
 		{
 			return {
-				// data to be saved for savegames
+				"delimiter": this.strDelimiter 
 			};
 		}
 		
 		LoadFromJson(o)
 		{
-			// load state for savegames
+			this.strDelimiter = o["delimiter"];
 		}
 		value_get(v)
 		{
