@@ -1,3 +1,8 @@
+Im making free construct plugins.
+Also convert construct 3  to construct 2 plugins.
+You can free download and see all my converted plugins.
+
+If you want  to support me, you can make a donation at patreon or itch.io
 
 # construct plugins
 <table>
