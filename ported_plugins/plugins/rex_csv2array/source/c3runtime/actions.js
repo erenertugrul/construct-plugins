@@ -7,7 +7,6 @@
 		{ 
 		    	    
 	        var array_obj = array_objs.GetFirstPicked().GetSdkInstance();
-	        console.log(array_obj);
 	        var table = CSVToArray(csv_string, this.strDelimiter);        
 			var x_cnt = table.length;
 			var y_cnt = table[0].length;
