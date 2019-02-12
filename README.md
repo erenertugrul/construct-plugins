@@ -162,6 +162,16 @@ If you want to support me, you can make a donation at patreon or itch.io
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
 </tbody>
+<tbody>
+<tr>
+  <td>rex_csv2dictionary</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_csv2dictionary/dist/rex_csv2dictionary.c3addon">rex_csv2dictionary.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
 <!--- 
 <tbody>
 <tr>
@@ -183,16 +193,12 @@ If you want to support me, you can make a donation at patreon or itch.io
 <th>name</th>
 </thead>
 <tbody>
-<td style="text-align:center">magicam</td>
+<td>magicam</td>
 </tr>
 </tbody>
 <tbody>
 <tr>
 <td>jcw_trace</td>
-</tbody>
-<tbody>
-<tr>
-<td>Rex_csv2Dictionary</td>
 </tbody>
 <tbody>
 <tr>
