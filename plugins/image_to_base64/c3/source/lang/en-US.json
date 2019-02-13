@@ -13,8 +13,8 @@
 				},
 				"conditions": {
 					"on_base640": {
-						"list-name": "On base64 converted",
-						"display-text": "On base64 converted",
+						"list-name": "On converted base64 ",
+						"display-text": "On converted base64 ",
 						"description": "Triggered  if the convert was successfully"
 					}
 				},
