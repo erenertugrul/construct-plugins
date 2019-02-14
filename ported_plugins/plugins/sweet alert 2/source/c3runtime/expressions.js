@@ -5,22 +5,22 @@
 	{
 	    GetLastValue()
 	    {
-	        return (this.lastValue);
+	        return (this["lastValue"]);
 	    },
 
 	    GetLastValueAt(at_)
 	    {
-	        return (JSON.stringify(this.lastValueAt[at_]));
+	        return (JSON.stringify(this["lastValueAt"][at_]));
 	    },
 
 	    GetCount()
 	    {
-	        return (this.count);
+	        return (this["count"]);
 	    },
 
 	    GetTag()
 	    {
-	        return (this.tag);
+	        return (this["tag"]);
 	    }
 	};
 }

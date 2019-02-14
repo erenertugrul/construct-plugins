@@ -51,13 +51,13 @@
 	    },
 	    Close () 
 	    {
-	        swal.closeModal();
-	        this.open = 0;
-	        this.count = 0;
-	        this.lastValue = "";
-	        this.lastValueAt = "";
+	        _swal["closeModal"]();
+	        this["open"] = 0;
+	        this["count"] = 0;
+	        this["lastValue"] = "";
+	        this["lastValueAt"] = "";
 	        this.Trigger(C3.Plugins.SweetAlert.Cnds.OnClose, this);
-	        this.tag = "";
+	        this["tag"] = "";
 	    },
 	    Input(tag_, type_, title_, text_, confirm_, cancel_, allow_escapekey_, allow_outsideclick_, error_, params_) 
 	    {
@@ -84,91 +84,91 @@
 	        /////////////////////////////////////
 	        input += "</div>";
 	        /////////////////////////////////////
-	        swal({
+	        _swal({
 	            /////////////////////////////////////
-	            type: self.getType(type_),
-	            title: title_,
-	            html: input,
+	            ["type"]: self.getType(type_),
+	            ["title"]: title_,
+	            ["html"]: input,
 	            /////////////////////////////////////
-	            background: self.style["background"],
-	            color: self.style["color"],
-	            position: self.style["position"],
-	            width: self.style["width"],
+	            ["background"]: self["style"]["background"],
+	            ["color"]: self["style"]["color"],
+	            ["position"]: self["style"]["position"],
+	            ["width"]: self["style"]["width"],
 	            /////////////////////////////////////
-	            buttonsStyling: true,
-	            focusConfirm: false,
-	            focusCancel: false,
-	            confirmButtonText: confirm_,
-	            showConfirmButton: (confirm_),
-	            cancelButtonText: cancel_,
-	            showCancelButton: (cancel_),
-	            confirmButtonColor: self.style["confirm"],
-	            cancelButtonColor: self.style["cancel"],
-	            reverseButtons: self.style["reverse"],
+	            ["buttonsStyling"]: true,
+	            ["focusConfirm"]: false,
+	            ["focusCancel"]: false,
+	            ["confirmButtonText"]: confirm_,
+	            ["showConfirmButton"]: (confirm_),
+	            ["cancelButtonText"]: cancel_,
+	            ["showCancelButton"]: (cancel_),
+	            ["confirmButtonColor"]: self["style"]["confirm"],
+	            ["cancelButtonColor"]: self["style"]["cancel"],
+	            ["reverseButtons"]: self["style"]["reverse"],
 	            /////////////////////////////////////
-	            allowEscapeKey: allow_escapekey_,
-	            allowOutsideClick: allow_outsideclick_,
+	            ["allowEscapeKey"]: allow_escapekey_,
+	            ["allowOutsideClick"]: allow_outsideclick_,
 	            /////////////////////////////////////
-	            onOpen: function () {
-	                self.open = 1;
-	                self.tag = tag_;
+	            ["onOpen"]: function () {
+	                self["open"] = 1;
+	                self["tag"] = tag_;
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnOpen, self);
 	            },
-	            preConfirm: function() {
-	                return new Promise(function(resolve) {
-	                    for (var i = 0; i < params_.length; i++) {
-	                        var validate;
-	                        if (type[i] === "email") {
-	                        	validate = self.email($('#swal-input_' + i).val());
-	                        	if (validate === true || !error_)
-	                        		self.array[i] = $("#swal-input_" + i).val() || "";
-	                        	else {
-			                        $('#swal-input_' + i).focus();
-			                        swal.showValidationError(self.error.email);
-			                        break;
-	                        	}
-	                        } else if (type[i] === "url") {
-	                        	validate = self.url($('#swal-input_' + i).val());
-	                        	if (validate === true || !error_)
-	                        		self.array[i] = $("#swal-input_" + i).val() || "";
-	                        	else {
-			                        $('#swal-input_' + i).focus();
-			                        swal.showValidationError(self.error.url);
-			                        break;
-	                        	}
-	                        } else if ($('#swal-input_' + i).val() === "" && error_) {
-		                        if (type[i] === "text")
-		                            swal.showValidationError(self.error.text);
-		                        else if (type[i] === "password")
-		                           	swal.showValidationError(self.error.password);
-		                        else if (type[i] === "number")
-	                            	swal.showValidationError(self.error.number);
-
-	                            $('#swal-input_' + i).focus();
+            ["preConfirm"]: function() {
+                return new Promise(function(resolve) {
+                    for (var i = 0; i < params_.length; i++) {
+                        var validate;
+                        if (type[i] === "email") {
+                        	validate = self.email(_$('#swal-input_' + i).val());
+                        	if (validate === true || !error_)
+                        		self.array[i] = _$("#swal-input_" + i).val() || "";
+                        	else {
+		                        _$('#swal-input_' + i).focus();
+		                        _swal["showValidationError"](self["error"]["email"]);
 		                        break;
-	                        } else
-	                        	self.array[i] = $("#swal-input_" + i).val() || "";
-	                    };
-	                    /////////////////////////////////////
-	                    resolve(self.array);
-	                });
-	            }
+                        	}
+                        } else if (type[i] === "url") {
+                        	validate = self.url(_$('#swal-input_' + i).val());
+                        	if (validate === true || !error_)
+                        		self.array[i] = _$("#swal-input_" + i).val() || "";
+                        	else {
+		                        _$('#swal-input_' + i).focus();
+		                        _swal["showValidationError"](self["error"]["url"]);
+		                        break;
+                        	}
+                        } else if (_$('#swal-input_' + i).val() === "" && error_) {
+	                        if (type[i] === "text")
+	                            _swal["showValidationError"](self["error"]["text"]);
+	                        else if (type[i] === "password")
+	                           	_swal["showValidationError"](self["error"]["password"]);
+	                        else if (type[i] === "number")
+                            	_swal["showValidationError"](self["error"]["number"]);
+
+                            _$('#swal-input_' + i).focus();
+	                        break;
+                        } else
+                        	self.array[i] = _$("#swal-input_" + i).val() || "";
+                    };
+                    /////////////////////////////////////
+                    resolve(self.array);
+                });
+            }
 	        }).then(function(result) {
 	            self.open = 0;
 	            if (result.value) {
-	                self.count = result["value"].length;
-	                self.lastValue = JSON.stringify(result["value"]).slice(1, -1);
-	                self.lastValueAt = result["value"];
+	                self["count"] = result["value"].length;
+	                self["lastValue"] = JSON.stringify(result["value"]).slice(1, -1);
+	                self["lastValueAt"] = result["value"];
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnConfirm, self);
 	            } else if (result.dismiss === 'cancel') {
-	                self.count = 0;
-	                self.lastValue = "";
-	                self.lastValueAt = [];
+	                self["count"] = 0;
+	                self["lastValue"] = "";
+	                self["lastValueAt"] = [];
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnCancel, self);
 	            };
 	            /////////////////////////////////////
 	            self.Trigger(C3.Plugins.SweetAlert.Cnds.OnClose, self);
-	            self.tag = "";
+	            self["tag"] = "";
 	        });
 	    },
 	    Radio(tag_, type_, title_, text_, confirm_, cancel_, allow_escapekey_, allow_outsideclick_, error_, params_) 
@@ -185,58 +185,58 @@
 	        /////////////////////////////////////
 			swal({
 	            /////////////////////////////////////
-	            type: self.getType(type_),
-	            title: title_,
-	            text: text_,
-	            input: 'radio',
-	            inputOptions: inputOptions,
+	            ["type"]: self.getType(type_),
+	            ["title"]: title_,
+	            ["text"]: text_,
+	            ["input"]: 'radio',
+	            ["inputOptions"]: inputOptions,
 	            /////////////////////////////////////
-	            background: self.style["background"],
-	            color: self.style["color"],
-	            position: self.style["position"],
-	            width: self.style["width"],
+	            ["background"]: self.style["background"],
+	            ["color"]: self.style["color"],
+	            ["position"]: self.style["position"],
+	            ["width"]: self.style["width"],
 	            /////////////////////////////////////
-	            buttonsStyling: true,
-	            focusConfirm: false,
-	            focusCancel: false,
-	            confirmButtonText: confirm_,
-	            showConfirmButton: (confirm_),
-	            cancelButtonText: cancel_,
-	            showCancelButton: (cancel_),
-	            confirmButtonColor: self.style["confirm"],
-	            cancelButtonColor: self.style["cancel"],
-	            reverseButtons: self.style["reverse"],
+	            ["buttonsStyling"]: true,
+	            ["focusConfirm"]: false,
+	            ["focusCancel"]: false,
+	            ["confirmButtonText"]: confirm_,
+	            ["showConfirmButton"]: (confirm_),
+	            ["cancelButtonText"]: cancel_,
+	            ["showCancelButton"]: (cancel_),
+	            ["confirmButtonColor"]: self.style["confirm"],
+	            ["cancelButtonColor"]: self.style["cancel"],
+	            ["reverseButtons"]: self.style["reverse"],
 	            /////////////////////////////////////
-	            allowEscapeKey: allow_escapekey_,
-	            allowOutsideClick: allow_outsideclick_,
+	            ["allowEscapeKey"]: allow_escapekey_,
+	            ["allowOutsideClick"]: allow_outsideclick_,
 	            /////////////////////////////////////
-	            onOpen: function () {
-	                self.open = 1;
-	                self.tag = tag_;
+	            ["onOpen"]: function () {
+	                self["open"] = 1;
+	                self["tag"] = tag_;
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnOpen, self);
 	            },
-				inputValidator: function (result) {
+				["inputValidator"]: function (result) {
 			    	return new Promise(function (resolve) {
 			    		if (!result && error_)
-			    			swal.showValidationError(self.error.radio);
+			    			_swal["showValidationError"](self["error"]["radio"]);
 			    		else
 			    			resolve();
 			    	})
 				}
 	        }).then(function(result) {
-	            self.open = 0;
-	            self.count = 0;
-	            self.lastValueAt = [];
+	            self["open"] = 0;
+	            self["count"] = 0;
+	            self["lastValueAt"] = [];
 	            if (result.value) {
-	                self.lastValue = JSON.stringify(result["value"]).slice(1, -1);
+	                self["lastValue"] = JSON.stringify(result["value"]).slice(1, -1);
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnConfirm, self);
 	            } else if (result.dismiss === 'cancel') {
-	                self.lastValue = "";
+	                self["lastValue"] = "";
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnCancel, self);
 	            };
 	            /////////////////////////////////////
 	            self.Trigger(C3.Plugins.SweetAlert.Cnds.OnClose, self);
-	            self.tag = "";
+	            self["tag"] = "";
 	        });
 	    },
 	    Timer(tag_, type_, title_, text_, allow_escapekey_, allow_outsideclick_, timer_) 
@@ -245,33 +245,33 @@
 	        /////////////////////////////////////
 	        swal({
 	            /////////////////////////////////////
-	            type: self.getType(type_),
-	            title: title_,
-	            text: text_,
-	            timer: timer_ * 1000,
+	            ["type"]: self.getType(type_),
+	            ["title"]: title_,
+	            ["text"]: text_,
+	            ["timer"]: timer_ * 1000,
 	            /////////////////////////////////////
-	            background: self.style["background"],
-	            color: self.style["color"],
-	            position: self.style["position"],
-	            width: self.style["width"],
+	            ["background"]: self.style["background"],
+	            ["color"]: self.style["color"],
+	            ["position"]: self.style["position"],
+	            ["width"]: self.style["width"],
 	            /////////////////////////////////////
-	            showConfirmButton: false,
-	            showCancelButton: false,
+	            ["showConfirmButton"]: false,
+	            ["showCancelButton"]: false,
 	            /////////////////////////////////////
-	            allowEscapeKey: allow_escapekey_,
-	            allowOutsideClick: allow_outsideclick_,
+	            ["allowEscapeKey"]: allow_escapekey_,
+	            ["allowOutsideClick"]: allow_outsideclick_,
 	            /////////////////////////////////////
-	            onOpen: function () {
-	                swal.showLoading();
-	                self.open = 1;
-	                self.tag = tag_;
+	            ["onOpen"]: function () {
+	                _swal["showLoading"]();
+	                self["open"] = 1;
+	                self["tag"] = tag_;
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnOpen, self);
 	            },
-	            onClose: function () {
-	            	self.open = 0;
+            	["onClose"]: function () {
+            		self["open"] = 0;
 	            	self.Trigger(C3.Plugins.SweetAlert.Cnds.OnClose, self);
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnTimeOut, self);
-	                self.tag = "";
+	                self["tag"] = "";
 	            }
 	        });
 	    },
@@ -322,80 +322,80 @@
 	        };
 	        /////////////////////////////////////
 	        var setDefault = function(i) {
-	            swal.setDefaults({
-	                /////////////////////////////////////
-	                html: params_[i]+"<br/>"+self.array[i]['html'],
-	                currentProgressStep: i,
-	                progressSteps: progressSteps,
-	                /////////////////////////////////////
-	                background: self.style["background"],
-	                color: self.style["color"],
-	                position: self.style["position"],
-	                width: self.style["width"],
-	                /////////////////////////////////////
-	                buttonsStyling: true,
-	                showCancelButton: true,
-	                focusConfirm: false,
-	                focusCancel: false,
-	                confirmButtonText: i < steps.length - 1 ? next_ : confirm_,
-	                cancelButtonText: i > 0 ? back_ : cancel_,
-	                confirmButtonColor: self.style["confirm"],
-	                cancelButtonColor: self.style["cancel"],
-	                reverseButtons: self.style["reverse"],
-	                /////////////////////////////////////
-	                allowEscapeKey: allow_escapekey_,
-	                allowOutsideClick: allow_outsideclick_,
-	                /////////////////////////////////////
-	                preConfirm: function() {
-	                    return new Promise(function(resolve) {
-	                    	var data = [];
-	                        var validate;
-	                        var pass = false;
-	                        /////////////////////////////////////
-	                        $(".swal_alert").each(function() {
-	                            data.push($(this).val());
-	                            var type = $(this).attr("type");
-	                            var error = "";
-	                            /////////////////////////////////////
-	                            switch (type) {
-	                            	case "email":
-	                            		validate = self.email($(this).val());
-	                            		error = self.error.email || self.error.progress;
-	                            		break;
-	                            	case "url":
-	                            		validate = self.url($(this).val());
-	                            		error = self.error.url || self.error.progress;
-	                            		break;
-	                            	case "password":
-	                            		validate = ((!pass || $(this).val() === pass) && $(this).val() != "") ? true : false;
-	                            		pass = $(this).val();
-	                            		error = self.error.password || self.error.progress;
-	                            		break;
-	                            	case "text":
-	                            		validate = $(this).val() != "" ? true : false;
-	                            		error = self.error.text || self.error.progress;
-	                                    break;
-	                            	case "number":
-	                            		validate = $(this).val() != "" ? true : false;
-	                            		error = self.error.number || self.error.progress;
-	                                    break;
-	                            	case "radio":
-	                            		validate = $(this).val() != "" ? true : false;
-	                            		error = self.error.radio || self.error.progress;
-	                                    break;
-	                            	default:
-	                            		validate = $(this).val() != "" ? true : false;
-	                            		error = self.error.progress;
-	                        	};
-	                            /////////////////////////////////////
-	                            if (!validate && self.array[i]['error']) {
-	                                $(this).focus();
-	                                swal.showValidationError(error);
-	                                return false;
-	                            };
-	                            /////////////////////////////////////
-	                        });
-	                        /////////////////////////////////////
+            _swal["setDefaults"]({
+                /////////////////////////////////////
+                ["html"]: params_[i]+"<br/>"+self.array[i]['html'],
+                ["currentProgressStep"]: i,
+                ["progressSteps"]: progressSteps,
+                /////////////////////////////////////
+                ["background"]: self.style["background"],
+                ["color"]: self.style["color"],
+                ["position"]: self.style["position"],
+                ["width"]: self.style["width"],
+                /////////////////////////////////////
+                ["buttonsStyling"]: true,
+                ["showCancelButton"]: true,
+                ["focusConfirm"]: false,
+                ["focusCancel"]: false,
+                ["confirmButtonText"]: i < steps.length - 1 ? next_ : confirm_,
+                ["cancelButtonText"]: i > 0 ? back_ : cancel_,
+                ["confirmButtonColor"]: self.style["confirm"],
+                ["cancelButtonColor"]: self.style["cancel"],
+                ["reverseButtons"]: self.style["reverse"],
+                /////////////////////////////////////
+                ["allowEscapeKey"]: allow_escapekey_,
+                ["allowOutsideClick"]: allow_outsideclick_,
+                /////////////////////////////////////
+                ["preConfirm"]: function() {
+                    return new Promise(function(resolve) {
+                    	var data = [];
+                        var validate;
+                        var pass = false;
+                        /////////////////////////////////////
+                        _$(".swal_alert").each(function() {
+                            data.push(_$(this).val());
+                            var type = _$(this).attr("type");
+                            var error = "";
+                            /////////////////////////////////////
+                            switch (type) {
+                            	case "email":
+                            		validate = self.email(_$(this).val());
+                            		error = self["error"]["email"] || self["error"]["progress"];
+                            		break;
+                            	case "url":
+                            		validate = self.url(_$(this).val());
+                            		error = self["error"]["url"] || self["error"]["progress"];
+                            		break;
+                            	case "password":
+                            		validate = ((!pass || _$(this).val() === pass) && _$(this).val() != "") ? true : false;
+                            		pass = _$(this).val();
+                            		error = self["error"]["password"] || self["error"]["progress"];
+                            		break;
+                            	case "text":
+                            		validate = _$(this).val() != "" ? true : false;
+                            		error = self["error"]["text"] || self["error"]["progress"];
+                                    break;
+                            	case "number":
+                            		validate = _$(this).val() != "" ? true : false;
+                            		error = self["error"]["number"] || self["error"]["progress"];
+                                    break;
+                            	case "radio":
+                            		validate = _$(this).val() != "" ? true : false;
+                            		error = self["error"]["radio"] || self["error"]["progress"];
+                                    break;
+                            	default:
+                            		validate = _$(this).val() != "" ? true : false;
+                            		error = self["error"]["progress"];
+                        	};
+                            /////////////////////////////////////
+                            if (!validate && self.array[i]['error']) {
+                                _$(this).focus();
+                                _swal["showValidationError"](["error"]);
+                                return false;
+                            };
+                            /////////////////////////////////////
+                        });
+                        /////////////////////////////////////
 	                        resolve(data);
 	                    });
 	                }
@@ -403,15 +403,15 @@
 	        };
 	        /////////////////////////////////////
 	        var close = function(success_) {
-	            swal.resetDefaults();
-	            self.open = 0;
-	            self.count = success_ ? array.length : 0;
-	            self.lastValue = success_ && array.length ? JSON.stringify(array).slice(1, -1) : "";
-	            self.lastValueAt = success_ ? array : [];
+	            _swal["resetDefaults"]();
+	            self["open"] = 0;
+	            self["count"] = success_ ? array.length : 0;
+	            self["lastValue"] = success_ && array.length ? JSON.stringify(array).slice(1, -1) : "";
+	            self["lastValueAt"] = success_ ? array : [];
 	            self.Trigger(C3.Plugins.SweetAlert.Cnds.OnClose, self);
 	            if (success_) self.Trigger(C3.Plugins.SweetAlert.Cnds.OnConfirm, self);
 	            else self.Trigger(C3.Plugins.SweetAlert.Cnds.OnCancel, self);
-	            self.tag = "";
+	            self["tag"] = "";
 	        };
 	        /////////////////////////////////////
 	        self.tag = tag_;
@@ -422,7 +422,7 @@
 	        generate(0);
 	        /////////////////////////////////////
 	        function generate(i) {
-	            swal.queue(steps[i]).then(function(result) {
+	            _swal["queue"](steps[i]).then(function(result) {
 	                if (result['dismiss']) {
 	                    /////////////////////////////////////
 	                    if (result['dismiss'] === 'cancel') {

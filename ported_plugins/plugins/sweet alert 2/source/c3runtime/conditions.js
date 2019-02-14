@@ -16,17 +16,17 @@
 
 	    OnTimeOut(tag_) 
 	    {
-	        return C3.equalsNoCase(tag_, this.tag);
+	        return C3.equalsNoCase(tag_, this["tag"]);
 	    },
 
 	    OnCancel(tag_) 
 	    {
-	        return C3.equalsNoCase(tag_, this.tag);
+	        return C3.equalsNoCase(tag_, this["tag"]);
 	    },
 
 	    OnConfirm(tag_) 
 	    {
-	        return C3.equalsNoCase(tag_, this.tag);
+	        return C3.equalsNoCase(tag_, this["tag"]);
 	    },
 
 	    IsOpen() 

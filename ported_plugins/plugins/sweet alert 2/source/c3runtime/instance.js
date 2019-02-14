@@ -1,5 +1,6 @@
 "use strict";
-
+var _swal = window["swal"];
+var _$ = window["$"];
 {
 	C3.Plugins.SweetAlert.Instance = class SweetAlertInstance extends C3.SDKInstanceBase
 	{
@@ -8,6 +9,17 @@
 			super(inst);
 			
 			// Initialise object properties
+
+	        /////////////////////////////////////
+	        this["open"] = 0;
+	        this["tag"] = "";
+	        this["lastValue"] = "";
+	        this["lastValueAt"] = [];
+	        this["array"] = [];
+	        this["count"] = 0;
+			
+			if (properties)		// note properties may be null in some cases
+			{
 			   	this.error = {
 		    		"text": properties[0],
 		    		"email": properties[1],
@@ -26,17 +38,6 @@
 		            "cancel": properties[12],
 		            "confirm": properties[13]
         		};
-	        /////////////////////////////////////
-	        this.open = 0;
-	        this.tag = "";
-	        this.lastValue = "";
-	        this.lastValueAt = [];
-	        this.array = [];
-	        this.count = 0;
-			
-			if (properties)		// note properties may be null in some cases
-			{
-
 			}
 		}
 		
