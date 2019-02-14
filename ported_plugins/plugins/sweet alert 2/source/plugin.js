@@ -25,7 +25,7 @@
 			this._info.SetIsDeprecated(false);
 			this._info.SetSupportsEffects(false);
 			this._info.SetMustPreDraw(false);
-			this._info.SetCanBeBundled(false);
+			this._info.SetCanBeBundled(true);
 
 			this._info.SetSupportedRuntimes(["c2", "c3"]);	// c3 for stubs only!
 
