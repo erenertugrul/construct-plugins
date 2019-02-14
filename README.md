@@ -205,6 +205,11 @@ If you want to support me, you can make a donation on patreon or itch.io
 <td>Rex_csv</td>
 </tbody>
 </table>
+<tbody>
+<tr>
+<td>Rex_light</td>
+</tbody>
+</table>
 
 </tr>
 <tr>
