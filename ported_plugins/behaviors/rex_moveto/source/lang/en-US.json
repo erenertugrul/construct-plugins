@@ -1,0 +1,222 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for MoveTo.",
+	"text": {
+		"behaviors": {
+			"rex_moveto": {
+				"name": "MoveTo",
+				"description": "Move sprite to specific position",
+				"help-url": "http://c2rexplugins.weebly.com/rex_moveto.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout."
+						},
+					"max-speed": {
+						"name": "Max speed",
+						"desc": "Maximum speed, in pixel per second."
+						},
+					"acceleration": {
+						"name": "Acceleration",
+						"desc": "Acceleration, in pixel per second per second."
+						},
+					"deceleration": {
+						"name": "Deceleration",
+						"desc": "Deceleration, in pixel per second per second."
+						},
+					"stop-by-solid": {
+						"name": "Stop by solid",
+						"desc": "Enable if you wish to stop while hitting a solid object."
+						},
+					"continued-mode": {
+						"name": "Continued mode",
+						"desc": "Moving as in continued-time."
+						}
+				},
+				"aceCategories": {
+					"enable": "Enable",
+					"speed": "Speed",
+					"move-to": "MoveTo",
+					"stop": "Stop",
+					"moving-angle": "Moving angle"
+				},
+				"conditions": {
+					"on-reached-target": {
+						"list-name": "On reached target position",
+						"display-text": "On {my} reached target",
+						"description": "Triggered when reached target position."
+						},
+					"compare-speed": {
+						"list-name": "Compare speed",
+						"display-text": "{my} speed {0} {1}",
+						"description": "Compare the current speed of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current speed."},
+							"speed1": { "name":"Speed", "desc":"The speed, in pixel per second, to compare the current speed to."}
+						}
+						},
+					"on-moving": {
+						"list-name": "On moving",
+						"display-text": "DEPRECATED: On {my} moving",
+						"description": "DEPRECATED: Triggered when object moving."
+						},
+					"is-moving": {
+						"list-name": "Is moving",
+						"display-text": "Is {my} moving",
+						"description": "Is object moving."
+						},
+					"compare-moving-angle": {
+						"list-name": "Compare moving angle",
+						"display-text": "{my} moving angle {0} {1}",
+						"description": "Compare the current moving angle of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current moving angle."},
+							"angle1": { "name":"Angle", "desc":"The moving angle, in pixel per second, to compare the current moving angle to."}
+						}
+						},
+					"on-stopped-by-solid": {
+						"list-name": "On stopped by solid",
+						"display-text": "On {my} stopped by solid",
+						"description": "Triggered when stopped by solid object."
+						}
+				},
+				"actions": {
+					"set-activated": {
+						"list-name": "Set activated",
+						"display-text": "Set {my} [b]{0}[/b]",
+						"description": "Set whether this behavior is activated. It will also pause current moving.",
+						"params": {
+							"state2": { "name":"State", "desc":"Set whether to enable or disable the behavior.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"set-max-speed": {
+						"list-name": "Set maximum speed",
+						"display-text": "Set {my} maximum speed to [b]{0}[/b]",
+						"description": "Set the object's maximum speed.",
+						"params": {
+							"max_speed0": { "name":"Max speed", "desc":"Maximum speed, in pixel per second."}
+						}
+					},
+					"set-acceleration": {
+						"list-name": "Set acceleration",
+						"display-text": "Set {my} acceleration to [b]{0}[/b]",
+						"description": "Set the object's acceleration.",
+						"params": {
+							"acceleration0": { "name":"Acceleration", "desc":"The acceleration setting, in pixel per second per second."}
+						}
+					},
+					"set-deceleration": {
+						"list-name": "Set deceleration",
+						"display-text": "Set {my} deceleration to [b]{0}[/b]",
+						"description": "Set the object's deceleration.",
+						"params": {
+							"deceleration0": { "name":"Deceleration", "desc":"The deceleration setting, in pixels per second per second."}
+						}
+					},
+					"set-target-position": {
+						"list-name": "Move to position",
+						"display-text": "{my} move to ([b]{0}[/b], [b]{1}[/b])",
+						"description": "Move to specific position.",
+						"params": {
+							"x0": { "name":"X", "desc":"The X co-ordinate to move toward."},
+							"y1": { "name":"Y", "desc":"The Y co-ordinate to move toward."}
+						}
+					},
+					"set-current-speed": {
+						"list-name": "Set current speed",
+						"display-text": "Set {my} current speed to [b]{0}[/b]",
+						"description": "Set the object's Current speed.",
+						"params": {
+							"current_speed0": { "name":"Current speed", "desc":"Current speed, in pixel per second."}
+						}
+					},
+					"set-target-position-to-object": {
+						"list-name": "Move to object",
+						"display-text": "{my} move to [b]{0}[/b]",
+						"description": "Move to object.",
+						"params": {
+							"target0": { "name":"Target", "desc":"Target object."}
+						}
+					},
+					"set-target-position-to-delta-xy": {
+						"list-name": "Move to delta XY",
+						"display-text": "{my} move to (delta [b]{0}[/b], delta [b]{1}[/b])",
+						"description": "Move to specific position by deltaXY.",
+						"params": {
+							"dx0": { "name":"dX", "desc":"The delta X to move toward, in pixel."},
+							"dy1": { "name":"dY", "desc":"The delta Y to move toward, in pixel."}
+						}
+					},
+					"set-target-position-to-distance-angle": {
+						"list-name": "Move to distance-angle",
+						"display-text": "{my} move to (distance [b]{0}[/b], angle [b]{1}[/b])",
+						"description": "Move to specific position by distance-angle.",
+						"params": {
+							"distance0": { "name":"Distance", "desc":"The destance to move toward, in pixel."},
+							"angle1": { "name":"Angle", "desc":"The angle of moving destance to move toward, in degree."}
+						}
+					},
+					"stop": {
+						"list-name": "Stop",
+						"display-text": "{my} stop",
+						"description": "Stop moving."
+					},
+					"set-target-position-to-uid": {
+						"list-name": "Move to UID",
+						"display-text": "{my} move to UID: [b]{0}[/b]",
+						"description": "Move to object by UID.",
+						"params": {
+							"uid0": { "name":"UID", "desc":"UID of target object."}
+						}
+					},
+					"set-stop-by-solid": {
+						"list-name": "Stop by solid",
+						"display-text": "Set {my} stop by solid [b]{0}[/b]",
+						"description": "Enabled or disable stop by solid.",
+						"params": {
+							"state2": { "name":"State", "desc":"Set whether to enable or disable the behavior.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					}
+				},
+				"expressions": {
+					"activated": {
+						"description": "The current activated state of behavior.",
+						"translated-name": "Activated"
+						},
+					"speed": {
+						"description": "The current object speed, in pixel per second.",
+						"translated-name": "Speed"
+						},
+					"max-speed": {
+						"description": "The maximum speed setting, in pixel per second.",
+						"translated-name": "MaxSpeed"
+						},
+					"acceleration": {
+						"description": "The acceleration setting, in pixel per second per second.",
+						"translated-name": "Acc"
+						},
+					"deceleration": {
+						"description": "The deceleration setting, in pixel per second per second.",
+						"translated-name": "Dec"
+						},
+					"target-x": {
+						"description": "The X co-ordinate of target position to move toward.",
+						"translated-name": "TargetX"
+						},
+					"target-y": {
+						"description": "The Y co-ordinate of target position to move toward.",
+						"translated-name": "TargetY"
+						},
+					"moving-angle": {
+						"description": "Get current moving angle, in degree. Retrun last moving angle when object is not moving.",
+						"translated-name": "MovingAngle"
+						},
+					"moving-angle-start": {
+						"description": "Get moving angle from start position to target position, in degree.",
+						"translated-name": "MovingAngleStart"
+						}
+				}
+			}
+		}
+	}
+}

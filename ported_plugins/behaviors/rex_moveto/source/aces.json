@@ -1,0 +1,270 @@
+{
+	"enable": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "set-activated",
+				"scriptName": "SetEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				],
+				"c2id": 0				
+			},
+			{
+				"id": "set-stop-by-solid",
+				"scriptName": "SetStopBySolid",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				],
+				"c2id": 11				
+			}
+		],
+		"expressions": [
+			{
+				"id": "activated",
+				"expressionName": "Activated",
+				"scriptName": "Activated",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 0				
+			}			
+		]
+	},
+	"speed": {
+		"conditions": [
+			{
+				"id": "compare-speed",
+				"scriptName": "CompareSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"speed1", "type":"number"}
+				],
+				"c2id": 1				
+			}
+		],
+		"actions": [
+			{
+				"id": "set-max-speed",
+				"scriptName": "SetMaxSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"max_speed0", "type":"number"}
+				],
+				"c2id": 1				
+			},
+			{
+				"id": "set-acceleration",
+				"scriptName": "SetAcceleration",
+				"highlight": false,
+				"params": [
+					{"id":"acceleration0", "type":"number"}
+				],
+				"c2id": 2				
+			},
+			{
+				"id": "set-deceleration",
+				"scriptName": "SetDeceleration",
+				"highlight": false,
+				"params": [
+					{"id":"deceleration0", "type":"number"}
+				],
+				"c2id": 3				
+			},
+			{
+				"id": "set-current-speed",
+				"scriptName": "SetCurrentSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"current_speed0", "type":"number"}
+				],
+				"c2id": 5				
+			}
+		],
+		"expressions": [
+			{
+				"id": "speed",
+				"expressionName": "Speed",
+				"scriptName": "Speed",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 1				
+			},
+			{
+				"id": "max-speed",
+				"expressionName": "MaxSpeed",
+				"scriptName": "MaxSpeed",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 2				
+			},
+			{
+				"id": "acceleration",
+				"expressionName": "Acc",
+				"scriptName": "Acc",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 3				
+			},
+			{
+				"id": "deceleration",
+				"expressionName": "Dec",
+				"scriptName": "Dec",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 4				
+			}					
+		]
+	},
+	"move-to": {
+		"conditions": [
+			{
+				"id": "on-moving",
+				"scriptName": "OnMoving",
+				"isTrigger": "true",
+				"highlight": false,
+				"isDeprecated": true,
+				"c2id": 2				
+			},
+			{
+				"id": "is-moving",
+				"scriptName": "IsMoving",
+				"highlight": false,
+				"c2id": 3				
+			}			
+		],
+		"actions": [
+			{
+				"id": "set-target-position",
+				"scriptName": "SetTargetPos",
+				"highlight": true,
+				"params": [
+					{"id":"x0", "type":"number"},
+					{"id":"y1", "type":"number"}
+				],
+				"c2id": 4				
+			},
+			{
+				"id": "set-target-position-to-object",
+				"scriptName": "SetTargetPosOnObject",
+				"highlight": false,
+				"params": [
+					{"id":"target0", "type":"object"}
+				],
+				"c2id": 6				
+			},
+			{
+				"id": "set-target-position-to-delta-xy",
+				"scriptName": "SetTargetPosByDeltaXY",
+				"highlight": false,
+				"params": [
+					{"id":"dx0", "type":"number"},
+					{"id":"dy1", "type":"number"}
+				],
+				"c2id": 7				
+			},
+			{
+				"id": "set-target-position-to-distance-angle",
+				"scriptName": "SetTargetPosByDistanceAngle",
+				"highlight": false,
+				"params": [
+					{"id":"distance0", "type":"number"},
+					{"id":"angle1", "type":"number"}
+				],
+				"c2id": 8				
+			},
+			{
+				"id": "set-target-position-to-uid",
+				"scriptName": "SetTargetPosOnUID",
+				"highlight": false,
+				"params": [
+					{"id":"uid0", "type":"number"}
+				],
+				"c2id": 10				
+			}
+		],
+		"expressions": [
+			{
+				"id": "target-x",
+				"expressionName": "TargetX",
+				"scriptName": "TargetX",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 5				
+			},
+			{
+				"id": "target-y",
+				"expressionName": "TargetY",
+				"scriptName": "TargetY",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 6				
+			}			
+		]
+	},
+	"stop": {
+		"conditions": [
+			{
+				"id": "on-reached-target",
+				"scriptName": "OnHitTarget",
+				"isTrigger": "true",
+				"highlight": false,
+				"c2id": 0				
+			},			
+			{
+				"id": "on-stopped-by-solid",
+				"scriptName": "OnSolidStop",
+				"isTrigger": "true",
+				"highlight": false,
+				"c2id": 5				
+			}			
+		],
+		"actions": [
+			{
+				"id": "stop",
+				"scriptName": "Stop",
+				"highlight": false,
+				"c2id": 9				
+			}
+		],
+		"expressions": [
+		]
+	},
+	"moving-angle": {
+		"conditions": [
+			{
+				"id": "compare-moving-angle",
+				"scriptName": "CompareMovingAngle",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"angle1", "type":"number"}
+				],
+				"c2id": 4				
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"id": "moving-angle",
+				"expressionName": "MovingAngle",
+				"scriptName": "MovingAngle",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 7				
+			},
+			{
+				"id": "moving-angle-start",
+				"expressionName": "MovingAngleStart",
+				"scriptName": "MovingAngleStart",
+				"highlight": false,
+				"returnType": "number",
+				"c2id": 8				
+			}						
+		]
+	}
+}
