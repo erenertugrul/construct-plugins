@@ -1,9 +1,4 @@
-///////////////////////////MODIFIED VERSION///////////////////////////
-//// TITLE       :: Rex_MoveTo Upgrade to C3Runtime
-//// AUTHOR      :: Chadori_RebornXD
-//// DESCRIPTION :: Addon upgrade to support the C3Runtime.
-//// GAME ENGINE :: Construct 3
-/////////////////////////////////////////////////////////////////////
+
 
 
 //Converted with C2C3AddonConverter v1.0.0.5
