@@ -1,7 +1,3 @@
-
-
-
-//Converted with C2C3AddonConverter v1.0.0.5
 "use strict";
 
 {
@@ -22,6 +18,7 @@
 			this._info.SetAuthor("Rex.Rainbow");
 			this._info.SetHelpUrl(lang(".help-url"));
 			this._info.SetIsOnlyOneAllowed(false);
+			this._info.SetCanBeBundled(true);
 			SDK.Lang.PushContext(".properties");
 			this._info.SetProperties([
 				new SDK.PluginProperty("check", "activated", true),
