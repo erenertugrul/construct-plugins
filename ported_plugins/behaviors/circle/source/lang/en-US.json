@@ -1,0 +1,157 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Circle.",
+	"text": {
+		"behaviors": {
+			"circle": {
+				"name": "Circle",
+				"description": "Move an object in a circular or elliptical path.",
+				"help-url": "http://",
+				"properties": {
+					"speed": {
+						"name": "Speed",
+						"desc": "The speed, in pixels per second, the object travels at."
+						},
+					"acceleration": {
+						"name": "Acceleration",
+						"desc": "The rate of acceleration, in pixels per second per second.  Negative values decelerate."
+						},
+					"angle": {
+						"name": "Angle",
+						"desc": "The angle of the path, in degrees."
+						},
+					"radiusx": {
+						"name": "RadiusX",
+						"desc": "The radius of X axis, in pixels"
+						},
+					"radiusy": {
+						"name": "RadiusY",
+						"desc": "The radius Y axis, in pixels"
+						},
+					"ınitial-state": {
+						"name": "Initial state",
+						"desc": "Whether to initially have the behavior enabled or disabled.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"ısenabled0": {
+						"list-name": "Is enabled",
+						"display-text": "{my} is enabled",
+						"description": "Is the behavior enabled?"
+						},
+					"comparespeed1": {
+						"list-name": "Compare speed",
+						"display-text": "{my} speed {0} {1}",
+						"description": "Compare the current speed of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current speed."},
+							"speed1": { "name":"Speed", "desc":"The speed, in pixels per second, to compare the current speed to."}
+						}
+						},
+					"compareradiusx2": {
+						"list-name": "Compare X radius",
+						"display-text": "{my} x radius {0} {1}",
+						"description": "Compare the current X radius of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the X radius."},
+							"radiusx1": { "name":"RadiusX", "desc":"The value to compare the current X radius to."}
+						}
+						},
+					"compareradiusy3": {
+						"list-name": "Compare Y radius",
+						"display-text": "{my} y radius {0} {1}",
+						"description": "Compare the current Y radius of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the Y radius."},
+							"radiusy1": { "name":"RadiusY", "desc":"The value to compare the current Y radius to."}
+						}
+						},
+					"compareoriginx4": {
+						"list-name": "Compare X origin",
+						"display-text": "{my} x origin {0} {1}",
+						"description": "Compare the current X origin of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the X origin."},
+							"originx1": { "name":"OriginX", "desc":"The value to compare the current X origin to."}
+						}
+						},
+					"compareoriginy5": {
+						"list-name": "Compare Y origin",
+						"display-text": "{my} y origin {0} {1}",
+						"description": "Compare the current Y origin of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the Y origin."},
+							"originy1": { "name":"OriginY", "desc":"The value to compare the current Y origin to."}
+						}
+						}
+				},
+				"actions": {
+					"setenabled5": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} [b]{0}[/b]",
+						"description": "Set whether this behavior is enabled.",
+						"params": {
+							"state2": { "name":"State", "desc":"Set whether to enable or disable the behavior.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"RadiusX6": {
+						"list-name": "Set X radius",
+						"display-text": "Set {my} X radius to {0}",
+						"description": "Set X radius.",
+						"params": {
+							"RadiusX1": { "name":"RadiusX", "desc":"The X radius"}
+						}
+					},
+					"SetRadiusY7": {
+						"list-name": "Set Y radius",
+						"display-text": "Set {my} Y radius to {0}",
+						"description": "Set X radius.",
+						"params": {
+							"RadiusY1": { "name":"RadiusX", "desc":"The Y radius"}
+						}
+					},
+					"SetOriginX8": {
+						"list-name": "Set X origin",
+						"display-text": "Set {my} X origin to {0}",
+						"description": "Set X radius.",
+						"params": {
+							"OriginX1": { "name":"RadiusX", "desc":"The X origin"}
+						}
+					},
+					"SetOriginY9": {
+						"list-name": "Set Y origin",
+						"display-text": "Set {my} Y origin to {0}",
+						"description": "Set X radius.",
+						"params": {
+							"OriginY1": { "name":"RadiusX", "desc":"The Y origin"}
+						}
+					}
+				},
+				"expressions": {
+					"radiusx1": {
+						"description": "Return the X radius.",
+						"translated-name": "RadiusX"
+						},
+					"radiusy2": {
+						"description": "Return the Y radius.",
+						"translated-name": "RadiusY"
+						},
+					"originx3": {
+						"description": "Return the X origin.",
+						"translated-name": "OriginX"
+						},
+					"originy4": {
+						"description": "Return the Y origin.",
+						"translated-name": "OriginY"
+						}
+				}
+			}
+		}
+	}
+}

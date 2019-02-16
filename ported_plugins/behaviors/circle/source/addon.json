@@ -1,0 +1,32 @@
+{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "Circle",
+	"id": "Circle",
+	"version": "1.0.0.0",
+	"author": "Mutuware",
+	"website": "http://",
+	"documentation": "http://",
+	"description": "Move an object in a circular or elliptical path.",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c3runtime/behavior.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"behavior.js",
+		"type.js",
+		"instance.js"
+	]
+}

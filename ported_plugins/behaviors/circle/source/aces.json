@@ -1,0 +1,144 @@
+{
+	"": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "ısenabled0",
+				"scriptName": "IsEnabled",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "comparespeed1",
+				"scriptName": "CompareSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"speed1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "compareradiusx2",
+				"scriptName": "CompareRadiusX",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"radiusx1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "compareradiusy3",
+				"scriptName": "CompareRadiusY",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"radiusy1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "compareoriginx4",
+				"scriptName": "CompareOriginX",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"originx1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "compareoriginy5",
+				"scriptName": "CompareOriginY",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"originy1", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 5,
+				"id": "setenabled5",
+				"scriptName": "SetEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "RadiusX6",
+				"scriptName": "SetRadiusX",
+				"highlight": false,
+				"params": [
+					{"id":"RadiusX1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "SetRadiusY7",
+				"scriptName": "SetRadiusY",
+				"highlight": false,
+				"params": [
+					{"id":"RadiusY1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "SetOriginX8",
+				"scriptName": "SetOriginX",
+				"highlight": false,
+				"params": [
+					{"id":"OriginX1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "SetOriginY9",
+				"scriptName": "SetOriginY",
+				"highlight": false,
+				"params": [
+					{"id":"OriginY1", "type":"number"}
+				]
+			}
+
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "radiusx1",
+				"expressionName": "RadiusX",
+				"scriptName": "RadiusX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "radiusy2",
+				"expressionName": "RadiusY",
+				"scriptName": "RadiusY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "originx3",
+				"expressionName": "OriginX",
+				"scriptName": "OriginX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "originy4",
+				"expressionName": "OriginY",
+				"scriptName": "OriginY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}
