@@ -1,0 +1,115 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Light.",
+	"text": {
+		"behaviors": {
+			"rex_light": {
+				"name": "Light",
+				"description": "Adjust width until hit obstacle.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_light.html",
+				"properties": {
+					"ınitial-state": {
+						"name": "Initial state",
+						"desc": "Whether to initially have the behavior enabled or disabled.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"max-width": {
+						"name": "Max width",
+						"desc": "The maximum width in pixels."
+						},
+					"obstacles": {
+						"name": "Obstacles",
+						"desc": "Choose whether solids obstruct or if to use custom objects added by events.",
+						"items": {
+							"solids":"Solids",
+							"custom":"Custom"
+							}
+						}
+				},
+				"aceCategories": {
+					"manual": "Manual",
+					"configure": "Configure",
+					"tick": "Tick",
+					"hit": "Hit",
+					"reflection": "Reflection"
+				},
+				"conditions": {
+					"ıshit1": {
+						"list-name": "Hit",
+						"display-text": "{my} hit object",
+						"description": "Retrun true if hit object."
+						}
+				},
+				"actions": {
+					"pointtosolid1": {
+						"list-name": "Point to solids",
+						"display-text": "{my} point to solids",
+						"description": "Extend width until hit any solid object."
+					},
+					"pointtoobject2": {
+						"list-name": "Point to object",
+						"display-text": "{my} point to {0}",
+						"description": "Extend width until hit any specfic object.",
+						"params": {
+							"obstacle0": { "name":"Obstacle", "desc":"Choose an object to add as an obstacle."}
+						}
+					},
+					"setmaxwidth6": {
+						"list-name": "Set maximum width",
+						"display-text": "Set {my} maximum width to [i]{0}[/i]",
+						"description": "Set the maximum width in pixels.",
+						"params": {
+							"width0": { "name":"Width", "desc":"Maximum width in pixels."}
+						}
+					},
+					"setenabled10": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} [b]{0}[/b]",
+						"description": "Set whether this behavior is enabled.",
+						"params": {
+							"state2": { "name":"State", "desc":"Set whether to enable or disable the behavior.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"addobstacle11": {
+						"list-name": "Add obstacle",
+						"display-text": "Add {my} obstacle {0}",
+						"description": "Add a custom object as an obstacle to line-of-sight.",
+						"params": {
+							"obstacle0": { "name":"Obstacle", "desc":"Choose an object to add as an obstacle, obstructing line-of-sight."}
+						}
+					},
+					"clearobstacles12": {
+						"list-name": "Clear obstacles",
+						"display-text": "Clear {my} obstacles",
+						"description": "Remove all added obstacle objects."
+					}
+				},
+				"expressions": {
+					"hitx1": {
+						"description": "Get hit X co-ordinate.",
+						"translated-name": "HitX"
+						},
+					"hity2": {
+						"description": "Get hit Y co-ordinate.",
+						"translated-name": "HitY"
+						},
+					"hituıd3": {
+						"description": "Get UID of hit object.",
+						"translated-name": "HitUID"
+						},
+					"maxwidth6": {
+						"description": "Get maximum width setting.",
+						"translated-name": "MaxWidth"
+						},
+					"reflectionangle11": {
+						"description": "Get angle of refection.",
+						"translated-name": "ReflectionAngle"
+						}
+				}
+			}
+		}
+	}
+}

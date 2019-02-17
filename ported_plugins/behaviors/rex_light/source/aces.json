@@ -1,0 +1,137 @@
+{
+	"manual": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "pointtosolid1",
+				"scriptName": "PointToSolid",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "pointtoobject2",
+				"scriptName": "PointToObject",
+				"highlight": false,
+				"params": [
+					{"id":"obstacle0", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"configure": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "setmaxwidth6",
+				"scriptName": "SetMaxWidth",
+				"highlight": false,
+				"params": [
+					{"id":"width0", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 6,
+				"id": "maxwidth6",
+				"expressionName": "MaxWidth",
+				"scriptName": "MaxWidth",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"tick": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 10,
+				"id": "setenabled10",
+				"scriptName": "SetEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "addobstacle11",
+				"scriptName": "AddObstacle",
+				"highlight": false,
+				"params": [
+					{"id":"obstacle0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "clearobstacles12",
+				"scriptName": "ClearObstacles",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"hit": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "ıshit1",
+				"scriptName": "IsHit",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "hitx1",
+				"expressionName": "HitX",
+				"scriptName": "HitX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "hity2",
+				"expressionName": "HitY",
+				"scriptName": "HitY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "hituıd3",
+				"expressionName": "HitUID",
+				"scriptName": "HitUID",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"reflection": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "reflectionangle11",
+				"expressionName": "ReflectionAngle",
+				"scriptName": "ReflectionAngle",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	}
+}
