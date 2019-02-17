@@ -195,7 +195,7 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tbody>
 <tr>
   <td>rex_light</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_light/dist/Rex_light.c3addon">rex_light.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_light/dist/rex_light.c3addon">rex_light.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
