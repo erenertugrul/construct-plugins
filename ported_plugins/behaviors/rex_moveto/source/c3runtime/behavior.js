@@ -1,4 +1,4 @@
-	newPointData = function (point) {
+	function newPointData(point) {
 		if (point == null){
 			point = {};
 		}
