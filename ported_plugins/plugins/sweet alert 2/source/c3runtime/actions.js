@@ -183,7 +183,7 @@
 			    resolve(array);
 			});
 	        /////////////////////////////////////
-			swal({
+			_swal({
 	            /////////////////////////////////////
 	            ["type"]: self.getType(type_),
 	            ["title"]: title_,
@@ -227,10 +227,10 @@
 	            self["open"] = 0;
 	            self["count"] = 0;
 	            self["lastValueAt"] = [];
-	            if (result.value) {
+	            if (result["value"]) {
 	                self["lastValue"] = JSON.stringify(result["value"]).slice(1, -1);
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnConfirm, self);
-	            } else if (result.dismiss === 'cancel') {
+	            } else if (result["dismiss"] === 'cancel') {
 	                self["lastValue"] = "";
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnCancel, self);
 	            };
@@ -243,17 +243,17 @@
 	    {
 	    	var self = this;
 	        /////////////////////////////////////
-	        swal({
+	        _swal({
 	            /////////////////////////////////////
 	            ["type"]: self.getType(type_),
 	            ["title"]: title_,
 	            ["text"]: text_,
 	            ["timer"]: timer_ * 1000,
 	            /////////////////////////////////////
-	            ["background"]: self.style["background"],
-	            ["color"]: self.style["color"],
-	            ["position"]: self.style["position"],
-	            ["width"]: self.style["width"],
+	            ["background"]: self["style"]["background"],
+	            ["color"]: self["style"]["color"],
+	            ["position"]: self["style"]["position"],
+	            ["width"]: self["style"]["width"],
 	            /////////////////////////////////////
 	            ["showConfirmButton"]: false,
 	            ["showCancelButton"]: false,
@@ -328,10 +328,10 @@
                 ["currentProgressStep"]: i,
                 ["progressSteps"]: progressSteps,
                 /////////////////////////////////////
-                ["background"]: self.style["background"],
-                ["color"]: self.style["color"],
-                ["position"]: self.style["position"],
-                ["width"]: self.style["width"],
+                ["background"]: self["style"]["background"],
+                ["color"]: self["style"]["color"],
+                ["position"]: self["style"]["position"],
+                ["width"]: self["style"]["width"],
                 /////////////////////////////////////
                 ["buttonsStyling"]: true,
                 ["showCancelButton"]: true,
@@ -339,9 +339,9 @@
                 ["focusCancel"]: false,
                 ["confirmButtonText"]: i < steps.length - 1 ? next_ : confirm_,
                 ["cancelButtonText"]: i > 0 ? back_ : cancel_,
-                ["confirmButtonColor"]: self.style["confirm"],
-                ["cancelButtonColor"]: self.style["cancel"],
-                ["reverseButtons"]: self.style["reverse"],
+                ["confirmButtonColor"]: self["style"]["confirm"],
+                ["cancelButtonColor"]: self["style"]["cancel"],
+                ["reverseButtons"]: self["style"]["reverse"],
                 /////////////////////////////////////
                 ["allowEscapeKey"]: allow_escapekey_,
                 ["allowOutsideClick"]: allow_outsideclick_,

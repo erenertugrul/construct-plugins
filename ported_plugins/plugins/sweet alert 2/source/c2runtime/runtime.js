@@ -314,12 +314,12 @@ cr.plugins_.SweetAlert = function(runtime) {
             }
         }).then(function(result) {
             self.open = 0;
-            if (result.value) {
+            if (result["value"]) {
                 self["count"] = result["value"].length;
                 self["lastValue"] = JSON.stringify(result["value"]).slice(1, -1);
                 self["lastValueAt"] = result["value"];
                 self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnConfirm, self);
-            } else if (result.dismiss === 'cancel') {
+            } else if (result["dismiss"] === 'cancel') {
                 self["count"] = 0;
                 self["lastValue"] = "";
                 self["lastValueAt"] = [];
@@ -409,10 +409,10 @@ cr.plugins_.SweetAlert = function(runtime) {
             ["text"]: text_,
             ["timer"]: timer_ * 1000,
             /////////////////////////////////////
-            ["background"]: self.style["background"],
-            ["color"]: self.style["color"],
-            ["position"]: self.style["position"],
-            ["width"]: self.style["width"],
+            ["background"]: self["style"]["background"],
+            ["color"]: self["style"]["color"],
+            ["position"]: self["style"]["position"],
+            ["width"]: self["style"]["width"],
             /////////////////////////////////////
             ["showConfirmButton"]: false,
             ["showCancelButton"]: false,
@@ -485,10 +485,10 @@ cr.plugins_.SweetAlert = function(runtime) {
                 ["currentProgressStep"]: i,
                 ["progressSteps"]: progressSteps,
                 /////////////////////////////////////
-                ["background"]: self.style["background"],
-                ["color"]: self.style["color"],
-                ["position"]: self.style["position"],
-                ["width"]: self.style["width"],
+                ["background"]: self["style"]["background"],
+                ["color"]: self["style"]["color"],
+                ["position"]: self["style"]["position"],
+                ["width"]: self["style"]["width"],
                 /////////////////////////////////////
                 ["buttonsStyling"]: true,
                 ["showCancelButton"]: true,
@@ -496,9 +496,9 @@ cr.plugins_.SweetAlert = function(runtime) {
                 ["focusCancel"]: false,
                 ["confirmButtonText"]: i < steps.length - 1 ? next_ : confirm_,
                 ["cancelButtonText"]: i > 0 ? back_ : cancel_,
-                ["confirmButtonColor"]: self.style["confirm"],
-                ["cancelButtonColor"]: self.style["cancel"],
-                ["reverseButtons"]: self.style["reverse"],
+                ["confirmButtonColor"]: self["style"]["confirm"],
+                ["cancelButtonColor"]: self["style"]["cancel"],
+                ["reverseButtons"]: self["style"]["reverse"],
                 /////////////////////////////////////
                 ["allowEscapeKey"]: allow_escapekey_,
                 ["allowOutsideClick"]: allow_outsideclick_,
