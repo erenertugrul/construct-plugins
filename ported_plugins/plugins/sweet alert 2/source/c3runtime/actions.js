@@ -155,12 +155,12 @@
             }
 	        }).then(function(result) {
 	            self.open = 0;
-	            if (result.value) {
+	            if (result["value"]) {
 	                self["count"] = result["value"].length;
 	                self["lastValue"] = JSON.stringify(result["value"]).slice(1, -1);
 	                self["lastValueAt"] = result["value"];
 	                self.Trigger(C3.Plugins.SweetAlert.Cnds.OnConfirm, self);
-	            } else if (result.dismiss === 'cancel') {
+	            } else if (result["dismiss"] === 'cancel') {
 	                self["count"] = 0;
 	                self["lastValue"] = "";
 	                self["lastValueAt"] = [];

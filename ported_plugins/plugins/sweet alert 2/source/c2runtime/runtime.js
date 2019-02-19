@@ -386,10 +386,10 @@ cr.plugins_.SweetAlert = function(runtime) {
             self["open"] = 0;
             self["count"] = 0;
             self["lastValueAt"] = [];
-            if (result.value) {
+            if (result["value"]) {
                 self["lastValue"] = JSON.stringify(result["value"]).slice(1, -1);
                 self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnConfirm, self);
-            } else if (result.dismiss === 'cancel') {
+            } else if (result["dismiss"] === 'cancel') {
                 self["lastValue"] = "";
                 self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnCancel, self);
             };
