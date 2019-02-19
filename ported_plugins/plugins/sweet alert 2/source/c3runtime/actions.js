@@ -191,10 +191,10 @@
 	            ["input"]: 'radio',
 	            ["inputOptions"]: inputOptions,
 	            /////////////////////////////////////
-	            ["background"]: self.style["background"],
-	            ["color"]: self.style["color"],
-	            ["position"]: self.style["position"],
-	            ["width"]: self.style["width"],
+	            ["background"]: self["style"]["background"],
+	            ["color"]: self["style"]["color"],
+	            ["position"]: self["style"]["position"],
+	            ["width"]: self["style"]["width"],
 	            /////////////////////////////////////
 	            ["buttonsStyling"]: true,
 	            ["focusConfirm"]: false,
@@ -203,9 +203,9 @@
 	            ["showConfirmButton"]: (confirm_),
 	            ["cancelButtonText"]: cancel_,
 	            ["showCancelButton"]: (cancel_),
-	            ["confirmButtonColor"]: self.style["confirm"],
-	            ["cancelButtonColor"]: self.style["cancel"],
-	            ["reverseButtons"]: self.style["reverse"],
+	            ["confirmButtonColor"]: self["style"]["confirm"],
+	            ["cancelButtonColor"]: self["style"]["cancel"],
+	            ["reverseButtons"]: self["style"]["reverse"],
 	            /////////////////////////////////////
 	            ["allowEscapeKey"]: allow_escapekey_,
 	            ["allowOutsideClick"]: allow_outsideclick_,
