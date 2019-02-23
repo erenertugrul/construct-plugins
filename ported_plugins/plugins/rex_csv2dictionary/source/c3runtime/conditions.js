@@ -26,7 +26,7 @@
 		            entry = table[i];
 		            this.exp_CurKey = entry[0];
 		            this.exp_CurValue = this.value_get(entry[1]);
-			    	current_event.retrigger();
+			    	current_event.Retrigger(current_frame,h);
 		            this._runtime.GetEventSheetManager().GetEventStack().PopSol(current_event.solModifiers);
 		        
 		        }   
