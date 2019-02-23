@@ -233,14 +233,8 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tbody>
 <tr>
 <td>rex_csv</td>
+
 </tbody>
-</table>
-</tr>
-<td>rex_firebase</td>
-</tbody>
-</table>
-</tr>
-<tr>
 </table>
 
 # For donate
