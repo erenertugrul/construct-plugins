@@ -235,7 +235,7 @@ If you want to support me, you can make a donation on patreon or itch.io
 <td>rex_csv</td>
 </tbody>
 <tbody>
-<td>rex_firebase</td>
+  <td><a href="https://github.com/erenertugrul/construct-plugins/issues/4">rex_firebase</a></td>
 </tr>
 </tbody>
 </table>
