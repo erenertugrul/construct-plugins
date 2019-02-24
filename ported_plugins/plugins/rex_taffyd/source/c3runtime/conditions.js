@@ -18,7 +18,6 @@
 	        var for_each_row = function (r, i) {
 	            if (solModifierAfterCnds) {
                     this._runtime.GetEventSheetManager().PushCopySol(solmod);
-                    p.Pop();
 	            }
 
 	            self.exp_CurRowID = r["___id"];
@@ -28,8 +27,8 @@
 
 	            if (solModifierAfterCnds) {
                     this._runtime.GetEventSheetManager().PopSol(solmod);
-                    p.Pop();
 	            }
+	            p.Pop();
 	        };
 	        queriedRows["each"](for_each_row);
 
