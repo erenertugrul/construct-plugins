@@ -12,9 +12,12 @@
 	        
 	    	var current_frame = this._runtime.GetEventSheetManager().GetCurrentEventStackFrame();
 	   		var current_event = current_frame.GetCurrentEvent();
+	   		var solmod = current_event.GetSolModifiers();
 	    	var solModifierAfterCnds = current_frame.IsSolModifierAfterCnds();
 	    	var c = this._runtime.GetEventSheetManager().GetEventStack();
-	    	var h = c.Push(current_event);    
+	    	var p = this._runtime.GetEventStack(); 
+	    	var h = c.Push(current_event);
+	    	  
 	        this.exp_Width = x_cnt;
 	        this.exp_Height = y_cnt;                
 	        if (solModifierAfterCnds)
@@ -24,15 +27,16 @@
 	                this.exp_CurY = j;              
 	                for (i=0; i<x_cnt; i++ )
 	                {
-	                    this._runtime.GetEventSheetManager().GetEventStack().PushCopySol(current_event.solModifiers);
+	                    this._runtime.GetEventSheetManager().PushCopySol(solmod);
 	                    
 	                    this.exp_CurX = i;
 	                    this.exp_CurValue = this.value_get(table[j][i]);                    
 	                    current_event.Retrigger(current_frame,h);
 	                    
-	                    this._runtime.GetEventSheetManager().GetEventStack().PopSol(current_event.solModifiers);
+	                    this._runtime.GetEventSheetManager().PopSol(solmod);
 	                }
-	            }   
+	            }
+             	p.Pop();
 	        }
 	        else
 	        {
@@ -44,11 +48,12 @@
 	                    this.exp_CurX = i;
 	                    this.exp_CurValue = this.value_get(table[j][i]);        
 	                    current_event.Retrigger(current_frame,h);
-
+						 
 	                }
-	            }           
+	            }
+               p.Pop();       
 	        }
-
+	       
 	        return false;
 	    }
 	};

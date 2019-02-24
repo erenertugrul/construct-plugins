@@ -7,7 +7,6 @@
 		{  
 		    	    
 		    var dict_obj = dict_objs.GetFirstPicked().GetSdkInstance();
-		    console.log(dict_obj);
 		    var table = CSVToArray(csv_string, this.strDelimiter);        
 			var i, cnt = table.length;
 			if (cnt == 0){

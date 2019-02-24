@@ -37,7 +37,6 @@ cr.behaviors.Rex_pin2imgpt = function(runtime)
 	    {
 	        this.imgptX_get = cr.plugins_.Sprite.prototype.exps.ImagePointX;
 	        this.imgptY_get = cr.plugins_.Sprite.prototype.exps.ImagePointY;
-	        console.log(this.imgptX_get,this.imgptY_get);
 	    }
 	};
 	/////////////////////////////////////

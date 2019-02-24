@@ -6,17 +6,19 @@
 	    ForEachRow() {
 	        var queriedRows = this.GetCurrentQueriedRows();
 
-	        var runtime = this.runtime;
-	        var current_frame = this._runtime.GetEventSheetManager().GetCurrentEventStackFrame();
-	        var current_event = current_frame.GetCurrentEvent();
-	        var solModifierAfterCnds = current_frame.IsSolModifierAfterCnds();
-	        var c = this._runtime.GetEventSheetManager().GetEventStack();
-	        var h = c.Push(current_event);
+	    	var current_frame = this._runtime.GetEventSheetManager().GetCurrentEventStackFrame();
+	   		var current_event = current_frame.GetCurrentEvent();
+	   		var solmod = current_event.GetSolModifiers();
+	    	var solModifierAfterCnds = current_frame.IsSolModifierAfterCnds();
+	    	var c = this._runtime.GetEventSheetManager().GetEventStack();
+	    	var p = this._runtime.GetEventStack(); 
+	    	var h = c.Push(current_event);
 	        var self = this;
 
 	        var for_each_row = function (r, i) {
 	            if (solModifierAfterCnds) {
-	                this._runtime.GetEventSheetManager().GetEventStack().PushCopySol(current_event.solModifiers);
+                    this._runtime.GetEventSheetManager().PushCopySol(solmod);
+                    p.Pop();
 	            }
 
 	            self.exp_CurRowID = r["___id"];
@@ -25,7 +27,8 @@
 
 
 	            if (solModifierAfterCnds) {
-	                this._runtime.GetEventSheetManager().GetEventStack().PopSol(current_event.solModifiers);
+                    this._runtime.GetEventSheetManager().PopSol(solmod);
+                    p.Pop();
 	            }
 	        };
 	        queriedRows["each"](for_each_row);
