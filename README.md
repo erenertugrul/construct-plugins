@@ -202,6 +202,16 @@ If you want to support me, you can make a donation on patreon or itch.io
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
 </tbody>
+<tbody>
+<tr>
+  <td>rex_firebase</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/releases/download/rex_firebase/rex_firebase_pack.zip">rex_firebase_bundle.zip</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
 <!--- 
 <tbody>
 <tr>
@@ -234,10 +244,7 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tr>
 <td>rex_csv</td>
 </tbody>
-<tbody>
-  <td><a href="https://github.com/erenertugrul/construct-plugins/issues/4">rex_firebase</a></td>
-</tr>
-</tbody>
+
 </table>
 
 # For donate
