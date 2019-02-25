@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Item table",
+	"id": "Rex_Firebase_ItemTable",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "http://c2rexplugins.weebly.com/rex_firebase_itemtable.html",
+	"documentation": "http://c2rexplugins.weebly.com/rex_firebase_itemtable.html",
+	"description": "Items table indexed by (itemID, key), supports writing a item or reading items back.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

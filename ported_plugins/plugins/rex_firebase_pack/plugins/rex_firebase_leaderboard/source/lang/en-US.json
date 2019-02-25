@@ -1,0 +1,245 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Leader board.",
+	"text": {
+		"plugins": {
+			"rex_firebase_leaderboard": {
+				"name": "Leader board",
+				"description": "Leader board built on firebase.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_leaderboard.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"ıd": {
+						"name": "ID",
+						"desc": "ID of leader board, i.e. \"Sub domain\"."
+						},
+					"order": {
+						"name": "Order",
+						"desc": "Ranking order.",
+						"items": {
+							"small to large":"Small to large",
+							"large to small":"Large to small"
+							}
+						},
+					"update": {
+						"name": "Update",
+						"desc": "Manual update or auto update.",
+						"items": {
+							"manual":"Manual",
+							"auto":"Auto"
+							}
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"send": "Send",
+					"update": "Update",
+					"remove": "Remove",
+					"score": "Score",
+					"update_-_for_each": "Update - for each",
+					"score_-_get": "Score - get",
+					"post": "Post",
+					"rank": "Rank",
+					"rank_index": "Rank index",
+					"request": "Request"
+				},
+				"conditions": {
+					"onpostcomplete1": {
+						"list-name": "On post complete",
+						"display-text": "On post complete",
+						"description": "Triggered when post complete."
+						},
+					"onposterror2": {
+						"list-name": "On post error",
+						"display-text": "On post error",
+						"description": "Triggered when post error."
+						},
+					"onupdate3": {
+						"list-name": "On update",
+						"display-text": "On update ranks",
+						"description": "Triggered when ranks updated."
+						},
+					"foreachrank11": {
+						"list-name": "For each rank",
+						"display-text": "For each rank",
+						"description": "Repeat the event for each rank."
+						},
+					"foreachrank12": {
+						"list-name": "For each rank in a range",
+						"display-text": "For each rank from [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Repeat the event for each rank in a range.",
+						"params": {
+							"start0": { "name":"Start", "desc":"Start from rank index (0-based)."},
+							"end1": { "name":"End", "desc":"End to rank index (0-based). This value should larger than Start."}
+						}
+						},
+					"ongetscore23": {
+						"list-name": "On get score",
+						"display-text": "On get score",
+						"description": "Triggered when get score."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], ID to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"ıd1": { "name":"ID", "desc":"ID of leader board, i.e. \"Sub domain\"."}
+						}
+					},
+					"postscore1": {
+						"list-name": "Post score",
+						"display-text": "Post (User ID: [i]{0}[/i]) [i]{1}[/i]: [i]{2}[/i], extra data to [i]{3}[/i] [i]{4}[/i]",
+						"description": "Post score by user ID.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."},
+							"name1": { "name":"Name", "desc":"Player name."},
+							"score2": { "name":"Score", "desc":"Player Score"},
+							"extra3": { "name":"Extra", "desc":"Extra data, could be number or (JSON) string."},
+							"post_condition8": { "name":"Post condition", "desc":"Post if score is greater or less then saved score.", "items":{"":"","if greater":"if greater","if less":"if less","if not existed":"if not existed"}}
+						}
+					},
+					"updateallranks2": {
+						"list-name": "Update all",
+						"display-text": "Update all ranks",
+						"description": "Update all ranks."
+					},
+					"updatetopranks3": {
+						"list-name": "Update top",
+						"display-text": "Update top [i]{0}[/i] ranks",
+						"description": "Update top ranks.",
+						"params": {
+							"count0": { "name":"Count", "desc":"The count of top ranks."}
+						}
+					},
+					"removepost4": {
+						"list-name": "Remove post",
+						"display-text": "Remove post by User ID: [i]{0}[/i]",
+						"description": "Remove post by User ID.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."}
+						}
+					},
+					"stopupdating5": {
+						"list-name": "Stop updating",
+						"display-text": "Stop updating",
+						"description": "Stop updating ranks."
+					},
+					"addscore6": {
+						"list-name": "Add to score",
+						"display-text": "Add [i]{2}[/i] to (User ID: [i]{0}[/i]) [i]{1}[/i] 's score, extra data to [i]{3}[/i]",
+						"description": "Add score by user ID.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."},
+							"name1": { "name":"Name", "desc":"(Optional) Player name."},
+							"add2": { "name":"Add", "desc":"Add score"},
+							"extra3": { "name":"Extra", "desc":"(Optional) Extra data, could be number or (JSON) string."}
+						}
+					},
+					"getscore22": {
+						"list-name": "Get score",
+						"display-text": "Get score of User ID: [i]{0}[/i]",
+						"description": "Get score.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."}
+						}
+					}
+				},
+				"expressions": {
+					"curplayername1": {
+						"description": "Get the current player name in a For Each loop.",
+						"translated-name": "CurPlayerName"
+						},
+					"curplayerscore2": {
+						"description": "Get the current player score in a For Each loop.",
+						"translated-name": "CurPlayerScore"
+						},
+					"curplayerrank3": {
+						"description": "Get the current player rank (0-based) in a For Each loop.",
+						"translated-name": "CurPlayerRank"
+						},
+					"curuserıd4": {
+						"description": "Get the current user id in a For Each loop.",
+						"translated-name": "CurUserID"
+						},
+					"curextradata5": {
+						"description": "Get the current extra data in a For Each loop.",
+						"translated-name": "CurExtraData"
+						},
+					"postplayername11": {
+						"description": "The post player name. Uses under \"condition:On post complete\".",
+						"translated-name": "PostPlayerName"
+						},
+					"postplayerscore12": {
+						"description": "Get posted current player score under \"condition:On post complete\".",
+						"translated-name": "PostPlayerScore"
+						},
+					"postplayeruserıd14": {
+						"description": "Get posted current user id under \"condition:On post complete\".",
+						"translated-name": "PostPlayerUserID"
+						},
+					"postextradata15": {
+						"description": "Get posted current extra data under \"condition:On post complete\".",
+						"translated-name": "PostExtraData"
+						},
+					"rankcount21": {
+						"description": "Get total rank count.",
+						"translated-name": "RankCount"
+						},
+					"userıd2rank22": {
+						"description": "Get rank by user ID. Return (-1) if not found.",
+						"translated-name": "UserID2Rank",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."}
+						}
+						},
+					"rank2playername23": {
+						"description": "Get player name by rank index.",
+						"translated-name": "Rank2PlayerName",
+						"params": {
+							"rank0": { "name":"Rank", "desc":"Rank index (0-based)."}
+						}
+						},
+					"rank2playerscore24": {
+						"description": "Get player score by rank index.",
+						"translated-name": "Rank2PlayerScore",
+						"params": {
+							"rank0": { "name":"Rank", "desc":"Rank index (0-based)."}
+						}
+						},
+					"rank2extradata25": {
+						"description": "Get extra data by rank index.",
+						"translated-name": "Rank2ExtraData",
+						"params": {
+							"rank0": { "name":"Rank", "desc":"Rank index (0-based)."}
+						}
+						},
+					"rank2playeruserıd26": {
+						"description": "Get userID by rank index. Add default value at 2nd parameter.",
+						"translated-name": "Rank2PlayerUserID",
+						"params": {
+							"rank0": { "name":"Rank", "desc":"Rank index (0-based)."}
+						}
+						},
+					"lastuserıd52": {
+						"description": "Get requested userID. Return \"\" if invalided.",
+						"translated-name": "LastUserID"
+						},
+					"lastscore53": {
+						"description": "Get requested score. Return 0 if invalided.",
+						"translated-name": "LastScore"
+						},
+					"lastplayername54": {
+						"description": "Get requested score. Return \"\" if invalided.",
+						"translated-name": "LastPlayerName"
+						}
+				}
+			}
+		}
+	}
+}

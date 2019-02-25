@@ -1,0 +1,99 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Message.",
+	"text": {
+		"plugins": {
+			"rex_firebase_message": {
+				"name": "Message",
+				"description": "Send/receive messages.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_message.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						},
+					"content-type": {
+						"name": "Content type",
+						"desc": "Sent content type, string or JSON object in string.",
+						"items": {
+							"string":"String",
+							"json string":"JSON string"
+							}
+						}
+				},
+				"aceCategories": {
+					"user_info": "User info",
+					"update": "Update",
+					"message": "Message"
+				},
+				"conditions": {
+					"onnewmessage1": {
+						"list-name": "On new message",
+						"display-text": "On receive new message",
+						"description": "Triggered when received new message."
+						}
+				},
+				"actions": {
+					"setuserınfo1": {
+						"list-name": "Set user",
+						"display-text": "Set sender name to [i]{1}[/i], sender ID to [i]{0}[/i]",
+						"description": "Set user info.",
+						"params": {
+							"sender_ıd0": { "name":"Sender ID", "desc":"Sender ID."},
+							"sender_name1": { "name":"Sender name", "desc":"Sender name."}
+						}
+					},
+					"startupdate11": {
+						"list-name": "Start",
+						"display-text": "Start receiving on ID [i]{0}[/i]",
+						"description": "Start receiving.",
+						"params": {
+							"receiver_ıd0": { "name":"Receiver ID", "desc":"ID of receiver."}
+						}
+					},
+					"stopupdate12": {
+						"list-name": "Stop",
+						"display-text": "Stop updating",
+						"description": "Stop updating."
+					},
+					"send21": {
+						"list-name": "Send",
+						"display-text": "Send message with title: [i]{1}[/i], content: [i]{2}[/i] to user ID: [i]{0}[/i]",
+						"description": "Send message.",
+						"params": {
+							"receiver_userıd0": { "name":"Receiver UserID", "desc":"UserID of receiver."},
+							"title1": { "name":"Title", "desc":"Title of this private message."},
+							"content2": { "name":"Content", "desc":"Content of this private message. String or JSON string for object."}
+						}
+					}
+				},
+				"expressions": {
+					"lastsenderıd1": {
+						"description": "Get sender ID of last message.",
+						"translated-name": "LastSenderID"
+						},
+					"lastsendername2": {
+						"description": "Get sender name of last message.",
+						"translated-name": "LastSenderName"
+						},
+					"lasttitle3": {
+						"description": "Get title of last message.",
+						"translated-name": "LastTitle"
+						},
+					"lastcontent4": {
+						"description": "Get content of last message.",
+						"translated-name": "LastContent"
+						},
+					"lastmessageıd5": {
+						"description": "Get ID of last message.",
+						"translated-name": "LastMessageID"
+						}
+				}
+			}
+		}
+	}
+}

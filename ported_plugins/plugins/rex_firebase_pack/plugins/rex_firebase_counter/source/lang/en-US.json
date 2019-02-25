@@ -1,0 +1,173 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Counter.",
+	"text": {
+		"plugins": {
+			"rex_firebase_counter": {
+				"name": "Counter",
+				"description": "Counter to increase or decrease value.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_counter.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						},
+					"ınitial": {
+						"name": "Initial",
+						"desc": "Initial value if counter value is null."
+						},
+					"upper-bound": {
+						"name": "Upper bound",
+						"desc": "Upper bound of counter, \"\" is none. Counter value will be clamped at upper bound."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"update": "Update",
+					"configure": "Configure",
+					"add": "Add",
+					"set": "Set",
+					"custom_add": "Custom add",
+					"counter": "Counter"
+				},
+				"conditions": {
+					"onupdate1": {
+						"list-name": "On update",
+						"display-text": "On update",
+						"description": "Triggered when counter updated."
+						},
+					"onmywriting2": {
+						"list-name": "On my writing",
+						"display-text": "On my writing",
+						"description": "Triggered when my writing successfully."
+						},
+					"comparelastwrotevalue3": {
+						"list-name": "Compare my last wrote value",
+						"display-text": "My last wrote value {0} {1}",
+						"description": "Compare my last wrote value.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare my last wrote value."},
+							"value1": { "name":"Value", "desc":"The value to compare my last wrote value to."}
+						}
+						},
+					"comparelastvalue4": {
+						"list-name": "Compare last counter value",
+						"display-text": "Last counter value {0} {1}",
+						"description": "Compare last counter value.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare last counter value."},
+							"value1": { "name":"Value", "desc":"The value to compare last counter value to."}
+						}
+						},
+					"onmywritingabort5": {
+						"list-name": "On my writing abort",
+						"display-text": "On my writing abort",
+						"description": "Triggered when my writing abort."
+						},
+					"onmywritingerror6": {
+						"list-name": "On my writing error",
+						"display-text": "On my writing error",
+						"description": "Triggered when my writing error."
+						},
+					"onaddfn21": {
+						"list-name": "On custom add",
+						"display-text": "On custom add function: [i]{0}[/i]",
+						"description": "Custom add function.",
+						"params": {
+							"function0": { "name":"Function", "desc":"Function for increasing counter."}
+						}
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"startupdate1": {
+						"list-name": "Start",
+						"display-text": "Start update",
+						"description": "Start update."
+					},
+					"stopupdate2": {
+						"list-name": "Stop",
+						"display-text": "Stop update",
+						"description": "Stop update."
+					},
+					"setınit3": {
+						"list-name": "Set boundaries",
+						"display-text": "Set initial value to [i]{0}[/i], upper bound to [i]{1}[/i]",
+						"description": "Set initial value and upper bound. \"\" is none.",
+						"params": {
+							"ınit0": { "name":"Init", "desc":"Initial value."},
+							"upper_bound1": { "name":"Upper bound", "desc":"Upper bound value. \"\" is none."}
+						}
+					},
+					"add11": {
+						"list-name": "Try add to",
+						"display-text": "Try add [i]{0}[/i]",
+						"description": "Try add to.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Value to add. Positive or negative number, or \"+10%\" string based on current value."}
+						}
+					},
+					"forceset12": {
+						"list-name": "Force set to",
+						"display-text": "Force set value to [i]{0}[/i]",
+						"description": "Force set value, it will cancel any pending adding action.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Value to set."}
+						}
+					},
+					"customaddbyfn21": {
+						"list-name": "Try add by function",
+						"display-text": "Try add by function: [i]{0}[/i]",
+						"description": "Try add by function.",
+						"params": {
+							"function0": { "name":"Function", "desc":"Function for increasing counter."}
+						}
+					},
+					"customaddadd22": {
+						"list-name": "Add to",
+						"display-text": "Custom add: add [i]{0}[/i]",
+						"description": "Try add to, used under \"Condition:On custom add\".",
+						"params": {
+							"value0": { "name":"Value", "desc":"Value to add. Positive or negative number."}
+						}
+					},
+					"customaddabort23": {
+						"list-name": "Abort",
+						"display-text": "Custom add:: abort",
+						"description": "Abort current action, used under \"Condition:On custom add\"."
+					}
+				},
+				"expressions": {
+					"lastvalue1": {
+						"description": "Get last value. Return Init value if last value is null.",
+						"translated-name": "LastValue"
+						},
+					"lastwrotevalue2": {
+						"description": "Get my last wrote value. Valid under \"condition:On my writing\".",
+						"translated-name": "LastWroteValue"
+						},
+					"lastaddedvalue3": {
+						"description": "Get my last added value. Valid under \"condition:On my writing\".",
+						"translated-name": "LastAddedValue"
+						},
+					"customaddın21": {
+						"description": "Get current value, used under \"Condition:On custom add\".",
+						"translated-name": "CustomAddIn"
+						}
+				}
+			}
+		}
+	}
+}

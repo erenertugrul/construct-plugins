@@ -1,0 +1,339 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"sub_domain1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"monitor": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "onıtemlistchanged11",
+				"scriptName": "OnItemListChanged",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "startmonitor1",
+				"scriptName": "StartMonitor",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "stopmonitor2",
+				"scriptName": "StopMonitor",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"query": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "setqueryobject11",
+				"scriptName": "SetQueryObject",
+				"highlight": false,
+				"params": [
+					{"id":"query0", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"monitor_-_item": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onıtemadded1",
+				"scriptName": "OnItemAdded",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onıtemremoved2",
+				"scriptName": "OnItemRemoved",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"monitor_-_key": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "onvaluechnaged3",
+				"scriptName": "OnValueChnaged",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"property0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "onanyvaluechnaged4",
+				"scriptName": "OnAnyValueChnaged",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "onpropertyadded5",
+				"scriptName": "OnPropertyAdded",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "onpropertyremoved6",
+				"scriptName": "OnPropertyRemoved",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"load": {
+		"conditions": [
+			{
+				"c2id": 12,
+				"id": "foreachıtemıd12",
+				"scriptName": "ForEachItemID",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"order2", "type":"combo", "items":["small to large","large to small"]}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "foreachkey13",
+				"scriptName": "ForEachKey",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"ıtems": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "lastıtemıd1",
+				"expressionName": "LastItemID",
+				"scriptName": "LastItemID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "lastıtemcontent2",
+				"expressionName": "LastItemContent",
+				"scriptName": "LastItemContent",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 4,
+				"id": "lastıtemcontentposx4",
+				"expressionName": "LastItemContentPosX",
+				"scriptName": "LastItemContentPosX",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 5,
+				"id": "lastıtemcontentposy5",
+				"expressionName": "LastItemContentPosY",
+				"scriptName": "LastItemContentPosY",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"table": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "at3",
+				"expressionName": "At",
+				"scriptName": "At",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"key1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"properties": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "lastpropertyname11",
+				"expressionName": "LastPropertyName",
+				"scriptName": "LastPropertyName",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"ıtem": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 12,
+				"id": "lastvalue12",
+				"expressionName": "LastValue",
+				"scriptName": "LastValue",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 13,
+				"id": "prevvalue13",
+				"expressionName": "PrevValue",
+				"scriptName": "PrevValue",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 14,
+				"id": "lastvalueposx14",
+				"expressionName": "LastValuePosX",
+				"scriptName": "LastValuePosX",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 15,
+				"id": "lastvalueposy15",
+				"expressionName": "LastValuePosY",
+				"scriptName": "LastValuePosY",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 16,
+				"id": "prevvalueposx16",
+				"expressionName": "PrevValuePosX",
+				"scriptName": "PrevValuePosX",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 17,
+				"id": "prevvalueposy17",
+				"expressionName": "PrevValuePosY",
+				"scriptName": "PrevValuePosY",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"for_each": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "curıtemıd21",
+				"expressionName": "CurItemID",
+				"scriptName": "CurItemID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 22,
+				"id": "curıtemcontent22",
+				"expressionName": "CurItemContent",
+				"scriptName": "CurItemContent",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 23,
+				"id": "curkey23",
+				"expressionName": "CurKey",
+				"scriptName": "CurKey",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 24,
+				"id": "curvalue24",
+				"expressionName": "CurValue",
+				"scriptName": "CurValue",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	}
+}

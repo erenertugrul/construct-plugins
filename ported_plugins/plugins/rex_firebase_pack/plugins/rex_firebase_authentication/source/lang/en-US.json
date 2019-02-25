@@ -1,0 +1,366 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Authentication.",
+	"text": {
+		"plugins": {
+			"rex_firebase_authentication": {
+				"name": "Authentication",
+				"description": "Authentication which is provided by firebase. https://www.firebase.com/",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebase_authentication.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data. Deprecated in firebase3.x."
+						}
+				},
+				"aceCategories": {
+					"email_&_password": "Email & Password",
+					"anonymous": "Anonymous",
+					"authentication_token": "Authentication token",
+					"authentication_provider": "Authentication provider",
+					"authentication_with_token": "Authentication with token",
+					"general": "General",
+					"online": "Online",
+					"link_multiple_auth_providers": "Link multiple auth providers",
+					"email_&_password_-_create_account": "Email & Password - create account",
+					"email_&_password_-_change_password": "Email & Password - change password",
+					"email_&_password_-_send_password_reset_email": "Email & Password - send password reset email",
+					"email_&_password_-_delete_user": "Email & Password - delete user",
+					"email_&_password_-_update_profile": "Email & Password - update profile",
+					"email_&_password_-_update_email": "Email & Password - update email",
+					"email_&_password_-_send_verification_email": "Email & Password - send verification email",
+					"general_-_login": "General - login",
+					"general_-_logged_out": "General - logged out",
+					"error": "Error",
+					"general_auth_data": "General auth data"
+				},
+				"conditions": {
+					"emailpassword_oncreateaccountsuccessful1": {
+						"list-name": "On created account",
+						"display-text": "On created account success",
+						"description": "Triggered when created account success."
+						},
+					"emailpassword_oncreateaccounterror2": {
+						"list-name": "On created account error",
+						"display-text": "On create account error",
+						"description": "Triggered when created account error."
+						},
+					"emailpassword_onchangingpasswordsuccessful3": {
+						"list-name": "On changed password",
+						"display-text": "On changed password success",
+						"description": "Triggered when changed password success."
+						},
+					"emailpassword_onchangingpassworderror4": {
+						"list-name": "On changed password error",
+						"display-text": "On changed password error",
+						"description": "Triggered when changed password error."
+						},
+					"emailpassword_onsendpasswordresetemailsuccessful5": {
+						"list-name": "On sent password reset email",
+						"display-text": "On sent password reset email success",
+						"description": "Triggered when sent password reset email success."
+						},
+					"emailpassword_onsendpasswordresetemailerror6": {
+						"list-name": "On sent password reset email error",
+						"display-text": "On sent password reset email error",
+						"description": "Triggered when sent password reset email error."
+						},
+					"emailpassword_ondeleteusersuccessful7": {
+						"list-name": "On deleted user",
+						"display-text": "On deleted user",
+						"description": "Triggered when deleted user success."
+						},
+					"emailpassword_ondeleteusererror8": {
+						"list-name": "On deleted user error",
+						"display-text": "On deleted user error",
+						"description": "Triggered when deleted user error."
+						},
+					"emailpassword_onupdatingprofilesuccessful9": {
+						"list-name": "On updated profile",
+						"display-text": "On update profile success",
+						"description": "Triggered when updated profile success."
+						},
+					"emailpassword_onupdatingprofileerror10": {
+						"list-name": "On updated profile error",
+						"display-text": "On update profile error",
+						"description": "Triggered when updated profile error."
+						},
+					"emailpassword_onupdatingemailsuccessful11": {
+						"list-name": "On updated email",
+						"display-text": "On update email success",
+						"description": "Triggered when updated email success."
+						},
+					"emailpassword_onupdatingemailerror12": {
+						"list-name": "On updated email error",
+						"display-text": "On update email error",
+						"description": "Triggered when updated email error."
+						},
+					"emailpassword_onsendverificationemailsuccessful13": {
+						"list-name": "On send verification email",
+						"display-text": "On send verification email success",
+						"description": "Triggered when send verification email success."
+						},
+					"emailpassword_onsendverificationemailerror14": {
+						"list-name": "On send verification email error",
+						"display-text": "On send verification email error",
+						"description": "Triggered when send verification email error."
+						},
+					"ısanonymous21": {
+						"list-name": "Is anonymous",
+						"display-text": "Is anonymous login",
+						"description": "Return true if current user is anonymous."
+						},
+					"onloginsuccessful31": {
+						"list-name": "On login",
+						"display-text": "On login success",
+						"description": "Triggered when login success."
+						},
+					"onloginerror32": {
+						"list-name": "On login error",
+						"display-text": "On login error",
+						"description": "Triggered when login error."
+						},
+					"onloggedout33": {
+						"list-name": "On logged out",
+						"display-text": "On logged out",
+						"description": "Triggered when logged out."
+						},
+					"ıslogin34": {
+						"list-name": "Is login",
+						"display-text": "Is login",
+						"description": "Return true if logging now."
+						},
+					"onloginbyother41": {
+						"list-name": "On login by other app",
+						"display-text": "On login by other app",
+						"description": "Triggered when login by other app."
+						},
+					"onloggedoutbyother42": {
+						"list-name": "On logged out by other app",
+						"display-text": "On logged out by other app",
+						"description": "Triggered when logged out by other app."
+						},
+					"onlinksuccessful51": {
+						"list-name": "On link",
+						"display-text": "On link success",
+						"description": "Triggered when link success."
+						},
+					"onlinkerror52": {
+						"list-name": "On link error",
+						"display-text": "On link error",
+						"description": "Triggered when link error."
+						}
+				},
+				"actions": {
+					"emailpassword_createaccount1": {
+						"list-name": "Create account",
+						"display-text": "Create account with email: [i]{0}[/i], password: [i]{1}[/i]",
+						"description": "Create account with email & password.",
+						"params": {
+							"email0": { "name":"Email", "desc":"User email"},
+							"password1": { "name":"Password", "desc":"User password"}
+						}
+					},
+					"emailpassword_login2": {
+						"list-name": "Login",
+						"display-text": "Login with email: [i]{0}[/i], password: [i]{1}[/i], persisting type to [i]{2}[/i]",
+						"description": "Login with email & password.",
+						"params": {
+							"email0": { "name":"Email", "desc":"User email"},
+							"password1": { "name":"Password", "desc":"User password"},
+							"remember5": { "name":"Remember", "desc":"Persisting type", "items":{"default":"default","sessiononly":"sessionOnly","never":"never"}}
+						}
+					},
+					"emailpassword_changepassword3": {
+						"list-name": "Change password",
+						"display-text": "Change password to [i]{1}[/i] {0} {2}",
+						"description": "Change password of current user.",
+						"params": {
+							"email0": { "name":"Email", "desc":"(2.x) User email"},
+							"old_password1": { "name":"Old password", "desc":"(2.x) Old password"},
+							"new_password2": { "name":"New password", "desc":"New password"}
+						}
+					},
+					"emailpassword_sendpasswordresetemail4": {
+						"list-name": "Send password reset email",
+						"display-text": "Send password reset email: [i]{0}[/i]",
+						"description": "Send password reset email",
+						"params": {
+							"email0": { "name":"Email", "desc":"User email"}
+						}
+					},
+					"emailpassword_deleteuser5": {
+						"list-name": "Delete user",
+						"display-text": "Delete current user {0} {1}",
+						"description": "Delete current user.",
+						"params": {
+							"email0": { "name":"Email", "desc":"(2.x) User email"},
+							"password1": { "name":"Password", "desc":"(2.x) User password"}
+						}
+					},
+					"anonymous_login11": {
+						"list-name": "Login",
+						"display-text": "Login with anonymous, persisting type to [i]{0}[/i]",
+						"description": "Login with anonymous.",
+						"params": {
+							"remember3": { "name":"Remember", "desc":"Persisting type", "items":{"default":"default","sessiononly":"sessionOnly","never":"never"}}
+						}
+					},
+					"authenticationtoken_login12": {
+						"list-name": "Login",
+						"display-text": "Login with token [i]{0}[/i], persisting type to [i]{1}[/i]",
+						"description": "Login with authentication token.",
+						"params": {
+							"token0": { "name":"Token", "desc":"Token"},
+							"remember4": { "name":"Remember", "desc":"Persisting type", "items":{"default":"default","sessiononly":"sessionOnly","never":"never"}}
+						}
+					},
+					"providerauthentication_login21": {
+						"list-name": "Login",
+						"display-text": "Login by [i]{0}[/i] with [i]{1}[/i], persisting type to [i]{2}[/i], scope to [i]{3}[/i]",
+						"description": "Login by authentication provider.",
+						"params": {
+							"provider4": { "name":"Provider", "desc":"Authentication provider", "items":{"facebook":"Facebook","twitter":"Twitter","github":"Github","google":"Google"}},
+							"type7": { "name":"Type", "desc":"Type of login window", "items":{"popup":"popup","redirect":"redirect"}},
+							"remember11": { "name":"Remember", "desc":"Persisting type", "items":{"default":"default","sessiononly":"sessionOnly","never":"never"}},
+							"scope12": { "name":"scope", "desc":"A comma-delimited list of requested extended permissions"}
+						}
+					},
+					"authwithoauthtoken_fb22": {
+						"list-name": "Connect Facebook",
+						"display-text": "Authentication with Facebook access token [i]{0}[/i], persisting type to [i]{1}[/i], scope to [i]{2}[/i]",
+						"description": "Authentication with Facebook access token, call it after facebook login.",
+						"params": {
+							"access_token0": { "name":"Access token", "desc":"Access token from other plugin. Set \"\" if using official facebook to login."},
+							"remember4": { "name":"Remember", "desc":"Persisting type", "items":{"default":"default","sessiononly":"sessionOnly","never":"never"}},
+							"scope5": { "name":"scope", "desc":"A comma-delimited list of requested extended permissions"}
+						}
+					},
+					"providerauthentication_login23": {
+						"list-name": "Login (provider name)",
+						"display-text": "Login by [i]{0}[/i] with [i]{1}[/i], persisting type to [i]{2}[/i], scope to [i]{3}[/i]",
+						"description": "Login by authentication provider.",
+						"params": {
+							"provider0": { "name":"Provider", "desc":"Code of authentication provider."},
+							"type3": { "name":"Type", "desc":"Type of login window", "items":{"popup":"popup","redirect":"redirect"}},
+							"remember7": { "name":"Remember", "desc":"Persisting type", "items":{"default":"default","sessiononly":"sessionOnly","never":"never"}},
+							"scope8": { "name":"scope", "desc":"A comma-delimited list of requested extended permissions"}
+						}
+					},
+					"loggingout31": {
+						"list-name": "Logging out",
+						"display-text": "Logging out current account",
+						"description": "Logging out current account."
+					},
+					"gooffline41": {
+						"list-name": "Go offline",
+						"display-text": "Go offline",
+						"description": "Manually disconnect the Firebase client from the server and disable automatic reconnection."
+					},
+					"goonline42": {
+						"list-name": "Go online",
+						"display-text": "Go online",
+						"description": "Manually reestablish a connection to the Firebase server and enable automatic reconnection."
+					},
+					"linktofb51": {
+						"list-name": "Link to facebook",
+						"display-text": "Link to facebook account by access token: [i]{0}[/i]",
+						"description": "Link to facebook account by access token.",
+						"params": {
+							"access_token0": { "name":"Access token", "desc":"Access token from other plugin. Set \"\" if using official facebook to login."}
+						}
+					},
+					"linktogoogle52": {
+						"list-name": "Link to google",
+						"display-text": "Link to google account by ID token: [i]{0}[/i]",
+						"description": "Link to google account by ID token.",
+						"params": {
+							"ıd_token0": { "name":"ID token", "desc":"ID token from other plugin."}
+						}
+					},
+					"linktoemailpassword53": {
+						"list-name": "Link to email-password",
+						"display-text": "Link to email: [i]{0}[/i], password: [i]{1}[/i]",
+						"description": "Link to email-password.",
+						"params": {
+							"email0": { "name":"Email", "desc":"User email"},
+							"password1": { "name":"Password", "desc":"User password"}
+						}
+					},
+					"updateprofile61": {
+						"list-name": "Update profile",
+						"display-text": "Update display name to [i]{0}[/i], photo URL to [i]{1}[/i]",
+						"description": "Update profile. 3.x only.",
+						"params": {
+							"display_name0": { "name":"Display name", "desc":"Display name of current user."},
+							"photo_url1": { "name":"Photo URL", "desc":"Photo URL of current user"}
+						}
+					},
+					"updateemail62": {
+						"list-name": "Update email",
+						"display-text": "Update email to [i]{0}[/i]",
+						"description": "Update email. 3.x only.",
+						"params": {
+							"email0": { "name":"Email", "desc":"User email"}
+						}
+					},
+					"sendemailverification63": {
+						"list-name": "Send verification email",
+						"display-text": "Send verification email",
+						"description": "Send verification email. 3.x only."
+					}
+				},
+				"expressions": {
+					"errorcode1": {
+						"description": "Error code.",
+						"translated-name": "ErrorCode"
+						},
+					"errormessage2": {
+						"description": "Error message.",
+						"translated-name": "ErrorMessage"
+						},
+					"userıd3": {
+						"description": "Unique user ID, intended as the user's unique key across all providers.",
+						"translated-name": "UserID"
+						},
+					"provider4": {
+						"description": "The authentication method used.",
+						"translated-name": "Provider"
+						},
+					"displayname5": {
+						"description": "Display name.",
+						"translated-name": "DisplayName"
+						},
+					"userıdfromprovider6": {
+						"description": "User ID from provider.",
+						"translated-name": "UserIDFromProvider"
+						},
+					"accesstoken7": {
+						"description": "The FOAuth 2.0 access token granted by provider during user authentication.",
+						"translated-name": "AccessToken"
+						},
+					"cacheduserprofile8": {
+						"description": "Cached user profile from provier.",
+						"translated-name": "CachedUserProfile"
+						},
+					"email9": {
+						"description": "The user's primary email address as listed on their profile. Returned only if a valid email address is available, and the email permission was granted by the user.",
+						"translated-name": "Email"
+						},
+					"username10": {
+						"description": "The user's screen name, handle, or alias. Twitter screen names are unique, but subject to change. .",
+						"translated-name": "UserName"
+						},
+					"errordetail11": {
+						"description": "Error detail.",
+						"translated-name": "ErrorDetail"
+						},
+					"photourl12": {
+						"description": "Photo URL.",
+						"translated-name": "PhotoURL"
+						}
+				}
+			}
+		}
+	}
+}

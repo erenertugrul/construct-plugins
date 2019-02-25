@@ -1,0 +1,116 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Simple message.",
+	"text": {
+		"plugins": {
+			"rex_firebase_simplemessage": {
+				"name": "Simple message",
+				"description": "Send message to ID.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebase_simplemessage.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						},
+					"message-type": {
+						"name": "Message type",
+						"desc": "Sent message type, string or JSON object in string.",
+						"items": {
+							"string":"String",
+							"json string":"JSON string"
+							}
+						},
+					"offline-message": {
+						"name": "Offline message",
+						"desc": "Discard or pend offline message. Pend mode is only used for single receiver.",
+						"items": {
+							"discard":"Discard",
+							"pend":"Pend"
+							}
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"user_info": "User info",
+					"update": "Update",
+					"message": "Message"
+				},
+				"conditions": {
+					"onreceivedmessage1": {
+						"list-name": "On receive",
+						"display-text": "On receive message",
+						"description": "Triggered when received message."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"setuserınfo1": {
+						"list-name": "Set user",
+						"display-text": "Set sender name to [i]{1}[/i], sender ID to [i]{0}[/i]",
+						"description": "Set user info.",
+						"params": {
+							"sender_ıd0": { "name":"Sender ID", "desc":"Sender ID."},
+							"sender_name1": { "name":"Sender name", "desc":"Sender name."}
+						}
+					},
+					"startupdate11": {
+						"list-name": "Start",
+						"display-text": "Start receiving on channel ID [i]{0}[/i]",
+						"description": "Start receiving.",
+						"params": {
+							"receiver_ıd0": { "name":"Receiver ID", "desc":"ID of receiver."}
+						}
+					},
+					"stopupdate12": {
+						"list-name": "Stop",
+						"display-text": "Stop receiving",
+						"description": "Stop receiving."
+					},
+					"sendmessage21": {
+						"list-name": "Send",
+						"display-text": "Send message: [i]{1}[/i] to ID: [i]{0}[/i]",
+						"description": "Send message.",
+						"params": {
+							"send_to_ıd0": { "name":"Send to ID", "desc":"Send to ID."},
+							"message1": { "name":"Message", "desc":"Message. String or JSON string for object."}
+						}
+					},
+					"cleanmessagebox22": {
+						"list-name": "Clean",
+						"display-text": "Clean message box of ID: [i]{0}[/i]",
+						"description": "Clean message box.",
+						"params": {
+							"send_to_ıd0": { "name":"Send to ID", "desc":"Send to ID."}
+						}
+					}
+				},
+				"expressions": {
+					"lastsenderıd1": {
+						"description": "Get sender ID of last message.",
+						"translated-name": "LastSenderID"
+						},
+					"lastsendername2": {
+						"description": "Get sender name of last message.",
+						"translated-name": "LastSenderName"
+						},
+					"lastmessage3": {
+						"description": "Get last message.",
+						"translated-name": "LastMessage"
+						}
+				}
+			}
+		}
+	}
+}

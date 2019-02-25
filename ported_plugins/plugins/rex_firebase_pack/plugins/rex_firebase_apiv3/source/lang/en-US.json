@@ -1,0 +1,59 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Firebase API v3.",
+	"text": {
+		"plugins": {
+			"rex_firebaseapiv3": {
+				"name": "Firebase API v3",
+				"description": "3.x API of real time database-as-a-service. https://firebase.google.com/",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebaseapiv3.html",
+				"properties": {
+					"api-key": {
+						"name": "Api key",
+						"desc": "APi key."
+						},
+					"auth-domain": {
+						"name": "Auth domain",
+						"desc": "Auth domain."
+						},
+					"database-url": {
+						"name": "Database URL",
+						"desc": "Database URL."
+						},
+					"storage-bucket": {
+						"name": "Storage bucket",
+						"desc": "Storage bucket."
+						},
+					"log": {
+						"name": "Log",
+						"desc": "Enable log.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"ınitialize": "Initialize"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"initializeapp1": {
+						"list-name": "Initialize",
+						"display-text": "Initialize with Api key: [i]{0}[/i], Auth domain: [i]{1}[/i], Database URL: [i]{2}[/i], Storage bucket: [i]{3}[/i]",
+						"description": "Initialize connection.",
+						"params": {
+							"api_key0": { "name":"Api key", "desc":"Api key"},
+							"auth_domain1": { "name":"Auth domain", "desc":"Auth domain"},
+							"database_url2": { "name":"Database URL", "desc":"Database URL"},
+							"storage_bucket3": { "name":"Storage bucket", "desc":"Storage bucket"}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

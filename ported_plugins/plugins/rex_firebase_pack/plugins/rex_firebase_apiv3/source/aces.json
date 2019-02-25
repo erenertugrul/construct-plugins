@@ -1,0 +1,22 @@
+{
+	"ınitialize": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "initializeapp1",
+				"scriptName": "initializeApp",
+				"highlight": false,
+				"params": [
+					{"id":"api_key0", "type":"string", "initialValue":"\"\""},
+					{"id":"auth_domain1", "type":"string", "initialValue":"\"\""},
+					{"id":"database_url2", "type":"string", "initialValue":"\"\""},
+					{"id":"storage_bucket3", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

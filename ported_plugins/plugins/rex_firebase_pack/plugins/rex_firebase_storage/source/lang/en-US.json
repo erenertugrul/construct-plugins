@@ -1,0 +1,273 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Storage.",
+	"text": {
+		"plugins": {
+			"rex_firebase_storage": {
+				"name": "Storage",
+				"description": "File storage in firebase serivice (v3.x only).",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_storage.html",
+				"properties": {
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"upload": "Upload",
+					"upload_task": "Upload task",
+					"download": "Download",
+					"delete": "Delete",
+					"metadata": "Metadata",
+					"error": "Error"
+				},
+				"conditions": {
+					"onuploadcompleted1": {
+						"list-name": "On complete",
+						"display-text": "On upload complete",
+						"description": "Triggered when uploading completed."
+						},
+					"onuploaderror2": {
+						"list-name": "On error",
+						"display-text": "On upload error",
+						"description": "Triggered when uploading error."
+						},
+					"onuploadcanceled3": {
+						"list-name": "On canceled",
+						"display-text": "On upload canceled",
+						"description": "Triggered when uploading canceled."
+						},
+					"onpaused4": {
+						"list-name": "On paused",
+						"display-text": "On upload paused",
+						"description": "Triggered when uploading paused."
+						},
+					"onresmue5": {
+						"list-name": "On resmue",
+						"display-text": "On resmue",
+						"description": "Triggered when resmue."
+						},
+					"ısuploading6": {
+						"list-name": "Is uploading",
+						"display-text": "Is uploading",
+						"description": "Return true if uploading."
+						},
+					"onprogress7": {
+						"list-name": "On progress",
+						"display-text": "On upload progress",
+						"description": "Triggered when uploading progress."
+						},
+					"onstart8": {
+						"list-name": "On start",
+						"display-text": "On upload starting",
+						"description": "Triggered when uploading starting."
+						},
+					"ongetdownloadurl11": {
+						"list-name": "On get download URL",
+						"display-text": "On get download URL",
+						"description": "Triggered when get download URL success."
+						},
+					"ongetdownloadurlerror12": {
+						"list-name": "On get download URL error",
+						"display-text": "On get download URL error",
+						"description": "Triggered when get download URL error."
+						},
+					"filedoesntexist13": {
+						"list-name": "File doesn't exist",
+						"display-text": "File doesn't exist",
+						"description": "Return true if file doesn't exist."
+						},
+					"ondeletecompleted21": {
+						"list-name": "On deleted",
+						"display-text": "On delete complete",
+						"description": "Triggered when delete completed."
+						},
+					"ondeleteerror22": {
+						"list-name": "On deleted error",
+						"display-text": "On delete error",
+						"description": "Triggered when delete error."
+						},
+					"ongetmetadata71": {
+						"list-name": "On get metadata",
+						"display-text": "On get metadata",
+						"description": "Triggered when get metadata success."
+						},
+					"ongetmetadataerror72": {
+						"list-name": "On get metadata error",
+						"display-text": "On get metadata error",
+						"description": "Triggered when get metadata error."
+						},
+					"onupdatemetadata73": {
+						"list-name": "On update metadata",
+						"display-text": "On update metadata",
+						"description": "Triggered when update metadata success."
+						},
+					"onupdatemetadataerror74": {
+						"list-name": "On update metadata error",
+						"display-text": "On update metadata error",
+						"description": "Triggered when update metadata error."
+						}
+				},
+				"actions": {
+					"setsubdomainref0": {
+						"list-name": "Set sub domain",
+						"display-text": "Set Sub domain ref to [i]{0}[/i]",
+						"description": "Set Sub domain ref.",
+						"params": {
+							"sub_domain0": { "name":"Sub domain", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"uploadfromfilechooser1": {
+						"list-name": "Upload from file chooser",
+						"display-text": "Upload file from [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Upload file from file chooser to firebase storage.",
+						"params": {
+							"file_chooser0": { "name":"File chooser", "desc":"File chooser object."},
+							"dataref1": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"canceluploading2": {
+						"list-name": "Cancel",
+						"display-text": "Cancel current uploading",
+						"description": "Cancel current uploading."
+					},
+					"pauseuploading3": {
+						"list-name": "Pause",
+						"display-text": "Pause current uploading",
+						"description": "Pause current uploading."
+					},
+					"resumeuploading4": {
+						"list-name": "Resume",
+						"display-text": "Resume current uploading",
+						"description": "Resume current uploading."
+					},
+					"uploadfromsprite5": {
+						"list-name": "Upload from sprite",
+						"display-text": "Upload image from [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Upload image from sprite or canvas to firebase storage.",
+						"params": {
+							"sprite0": { "name":"Sprite", "desc":"Sprite or canvas object."},
+							"dataref1": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"uploaddataurı6": {
+						"list-name": "Upload data URL",
+						"display-text": "Upload data URI [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Upload from data URI to firebase storage.",
+						"params": {
+							"data_urı0": { "name":"Data URI", "desc":"Data URI of file"},
+							"dataref1": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"uploadstring7": {
+						"list-name": "Upload string",
+						"display-text": "Upload string [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Upload string to firebase storage.",
+						"params": {
+							"content0": { "name":"Content", "desc":"String content"},
+							"dataref1": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"uploadobjecturl8": {
+						"list-name": "Upload objectURL",
+						"display-text": "Upload objectURL [i]{0}[/i] (type [i]{1}[/i]) to [i]{2}[/i]",
+						"description": "Upload from objectURL to firebase storage.",
+						"params": {
+							"objecturl0": { "name":"ObjectURL", "desc":"ObjectURL."},
+							"content_type1": { "name":"Content type", "desc":"Content type."},
+							"dataref2": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"getdownloadurl11": {
+						"list-name": "Get download url",
+						"display-text": "Get download url of [i]{0}[/i]",
+						"description": "Get download url of a firebase storage reference.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"deleteaturl21": {
+						"list-name": "Delete",
+						"display-text": "Delete [i]{0}[/i]",
+						"description": "Delete file at url of a firebase storage reference.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"getmetadata71": {
+						"list-name": "Get metadata",
+						"display-text": "Get metadata of [i]{0}[/i]",
+						"description": "Get metadata of a firebase storage reference.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"updatemetadata72": {
+						"list-name": "Update metadata",
+						"display-text": "Update metadata of [i]{0}[/i]",
+						"description": "Update metadata of a firebase storage reference.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase storage ref URL"}
+						}
+					},
+					"metadatasetvalue73": {
+						"list-name": "Set value",
+						"display-text": "Set metadata [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Set key of metadata.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key string."},
+							"value1": { "name":"Value", "desc":"Value."}
+						}
+					},
+					"metadataloadjson74": {
+						"list-name": "Load JSON",
+						"display-text": "Load metadata to [i]{0}[/i]",
+						"description": "Load metadata by JSON.",
+						"params": {
+							"json_string0": { "name":"JSON string", "desc":"JSON string."}
+						}
+					},
+					"metadataremovekey75": {
+						"list-name": "Remove key",
+						"display-text": "Remove metadata [i]{0}[/i]",
+						"description": "Remove key of metadata.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key string."}
+						}
+					}
+				},
+				"expressions": {
+					"lastdownloadurl1": {
+						"description": "Get download URL of last upload file, or result of the last request.",
+						"translated-name": "LastDownloadURL"
+						},
+					"progress2": {
+						"description": "Get the progress, from 0 to 1, of the request in 'On upload progress'.",
+						"translated-name": "Progress"
+						},
+					"transferredbytes3": {
+						"description": "Get transferred bytes, of the request in 'On upload progress'.",
+						"translated-name": "TransferredBytes"
+						},
+					"totalbytes4": {
+						"description": "Get total bytes, of the request in 'On upload progress'.",
+						"translated-name": "TotalBytes"
+						},
+					"lasterrorcode21": {
+						"description": "Error code.",
+						"translated-name": "LastErrorCode"
+						},
+					"lasterrormessage22": {
+						"description": "Error message (error.serverResponse) .",
+						"translated-name": "LastErrorMessage"
+						},
+					"lastmetadata71": {
+						"description": "Get metadata of last upload file, or result of the last request. Add 1st parameter to get value at the specific key. Add 2nd parameter for default value if this key is not existed.",
+						"translated-name": "LastMetadata"
+						}
+				}
+			}
+		}
+	}
+}

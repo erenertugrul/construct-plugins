@@ -1,0 +1,463 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Item book.",
+	"text": {
+		"plugins": {
+			"rex_firebase_itembook": {
+				"name": "Item book",
+				"description": "Item tables to save and query items. Each value is indexed by (tableID, itemID, key).",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_itembook.html",
+				"properties": {
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"prepare_-_tree": "Prepare - Tree",
+					"save": "Save",
+					"prepare_-_enumeration": "Prepare - Enumeration",
+					"on_disconnected_-_tree": "On disconnected - Tree",
+					"on_disconnected_-_enumeration": "On disconnected - Enumeration",
+					"load_-_signle_query": "Load - Signle query",
+					"load_-_table/item": "Load - table/item",
+					"load_-_queue": "Load - queue",
+					"load": "Load",
+					"convert_-_ıtem_list": "Convert - Item list",
+					"prepare_-_tree_structure": "Prepare - Tree structure",
+					"request": "Request",
+					"ıtemıd": "ItemID",
+					"value": "Value",
+					"for_each": "For Each",
+					"convert": "Convert",
+					"ıtem_count": "Item count",
+					"reference": "Reference",
+					"random": "Random"
+				},
+				"conditions": {
+					"addtablenode1": {
+						"list-name": "Table node",
+						"display-text": "Table {0}",
+						"description": "Add a table node.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."}
+						}
+						},
+					"addıtemnode2": {
+						"list-name": "Item node",
+						"display-text": "Item {0}",
+						"description": "Add a item node.",
+						"params": {
+							"ıtemıd0": { "name":"ItemID", "desc":"ItemID"}
+						}
+						},
+					"treeondisconnectedremove3": {
+						"list-name": "Remove on disconnected",
+						"display-text": "On disconnected- remove",
+						"description": "Remove node on disconnected."
+						},
+					"treeondisconnectedcancel4": {
+						"list-name": "Cancel all handlers of disconnected",
+						"display-text": "On disconnected- cancel all handlers",
+						"description": "Cancel all handlers of disconnected."
+						},
+					"onupdatecomplete11": {
+						"list-name": "On update complete",
+						"display-text": "On update complete",
+						"description": "Triggered when update book complete."
+						},
+					"onupdateerror12": {
+						"list-name": "On update error",
+						"display-text": "On update error",
+						"description": "Triggered when update book error."
+						},
+					"onrequestcomplete51": {
+						"list-name": "On request complete",
+						"display-text": "On request [i]{0}[/i] complete",
+						"description": "Triggered when request current item complete.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"foreachıtemıd52": {
+						"list-name": "For each itemID",
+						"display-text": "Table {0}: for each itemID [i]{1}[/i]",
+						"description": "Repeat the event for each itemID of load result in a table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"order5": { "name":"Order", "desc":"Order of itemID.", "items":{"descending":"descending","ascending":"ascending","logical descending":"logical descending","logical ascending":"logical ascending"}}
+						}
+						},
+					"foreachkey53": {
+						"list-name": "For each key",
+						"display-text": "Table {0}: for each key in item: [i]{1}[/i]",
+						"description": "Repeat the event for each key of a item of load result in a table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"ID of item."}
+						}
+						},
+					"tableısempty54": {
+						"list-name": "Table is empty",
+						"display-text": "Table {0}: is empty",
+						"description": "Return true if no item in a table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."}
+						}
+						}
+				},
+				"actions": {
+					"setsubdomainref0": {
+						"list-name": "Set sub domain",
+						"display-text": "Set sub domain to [i]{0}[/i]",
+						"description": "Set sub domain ref.",
+						"params": {
+							"sub_domain0": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"treesetvalue1": {
+						"list-name": "Set value",
+						"display-text": "{0}: {1}",
+						"description": "Set number or string value.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"treesetbooleanvalue2": {
+						"list-name": "Set boolean value",
+						"display-text": "{0}: {1}",
+						"description": "Set boolean value.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"treesetnullvalue3": {
+						"list-name": "Remove key",
+						"display-text": "{0}: remove",
+						"description": "Remove key.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"cleanall4": {
+						"list-name": "Remove all",
+						"display-text": "Remove all",
+						"description": "Remove all keys or items."
+					},
+					"treesetservertimestamp5": {
+						"list-name": "Set server timesetamp",
+						"display-text": "{0}: server timestamp",
+						"description": "Set to server timestamp.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"treesetjson6": {
+						"list-name": "Set JSON",
+						"display-text": "{0}: {1}",
+						"description": "Set JSON value.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"json1": { "name":"JSON", "desc":"The JSON value to set."}
+						}
+					},
+					"updatebook11": {
+						"list-name": "Update",
+						"display-text": "Update",
+						"description": "Update book."
+					},
+					"enumsetvalue21": {
+						"list-name": "Set value",
+						"display-text": "Table {0}, item {1}: set key {2} to {3}",
+						"description": "Set number or string value.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."},
+							"value3": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"enumsetbooleanvalue22": {
+						"list-name": "Set boolean value",
+						"display-text": "Table {0}, item {1}: set key {2} to {3}",
+						"description": "Set boolean value.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."},
+							"boolean5": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"enumsetnullvalue23": {
+						"list-name": "Remove",
+						"display-text": "Table {0}, item {1}: remove key {2}",
+						"description": "Remove key or item or table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID. Set to \"\" to remove all tables."},
+							"ıtem1": { "name":"Item", "desc":"Item ID. Set to \"\" to remove all items in the table."},
+							"key2": { "name":"Key", "desc":"The name of the key. Set to \"\" to remove all keys in the item."}
+						}
+					},
+					"enumsetservertimestamp24": {
+						"list-name": "Set server timesetamp",
+						"display-text": "Table {0}, item {1} set key {2} to server timestamp",
+						"description": "Set to server timestamp.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"enumsetjson25": {
+						"list-name": "Set JSON",
+						"display-text": "Table {0}, item {1} set key {2} to {3}",
+						"description": "Set JSON value.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."},
+							"json3": { "name":"JSON", "desc":"The JSON value to set."}
+						}
+					},
+					"treeondisconnectedremove31": {
+						"list-name": "Remove key",
+						"display-text": "{0}: remove (on disconnected)",
+						"description": "Remove key on disconnected.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"treeondisconnectedsetservertimestamp32": {
+						"list-name": "Set server timesetamp",
+						"display-text": "On disconnected- {0}: server timestamp",
+						"description": "Set to server timestamp on disconnected.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"treeondisconnectedsetvalue33": {
+						"list-name": "Set value",
+						"display-text": "On disconnected- {0}: {1}",
+						"description": "Set value on disconnected.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"treeondisconnectedsetbooleanvalue34": {
+						"list-name": "Set boolean value",
+						"display-text": "On disconnected- {0}: {1}",
+						"description": "Set boolean value on disconnected.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"treeondisconnectedcancel36": {
+						"list-name": "Cancel all handlers",
+						"display-text": "{0}: cancel all handlers (on disconnected)",
+						"description": "Cancel all handlers of disconnected.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"enumondisconnectedremove41": {
+						"list-name": "Remove key",
+						"display-text": "On disconnected- table {0}, item {1}: remove key {2}",
+						"description": "Remove key on disconnected.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID. Set to \"\" to remove all tables."},
+							"ıtem1": { "name":"Item", "desc":"Item ID. Set to \"\" to remove all items in the table."},
+							"key2": { "name":"Key", "desc":"The name of the key. Set to \"\" to remove all keys in the item."}
+						}
+					},
+					"enumondisconnectedsetservertimestamp42": {
+						"list-name": "Set server timesetamp",
+						"display-text": "On disconnected- table {0}, item {1}: set key {2} to server timestamp",
+						"description": "Set to server timestamp on disconnected.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"enumondisconnectedsetvalue43": {
+						"list-name": "Set server timesetamp",
+						"display-text": "On disconnected- table {0}, item {1}: set key {2} to {3}",
+						"description": "Set value on disconnected.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."},
+							"value3": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"enumondisconnectedsetbooleanvalue44": {
+						"list-name": "Set boolean value",
+						"display-text": "On disconnected- table {0}, item {1}: set key {2} to {3}",
+						"description": "Set boolean value on disconnected.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."},
+							"boolean5": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"enumondisconnectedsetjson45": {
+						"list-name": "Set server timesetamp",
+						"display-text": "On disconnected- table {0}, item {1}: set key {2} to {3}",
+						"description": "Set JSON value on disconnected.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"ıtem1": { "name":"Item", "desc":"Item ID."},
+							"key2": { "name":"Key", "desc":"The name of the key."},
+							"json3": { "name":"JSON", "desc":"The JSON value to set."}
+						}
+					},
+					"enumondisconnectedcancel46": {
+						"list-name": "Cancel",
+						"display-text": "On disconnected- table {0}, item {1}: cancel all handlers {2}",
+						"description": "Cancel all handlers of disconnected.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID. Set to \"\" to remove all tables."},
+							"ıtem1": { "name":"Item", "desc":"Item ID. Set to \"\" to remove all items in the table."},
+							"key2": { "name":"Key", "desc":"The name of the key. Set to \"\" to remove all keys in the item."}
+						}
+					},
+					"getıtemsbysingleconditionınrange51": {
+						"list-name": "Get items by \"In Range\"",
+						"display-text": "Load - table {0}: get [i]{5}[/i] items by condition: [i]{1}[/i] in range [i]{2}[/i] - [i]{3}[/i], [i]{4}[/i] (tag [i]{6}[/i])",
+						"description": "Get items by single condition-In Range with count limit in a table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"key1": { "name":"Key", "desc":"The name of the key."},
+							"start2": { "name":"Start", "desc":"Start value."},
+							"end3": { "name":"End", "desc":"End value."},
+							"limit6": { "name":"Limit", "desc":"Limit types.", "items":{"limit to first":"Limit to first","limit to last":"Limit to last"}},
+							"count7": { "name":"Count", "desc":"Limit count. Set to (-1) to pick all queried items."},
+							"tag8": { "name":"Tag", "desc":"A tag, to distinguish between different requests."}
+						}
+					},
+					"getıtemsbysinglecondition52": {
+						"list-name": "Get items by comparison",
+						"display-text": "Load - table {0}: get [i]{5}[/i] items by condition: [i]{1}[/i] [i]{2}[/i] [i]{3}[/i], [i]{4}[/i] (tag [i]{6}[/i])",
+						"description": "Get items by single condition with count limit in a table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID."},
+							"key1": { "name":"Key", "desc":"The name of the key."},
+							"comparison5": { "name":"Comparison", "desc":"Comparison types.", "items":{"equal to":"Equal to","greater than or equal to":"Greater than or Equal to","less than or equal to":"Less than or Equal to"}},
+							"value6": { "name":"Value", "desc":"Compared value."},
+							"limit9": { "name":"Limit", "desc":"Limit types.", "items":{"limit to first":"Limit to first","limit to last":"Limit to last"}},
+							"count10": { "name":"Count", "desc":"Limit count. Set to (-1) to pick all queried items."},
+							"tag11": { "name":"Tag", "desc":"A tag, to distinguish between different requests."}
+						}
+					},
+					"loadıtem53": {
+						"list-name": "Load item",
+						"display-text": "Load- table {0}, item {1} (tag [i]{2}[/i])",
+						"description": "Load an item or a table, or all tables.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID. Set to \"\" to load all tables."},
+							"ıtem1": { "name":"Item", "desc":"Item ID. Set to \"\" to load all items in the table."},
+							"tag2": { "name":"Tag", "desc":"A tag, to distinguish between different requests."}
+						}
+					},
+					"startqueue81": {
+						"list-name": "Start new request queue",
+						"display-text": "Start new request queue (tag [i]{0}[/i])",
+						"description": "Start new request queue.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different requests."}
+						}
+					},
+					"processqueue82": {
+						"list-name": "Process request queue",
+						"display-text": "Process request queue",
+						"description": "Process all requests in queue."
+					},
+					"cleanresulttable83": {
+						"list-name": "Clean result table",
+						"display-text": "Clean result table {0}",
+						"description": "Clean result table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Table ID. Set to \"\" to clean all tables."}
+						}
+					},
+					"setconvertkeyname91": {
+						"list-name": "Set key name",
+						"display-text": "Convert tableID to key [i]{0}[/i], itemID to key [i]{1}[/i]",
+						"description": "Set key name of item list.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Key of table ID."},
+							"ıtem1": { "name":"Item", "desc":"Key of item ID."}
+						}
+					}
+				},
+				"expressions": {
+					"generatekey1": {
+						"description": "Generate new key from push action.",
+						"translated-name": "GenerateKey"
+						},
+					"lastgeneratedkey2": {
+						"description": "Get last generate a key from push action.",
+						"translated-name": "LastGeneratedKey"
+						},
+					"at3": {
+						"description": "Get value in book, optional parameters are (tableID, itemID, key, defaultValue).",
+						"translated-name": "At"
+						},
+					"lasttableıd4": {
+						"description": "Get last tableID of request.",
+						"translated-name": "LastTableID"
+						},
+					"lastıtemıd5": {
+						"description": "Get last itemID of request.",
+						"translated-name": "LastItemID"
+						},
+					"curıtemıd51": {
+						"description": "Get current itemID in a For Each loop.",
+						"translated-name": "CurItemID"
+						},
+					"curkey52": {
+						"description": "Get current key in a For Each loop.",
+						"translated-name": "CurKey"
+						},
+					"curvalue54": {
+						"description": "Get current value in a For Each loop.",
+						"translated-name": "CurValue"
+						},
+					"curıtemcontent55": {
+						"description": "Get current content in JSON stringin in a For Each loop. Add 2nd parameter for specific key, 3rd parameter for default value if this key is not existed.",
+						"translated-name": "CurItemContent"
+						},
+					"asıtemlist91": {
+						"description": "Convert table to item list (JSON string), optional parameters are (tableID, itemID).",
+						"translated-name": "AsItemList"
+						},
+					"ıtemcount92": {
+						"description": "Get items count of all tables or add table ID in 1st parameter to get items count in that table.",
+						"translated-name": "ItemCount"
+						},
+					"ref101": {
+						"description": "Get renerence in book, optional parameters are (tableID, itemID, key).",
+						"translated-name": "Ref"
+						},
+					"randombase32201": {
+						"description": "Get a random base32 string.",
+						"translated-name": "RandomBase32",
+						"params": {
+							"length0": { "name":"Length", "desc":"Length of string."}
+						}
+						},
+					"lastrandombase32202": {
+						"description": "Get last random base32 string.",
+						"translated-name": "LastRandomBase32"
+						}
+				}
+			}
+		}
+	}
+}

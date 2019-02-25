@@ -1,0 +1,80 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Token.",
+	"text": {
+		"plugins": {
+			"rex_firebase_token": {
+				"name": "Token",
+				"description": "The first user of a group.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_token.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain of this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"group": "Group",
+					"token": "Token"
+				},
+				"conditions": {
+					"ongettoken1": {
+						"list-name": "On get token",
+						"display-text": "On get token",
+						"description": "Triggered when get the token."
+						},
+					"ontokenownerchanged2": {
+						"list-name": "On owner changed",
+						"display-text": "On owner changed",
+						"description": "Triggered when token owner changed."
+						},
+					"ısowner3": {
+						"list-name": "Is owner",
+						"display-text": "Is owner",
+						"description": "Return true if thie client owns the token."
+						},
+					"onreleasetoken4": {
+						"list-name": "On release token",
+						"display-text": "On release token",
+						"description": "Triggered when release the token."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"joingroup1": {
+						"list-name": "Join",
+						"display-text": "Join into group with user ID:[i]{0}[/i]",
+						"description": "Join into group, try to get token.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"Key of User ID."}
+						}
+					},
+					"leavegroup2": {
+						"list-name": "Leave",
+						"display-text": "Leave group",
+						"description": "Leave group, release owned token."
+					}
+				},
+				"expressions": {
+					"ownerıd1": {
+						"description": "Get owner ID.",
+						"translated-name": "OwnerID"
+						}
+				}
+			}
+		}
+	}
+}

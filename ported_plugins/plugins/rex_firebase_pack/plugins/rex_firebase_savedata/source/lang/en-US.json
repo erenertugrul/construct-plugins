@@ -1,0 +1,262 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Save slot.",
+	"text": {
+		"plugins": {
+			"rex_firebase_saveslot": {
+				"name": "Save slot",
+				"description": "Private save slots.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_saveslot.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain of this function."
+						}
+				},
+				"aceCategories": {
+					"0._setup": "0. Setup",
+					"prepare": "Prepare",
+					"save": "Save",
+					"load": "Load",
+					"clean": "Clean",
+					"load_-_header": "Load - header",
+					"load_-_body": "Load - body",
+					"header": "Header",
+					"header_-_for_each": "Header - for each",
+					"body_-_for_each": "Body - for each",
+					"body": "Body",
+					"for_each_header": "For each header",
+					"json": "JSON",
+					"headers": "Headers",
+					"for_each_key": "For each key",
+					"error": "Error"
+				},
+				"conditions": {
+					"onsave1": {
+						"list-name": "On save",
+						"display-text": "On save",
+						"description": "Triggered when save complete."
+						},
+					"onsaveerror2": {
+						"list-name": "On save error",
+						"display-text": "On save error",
+						"description": "Triggered when save error."
+						},
+					"ongetallheaders11": {
+						"list-name": "On get headers",
+						"display-text": "On get all headers",
+						"description": "Triggered when get all slot headers from server."
+						},
+					"foreachheader12": {
+						"list-name": "For each header",
+						"display-text": "For each header",
+						"description": "Repeat the event for each slot header."
+						},
+					"ongetbody13": {
+						"list-name": "On get body",
+						"display-text": "On get body",
+						"description": "Triggered when get slot body complete from server complete."
+						},
+					"ongetunusedbody14": {
+						"list-name": "On get unused body",
+						"display-text": "On get unused body",
+						"description": "Triggered when get unused body."
+						},
+					"allslotareempty15": {
+						"list-name": "All slots are empty",
+						"display-text": "All slots are empty",
+						"description": "All slots are unused. Call it after load headers from server."
+						},
+					"ısoccupied16": {
+						"list-name": "Slot is occupied",
+						"display-text": "Slot [i]{0}[/i] is occupied",
+						"description": "Slot is occupied. Call it after load headers from server.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The slot name."}
+						}
+						},
+					"foreachkeyınheader17": {
+						"list-name": "For each key",
+						"display-text": "For each key in header [i]{0}[/i]",
+						"description": "Repeat the event for each key in a header.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The slot name."}
+						}
+						},
+					"foreachkeyınbody18": {
+						"list-name": "For each key",
+						"display-text": "For each key in body",
+						"description": "Repeat the event for each key in body."
+						},
+					"bodyısınvalid19": {
+						"list-name": "Invalid body",
+						"display-text": "Body is invalid",
+						"description": "Current loaded body is invalid."
+						},
+					"onclean21": {
+						"list-name": "On clean",
+						"display-text": "On clean",
+						"description": "Triggered when clean slots complete on server complete."
+						},
+					"oncleanerror22": {
+						"list-name": "On clean error",
+						"display-text": "On clean error",
+						"description": "Triggered when clean slots error on server error."
+						},
+					"ongetallheaderserror31": {
+						"list-name": "On get headers error",
+						"display-text": "On get all headers error",
+						"description": "Triggered when get all slot headers error."
+						},
+					"ongetbodyerror32": {
+						"list-name": "On get body error",
+						"display-text": "On get body error",
+						"description": "Triggered when get slot body error."
+						}
+				},
+				"actions": {
+					"setowner1": {
+						"list-name": "Set owner",
+						"display-text": "Set user ID of slot owner to [i]{0}[/i]",
+						"description": "Set user ID of slot owner.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID from authentication."}
+						}
+					},
+					"setvalue2": {
+						"list-name": "Set value",
+						"display-text": "Prepare- Set key [i]{0}[/i] to [i]{1}[/i] in slot [i]{2}[/i]",
+						"description": "Sets value into slot.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set"},
+							"slot4": { "name":"Slot", "desc":"Header or body.", "items":{"header":"Header","body":"Body"}}
+						}
+					},
+					"save3": {
+						"list-name": "Save",
+						"display-text": "Save- Save slot with name [i]{0}[/i]",
+						"description": "Save slot into server.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The slot name."}
+						}
+					},
+					"setbooleanvalue4": {
+						"list-name": "Set boolean value",
+						"display-text": "Prepare- Set key [i]{0}[/i] to [i]{1}[/i] in slot [i]{2}[/i]",
+						"description": "Sets boolean value into slot.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"False","true":"True"}},
+							"slot6": { "name":"Slot", "desc":"Header or body.", "items":{"header":"Header","body":"Body"}}
+						}
+					},
+					"setcurrentservertimestamp5": {
+						"list-name": "Set to current server timestamp",
+						"display-text": "Prepare- Set key [i]{0}[/i] to current server timestamp in slot [i][/i] {1}",
+						"description": "Sets current server timestamp into slot.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"slot3": { "name":"Slot", "desc":"Header or body.", "items":{"header":"Header","body":"Body"}}
+						}
+					},
+					"removekey6": {
+						"list-name": "Remove key",
+						"display-text": "Prepare- Remove key [i]{0}[/i] in slot [i][/i] {1}",
+						"description": "Remove from slot.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"slot3": { "name":"Slot", "desc":"Header or body.", "items":{"header":"Header","body":"Body"}}
+						}
+					},
+					"setjson7": {
+						"list-name": "Set JSON",
+						"display-text": "Prepare- Set key [i]{0}[/i] to [i]{1}[/i] in slot [i]{2}[/i]",
+						"description": "Sets JSON into slot.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"json1": { "name":"JSON", "desc":"The JSON to set"},
+							"slot4": { "name":"Slot", "desc":"Header or body.", "items":{"header":"Header","body":"Body"}}
+						}
+					},
+					"getallheaders11": {
+						"list-name": "Get all headers",
+						"display-text": "Get all slot headers",
+						"description": "Get all slot headers from server."
+					},
+					"getslotbody12": {
+						"list-name": "Get body",
+						"display-text": "Get slot body with name [i]{0}[/i]",
+						"description": "Get slot body from server.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The slot name."}
+						}
+					},
+					"cleanslot21": {
+						"list-name": "Clean all slots",
+						"display-text": "Clean all slots on server",
+						"description": "Clean all slots on server."
+					},
+					"cleanslot22": {
+						"list-name": "Clean slot",
+						"display-text": "Clean slot with name [i]{0}[/i]",
+						"description": "Clean slot on server.",
+						"params": {
+							"name0": { "name":"Name", "desc":"The slot name."}
+						}
+					}
+				},
+				"expressions": {
+					"curslotname1": {
+						"description": "Get current slot name in a For Each loop.",
+						"translated-name": "CurSlotName"
+						},
+					"curheadervalue2": {
+						"description": "Get current header value by key in a For Each loop. Add default value at 2nd parameter if read data is null.",
+						"translated-name": "CurHeaderValue"
+						},
+					"bodyvalue3": {
+						"description": "Get body value by key. Add key at 1st parameter, add default value at 2nd parameter if read data is null",
+						"translated-name": "BodyValue"
+						},
+					"headerstojson4": {
+						"description": "Get all headers in JSON string.",
+						"translated-name": "HeadersToJSON"
+						},
+					"bodytojson5": {
+						"description": "Get all body values in JSON string.",
+						"translated-name": "BodyToJSON"
+						},
+					"headervalue6": {
+						"description": "Get header value by slot name and key. Add default value at 3rd parameter if read data is null.",
+						"translated-name": "HeaderValue"
+						},
+					"curkey7": {
+						"description": "Get current key in a For Each loop.",
+						"translated-name": "CurKey"
+						},
+					"curvalue8": {
+						"description": "Get current value in a For Each loop.",
+						"translated-name": "CurValue"
+						},
+					"lastslotname9": {
+						"description": "Get last loaded slot name.",
+						"translated-name": "LastSlotName"
+						},
+					"lasterrorcode21": {
+						"description": "Error code.",
+						"translated-name": "LastErrorCode"
+						},
+					"lasterrormessage22": {
+						"description": "Error message (error.serverResponse) .",
+						"translated-name": "LastErrorMessage"
+						}
+				}
+			}
+		}
+	}
+}

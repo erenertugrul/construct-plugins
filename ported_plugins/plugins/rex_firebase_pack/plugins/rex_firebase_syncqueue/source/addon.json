@@ -1,0 +1,27 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Sync queue",
+	"id": "Rex_Firebase_SyncQueue",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_syncqueue.html",
+	"documentation": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_syncqueue.html",
+	"description": "Sync queue on firebase.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"firebase.js",
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

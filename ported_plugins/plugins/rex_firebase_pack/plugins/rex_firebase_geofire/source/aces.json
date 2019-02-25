@@ -1,0 +1,346 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setsubdomainref0",
+				"scriptName": "SetSubDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"sub_domain0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"set": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onupdatecomplete1",
+				"scriptName": "OnUpdateComplete",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onupdateerror2",
+				"scriptName": "OnUpdateError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setlocation1",
+				"scriptName": "SetLocation",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"latitude1", "type":"number", "initialValue":"0"},
+					{"id":"longitude2", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "removeıtem3",
+				"scriptName": "RemoveItem",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"on_disconnected": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "ondisconnectedremove2",
+				"scriptName": "OnDisconnectedRemove",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "ondisconnectedcancel5",
+				"scriptName": "OnDisconnectedCancel",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"get": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "ongetıtemcomplete3",
+				"scriptName": "OnGetItemComplete",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "ongetıtemerror4",
+				"scriptName": "OnGetItemError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "ısıtemnotfound5",
+				"scriptName": "IsItemNotFound",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "getıtem4",
+				"scriptName": "GetItem",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"monitor": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "onıtementered11",
+				"scriptName": "OnItemEntered",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "onıtemexisted12",
+				"scriptName": "OnItemExisted",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 13,
+				"id": "onıtemmoved13",
+				"scriptName": "OnItemMoved",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 14,
+				"id": "onready14",
+				"scriptName": "OnReady",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 15,
+				"id": "foreachıtemıd15",
+				"scriptName": "ForEachItemID",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"order4", "type":"combo", "items":["descending","ascending","logical descending","logical ascending"]}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "monitorat11",
+				"scriptName": "MonitorAt",
+				"highlight": false,
+				"params": [
+					{"id":"latitude0", "type":"number", "initialValue":"0"},
+					{"id":"longitude1", "type":"number", "initialValue":"0"},
+					{"id":"radius2", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "monitorstop12",
+				"scriptName": "MonitorStop",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ıtemıd": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "generatekey1",
+				"expressionName": "GenerateKey",
+				"scriptName": "GenerateKey",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "lastgeneratedkey2",
+				"expressionName": "LastGeneratedKey",
+				"scriptName": "LastGeneratedKey",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"event": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "lastıtemıd11",
+				"expressionName": "LastItemID",
+				"scriptName": "LastItemID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 12,
+				"id": "lastlatitude12",
+				"expressionName": "LastLatitude",
+				"scriptName": "LastLatitude",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "lastlongitude13",
+				"expressionName": "LastLongitude",
+				"scriptName": "LastLongitude",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "lastdistance14",
+				"expressionName": "LastDistance",
+				"scriptName": "LastDistance",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"monitor_area": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "monitorlatitude21",
+				"expressionName": "MonitorLatitude",
+				"scriptName": "MonitorLatitude",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 22,
+				"id": "monitorlongitude22",
+				"expressionName": "MonitorLongitude",
+				"scriptName": "MonitorLongitude",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 23,
+				"id": "monitorradius23",
+				"expressionName": "MonitorRadius",
+				"scriptName": "MonitorRadius",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"for_each": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 31,
+				"id": "curıtemıd31",
+				"expressionName": "CurItemID",
+				"scriptName": "CurItemID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 32,
+				"id": "curlatitude32",
+				"expressionName": "CurLatitude",
+				"scriptName": "CurLatitude",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 33,
+				"id": "curlongitude33",
+				"expressionName": "CurLongitude",
+				"scriptName": "CurLongitude",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 34,
+				"id": "curdistance34",
+				"expressionName": "CurDistance",
+				"scriptName": "CurDistance",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"helper": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 51,
+				"id": "distance51",
+				"expressionName": "Distance",
+				"scriptName": "Distance",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"latitude_a0", "type":"number", "initialValue":"0"},
+					{"id":"longitude_a1", "type":"number", "initialValue":"0"},
+					{"id":"latitude_b2", "type":"number", "initialValue":"0"},
+					{"id":"longitude_b3", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	}
+}

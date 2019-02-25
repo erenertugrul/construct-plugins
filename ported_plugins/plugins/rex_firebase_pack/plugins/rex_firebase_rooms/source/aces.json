@@ -1,0 +1,721 @@
+{
+	"0._my_info": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setuserınfo1",
+				"scriptName": "SetUserInfo",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"name1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"room": {
+		"conditions": [
+			{
+				"c2id": 19,
+				"id": "ısınroom19",
+				"scriptName": "IsInRoom",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "createroom11",
+				"scriptName": "CreateRoom",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""},
+					{"id":"type1", "type":"string", "initialValue":"\"public\""},
+					{"id":"max_peers2", "type":"number", "initialValue":"0"},
+					{"id":"life_period5", "type":"combo", "items":["temporary","persisted"]},
+					{"id":"door_state8", "type":"combo", "items":["closed","open"]},
+					{"id":"room_ıd9", "type":"string", "initialValue":"\"\""},
+					{"id":"create_action12", "type":"combo", "items":["create","leave current room, then create or join"]}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "createroom13",
+				"scriptName": "CreateRoom",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""},
+					{"id":"type1", "type":"string", "initialValue":"\"public\""},
+					{"id":"max_peers2", "type":"number", "initialValue":"0"},
+					{"id":"life_period3", "type":"number", "initialValue":"0"},
+					{"id":"door_state4", "type":"number", "initialValue":"1"},
+					{"id":"oin_permission5", "type":"number", "initialValue":"0"},
+					{"id":"room_ıd6", "type":"string", "initialValue":"\"\""},
+					{"id":"create_action9", "type":"combo", "items":["create","create then join"]}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "joinroom15",
+				"scriptName": "JoinRoom",
+				"highlight": false,
+				"params": [
+					{"id":"room_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"join_action3", "type":"combo", "items":["join","leave current room then join"]}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "leaveroom16",
+				"scriptName": "LeaveRoom",
+				"highlight": false
+			},
+			{
+				"c2id": 19,
+				"id": "kickuser19",
+				"scriptName": "KickUser",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 101,
+				"id": "joinrandomroom101",
+				"scriptName": "JoinRandomRoom",
+				"highlight": false,
+				"params": [
+					{"id":"join_action2", "type":"combo", "items":["join","leave current room then join"]},
+					{"id":"retry3", "type":"number", "initialValue":"10"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "roomname11",
+				"expressionName": "RoomName",
+				"scriptName": "RoomName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 12,
+				"id": "roomıd12",
+				"expressionName": "RoomID",
+				"scriptName": "RoomID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"door_state": {
+		"conditions": [
+			{
+				"c2id": 17,
+				"id": "onopened17",
+				"scriptName": "OnOpened",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 18,
+				"id": "onclosed18",
+				"scriptName": "OnClosed",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 12,
+				"id": "switchdoor12",
+				"scriptName": "SwitchDoor",
+				"highlight": false,
+				"params": [
+					{"id":"door_state2", "type":"combo", "items":["close","open"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"room_list": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "updateopenroomslist21",
+				"scriptName": "UpdateOpenRoomsList",
+				"highlight": false,
+				"params": [
+					{"id":"type0", "type":"string", "initialValue":"\"public\""}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "stopupdatingopenroomslist22",
+				"scriptName": "StopUpdatingOpenRoomsList",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"permission_list": {
+		"conditions": [
+			{
+				"c2id": 51,
+				"id": "foreachuserınpermissionlist51",
+				"scriptName": "ForEachUserInPermissionList",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"list2", "type":"combo", "items":["white - list","black - lisk"]}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 51,
+				"id": "permissionlistadd51",
+				"scriptName": "PermissionListAdd",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"name1", "type":"string", "initialValue":"\"\""},
+					{"id":"list4", "type":"combo", "items":["white - list","black - lisk"]}
+				]
+			},
+			{
+				"c2id": 52,
+				"id": "permissionlistremove52",
+				"scriptName": "PermissionListRemove",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"list3", "type":"combo", "items":["white - list","black - lisk"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 51,
+				"id": "whitelisttojson51",
+				"expressionName": "WhiteListToJSON",
+				"scriptName": "WhiteListToJSON",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 52,
+				"id": "blacklisttojson52",
+				"expressionName": "BlackListToJSON",
+				"scriptName": "BlackListToJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"room_-_metadata": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 61,
+				"id": "requestmetadata61",
+				"scriptName": "RequestMetadata",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"user_list": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 111,
+				"id": "getuserslist111",
+				"scriptName": "GetUsersList",
+				"highlight": false,
+				"params": [
+					{"id":"room_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"create_room": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "oncreateroom11",
+				"scriptName": "OnCreateRoom",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "oncreateroomerror12",
+				"scriptName": "OnCreateRoomError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"join_room": {
+		"conditions": [
+			{
+				"c2id": 13,
+				"id": "onjoinroom13",
+				"scriptName": "OnJoinRoom",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 14,
+				"id": "onjoinroomerror14",
+				"scriptName": "OnJoinRoomError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"leave_room": {
+		"conditions": [
+			{
+				"c2id": 15,
+				"id": "onleftroom15",
+				"scriptName": "OnLeftRoom",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 16,
+				"id": "onkicked16",
+				"scriptName": "OnKicked",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"rooms_list": {
+		"conditions": [
+			{
+				"c2id": 21,
+				"id": "onupdateroomslist21",
+				"scriptName": "OnUpdateRoomsList",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 22,
+				"id": "foreachroom22",
+				"scriptName": "ForEachRoom",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 23,
+				"id": "foreachroom23",
+				"scriptName": "ForEachRoom",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"start0", "type":"number", "initialValue":"0"},
+					{"id":"end1", "type":"number", "initialValue":"2"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 23,
+				"id": "curcreatorname23",
+				"expressionName": "CurCreatorName",
+				"scriptName": "CurCreatorName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 24,
+				"id": "curcreatorıd24",
+				"expressionName": "CurCreatorID",
+				"scriptName": "CurCreatorID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 27,
+				"id": "roomscount27",
+				"expressionName": "RoomsCount",
+				"scriptName": "RoomsCount",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"users_list": {
+		"conditions": [
+			{
+				"c2id": 31,
+				"id": "onupdateuserslist31",
+				"scriptName": "OnUpdateUsersList",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 32,
+				"id": "foreachuser32",
+				"scriptName": "ForEachUser",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 33,
+				"id": "foreachuser33",
+				"scriptName": "ForEachUser",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"start0", "type":"number", "initialValue":"0"},
+					{"id":"end1", "type":"number", "initialValue":"2"}
+				]
+			},
+			{
+				"c2id": 35,
+				"id": "onuserjoin35",
+				"scriptName": "OnUserJoin",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 36,
+				"id": "onuserleft36",
+				"scriptName": "OnUserLeft",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 37,
+				"id": "ısfirstuser37",
+				"scriptName": "IsFirstUser",
+				"highlight": false
+			},
+			{
+				"c2id": 38,
+				"id": "ısfull38",
+				"scriptName": "IsFull",
+				"highlight": false
+			},
+			{
+				"c2id": 39,
+				"id": "onbecomefirstuser39",
+				"scriptName": "OnBecomeFirstUser",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 111,
+				"id": "ongetuserslist111",
+				"scriptName": "OnGetUsersList",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 35,
+				"id": "triggeredusername35",
+				"expressionName": "TriggeredUserName",
+				"scriptName": "TriggeredUserName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 36,
+				"id": "triggereduserıd36",
+				"expressionName": "TriggeredUserID",
+				"scriptName": "TriggeredUserID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 37,
+				"id": "userscount37",
+				"expressionName": "UsersCount",
+				"scriptName": "UsersCount",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"action": {
+		"conditions": [
+			{
+				"c2id": 100,
+				"id": "ıslocked100",
+				"scriptName": "IsLocked",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"my": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "username1",
+				"expressionName": "UserName",
+				"scriptName": "UserName",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 2,
+				"id": "userıd2",
+				"expressionName": "UserID",
+				"scriptName": "UserID",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 3,
+				"id": "myusername3",
+				"expressionName": "MyUserName",
+				"scriptName": "MyUserName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 4,
+				"id": "myuserıd4",
+				"expressionName": "MyUserID",
+				"scriptName": "MyUserID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"triggered": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 13,
+				"id": "triggeredroomname13",
+				"expressionName": "TriggeredRoomName",
+				"scriptName": "TriggeredRoomName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 14,
+				"id": "triggeredroomıd14",
+				"expressionName": "TriggeredRoomID",
+				"scriptName": "TriggeredRoomID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"rooms_list_-_for_each": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "curroomname21",
+				"expressionName": "CurRoomName",
+				"scriptName": "CurRoomName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 22,
+				"id": "curroomıd22",
+				"expressionName": "CurRoomID",
+				"scriptName": "CurRoomID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 41,
+				"id": "curroommaxpeers41",
+				"expressionName": "CurRoomMaxPeers",
+				"scriptName": "CurRoomMaxPeers",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"rooms_list_-_index": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 25,
+				"id": "ındex2roomname25",
+				"expressionName": "Index2RoomName",
+				"scriptName": "Index2RoomName",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 26,
+				"id": "ındex2roomıd26",
+				"expressionName": "Index2RoomID",
+				"scriptName": "Index2RoomID",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 42,
+				"id": "ındex2roommaxpeers42",
+				"expressionName": "Index2RoomMaxPeers",
+				"scriptName": "Index2RoomMaxPeers",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"users_list_-_for_each": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 31,
+				"id": "curusername31",
+				"expressionName": "CurUserName",
+				"scriptName": "CurUserName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 32,
+				"id": "curuserıd32",
+				"expressionName": "CurUserID",
+				"scriptName": "CurUserID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"users_list_-_index": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 33,
+				"id": "ındex2username33",
+				"expressionName": "Index2UserName",
+				"scriptName": "Index2UserName",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 34,
+				"id": "ındex2userıd34",
+				"expressionName": "Index2UserID",
+				"scriptName": "Index2UserID",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"custom_channel": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 81,
+				"id": "channelref81",
+				"expressionName": "ChannelRef",
+				"scriptName": "ChannelRef",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"for_each_-_index": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 100,
+				"id": "loopındex100",
+				"expressionName": "LoopIndex",
+				"scriptName": "LoopIndex",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

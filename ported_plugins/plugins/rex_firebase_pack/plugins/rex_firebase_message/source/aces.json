@@ -1,0 +1,109 @@
+{
+	"user_info": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setuserınfo1",
+				"scriptName": "SetUserInfo",
+				"highlight": false,
+				"params": [
+					{"id":"sender_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"sender_name1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"update": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "startupdate11",
+				"scriptName": "StartUpdate",
+				"highlight": false,
+				"params": [
+					{"id":"receiver_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "stopupdate12",
+				"scriptName": "StopUpdate",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"message": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onnewmessage1",
+				"scriptName": "OnNewMessage",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "send21",
+				"scriptName": "Send",
+				"highlight": false,
+				"params": [
+					{"id":"receiver_userıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"title1", "type":"string", "initialValue":"\"\""},
+					{"id":"content2", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "lastsenderıd1",
+				"expressionName": "LastSenderID",
+				"scriptName": "LastSenderID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "lastsendername2",
+				"expressionName": "LastSenderName",
+				"scriptName": "LastSenderName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 3,
+				"id": "lasttitle3",
+				"expressionName": "LastTitle",
+				"scriptName": "LastTitle",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 4,
+				"id": "lastcontent4",
+				"expressionName": "LastContent",
+				"scriptName": "LastContent",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 5,
+				"id": "lastmessageıd5",
+				"expressionName": "LastMessageID",
+				"scriptName": "LastMessageID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

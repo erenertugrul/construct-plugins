@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Simple message",
+	"id": "Rex_Firebase_SimpleMessage",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "http://c2rexplugins.weebly.com/rex_firebase_simplemessage.html",
+	"documentation": "http://c2rexplugins.weebly.com/rex_firebase_simplemessage.html",
+	"description": "Send message to ID.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

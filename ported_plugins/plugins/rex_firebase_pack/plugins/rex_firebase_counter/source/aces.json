@@ -1,0 +1,222 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"sub_domain1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"update": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onupdate1",
+				"scriptName": "OnUpdate",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "startupdate1",
+				"scriptName": "StartUpdate",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "stopupdate2",
+				"scriptName": "StopUpdate",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"configure": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "setınit3",
+				"scriptName": "SetInit",
+				"highlight": false,
+				"params": [
+					{"id":"ınit0", "type":"number", "initialValue":"0"},
+					{"id":"upper_bound1", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"add": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "onmywriting2",
+				"scriptName": "OnMyWriting",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "comparelastwrotevalue3",
+				"scriptName": "CompareLastWroteValue",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"value1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "comparelastvalue4",
+				"scriptName": "CompareLastValue",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"value1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "onmywritingabort5",
+				"scriptName": "OnMyWritingAbort",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "onmywritingerror6",
+				"scriptName": "OnMyWritingError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "add11",
+				"scriptName": "Add",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"any", "initialValue":"1"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "lastwrotevalue2",
+				"expressionName": "LastWroteValue",
+				"scriptName": "LastWroteValue",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "lastaddedvalue3",
+				"expressionName": "LastAddedValue",
+				"scriptName": "LastAddedValue",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"set": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 12,
+				"id": "forceset12",
+				"scriptName": "ForceSet",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"custom_add": {
+		"conditions": [
+			{
+				"c2id": 21,
+				"id": "onaddfn21",
+				"scriptName": "OnAddFn",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"function0", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "customaddbyfn21",
+				"scriptName": "CustomAddByFn",
+				"highlight": false,
+				"params": [
+					{"id":"function0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "customaddadd22",
+				"scriptName": "CustomAddAdd",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 23,
+				"id": "customaddabort23",
+				"scriptName": "CustomAddAbort",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "customaddın21",
+				"expressionName": "CustomAddIn",
+				"scriptName": "CustomAddIn",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"counter": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "lastvalue1",
+				"expressionName": "LastValue",
+				"scriptName": "LastValue",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

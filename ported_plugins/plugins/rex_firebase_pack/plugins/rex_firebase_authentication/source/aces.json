@@ -1,0 +1,588 @@
+{
+	"email_&_password": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "emailpassword_createaccount1",
+				"scriptName": "EmailPassword_CreateAccount",
+				"highlight": false,
+				"params": [
+					{"id":"email0", "type":"string", "initialValue":"\"\""},
+					{"id":"password1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "emailpassword_login2",
+				"scriptName": "EmailPassword_Login",
+				"highlight": false,
+				"params": [
+					{"id":"email0", "type":"string", "initialValue":"\"\""},
+					{"id":"password1", "type":"string", "initialValue":"\"\""},
+					{"id":"remember5", "type":"combo", "items":["default","sessiononly","never"]}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "emailpassword_changepassword3",
+				"scriptName": "EmailPassword_ChangePassword",
+				"highlight": false,
+				"params": [
+					{"id":"email0", "type":"string", "initialValue":"\"\""},
+					{"id":"old_password1", "type":"string", "initialValue":"\"\""},
+					{"id":"new_password2", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "emailpassword_sendpasswordresetemail4",
+				"scriptName": "EmailPassword_SendPasswordResetEmail",
+				"highlight": false,
+				"params": [
+					{"id":"email0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "emailpassword_deleteuser5",
+				"scriptName": "EmailPassword_DeleteUser",
+				"highlight": false,
+				"params": [
+					{"id":"email0", "type":"string", "initialValue":"\"\""},
+					{"id":"password1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 61,
+				"id": "updateprofile61",
+				"scriptName": "UpdateProfile",
+				"highlight": false,
+				"params": [
+					{"id":"display_name0", "type":"string", "initialValue":"\"\""},
+					{"id":"photo_url1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 62,
+				"id": "updateemail62",
+				"scriptName": "UpdateEmail",
+				"highlight": false,
+				"params": [
+					{"id":"email0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 63,
+				"id": "sendemailverification63",
+				"scriptName": "SendEmailVerification",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"anonymous": {
+		"conditions": [
+			{
+				"c2id": 21,
+				"id": "ısanonymous21",
+				"scriptName": "IsAnonymous",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "anonymous_login11",
+				"scriptName": "Anonymous_Login",
+				"highlight": false,
+				"params": [
+					{"id":"remember3", "type":"combo", "items":["default","sessiononly","never"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"authentication_token": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 12,
+				"id": "authenticationtoken_login12",
+				"scriptName": "AuthenticationToken_Login",
+				"highlight": false,
+				"params": [
+					{"id":"token0", "type":"string", "initialValue":"\"\""},
+					{"id":"remember4", "type":"combo", "items":["default","sessiononly","never"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"authentication_provider": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "providerauthentication_login21",
+				"scriptName": "ProviderAuthentication_Login",
+				"highlight": false,
+				"params": [
+					{"id":"provider4", "type":"combo", "items":["facebook","twitter","github","google"]},
+					{"id":"type7", "type":"combo", "items":["popup","redirect"]},
+					{"id":"remember11", "type":"combo", "items":["default","sessiononly","never"]},
+					{"id":"scope12", "type":"string"}
+				]
+			},
+			{
+				"c2id": 23,
+				"id": "providerauthentication_login23",
+				"scriptName": "ProviderAuthentication_Login",
+				"highlight": false,
+				"params": [
+					{"id":"provider0", "type":"string", "initialValue":"\"\""},
+					{"id":"type3", "type":"combo", "items":["popup","redirect"]},
+					{"id":"remember7", "type":"combo", "items":["default","sessiononly","never"]},
+					{"id":"scope8", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"authentication_with_token": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 22,
+				"id": "authwithoauthtoken_fb22",
+				"scriptName": "AuthWithOAuthToken_FB",
+				"highlight": false,
+				"params": [
+					{"id":"access_token0", "type":"string", "initialValue":"\"\""},
+					{"id":"remember4", "type":"combo", "items":["default","sessiononly","never"]},
+					{"id":"scope5", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"general": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 31,
+				"id": "loggingout31",
+				"scriptName": "LoggingOut",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"online": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 41,
+				"id": "gooffline41",
+				"scriptName": "GoOffline",
+				"highlight": false
+			},
+			{
+				"c2id": 42,
+				"id": "goonline42",
+				"scriptName": "GoOnline",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"link_multiple_auth_providers": {
+		"conditions": [
+			{
+				"c2id": 51,
+				"id": "onlinksuccessful51",
+				"scriptName": "OnLinkSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 52,
+				"id": "onlinkerror52",
+				"scriptName": "OnLinkError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 51,
+				"id": "linktofb51",
+				"scriptName": "LinkToFB",
+				"highlight": false,
+				"params": [
+					{"id":"access_token0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 52,
+				"id": "linktogoogle52",
+				"scriptName": "LinkToGoogle",
+				"highlight": false,
+				"params": [
+					{"id":"ıd_token0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 53,
+				"id": "linktoemailpassword53",
+				"scriptName": "LinkToEmailPassword",
+				"highlight": false,
+				"params": [
+					{"id":"email0", "type":"string", "initialValue":"\"\""},
+					{"id":"password1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"email_&_password_-_create_account": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "emailpassword_oncreateaccountsuccessful1",
+				"scriptName": "EmailPassword_OnCreateAccountSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "emailpassword_oncreateaccounterror2",
+				"scriptName": "EmailPassword_OnCreateAccountError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"email_&_password_-_change_password": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "emailpassword_onchangingpasswordsuccessful3",
+				"scriptName": "EmailPassword_OnChangingPasswordSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "emailpassword_onchangingpassworderror4",
+				"scriptName": "EmailPassword_OnChangingPasswordError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"email_&_password_-_send_password_reset_email": {
+		"conditions": [
+			{
+				"c2id": 5,
+				"id": "emailpassword_onsendpasswordresetemailsuccessful5",
+				"scriptName": "EmailPassword_OnSendPasswordResetEmailSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "emailpassword_onsendpasswordresetemailerror6",
+				"scriptName": "EmailPassword_OnSendPasswordResetEmailError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"email_&_password_-_delete_user": {
+		"conditions": [
+			{
+				"c2id": 7,
+				"id": "emailpassword_ondeleteusersuccessful7",
+				"scriptName": "EmailPassword_OnDeleteUserSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "emailpassword_ondeleteusererror8",
+				"scriptName": "EmailPassword_OnDeleteUserError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"email_&_password_-_update_profile": {
+		"conditions": [
+			{
+				"c2id": 9,
+				"id": "emailpassword_onupdatingprofilesuccessful9",
+				"scriptName": "EmailPassword_OnUpdatingProfileSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 10,
+				"id": "emailpassword_onupdatingprofileerror10",
+				"scriptName": "EmailPassword_OnUpdatingProfileError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"email_&_password_-_update_email": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "emailpassword_onupdatingemailsuccessful11",
+				"scriptName": "EmailPassword_OnUpdatingEmailSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "emailpassword_onupdatingemailerror12",
+				"scriptName": "EmailPassword_OnUpdatingEmailError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"email_&_password_-_send_verification_email": {
+		"conditions": [
+			{
+				"c2id": 13,
+				"id": "emailpassword_onsendverificationemailsuccessful13",
+				"scriptName": "EmailPassword_OnSendVerificationEmailSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 14,
+				"id": "emailpassword_onsendverificationemailerror14",
+				"scriptName": "EmailPassword_OnSendVerificationEmailError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"general_-_login": {
+		"conditions": [
+			{
+				"c2id": 31,
+				"id": "onloginsuccessful31",
+				"scriptName": "OnLoginSuccessful",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 32,
+				"id": "onloginerror32",
+				"scriptName": "OnLoginError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 34,
+				"id": "ıslogin34",
+				"scriptName": "IsLogin",
+				"highlight": false
+			},
+			{
+				"c2id": 41,
+				"id": "onloginbyother41",
+				"scriptName": "OnLoginByOther",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"general_-_logged_out": {
+		"conditions": [
+			{
+				"c2id": 33,
+				"id": "onloggedout33",
+				"scriptName": "OnLoggedOut",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 42,
+				"id": "onloggedoutbyother42",
+				"scriptName": "OnLoggedOutByOther",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"error": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "errorcode1",
+				"expressionName": "ErrorCode",
+				"scriptName": "ErrorCode",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "errormessage2",
+				"expressionName": "ErrorMessage",
+				"scriptName": "ErrorMessage",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 11,
+				"id": "errordetail11",
+				"expressionName": "ErrorDetail",
+				"scriptName": "ErrorDetail",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"general_auth_data": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "userıd3",
+				"expressionName": "UserID",
+				"scriptName": "UserID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 4,
+				"id": "provider4",
+				"expressionName": "Provider",
+				"scriptName": "Provider",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 5,
+				"id": "displayname5",
+				"expressionName": "DisplayName",
+				"scriptName": "DisplayName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 6,
+				"id": "userıdfromprovider6",
+				"expressionName": "UserIDFromProvider",
+				"scriptName": "UserIDFromProvider",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 7,
+				"id": "accesstoken7",
+				"expressionName": "AccessToken",
+				"scriptName": "AccessToken",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 8,
+				"id": "cacheduserprofile8",
+				"expressionName": "CachedUserProfile",
+				"scriptName": "CachedUserProfile",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 9,
+				"id": "email9",
+				"expressionName": "Email",
+				"scriptName": "Email",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 10,
+				"id": "username10",
+				"expressionName": "UserName",
+				"scriptName": "UserName",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 12,
+				"id": "photourl12",
+				"expressionName": "PhotoURL",
+				"scriptName": "PhotoURL",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

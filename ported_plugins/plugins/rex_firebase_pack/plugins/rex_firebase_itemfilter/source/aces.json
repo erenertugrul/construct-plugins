@@ -1,0 +1,376 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"sub_domain1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"set_item": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setvalue1",
+				"scriptName": "SetValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "save2",
+				"scriptName": "Save",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"tag1", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "setbooleanvalue4",
+				"scriptName": "SetBooleanValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"boolean3", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "removekey5",
+				"scriptName": "RemoveKey",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "onremovecomplete3",
+				"scriptName": "OnRemoveComplete",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "onremoveerror4",
+				"scriptName": "OnRemoveError",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "remove3",
+				"scriptName": "Remove",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"tag1", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "onrequestcomplete11",
+				"scriptName": "OnRequestComplete",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "foreachıtemıd12",
+				"scriptName": "ForEachItemID",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "getrandomıtems11",
+				"scriptName": "GetRandomItems",
+				"highlight": false,
+				"params": [
+					{"id":"count0", "type":"number", "initialValue":"1"},
+					{"id":"tag1", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "getıtemsbycondition12",
+				"scriptName": "GetItemsByCondition",
+				"highlight": false,
+				"params": [
+					{"id":"expression0", "type":"string", "initialValue":"\"\""},
+					{"id":"tag1", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request_-_signle_query": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 13,
+				"id": "getıtemsbysingleconditionınrange13",
+				"scriptName": "GetItemsBySingleConditionInRange",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"},
+					{"id":"value2", "type":"any", "initialValue":"0"},
+					{"id":"limit5", "type":"combo", "items":["limit to first","limit to last"]},
+					{"id":"limit6", "type":"number", "initialValue":"1"},
+					{"id":"tag7", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "getıtemsbysinglecondition14",
+				"scriptName": "GetItemsBySingleCondition",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"comparison4", "type":"combo", "items":["equal to","greater than or equal to","less than or equal to"]},
+					{"id":"value5", "type":"any", "initialValue":"0"},
+					{"id":"limit8", "type":"combo", "items":["limit to first","limit to last"]},
+					{"id":"limit9", "type":"number", "initialValue":"1"},
+					{"id":"tag10", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"save": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onsavecomplete1",
+				"scriptName": "OnSaveComplete",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "onsaveerror2",
+				"scriptName": "OnSaveError",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"ıtemıd": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "curıtemıd1",
+				"expressionName": "CurItemID",
+				"scriptName": "CurItemID",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"json": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "ıtemıdtojson2",
+				"expressionName": "ItemIDToJSON",
+				"scriptName": "ItemIDToJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"condition": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "equal11",
+				"expressionName": "Equal",
+				"scriptName": "Equal",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "greaterequal12",
+				"expressionName": "GreaterEqual",
+				"scriptName": "GreaterEqual",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "lessequal13",
+				"expressionName": "LessEqual",
+				"scriptName": "LessEqual",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "ınrange14",
+				"expressionName": "InRange",
+				"scriptName": "InRange",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"},
+					{"id":"value2", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "greater15",
+				"expressionName": "Greater",
+				"scriptName": "Greater",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "less16",
+				"expressionName": "Less",
+				"scriptName": "Less",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"set_operation": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "or21",
+				"expressionName": "OR",
+				"scriptName": "OR",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"expression_a0", "type":"string", "initialValue":"\"\""},
+					{"id":"expression_b1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "and22",
+				"expressionName": "AND",
+				"scriptName": "AND",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"expression_a0", "type":"string", "initialValue":"\"\""},
+					{"id":"expression_b1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 23,
+				"id": "sub23",
+				"expressionName": "SUB",
+				"scriptName": "SUB",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"expression_a0", "type":"string", "initialValue":"\"\""},
+					{"id":"expression_b1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	}
+}

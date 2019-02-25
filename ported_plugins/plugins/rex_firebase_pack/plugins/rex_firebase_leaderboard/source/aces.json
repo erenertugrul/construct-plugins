@@ -1,0 +1,372 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"ıd1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"send": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onpostcomplete1",
+				"scriptName": "OnPostComplete",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onposterror2",
+				"scriptName": "OnPostError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "postscore1",
+				"scriptName": "PostScore",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"name1", "type":"string", "initialValue":"\"\""},
+					{"id":"score2", "type":"any", "initialValue":"0"},
+					{"id":"extra3", "type":"any", "initialValue":"\"\""},
+					{"id":"post_condition8", "type":"combo", "items":["","if greater","if less","if not existed"]}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "addscore6",
+				"scriptName": "AddScore",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"name1", "type":"string", "initialValue":"\"\""},
+					{"id":"add2", "type":"any", "initialValue":"0"},
+					{"id":"extra3", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"update": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "onupdate3",
+				"scriptName": "OnUpdate",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "updateallranks2",
+				"scriptName": "UpdateAllRanks",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "updatetopranks3",
+				"scriptName": "UpdateTopRanks",
+				"highlight": false,
+				"params": [
+					{"id":"count0", "type":"number", "initialValue":"10"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "stopupdating5",
+				"scriptName": "StopUpdating",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "removepost4",
+				"scriptName": "RemovePost",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"score": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 22,
+				"id": "getscore22",
+				"scriptName": "GetScore",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"update_-_for_each": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "foreachrank11",
+				"scriptName": "ForEachRank",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "foreachrank12",
+				"scriptName": "ForEachRank",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"start0", "type":"number", "initialValue":"0"},
+					{"id":"end1", "type":"number", "initialValue":"2"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "curplayername1",
+				"expressionName": "CurPlayerName",
+				"scriptName": "CurPlayerName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "curplayerscore2",
+				"expressionName": "CurPlayerScore",
+				"scriptName": "CurPlayerScore",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 3,
+				"id": "curplayerrank3",
+				"expressionName": "CurPlayerRank",
+				"scriptName": "CurPlayerRank",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "curuserıd4",
+				"expressionName": "CurUserID",
+				"scriptName": "CurUserID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 5,
+				"id": "curextradata5",
+				"expressionName": "CurExtraData",
+				"scriptName": "CurExtraData",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"score_-_get": {
+		"conditions": [
+			{
+				"c2id": 23,
+				"id": "ongetscore23",
+				"scriptName": "OnGetScore",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"post": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "postplayername11",
+				"expressionName": "PostPlayerName",
+				"scriptName": "PostPlayerName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 12,
+				"id": "postplayerscore12",
+				"expressionName": "PostPlayerScore",
+				"scriptName": "PostPlayerScore",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 14,
+				"id": "postplayeruserıd14",
+				"expressionName": "PostPlayerUserID",
+				"scriptName": "PostPlayerUserID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 15,
+				"id": "postextradata15",
+				"expressionName": "PostExtraData",
+				"scriptName": "PostExtraData",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"rank": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "rankcount21",
+				"expressionName": "RankCount",
+				"scriptName": "RankCount",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 22,
+				"id": "userıd2rank22",
+				"expressionName": "UserID2Rank",
+				"scriptName": "UserID2Rank",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"rank_index": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 23,
+				"id": "rank2playername23",
+				"expressionName": "Rank2PlayerName",
+				"scriptName": "Rank2PlayerName",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"rank0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 24,
+				"id": "rank2playerscore24",
+				"expressionName": "Rank2PlayerScore",
+				"scriptName": "Rank2PlayerScore",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"rank0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 25,
+				"id": "rank2extradata25",
+				"expressionName": "Rank2ExtraData",
+				"scriptName": "Rank2ExtraData",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"rank0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 26,
+				"id": "rank2playeruserıd26",
+				"expressionName": "Rank2PlayerUserID",
+				"scriptName": "Rank2PlayerUserID",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"rank0", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"request": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 52,
+				"id": "lastuserıd52",
+				"expressionName": "LastUserID",
+				"scriptName": "LastUserID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 53,
+				"id": "lastscore53",
+				"expressionName": "LastScore",
+				"scriptName": "LastScore",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 54,
+				"id": "lastplayername54",
+				"expressionName": "LastPlayerName",
+				"scriptName": "LastPlayerName",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	}
+}

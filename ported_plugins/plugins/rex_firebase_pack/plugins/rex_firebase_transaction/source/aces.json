@@ -1,0 +1,162 @@
+{
+	"read": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "valueınısnull2",
+				"scriptName": "ValueInIsNull",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "transaction1",
+				"scriptName": "Transaction",
+				"highlight": false,
+				"params": [
+					{"id":"dataref0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "valueın1",
+				"expressionName": "ValueIn",
+				"scriptName": "ValueIn",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"write": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "ontransaction1",
+				"scriptName": "OnTransaction",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "returnvalue11",
+				"scriptName": "ReturnValue",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "returnjson12",
+				"scriptName": "ReturnJSON",
+				"highlight": false,
+				"params": [
+					{"id":"json_value0", "type":"string", "initialValue":"\"{}\""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "returnnull13",
+				"scriptName": "ReturnNull",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "returnboolean14",
+				"scriptName": "ReturnBoolean",
+				"highlight": false,
+				"params": [
+					{"id":"boolean2", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 31,
+				"id": "abort31",
+				"scriptName": "Abort",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"write_-_json": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "returnkeyvalue21",
+				"scriptName": "ReturnKeyValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "returnkeyboolean22",
+				"scriptName": "ReturnKeyBoolean",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"boolean3", "type":"combo", "items":["false","true"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"result": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "ısaborted11",
+				"scriptName": "IsAborted",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "oncomplete12",
+				"scriptName": "OnComplete",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 13,
+				"id": "onerror13",
+				"scriptName": "OnError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 14,
+				"id": "valueoutısnull14",
+				"scriptName": "ValueOutIsNull",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "valueout2",
+				"expressionName": "ValueOut",
+				"scriptName": "ValueOut",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	}
+}

@@ -1,0 +1,435 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Rooms.",
+	"text": {
+		"plugins": {
+			"rex_firebase_rooms": {
+				"name": "Rooms",
+				"description": "Rooms management.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebase_rooms.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						},
+					"door-control": {
+						"name": "Door control",
+						"desc": "Set \"Auto\" to close or open door when room is full or not.",
+						"items": {
+							"manual":"Manual",
+							"auto":"Auto"
+							}
+						}
+				},
+				"aceCategories": {
+					"0._my_info": "0. My info",
+					"room": "Room",
+					"door_state": "Door state",
+					"room_list": "Room list",
+					"permission_list": "Permission list",
+					"room_-_metadata": "Room - metadata",
+					"user_list": "User list",
+					"create_room": "Create room",
+					"join_room": "Join room",
+					"leave_room": "Leave room",
+					"rooms_list": "Rooms list",
+					"users_list": "Users list",
+					"action": "Action",
+					"my": "My",
+					"triggered": "Triggered",
+					"rooms_list_-_for_each": "Rooms list - for each",
+					"rooms_list_-_index": "Rooms list - index",
+					"users_list_-_for_each": "Users list - for each",
+					"users_list_-_index": "Users list - index",
+					"custom_channel": "Custom channel",
+					"for_each_-_index": "For each - index"
+				},
+				"conditions": {
+					"oncreateroom11": {
+						"list-name": "On create",
+						"display-text": "On create room",
+						"description": "Triggered when room created."
+						},
+					"oncreateroomerror12": {
+						"list-name": "On create error",
+						"display-text": "On create room error",
+						"description": "Triggered when room created error."
+						},
+					"onjoinroom13": {
+						"list-name": "On join",
+						"display-text": "On join room",
+						"description": "Triggered when join room."
+						},
+					"onjoinroomerror14": {
+						"list-name": "On join error",
+						"display-text": "On join room error",
+						"description": "Triggered when join room error."
+						},
+					"onleftroom15": {
+						"list-name": "On left",
+						"display-text": "On left room",
+						"description": "Triggered when left room or room removed"
+						},
+					"onkicked16": {
+						"list-name": "On kicked",
+						"display-text": "On kicked out from room",
+						"description": "Triggered when user kicked out or room removed."
+						},
+					"onopened17": {
+						"list-name": "On opened",
+						"display-text": "On opened",
+						"description": "Triggered when room is opened."
+						},
+					"onclosed18": {
+						"list-name": "On closed",
+						"display-text": "On closed",
+						"description": "Triggered when room is closed."
+						},
+					"ısınroom19": {
+						"list-name": "In room",
+						"display-text": "Is in a room",
+						"description": "Return true if current user is in a room."
+						},
+					"onupdateroomslist21": {
+						"list-name": "On update",
+						"display-text": "On update rooms list",
+						"description": "Triggered when rooms list updated."
+						},
+					"foreachroom22": {
+						"list-name": "For each room",
+						"display-text": "For each room",
+						"description": "Repeat the event for each room in rooms list."
+						},
+					"foreachroom23": {
+						"list-name": "For each room in a range",
+						"display-text": "For each room from [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Repeat the event for each room in a range.",
+						"params": {
+							"start0": { "name":"Start", "desc":"Start from index (0-based)."},
+							"end1": { "name":"End", "desc":"End to index (0-based). This value should larger than Start."}
+						}
+						},
+					"onupdateuserslist31": {
+						"list-name": "On update",
+						"display-text": "On update user list",
+						"description": "Triggered when user list updated."
+						},
+					"foreachuser32": {
+						"list-name": "For each user",
+						"display-text": "For each user",
+						"description": "Repeat the event for each user in users list."
+						},
+					"foreachuser33": {
+						"list-name": "For each user in a range",
+						"display-text": "For each user from [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Repeat the event for each user in a range.",
+						"params": {
+							"start0": { "name":"Start", "desc":"Start from index (0-based)."},
+							"end1": { "name":"End", "desc":"End to index (0-based). This value should larger than Start."}
+						}
+						},
+					"onuserjoin35": {
+						"list-name": "On user joined",
+						"display-text": "On user joined",
+						"description": "Triggered when user joined."
+						},
+					"onuserleft36": {
+						"list-name": "On user left",
+						"display-text": "On user left",
+						"description": "Triggered when user left."
+						},
+					"ısfirstuser37": {
+						"list-name": "I am first user",
+						"display-text": "I am first user",
+						"description": "Return true if client is the first user of current room."
+						},
+					"ısfull38": {
+						"list-name": "Is full",
+						"display-text": "Room is full",
+						"description": "Return true if room is full of users."
+						},
+					"onbecomefirstuser39": {
+						"list-name": "On become first user",
+						"display-text": "On become first user",
+						"description": "Triggered when became first user of current room."
+						},
+					"foreachuserınpermissionlist51": {
+						"list-name": "For each user",
+						"display-text": "For each user in  [i]{0}[/i]",
+						"description": "Repeat the event for each user in permission list.",
+						"params": {
+							"list2": { "name":"List", "desc":"List type.", "items":{"white - list":"white - list","black - lisk":"black - lisk"}}
+						}
+						},
+					"ıslocked100": {
+						"list-name": "Locked",
+						"display-text": "Is locked",
+						"description": "Return true if plugin is locked which could not run any action."
+						},
+					"ongetuserslist111": {
+						"list-name": "On get users list",
+						"display-text": "On get users list",
+						"description": "Triggered when get users list."
+						}
+				},
+				"actions": {
+					"setuserınfo1": {
+						"list-name": "Set my info",
+						"display-text": "Set user name to [i]{1}[/i], user ID to [i]{0}[/i]",
+						"description": "Set user info.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."},
+							"name1": { "name":"Name", "desc":"User name."}
+						}
+					},
+					"createroom11": {
+						"list-name": "Create",
+						"display-text": "{6} [i]{3}[/i] [i]{1}[/i] room: [i]{0}[/i], ID: [i]{5}[/i], with max peers to [i]{2}[/i], door state to [i]{4}[/i]",
+						"description": "Create then join this room.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Room name."},
+							"type1": { "name":"Type", "desc":"Room type. \"public\", \"private\", or others."},
+							"max_peers2": { "name":"Max peers", "desc":"The maximum number of peers that can join this room. Leave 0 for unlimited."},
+							"life_period5": { "name":"Life period", "desc":"Life period of this room.", "items":{"temporary":"Temporary","persisted":"Persisted"}},
+							"door_state8": { "name":"Door state", "desc":"Door state of this room.", "items":{"closed":"Closed","open":"Open"}},
+							"room_ıd9": { "name":"Room ID", "desc":"Room ID. Leave \"\" to use timestamp form server."},
+							"create_action12": { "name":"Create action", "desc":"Create action.", "items":{"create":"Create","leave current room, then create or join":"Leave current room, then create or join"}}
+						}
+					},
+					"switchdoor12": {
+						"list-name": "Open",
+						"display-text": "[i]{0}[/i] current room",
+						"description": "Open or close current room.",
+						"params": {
+							"door_state2": { "name":"Door state", "desc":"Door state of this room.", "items":{"close":"Close","open":"Open"}}
+						}
+					},
+					"createroom13": {
+						"list-name": "Create (#)",
+						"display-text": "{7} [i]{3}[/i] [i]{1}[/i] room: [i]{0}[/i], ID: [i]{6}[/i], with max peers to [i]{2}[/i], door state to [i]{4}[/i], Join permission to [i]{5}[/i]",
+						"description": "Create then join this room.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Room name."},
+							"type1": { "name":"Type", "desc":"Room type. \"public\", \"private\", or others."},
+							"max_peers2": { "name":"Max peers", "desc":"The maximum number of peers that can join this room. Leave 0 for unlimited."},
+							"life_period3": { "name":"Life period", "desc":"0=Temporary, 1=Persisted."},
+							"door_state4": { "name":"Door state", "desc":"0=Closed, 1=Open."},
+							"oin_permission5": { "name":"oin permission", "desc":"0=Anyone, 1=Black list, 2=White list."},
+							"room_ıd6": { "name":"Room ID", "desc":"Room ID. Leave \"\" to use timestamp form server."},
+							"create_action9": { "name":"Create action", "desc":"Create action.", "items":{"create":"Create","create then join":"Create then join"}}
+						}
+					},
+					"joinroom15": {
+						"list-name": "Join",
+						"display-text": "{1} room ID: [i]{0}[/i]",
+						"description": "Join room.",
+						"params": {
+							"room_ıd0": { "name":"Room ID", "desc":"Room ID."},
+							"join_action3": { "name":"Join action", "desc":"Join action.", "items":{"join":"Join","leave current room then join":"Leave current room then join"}}
+						}
+					},
+					"leaveroom16": {
+						"list-name": "Leave",
+						"display-text": "Leave current room",
+						"description": "Leave current room."
+					},
+					"kickuser19": {
+						"list-name": "Kick user",
+						"display-text": "Kick user ID: [i]{0}[/i]",
+						"description": "Kick user.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."}
+						}
+					},
+					"updateopenroomslist21": {
+						"list-name": "Update",
+						"display-text": "Start updating [i]{0}[/i] rooms list",
+						"description": "Update opened rooms list.",
+						"params": {
+							"type0": { "name":"Type", "desc":"Room type. \"public\", \"private\", or others. Leave \"\" to get all \"open\" rooms for all types."}
+						}
+					},
+					"stopupdatingopenroomslist22": {
+						"list-name": "Stop updating",
+						"display-text": "Stop updating rooms list",
+						"description": "Stop updating opened rooms list."
+					},
+					"permissionlistadd51": {
+						"list-name": "Add",
+						"display-text": "Add user [i]{1}[/i], ID: [i]{0}[/i] to [i]{2}[/i]",
+						"description": "Add user to permission list.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."},
+							"name1": { "name":"Name", "desc":"Player name."},
+							"list4": { "name":"List", "desc":"List type.", "items":{"white - list":"white - list","black - lisk":"black - lisk"}}
+						}
+					},
+					"permissionlistremove52": {
+						"list-name": "Remove",
+						"display-text": "Remove user ID: [i]{0}[/i] from [i]{1}[/i]",
+						"description": "Remove user from permission list.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."},
+							"list3": { "name":"List", "desc":"List type.", "items":{"white - list":"white - list","black - lisk":"black - lisk"}}
+						}
+					},
+					"requestmetadata61": {
+						"list-name": "Get metadata",
+						"display-text": "Get metadata",
+						"description": "Get metadata included white list and black list."
+					},
+					"joinrandomroom101": {
+						"list-name": "Join random",
+						"display-text": "[i]{0}[/i] random room with retry [i]{1}[/i] times",
+						"description": "Join random room from current rooms list.",
+						"params": {
+							"join_action2": { "name":"Join action", "desc":"Join action.", "items":{"join":"Join","leave current room then join":"Leave current room then join"}},
+							"retry3": { "name":"Retry", "desc":"Retry count to get default value."}
+						}
+					},
+					"getuserslist111": {
+						"list-name": "Get users list of room",
+						"display-text": "Get users list of room ID: [i]{0}[/i]",
+						"description": "Get users list of room.",
+						"params": {
+							"room_ıd0": { "name":"Room ID", "desc":"Room ID."}
+						}
+					}
+				},
+				"expressions": {
+					"username1": {
+						"description": "Get my user name.",
+						"translated-name": "UserName"
+						},
+					"userıd2": {
+						"description": "Get my user ID.",
+						"translated-name": "UserID"
+						},
+					"myusername3": {
+						"description": "Get my user name.",
+						"translated-name": "MyUserName"
+						},
+					"myuserıd4": {
+						"description": "Get my user ID.",
+						"translated-name": "MyUserID"
+						},
+					"roomname11": {
+						"description": "Get current room name.",
+						"translated-name": "RoomName"
+						},
+					"roomıd12": {
+						"description": "Get current room ID.",
+						"translated-name": "RoomID"
+						},
+					"triggeredroomname13": {
+						"description": "Get triggered room name.",
+						"translated-name": "TriggeredRoomName"
+						},
+					"triggeredroomıd14": {
+						"description": "Get triggered room ID.",
+						"translated-name": "TriggeredRoomID"
+						},
+					"curroomname21": {
+						"description": "Get the current room name in a For Each loop.",
+						"translated-name": "CurRoomName"
+						},
+					"curroomıd22": {
+						"description": "Get the current room ID in a For Each loop.",
+						"translated-name": "CurRoomID"
+						},
+					"curcreatorname23": {
+						"description": "Get the current creater name in a For Each loop.",
+						"translated-name": "CurCreatorName"
+						},
+					"curcreatorıd24": {
+						"description": "Get the current creater ID in a For Each loop.",
+						"translated-name": "CurCreatorID"
+						},
+					"ındex2roomname25": {
+						"description": "Get room name by room index.",
+						"translated-name": "Index2RoomName",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Room index."}
+						}
+						},
+					"ındex2roomıd26": {
+						"description": "Get room ID by room index.",
+						"translated-name": "Index2RoomID",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Room index."}
+						}
+						},
+					"roomscount27": {
+						"description": "Get amount of opened rooms.",
+						"translated-name": "RoomsCount"
+						},
+					"curusername31": {
+						"description": "Get the current user name in a For Each loop.",
+						"translated-name": "CurUserName"
+						},
+					"curuserıd32": {
+						"description": "Get the current user ID in a For Each loop.",
+						"translated-name": "CurUserID"
+						},
+					"ındex2username33": {
+						"description": "Get user name by user index.",
+						"translated-name": "Index2UserName",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"User index."}
+						}
+						},
+					"ındex2userıd34": {
+						"description": "Get user ID by user index.",
+						"translated-name": "Index2UserID",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"User index."}
+						}
+						},
+					"triggeredusername35": {
+						"description": "Get triggered user name.",
+						"translated-name": "TriggeredUserName"
+						},
+					"triggereduserıd36": {
+						"description": "Get triggered user ID.",
+						"translated-name": "TriggeredUserID"
+						},
+					"userscount37": {
+						"description": "Get amount of users in users list.",
+						"translated-name": "UsersCount"
+						},
+					"curroommaxpeers41": {
+						"description": "Get max peers of current room in a For Each loop.",
+						"translated-name": "CurRoomMaxPeers"
+						},
+					"ındex2roommaxpeers42": {
+						"description": "Get room name by room index.",
+						"translated-name": "Index2RoomMaxPeers",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Room index."}
+						}
+						},
+					"whitelisttojson51": {
+						"description": "Get white list in JSON string.",
+						"translated-name": "WhiteListToJSON"
+						},
+					"blacklisttojson52": {
+						"description": "Get black list in JSON string.",
+						"translated-name": "BlackListToJSON"
+						},
+					"channelref81": {
+						"description": "Get custom channel absolute reference. Add 2nd parameter for roomID.",
+						"translated-name": "ChannelRef"
+						},
+					"loopındex100": {
+						"description": "Get loop index in for each loop.",
+						"translated-name": "LoopIndex"
+						}
+				}
+			}
+		}
+	}
+}

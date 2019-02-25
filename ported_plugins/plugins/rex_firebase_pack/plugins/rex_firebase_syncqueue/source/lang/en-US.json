@@ -1,0 +1,74 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Sync queue.",
+	"text": {
+		"plugins": {
+			"rex_firebase_syncqueue": {
+				"name": "Sync queue",
+				"description": "Sync queue on firebase.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_syncqueue.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain of this function."
+						}
+				},
+				"aceCategories": {
+					"0._setup": "0. Setup",
+					"ınput": "Input",
+					"token_owner": "Token owner",
+					"output": "Output",
+					"token": "Token"
+				},
+				"conditions": {
+					"ongetdata1": {
+						"list-name": "On get data",
+						"display-text": "On get data",
+						"description": "Triggered when get data from output queue."
+						},
+					"ongetınputdata2": {
+						"list-name": "On get data",
+						"display-text": "On get data",
+						"description": "Triggered when get data from input queue for token owner."
+						}
+				},
+				"actions": {
+					"setuptoken1": {
+						"list-name": "Setup token",
+						"display-text": "Set token to [i]{0}[/i]",
+						"description": "Setup token to identify sync queue owner.",
+						"params": {
+							"token0": { "name":"Token", "desc":"Token object."}
+						}
+					},
+					"push2ın2": {
+						"list-name": "Push",
+						"display-text": "Push [i]{0}[/i] to input queue",
+						"description": "Push data to input queue.",
+						"params": {
+							"value0": { "name":"Value", "desc":"The value to set"}
+						}
+					},
+					"push2out3": {
+						"list-name": "Push",
+						"display-text": "Push [i]{0}[/i] to output queue",
+						"description": "Push data to output queue.",
+						"params": {
+							"output0": { "name":"Output", "desc":"Output value."}
+						}
+					}
+				},
+				"expressions": {
+					"lastın1": {
+						"description": "Get last input data.",
+						"translated-name": "LastIn"
+						}
+				}
+			}
+		}
+	}
+}

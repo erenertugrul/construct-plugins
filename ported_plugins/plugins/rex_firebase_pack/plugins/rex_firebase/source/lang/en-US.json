@@ -1,0 +1,449 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Firebase.",
+	"text": {
+		"plugins": {
+			"rex_firebase": {
+				"name": "Firebase",
+				"description": "Real time database-as-a-service. https://www.firebase.com/",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebase.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"connection-detection": {
+						"name": "Connection detection",
+						"desc": "Enable connection detection.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"server-time-offset-detection": {
+						"name": "Server time offset detection",
+						"desc": "Enable server time offset detection.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"send_-_set": "Send - Set",
+					"send_-_update_json": "Send - Update JSON",
+					"send_-_push": "Send - Push",
+					"send_-_transaction": "Send - Transaction",
+					"send_-_remove": "Send - Remove",
+					"receive_-_add": "Receive - Add",
+					"receive_-_remove": "Receive - Remove",
+					"receive_-_add_once": "Receive - Add once",
+					"on_disconnect": "On disconnect",
+					"query": "Query",
+					"online": "Online",
+					"transaction": "Transaction",
+					"receive": "Receive",
+					"send": "Send",
+					"transaction_-_completed": "Transaction - completed",
+					"connection": "Connection",
+					"push": "Push",
+					"ıtemıd": "ItemID",
+					"server_time_offset": "Server time offset",
+					"error": "Error"
+				},
+				"conditions": {
+					"ontransaction1": {
+						"list-name": "On transaction",
+						"display-text": "On transaction [b]{0}[/b]",
+						"description": "Triggered by calling \"action: Transaction\", to get return value.",
+						"params": {
+							"callback_function0": { "name":"Callback function", "desc":"Callback function."}
+						}
+						},
+					"onreading2": {
+						"list-name": "On received",
+						"display-text": "On received [b]{0}[/b]",
+						"description": "Triggered when registered received event received.",
+						"params": {
+							"callback_function0": { "name":"Callback function", "desc":"Callback function."}
+						}
+						},
+					"oncomplete3": {
+						"list-name": "On complete",
+						"display-text": "On complete [b]{0}[/b]",
+						"description": "Triggered after any sending action success.",
+						"params": {
+							"callback_function0": { "name":"Callback function", "desc":"Callback function."}
+						}
+						},
+					"onerror4": {
+						"list-name": "On error",
+						"display-text": "On error [b]{0}[/b]",
+						"description": "Triggered after any sending action error.",
+						"params": {
+							"callback_function0": { "name":"Callback function", "desc":"Callback function."}
+						}
+						},
+					"lastdataısnull5": {
+						"list-name": "LastData is null",
+						"display-text": "LastData is null",
+						"description": "Return true if LastData is null."
+						},
+					"transactionınısnull6": {
+						"list-name": "TransactionIn is null",
+						"display-text": "TransactionIn is null",
+						"description": "Return true if TransactionIn is null."
+						},
+					"ıstransactionaborted7": {
+						"list-name": "TransactionIn aborted",
+						"display-text": "Transaction is aborted",
+						"description": "Return true if the last transaction is aborted."
+						},
+					"ontransactioncomplete8": {
+						"list-name": "On complete",
+						"display-text": "On transaction complete [b]{0}[/b]",
+						"description": "Triggered when transaction success.",
+						"params": {
+							"callback_function0": { "name":"Callback function", "desc":"Callback function."}
+						}
+						},
+					"ontransactionerror9": {
+						"list-name": "On error",
+						"display-text": "On transaction error [b]{0}[/b]",
+						"description": "Triggered when transaction error.",
+						"params": {
+							"callback_function0": { "name":"Callback function", "desc":"Callback function."}
+						}
+						},
+					"ontransactionabort10": {
+						"list-name": "On aborted",
+						"display-text": "On transaction aborted [b]{0}[/b]",
+						"description": "Triggered when transaction aborted.",
+						"params": {
+							"callback_function0": { "name":"Callback function", "desc":"Callback function."}
+						}
+						},
+					"onconnected11": {
+						"list-name": "On connected",
+						"display-text": "On connected",
+						"description": "Triggered while connecting start."
+						},
+					"ondisconnected12": {
+						"list-name": "On disconnected",
+						"display-text": "On disconnected",
+						"description": "Triggered while disconnected."
+						},
+					"ısconnected13": {
+						"list-name": "Is connected",
+						"display-text": "Is connected",
+						"description": "Return true if connected to firebase server."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain ref to [i]{0}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"setvalue1": {
+						"list-name": "Set value",
+						"display-text": "Set [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Sets value at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"value1": { "name":"Value", "desc":"The value to set"},
+							"on_complete2": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"setjson2": {
+						"list-name": "Set JSON",
+						"display-text": "Set JSON [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Sets JSON value at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"json_value1": { "name":"JSON value", "desc":"JSON value to set"},
+							"on_complete2": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"updatejson3": {
+						"list-name": "Update JSON",
+						"display-text": "Update JSON [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Updates JSON values at the data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"json_value1": { "name":"JSON value", "desc":"JSON value to set"},
+							"on_complete2": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"pushvalue4": {
+						"list-name": "Push value",
+						"display-text": "Push [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Push value at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"value1": { "name":"Value", "desc":"The value to set"},
+							"on_complete2": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"pushjson5": {
+						"list-name": "Push JSON",
+						"display-text": "Push JSON [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Push JSON value at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"json_value1": { "name":"JSON value", "desc":"JSON value to set"},
+							"on_complete2": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"transaction6": {
+						"list-name": "Transaction",
+						"display-text": "Transaction with callback: [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Transaction value with callback.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"on_transaction1": { "name":"On transaction", "desc":"On transaction function."},
+							"on_complete2": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"returntransactionvalue7": {
+						"list-name": "Set value",
+						"display-text": "Set transaction value to [i]{0}[/i]",
+						"description": "Returns transaction value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"The value to set"}
+						}
+					},
+					"returntransactionjson8": {
+						"list-name": "Set JSON",
+						"display-text": "Set transaction JSON to [i]{0}[/i]",
+						"description": "Returns transaction JSON.",
+						"params": {
+							"json_value0": { "name":"JSON value", "desc":"JSON value to set"}
+						}
+					},
+					"remove9": {
+						"list-name": "Remove",
+						"display-text": "Remove all values at [i]{0}[/i], on complete callback to [i]{1}[/i]",
+						"description": "Remove all values at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"on_complete1": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"setbooleanvalue10": {
+						"list-name": "Set boolean value",
+						"display-text": "Set [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Sets boolean value at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"False","true":"True"}},
+							"on_complete4": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"pushbooleanvalue11": {
+						"list-name": "Push boolean value",
+						"display-text": "Push [i]{1}[/i] at [i]{0}[/i], on complete callback to [i]{2}[/i]",
+						"description": "Push boolean value at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"False","true":"True"}},
+							"on_complete4": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"setservertimestamp12": {
+						"list-name": "Set server timestamp",
+						"display-text": "Set server timestamp at [i]{0}[/i], on complete callback to [i]{1}[/i]",
+						"description": "Sets server timestamp at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"on_complete1": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"pushservertimestamp13": {
+						"list-name": "Push server timestamp",
+						"display-text": "Push server timestamp at [i]{0}[/i], on complete callback to [i]{1}[/i]",
+						"description": "Push server timestamp at data ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"on_complete1": { "name":"On complete", "desc":"On complete callback, ignored if enter an empty string \"\"."}
+						}
+					},
+					"addreadingcallback21": {
+						"list-name": "Add callback",
+						"display-text": "Add received callback: [i]{2}[/i] for ref [i]{0}[/i] ([i]{1}[/i])",
+						"description": "Add received callback.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"type6": { "name":"Type", "desc":"Event type", "items":{"value changed":"Value changed","child added":"Child added","child changed":"Child changed","child removed":"Child removed","child moved":"Child moved"}},
+							"callback_function7": { "name":"Callback function", "desc":"Callback function."}
+						}
+					},
+					"removereadingcallback22": {
+						"list-name": "Remove callback",
+						"display-text": "Remove received callback: [i]{2}[/i] for ref [i]{0}[/i] ([i]{1}[/i])",
+						"description": "Remove received callback.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"type6": { "name":"Type", "desc":"Event type", "items":{"value changed":"Value changed","child added":"Child added","child changed":"Child changed","child removed":"Child removed","child moved":"Child moved"}},
+							"callback_function7": { "name":"Callback function", "desc":"Callback function."}
+						}
+					},
+					"removereadingcallback23": {
+						"list-name": "Remove callback by type",
+						"display-text": "Remove all received callbacks for ref [i]{0}[/i] ([i]{1}[/i])",
+						"description": "Remove all received callbacks by type.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"type6": { "name":"Type", "desc":"Event type", "items":{"value changed":"Value changed","child added":"Child added","child changed":"Child changed","child removed":"Child removed","child moved":"Child moved"}}
+						}
+					},
+					"removereadingcallback24": {
+						"list-name": "Remove all callbacks at ref",
+						"display-text": "Remove all received callbacks for ref [i]{0}[/i]",
+						"description": "Remove all received callbacks at ref.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"addreadingcallbackonce25": {
+						"list-name": "Add once",
+						"display-text": "Add received callback: [i]{2}[/i] once for ref [i]{0}[/i] ([i]{1}[/i])",
+						"description": "Add received callback once.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"type6": { "name":"Type", "desc":"Event type", "items":{"value changed":"Value changed","child added":"Child added","child changed":"Child changed","child removed":"Child removed","child moved":"Child moved"}},
+							"callback_function7": { "name":"Callback function", "desc":"Callback function."}
+						}
+					},
+					"removerefondisconnect31": {
+						"list-name": "Remove",
+						"display-text": "Remove all values at [i]{0}[/i] when disconnected",
+						"description": "Remove all values at data ref when disconnected. Uses under \"condition: On received\".",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"setvalueondisconnect32": {
+						"list-name": "Set value",
+						"display-text": "Set [i]{1}[/i] at [i]{0}[/i] when disconnected",
+						"description": "Sets value at data ref when disconnected. Uses under \"condition: On received\".",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"value1": { "name":"Value", "desc":"The value to set"}
+						}
+					},
+					"updatejsonondisconnect33": {
+						"list-name": "Update JSON",
+						"display-text": "Update JSON [i]{1}[/i] at [i]{0}[/i] when disconnected",
+						"description": "Updates JSON values at the data ref when disconnected. Uses under \"condition: On received\".",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"},
+							"json_value1": { "name":"JSON value", "desc":"JSON value to set"}
+						}
+					},
+					"removereadingcallback34": {
+						"list-name": "Remove all callbacks",
+						"display-text": "Remove all registered received callbacks",
+						"description": "Remove all registered received callbacks."
+					},
+					"cancelondisconnect35": {
+						"list-name": "Cancel",
+						"display-text": "Cancel disconnected writing at [i]{0}[/i]",
+						"description": "Cancel disconnected writing.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"addquerycallback51": {
+						"list-name": "Add callback",
+						"display-text": "Add received callback: [i]{2}[/i] for query [i]{0}[/i] ([i]{1}[/i])",
+						"description": "Add received callback.",
+						"params": {
+							"query0": { "name":"Query", "desc":"Query object."},
+							"type6": { "name":"Type", "desc":"Event type", "items":{"value changed":"Value changed","child added":"Child added","child changed":"Child changed","child removed":"Child removed","child moved":"Child moved"}},
+							"callback_function7": { "name":"Callback function", "desc":"Callback function."}
+						}
+					},
+					"addquerycallbackonce52": {
+						"list-name": "Add callback once",
+						"display-text": "Add received callback: [i]{2}[/i] once for query [i]{0}[/i] ([i]{1}[/i])",
+						"description": "Add received callback once.",
+						"params": {
+							"query0": { "name":"Query", "desc":"Query object."},
+							"type6": { "name":"Type", "desc":"Event type", "items":{"value changed":"Value changed","child added":"Child added","child changed":"Child changed","child removed":"Child removed","child moved":"Child moved"}},
+							"callback_function7": { "name":"Callback function", "desc":"Callback function."}
+						}
+					},
+					"gooffline61": {
+						"list-name": "Go offline",
+						"display-text": "Go offline",
+						"description": "Manually disconnect the Firebase client from the server and disable automatic reconnection. ."
+					},
+					"goonline62": {
+						"list-name": "Go online",
+						"display-text": "Go online",
+						"description": "Manually reestablish a connection to the Firebase server and enable automatic reconnection. . ."
+					}
+				},
+				"expressions": {
+					"domain0": {
+						"description": "Get root location reference.",
+						"translated-name": "Domain"
+						},
+					"transactionın1": {
+						"description": "Transaction input parameter, using under \"condition:On transaction\", JSON will be stringified. Add default value at 1st parameter if read data is null.",
+						"translated-name": "TransactionIn"
+						},
+					"lastdata2": {
+						"description": "Received data, using under \"condition:On received\". JSON will be stringified. Add default value at 1st parameter if read data is null.",
+						"translated-name": "LastData"
+						},
+					"lastkey3": {
+						"description": "Key of received data, using under \"condition:On received\"",
+						"translated-name": "LastKey"
+						},
+					"prevchildname4": {
+						"description": "Previous child name, using under \"condition:On received\" with one of \"Child added\", \"Child changed\", \"Child moved\" type. Add default value at 1st parameter if read data is null.",
+						"translated-name": "PrevChildName"
+						},
+					"transactionresult5": {
+						"description": "Transaction wrote result, using under \"condition:On completed\", JSON will be stringified. Add default value at 1st parameter if read data is null.",
+						"translated-name": "TransactionResult"
+						},
+					"lastpushref11": {
+						"description": "Data reference at last push.",
+						"translated-name": "LastPushRef"
+						},
+					"generatekey21": {
+						"description": "Generate new key from push action.",
+						"translated-name": "GenerateKey"
+						},
+					"lastgeneratedkey22": {
+						"description": "Get last generate a key from push action.",
+						"translated-name": "LastGeneratedKey"
+						},
+					"servertimeoffset31": {
+						"description": "Get current server time offset.",
+						"translated-name": "ServerTimeOffset"
+						},
+					"estimatedtime32": {
+						"description": "Get estimated time from curent time + current server time offset.",
+						"translated-name": "EstimatedTime"
+						},
+					"lasterrorcode101": {
+						"description": "Error code.",
+						"translated-name": "LastErrorCode"
+						},
+					"lasterrormessage102": {
+						"description": "Error message (error.serverResponse) .",
+						"translated-name": "LastErrorMessage"
+						}
+				}
+			}
+		}
+	}
+}

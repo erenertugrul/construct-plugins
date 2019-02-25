@@ -1,0 +1,152 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for User list.",
+	"text": {
+		"plugins": {
+			"rex_firebase_userlist": {
+				"name": "User list",
+				"description": "User lists on firebase.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_userlist.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						}
+				},
+				"aceCategories": {
+					"owner": "Owner",
+					"user_list_-_request": "User list - Request",
+					"user_list_-_bi-direction": "User list - bi-direction",
+					"user_list": "User list",
+					"user_list_-_invitation": "User list - invitation",
+					"user_list_-_for_each": "User list - For each"
+				},
+				"conditions": {
+					"onreceivingalllists1": {
+						"list-name": "On receiving all",
+						"display-text": "On receiving all owner's lists",
+						"description": "Triggered when received all owner's lists."
+						},
+					"foreachuserıdınlist2": {
+						"list-name": "For each User ID",
+						"display-text": "For each User ID in owner's list [i]{0}[/i]",
+						"description": "Repeat the event for each user ID in list.",
+						"params": {
+							"list0": { "name":"List", "desc":"List name."}
+						}
+						},
+					"userıdınlist3": {
+						"list-name": "User ID in list",
+						"display-text": "User ID [i]{0}[/i] in owner's list [i]{1}[/i]",
+						"description": "Return true if User ID in list.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"UserID from authentication."},
+							"list1": { "name":"List", "desc":"List name."}
+						}
+						}
+				},
+				"actions": {
+					"setowner1": {
+						"list-name": "Set owner",
+						"display-text": "Set user ID of owner to [i]{0}[/i]",
+						"description": "Set user ID of owner.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID from authentication."}
+						}
+					},
+					"requestalllists2": {
+						"list-name": "Request lists",
+						"display-text": "Request all lists of owner",
+						"description": "Request all lists of owner."
+					},
+					"adduserın2sides11": {
+						"list-name": "Add user in both sides",
+						"display-text": "Add target user ID: [i]{0}[/i] into owner's list [i]{1}[/i], and add owner user ID into target user list [i]{2}[/i]",
+						"description": "Add user in both sides.",
+						"params": {
+							"target_user_ıd0": { "name":"Target user ID", "desc":"User ID of target user."},
+							"owner_list1": { "name":"Owner list", "desc":"List's name of owner."},
+							"target_user_list2": { "name":"Target user list", "desc":"List's name of target user."}
+						}
+					},
+					"removeuserfrom2sides12": {
+						"list-name": "Remove user in both sides",
+						"display-text": "Remove target user ID: [i]{0}[/i] from owner's list [i]{1}[/i], and remove owner user ID from target user list [i]{2}[/i]",
+						"description": "Remove user from both sides.",
+						"params": {
+							"target_user_ıd0": { "name":"Target user ID", "desc":"User ID of target user."},
+							"owner_list1": { "name":"Owner list", "desc":"List's name of owner."},
+							"target_user_list2": { "name":"Target user list", "desc":"List's name of target user."}
+						}
+					},
+					"adduser13": {
+						"list-name": "Add user",
+						"display-text": "Add target user ID: [i]{0}[/i] into owner's list [i]{1}[/i]",
+						"description": "Add user into owner's list.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID of target user."},
+							"owner_list1": { "name":"Owner list", "desc":"List's name of owner."}
+						}
+					},
+					"removeuser14": {
+						"list-name": "Remove user",
+						"display-text": "Remove target user ID: [i]{0}[/i] from owner's list [i]{1}[/i]",
+						"description": "Remove user from owner's list.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID of target user."},
+							"owner_list1": { "name":"Owner list", "desc":"List's name of owner."}
+						}
+					},
+					"ınviteuser21": {
+						"list-name": "Invite user",
+						"display-text": "Invite target user ID: [i]{0}[/i] into owner's list [i]{1}[/i], and add owner user ID into target user list [i]{2}[/i] with message to [i]{3}[/i]",
+						"description": "Invite user.",
+						"params": {
+							"target_user_ıd0": { "name":"Target user ID", "desc":"User ID of target user."},
+							"owner_list1": { "name":"Owner list", "desc":"List's name of owner."},
+							"target_user_list2": { "name":"Target user list", "desc":"List's name of target user."},
+							"message3": { "name":"Message", "desc":"Message of invitation."}
+						}
+					},
+					"responseınvitation22": {
+						"list-name": "Response invitation",
+						"display-text": "[i]{1}[/i] invitation from user ID: [i]{0}[/i]",
+						"description": "Response invitation.",
+						"params": {
+							"ınviter_user_ıd0": { "name":"Inviter user ID", "desc":"User ID of inviter user."},
+							"response3": { "name":"Response", "desc":"Result of response", "items":{"reject":"Reject","accept":"Accept"}}
+						}
+					},
+					"cancelınvitation23": {
+						"list-name": "Cancel invitation",
+						"display-text": "Cancel invitation to user ID: [i]{0}[/i]",
+						"description": "Cancel invitation.",
+						"params": {
+							"target_user_ıd0": { "name":"Target user ID", "desc":"User ID of target user."}
+						}
+					},
+					"removemembership24": {
+						"list-name": "Remove membership",
+						"display-text": "Remove target user ID: [i]{0}[/i] from owner's list [i]{1}[/i], and remove owner user ID from target user list [i]{2}[/i]",
+						"description": "Remove membership.",
+						"params": {
+							"target_user_ıd0": { "name":"Target user ID", "desc":"User ID of target user."},
+							"owner_list1": { "name":"Owner list", "desc":"List's name of owner."},
+							"target_user_list2": { "name":"Target user list", "desc":"List's name of target user."}
+						}
+					}
+				},
+				"expressions": {
+					"owneruserıd1": {
+						"description": "Get user ID of owner.",
+						"translated-name": "OwnerUserID"
+						},
+					"curuserıd11": {
+						"description": "Get the current user ID in a For Each loop.",
+						"translated-name": "CurUserID"
+						}
+				}
+			}
+		}
+	}
+}

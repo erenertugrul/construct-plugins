@@ -1,0 +1,433 @@
+{
+	"0._setup": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setowner1",
+				"scriptName": "SetOwner",
+				"highlight": false,
+				"params": [
+					{"id":"user_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"prepare": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "setvalue2",
+				"scriptName": "SetValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"},
+					{"id":"slot4", "type":"combo", "items":["header","body"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "setbooleanvalue4",
+				"scriptName": "SetBooleanValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"boolean3", "type":"combo", "items":["false","true"]},
+					{"id":"slot6", "type":"combo", "items":["header","body"]}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "setcurrentservertimestamp5",
+				"scriptName": "SetCurrentServerTimestamp",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"slot3", "type":"combo", "items":["header","body"]}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "removekey6",
+				"scriptName": "RemoveKey",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"slot3", "type":"combo", "items":["header","body"]}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "setjson7",
+				"scriptName": "SetJSON",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"json1", "type":"string", "initialValue":"\"\""},
+					{"id":"slot4", "type":"combo", "items":["header","body"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"save": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onsave1",
+				"scriptName": "OnSave",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onsaveerror2",
+				"scriptName": "OnSaveError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "save3",
+				"scriptName": "Save",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"load": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "getallheaders11",
+				"scriptName": "GetAllHeaders",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "getslotbody12",
+				"scriptName": "GetSlotBody",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"clean": {
+		"conditions": [
+			{
+				"c2id": 21,
+				"id": "onclean21",
+				"scriptName": "OnClean",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 22,
+				"id": "oncleanerror22",
+				"scriptName": "OnCleanError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "cleanslot21",
+				"scriptName": "CleanSlot",
+				"highlight": false
+			},
+			{
+				"c2id": 22,
+				"id": "cleanslot22",
+				"scriptName": "CleanSlot",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"load_-_header": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "ongetallheaders11",
+				"scriptName": "OnGetAllHeaders",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "foreachheader12",
+				"scriptName": "ForEachHeader",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 31,
+				"id": "ongetallheaderserror31",
+				"scriptName": "OnGetAllHeadersError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"load_-_body": {
+		"conditions": [
+			{
+				"c2id": 13,
+				"id": "ongetbody13",
+				"scriptName": "OnGetBody",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 14,
+				"id": "ongetunusedbody14",
+				"scriptName": "OnGetUnusedBody",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 32,
+				"id": "ongetbodyerror32",
+				"scriptName": "OnGetBodyError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"header": {
+		"conditions": [
+			{
+				"c2id": 15,
+				"id": "allslotareempty15",
+				"scriptName": "AllSlotAreEmpty",
+				"highlight": false
+			},
+			{
+				"c2id": 16,
+				"id": "ısoccupied16",
+				"scriptName": "IsOccupied",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"header_-_for_each": {
+		"conditions": [
+			{
+				"c2id": 17,
+				"id": "foreachkeyınheader17",
+				"scriptName": "ForEachKeyInHeader",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"body_-_for_each": {
+		"conditions": [
+			{
+				"c2id": 18,
+				"id": "foreachkeyınbody18",
+				"scriptName": "ForEachKeyInBody",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"body": {
+		"conditions": [
+			{
+				"c2id": 19,
+				"id": "bodyısınvalid19",
+				"scriptName": "BodyIsInvalid",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "bodyvalue3",
+				"expressionName": "BodyValue",
+				"scriptName": "BodyValue",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 9,
+				"id": "lastslotname9",
+				"expressionName": "LastSlotName",
+				"scriptName": "LastSlotName",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"for_each_header": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "curslotname1",
+				"expressionName": "CurSlotName",
+				"scriptName": "CurSlotName",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 2,
+				"id": "curheadervalue2",
+				"expressionName": "CurHeaderValue",
+				"scriptName": "CurHeaderValue",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"json": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 4,
+				"id": "headerstojson4",
+				"expressionName": "HeadersToJSON",
+				"scriptName": "HeadersToJSON",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 5,
+				"id": "bodytojson5",
+				"expressionName": "BodyToJSON",
+				"scriptName": "BodyToJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"headers": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 6,
+				"id": "headervalue6",
+				"expressionName": "HeaderValue",
+				"scriptName": "HeaderValue",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"for_each_key": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 7,
+				"id": "curkey7",
+				"expressionName": "CurKey",
+				"scriptName": "CurKey",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 8,
+				"id": "curvalue8",
+				"expressionName": "CurValue",
+				"scriptName": "CurValue",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"error": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "lasterrorcode21",
+				"expressionName": "LastErrorCode",
+				"scriptName": "LastErrorCode",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 22,
+				"id": "lasterrormessage22",
+				"expressionName": "LastErrorMessage",
+				"scriptName": "LastErrorMessage",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

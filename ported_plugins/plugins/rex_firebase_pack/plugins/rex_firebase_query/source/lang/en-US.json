@@ -1,0 +1,120 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Query.",
+	"text": {
+		"plugins": {
+			"rex_firebase_query": {
+				"name": "Query",
+				"description": "Query in firebase.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_query.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"0._create": "0. Create",
+					"1._create_-_order": "1. Create - Order",
+					"2._create_-_range": "2. Create - Range",
+					"3._create_-_limit": "3. Create - Limit"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain ref to [i]{0}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"createnewquery1": {
+						"list-name": "Create",
+						"display-text": "0. Create a new query for ref [i]{0}[/i]",
+						"description": "Create a new query.",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"orderbykey11": {
+						"list-name": "Order by key",
+						"display-text": "1. Order query by Key",
+						"description": "Order query by Key."
+					},
+					"orderbychild12": {
+						"list-name": "Order by child",
+						"display-text": "1. Order query by child [i]{0}[/i]",
+						"description": "Order query by child.",
+						"params": {
+							"child0": { "name":"Child", "desc":"Key name of child"}
+						}
+					},
+					"orderbypriority13": {
+						"list-name": "Order by priority",
+						"display-text": "1. Order query by priority",
+						"description": "Order query by priority."
+					},
+					"orderbyvalue14": {
+						"list-name": "Order by value",
+						"display-text": "1. Order query by value",
+						"description": "Order query by value."
+					},
+					"startat22": {
+						"list-name": "Start at",
+						"display-text": "2. Start query at [i]{0}[/i]",
+						"description": "Start query at specific value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Start value."}
+						}
+					},
+					"endat23": {
+						"list-name": "End at",
+						"display-text": "2. End query at [i]{0}[/i]",
+						"description": "End query at specific value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"End value."}
+						}
+					},
+					"startendat24": {
+						"list-name": "In range",
+						"display-text": "2. Set query in range, from [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Set query in range.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Start value."},
+							"value1": { "name":"Value", "desc":"End value."}
+						}
+					},
+					"equalto25": {
+						"list-name": "Equal to",
+						"display-text": "2. Set query equal to [i]{0}[/i]",
+						"description": "Set query equal to specific value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Equal value."}
+						}
+					},
+					"limittofirst31": {
+						"list-name": "Limit to first",
+						"display-text": "3. Set limit to [i]{0}[/i] to first of current queue",
+						"description": "Limit to first of queue.",
+						"params": {
+							"limit0": { "name":"Limit", "desc":"Limit count."}
+						}
+					},
+					"limittolast32": {
+						"list-name": "Limit to last",
+						"display-text": "3. Set limit to [i]{0}[/i] to last of current queue",
+						"description": "Limit to last of queue.",
+						"params": {
+							"limit0": { "name":"Limit", "desc":"Limit count."}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

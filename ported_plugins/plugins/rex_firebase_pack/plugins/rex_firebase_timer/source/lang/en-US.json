@@ -1,0 +1,177 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Timer.",
+	"text": {
+		"plugins": {
+			"rex_firebase_timer": {
+				"name": "Timer",
+				"description": "Get elapsed interval from firebase.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_timer.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"timer": "Timer",
+					"on_disconnect": "On disconnect",
+					"start_timer": "Start timer",
+					"get_timer": "Get timer",
+					"remove_timer": "Remove timer",
+					"time_out": "Time out",
+					"valid": "Valid"
+				},
+				"conditions": {
+					"onstarttimercomplete1": {
+						"list-name": "On start timer",
+						"display-text": "On start timer",
+						"description": "Triggered when start timer complete."
+						},
+					"onstarttimererror2": {
+						"list-name": "On start timer error",
+						"display-text": "On start timer error",
+						"description": "Triggered when start timer error."
+						},
+					"ongettimercomplete3": {
+						"list-name": "On get timer",
+						"display-text": "On get timer",
+						"description": "Triggered when get timer."
+						},
+					"ongettimererror4": {
+						"list-name": "On get timer error",
+						"display-text": "On get timer error",
+						"description": "Triggered when get timer error."
+						},
+					"onremovetimercomplete5": {
+						"list-name": "On remove timer complete",
+						"display-text": "On remove timer complete",
+						"description": "Triggered when remove timer complete."
+						},
+					"onremovetimererror6": {
+						"list-name": "On remove timer error",
+						"display-text": "On remove timer error",
+						"description": "Triggered when remove timer error."
+						},
+					"ıstimeout21": {
+						"list-name": "Is time-out",
+						"display-text": "Is time-out",
+						"description": "Return true if current triggered timer is time-out under \"Condition: On get timer\"."
+						},
+					"ısvalid22": {
+						"list-name": "Is valid",
+						"display-text": "Is valid",
+						"description": "Return true if get valid timer."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"starttimer1": {
+						"list-name": "Start",
+						"display-text": "Start timer [i]{1}[/i] of user ID: [i]{0}[/i], with time-out interval to [i]{2}[/i]",
+						"description": "Start timer.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID."},
+							"timer1": { "name":"Timer", "desc":"Name of timer."},
+							"ınterval2": { "name":"Interval", "desc":"Time-out interval, in seconds."}
+						}
+					},
+					"gettimer2": {
+						"list-name": "Get or start",
+						"display-text": "Get timer [i]{1}[/i] of user ID: [i]{0}[/i], or start timer with time-out interval to [i]{2}[/i]",
+						"description": "Get timer.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID."},
+							"timer1": { "name":"Timer", "desc":"Name of timer."},
+							"ınterval2": { "name":"Interval", "desc":"Time-out interval, in seconds, for starting timer."}
+						}
+					},
+					"removetimer3": {
+						"list-name": "Remove",
+						"display-text": "Remove timer [i]{1}[/i] of user ID: [i]{0}[/i]",
+						"description": "Remove timer.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID."},
+							"timer1": { "name":"Timer", "desc":"Name of timer."}
+						}
+					},
+					"gettimer4": {
+						"list-name": "Get",
+						"display-text": "Get timer [i]{1}[/i] of user ID: [i]{0}[/i]",
+						"description": "Get timer.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID."},
+							"timer1": { "name":"Timer", "desc":"Name of timer."}
+						}
+					},
+					"starttimerwhendisconnect11": {
+						"list-name": "Start on disconnect",
+						"display-text": "Start timer [i]{1}[/i] of user ID: [i]{0}[/i] when disconnected, with time-out interval to [i]{2}[/i].",
+						"description": "Start timer when disconnected.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID."},
+							"timer1": { "name":"Timer", "desc":"Name of timer."},
+							"ınterval2": { "name":"Interval", "desc":"Time-out interval, in seconds, for starting timer."}
+						}
+					},
+					"deletetimerwhendisconnect12": {
+						"list-name": "Delete on disconnect",
+						"display-text": "Delete timer [i]{1}[/i] of user ID: [i]{0}[/i] when disconnected.",
+						"description": "Delete timer when disconnected.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"User ID."},
+							"timer1": { "name":"Timer", "desc":"Name of timer."}
+						}
+					}
+				},
+				"expressions": {
+					"lastuserıd1": {
+						"description": "Get user ID of last triggered timer",
+						"translated-name": "LastUserID"
+						},
+					"lasttimername2": {
+						"description": "Get timer name of last triggered timer",
+						"translated-name": "LastTimerName"
+						},
+					"laststarttimestamp3": {
+						"description": "Get start timestamp of last triggered timer under \"Condition: On get timer\".",
+						"translated-name": "LastStartTimestamp"
+						},
+					"lastcurrenttimestamp4": {
+						"description": "Get current timestamp of last triggered timer under \"Condition: On get timer\".",
+						"translated-name": "LastCurrentTimestamp"
+						},
+					"lastelapsedtime5": {
+						"description": "Get elapsed time (current - start) of last triggered timer under \"Condition: On get timer\", in seconds.",
+						"translated-name": "LastElapsedTime"
+						},
+					"lasttimeoutınterval6": {
+						"description": "Get time-out interval of last triggered timer under \"Condition: On get timer\", in seconds.",
+						"translated-name": "LastTimeoutInterval"
+						},
+					"lastremainınterval7": {
+						"description": "Get   interval of last triggered timer under \"Condition: On get timer\", in seconds.",
+						"translated-name": "LastRemainInterval"
+						},
+					"lastownerıd8": {
+						"description": "Get owner ID of last triggered timer",
+						"translated-name": "LastOwnerID"
+						}
+				}
+			}
+		}
+	}
+}

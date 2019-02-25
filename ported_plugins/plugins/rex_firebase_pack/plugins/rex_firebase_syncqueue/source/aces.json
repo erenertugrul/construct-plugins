@@ -1,0 +1,91 @@
+{
+	"0._setup": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setuptoken1",
+				"scriptName": "SetupToken",
+				"highlight": false,
+				"params": [
+					{"id":"token0", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ınput": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "push2ın2",
+				"scriptName": "Push2In",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"token_owner": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "ongetınputdata2",
+				"scriptName": "OnGetInputData",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "push2out3",
+				"scriptName": "Push2Out",
+				"highlight": false,
+				"params": [
+					{"id":"output0", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"output": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "ongetdata1",
+				"scriptName": "OnGetData",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"token": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "lastın1",
+				"expressionName": "LastIn",
+				"scriptName": "LastIn",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	}
+}

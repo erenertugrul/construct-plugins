@@ -1,0 +1,264 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Item filter.",
+	"text": {
+		"plugins": {
+			"rex_firebase_itemfilter": {
+				"name": "Item filter",
+				"description": "Query itemIDs with condition filters.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_itemfilter.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"set_item": "Set item",
+					"remove": "Remove",
+					"request": "Request",
+					"request_-_signle_query": "Request - Signle query",
+					"save": "Save",
+					"ıtemıd": "ItemID",
+					"json": "JSON",
+					"condition": "Condition",
+					"set_operation": "Set operation"
+				},
+				"conditions": {
+					"onsavecomplete1": {
+						"list-name": "On save complete",
+						"display-text": "On save [i]{0}[/i] complete",
+						"description": "Triggered when save current item complete.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onsaveerror2": {
+						"list-name": "On save error",
+						"display-text": "On save [i]{0}[/i] error",
+						"description": "Triggered when save current item error.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onremovecomplete3": {
+						"list-name": "On remove complete",
+						"display-text": "On remove [i]{0}[/i] complete",
+						"description": "Triggered when remove current item complete.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onremoveerror4": {
+						"list-name": "On remove error",
+						"display-text": "On remove [i]{0}[/i] error",
+						"description": "Triggered when remove current item error.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onrequestcomplete11": {
+						"list-name": "On request complete",
+						"display-text": "On request [i]{0}[/i] complete",
+						"description": "Triggered when request current item complete.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"foreachıtemıd12": {
+						"list-name": "For each itemID",
+						"display-text": "For each itemID",
+						"description": "Repeat the event for each itemID of request result."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"setvalue1": {
+						"list-name": "Set value",
+						"display-text": "Set key [i]{0}[/i] to  [i]{1}[/i] in current item",
+						"description": "Set value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set"}
+						}
+					},
+					"save2": {
+						"list-name": "Update",
+						"display-text": "Update current item with ID [i]{0}[/i] (tag [i]{1}[/i])",
+						"description": "Update current item into server.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."},
+							"tag1": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"remove3": {
+						"list-name": "Remove",
+						"display-text": "Remove item with ID [i]{0}[/i] (tag [i]{1}[/i])",
+						"description": "Remove item from server.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."},
+							"tag1": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"setbooleanvalue4": {
+						"list-name": "Set boolean value",
+						"display-text": "Set key [i]{0}[/i] to [i]{1}[/i] in current item",
+						"description": "Set boolean value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"False","true":"True"}}
+						}
+					},
+					"removekey5": {
+						"list-name": "Remove key",
+						"display-text": "Remove key [i]{0}[/i] in server",
+						"description": "Remove key in firebase server.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"getrandomıtems11": {
+						"list-name": "Get random items",
+						"display-text": "Request - get [i]{0}[/i] random items (tag [i]{1}[/i])",
+						"description": "Get random items.",
+						"params": {
+							"count0": { "name":"Count", "desc":"Count of picked item."},
+							"tag1": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"getıtemsbycondition12": {
+						"list-name": "Get items by condition",
+						"display-text": "Request - get items by condition to [i]{0}[/i] (tag [i]{1}[/i])",
+						"description": "Get items by condition.",
+						"params": {
+							"expression0": { "name":"Expression", "desc":"Expression of conditions."},
+							"tag1": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"getıtemsbysingleconditionınrange13": {
+						"list-name": "Get items by \"In Range\"",
+						"display-text": "Request - get [i]{4}[/i] items by condition: [i]{0}[/i] In Range [i]{1}[/i] - [i]{2}[/i], [i]{3}[/i] (tag [i]{5}[/i])",
+						"description": "Get items by single condition-In Range with count limit.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"Start value."},
+							"value2": { "name":"Value", "desc":"End value."},
+							"limit5": { "name":"Limit", "desc":"Limit types.", "items":{"limit to first":"Limit to first","limit to last":"Limit to last"}},
+							"limit6": { "name":"Limit", "desc":"Limit count."},
+							"tag7": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"getıtemsbysinglecondition14": {
+						"list-name": "Get items by comparison",
+						"display-text": "Request - get [i]{4}[/i] items by condition: [i]{0}[/i] [i]{1}[/i] [i]{2}[/i], [i]{3}[/i] (tag [i]{5}[/i])",
+						"description": "Get items by single condition with count limit.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"comparison4": { "name":"Comparison", "desc":"Comparison types.", "items":{"equal to":"Equal to","greater than or equal to":"Greater than or Equal to","less than or equal to":"Less than or Equal to"}},
+							"value5": { "name":"Value", "desc":"Compared value."},
+							"limit8": { "name":"Limit", "desc":"Limit types.", "items":{"limit to first":"Limit to first","limit to last":"Limit to last"}},
+							"limit9": { "name":"Limit", "desc":"Limit count."},
+							"tag10": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					}
+				},
+				"expressions": {
+					"curıtemıd1": {
+						"description": "Get current itemID in a For Each loop, or in save/remove callback.",
+						"translated-name": "CurItemID"
+						},
+					"ıtemıdtojson2": {
+						"description": "Get itemID in JSON string.",
+						"translated-name": "ItemIDToJSON"
+						},
+					"equal11": {
+						"description": "Do Equal to codition to pick matched itemID. Add 3rd and more parameters to pick more matched itemIDs.",
+						"translated-name": "Equal",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to compare"}
+						}
+						},
+					"greaterequal12": {
+						"description": "Do Greater than or Equal to codition to pick matched itemID.",
+						"translated-name": "GreaterEqual",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to compare"}
+						}
+						},
+					"lessequal13": {
+						"description": "Do Less than or Equal to codition to pick matched itemID.",
+						"translated-name": "LessEqual",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to compare"}
+						}
+						},
+					"ınrange14": {
+						"description": "Do In Range codition to pick matched itemID.",
+						"translated-name": "InRange",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The start value to compare"},
+							"value2": { "name":"Value", "desc":"The end value to compare"}
+						}
+						},
+					"greater15": {
+						"description": "Do Greater than codition to pick matched itemID.",
+						"translated-name": "Greater",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to compare"}
+						}
+						},
+					"less16": {
+						"description": "Do Less than codition to pick matched itemID.",
+						"translated-name": "Less",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to compare"}
+						}
+						},
+					"or21": {
+						"description": "Do OR operation of these expressions.",
+						"translated-name": "OR",
+						"params": {
+							"expression_a0": { "name":"Expression A", "desc":"Expression A of set operation."},
+							"expression_b1": { "name":"Expression B", "desc":"Expression A of set operation."}
+						}
+						},
+					"and22": {
+						"description": "Do AND operation of these expressions.",
+						"translated-name": "AND",
+						"params": {
+							"expression_a0": { "name":"Expression A", "desc":"Expression A of set operation."},
+							"expression_b1": { "name":"Expression B", "desc":"Expression A of set operation."}
+						}
+						},
+					"sub23": {
+						"description": "Do SUB operation of these expressions.",
+						"translated-name": "SUB",
+						"params": {
+							"expression_a0": { "name":"Expression A", "desc":"Expression A of set operation."},
+							"expression_b1": { "name":"Expression B", "desc":"Expression A of set operation."}
+						}
+						}
+				}
+			}
+		}
+	}
+}

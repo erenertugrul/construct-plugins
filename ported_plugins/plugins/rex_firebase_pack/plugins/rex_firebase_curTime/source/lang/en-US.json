@@ -1,0 +1,80 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Current timestamp.",
+	"text": {
+		"plugins": {
+			"rex_firebase_curtime": {
+				"name": "Current timestamp",
+				"description": "Get server timestamp periodically.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebase_curTime.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						},
+					"updating-period": {
+						"name": "Updating period",
+						"desc": "Updating period of server timestamp, in secondes."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"control": "Control",
+					"updating": "Updating",
+					"current": "Current",
+					"error": "Error"
+				},
+				"conditions": {
+					"ısupdating1": {
+						"list-name": "Is updating",
+						"display-text": "Is updating",
+						"description": "Return true if timestamp is valid."
+						},
+					"onstart2": {
+						"list-name": "On start",
+						"display-text": "On updating start",
+						"description": "Triggered when updating start."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"start1": {
+						"list-name": "Start",
+						"display-text": "Start updating server timestamp of user ID: [i]{0}[/i]",
+						"description": "Start updating server timestamp.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"Key of User ID."}
+						}
+					},
+					"stop2": {
+						"list-name": "Stop",
+						"display-text": "Stop updating server timestamp",
+						"description": "Stop updating server timestamp."
+					}
+				},
+				"expressions": {
+					"timestamp1": {
+						"description": "Get current timestamp, in milliseconds.",
+						"translated-name": "Timestamp"
+						},
+					"lastpredictederror2": {
+						"description": "Get last predicted error, in seconds",
+						"translated-name": "LastPredictedError"
+						}
+				}
+			}
+		}
+	}
+}

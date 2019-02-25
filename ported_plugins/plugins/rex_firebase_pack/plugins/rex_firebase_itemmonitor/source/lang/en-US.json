@@ -1,0 +1,191 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Item monitor.",
+	"text": {
+		"plugins": {
+			"rex_firebase_itemmonitor": {
+				"name": "Item monitor",
+				"description": "Monitor items' values.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_itemmonitor.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"monitor": "Monitor",
+					"query": "Query",
+					"monitor_-_item": "Monitor - item",
+					"monitor_-_key": "Monitor - key",
+					"load": "Load",
+					"ıtems": "Items",
+					"table": "Table",
+					"properties": "Properties",
+					"ıtem": "Item",
+					"for_each": "For Each"
+				},
+				"conditions": {
+					"onıtemadded1": {
+						"list-name": "On item added",
+						"display-text": "On item added",
+						"description": "Triggered when item added."
+						},
+					"onıtemremoved2": {
+						"list-name": "On item removed",
+						"display-text": "On item removed",
+						"description": "Triggered when item removed."
+						},
+					"onvaluechnaged3": {
+						"list-name": "On value changed",
+						"display-text": "On [i]{0}[/i] value changed",
+						"description": "Triggered when value changed.",
+						"params": {
+							"property0": { "name":"Property", "desc":"Property name of item."}
+						}
+						},
+					"onanyvaluechnaged4": {
+						"list-name": "On any value changed",
+						"display-text": "On any value changed",
+						"description": "Triggered when any value changed."
+						},
+					"onpropertyadded5": {
+						"list-name": "On key added",
+						"display-text": "On key added",
+						"description": "Triggered when item added."
+						},
+					"onpropertyremoved6": {
+						"list-name": "On key removed",
+						"display-text": "On key removed",
+						"description": "Triggered when key removed."
+						},
+					"onıtemlistchanged11": {
+						"list-name": "On any item changed",
+						"display-text": "On any item changed",
+						"description": "Triggered when any item changed, included item added, removed, value changed."
+						},
+					"foreachıtemıd12": {
+						"list-name": "For each itemID",
+						"display-text": "For each itemID [i]{0}[/i]",
+						"description": "Repeat the event for each itemID of load result which sorted by itemID.",
+						"params": {
+							"order2": { "name":"Order", "desc":"Order of itemID.", "items":{"small to large":"Small to large","large to small":"Large to small"}}
+						}
+						},
+					"foreachkey13": {
+						"list-name": "For each key",
+						"display-text": "For each key {0}",
+						"description": "Repeat the event for each key of a item of load result.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."}
+						}
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"startmonitor1": {
+						"list-name": "Start",
+						"display-text": "Start monitor",
+						"description": "Start monitor."
+					},
+					"stopmonitor2": {
+						"list-name": "Stop",
+						"display-text": "Stop monitor",
+						"description": "Stop monitor."
+					},
+					"setqueryobject11": {
+						"list-name": "Set query",
+						"display-text": "Set query to [i]{0}[/i]",
+						"description": "Set query object.",
+						"params": {
+							"query0": { "name":"Query", "desc":"Query object."}
+						}
+					}
+				},
+				"expressions": {
+					"lastıtemıd1": {
+						"description": "Get last itemID, used under \"condition: On item added\" or \"condition: On item removed\".",
+						"translated-name": "LastItemID"
+						},
+					"lastıtemcontent2": {
+						"description": "Get last content in JSON string, used under \"condition: On item added\" or \"condition: On item removed\". Add 2nd parameter for specific key, 3rd parameter for default value if this key is not existed.",
+						"translated-name": "LastItemContent"
+						},
+					"at3": {
+						"description": "Get value by itemId and key in last load result. Add 3rd parameter for default value if this key is not existed.",
+						"translated-name": "At",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."},
+							"key1": { "name":"Key", "desc":"The name of the key."}
+						}
+						},
+					"lastıtemcontentposx4": {
+						"description": "Get X position in last content in JSON string, used under \"condition: On item added\" or \"condition: On item removed\".",
+						"translated-name": "LastItemContentPosX"
+						},
+					"lastıtemcontentposy5": {
+						"description": "Get Y position in last content in JSON string, used under \"condition: On item added\" or \"condition: On item removed\".",
+						"translated-name": "LastItemContentPosY"
+						},
+					"lastpropertyname11": {
+						"description": "Get last content in JSON string, used under \"condition: On any value changed\", \"condition: On key added\" or \"condition: On key removed\".",
+						"translated-name": "LastPropertyName"
+						},
+					"lastvalue12": {
+						"description": "Get last value of key, used under \"condition: On any value changed\", \"condition: On key added\" or \"condition: On key removed\".",
+						"translated-name": "LastValue"
+						},
+					"prevvalue13": {
+						"description": "Get previous value of key, used under \"condition: On any value changed\", \"condition: On key added\" or \"condition: On key removed\".",
+						"translated-name": "PrevValue"
+						},
+					"lastvalueposx14": {
+						"description": "Get last X position in key \"pos\", used under \"condition: On any value changed\", \"condition: On key added\" or \"condition: On key removed\".",
+						"translated-name": "LastValuePosX"
+						},
+					"lastvalueposy15": {
+						"description": "Get last Y position in key \"pos\", used under \"condition: On any value changed\", \"condition: On key added\" or \"condition: On key removed\".",
+						"translated-name": "LastValuePosY"
+						},
+					"prevvalueposx16": {
+						"description": "Get previous X position in key \"pos\", used under \"condition: On any value changed\", \"condition: On key added\" or \"condition: On key removed\".",
+						"translated-name": "PrevValuePosX"
+						},
+					"prevvalueposy17": {
+						"description": "Get previous Y position in key \"pos\", used under \"condition: On any value changed\", \"condition: On key added\" or \"condition: On key removed\".",
+						"translated-name": "PrevValuePosY"
+						},
+					"curıtemıd21": {
+						"description": "Get current itemID in a For Each loop, in last load result. Or in save/remove callback.",
+						"translated-name": "CurItemID"
+						},
+					"curıtemcontent22": {
+						"description": "Get last content in JSON string, used under \"condition: On item added\" or \"condition: On item removed\". Add 2nd parameter for specific key, 3rd parameter for default value if this key is not existed.",
+						"translated-name": "CurItemContent"
+						},
+					"curkey23": {
+						"description": "Get current key in a For Each loop, in last load result.",
+						"translated-name": "CurKey"
+						},
+					"curvalue24": {
+						"description": "Get current value in a For Each loop, in last load result.",
+						"translated-name": "CurValue"
+						}
+				}
+			}
+		}
+	}
+}

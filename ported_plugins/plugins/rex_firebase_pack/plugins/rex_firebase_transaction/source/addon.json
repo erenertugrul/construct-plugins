@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Transaction",
+	"id": "Rex_Firebase_Transaction",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://dl.dropbox.com/u/5779181/C2Repo/rex_firebase_transaction.html",
+	"documentation": "https://dl.dropbox.com/u/5779181/C2Repo/rex_firebase_transaction.html",
+	"description": "Read-modify-write the value.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

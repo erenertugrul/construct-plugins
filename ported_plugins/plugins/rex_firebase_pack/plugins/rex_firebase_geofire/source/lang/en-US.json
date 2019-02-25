@@ -1,0 +1,217 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Geofire.",
+	"text": {
+		"plugins": {
+			"rex_firebase_geofire": {
+				"name": "Geofire",
+				"description": "Realtime location queries with Firebase.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_geofire.html",
+				"properties": {
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"set": "Set",
+					"on_disconnected": "On disconnected",
+					"get": "Get",
+					"monitor": "Monitor",
+					"ıtemıd": "ItemID",
+					"event": "Event",
+					"monitor_area": "Monitor area",
+					"for_each": "For Each",
+					"helper": "Helper"
+				},
+				"conditions": {
+					"onupdatecomplete1": {
+						"list-name": "On update",
+						"display-text": "On update",
+						"description": "Triggered when update location complete."
+						},
+					"onupdateerror2": {
+						"list-name": "On update error",
+						"display-text": "On update error",
+						"description": "Triggered when update location error."
+						},
+					"ongetıtemcomplete3": {
+						"list-name": "On get item",
+						"display-text": "On get item",
+						"description": "Triggered when get item."
+						},
+					"ongetıtemerror4": {
+						"list-name": "On get item error",
+						"display-text": "On get item error",
+						"description": "Triggered when get item error."
+						},
+					"ısıtemnotfound5": {
+						"list-name": "Item is not found",
+						"display-text": "Item is not found",
+						"description": "Return true if item is not found."
+						},
+					"onıtementered11": {
+						"list-name": "On item entered",
+						"display-text": "On item entered",
+						"description": "Triggered when item entered."
+						},
+					"onıtemexisted12": {
+						"list-name": "On item exited",
+						"display-text": "On item exited",
+						"description": "Triggered when item exited."
+						},
+					"onıtemmoved13": {
+						"list-name": "On item moved",
+						"display-text": "On item moved",
+						"description": "Triggered when item moved."
+						},
+					"onready14": {
+						"list-name": "On initial ready",
+						"display-text": "On initial ready",
+						"description": "Triggered when initial data has loaded and fired all other events."
+						},
+					"foreachıtemıd15": {
+						"list-name": "For each itemID",
+						"display-text": "For each itemID [i]{0}[/i]",
+						"description": "Repeat the event for each itemID of monitor result.",
+						"params": {
+							"order4": { "name":"Order", "desc":"Order of itemID.", "items":{"descending":"descending","ascending":"ascending","logical descending":"logical descending","logical ascending":"logical ascending"}}
+						}
+						}
+				},
+				"actions": {
+					"setsubdomainref0": {
+						"list-name": "Set sub domain",
+						"display-text": "Set sub domain to [i]{0}[/i]",
+						"description": "Set sub domain ref.",
+						"params": {
+							"sub_domain0": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"setlocation1": {
+						"list-name": "Set location",
+						"display-text": "Set location of item [i]{0}[/i] to latitude-longitude ( [i]{1}[/i] , [i]{2}[/i] )",
+						"description": "Set location of an item.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ItemID."},
+							"latitude1": { "name":"Latitude", "desc":"Latitude."},
+							"longitude2": { "name":"Longitude", "desc":"Longitude."}
+						}
+					},
+					"ondisconnectedremove2": {
+						"list-name": "Remove item",
+						"display-text": "On disconnected- remove item [i]{0}[/i]",
+						"description": "Remove item on disconnected.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ItemID."}
+						}
+					},
+					"removeıtem3": {
+						"list-name": "Remove item",
+						"display-text": "Remove item [i]{0}[/i]",
+						"description": "Remove item.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ItemID."}
+						}
+					},
+					"getıtem4": {
+						"list-name": "Get item",
+						"display-text": "Get item [i]{0}[/i]",
+						"description": "Get item.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ItemID."}
+						}
+					},
+					"ondisconnectedcancel5": {
+						"list-name": "Cancel all handlers",
+						"display-text": "On disconnected- cancel all handlers {0}",
+						"description": "Cancel all handlers of disconnected.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ItemID."}
+						}
+					},
+					"monitorat11": {
+						"list-name": "Monitor at",
+						"display-text": "Monitor at latitude-longitude ( [i]{0}[/i] , [i]{1}[/i] ) with radius to [i]{2}[/i]",
+						"description": "Monitor an area",
+						"params": {
+							"latitude0": { "name":"Latitude", "desc":"Latitude of center."},
+							"longitude1": { "name":"Longitude", "desc":"Longitude of center."},
+							"radius2": { "name":"Radius", "desc":"Radius, in kilometers, from the center of this monitor in which to include results."}
+						}
+					},
+					"monitorstop12": {
+						"list-name": "Stop",
+						"display-text": "Stop monitor",
+						"description": "Stop monitor"
+					}
+				},
+				"expressions": {
+					"generatekey1": {
+						"description": "Generate new key from push action.",
+						"translated-name": "GenerateKey"
+						},
+					"lastgeneratedkey2": {
+						"description": "Get last generate a key from push action.",
+						"translated-name": "LastGeneratedKey"
+						},
+					"lastıtemıd11": {
+						"description": "Get itemID returned by the last triggered event.",
+						"translated-name": "LastItemID"
+						},
+					"lastlatitude12": {
+						"description": "Get latitude returned by the last triggered event.",
+						"translated-name": "LastLatitude"
+						},
+					"lastlongitude13": {
+						"description": "Get longitude returned by the last triggered event.",
+						"translated-name": "LastLongitude"
+						},
+					"lastdistance14": {
+						"description": "Get distance between triggered item to monitor point returned by the last triggered event.",
+						"translated-name": "LastDistance"
+						},
+					"monitorlatitude21": {
+						"description": "Get latitude of monitor center.",
+						"translated-name": "MonitorLatitude"
+						},
+					"monitorlongitude22": {
+						"description": "Get longitude of monitor center.",
+						"translated-name": "MonitorLongitude"
+						},
+					"monitorradius23": {
+						"description": "Get radius of monitor, in kilometers.",
+						"translated-name": "MonitorRadius"
+						},
+					"curıtemıd31": {
+						"description": "Get current itemID in a For Each loop.",
+						"translated-name": "CurItemID"
+						},
+					"curlatitude32": {
+						"description": "Get current latitude in a For Each loop.",
+						"translated-name": "CurLatitude"
+						},
+					"curlongitude33": {
+						"description": "Get current longitude in a For Each loop.",
+						"translated-name": "CurLongitude"
+						},
+					"curdistance34": {
+						"description": "Get current distance between triggered item to monitor point in a For Each loop.",
+						"translated-name": "CurDistance"
+						},
+					"distance51": {
+						"description": "Get distance between two points, in kilometers.",
+						"translated-name": "Distance",
+						"params": {
+							"latitude_a0": { "name":"Latitude A", "desc":"Latitude of point A."},
+							"longitude_a1": { "name":"Longitude A", "desc":"Longitude of point A."},
+							"latitude_b2": { "name":"Latitude B", "desc":"Latitude of point B."},
+							"longitude_b3": { "name":"Longitude B", "desc":"Longitude of point B."}
+						}
+						}
+				}
+			}
+		}
+	}
+}

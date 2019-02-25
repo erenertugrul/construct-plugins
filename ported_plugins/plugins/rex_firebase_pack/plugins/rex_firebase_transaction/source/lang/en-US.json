@@ -1,0 +1,128 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Transaction.",
+	"text": {
+		"plugins": {
+			"rex_firebase_transaction": {
+				"name": "Transaction",
+				"description": "Read-modify-write the value.",
+				"help-url": "https://dl.dropbox.com/u/5779181/C2Repo/rex_firebase_transaction.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"read": "Read",
+					"write": "Write",
+					"write_-_json": "Write - JSON",
+					"result": "Result"
+				},
+				"conditions": {
+					"ontransaction1": {
+						"list-name": "On transaction",
+						"display-text": "On transaction",
+						"description": "Triggered by calling \"action: Transaction\", to get return value."
+						},
+					"valueınısnull2": {
+						"list-name": "ValueIn is null",
+						"display-text": "ValueIn is null",
+						"description": "Return true if ValueIn is null."
+						},
+					"ısaborted11": {
+						"list-name": "Is aborted",
+						"display-text": "Is aborted",
+						"description": "Return true if the transaction is aborted."
+						},
+					"oncomplete12": {
+						"list-name": "On complete",
+						"display-text": "On complete",
+						"description": "Triggered while transaction success."
+						},
+					"onerror13": {
+						"list-name": "On error",
+						"display-text": "On error",
+						"description": "Triggered while transaction  error."
+						},
+					"valueoutısnull14": {
+						"list-name": "ValueOut is null",
+						"display-text": "ValueOut is null",
+						"description": "Return true if ValueOut is null."
+						}
+				},
+				"actions": {
+					"transaction1": {
+						"list-name": "Transaction",
+						"display-text": "Transaction at [i]{0}[/i]",
+						"description": "Transaction",
+						"params": {
+							"dataref0": { "name":"DataRef", "desc":"The Firebase data ref URL"}
+						}
+					},
+					"returnvalue11": {
+						"list-name": "Return value",
+						"display-text": "Set return to [i]{0}[/i]",
+						"description": "Returns transaction value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"The value to set"}
+						}
+					},
+					"returnjson12": {
+						"list-name": "Return JSON",
+						"display-text": "Set return to JSON [i]{0}[/i]",
+						"description": "Returns transaction JSON.",
+						"params": {
+							"json_value0": { "name":"JSON value", "desc":"JSON value to set"}
+						}
+					},
+					"returnnull13": {
+						"list-name": "Return null",
+						"display-text": "Set return to null {0}",
+						"description": "Returns transaction value to null. i.e. remove data.",
+						"params": {
+							"value0": { "name":"Value", "desc":"The value to set"}
+						}
+					},
+					"returnboolean14": {
+						"list-name": "Return boolean",
+						"display-text": "Set return to [i]{0}[/i]",
+						"description": "Returns transaction value to true or false.",
+						"params": {
+							"boolean2": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"returnkeyvalue21": {
+						"list-name": "Return value",
+						"display-text": "Set return {0}: {1}",
+						"description": "Set value in returned JSON.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"returnkeyboolean22": {
+						"list-name": "Return boolean",
+						"display-text": "Set return to {0}: {1}",
+						"description": "Set boolean in returned JSON.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"abort31": {
+						"list-name": "Abort",
+						"display-text": "Abort",
+						"description": "Abort transaction."
+					}
+				},
+				"expressions": {
+					"valueın1": {
+						"description": "Read value, using under \"condition:On transaction\". Add 1st parameter for specific key, 2nd parameter for default value if this key is not existed.",
+						"translated-name": "ValueIn"
+						},
+					"valueout2": {
+						"description": "Transaction wrote result, using under \"condition:On completed\". Add 1st parameter for specific key, 2nd parameter for default value if this key is not existed.",
+						"translated-name": "ValueOut"
+						}
+				}
+			}
+		}
+	}
+}

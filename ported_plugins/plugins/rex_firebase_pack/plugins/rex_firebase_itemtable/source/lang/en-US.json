@@ -1,0 +1,284 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Item table.",
+	"text": {
+		"plugins": {
+			"rex_firebase_itemtable": {
+				"name": "Item table",
+				"description": "Items table indexed by (itemID, key), supports writing a item or reading items back.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebase_itemtable.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"prepare": "Prepare",
+					"save": "Save",
+					"remove": "Remove",
+					"ıtemıd": "ItemID",
+					"prepare_-_position": "Prepare - position",
+					"load": "Load",
+					"on_disconnected": "On disconnected",
+					"for_each": "For Each",
+					"load_items": "Load items",
+					"table": "Table",
+					"load_item": "Load item",
+					"reference": "Reference"
+				},
+				"conditions": {
+					"onsavecomplete1": {
+						"list-name": "On save complete",
+						"display-text": "On save [i]{0}[/i] complete",
+						"description": "Triggered when save current item complete.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onsaveerror2": {
+						"list-name": "On save error",
+						"display-text": "On save [i]{0}[/i] error",
+						"description": "Triggered when save current item error.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onremovecomplete3": {
+						"list-name": "On remove complete",
+						"display-text": "On remove [i]{0}[/i] complete",
+						"description": "Triggered when remove current item complete.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onremoveerror4": {
+						"list-name": "On remove error",
+						"display-text": "On remove [i]{0}[/i] error",
+						"description": "Triggered when remove current item error.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"onloadcomplete11": {
+						"list-name": "On load complete",
+						"display-text": "On load [i]{0}[/i] complete",
+						"description": "Triggered when load current item complete.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+						},
+					"foreachıtemıd12": {
+						"list-name": "For each itemID",
+						"display-text": "For each itemID [i]{0}[/i]",
+						"description": "Repeat the event for each itemID of load result.",
+						"params": {
+							"order2": { "name":"Order", "desc":"Order of itemID.", "items":{"small to large":"Small to large","large to small":"Large to small"}}
+						}
+						},
+					"foreachkey13": {
+						"list-name": "For each key",
+						"display-text": "For each key in item: [i]{0}[/i]",
+						"description": "Repeat the event for each key of a item of load result.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."}
+						}
+						},
+					"oncleanallcomplete31": {
+						"list-name": "On remove all complete",
+						"display-text": "On remove all complete",
+						"description": "Triggered when remove all items complete."
+						},
+					"oncleanallerror32": {
+						"list-name": "On remove all error",
+						"display-text": "On remove all error",
+						"description": "Triggered when remove all items error."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"setvalue1": {
+						"list-name": "Set value",
+						"display-text": "Prepare- Set key [i]{0}[/i] to  [i]{1}[/i] in current item",
+						"description": "Set value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or (JSON) string."}
+						}
+					},
+					"setbooleanvalue2": {
+						"list-name": "Set boolean value",
+						"display-text": "Prepare- Set key [i]{0}[/i] to [i]{1}[/i] in current item",
+						"description": "Set boolean value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"False","true":"True"}}
+						}
+					},
+					"removekey3": {
+						"list-name": "Remove key",
+						"display-text": "Prepare- Remove key [i]{0}[/i] in server",
+						"description": "Remove key in firebase server.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"save4": {
+						"list-name": "Save",
+						"display-text": "Save- [i]{1}[/i] current item at itemID: [i]{0}[/i] (tag [i]{2}[/i])",
+						"description": "Save current item into server. Push item if ID is equal to \"\".",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."},
+							"set_mode3": { "name":"Set mode", "desc":"Update, or clean then set item values", "items":{"update":"Update","set":"Set"}},
+							"tag4": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"push5": {
+						"list-name": "Push",
+						"display-text": "Save- Push current item (tag [i]{0}[/i])",
+						"description": "Push current item into server. Get itemID by \"expression:LastItemID\".",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"remove6": {
+						"list-name": "Remove",
+						"display-text": "Remove- Remove itemID: [i]{0}[/i] (tag [i]{1}[/i])",
+						"description": "Remove item from server.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."},
+							"tag1": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"generatekey7": {
+						"list-name": "Generate",
+						"display-text": "Generate a new itemID",
+						"description": "Generate a new itemID. Get it by \"Expression:LastGeneratedKey\". Or use \"Expression:GenerateKey\" directly."
+					},
+					"setposvalue8": {
+						"list-name": "Set to position",
+						"display-text": "Prepare- Set key \"pos\" to ([i]{0}[/i], [i]{1}[/i])",
+						"description": "Set position value into current item.",
+						"params": {
+							"x0": { "name":"X", "desc":"The X position."},
+							"y1": { "name":"Y", "desc":"The Y position."}
+						}
+					},
+					"setservertimestampvalue9": {
+						"list-name": "Set to timestamp",
+						"display-text": "Prepare- Set key [i]{0}[/i] to  server timestamp in current item",
+						"description": "Set server timestamp value into current item.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					},
+					"addloadrequestıtemıd11": {
+						"list-name": "Add itemID",
+						"display-text": "Load- 1. Add load-request itemID: [i]{0}[/i]",
+						"description": "Add load-request itemID.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."}
+						}
+					},
+					"loadıtems12": {
+						"list-name": "Load",
+						"display-text": "Load- 2. Load items (tag [i]{0}[/i])",
+						"description": "Load items.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"loadallıtems13": {
+						"list-name": "Load all",
+						"display-text": "Load- Load all items (tag [i]{0}[/i])",
+						"description": "Load all items.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, to distinguish between different save requests."}
+						}
+					},
+					"cancelondisconnected21": {
+						"list-name": "Cancel disconnected handler",
+						"display-text": "Cancel all disconnected handlers",
+						"description": "Cancel all disconnected handlers."
+					},
+					"removeondisconnected22": {
+						"list-name": "Auto remove",
+						"display-text": "Auto remove itemID: [i]{0}[/i] when disconnected",
+						"description": "Auto remov item when disconnected.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."}
+						}
+					},
+					"cleanall31": {
+						"list-name": "Remove all",
+						"display-text": "Remove all",
+						"description": "Remove all items."
+					}
+				},
+				"expressions": {
+					"curıtemıd1": {
+						"description": "Get current itemID in a For Each loop, in last load result. Or in save/remove callback.",
+						"translated-name": "CurItemID"
+						},
+					"loadresulttojson2": {
+						"description": "Get load reslt in JSON string.",
+						"translated-name": "LoadResultToJSON"
+						},
+					"curkey3": {
+						"description": "Get current key in a For Each loop, in last load result.",
+						"translated-name": "CurKey"
+						},
+					"curvalue4": {
+						"description": "Get current value in a For Each loop, in last load result.",
+						"translated-name": "CurValue"
+						},
+					"at5": {
+						"description": "Get value by itemId and key in last load result. Add 3rd parameter for default value if this key is not existed.",
+						"translated-name": "At",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID of item."},
+							"key1": { "name":"Key", "desc":"The name of the key."}
+						}
+						},
+					"lastıtemıd6": {
+						"description": "Get last itemID.",
+						"translated-name": "LastItemID"
+						},
+					"curıtemcontent7": {
+						"description": "Get current content in JSON stringin in a For Each loop, in last load result. Add 2nd parameter for specific key, 3rd parameter for default value if this key is not existed.",
+						"translated-name": "CurItemContent"
+						},
+					"ıtemscount8": {
+						"description": "Get loaded items count.",
+						"translated-name": "ItemsCount"
+						},
+					"generatekey21": {
+						"description": "Generate new key from push action.",
+						"translated-name": "GenerateKey"
+						},
+					"lastgeneratedkey22": {
+						"description": "Get last generate a key from push action.",
+						"translated-name": "LastGeneratedKey"
+						},
+					"ref101": {
+						"description": "Get renerence in table, optional parameters are (itemID, key).",
+						"translated-name": "Ref"
+						}
+				}
+			}
+		}
+	}
+}

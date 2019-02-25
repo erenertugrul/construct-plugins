@@ -1,0 +1,27 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Geofire",
+	"id": "Rex_Firebase_Geofire",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_geofire.html",
+	"documentation": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_geofire.html",
+	"description": "Realtime location queries with Firebase.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"geofire.js",
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

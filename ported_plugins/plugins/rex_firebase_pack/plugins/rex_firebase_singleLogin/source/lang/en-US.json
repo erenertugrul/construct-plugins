@@ -1,0 +1,113 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Single login.",
+	"text": {
+		"plugins": {
+			"rex_firebase_singlelogin": {
+				"name": "Single login",
+				"description": "Test if user account had been logined on one client only.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_firebase_singlelogin.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						},
+					"kick-mode": {
+						"name": "Kick mode",
+						"desc": "Choose the kicking action while multiple login.",
+						"items": {
+							"do nothing":"Do nothing",
+							"kick previous":"Kick previous",
+							"kick current":"Kick current"
+							}
+						}
+				},
+				"aceCategories": {
+					"domain": "Domain",
+					"login": "Login",
+					"general": "General",
+					"kick": "Kick",
+					"multiple_login": "Multiple login",
+					"multiple_login_-_for_each": "Multiple login - for each"
+				},
+				"conditions": {
+					"onloginsuccess1": {
+						"list-name": "On success",
+						"display-text": "On login success",
+						"description": "Triggered when single login success."
+						},
+					"onloginerror2": {
+						"list-name": "On error",
+						"display-text": "On login error",
+						"description": "Triggered when single login error."
+						},
+					"onkicked3": {
+						"list-name": "On kicked",
+						"display-text": "On kicked",
+						"description": "Triggered when kicked by multiple login."
+						},
+					"onloginlistchanged4": {
+						"list-name": "On login list changed",
+						"display-text": "On login list changed",
+						"description": "Triggered when login list changed."
+						},
+					"foreachlogin11": {
+						"list-name": "For each login",
+						"display-text": "For each login",
+						"description": "Repeat the event for each login."
+						}
+				},
+				"actions": {
+					"setdomainref0": {
+						"list-name": "Set domain",
+						"display-text": "Set domain to [i]{0}[/i], sub domain to [i]{1}[/i]",
+						"description": "Set domain ref.",
+						"params": {
+							"domain0": { "name":"Domain", "desc":"The root location of the Firebase data."},
+							"sub_domain1": { "name":"Sub domain", "desc":"Sub domain for this function."}
+						}
+					},
+					"login1": {
+						"list-name": "Login",
+						"display-text": "Login with user ID: [i]{0}[/i]",
+						"description": "Login.",
+						"params": {
+							"userıd0": { "name":"UserID", "desc":"User ID."}
+						}
+					},
+					"loggingout2": {
+						"list-name": "Logging out",
+						"display-text": "Logging out",
+						"description": "Logging out."
+					},
+					"kickbyındex21": {
+						"list-name": "Kick by index",
+						"display-text": "Kick login by index to [i]{0}[/i]",
+						"description": "Kick login by index.",
+						"params": {
+							"ındex0": { "name":"Index", "desc":"Index in login list."}
+						}
+					}
+				},
+				"expressions": {
+					"logincount1": {
+						"description": "Get the current login cout.",
+						"translated-name": "LoginCount"
+						},
+					"curloginındex11": {
+						"description": "Get the current login index in a For Each loop.",
+						"translated-name": "CurLoginIndex"
+						},
+					"curlogintimestamp12": {
+						"description": "Get the current login timestamp in a For Each loop.",
+						"translated-name": "CurLoginTimestamp"
+						}
+				}
+			}
+		}
+	}
+}

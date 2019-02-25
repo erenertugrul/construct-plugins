@@ -1,0 +1,125 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for UserID to ID.",
+	"text": {
+		"plugins": {
+			"rex_firebase_userid2id": {
+				"name": "UserID to ID",
+				"description": "Each UserID could register an alias ID.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_Firebase_userID2ID.html",
+				"properties": {
+					"domain": {
+						"name": "Domain",
+						"desc": "The root location of the Firebase data."
+						},
+					"sub-domain": {
+						"name": "Sub domain",
+						"desc": "Sub domain for this function."
+						}
+				},
+				"aceCategories": {
+					"request_-_ıd": "Request - ID",
+					"request_-_user_ıd": "Request - User ID",
+					"remove": "Remove",
+					"request_-_result": "Request - result",
+					"error": "Error"
+				},
+				"conditions": {
+					"onrequestıdsuccessful1": {
+						"list-name": "On request ID",
+						"display-text": "On request ID",
+						"description": "Triggered when requested ID successful."
+						},
+					"onrequestıderror2": {
+						"list-name": "On request ID error",
+						"display-text": "On request ID error",
+						"description": "Triggered when requested ID error."
+						},
+					"onrequestuserıdsuccessful3": {
+						"list-name": "On request User ID",
+						"display-text": "On request User ID",
+						"description": "Triggered when requested User ID successful."
+						},
+					"onrequestuserıderror4": {
+						"list-name": "On request User ID error",
+						"display-text": "On request User ID error",
+						"description": "Triggered when requested User ID error."
+						},
+					"onremoveuserıdsuccessful11": {
+						"list-name": "On remove User ID",
+						"display-text": "On remove User ID",
+						"description": "Triggered when removed User ID successful."
+						},
+					"onremoveuserıderror12": {
+						"list-name": "On remove User ID error",
+						"display-text": "On remove User ID error",
+						"description": "Triggered when removed User ID error."
+						}
+				},
+				"actions": {
+					"requestgetrandomıd1": {
+						"list-name": "Get random ID",
+						"display-text": "Request - get ID from User ID:[i]{0}[/i], return a [i]{1}[/i] digit random ID by default with retry [i]{2}[/i] times",
+						"description": "Request random ID.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"Key of User ID."},
+							"digits1": { "name":"Digits", "desc":"Count of digit characters for default value."},
+							"retry2": { "name":"Retry", "desc":"Retry count to get default value."}
+						}
+					},
+					"requestgetuserıd2": {
+						"list-name": "Get User ID",
+						"display-text": "Request - get User ID by ID:[i]{0}[/i]",
+						"description": "Request User ID.",
+						"params": {
+							"ıd0": { "name":"ID", "desc":"ID."}
+						}
+					},
+					"requesttrygetıd3": {
+						"list-name": "Try set ID",
+						"display-text": "Request - try set ID:[i]{1}[/i] for User ID:[i]{0}[/i]",
+						"description": "Request try set ID.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"Key of User ID."},
+							"ıd1": { "name":"ID", "desc":"ID."}
+						}
+					},
+					"requesttrygetıd4": {
+						"list-name": "Get ID",
+						"display-text": "Request - get ID by User ID:[i]{0}[/i]",
+						"description": "Request ID.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"Key of User ID."}
+						}
+					},
+					"removeuserıd11": {
+						"list-name": "Remove User ID",
+						"display-text": "Remove User ID:[i]{0}[/i]",
+						"description": "Remove User ID.",
+						"params": {
+							"user_ıd0": { "name":"User ID", "desc":"Key of User ID."}
+						}
+					}
+				},
+				"expressions": {
+					"ıd1": {
+						"description": "Get ID of result.",
+						"translated-name": "ID"
+						},
+					"userıd2": {
+						"description": "Get User ID of result.",
+						"translated-name": "UserID"
+						},
+					"lasterrorcode21": {
+						"description": "Error code.",
+						"translated-name": "LastErrorCode"
+						},
+					"lasterrormessage22": {
+						"description": "Error message (error.serverResponse) .",
+						"translated-name": "LastErrorMessage"
+						}
+				}
+			}
+		}
+	}
+}

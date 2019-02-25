@@ -1,0 +1,374 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setsubdomainref0",
+				"scriptName": "SetSubDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"sub_domain0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"upload": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onuploadcompleted1",
+				"scriptName": "OnUploadCompleted",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onuploaderror2",
+				"scriptName": "OnUploadError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "onuploadcanceled3",
+				"scriptName": "OnUploadCanceled",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "onpaused4",
+				"scriptName": "OnPaused",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "onresmue5",
+				"scriptName": "OnResmue",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "ısuploading6",
+				"scriptName": "IsUploading",
+				"highlight": false
+			},
+			{
+				"c2id": 7,
+				"id": "onprogress7",
+				"scriptName": "OnProgress",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "onstart8",
+				"scriptName": "OnStart",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "uploadfromfilechooser1",
+				"scriptName": "UploadFromFileChooser",
+				"highlight": false,
+				"params": [
+					{"id":"file_chooser0", "type":"object"},
+					{"id":"dataref1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "uploadfromsprite5",
+				"scriptName": "UploadFromSprite",
+				"highlight": false,
+				"params": [
+					{"id":"sprite0", "type":"object"},
+					{"id":"dataref1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "uploaddataurı6",
+				"scriptName": "UploadDataURI",
+				"highlight": false,
+				"params": [
+					{"id":"data_urı0", "type":"string", "initialValue":"\"\""},
+					{"id":"dataref1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "uploadstring7",
+				"scriptName": "UploadString",
+				"highlight": false,
+				"params": [
+					{"id":"content0", "type":"string", "initialValue":"\"\""},
+					{"id":"dataref1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "uploadobjecturl8",
+				"scriptName": "UploadObjectURL",
+				"highlight": false,
+				"params": [
+					{"id":"objecturl0", "type":"string", "initialValue":"\"\""},
+					{"id":"content_type1", "type":"string", "initialValue":"\"\""},
+					{"id":"dataref2", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "lastdownloadurl1",
+				"expressionName": "LastDownloadURL",
+				"scriptName": "LastDownloadURL",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "progress2",
+				"expressionName": "Progress",
+				"scriptName": "Progress",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "transferredbytes3",
+				"expressionName": "TransferredBytes",
+				"scriptName": "TransferredBytes",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "totalbytes4",
+				"expressionName": "TotalBytes",
+				"scriptName": "TotalBytes",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"upload_task": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "canceluploading2",
+				"scriptName": "CancelUploading",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "pauseuploading3",
+				"scriptName": "PauseUploading",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "resumeuploading4",
+				"scriptName": "ResumeUploading",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"download": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "ongetdownloadurl11",
+				"scriptName": "OnGetDownloadURL",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "ongetdownloadurlerror12",
+				"scriptName": "OnGetDownloadURLError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 13,
+				"id": "filedoesntexist13",
+				"scriptName": "FileDoesntExist",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "getdownloadurl11",
+				"scriptName": "GetDownloadURL",
+				"highlight": false,
+				"params": [
+					{"id":"dataref0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"delete": {
+		"conditions": [
+			{
+				"c2id": 21,
+				"id": "ondeletecompleted21",
+				"scriptName": "OnDeleteCompleted",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 22,
+				"id": "ondeleteerror22",
+				"scriptName": "OnDeleteError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "deleteaturl21",
+				"scriptName": "DeleteAtURL",
+				"highlight": false,
+				"params": [
+					{"id":"dataref0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"metadata": {
+		"conditions": [
+			{
+				"c2id": 71,
+				"id": "ongetmetadata71",
+				"scriptName": "OnGetMetadata",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 72,
+				"id": "ongetmetadataerror72",
+				"scriptName": "OnGetMetadataError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 73,
+				"id": "onupdatemetadata73",
+				"scriptName": "OnUpdateMetadata",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 74,
+				"id": "onupdatemetadataerror74",
+				"scriptName": "OnUpdateMetadataError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 71,
+				"id": "getmetadata71",
+				"scriptName": "GetMetadata",
+				"highlight": false,
+				"params": [
+					{"id":"dataref0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 72,
+				"id": "updatemetadata72",
+				"scriptName": "UpdateMetadata",
+				"highlight": false,
+				"params": [
+					{"id":"dataref0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 73,
+				"id": "metadatasetvalue73",
+				"scriptName": "MetadataSetValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 74,
+				"id": "metadataloadjson74",
+				"scriptName": "MetadataLoadJSON",
+				"highlight": false,
+				"params": [
+					{"id":"json_string0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 75,
+				"id": "metadataremovekey75",
+				"scriptName": "MetadataRemoveKey",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 71,
+				"id": "lastmetadata71",
+				"expressionName": "LastMetadata",
+				"scriptName": "LastMetadata",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"error": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "lasterrorcode21",
+				"expressionName": "LastErrorCode",
+				"scriptName": "LastErrorCode",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 22,
+				"id": "lasterrormessage22",
+				"expressionName": "LastErrorMessage",
+				"scriptName": "LastErrorMessage",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

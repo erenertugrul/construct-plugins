@@ -1,0 +1,193 @@
+{
+	"owner": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setowner1",
+				"scriptName": "SetOwner",
+				"highlight": false,
+				"params": [
+					{"id":"user_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "owneruserıd1",
+				"expressionName": "OwnerUserID",
+				"scriptName": "OwnerUserID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"user_list_-_request": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "requestalllists2",
+				"scriptName": "RequestAllLists",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"user_list_-_bi-direction": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "adduserın2sides11",
+				"scriptName": "AddUserIn2Sides",
+				"highlight": false,
+				"params": [
+					{"id":"target_user_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"owner_list1", "type":"string", "initialValue":"\"following\""},
+					{"id":"target_user_list2", "type":"string", "initialValue":"\"follower\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "removeuserfrom2sides12",
+				"scriptName": "RemoveUserFrom2Sides",
+				"highlight": false,
+				"params": [
+					{"id":"target_user_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"owner_list1", "type":"string", "initialValue":"\"following\""},
+					{"id":"target_user_list2", "type":"string", "initialValue":"\"follower\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"user_list": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onreceivingalllists1",
+				"scriptName": "OnReceivingAllLists",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "userıdınlist3",
+				"scriptName": "UserIDInList",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"list1", "type":"string", "initialValue":"\"friends\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 13,
+				"id": "adduser13",
+				"scriptName": "AddUser",
+				"highlight": false,
+				"params": [
+					{"id":"user_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"owner_list1", "type":"string", "initialValue":"\"blacklist\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "removeuser14",
+				"scriptName": "RemoveUser",
+				"highlight": false,
+				"params": [
+					{"id":"user_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"owner_list1", "type":"string", "initialValue":"\"blacklist\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"user_list_-_invitation": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "ınviteuser21",
+				"scriptName": "InviteUser",
+				"highlight": false,
+				"params": [
+					{"id":"target_user_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"owner_list1", "type":"string", "initialValue":"\"friend\""},
+					{"id":"target_user_list2", "type":"string", "initialValue":"\"friend\""},
+					{"id":"message3", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "responseınvitation22",
+				"scriptName": "ResponseInvitation",
+				"highlight": false,
+				"params": [
+					{"id":"ınviter_user_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"response3", "type":"combo", "items":["reject","accept"]}
+				]
+			},
+			{
+				"c2id": 23,
+				"id": "cancelınvitation23",
+				"scriptName": "CancelInvitation",
+				"highlight": false,
+				"params": [
+					{"id":"target_user_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 24,
+				"id": "removemembership24",
+				"scriptName": "RemoveMembership",
+				"highlight": false,
+				"params": [
+					{"id":"target_user_ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"owner_list1", "type":"string", "initialValue":"\"friend\""},
+					{"id":"target_user_list2", "type":"string", "initialValue":"\"friend\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"user_list_-_for_each": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "foreachuserıdınlist2",
+				"scriptName": "ForEachUserIDInList",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"list0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "curuserıd11",
+				"expressionName": "CurUserID",
+				"scriptName": "CurUserID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

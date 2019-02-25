@@ -1,0 +1,144 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"sub_domain1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"login": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onloginsuccess1",
+				"scriptName": "OnLoginSuccess",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onloginerror2",
+				"scriptName": "OnLoginError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "login1",
+				"scriptName": "Login",
+				"highlight": false,
+				"params": [
+					{"id":"userıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"general": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "loggingout2",
+				"scriptName": "LoggingOut",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"kick": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "kickbyındex21",
+				"scriptName": "KickByIndex",
+				"highlight": false,
+				"params": [
+					{"id":"ındex0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"multiple_login": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "onkicked3",
+				"scriptName": "OnKicked",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "onloginlistchanged4",
+				"scriptName": "OnLoginListChanged",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "logincount1",
+				"expressionName": "LoginCount",
+				"scriptName": "LoginCount",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"multiple_login_-_for_each": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "foreachlogin11",
+				"scriptName": "ForEachLogin",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "curloginındex11",
+				"expressionName": "CurLoginIndex",
+				"scriptName": "CurLoginIndex",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "curlogintimestamp12",
+				"expressionName": "CurLoginTimestamp",
+				"scriptName": "CurLoginTimestamp",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Firebase API.",
+	"text": {
+		"plugins": {
+			"rex_firebaseapi": {
+				"name": "Firebase API",
+				"description": "API of real time database-as-a-service. https://www.firebase.com/",
+				"help-url": "http://c2rexplugins.weebly.com/rex_firebaseapi.html",
+				"properties": {
+					"log": {
+						"name": "Log",
+						"desc": "Enable log.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

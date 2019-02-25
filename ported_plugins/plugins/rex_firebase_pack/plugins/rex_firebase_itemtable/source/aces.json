@@ -1,0 +1,429 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"sub_domain1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"prepare": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setvalue1",
+				"scriptName": "SetValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setbooleanvalue2",
+				"scriptName": "SetBooleanValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""},
+					{"id":"boolean3", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "removekey3",
+				"scriptName": "RemoveKey",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "setservertimestampvalue9",
+				"scriptName": "SetServerTimestampValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"save": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onsavecomplete1",
+				"scriptName": "OnSaveComplete",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "onsaveerror2",
+				"scriptName": "OnSaveError",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "save4",
+				"scriptName": "Save",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"set_mode3", "type":"combo", "items":["update","set"]},
+					{"id":"tag4", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "push5",
+				"scriptName": "Push",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "onremovecomplete3",
+				"scriptName": "OnRemoveComplete",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "onremoveerror4",
+				"scriptName": "OnRemoveError",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 31,
+				"id": "oncleanallcomplete31",
+				"scriptName": "OnCleanAllComplete",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 32,
+				"id": "oncleanallerror32",
+				"scriptName": "OnCleanAllError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "remove6",
+				"scriptName": "Remove",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"tag1", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 31,
+				"id": "cleanall31",
+				"scriptName": "CleanAll",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ıtemıd": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 7,
+				"id": "generatekey7",
+				"scriptName": "GenerateKey",
+				"highlight": false
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 6,
+				"id": "lastıtemıd6",
+				"expressionName": "LastItemID",
+				"scriptName": "LastItemID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 21,
+				"id": "generatekey21",
+				"expressionName": "GenerateKey",
+				"scriptName": "GenerateKey",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 22,
+				"id": "lastgeneratedkey22",
+				"expressionName": "LastGeneratedKey",
+				"scriptName": "LastGeneratedKey",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"prepare_-_position": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 8,
+				"id": "setposvalue8",
+				"scriptName": "SetPosValue",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"load": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "onloadcomplete11",
+				"scriptName": "OnLoadComplete",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "foreachıtemıd12",
+				"scriptName": "ForEachItemID",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"order2", "type":"combo", "items":["small to large","large to small"]}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "foreachkey13",
+				"scriptName": "ForEachKey",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "addloadrequestıtemıd11",
+				"scriptName": "AddLoadRequestItemID",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "loadıtems12",
+				"scriptName": "LoadItems",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "loadallıtems13",
+				"scriptName": "LoadAllItems",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"_\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"on_disconnected": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "cancelondisconnected21",
+				"scriptName": "CancelOnDisconnected",
+				"highlight": false
+			},
+			{
+				"c2id": 22,
+				"id": "removeondisconnected22",
+				"scriptName": "RemoveOnDisconnected",
+				"highlight": false,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"for_each": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "curıtemıd1",
+				"expressionName": "CurItemID",
+				"scriptName": "CurItemID",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 3,
+				"id": "curkey3",
+				"expressionName": "CurKey",
+				"scriptName": "CurKey",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 4,
+				"id": "curvalue4",
+				"expressionName": "CurValue",
+				"scriptName": "CurValue",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 7,
+				"id": "curıtemcontent7",
+				"expressionName": "CurItemContent",
+				"scriptName": "CurItemContent",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"load_items": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "loadresulttojson2",
+				"expressionName": "LoadResultToJSON",
+				"scriptName": "LoadResultToJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"table": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 5,
+				"id": "at5",
+				"expressionName": "At",
+				"scriptName": "At",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"ıd0", "type":"string", "initialValue":"\"\""},
+					{"id":"key1", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"load_item": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 8,
+				"id": "ıtemscount8",
+				"expressionName": "ItemsCount",
+				"scriptName": "ItemsCount",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"reference": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 101,
+				"id": "ref101",
+				"expressionName": "Ref",
+				"scriptName": "Ref",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	}
+}

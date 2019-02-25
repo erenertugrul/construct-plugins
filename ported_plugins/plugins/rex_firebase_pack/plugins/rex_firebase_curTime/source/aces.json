@@ -1,0 +1,96 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"sub_domain1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"control": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "start1",
+				"scriptName": "Start",
+				"highlight": false,
+				"params": [
+					{"id":"user_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "stop2",
+				"scriptName": "Stop",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"updating": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "ısupdating1",
+				"scriptName": "IsUpdating",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onstart2",
+				"scriptName": "OnStart",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"current": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "timestamp1",
+				"expressionName": "Timestamp",
+				"scriptName": "Timestamp",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"error": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "lastpredictederror2",
+				"expressionName": "LastPredictedError",
+				"scriptName": "LastPredictedError",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

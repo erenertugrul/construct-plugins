@@ -1,0 +1,86 @@
+{
+	"domain": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setdomainref0",
+				"scriptName": "SetDomainRef",
+				"highlight": false,
+				"params": [
+					{"id":"domain0", "type":"string", "initialValue":"\"\""},
+					{"id":"sub_domain1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"group": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "joingroup1",
+				"scriptName": "JoinGroup",
+				"highlight": false,
+				"params": [
+					{"id":"user_ıd0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "leavegroup2",
+				"scriptName": "LeaveGroup",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"token": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "ongettoken1",
+				"scriptName": "OnGetToken",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "ontokenownerchanged2",
+				"scriptName": "OnTokenOwnerChanged",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "ısowner3",
+				"scriptName": "IsOwner",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "onreleasetoken4",
+				"scriptName": "OnReleaseToken",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "ownerıd1",
+				"expressionName": "OwnerID",
+				"scriptName": "OwnerID",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

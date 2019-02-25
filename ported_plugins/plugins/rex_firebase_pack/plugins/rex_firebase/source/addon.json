@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Firebase",
+	"id": "Rex_Firebase",
+	"version": "1.3.1.0",
+	"author": "Rex.Rainbow",
+	"website": "http://c2rexplugins.weebly.com/rex_firebase.html",
+	"documentation": "http://c2rexplugins.weebly.com/rex_firebase.html",
+	"description": "Real time database-as-a-service. https://www.firebase.com/",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
