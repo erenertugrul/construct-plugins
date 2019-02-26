@@ -1,0 +1,79 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for JSON buider.",
+	"text": {
+		"plugins": {
+			"rex_jsonbuider": {
+				"name": "JSON buider",
+				"description": "Build JSON structure.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_json_buider.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"clean": "Clean",
+					"add_value": "Add value",
+					"add_object": "Add object",
+					"timescale": "Timescale"
+				},
+				"conditions": {
+					"addobject1": {
+						"list-name": "Add object",
+						"display-text": "{0}: {1}",
+						"description": "Add an object.",
+						"params": {
+							"key0": { "name":"Key", "desc":"Key of this object."},
+							"type3": { "name":"Type", "desc":"Array or Dictionary.", "items":{"array":"Array","dict":"Dict"}}
+						}
+						},
+					"setroot2": {
+						"list-name": "Set root",
+						"display-text": "Root - {0}",
+						"description": "Set root object.",
+						"params": {
+							"type2": { "name":"Type", "desc":"Array or Dictionary.", "items":{"array":"Array","dict":"Dict"}}
+						}
+						}
+				},
+				"actions": {
+					"clean1": {
+						"list-name": "Clean",
+						"display-text": "Clean all",
+						"description": "Clean all data."
+					},
+					"addvalue2": {
+						"list-name": "Add value",
+						"display-text": "{0}: {1}",
+						"description": "Add number or string value.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"value1": { "name":"Value", "desc":"The value to set, could be number or string."}
+						}
+					},
+					"addbooleanvalue3": {
+						"list-name": "Add boolean value",
+						"display-text": "{0}: {1}",
+						"description": "Add boolean value.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."},
+							"boolean3": { "name":"Boolean", "desc":"Boolean value.", "items":{"false":"false","true":"true"}}
+						}
+					},
+					"addnullvalue4": {
+						"list-name": "Add null value",
+						"display-text": "{0}: null",
+						"description": "Add null value.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The name of the key."}
+						}
+					}
+				},
+				"expressions": {
+					"asjson1": {
+						"description": "Get JSON string.",
+						"translated-name": "AsJSON"
+						}
+				}
+			}
+		}
+	}
+}

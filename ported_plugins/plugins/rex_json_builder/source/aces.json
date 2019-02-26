@@ -1,0 +1,98 @@
+{
+	"clean": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "clean1",
+				"scriptName": "Clean",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"add_value": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "addvalue2",
+				"scriptName": "AddValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "addbooleanvalue3",
+				"scriptName": "AddBooleanValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"boolean3", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "addnullvalue4",
+				"scriptName": "AddNullValue",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"add_object": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "addobject1",
+				"scriptName": "AddObject",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""},
+					{"id":"type3", "type":"combo", "items":["array","dict"]}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setroot2",
+				"scriptName": "SetRoot",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"type2", "type":"combo", "items":["array","dict"]}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"timescale": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "asjson1",
+				"expressionName": "AsJSON",
+				"scriptName": "AsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}
