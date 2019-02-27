@@ -214,6 +214,26 @@ If you want to support me, you can make a donation on patreon or itch.io
 </tbody>
 <tbody>
 <tr>
+  <td>rex_bhash</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_bhash/dist/rex_bhash.c3addon">rex_bhash.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_hash</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_hash/dist/rex_hash.c3addon">rex_hash.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
   <td>rex_firebase</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/releases/download/rex_firebase/rex_firebase_pack.zip">rex_firebase_bundle.zip</a>
 </td>

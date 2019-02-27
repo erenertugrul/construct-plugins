@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "Hash",
+	"id": "Rex_bHash",
+	"version": "1.0.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_bhash.html",
+	"documentation": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_bhash.html",
+	"description": "Access JSON structure table.",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"behavior.js",
+		"type.js",
+		"instance.js"
+	]
+}

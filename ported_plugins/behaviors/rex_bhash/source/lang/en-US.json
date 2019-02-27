@@ -1,0 +1,294 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for JSON.",
+	"text": {
+		"behaviors": {
+			"rex_bhash": {
+				"name": "Hash",
+				"description": "Access JSON structure table.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_bhash.html",
+				"properties": {
+					"ınitial-data": {
+						"name": "Initial data",
+						"desc": "Set initial data. ex:\"{\"a\":10,\"b\":{\"c\":\"d\"}}\"."
+						},
+					"ındent": {
+						"name": "Indent",
+						"desc": "Indent for pretty print. Set (-1) to disable this feature."
+						}
+				},
+				"aceCategories": {
+					"value": "Value",
+					"entry": "Entry",
+					"hash_table": "Hash table",
+					"load": "Load",
+					"remove": "Remove",
+					"keys": "Keys",
+					"merge": "Merge",
+					"array": "Array",
+					"array_-_push": "Array - Push",
+					"array_-_ınsert": "Array - Insert",
+					"ındent": "Indent",
+					"for_each": "For Each",
+					"key": "Key",
+					"json": "JSON",
+					"ıtems": "Items"
+				},
+				"conditions": {
+					"foreachıtem1": {
+						"list-name": "For each key",
+						"display-text": "{my} for each item in [i]{0}[/i]",
+						"description": "Repeat the event for each item in key.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table."}
+						}
+						},
+					"keyexists2": {
+						"list-name": "Key exists",
+						"display-text": "{my} key {0} exists",
+						"description": "Return true if a key exists in hash table.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table."}
+						}
+						},
+					"ısempty3": {
+						"list-name": "Is empty",
+						"display-text": "{my} entry {0} is empty",
+						"description": "Return true if an entry is empty i.e. has no key.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table."}
+						}
+						}
+				},
+				"actions": {
+					"setvaluebykeystring1": {
+						"list-name": "Set value",
+						"display-text": "{my} set key [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Set value by a key string.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to set."},
+							"value1": { "name":"Value", "desc":"The value to store in the hash table."}
+						}
+					},
+					"setcurhashentey2": {
+						"list-name": "Set current entry",
+						"display-text": "{my} get hash table entry from [i]{0}[/i]",
+						"description": "Set current entry by key string.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash entry to get."}
+						}
+					},
+					"setvalueıncurhashentey3": {
+						"list-name": "Set value at current entry",
+						"display-text": "{my} set value at [i]{0}[/i] to [i]{1}[/i] in current entry",
+						"description": "Set value at current entry.",
+						"params": {
+							"key_name0": { "name":"Key name", "desc":"The key of the hash value to set."},
+							"value1": { "name":"Value", "desc":"The value to store in the hash table."}
+						}
+					},
+					"cleanall4": {
+						"list-name": "Clean all",
+						"display-text": "Clean table",
+						"description": "{my} clean table."
+					},
+					"stringtohashtable5": {
+						"list-name": "Load from JSON",
+						"display-text": "{my} load content from [i]{0}[/i]",
+						"description": "Load content from JSON string.",
+						"params": {
+							"json_string0": { "name":"JSON string", "desc":"JSON string."}
+						}
+					},
+					"removebykeystring6": {
+						"list-name": "Remove key",
+						"display-text": "{my} remove key [i]{0}[/i]",
+						"description": "Remove key.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to remove."}
+						}
+					},
+					"pickkeystoarray7": {
+						"list-name": "Pick keys",
+						"display-text": "{my} pick keys at [i]{0}[/i] into [i]{1}[/i]",
+						"description": "Pick keys into an array.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table."},
+							"array1": { "name":"Array", "desc":"Array instance to put result."}
+						}
+					},
+					"mergetwohashtable8": {
+						"list-name": "Merge",
+						"display-text": "{my} merge hash table with [i]{0}[/i], [i]{1}[/i]",
+						"description": "Merge hash table with other hash table.",
+						"params": {
+							"hash_table_b0": { "name":"Hash table B", "desc":"Hash table instance to merge."},
+							"mode4": { "name":"Mode", "desc":"Merge mode.", "items":{"overwrite from hash b":"Overwrite from hash B","merge new keys from hash table b":"Merge new keys from hash table B","clean then copy from hash table b":"Clean then copy from hash table B"}}
+						}
+					},
+					"setjsonbykeystring9": {
+						"list-name": "Set JSON",
+						"display-text": "{my} set key [i]{0}[/i] to JSON [i]{1}[/i]",
+						"description": "Set JSON by a key string.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to set."},
+							"json1": { "name":"JSON", "desc":"JSON string."}
+						}
+					},
+					"addtovaluebykeystring10": {
+						"list-name": "Add to",
+						"display-text": "{my} add [i]{1}[/i] to [i]{0}[/i]",
+						"description": "Add to the value of key.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to add."},
+							"value1": { "name":"Value", "desc":"The value to store in the hash table."}
+						}
+					},
+					"shuffle21": {
+						"list-name": "Shuffle",
+						"display-text": "{my} shuffle array at [i]{0}[/i]",
+						"description": "Shuffle items in array.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to set."}
+						}
+					},
+					"sort22": {
+						"list-name": "Sort",
+						"display-text": "{my} sort array at [i]{0}[/i] with key to [i]{1}[/i] ( [i]{2}[/i] )",
+						"description": "Sort items in array.",
+						"params": {
+							"entry0": { "name":"Entry", "desc":"The entry key string of the hash table."},
+							"key1": { "name":"Key", "desc":"The key string for sorting."},
+							"sort6": { "name":"Sort", "desc":"Sort method.", "items":{"descending":"descending","ascending":"ascending","logical descending":"logical descending","logical ascending":"logical ascending"}}
+						}
+					},
+					"pushjson23": {
+						"list-name": "Push JSON",
+						"display-text": "Push JSON [i]{1}[/i] into array [i]{0}[/i]",
+						"description": "Push JSON into array.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to set."},
+							"json1": { "name":"JSON", "desc":"JSON string."}
+						}
+					},
+					"pushvalue24": {
+						"list-name": "Push value",
+						"display-text": "Push value [i]{1}[/i] into array [i]{0}[/i]",
+						"description": "Push value into array.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to set."},
+							"value1": { "name":"Value", "desc":"The value to push in the hash table."}
+						}
+					},
+					"ınsertjson25": {
+						"list-name": "Insert JSON",
+						"display-text": "Insert JSON [i]{1}[/i] at array [i]{0}[/i][[i]{2}[/i]]",
+						"description": "Insert JSON into array.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to set."},
+							"json1": { "name":"JSON", "desc":"JSON string."},
+							"ındex2": { "name":"Index", "desc":"Index of this array to insert."}
+						}
+					},
+					"ınsertvalue26": {
+						"list-name": "Insert value",
+						"display-text": "Insert value [i]{1}[/i] at array [i]{0}[/i][[i]{2}[/i]]",
+						"description": "Insert value into array.",
+						"params": {
+							"key_string0": { "name":"Key string", "desc":"The key string of the hash table value to set."},
+							"value1": { "name":"Value", "desc":"The value to push in the hash table."},
+							"ındex2": { "name":"Index", "desc":"Index of this array to insert."}
+						}
+					},
+					"setındent101": {
+						"list-name": "Set indent",
+						"display-text": "Set indent to [i]{0}[/i]",
+						"description": "Set indent for pretty print. Set (-1) to disable this feature.",
+						"params": {
+							"value0": { "name":"Value", "desc":"The value to push in the hash table."}
+						}
+					}
+				},
+				"expressions": {
+					"hash0": {
+						"description": "Get value from the hash by key string. Add 2nd parameter to return default value when got invalid value.",
+						"translated-name": "Hash",
+						"params": {
+							"key0": { "name":"Key", "desc":"The key string of the hash to get."}
+						}
+						},
+					"entry1": {
+						"description": "Get value from current entry.",
+						"translated-name": "Entry",
+						"params": {
+							"key0": { "name":"Key", "desc":"The key string of the hash value to get."}
+						}
+						},
+					"hashtabletostring2": {
+						"description": "Transfer hash table to JSON string.",
+						"translated-name": "HashTableToString"
+						},
+					"at3": {
+						"description": "Get value from the hash by key string, return JSON string if the item is an object. Add 2nd parameter to return default value when got invalid value.",
+						"translated-name": "At"
+						},
+					"curkey4": {
+						"description": "Get the current key in a For Each loop.",
+						"translated-name": "CurKey"
+						},
+					"curvalue5": {
+						"description": "Get the current value in a For Each loop. Add 2nd parameter to return sub-item by keys. Add 3rd parameter to return default value when got invalid value.",
+						"translated-name": "CurValue"
+						},
+					"atkeys6": {
+						"description": "Get value from the hash by keys, each parameter is a key.",
+						"translated-name": "AtKeys",
+						"params": {
+							"key0": { "name":"Key", "desc":"The key of the hash to get."}
+						}
+						},
+					"ıtemcnt7": {
+						"description": "Get item count. 0 means the item is number or string type, (-1) means the item does not exist.",
+						"translated-name": "ItemCnt",
+						"params": {
+							"key0": { "name":"Key", "desc":"The key of the hash to get."}
+						}
+						},
+					"keys2ıtemcnt8": {
+						"description": "Get item count by keys, each parameter is a key. 0 means the item is number or string type, (-1) means the item does not exist.",
+						"translated-name": "Keys2ItemCnt",
+						"params": {
+							"key0": { "name":"Key", "desc":"The key of the hash to get."}
+						}
+						},
+					"tostring9": {
+						"description": "Create a hash table and transfer it to JSON string. If there has no parameter, transfer current hash table to JSON string.",
+						"translated-name": "ToString"
+						},
+					"asjson10": {
+						"description": "Get content as JSON string.",
+						"translated-name": "AsJSON"
+						},
+					"randomkeyat11": {
+						"description": "Get random key in a table. Add 2nd parameter to return default value when got invalid value.",
+						"translated-name": "RandomKeyAt",
+						"params": {
+							"key0": { "name":"Key", "desc":"The key of the hash to get."}
+						}
+						},
+					"loopindex12": {
+						"description": "Get loop index in a for each loop.",
+						"translated-name": "Loopindex"
+						},
+					"pop21": {
+						"description": "Pop from array.",
+						"translated-name": "Pop",
+						"params": {
+							"key0": { "name":"Key", "desc":"The key of the hash to get."}
+						}
+						}
+				}
+			}
+		}
+	}
+}

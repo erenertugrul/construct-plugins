@@ -1,0 +1,465 @@
+{
+	"value": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setvaluebykeystring1",
+				"scriptName": "SetValueByKeyString",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "setjsonbykeystring9",
+				"scriptName": "SetJSONByKeyString",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"json1", "type":"string", "initialValue":"\"{}\""}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "addtovaluebykeystring10",
+				"scriptName": "AddToValueByKeyString",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "hash0",
+				"expressionName": "Hash",
+				"scriptName": "Hash",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 3,
+				"id": "at3",
+				"expressionName": "At",
+				"scriptName": "At",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+
+			},
+			{
+				"c2id": 6,
+				"id": "atkeys6",
+				"expressionName": "AtKeys",
+				"scriptName": "AtKeys",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"entry": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "ısempty3",
+				"scriptName": "IsEmpty",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "setcurhashentey2",
+				"scriptName": "SetCurHashEntey",
+				"isDeprecated": "true",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "setvalueıncurhashentey3",
+				"scriptName": "SetValueInCurHashEntey",
+				"isDeprecated": "true",
+				"highlight": false,
+				"params": [
+					{"id":"key_name0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "entry1",
+				"expressionName": "Entry",
+				"scriptName": "Entry",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"hash_table": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "cleanall4",
+				"scriptName": "CleanAll",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"load": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 5,
+				"id": "stringtohashtable5",
+				"scriptName": "StringToHashTable",
+				"highlight": false,
+				"params": [
+					{"id":"json_string0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "removebykeystring6",
+				"scriptName": "RemoveByKeyString",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"keys": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 7,
+				"id": "pickkeystoarray7",
+				"scriptName": "PickKeysToArray",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"array1", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"merge": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 8,
+				"id": "mergetwohashtable8",
+				"scriptName": "MergeTwoHashTable",
+				"highlight": false,
+				"params": [
+					{"id":"hash_table_b0", "type":"object"},
+					{"id":"mode4", "type":"combo", "items":["overwrite from hash b","merge new keys from hash table b","clean then copy from hash table b"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"array_-_order": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 21,
+				"id": "shuffle21",
+				"scriptName": "Shuffle",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "sort22",
+				"scriptName": "Sort",
+				"highlight": false,
+				"params": [
+					{"id":"entry0", "type":"string", "initialValue":"\"\""},
+					{"id":"key1", "type":"string", "initialValue":"\"\""},
+					{"id":"sort6", "type":"combo", "items":["descending","ascending","logical descending","logical ascending"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"array_-_push": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 23,
+				"id": "pushjson23",
+				"scriptName": "PushJSON",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"json1", "type":"string", "initialValue":"\"{}\""}
+				]
+			},
+			{
+				"c2id": 24,
+				"id": "pushvalue24",
+				"scriptName": "PushValue",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"array_-_ınsert": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 25,
+				"id": "ınsertjson25",
+				"scriptName": "InsertJSON",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"json1", "type":"string", "initialValue":"\"{}\""},
+					{"id":"ındex2", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 26,
+				"id": "ınsertvalue26",
+				"scriptName": "InsertValue",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"value1", "type":"any", "initialValue":"0"},
+					{"id":"ındex2", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ındent": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 101,
+				"id": "setındent101",
+				"scriptName": "SetIndent",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"for_each": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "foreachıtem1",
+				"scriptName": "ForEachItem",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 4,
+				"id": "curkey4",
+				"expressionName": "CurKey",
+				"scriptName": "CurKey",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 5,
+				"id": "curvalue5",
+				"expressionName": "CurValue",
+				"scriptName": "CurValue",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 12,
+				"id": "loopindex12",
+				"expressionName": "Loopindex",
+				"scriptName": "Loopindex",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"key": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "keyexists2",
+				"scriptName": "KeyExists",
+				"highlight": false,
+				"params": [
+					{"id":"key_string0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "randomkeyat11",
+				"expressionName": "RandomKeyAt",
+				"scriptName": "RandomKeyAt",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"json": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "hashtabletostring2",
+				"expressionName": "HashTableToString",
+				"scriptName": "HashTableToString",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 9,
+				"id": "tostring9",
+				"expressionName": "ToString",
+				"scriptName": "ToString",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 10,
+				"id": "asjson10",
+				"expressionName": "AsJSON",
+				"scriptName": "AsJSON",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"ıtems": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 7,
+				"id": "ıtemcnt7",
+				"expressionName": "ItemCnt",
+				"scriptName": "ItemCnt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "keys2ıtemcnt8",
+				"expressionName": "Keys2ItemCnt",
+				"scriptName": "Keys2ItemCnt",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"key0", "type":"any", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"array": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 21,
+				"id": "pop21",
+				"expressionName": "Pop",
+				"scriptName": "Pop",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	}
+}
