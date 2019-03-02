@@ -234,6 +234,16 @@ If you want to support me, you can make a donation on patreon or itch.io
 </tbody>
 <tbody>
 <tr>
+  <td>magicam</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/magicam/dist/magicam.c3addon">magicam.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
   <td>rex_firebase</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/releases/download/rex_firebase/rex_firebase_pack.zip">rex_firebase_bundle.zip</a>
 </td>
@@ -262,10 +272,6 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tr>
 <th>name</th>
 </thead>
-<tbody>
-<td>magicam</td>
-</tr>
-</tbody>
 <tbody>
 <tr>
 <td>jcw_trace</td>

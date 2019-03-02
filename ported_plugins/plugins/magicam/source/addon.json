@@ -1,0 +1,32 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "MagiCam",
+	"id": "MagiCam",
+	"version": "6.5.0.0",
+	"author": "Chris Hackmann (aka linkman2004)",
+	"website": "http://",
+	"documentation": "http://",
+	"description": "Allows for the creation of multiple camera objects that can provide advanced scrolling control.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"plugin.js",
+		"icon.png",
+		"type.js",
+		"instance.js"
+	]
+}

@@ -1,0 +1,315 @@
+{
+	"following": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "followobject0",
+				"scriptName": "FollowObject",
+				"highlight": false,
+				"params": [
+					{"id":"camera0", "type":"string"},
+					{"id":"object1", "type":"object"},
+					{"id":"weight2", "type":"number", "initialValue":"1"},
+					{"id":"ımage_point3", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "setfollowlag1",
+				"scriptName": "SetFollowLag",
+				"highlight": false,
+				"params": [
+					{"id":"camera0", "type":"string"},
+					{"id":"lag1", "type":"number", "initialValue":"50"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "zoomtocontain2",
+				"scriptName": "ZoomToContain",
+				"highlight": false,
+				"params": [
+					{"id":"camera0", "type":"string"},
+					{"id":"zoom3", "type":"combo", "items":["zoom","do not zoom"]},
+					{"id":"horizontal_margin4", "type":"number", "initialValue":"50"},
+					{"id":"vertical_margin5", "type":"number", "initialValue":"50"},
+					{"id":"upper_zoom_limit6", "type":"number", "initialValue":"-1"},
+					{"id":"lower_zoom_limit7", "type":"number", "initialValue":"-1"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "enablefollowing3",
+				"scriptName": "EnableFollowing",
+				"highlight": false,
+				"params": [
+					{"id":"camera0", "type":"string"},
+					{"id":"following3", "type":"combo", "items":["enable","disable"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "unfollowobject4",
+				"scriptName": "UnfollowObject",
+				"highlight": false,
+				"params": [
+					{"id":"camera0", "type":"string"},
+					{"id":"object1", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"management": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 100,
+				"id": "createlocalcamera100",
+				"scriptName": "CreateLocalCamera",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"x1", "type":"number"},
+					{"id":"y2", "type":"number"},
+					{"id":"scale3", "type":"number", "initialValue":"1"},
+					{"id":"active6", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 101,
+				"id": "createglobalcamera101",
+				"scriptName": "CreateGlobalCamera",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"x1", "type":"number"},
+					{"id":"y2", "type":"number"},
+					{"id":"scale3", "type":"number", "initialValue":"1"},
+					{"id":"active6", "type":"combo", "items":["false","true"]}
+				]
+			},
+			{
+				"c2id": 102,
+				"id": "setactivecamera102",
+				"scriptName": "SetActiveCamera",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 5,
+				"id": "getactivecamera5",
+				"expressionName": "GetActiveCamera",
+				"scriptName": "GetActiveCamera",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"properties": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 200,
+				"id": "setscrollsmoothing200",
+				"scriptName": "SetScrollSmoothing",
+				"isDeprecated": "true",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 201,
+				"id": "setxposition201",
+				"scriptName": "SetXPosition",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"x1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 202,
+				"id": "setyposition202",
+				"scriptName": "SetYPosition",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"y1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 203,
+				"id": "setposition203",
+				"scriptName": "SetPosition",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"x1", "type":"number"},
+					{"id":"y2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 204,
+				"id": "setzoom204",
+				"scriptName": "SetZoom",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"zoom1", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "getx2",
+				"expressionName": "GetX",
+				"scriptName": "GetX",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "gety3",
+				"expressionName": "GetY",
+				"scriptName": "GetY",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "getzoom4",
+				"expressionName": "GetZoom",
+				"scriptName": "GetZoom",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			}
+		]
+	},
+	"transitions": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "transitionfinished0",
+				"scriptName": "TransitionFinished",
+				"highlight": false,
+				"params": [
+					{"id":"camera0", "type":"string"},
+					{"id":"transition3", "type":"combo", "items":["movement","zoom"]}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "transitionısınprogress1",
+				"scriptName": "TransitionIsInProgress",
+				"highlight": false,
+				"params": [
+					{"id":"camera0", "type":"string"},
+					{"id":"transition3", "type":"combo", "items":["movement","zoom"]}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 300,
+				"id": "transitiontopoint300",
+				"scriptName": "TransitionToPoint",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"x1", "type":"number"},
+					{"id":"y2", "type":"number"},
+					{"id":"duration3", "type":"number"}
+				]
+			},
+			{
+				"c2id": 301,
+				"id": "transitiontozoom301",
+				"scriptName": "TransitionToZoom",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"zoom1", "type":"number"},
+					{"id":"duration2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 302,
+				"id": "transitiontocamera302",
+				"scriptName": "TransitionToCamera",
+				"highlight": false,
+				"params": [
+					{"id":"target_camera0", "type":"string"},
+					{"id":"duration1", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "movementtransitionprogress0",
+				"expressionName": "MovementTransitionProgress",
+				"scriptName": "MovementTransitionProgress",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "zoomtransitionprogress1",
+				"expressionName": "ZoomTransitionProgress",
+				"scriptName": "ZoomTransitionProgress",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			}
+		]
+	},
+	"misc": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 400,
+				"id": "shakecamera400",
+				"scriptName": "ShakeCamera",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"strength1", "type":"number", "initialValue":"30"},
+					{"id":"max_deviation2", "type":"number", "initialValue":"30"},
+					{"id":"max_zoom_deviation3", "type":"number", "initialValue":"0.25"},
+					{"id":"build_length4", "type":"number", "initialValue":"1"},
+					{"id":"drop_time5", "type":"number", "initialValue":"4"},
+					{"id":"duration6", "type":"number", "initialValue":"5"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

@@ -1,0 +1,257 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for MagiCam.",
+	"text": {
+		"plugins": {
+			"magicam": {
+				"name": "MagiCam",
+				"description": "Allows for the creation of multiple camera objects that can provide advanced scrolling control.",
+				"help-url": "http://",
+				"properties": {
+				},
+				"aceCategories": {
+					"following": "Following",
+					"management": "Management",
+					"properties": "Properties",
+					"transitions": "Transitions",
+					"misc": "Misc"
+				},
+				"conditions": {
+					"transitionfinished0": {
+						"list-name": "On transition finished",
+						"display-text": "Camera {0}: {1}transition has finished",
+						"description": "Triggered when a transition finishes.",
+						"params": {
+							"camera0": { "name":"Camera", "desc":"Name of the camera to use - leave blank to use the active camera."},
+							"transition3": { "name":"Transition", "desc":"The type of transition to check for an end to.", "items":{"movement":"Movement","zoom":"Zoom"}}
+						}
+						},
+					"transitionısınprogress1": {
+						"list-name": "Transition is in progress",
+						"display-text": "Camera {0}: {1}transition is in progress",
+						"description": "Returns true if a specified type of transition is in progress.",
+						"params": {
+							"camera0": { "name":"Camera", "desc":"Name of the camera to use - leave blank to use the active camera."},
+							"transition3": { "name":"Transition", "desc":"The type of transition to check for.", "items":{"movement":"Movement","zoom":"Zoom"}}
+						}
+						}
+				},
+				"actions": {
+					"followobject0": {
+						"list-name": "Follow object",
+						"display-text": "Camera {0}: Follow {1} with weight of {2} at image point {3}",
+						"description": "Sets the camera to follow an object",
+						"params": {
+							"camera0": { "name":"Camera", "desc":"Name of the camera to use - leave blank to use the active camera."},
+							"object1": { "name":"Object", "desc":"The object to follow."},
+							"weight2": { "name":"Weight", "desc":"Weight of the object - this effects how much influence the object has on scrolling when there is more than one object being followed."},
+							"ımage_point3": { "name":"Image point", "desc":"Image point on this object to follow."}
+						}
+					},
+					"setfollowlag1": {
+						"list-name": "Set follow lag",
+						"display-text": "Camera {0}: Follow with lag of {1}%",
+						"description": "Sets the amount of lag when following a specified object.",
+						"params": {
+							"camera0": { "name":"Camera", "desc":"Name of the camera to use - leave blank to use the active camera."},
+							"lag1": { "name":"Lag", "desc":"Amount of lag when following an object or group of objects expressed as a value from 0-100."}
+						}
+					},
+					"zoomtocontain2": {
+						"list-name": "Zoom to contain",
+						"display-text": "Camera {0}: {1} to contain objects with margins of {2}, {3}, zoom bounded between {5} and {4}",
+						"description": "Tells the camera whether or not to zoom to contain followed objects.",
+						"params": {
+							"camera0": { "name":"Camera", "desc":"Name of the camera to use - leave blank to use the active camera."},
+							"zoom3": { "name":"Zoom", "desc":"Determines whether or not the camera will zoom to contain the followed objects.", "items":{"zoom":"Zoom","do not zoom":"Do not zoom"}},
+							"horizontal_margin4": { "name":"Horizontal margin", "desc":"The amount of space horizontally between the edge of the farthest object and the edge of the screen."},
+							"vertical_margin5": { "name":"Vertical margin", "desc":"The amount of space vertically between the edge of the farthest object and the edge of the screen."},
+							"upper_zoom_limit6": { "name":"Upper zoom limit", "desc":"The upper zoom limit. -1 indicates no limit."},
+							"lower_zoom_limit7": { "name":"Lower zoom limit", "desc":"The lower zoom limit. -1 indicates no limit."}
+						}
+					},
+					"enablefollowing3": {
+						"list-name": "Enable following",
+						"display-text": "Camera {0}: {1} following",
+						"description": "Enables or disables following.",
+						"params": {
+							"camera0": { "name":"Camera", "desc":"Name of the camera to use - leave blank to use the active camera."},
+							"following3": { "name":"Following", "desc":"Determines whether or not the camera will follow objects", "items":{"enable":"Enable","disable":"Disable"}}
+						}
+					},
+					"unfollowobject4": {
+						"list-name": "Un-follow object",
+						"display-text": "Camera {0}: Un-follow {1}",
+						"description": "Sets the camera to un-follow an object",
+						"params": {
+							"camera0": { "name":"Camera", "desc":"Name of the camera to use - leave blank to use the active camera."},
+							"object1": { "name":"Object", "desc":"The object to un-follow."}
+						}
+					},
+					"createlocalcamera100": {
+						"list-name": "Create local camera",
+						"display-text": "Create local camera {0} at {1}, {2}, with scale {3}, active: {4}",
+						"description": "Creates a new local camera and attaches associates it with the current layout",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to create."},
+							"x1": { "name":"X", "desc":"X position of the camera."},
+							"y2": { "name":"Y", "desc":"Y position of the camera."},
+							"scale3": { "name":"Scale", "desc":"Initial scale(zoom) value of the camera."},
+							"active6": { "name":"Active", "desc":"Determines whether or not the camera is active from the start.", "items":{"false":"False","true":"True"}}
+						}
+					},
+					"createglobalcamera101": {
+						"list-name": "Create global camera",
+						"display-text": "Create global camera {0} at {1}, {2}, with scale {3}, active: {4}",
+						"description": "Creates a new global camera and attaches associates it with the current layout",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to create."},
+							"x1": { "name":"X", "desc":"X position of the camera."},
+							"y2": { "name":"Y", "desc":"Y position of the camera."},
+							"scale3": { "name":"Scale", "desc":"Initial scale(zoom) value of the camera."},
+							"active6": { "name":"Active", "desc":"Determines whether or not the camera is active from the start.", "items":{"false":"False","true":"True"}}
+						}
+					},
+					"setactivecamera102": {
+						"list-name": "Set active camera",
+						"display-text": "Set active camera to {0}",
+						"description": "Sets the active camera by name.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to activate."}
+						}
+					},
+					"setscrollsmoothing200": {
+						"list-name": "Set scroll smoothing",
+						"display-text": "Camera {0}: Use  smoothing",
+						"description": "Sets the type of smoothing used by the specified camera.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."}
+						}
+					},
+					"setxposition201": {
+						"list-name": "Set X position",
+						"display-text": "Camera {0}: Position X at {1}",
+						"description": "Sets the X coordinate of a camera.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."},
+							"x1": { "name":"X", "desc":"X coordinate to position at."}
+						}
+					},
+					"setyposition202": {
+						"list-name": "Set Y position",
+						"display-text": "Camera {0}: Position Y at {1}",
+						"description": "Sets the Y coordinate of a camera.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."},
+							"y1": { "name":"Y", "desc":"Y coordinate to position at."}
+						}
+					},
+					"setposition203": {
+						"list-name": "Set position",
+						"display-text": "Camera {0}: Position at {1}, {2}",
+						"description": "Sets the position of the camera.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."},
+							"x1": { "name":"X", "desc":"X coordinate to position at."},
+							"y2": { "name":"Y", "desc":"Y coordinate to position at."}
+						}
+					},
+					"setzoom204": {
+						"list-name": "Set zoom",
+						"display-text": "Camera {0}: Zoom to {1}",
+						"description": "Sets the zoom level of the camera.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."},
+							"zoom1": { "name":"Zoom", "desc":"Zoom level to set to - 1 is normal level, 2 is double, 0.5 is half, etc."}
+						}
+					},
+					"transitiontopoint300": {
+						"list-name": "Transition to point",
+						"display-text": "Camera {0}: Transition to {1}, {2} in {3}s",
+						"description": "Transitions a camera to a specific point.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."},
+							"x1": { "name":"X", "desc":"X position to transition to."},
+							"y2": { "name":"Y", "desc":"Y position to transition to."},
+							"duration3": { "name":"Duration", "desc":"Duration of the transition in seconds."}
+						}
+					},
+					"transitiontozoom301": {
+						"list-name": "Transition to zoom level",
+						"display-text": "Camera {0}: Transition to zoom level {1} in {2}s",
+						"description": "Transitions a cameras zoom to a specific level.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."},
+							"zoom1": { "name":"Zoom", "desc":"Zoom level to transition to - 1 is normal level, 2 is double, 0.5 is half, etc."},
+							"duration2": { "name":"Duration", "desc":"Duration of the transition in seconds."}
+						}
+					},
+					"transitiontocamera302": {
+						"list-name": "Transition to camera",
+						"display-text": "Transition to camera {0} in {1}s",
+						"description": "Transitions to a specified camera.",
+						"params": {
+							"target_camera0": { "name":"Target camera", "desc":"Name of the camera to transition to."},
+							"duration1": { "name":"Duration", "desc":"Duration of the transition in seconds."}
+						}
+					},
+					"shakecamera400": {
+						"list-name": "Shake camera",
+						"display-text": "Camera {0}: Shake with strength {1}, max deviation {2}, max zoom deviation {3}, build length {4}, drop time {5}, duration {6}",
+						"description": "Shakes the specified camera.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to modify - leave blank to modify the active camera."},
+							"strength1": { "name":"Strength", "desc":"The strength of the shaking as a value between 0 and 100."},
+							"max_deviation2": { "name":"Max deviation", "desc":"The maximum amount to deviate from the camera position in pixels."},
+							"max_zoom_deviation3": { "name":"Max zoom deviation", "desc":"The maximum amount to deviate from the camera zoom value as a scale factor based at 1.  A value of 0 means no zooming."},
+							"build_length4": { "name":"Build length", "desc":"The amount of time to build to max strength in seconds."},
+							"drop_time5": { "name":"Drop time", "desc":"The point in seconds at which to begin dropping off in power."},
+							"duration6": { "name":"Duration", "desc":"Duration of the shake in seconds."}
+						}
+					}
+				},
+				"expressions": {
+					"movementtransitionprogress0": {
+						"description": "Returns the progress of the current movement transition as a number between 0 and 1.",
+						"translated-name": "MovementTransitionProgress",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to retrieve data from."}
+						}
+						},
+					"zoomtransitionprogress1": {
+						"description": "Returns the progress of the current zoom transition as a number between 0 and 1.",
+						"translated-name": "ZoomTransitionProgress",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to retrieve data from."}
+						}
+						},
+					"getx2": {
+						"description": "Returns the X position of the specified camera.",
+						"translated-name": "GetX",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to retrieve data from."}
+						}
+						},
+					"gety3": {
+						"description": "Returns the Y position of the specified camera.",
+						"translated-name": "GetY",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to retrieve data from."}
+						}
+						},
+					"getzoom4": {
+						"description": "Returns the zoom level of the specified camera.",
+						"translated-name": "GetZoom",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the camera to retrieve data from."}
+						}
+						},
+					"getactivecamera5": {
+						"description": "Returns the name of the currently active camera.",
+						"translated-name": "GetActiveCamera"
+						}
+				}
+			}
+		}
+	}
+}
