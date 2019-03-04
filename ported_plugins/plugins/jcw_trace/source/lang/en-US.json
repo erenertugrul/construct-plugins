@@ -1,0 +1,99 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Trace.",
+	"text": {
+		"plugins": {
+			"jcw_trace": {
+				"name": "Trace",
+				"description": "Use line and box traces to make your objects more aware of their surroundings.",
+				"help-url": "http://",
+				"properties": {
+					"obstacles": {
+						"name": "Obstacles",
+						"desc": "Choose whether solids obstruct traces or if to use custom objects added by events.",
+						"items": {
+							"solids":"Solids",
+							"custom":"Custom"
+							}
+						},
+					"use-collision-cells": {
+						"name": "Use collision cells",
+						"desc": "Usually improves performance, but can be slower over very long distances.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"padding": {
+						"name": "Padding",
+						"desc": "Padding amount to insert between the hit object and the returned hit position. Clamped between 0 and 1."
+						}
+				},
+				"aceCategories": {
+					"obstacles": "Obstacles",
+					"trace": "Trace",
+					"trace_results": "Trace Results"
+				},
+				"conditions": {
+					"hit0": {
+						"list-name": "Hit something",
+						"display-text": "{my} hit something",
+						"description": "Test if the last trace performed hit something."
+						}
+				},
+				"actions": {
+					"addobstacle0": {
+						"list-name": "Add obstacle",
+						"display-text": "Add {my} obstacle {0}",
+						"description": "Add a custom object as an obstacle to traces.",
+						"params": {
+							"obstacle0": { "name":"Obstacle", "desc":"Choose an object to add as an obstacle, obstructing traces."}
+						}
+					},
+					"clearobstacles1": {
+						"list-name": "Clear obstacles",
+						"display-text": "Clear {my} obstacles",
+						"description": "Remove all added obstacle objects."
+					},
+					"traceline2": {
+						"list-name": "Trace Line",
+						"display-text": "Trace line from ([i]{0}[/i], [i]{1}[/i]) to ([i]{2}[/i], [i]{3}[/i])",
+						"description": "Performs a line trace, storing the results.",
+						"params": {
+							"start_x0": { "name":"Start X", "desc":"X coordinate of the start of the trace."},
+							"start_y1": { "name":"Start Y", "desc":"Y coordinate of the start of the trace."},
+							"end_x2": { "name":"End X", "desc":"X coordinate of the end of the trace."},
+							"end_y3": { "name":"End Y", "desc":"Y coordinate of the end of the trace."}
+						}
+					}
+				},
+				"expressions": {
+					"hituıd0": {
+						"description": "Gets the UID of the object hit by the last trace. Returns -1 if none.",
+						"translated-name": "HitUID"
+						},
+					"hitx1": {
+						"description": "Gets the X coordinate of the first intersection.",
+						"translated-name": "HitX"
+						},
+					"hity2": {
+						"description": "Gets the Y coordinate of the first intersection.",
+						"translated-name": "HitY"
+						},
+					"normalangle3": {
+						"description": "Gets the perpendicular angle of the first intersecting line.",
+						"translated-name": "NormalAngle"
+						},
+					"reflectangle4": {
+						"description": "Gets the new angle of the ray afting being reflected by the first intersecting line.",
+						"translated-name": "ReflectAngle"
+						},
+					"hitfrac5": {
+						"description": "Gets the fractional distance to where the hit occured, with the start point being 0, and the end point being 1.",
+						"translated-name": "HitFrac"
+						}
+				}
+			}
+		}
+	}
+}

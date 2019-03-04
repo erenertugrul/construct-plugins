@@ -1,0 +1,107 @@
+{
+	"obstacles": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "addobstacle0",
+				"scriptName": "AddObstacle",
+				"highlight": false,
+				"params": [
+					{"id":"obstacle0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "clearobstacles1",
+				"scriptName": "ClearObstacles",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"trace": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "hit0",
+				"scriptName": "Hit",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "traceline2",
+				"scriptName": "TraceLine",
+				"highlight": false,
+				"params": [
+					{"id":"start_x0", "type":"number", "initialValue":"0"},
+					{"id":"start_y1", "type":"number", "initialValue":"0"},
+					{"id":"end_x2", "type":"number", "initialValue":"0"},
+					{"id":"end_y3", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"trace_results": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "hituıd0",
+				"expressionName": "HitUID",
+				"scriptName": "HitUID",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 1,
+				"id": "hitx1",
+				"expressionName": "HitX",
+				"scriptName": "HitX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "hity2",
+				"expressionName": "HitY",
+				"scriptName": "HitY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "normalangle3",
+				"expressionName": "NormalAngle",
+				"scriptName": "NormalAngle",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "reflectangle4",
+				"expressionName": "ReflectAngle",
+				"scriptName": "ReflectAngle",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "hitfrac5",
+				"expressionName": "HitFrac",
+				"scriptName": "HitFrac",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}
