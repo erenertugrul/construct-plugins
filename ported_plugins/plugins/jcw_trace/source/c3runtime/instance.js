@@ -38,8 +38,7 @@
 		}
 		GetDebuggerProperties()
 		{
-			const Acts = C3.Behaviors.Circle;
-			const prefix = "Circle.";
+			const prefix = "jcw_trace.";
 			return [{
 				title: prefix + "Debug",
 				properties: [
