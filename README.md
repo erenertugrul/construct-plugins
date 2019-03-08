@@ -286,7 +286,10 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tr>
 <td>rex_csv</td>
 </tbody>
-
+<tbody>
+<tr>
+<td>rojo_isometric</td>
+</tbody>
 </table>
 
 # For donate
