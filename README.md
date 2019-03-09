@@ -290,6 +290,10 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tr>
 <td>rojo_isometric</td>
 </tbody>
+<tbody>
+<tr>
+<td>discord_richpresence</td>
+</tbody>
 </table>
 
 # For donate
