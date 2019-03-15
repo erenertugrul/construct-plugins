@@ -45,6 +45,13 @@ If you want to support me, you can make a donation on patreon or itch.io
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
+<tr>
+<td>ios request review</td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/ios_requestreview/c3/dist/ios_requestreview.c3addon">ios_requestreview.c3addon</a></td>
+<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/ios_requestreview/c2/dist/ios_requestreview.c2addon">ios_requestreview.c2addon</a></td>
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
 </tbody>
 </table>
 
