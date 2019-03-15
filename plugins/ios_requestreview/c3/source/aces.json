@@ -1,0 +1,62 @@
+{
+	"main": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onview0",
+				"scriptName": "onView",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "onpage1",
+				"scriptName": "onPage",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "postreview0",
+				"scriptName": "postreview",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "postwrite1",
+				"scriptName": "postwrite",
+				"highlight": false,
+				"params": [
+					{"id":"app_id0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"error": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "onerror2",
+				"scriptName": "onError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "result0",
+				"expressionName": "result",
+				"scriptName": "result",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

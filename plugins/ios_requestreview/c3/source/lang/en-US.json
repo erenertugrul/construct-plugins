@@ -1,0 +1,57 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Request Review.",
+	"text": {
+		"plugins": {
+			"eren_requestreview": {
+				"name": "Request Review",
+				"description": "ios request review",
+				"help-url": "http://www.github.com/erenertugrul",
+				"properties": {
+				},
+				"aceCategories": {
+					"main": "main",
+					"error": "error"
+				},
+				"conditions": {
+					"onview0": {
+						"list-name": "On viewed",
+						"display-text": "Open the review page",
+						"description": "Triggered when the review page is opened"
+						},
+					"onpage1": {
+						"list-name": "On itunes page",
+						"display-text": "Open the itunes page",
+						"description": "Triggered when the itunes page is opened"
+						},
+					"onerror2": {
+						"list-name": "On error",
+						"display-text": "On error",
+						"description": "Triggered if an error in actions"
+						}
+				},
+				"actions": {
+					"postreview0": {
+						"list-name": "Request Review",
+						"display-text": "open 'request review' page",
+						"description": "open 'request review' page"
+					},
+					"postwrite1": {
+						"list-name": "Review Write",
+						"display-text": "open the itunes with {0} and review write",
+						"description": "open the itunes for review write",
+						"params": {
+							"app_id0": { "name":"app_id", "desc":"enter app id"}
+						}
+					}
+				},
+				"expressions": {
+					"result0": {
+						"description": "return the error message if available",
+						"translated-name": "result"
+						}
+				}
+			}
+		}
+	}
+}

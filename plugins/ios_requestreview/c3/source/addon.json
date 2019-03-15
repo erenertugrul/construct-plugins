@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Request Review",
+	"id": "eren_requestreview",
+	"version": "1.0.0.0",
+	"author": "Eren ertuğrul",
+	"website": "http://www.github.com/erenertugrul",
+	"documentation": "http://www.github.com/erenertugrul",
+	"description": "ios request review",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
