@@ -29,7 +29,7 @@
 
 			this._info.SetSupportedRuntimes(["c2","c3"]);
 			this._info.AddCordovaPluginReference({
-				id: "https://github.com/erenertugrul/cordova-requestreview.git",
+				id: "cordova-eren-requestreview",
 				platform:"ios"
 			});
 			SDK.Lang.PushContext(".properties");
