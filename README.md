@@ -283,7 +283,7 @@ If you want to support me, you can make a donation on patreon or itch.io
 -->
 </table>
 
-# wip
+# W.I.P
 <table>
 <thead>
 <tr>
@@ -300,6 +300,10 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tbody>
 <tr>
 <td>discord_richpresence</td>
+</tbody>
+<tbody>
+<tr>
+<td>firebase_remoteconfig</td>
 </tbody>
 </table>
 
