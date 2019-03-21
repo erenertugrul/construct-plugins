@@ -1,0 +1,206 @@
+{
+	"main": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "getboolean0",
+				"scriptName": "getboolean",
+				"highlight": false,
+				"params": [
+					{"id":"get_boolean0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "getstring1",
+				"scriptName": "getstring",
+				"highlight": false,
+				"params": [
+					{"id":"get_string0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "getnumber2",
+				"scriptName": "getnumber",
+				"highlight": false,
+				"params": [
+					{"id":"get_number0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "getbytes3",
+				"scriptName": "getbytes",
+				"highlight": false,
+				"params": [
+					{"id":"get_bytes0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "setupdatetime4",
+				"scriptName": "setupdatetime",
+				"highlight": false,
+				"params": [
+					{"id":"set_minutes0", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"successfully": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onboolean0",
+				"scriptName": "onBoolean",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "onstring1",
+				"scriptName": "onString",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onnumber2",
+				"scriptName": "onNumber",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "ongetbytes3",
+				"scriptName": "onBytes",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "getboolean0",
+				"expressionName": "getboolean",
+				"scriptName": "getboolean",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 1,
+				"id": "getstring1",
+				"expressionName": "getstring",
+				"scriptName": "getstring",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "getnumber2",
+				"expressionName": "getnumber",
+				"scriptName": "getnumber",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 3,
+				"id": "getbytes3",
+				"expressionName": "getbytes",
+				"scriptName": "getbytes",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"error": {
+		"conditions": [
+			{
+				"c2id": 4,
+				"id": "onerror4",
+				"scriptName": "onError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "onstringerror5",
+				"scriptName": "onStringError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "onnumbererror6",
+				"scriptName": "onNumberError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 7,
+				"id": "onbooleanerror7",
+				"scriptName": "onBooleanError",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "onbyteserror8",
+				"scriptName": "onBytesError",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 4,
+				"id": "geterror4",
+				"expressionName": "geterror",
+				"scriptName": "geterror",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 5,
+				"id": "getstringerror5",
+				"expressionName": "getstringerror",
+				"scriptName": "getstringerror",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 6,
+				"id": "getnumbererror6",
+				"expressionName": "getnumbererror",
+				"scriptName": "getnumbererror",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 7,
+				"id": "getbooleanerror7",
+				"expressionName": "getbooleanerror",
+				"scriptName": "getbooleanerror",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 8,
+				"id": "getbyteserror8",
+				"expressionName": "getbyteserror",
+				"scriptName": "getbyteserror",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

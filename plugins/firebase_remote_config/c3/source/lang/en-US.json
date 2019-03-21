@@ -1,0 +1,159 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Firebase Remote Config.",
+	"text": {
+		"plugins": {
+			"eren_firebase_remote": {
+				"name": "Firebase Remote Config",
+				"description": "Cordova plugin for Firebase Remote Config",
+				"help-url": "http://github.com/erenertugrul",
+				"properties": {
+					"update-time": {
+						"name": "update time",
+						"desc": "set minutes. if the dev mode is on, it's always '0'"
+						},
+					"devmode": {
+						"name": "devmode",
+						"desc": "If true, update time is set to 0",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						}
+				},
+				"aceCategories": {
+					"main": "Main",
+					"successfully": "successfully",
+					"error": "error"
+				},
+				"conditions": {
+					"onboolean0": {
+						"list-name": "On Boolean",
+						"display-text": "On Boolean received",
+						"description": "On Boolean received"
+						},
+					"onstring1": {
+						"list-name": "On String",
+						"display-text": "On String received",
+						"description": "On String received"
+						},
+					"onnumber2": {
+						"list-name": "On Number",
+						"display-text": "On Number received",
+						"description": "On Number received"
+						},
+					"ongetbytes3": {
+						"list-name": "On GetBytes",
+						"display-text": "On GetBytes received",
+						"description": "On GetBytes received"
+						},
+					"onerror4": {
+						"list-name": "On Fetch Error",
+						"display-text": "On Fetch Error",
+						"description": "On Fetch Error"
+						},
+					"onstringerror5": {
+						"list-name": "On String Error",
+						"display-text": "On String Error",
+						"description": "On String Error"
+						},
+					"onnumbererror6": {
+						"list-name": "On Number Error",
+						"display-text": "On Number Error",
+						"description": "On Number Error"
+						},
+					"onbooleanerror7": {
+						"list-name": "On Boolean Error",
+						"display-text": "On Boolean Error",
+						"description": "On Boolean Error"
+						},
+					"onbyteserror8": {
+						"list-name": "On Bytes Error",
+						"display-text": "On Bytes Error",
+						"description": "On Bytes Error"
+						}
+				},
+				"actions": {
+					"getboolean0": {
+						"list-name": "Get Boolean",
+						"display-text": "getboolean {0}",
+						"description": "get Boolean value",
+						"params": {
+							"get_boolean0": { "name":"get boolean", "desc":"Enter a key"}
+						}
+					},
+					"getstring1": {
+						"list-name": "Get String",
+						"display-text": "getstring {0}",
+						"description": "get String value",
+						"params": {
+							"get_string0": { "name":"get string", "desc":"Enter a key"}
+						}
+					},
+					"getnumber2": {
+						"list-name": "Get Number",
+						"display-text": "getnumber {0}",
+						"description": "get Number value",
+						"params": {
+							"get_number0": { "name":"get number", "desc":"Enter a key"}
+						}
+					},
+					"getbytes3": {
+						"list-name": "Get Bytes",
+						"display-text": "getbytes {0}",
+						"description": "get Bytes value",
+						"params": {
+							"get_bytes0": { "name":"get bytes", "desc":"Enter a key"}
+						}
+					},
+					"setupdatetime4": {
+						"list-name": "Change to update time",
+						"display-text": "set update time {0}",
+						"description": "set Update time",
+						"params": {
+							"set_minutes0": { "name":"set minutes", "desc":"Enter minutes."}
+						}
+					}
+				},
+				"expressions": {
+					"getboolean0": {
+						"description": "Return the boolean value",
+						"translated-name": "getboolean"
+						},
+					"getstring1": {
+						"description": "Return the string value",
+						"translated-name": "getstring"
+						},
+					"getnumber2": {
+						"description": "Return the number value",
+						"translated-name": "getnumber"
+						},
+					"getbytes3": {
+						"description": "Return the byte value",
+						"translated-name": "getbytes"
+						},
+					"geterror4": {
+						"description": "Return the fetch error value",
+						"translated-name": "geterror"
+						},
+					"getstringerror5": {
+						"description": "Return the string error value",
+						"translated-name": "getstringerror"
+						},
+					"getnumbererror6": {
+						"description": "Return the number error value",
+						"translated-name": "getnumbererror"
+						},
+					"getbooleanerror7": {
+						"description": "Return the boolean error value",
+						"translated-name": "getbooleanerror"
+						},
+					"getbyteserror8": {
+						"description": "Return the bytes error value",
+						"translated-name": "getbyteserror"
+						}
+				}
+			}
+		}
+	}
+}
