@@ -52,6 +52,13 @@ If you want to support me, you can make a donation on patreon or itch.io
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
+<tr>
+<td>firebase remote config</td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/firebase_remote_config/c3/dist/firebase_remote_config.c3addon">firebase_remote_config.c3addon</a></td>
+<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/firebase_remote_config/c2/dist/firebase_remote_config.c2addon">firebase_remote_config.c2addon</a></td>
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
 </tbody>
 </table>
 
