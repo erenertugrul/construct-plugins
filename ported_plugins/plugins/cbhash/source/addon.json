@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "CB Hash",
+	"id": "CBhash",
+	"version": "r70 1.0.0.0",
+	"author": "Kyatric@gmail.com - JavaScript implementation of the RSA Data Security",
+	"website": "http://www.scirra.com",
+	"documentation": "http://www.scirra.com",
+	"description": "cornedbeefhash - Produces a hash using MD5, SHA-1 or SHA-256 algorithms. Supports hexadecimal and base-64 output format. HMAC implentation also available. (Thanks Lucid for the name)",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

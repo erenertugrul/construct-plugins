@@ -1,0 +1,308 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for CB Hash.",
+	"text": {
+		"plugins": {
+			"cbhash": {
+				"name": "CB Hash",
+				"description": "cornedbeefhash - Produces a hash using MD5, SHA-1 or SHA-256 algorithms. Supports hexadecimal and base-64 output format. HMAC implentation also available. (Thanks Lucid for the name)",
+				"help-url": "http://www.scirra.com",
+				"properties": {
+				},
+				"aceCategories": {
+					"algorithm_configuration": "Algorithm configuration",
+					"hashing": "Hashing",
+					"password_generation": "Password generation",
+					"cbhash": "CBhash",
+					"hashed": "Hashed"
+				},
+				"conditions": {
+					"onhashed0": {
+						"list-name": "On hashed",
+						"display-text": "On any hash generated",
+						"description": "Triggered when a new hash is generated."
+						}
+				},
+				"actions": {
+					"set_hexoutput0": {
+						"list-name": "Set inner algorithm hexadecimal output format",
+						"display-text": "Set inner algorithm hexadecimal output format to [b]{0}[/b].",
+						"description": "Sets the inner algorithm hexadecimal output format. Might help for server-side compatibility.",
+						"params": {
+							"format2": { "name":"Format", "desc":"Choose the output format in the algorithm.", "items":{"lowercase":"Lowercase","uppercase":"Uppercase"}}
+						}
+					},
+					"set_bpad1": {
+						"list-name": "Set base64 pad character.",
+						"display-text": "Set base64 pad character to [b]{0}[/b]",
+						"description": "Sets base64 pad character. \"=\" for strict RFC compliance.",
+						"params": {
+							"base64_pad_character2": { "name":"Base64 pad character", "desc":"Base64 pad character. \"=\" for strict RFC compliance.", "items":{"":"","=":"="}}
+						}
+					},
+					"md5_hash2": {
+						"list-name": "MD5 - hash",
+						"display-text": "MD5 - Encode [i]{0}[/i] as a MD5 hash. Output format: [b]{1}[/b].",
+						"description": "Encodes the data provided with MD5 algorithm.",
+						"params": {
+							"string0": { "name":"String", "desc":"String to encode"},
+							"format3": { "name":"Format", "desc":"Choose the final output format of the encoded string.", "items":{"hexadecimal":"Hexadecimal","base64":"Base64"}}
+						}
+					},
+					"md5_pass3": {
+						"list-name": "MD5 - password generation",
+						"display-text": "MD5 - Encode {0} as a MD5 password using {1} characters only.",
+						"description": "Encode a string using a string of characters.",
+						"params": {
+							"string0": { "name":"String", "desc":"The string to encode."},
+							"encoding1": { "name":"Encoding", "desc":"The string you encode with."}
+						}
+					},
+					"hmac_hash4": {
+						"list-name": "HMAC-MD5 - keyed hashes",
+						"display-text": "HMAC-MD5 - Encode a keyed hash of [i]{1}[/i] using [i]{0}[/i] as a key. Output format : [b]{2}[/b].",
+						"description": "Encodes a data string using a string key in order to make a HMAC-MD5 (Hash-based Message Authentication Code) hash.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The encoding key"},
+							"data1": { "name":"Data", "desc":"Data to encode with the key"},
+							"format4": { "name":"Format", "desc":"Choose the output format of the encoded string.", "items":{"hexadecimal":"Hexadecimal","base64":"Base64"}}
+						}
+					},
+					"hmac_pass5": {
+						"list-name": "HMAC-MD5 - password generation",
+						"display-text": "HMAC-MD5 - Generate a password out of [i]{1}[/i] using [i]{0}[/i] as a key and [i]{2}[/i] as character string to encode.",
+						"description": "Generate an HMAC-MD5 (Hash-based Message Authentication Code) password using provided data, key and character string.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The encoding key"},
+							"data1": { "name":"Data", "desc":"Data to encode with the key"},
+							"string2": { "name":"String", "desc":"Character string used for the encode"}
+						}
+					},
+					"sha1_hash6": {
+						"list-name": "SHA-1 - hash",
+						"display-text": "SHA-1 - Encode [i]{0}[/i] as a SHA-1 hash. Output format: [b]{1}[/b].",
+						"description": "Encodes the data provided with SHA-1 algorithm.",
+						"params": {
+							"string0": { "name":"String", "desc":"String to encode"},
+							"format3": { "name":"Format", "desc":"Choose the final output format of the encoded string.", "items":{"hexadecimal":"Hexadecimal","base64":"Base64"}}
+						}
+					},
+					"sha1_pass7": {
+						"list-name": "SHA-1 - password generation",
+						"display-text": "SHA-1 - Encode {0} as a SHA-1 password using {1} characters only.",
+						"description": "Encode a string using a string of characters.",
+						"params": {
+							"string0": { "name":"String", "desc":"The string to encode."},
+							"encoding1": { "name":"Encoding", "desc":"The string you encode with."}
+						}
+					},
+					"hmacsha1_hash8": {
+						"list-name": "HMAC-SHA-1 - keyed hashes",
+						"display-text": "HMAC-SHA-1 - Encode a keyed hash of [i]{1}[/i] using [i]{0}[/i] as a key. Output format : [b]{2}[/b].",
+						"description": "Encodes a data string using a string key in order to make a HMAC-SHA-1 (Hash-based Message Authentication Code) hash.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The encoding key"},
+							"data1": { "name":"Data", "desc":"Data to encode with the key"},
+							"format4": { "name":"Format", "desc":"Choose the output format of the encoded string.", "items":{"hexadecimal":"Hexadecimal","base64":"Base64"}}
+						}
+					},
+					"hmacsha1_pass9": {
+						"list-name": "HMAC-SHA-1 - password generation",
+						"display-text": "HMAC-SHA-1 - Generate a password out of [i]{1}[/i] using [i]{0}[/i] as a key and [i]{2}[/i] as character string to encode.",
+						"description": "Generate an HMAC-SHA-1 (Hash-based Message Authentication Code) password using provided data, key and character string.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The encoding key"},
+							"data1": { "name":"Data", "desc":"Data to encode with the key"},
+							"string2": { "name":"String", "desc":"Character string used for the encode"}
+						}
+					},
+					"sha256_hash10": {
+						"list-name": "SHA-256 - hash",
+						"display-text": "SHA-256 - Encode [i]{0}[/i] as a SHA-256 hash. Output format: [b]{1}[/b].",
+						"description": "Encodes the data provided with SHA-256 algorithm.",
+						"params": {
+							"string0": { "name":"String", "desc":"String to encode"},
+							"format3": { "name":"Format", "desc":"Choose the final output format of the encoded string.", "items":{"hexadecimal":"Hexadecimal","base64":"Base64"}}
+						}
+					},
+					"sha256_pass11": {
+						"list-name": "SHA-256 - password generation",
+						"display-text": "SHA-256 - Encode {0} as a SHA-256 password using {1} characters only.",
+						"description": "Encode a string using a string of characters.",
+						"params": {
+							"string0": { "name":"String", "desc":"The string to encode."},
+							"encoding1": { "name":"Encoding", "desc":"The string you encode with."}
+						}
+					},
+					"hmacsha256_hash12": {
+						"list-name": "HMAC-SHA-256 - keyed hashes",
+						"display-text": "HMAC-SHA-256 - Encode a keyed hash of [i]{1}[/i] using [i]{0}[/i] as a key. Output format : [b]{2}[/b].",
+						"description": "Encodes a data string using a string key in order to make a HMAC-SHA-256 (Hash-based Message Authentication Code) hash.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The encoding key"},
+							"data1": { "name":"Data", "desc":"Data to encode with the key"},
+							"format4": { "name":"Format", "desc":"Choose the output format of the encoded string.", "items":{"hexadecimal":"Hexadecimal","base64":"Base64"}}
+						}
+					},
+					"hmacsha256_pass13": {
+						"list-name": "HMAC-SHA-256 - password generation",
+						"display-text": "HMAC-SHA-256 - Generate a password out of [i]{1}[/i] using [i]{0}[/i] as a key and [i]{2}[/i] as character string to encode.",
+						"description": "Generate an HMAC-SHA-256 (Hash-based Message Authentication Code) password using provided data, key and character string.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The encoding key"},
+							"data1": { "name":"Data", "desc":"Data to encode with the key"},
+							"string2": { "name":"String", "desc":"Character string used for the encode"}
+						}
+					}
+				},
+				"expressions": {
+					"get_lastresult0": {
+						"description": "Returns the last hash made.",
+						"translated-name": "get_lastResult"
+						},
+					"md51": {
+						"description": "MD5(Hexa) - Encodes the data provided with MD5 algorithm.",
+						"translated-name": "MD5",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"md5b2": {
+						"description": "MD5(base64) - Encodes the data provided with MD5 algorithm.",
+						"translated-name": "MD5B",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"md5pass3": {
+						"description": "Generate a password from data using only the characters from charstring.",
+						"translated-name": "MD5pass",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"},
+							"\"charstring\"1": { "name":"\"charstring\"", "desc":"Characters to encode with"}
+						}
+						},
+					"hmacmd54": {
+						"description": "(Hexa) Encodes a data string using a string key in order to make a HMAC-MD5 (Hash-based Message Authentication Code) hash.",
+						"translated-name": "HMACMD5",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"hmacmd5b5": {
+						"description": "(base64) Encodes a data string using a string key in order to make a HMAC-MD5 (Hash-based Message Authentication Code) hash.",
+						"translated-name": "HMACMD5B",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"hmacmd5pass6": {
+						"description": "Generate an HMAC-MD5 (Hash-based Message Authentication Code) password using provided data, key and character string.",
+						"translated-name": "HMACMD5pass",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"},
+							"\"charstring\"2": { "name":"\"charstring\"", "desc":"Characters to encode with"}
+						}
+						},
+					"sha17": {
+						"description": "SHA-1(Hexa) - Encodes the data provided with SHA-1 algorithm.",
+						"translated-name": "SHA1",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"sha1b8": {
+						"description": "SHA-1(base64) - Encodes the data provided with SHA-1 algorithm.",
+						"translated-name": "SHA1B",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"sha1pass9": {
+						"description": "Generate a password from data using only the characters from charstring.",
+						"translated-name": "SHA1pass",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"},
+							"\"charstring\"1": { "name":"\"charstring\"", "desc":"Characters to encode with"}
+						}
+						},
+					"hmacsha110": {
+						"description": "(Hexa) Encodes a data string using a string key in order to make a HMAC-SHA-1 (Hash-based Message Authentication Code) hash.",
+						"translated-name": "HMACSHA1",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"hmacsha1b11": {
+						"description": "(base64) Encodes a data string using a string key in order to make a HMAC-SHA-1 (Hash-based Message Authentication Code) hash.",
+						"translated-name": "HMACSHA1B",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"hmacsha1pass12": {
+						"description": "Generate an HMAC-SHA-1 (Hash-based Message Authentication Code) password using provided data, key and character string.",
+						"translated-name": "HMACSHA1pass",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"},
+							"\"charstring\"2": { "name":"\"charstring\"", "desc":"Characters to encode with"}
+						}
+						},
+					"sha25613": {
+						"description": "SHA-256(Hexa) - Encodes the data provided with SHA-256 algorithm.",
+						"translated-name": "SHA256",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"sha256b14": {
+						"description": "SHA-256(base64) - Encodes the data provided with SHA-256 algorithm.",
+						"translated-name": "SHA256B",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"sha256pass15": {
+						"description": "Generate a password from data using only the characters from charstring.",
+						"translated-name": "SHA256pass",
+						"params": {
+							"\"data\"0": { "name":"\"data\"", "desc":"Data to encode"},
+							"\"charstring\"1": { "name":"\"charstring\"", "desc":"Characters to encode with"}
+						}
+						},
+					"hmacsha25616": {
+						"description": "(Hexa) Encodes a data string using a string key in order to make a HMAC-SHA-256 (Hash-based Message Authentication Code) hash.",
+						"translated-name": "HMACSHA256",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"hmacsha256b17": {
+						"description": "(base64) Encodes a data string using a string key in order to make a HMAC-SHA-256 (Hash-based Message Authentication Code) hash.",
+						"translated-name": "HMACSHA256B",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"}
+						}
+						},
+					"hmacsha256pass18": {
+						"description": "Generate an HMAC-SHA-256 (Hash-based Message Authentication Code) password using provided data, key and character string.",
+						"translated-name": "HMACSHA256pass",
+						"params": {
+							"\"key\"0": { "name":"\"key\"", "desc":"Key to encode with"},
+							"\"data\"1": { "name":"\"data\"", "desc":"Data to encode"},
+							"\"charstring\"2": { "name":"\"charstring\"", "desc":"Characters to encode with"}
+						}
+						}
+				}
+			}
+		}
+	}
+}

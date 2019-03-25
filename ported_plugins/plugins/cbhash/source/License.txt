@@ -1,0 +1,17 @@
+CBHash plugin for Construct 2
+by Kyatric - http://www.scirra.com/users/Kyatric
+
+CBHash is provided as is, with no warranties nor garanties. Nevertheless, it should provide the encoding awaited and shouldn't make your computer burn.
+Still use at your own risks. I can't be held responsible for anything related to the use of this plugin.
+
+Discuss: Scirra's forum link
+
+
+
+JavaScript implementation of the RSA Data Security, Inc. MD5 Message: Copyright (c) 1998 - 2009, Paul Johnston & Contributors 
+A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined in FIPS 180-1 - Version 2.2 Copyright Paul Johnston 2000 - 2009 & contributors 
+A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined in FIPS 180-2 * Version 2.2 Copyright Angel Marin, Paul Johnston & contributors 2000 - 2009. 
+
+* Distributed under the BSD License 
+* See http://pajhome.org.uk/crypt/md5 for details. 
+* Also http://anmar.eu.org/projects/jssha2/

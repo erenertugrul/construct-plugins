@@ -1,0 +1,414 @@
+{
+	"algorithm_configuration": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "set_hexoutput0",
+				"scriptName": "set_hexoutput",
+				"highlight": false,
+				"params": [
+					{"id":"format2", "type":"combo", "items":["lowercase","uppercase"]}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "set_bpad1",
+				"scriptName": "set_bpad",
+				"highlight": false,
+				"params": [
+					{"id":"base64_pad_character2", "type":"combo", "items":["","="]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"hashing": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "md5_hash2",
+				"scriptName": "MD5_hash",
+				"highlight": false,
+				"params": [
+					{"id":"string0", "type":"string", "initialValue":"\"String to encode\""},
+					{"id":"format3", "type":"combo", "items":["hexadecimal","base64"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "hmac_hash4",
+				"scriptName": "HMAC_hash",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"Key\""},
+					{"id":"data1", "type":"string", "initialValue":"\"Data\""},
+					{"id":"format4", "type":"combo", "items":["hexadecimal","base64"]}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "sha1_hash6",
+				"scriptName": "SHA1_hash",
+				"highlight": false,
+				"params": [
+					{"id":"string0", "type":"string", "initialValue":"\"String to encode\""},
+					{"id":"format3", "type":"combo", "items":["hexadecimal","base64"]}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "hmacsha1_hash8",
+				"scriptName": "HMACSHA1_hash",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"Key\""},
+					{"id":"data1", "type":"string", "initialValue":"\"Data\""},
+					{"id":"format4", "type":"combo", "items":["hexadecimal","base64"]}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "sha256_hash10",
+				"scriptName": "SHA256_hash",
+				"highlight": false,
+				"params": [
+					{"id":"string0", "type":"string", "initialValue":"\"String to encode\""},
+					{"id":"format3", "type":"combo", "items":["hexadecimal","base64"]}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "hmacsha256_hash12",
+				"scriptName": "HMACSHA256_hash",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"Key\""},
+					{"id":"data1", "type":"string", "initialValue":"\"Data\""},
+					{"id":"format4", "type":"combo", "items":["hexadecimal","base64"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "md51",
+				"expressionName": "MD5",
+				"scriptName": "MD5",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "md5b2",
+				"expressionName": "MD5B",
+				"scriptName": "MD5B",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "hmacmd54",
+				"expressionName": "HMACMD5",
+				"scriptName": "HMACMD5",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "hmacmd5b5",
+				"expressionName": "HMACMD5B",
+				"scriptName": "HMACMD5B",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "sha17",
+				"expressionName": "SHA1",
+				"scriptName": "SHA1",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "sha1b8",
+				"expressionName": "SHA1B",
+				"scriptName": "SHA1B",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "hmacsha110",
+				"expressionName": "HMACSHA1",
+				"scriptName": "HMACSHA1",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "hmacsha1b11",
+				"expressionName": "HMACSHA1B",
+				"scriptName": "HMACSHA1B",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "sha25613",
+				"expressionName": "SHA256",
+				"scriptName": "SHA256",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "sha256b14",
+				"expressionName": "SHA256B",
+				"scriptName": "SHA256B",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "hmacsha25616",
+				"expressionName": "HMACSHA256",
+				"scriptName": "HMACSHA256",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "hmacsha256b17",
+				"expressionName": "HMACSHA256B",
+				"scriptName": "HMACSHA256B",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"password_generation": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "md5_pass3",
+				"scriptName": "MD5_pass",
+				"highlight": false,
+				"params": [
+					{"id":"string0", "type":"string", "initialValue":"\"String to encode\""},
+					{"id":"encoding1", "type":"string", "initialValue":"\"Encode with characters' string\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "hmac_pass5",
+				"scriptName": "HMAC_pass",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"Key\""},
+					{"id":"data1", "type":"string", "initialValue":"\"Data\""},
+					{"id":"string2", "type":"string", "initialValue":"\"charString\""}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "sha1_pass7",
+				"scriptName": "SHA1_pass",
+				"highlight": false,
+				"params": [
+					{"id":"string0", "type":"string", "initialValue":"\"String to encode\""},
+					{"id":"encoding1", "type":"string", "initialValue":"\"Encode with characters' string\""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "hmacsha1_pass9",
+				"scriptName": "HMACSHA1_pass",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"Key\""},
+					{"id":"data1", "type":"string", "initialValue":"\"Data\""},
+					{"id":"string2", "type":"string", "initialValue":"\"charString\""}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "sha256_pass11",
+				"scriptName": "SHA256_pass",
+				"highlight": false,
+				"params": [
+					{"id":"string0", "type":"string", "initialValue":"\"String to encode\""},
+					{"id":"encoding1", "type":"string", "initialValue":"\"Encode with characters' string\""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "hmacsha256_pass13",
+				"scriptName": "HMACSHA256_pass",
+				"highlight": false,
+				"params": [
+					{"id":"key0", "type":"string", "initialValue":"\"Key\""},
+					{"id":"data1", "type":"string", "initialValue":"\"Data\""},
+					{"id":"string2", "type":"string", "initialValue":"\"charString\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "md5pass3",
+				"expressionName": "MD5pass",
+				"scriptName": "MD5pass",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"charstring\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "hmacmd5pass6",
+				"expressionName": "HMACMD5pass",
+				"scriptName": "HMACMD5pass",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""},
+					{"id":"\"charstring\"2", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "sha1pass9",
+				"expressionName": "SHA1pass",
+				"scriptName": "SHA1pass",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"charstring\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "hmacsha1pass12",
+				"expressionName": "HMACSHA1pass",
+				"scriptName": "HMACSHA1pass",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""},
+					{"id":"\"charstring\"2", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "sha256pass15",
+				"expressionName": "SHA256pass",
+				"scriptName": "SHA256pass",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"data\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"charstring\"1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "hmacsha256pass18",
+				"expressionName": "HMACSHA256pass",
+				"scriptName": "HMACSHA256pass",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"\"key\"0", "type":"string", "initialValue":"\"\""},
+					{"id":"\"data\"1", "type":"string", "initialValue":"\"\""},
+					{"id":"\"charstring\"2", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"cbhash": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onhashed0",
+				"scriptName": "OnHashed",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"hashed": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "get_lastresult0",
+				"expressionName": "get_lastResult",
+				"scriptName": "get_lastResult",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}
