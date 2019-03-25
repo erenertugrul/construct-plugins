@@ -1,0 +1,33 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "MouseLock",
+	"id": "MouseLock",
+	"version": "0.5.0.0",
+	"author": "Tim Hamilton",
+	"website": "http://<your website or a manual entry on Scirra.com>",
+	"documentation": "http://<your website or a manual entry on Scirra.com>",
+	"description": "Allows the game to lock the cursor from a key or with an in-game command. Outputs raw x/y movment from mouse. Esc to exit (this cannot be overridden--don't keybind esc to anything else). Chrome/Firefox only.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"jquery-2.1.1.min.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

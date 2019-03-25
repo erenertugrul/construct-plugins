@@ -267,10 +267,19 @@ If you want to support me, you can make a donation on patreon or itch.io
 </tr>
 </tbody>
 <tbody>
-<tbody>
 <tr>
 <td>cbhash</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/cbhash/dist/cbhash_release_r70_1.0.c3addon">cbhash.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>mouselock</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/mouselock/dist/mouselock.c3addon">mouselock.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>

@@ -1,0 +1,229 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for MouseLock.",
+	"text": {
+		"plugins": {
+			"mouselock": {
+				"name": "MouseLock",
+				"description": "Allows the game to lock the cursor from a key or with an in-game command. Outputs raw x/y movment from mouse. Esc to exit (this cannot be overridden--don't keybind esc to anything else). Chrome/Firefox only.",
+				"help-url": "http://<your website or a manual entry on Scirra.com>",
+				"properties": {
+					"constraints": {
+						"name": "Constraints",
+						"desc": "Initial settings and constraints."
+						},
+					"activate-on": {
+						"name": "Activate On",
+						"desc": "Single Click and Double Click are self explanatory. Custom Key activates on...a custom key.",
+						"items": {
+							"single click":"Single Click",
+							"double click":"Double Click",
+							"custom button":"Custom Button"
+							}
+						},
+					"bounding": {
+						"name": "Bounding",
+						"desc": "Bound to Window and Bound to Layer do just that. Unbounded is for custom (event based) bounding.",
+						"items": {
+							"bound to window":"Bound to Window",
+							"bound to layout":"Bound to Layout",
+							"unbounded":"Unbounded"
+							}
+						},
+					"disable-ıf-unlock": {
+						"name": "Disable If Unlock",
+						"desc": "Disable RawX/Y and MouseLockX/Y if mouse is not locked. Said values will read 0.",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"enable-quantum-tunnelling": {
+						"name": "Enable Quantum Tunnelling",
+						"desc": "Enable Quantum Tunnelling. This may be entirely useless.",
+						"items": {
+							"yes-no":"Yes-No",
+							"maybe":"Maybe"
+							}
+						},
+					"movement-properties": {
+						"name": "Movement Properties",
+						"desc": "Properties that affect the movement of the cursor."
+						},
+					"smoothing": {
+						"name": "Smoothing",
+						"desc": "Not currently enabled.",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"ınvert-x": {
+						"name": "Invert X",
+						"desc": "Invert X axis movement.",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"ınvert-y": {
+						"name": "Invert Y",
+						"desc": "Invert Y axis movement.",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"cursor-speed": {
+						"name": "Cursor Speed",
+						"desc": "How fast cursor moves in relation to normal cursor speed. 2 would be twice as fast, 0.5 half as fast, etc."
+						},
+					"dead-zone": {
+						"name": "Dead Zone",
+						"desc": "If cursor is moving slowly, movements are ignored. More specifically: if per-tick change is under this value for RawX/Y, ignore the change."
+						},
+					"speed-cap": {
+						"name": "Speed Cap",
+						"desc": "If per tick change is over cap, clamp to cap. So: cap is 100, x movement is 127, x movement equal 100. 0(default) is disabled."
+						},
+					"response-curve": {
+						"name": "Response Curve",
+						"desc": "Response Curve. Not yet implemented."
+						}
+				},
+				"aceCategories": {
+					"on/off": "On/Off",
+					"ınvert": "Invert",
+					"movement": "Movement",
+					"keyboard": "Keyboard",
+					"status_conditions": "Status Conditions",
+					"trigger_conditions": "Trigger Conditions",
+					"ınput": "Input"
+				},
+				"conditions": {
+					"ıssupported0": {
+						"list-name": "Is supported",
+						"display-text": "Mouse Lock is supported.",
+						"description": "True if mouse lock is supported. For now, only supported in Firefox and Chrome."
+						},
+					"ıslocked1": {
+						"list-name": "Is locked",
+						"display-text": "Mouse is currently locked.",
+						"description": "True if mouse is locked."
+						},
+					"ısmoving2": {
+						"list-name": "Is moving",
+						"display-text": "Mouse is moving.",
+						"description": "True if mouse is moving. This can be affected by the deadzone."
+						},
+					"onlock3": {
+						"list-name": "On Lock",
+						"display-text": "On Mouse Lock",
+						"description": "Triggered when pointer is locked."
+						},
+					"onunlock4": {
+						"list-name": "On Unlock",
+						"display-text": "On Mouse Unlock",
+						"description": "Triggered when pointer is unlocked."
+						}
+				},
+				"actions": {
+					"setmouselock1": {
+						"list-name": "Set Mouse Lock",
+						"display-text": " Mouse Lock {0}",
+						"description": "Manually enable/disable the mouse lock. If 'Activate On' is set to 'Manual Trigger', this command is the only way to lock the mouse.",
+						"params": {
+							"setmouselock0": { "name":"Set mouse lock", "desc":"enable /disable mouse lock", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					},
+					"setsmoothing2": {
+						"list-name": "Smoothing",
+						"display-text": " Smoothing {0}",
+						"description": "Manually enable/disable smoothing.",
+						"params": {
+							"setsmoothing0": { "name":"Set Smoothing", "desc":"enable /disable mouse Smoothing", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					},
+					"ınvertx3": {
+						"list-name": "Invert X Axis",
+						"display-text": "Invert X Axis is {0}",
+						"description": "Set property Invert X Axis",
+						"params": {
+							"ınvertx0": { "name":"Invert X Axis", "desc":"enable /disable Invert X Axis", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					},
+					"ınverty4": {
+						"list-name": "Invert Y Axis",
+						"display-text": "Invert Y Axis is {0}",
+						"description": "Set property Invert Y Axis",
+						"params": {
+							"ınverty0": { "name":"Invert Y Axis", "desc":"enable /disable Invert Y Axis", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					},
+					"setcursorspeed5": {
+						"list-name": "Set Cursor Speed",
+						"display-text": "Set Cursor Speed to {0}",
+						"description": "Set property Cursor Speed",
+						"params": {
+							"cursor_speed0": { "name":"Cursor Speed", "desc":"Set the cursor speed."}
+						}
+					},
+					"setspeedcap6": {
+						"list-name": "Set Speed Cap",
+						"display-text": "Set Speed Cap to {0}",
+						"description": "Set property Speed Cap",
+						"params": {
+							"speed_cap0": { "name":"Speed Cap", "desc":"Set the cursor speed cap."}
+						}
+					},
+					"setdeadzone7": {
+						"list-name": "Set Dead Zone",
+						"display-text": "Set Dead Zone to {0}",
+						"description": "Set property Deadzone",
+						"params": {
+							"dead_zone0": { "name":"Dead Zone", "desc":"Set the deadzone."}
+						}
+					},
+					"setresponsecurve8": {
+						"list-name": "Set Response Curve",
+						"display-text": "Set Response Curve to {0}",
+						"description": "Set property Response Curve",
+						"params": {
+							"response_curve0": { "name":"Response Curve", "desc":"Set the response curve."}
+						}
+					},
+					"setcustomlockactivatekey9": {
+						"list-name": "Mouse Lock on Custom Key",
+						"display-text": "Set Custom Lock Activate Key to [b]{0}[/b].",
+						"description": "Choose a custom key to activate mouse lock. Defaults to Enter/Return (keycode 13) 'Activate On' must be set to 'Custom Key' for this to work.",
+						"params": {
+							"custom_lock_activate_key0": { "name":"Custom Lock Activate Key", "desc":"Choose a custom key to activate mouse lock. 'Activate On' must be set to 'Custom Key' for this to work. Note that international users and users on different operating systems or devices may not have the same keys available."}
+						}
+					}
+				},
+				"expressions": {
+					"rawx1": {
+						"description": "(X axis)Raw mouse position change from last tick.",
+						"translated-name": "RawX"
+						},
+					"rawy2": {
+						"description": "(Y axis)Raw mouse position change from last tick.",
+						"translated-name": "RawY"
+						},
+					"mouselockx3": {
+						"description": "(X axis)Mouse position on current layer (layout?). Can be unbound, or bound to window(parm Bounding).",
+						"translated-name": "MouseLockX"
+						},
+					"mouselocky4": {
+						"description": "(Y axis)Mouse position on current layer (layout?). Can be unbound, or bound to window(parm Bounding).",
+						"translated-name": "MouseLockY"
+						},
+					"movementangle5": {
+						"description": "Cursor's angle of movement. Computed from last two or three positions. If no movement, returns -1.",
+						"translated-name": "MovementAngle"
+						}
+				}
+			}
+		}
+	}
+}
