@@ -3,7 +3,7 @@
 	"type": "plugin",
 	"name": "base64 image",
 	"id": "erenertugrul_base64_image",
-	"version": "1.0.0.0",
+	"version": "1.0.0.2",
 	"author": "Eren Ertuğrul",
 	"website": "https://erenertugrul.com.tr",
 	"documentation": "https://github.com/erenertugrul",

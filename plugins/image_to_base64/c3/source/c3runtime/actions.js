@@ -46,7 +46,8 @@
 				}); 
 			}
 			else{
-				var a = this._runtime.CreateInstance(obj, 0, -500, -500);
+				var l = this._runtime.GetMainRunningLayout().GetLayer(0);
+				var a = this._runtime.CreateInstance(obj, l, -500, -500);
 				var d = a.GetCurrentImageInfo();
 					d && d.ExtractImageToCanvas().then((d) => {
 					c = d.toDataURL("image/png");
