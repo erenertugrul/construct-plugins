@@ -3,7 +3,7 @@
 
 {
 	const PLUGIN_ID = "imgur_upload";
-	const PLUGIN_VERSION = "1.0.0.1";
+	const PLUGIN_VERSION = "1.0.0.2";
 	const PLUGIN_CATEGORY = "platform-specific";
 
 	let app = null;

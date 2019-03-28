@@ -3,7 +3,7 @@
 	"type": "plugin",
 	"name": "imgur",
 	"id": "imgur_upload",
-	"version": "1.0.0.1",
+	"version": "1.0.0.2",
 	"author": "Eren Ertuğrul",
 	"website": "https://oyunkulturu.com",
 	"documentation": "https://oyunkulturu.com",
