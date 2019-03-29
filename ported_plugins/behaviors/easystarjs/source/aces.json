@@ -1,0 +1,340 @@
+{
+	"pathfinding": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onpathfound0",
+				"scriptName": "OnPathFound",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "onfailedtofindpath1",
+				"scriptName": "OnFailedToFindPath",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "onanypathfound2",
+				"scriptName": "OnAnyPathFound",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "onanypathnotfound3",
+				"scriptName": "OnAnyPathNotFound",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "istilewalkable4",
+				"scriptName": "IsTileWalkable",
+				"highlight": false,
+				"params": [
+					{"id":"tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"tile_y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "istilewalkablefrom5",
+				"scriptName": "IsTileWalkableFrom",
+				"highlight": false,
+				"params": [
+					{"id":"tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"tile_y1", "type":"number", "initialValue":"0"},
+					{"id":"origin_tile_x2", "type":"number", "initialValue":"0"},
+					{"id":"origin_tile_y3", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "forcecalculate0",
+				"scriptName": "ForceCalculate",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "findpath1",
+				"scriptName": "FindPath",
+				"highlight": false,
+				"params": [
+					{"id":"start_tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"start_tile_y1", "type":"number", "initialValue":"0"},
+					{"id":"target_tile_x2", "type":"number", "initialValue":"0"},
+					{"id":"target_tile_y3", "type":"number", "initialValue":"0"},
+					{"id":"tag4", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setwalkabletiles2",
+				"scriptName": "SetWalkableTiles",
+				"highlight": false,
+				"params": [
+					{"id":"tile_id_list0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "setdiagonal3",
+				"scriptName": "SetDiagonal",
+				"highlight": false,
+				"params": [
+					{"id":"diagonal2", "type":"combo", "items":["enabled","disabled"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "settilecost4",
+				"scriptName": "SetTileCost",
+				"highlight": false,
+				"params": [
+					{"id":"tile_id0", "type":"number", "initialValue":"0"},
+					{"id":"relative_cost1", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "addobstacle5",
+				"scriptName": "AddObstacle",
+				"highlight": false,
+				"params": [
+					{"id":"tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"tile_y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "removeobstacle6",
+				"scriptName": "RemoveObstacle",
+				"highlight": false,
+				"params": [
+					{"id":"tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"tile_y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "removeallobstacles7",
+				"scriptName": "RemoveAllObstacles",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "setiterationspercalculation8",
+				"scriptName": "SetIterationsPerCalculation",
+				"highlight": false,
+				"params": [
+					{"id":"iterations_per_calculation0", "type":"number", "initialValue":"-1"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "cancelpendingpath9",
+				"scriptName": "CancelPendingPath",
+				"highlight": false
+			},
+			{
+				"c2id": 10,
+				"id": "setemptytilewalkable10",
+				"scriptName": "SetEmptyTileWalkable",
+				"highlight": false,
+				"params": [
+					{"id":"empty_tile_is2", "type":"combo", "items":["walkable","non-walkable"]}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "setcostat11",
+				"scriptName": "SetCostAt",
+				"highlight": false,
+				"params": [
+					{"id":"tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"tile_y1", "type":"number", "initialValue":"0"},
+					{"id":"cost2", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "removecostat12",
+				"scriptName": "RemoveCostAt",
+				"highlight": false,
+				"params": [
+					{"id":"tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"tile_y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "removeallcosts13",
+				"scriptName": "RemoveAllCosts",
+				"highlight": false
+			},
+			{
+				"c2id": 14,
+				"id": "setcornercutting14",
+				"scriptName": "SetCornerCutting",
+				"highlight": false,
+				"params": [
+					{"id":"corning_cutting2", "type":"combo", "items":["enabled","disabled"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "pathlength",
+				"expressionName": "PathLength",
+				"scriptName": "PathLength",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "nodetilexat",
+				"expressionName": "NodeTileXAt",
+				"scriptName": "NodeTileXAt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"nodeindex1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "nodetileyat",
+				"expressionName": "NodeTileYAt",
+				"scriptName": "NodeTileYAt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"nodeindex1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "nodelayoutxat",
+				"expressionName": "NodeLayoutXAt",
+				"scriptName": "NodeLayoutXAt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"nodeindex1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "nodelayoutyat",
+				"expressionName": "NodeLayoutYAt",
+				"scriptName": "NodeLayoutYAt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"nodeindex1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "currenttag",
+				"expressionName": "CurrentTag",
+				"scriptName": "CurrentTag",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 6,
+				"id": "nodecostat",
+				"expressionName": "NodeCostAt",
+				"scriptName": "NodeCostAt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""},
+					{"id":"nodeindex1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "pathcost",
+				"expressionName": "PathCost",
+				"scriptName": "PathCost",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tag0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "tilecostat",
+				"expressionName": "TileCostAt",
+				"scriptName": "TileCostAt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"tilex0", "type":"number", "initialValue":"0"},
+					{"id":"tiley1", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"directional_conditions": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 15,
+				"id": "begindirectionalconditions15",
+				"scriptName": "BeginDirectionalConditions",
+				"highlight": false,
+				"params": [
+					{"id":"tile_x0", "type":"number", "initialValue":"0"},
+					{"id":"tile_y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "adddirectionalcondition16",
+				"scriptName": "AddDirectionalCondition",
+				"highlight": false,
+				"params": [
+					{"id":"direction8", "type":"combo", "items":["top","top_right","right","bottom_right","bottom","bottom_left","left","top_left"]}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "enddirectionalconditions17",
+				"scriptName": "EndDirectionalConditions",
+				"highlight": false
+			},
+			{
+				"c2id": 18,
+				"id": "cleardirectionalconditions18",
+				"scriptName": "ClearDirectionalConditions",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	}
+}

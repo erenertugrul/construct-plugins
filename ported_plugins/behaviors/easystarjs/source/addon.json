@@ -1,0 +1,34 @@
+{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "EasyStar.js for Tilemap",
+	"id": "EasystarTilemap",
+	"version": "1.4.0.0",
+	"author": "Magistross",
+	"website": "http://",
+	"documentation": "http://",
+	"description": "Add pathfinding fonctionnalities to your Tilemaps using the EasyStar.js API.",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"",
+		"c2runtime/runtime.js",
+		"c3runtime/behavior.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"behavior.js",
+		"type.js",
+		"instance.js",
+		"easystar-0.4.1-custom.js"
+	]
+}

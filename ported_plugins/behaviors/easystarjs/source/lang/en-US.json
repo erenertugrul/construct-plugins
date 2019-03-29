@@ -1,0 +1,318 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for EasyStar.js for Tilemap.",
+	"text": {
+		"behaviors": {
+			"easystartilemap": {
+				"name": "EasyStar.js for Tilemap",
+				"description": "Add pathfinding fonctionnalities to your Tilemaps using the EasyStar.js API.",
+				"help-url": "http://",
+				"properties": {
+					"diagonal": {
+						"name": "Diagonal",
+						"desc": "Allow diagonal in paths.",
+						"items": {
+							"enabled":"enabled",
+							"disabled":"disabled"
+							}
+						},
+					"iterations-per-calculation": {
+						"name": "Iterations per calculation",
+						"desc": "-1 for maximum synchronicity, low number for asynchronous pathfinding (slower, but won't hang the game)"
+						},
+					"empty-tile-is": {
+						"name": "Empty tile is",
+						"desc": "Define how should an empty tile be considered.",
+						"items": {
+							"walkable":"walkable",
+							"non-walkable":"non-walkable"
+							}
+						},
+					"corner-cutting": {
+						"name": "Corner cutting",
+						"desc": "Allow corner cutting for diagonals in paths.",
+						"items": {
+							"enabled":"enabled",
+							"disabled":"disabled"
+							}
+						},
+					"asynchronous": {
+						"name": "Asynchronous",
+						"desc": "Asynchronous calculations for pathfinding.",
+						"items": {
+							"yes":"yes",
+							"no":"no"
+							}
+						}
+				},
+				"aceCategories": {
+					"pathfinding": "Pathfinding",
+					"directional_conditions": "Directional conditions"
+				},
+				"conditions": {
+					"onpathfound0": {
+						"list-name": "On path found",
+						"display-text": "On path [b]{0}[/b] found",
+						"description": "Triggered when a path has been found and calculated.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."}
+						}
+						},
+					"onfailedtofindpath1": {
+						"list-name": "On no path found",
+						"display-text": "On path [b]{0}[/b] not found",
+						"description": "Triggered when a path can't be found.",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."}
+						}
+						},
+					"onanypathfound2": {
+						"list-name": "On any path found",
+						"display-text": "On any path found",
+						"description": "Triggered when any path has been found."
+						},
+					"onanypathnotfound3": {
+						"list-name": "On any path not found",
+						"display-text": "On any path not found",
+						"description": "Triggered when any path can't be found."
+						},
+					"istilewalkable4": {
+						"list-name": "Is tile walkable",
+						"display-text": "Is tile [b]({0}, {1})[/b] walkable",
+						"description": "Test if a tile is walkable.",
+						"params": {
+							"tile_x0": { "name":"Tile X", "desc":"Tile X coordinate of the tile to test"},
+							"tile_y1": { "name":"Tile Y", "desc":"Tile Y coordinate of the tile to test"}
+						}
+						},
+					"istilewalkablefrom5": {
+						"list-name": "Is tile walkable from",
+						"display-text": "Is tile [b]({0}, {1})[/b] walkable from [b]({2}, {3})[/b]",
+						"description": "Test if a tile is walkable from another tile.",
+						"params": {
+							"tile_x0": { "name":"Tile X", "desc":"Tile X coordinate of the tile to test"},
+							"tile_y1": { "name":"Tile Y", "desc":"Tile Y coordinate of the tile to test"},
+							"origin_tile_x2": { "name":"Origin Tile X", "desc":"Tile X coordinate from which the tile is entered"},
+							"origin_tile_y3": { "name":"Origin Tile Y", "desc":"Tile Y coordinate from which the tile is entered"}
+						}
+						}
+				},
+				"actions": {
+					"forcecalculate0": {
+						"list-name": "Force calculate",
+						"display-text": "Force paths calculations",
+						"description": "Use this after one or many \"findpath\" directives to force them to execute immediately."
+					},
+					"findpath1": {
+						"list-name": "Find path",
+						"display-text": "Find a path from [b]({0},{1})[/b] to [b]({2},{3})[/b] (tag [i]{4}[/i])",
+						"description": "Find a path between two tiles. Use \"Force calculate\" just after to make the call synchronous.",
+						"params": {
+							"start_tile_x0": { "name":"Start tile X", "desc":"Tile X of the starting point of the path"},
+							"start_tile_y1": { "name":"Start tile Y", "desc":"Tile Y of the starting point of the path"},
+							"target_tile_x2": { "name":"Target tile X", "desc":"Tile X of the ending point of the path"},
+							"target_tile_y3": { "name":"Target tile Y", "desc":"Tile Y of the ending point of the path"},
+							"tag4": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."}
+						}
+					},
+					"setwalkabletiles2": {
+						"list-name": "Set walkable tiles",
+						"display-text": "Set tiles [b]{0}[/b] walkable",
+						"description": "Set the walkable tile IDs. No tiles are walkable by default.",
+						"params": {
+							"tile_id_list0": { "name":"Tile ID list", "desc":"A semi-colon separated list of values of the walkable tile IDs"}
+						}
+					},
+					"setdiagonal3": {
+						"list-name": "Set diagonal enabled",
+						"display-text": "Set diagonal [b]{0}[/b]",
+						"description": "Enable or disable diagonals when searching for a path.",
+						"params": {
+							"diagonal2": { "name":"Diagonal", "desc":"Allows for diagonals if enabled", "items":{"enabled":"enabled","disabled":"disabled"}}
+						}
+					},
+					"settilecost4": {
+						"list-name": "Set tile cost",
+						"display-text": "Set tile ID [b]{0}[/b] relative cost to [b]{1}[/b]",
+						"description": "Set the relative cost to walk on a tile. All tiles have a default relative cost of 1.",
+						"params": {
+							"tile_id0": { "name":"Tile ID", "desc":"Tile ID to set the relative cost of"},
+							"relative_cost1": { "name":"Relative cost", "desc":"The relative cost of this particular tile ID in a path. (1 is default, 0.5 is half, etc.)"}
+						}
+					},
+					"addobstacle5": {
+						"list-name": "Add additional obstacle",
+						"display-text": "Add obstacle at [b]({0},{1})[/b]",
+						"description": "Set tile to act as an obstacle, regardless of whether or not it is a walkable tile.",
+						"params": {
+							"tile_x0": { "name":"Tile X", "desc":"X coordinate of the tile you wish to add as an obstacle"},
+							"tile_y1": { "name":"Tile Y", "desc":"Y coordinate of the tile you wish to add as an obstacle"}
+						}
+					},
+					"removeobstacle6": {
+						"list-name": "Remove additional obstacle",
+						"display-text": "Remove obstacle at [b]({0},{1})[/b]",
+						"description": "Removes an additional obstacle.",
+						"params": {
+							"tile_x0": { "name":"Tile X", "desc":"X coordinate of the tile you wish to no longer act as an additional obstacle"},
+							"tile_y1": { "name":"Tile Y", "desc":"Y coordinate of the tile you wish to no longer act as an additional obstacle"}
+						}
+					},
+					"removeallobstacles7": {
+						"list-name": "Remove all additional obstacles",
+						"display-text": "Remove all additional obstacles",
+						"description": "Removes all additional obstacles currently added."
+					},
+					"setiterationspercalculation8": {
+						"list-name": "Set iterations per calculation",
+						"display-text": "Set iterations per calculation to [b]{0}[/b]",
+						"description": "Change the iterations per calculation parameter.",
+						"params": {
+							"iterations_per_calculation0": { "name":"Iterations per calculation", "desc":"The number of searches to perform per \"calculate\" call. -1 for maximum (synchronous calculation)"}
+						}
+					},
+					"cancelpendingpath9": {
+						"list-name": "Cancel pending path jobs",
+						"display-text": "Cancel pending path jobs",
+						"description": "Abort all path jobs not yet fully calculated."
+					},
+					"setemptytilewalkable10": {
+						"list-name": "Set empty tiles walkable",
+						"display-text": "Set empty tiles as [b]{0}[/b]",
+						"description": "Set or remove empty tiles as walkable.",
+						"params": {
+							"empty_tile_is2": { "name":"Empty tile is", "desc":"Set empty tiles as walkable or non-walkable.", "items":{"walkable":"walkable","non-walkable":"non-walkable"}}
+						}
+					},
+					"setcostat11": {
+						"list-name": "Set specific tile cost",
+						"display-text": "Set tile cost at [b]({0},{1})[/b] to [b]{2}[/b]",
+						"description": "Set a particular tile a specific cost that will override its natural value.",
+						"params": {
+							"tile_x0": { "name":"Tile X", "desc":"X coordinate of the tile you wish to set a specific cost"},
+							"tile_y1": { "name":"Tile Y", "desc":"Y coordinate of the tile you wish to set a specific cost"},
+							"cost2": { "name":"Cost", "desc":"The cost to set the tile to"}
+						}
+					},
+					"removecostat12": {
+						"list-name": "Remove specific tile cost",
+						"display-text": "Remove specific tile cost at [b]({0},{1})[/b]",
+						"description": "Removes the specific tile cost at this coordinate, reverting to its natural value.",
+						"params": {
+							"tile_x0": { "name":"Tile X", "desc":"X coordinate of the tile you wish to no longer have a specific cost"},
+							"tile_y1": { "name":"Tile Y", "desc":"Y coordinate of the tile you wish to no longer have a specific cost"}
+						}
+					},
+					"removeallcosts13": {
+						"list-name": "Remove all specific tile cost",
+						"display-text": "Remove all specific tile costs",
+						"description": "Removes all specific tile costs currently in effect."
+					},
+					"setcornercutting14": {
+						"list-name": "Set corning cutting",
+						"display-text": "Set corner cutting [b]{0}[/b]",
+						"description": "Enable or disable corner cutting when searching for a path.",
+						"params": {
+							"corning_cutting2": { "name":"Corning cutting", "desc":"Allows for corning cutting if enabled", "items":{"enabled":"enabled","disabled":"disabled"}}
+						}
+					},
+					"begindirectionalconditions15": {
+						"list-name": "Begin adding directional conditions at",
+						"display-text": "Begin adding directional conditions at [b]{0},{1}[/b]",
+						"description": "Begin adding directional conditions at a specific tile.",
+						"params": {
+							"tile_x0": { "name":"Tile X", "desc":"X coordinate of the tile where you wish to add a directional condition"},
+							"tile_y1": { "name":"Tile Y", "desc":"Y coordinate of the tile where you wish to add a directional condition"}
+						}
+					},
+					"adddirectionalcondition16": {
+						"list-name": "Add direction",
+						"display-text": "Add direction [i]{0}[/i]",
+						"description": "Add a directional condition for the current tile.",
+						"params": {
+							"direction8": { "name":"Direction", "desc":"Direction from which the tile can be entered.", "items":{"top":"TOP","top_right":"TOP_RIGHT","right":"RIGHT","bottom_right":"BOTTOM_RIGHT","bottom":"BOTTOM","bottom_left":"BOTTOM_LEFT","left":"LEFT","top_left":"TOP_LEFT"}}
+						}
+					},
+					"enddirectionalconditions17": {
+						"list-name": "End adding directional condition",
+						"display-text": "End adding directional condition for the current tile",
+						"description": "End adding directional condition at the current tile."
+					},
+					"cleardirectionalconditions18": {
+						"list-name": "Clear all directional conditions",
+						"display-text": "Clear all directional conditions",
+						"description": "Clear all currently added directional conditions."
+					}
+				},
+				"expressions": {
+					"pathlength": {
+						"description": "Returns the length of the specified path.",
+						"translated-name": "PathLength",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."}
+						}
+						},
+					"nodetilexat": {
+						"description": "Returns the X tile coordinate of the specified node index and path name.",
+						"translated-name": "NodeTileXAt",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."},
+							"nodeindex1": { "name":"NodeIndex", "desc":"The 0-based index of the node you wish to retrieve."}
+						}
+						},
+					"nodetileyat": {
+						"description": "Returns the Y tile coordinate of the specified node index and path name.",
+						"translated-name": "NodeTileYAt",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."},
+							"nodeindex1": { "name":"NodeIndex", "desc":"The 0-based index of the node you wish to retrieve."}
+						}
+						},
+					"nodelayoutxat": {
+						"description": "Returns the X layout coordinate of the specified node index and path name.",
+						"translated-name": "NodeLayoutXAt",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."},
+							"nodeindex1": { "name":"NodeIndex", "desc":"The 0-based index of the node you wish to retrieve."}
+						}
+						},
+					"nodelayoutyat": {
+						"description": "Returns the Y layout coordinate of the specified node index and path name.",
+						"translated-name": "NodeLayoutYAt",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."},
+							"nodeindex1": { "name":"NodeIndex", "desc":"The 0-based index of the node you wish to retrieve."}
+						}
+						},
+					"currenttag": {
+						"description": "Returns the current tag in a \"any path\" trigger.",
+						"translated-name": "CurrentTag"
+						},
+					"nodecostat": {
+						"description": "Returns the current cost at a specified node index and path name.",
+						"translated-name": "NodeCostAt",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."},
+							"nodeindex1": { "name":"NodeIndex", "desc":"The 0-based index of the node you wish to retrieve."}
+						}
+						},
+					"pathcost": {
+						"description": "Returns the total cost of a specific path name.",
+						"translated-name": "PathCost",
+						"params": {
+							"tag0": { "name":"Tag", "desc":"A tag, which can be anything you like, to distinguish between different pathing requests."}
+						}
+						},
+					"tilecostat": {
+						"description": "Returns the relative cost at a specific tile coordinate.",
+						"translated-name": "TileCostAt",
+						"params": {
+							"tilex0": { "name":"TileX", "desc":"X coordinate of the tile to get the cost from"},
+							"tiley1": { "name":"TileY", "desc":"Y coordinate of the tile to get the cost from"}
+						}
+						}
+				}
+			}
+		}
+	}
+}
