@@ -219,7 +219,7 @@
 			// start position
 			this.movingAngleStartData["x"] = this.wi.GetX();
 			this.movingAngleStartData["y"] = this.wi.GetY();
-			this.movingAngleStartData["a"] = clamp_angle_degrees(C3.angleTo(this.wi.GetX(), this.wi.GetY(), _x, _y));
+			this.movingAngleStartData["a"] = to_clamped_degrees(C3.angleTo(this.wi.GetX(), this.wi.GetY(), _x, _y));
 
 			if (this.isContinueMode)
 				this.move(this.remainDt);
@@ -237,7 +237,7 @@
 				var dx = this.wi.GetX() - this.movingAngleData["x"];
 				var dy = this.wi.GetY() - this.movingAngleData["y"];
 				if ((dx != 0) || (dy != 0))
-					this.movingAngleData["a"] = clamp_angle_degrees(Math.atan2(dy, dx));
+					this.movingAngleData["a"] = to_clamped_degrees(Math.atan2(dy, dx));
 			}
 			return this.movingAngleData["a"];
 		}
