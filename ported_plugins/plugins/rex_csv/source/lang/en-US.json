@@ -1,0 +1,376 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for CSV.",
+	"text": {
+		"plugins": {
+			"rex_csv": {
+				"name": "CSV",
+				"description": "Read 2d table from csv string.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_csv.html",
+				"properties": {
+					"delimiter": {
+						"name": "Delimiter",
+						"desc": "Set delimiter for splitting items."
+						},
+					"eval-mode": {
+						"name": "Eval mode",
+						"desc": "Enable \"Eval mode\" for parsing value.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"0:_load": "0: Load",
+					"set": "Set",
+					"convert": "Convert",
+					"page": "Page",
+					"resize": "Resize",
+					"delimiter": "Delimiter",
+					"sort": "Sort",
+					"for_each_col": "For each col",
+					"for_each_page": "For each page",
+					"for_each_row": "For each row",
+					"ın": "In",
+					"table:_at": "Table: At",
+					"for_each": "For Each",
+					"json": "JSON",
+					"table:_count": "Table: Count",
+					"csv": "CSV",
+					"col": "Col",
+					"row": "Row"
+				},
+				"conditions": {
+					"foreachcol0": {
+						"list-name": "For each col",
+						"display-text": "For each col",
+						"description": "Repeat the event for each column in the table."
+						},
+					"foreachrowıncol1": {
+						"list-name": "For each row in col",
+						"display-text": "For each row in column [i]{0}[/i]",
+						"description": "Repeat the event for each row in a column.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The column index."}
+						}
+						},
+					"foreachpage2": {
+						"list-name": "For each page",
+						"display-text": "For each page",
+						"description": "Repeat the event for each page."
+						},
+					"foreachrow3": {
+						"list-name": "For each row",
+						"display-text": "For each row",
+						"description": "Repeat the event for each row in the table."
+						},
+					"foreachcolınrow4": {
+						"list-name": "For each col in row",
+						"display-text": "For each col in a row [i]{0}[/i]",
+						"description": "Repeat the event for each column in a row.",
+						"params": {
+							"row0": { "name":"Row", "desc":"The row index."}
+						}
+						},
+					"ısdataıncol5": {
+						"list-name": "Data in col",
+						"display-text": "Data [i]{0}[/i] in col [i]{1}[/i]",
+						"description": "Return true if data in col.",
+						"params": {
+							"data0": { "name":"Data", "desc":"Data to compare."},
+							"col1": { "name":"Col", "desc":"The col index."}
+						}
+						},
+					"ısdataınrow6": {
+						"list-name": "Data in row",
+						"display-text": "Data [i]{0}[/i] in row [i]{1}[/i]",
+						"description": "Return true if data in row.",
+						"params": {
+							"data0": { "name":"Data", "desc":"Data to compare."},
+							"row1": { "name":"Row", "desc":"The row index."}
+						}
+						},
+					"ıskeyıncol7": {
+						"list-name": "Key in col",
+						"display-text": "Key [i]{0}[/i] in col",
+						"description": "Return true if key in col.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The col index."}
+						}
+						},
+					"ıskeyınrow8": {
+						"list-name": "Key in row",
+						"display-text": "Key [i]{0}[/i] in row",
+						"description": "Return true if key in row.",
+						"params": {
+							"key0": { "name":"Key", "desc":"The row index."}
+						}
+						},
+					"ıscellvalid9": {
+						"list-name": "Cell is valid",
+						"display-text": "([i]{0}[/i], [i]{1}[/i]) is valid",
+						"description": "Return true if the cell is valid.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The col index."},
+							"row1": { "name":"Row", "desc":"The row index."}
+						}
+						},
+					"hascol10": {
+						"list-name": "Has col",
+						"display-text": "Has col [i]{0}[/i]",
+						"description": "Return true if this column index is in table.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The col index."}
+						}
+						},
+					"hasrow11": {
+						"list-name": "Has row",
+						"display-text": "Has row [i]{0}[/i]",
+						"description": "Return true if this row index is in table.",
+						"params": {
+							"row0": { "name":"Row", "desc":"The row index."}
+						}
+						}
+				},
+				"actions": {
+					"loadcsv1": {
+						"list-name": "Load table",
+						"display-text": "Load table from csv string [i]{0}[/i]",
+						"description": "Load table from csv string.",
+						"params": {
+							"csv_string0": { "name":"CSV string", "desc":"The csv string for loading."}
+						}
+					},
+					"setcell2": {
+						"list-name": "Set value",
+						"display-text": "Set ([i]{0}[/i], [i]{1}[/i]) to [i]{2}[/i]",
+						"description": "Set the value in the table at current page.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The column index."},
+							"row1": { "name":"Row", "desc":"The row index."},
+							"value2": { "name":"Value", "desc":"The value to store."}
+						}
+					},
+					"clear3": {
+						"list-name": "Clear",
+						"display-text": "Clear",
+						"description": "Clear all cells."
+					},
+					"convertrow4": {
+						"list-name": "Convert row",
+						"display-text": "Convert cells type to [i]{1}[/i] on row [i]{0}[/i]",
+						"description": "Convert cells type in a row.",
+						"params": {
+							"row0": { "name":"Row", "desc":"The row index."},
+							"type3": { "name":"Type", "desc":"Conver type to numver.", "items":{"ınteger":"Integer","float":"Float"}}
+						}
+					},
+					"turnpage5": {
+						"list-name": "Turn page",
+						"display-text": "Turn the page to [i]{0}[/i]",
+						"description": "Turn the page.",
+						"params": {
+							"page0": { "name":"Page", "desc":"The index of page."}
+						}
+					},
+					"stringtopage6": {
+						"list-name": "Load one table",
+						"display-text": "Load table from JSON string [i]{0}[/i]",
+						"description": "Load table from JSON string.",
+						"params": {
+							"json_string0": { "name":"JSON string", "desc":"JSON string."}
+						}
+					},
+					"appendcol7": {
+						"list-name": "Append a column",
+						"display-text": "Append column [i]{0}[/i] with initial value to [i]{1}[/i]",
+						"description": "Append a column.",
+						"params": {
+							"col0": { "name":"Col", "desc":"Column index."},
+							"value1": { "name":"Value", "desc":"The initial value."}
+						}
+					},
+					"appendrow8": {
+						"list-name": "Append a row",
+						"display-text": "Append row [i]{0}[/i] with initial value to [i]{1}[/i]",
+						"description": "Append a row.",
+						"params": {
+							"row0": { "name":"Row", "desc":"Row index."},
+							"value1": { "name":"Value", "desc":"The initial value."}
+						}
+					},
+					"removecol9": {
+						"list-name": "Remove a column",
+						"display-text": "Remove column [i]{0}[/i]",
+						"description": "Remove a column.",
+						"params": {
+							"col_index0": { "name":"Col index", "desc":"Column index."}
+						}
+					},
+					"removerow10": {
+						"list-name": "Remove a row",
+						"display-text": "Remove row [i]{0}[/i]",
+						"description": "Remove a row.",
+						"params": {
+							"row_index0": { "name":"Row index", "desc":"Row index."}
+						}
+					},
+					"setdelimiter11": {
+						"list-name": "Set delimiter",
+						"display-text": "Set delimiter to [i]{0}[/i]",
+						"description": "Set delimiter for splitting items.",
+						"params": {
+							"delimiter0": { "name":"Delimiter", "desc":"Set delimiter for splitting items."}
+						}
+					},
+					"stringtoalltables12": {
+						"list-name": "Load all tables",
+						"display-text": "Load all tables from JSON string [i]{0}[/i]",
+						"description": "Load all tables from JSON string.",
+						"params": {
+							"json_string0": { "name":"JSON string", "desc":"JSON string."}
+						}
+					},
+					"sortcol13": {
+						"list-name": "Sort items in col",
+						"display-text": "Sort items in col [i]{0}[/i] , by [i]{1}[/i] order",
+						"description": "Sort items in col.",
+						"params": {
+							"col_index0": { "name":"Col index", "desc":"Col index."},
+							"order5": { "name":"Order", "desc":"Sorting order of item.", "items":{"ascending":"ascending","descending":"descending","logical ascending":"logical ascending","logical descending":"logical descending"}}
+						}
+					},
+					"sortrow14": {
+						"list-name": "Sort items in row",
+						"display-text": "Sort items in row [i]{0}[/i] , by [i]{1}[/i] order",
+						"description": "Sort items in row.",
+						"params": {
+							"row_index0": { "name":"Row index", "desc":"Row index."},
+							"order5": { "name":"Order", "desc":"Sorting order of item.", "items":{"ascending":"ascending","descending":"descending","logical ascending":"logical ascending","logical descending":"logical descending"}}
+						}
+					},
+					"setcellatpage15": {
+						"list-name": "Set value at page",
+						"display-text": "Set value at ([i]{0}[/i], [i]{1}[/i], [i]{2}[/i]) to [i]{3}[/i]",
+						"description": "Set the value in the table at a specific page.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The column index."},
+							"row1": { "name":"Row", "desc":"The row index."},
+							"page2": { "name":"Page", "desc":"The index of page."},
+							"value3": { "name":"Value", "desc":"The value to store."}
+						}
+					},
+					"addtocell16": {
+						"list-name": "Add to",
+						"display-text": "Add [i]{2}[/i] to ([i]{0}[/i], [i]{1}[/i])",
+						"description": "Add to the value in the table at current page.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The column index."},
+							"row1": { "name":"Row", "desc":"The row index."},
+							"value2": { "name":"Value", "desc":"The value to store."}
+						}
+					},
+					"addtocellatpage17": {
+						"list-name": "Add at page",
+						"display-text": "Add [i]{3}[/i] to ([i]{0}[/i], [i]{1}[/i], [i]{2}[/i])",
+						"description": "Add to the value in the table at a specific page.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The column index."},
+							"row1": { "name":"Row", "desc":"The row index."},
+							"page2": { "name":"Page", "desc":"The index of page."},
+							"value3": { "name":"Value", "desc":"The value to store."}
+						}
+					},
+					"convertcol18": {
+						"list-name": "Convert col",
+						"display-text": "Convert cells type to [i]{1}[/i] on cl [i]{0}[/i]",
+						"description": "Convert cells type in a col.",
+						"params": {
+							"col0": { "name":"Col", "desc":"The column index."},
+							"type3": { "name":"Type", "desc":"Conver type to numver.", "items":{"ınteger":"Integer","float":"Float"}}
+						}
+					}
+				},
+				"expressions": {
+					"at0": {
+						"description": "Get value from current table. Add page index at 3rd parameter to turn the page. Add default value at 4th parameter for invalid value.",
+						"translated-name": "At",
+						"params": {
+							"col0": { "name":"Col", "desc":"The column index."},
+							"row1": { "name":"Row", "desc":"The row index."}
+						}
+						},
+					"curcol1": {
+						"description": "Get the current column index in a For Each loop.",
+						"translated-name": "CurCol"
+						},
+					"currow2": {
+						"description": "Get the current row index in a For Each loop.",
+						"translated-name": "CurRow"
+						},
+					"curvalue3": {
+						"description": "Get the current value in a For Each loop.",
+						"translated-name": "CurValue"
+						},
+					"atcol4": {
+						"description": "Get the column index in the last At expression.",
+						"translated-name": "AtCol"
+						},
+					"atrow5": {
+						"description": "Get the row index in the last At expression.",
+						"translated-name": "AtRow"
+						},
+					"atpage6": {
+						"description": "Get the page index in the last At expression.",
+						"translated-name": "AtPage"
+						},
+					"curpage7": {
+						"description": "Get the current page index in a For Each loop.",
+						"translated-name": "CurPage"
+						},
+					"tabletostring8": {
+						"description": "Transfer current table to JSON string.",
+						"translated-name": "TableToString"
+						},
+					"colcnt9": {
+						"description": "Get column count.",
+						"translated-name": "ColCnt"
+						},
+					"rowcnt10": {
+						"description": "Get row count.",
+						"translated-name": "RowCnt"
+						},
+					"delimiter11": {
+						"description": "Get delimiter.",
+						"translated-name": "Delimiter"
+						},
+					"alltalbestostring12": {
+						"description": "Transfer all tables to a JSON string.",
+						"translated-name": "AllTalbesToString"
+						},
+					"tabletocsv13": {
+						"description": "Transfer current table to csv string.",
+						"translated-name": "TableToCSV"
+						},
+					"nextcol14": {
+						"description": "Get next col index of a col index in current table. Add 2nd parameter to a specific col index, or uses AtCol if no col index assigned.",
+						"translated-name": "NextCol"
+						},
+					"previouscol15": {
+						"description": "Get previous col index of a col index in current table. Add 2nd parameter to a specific col index, or uses AtCol if no col index assigned.",
+						"translated-name": "PreviousCol"
+						},
+					"nextrow16": {
+						"description": "Get next row index of a col index in current table. Add 2nd parameter to a specific rpw index, or uses AtRow if no row index assigned.",
+						"translated-name": "NextRow"
+						},
+					"previousrow17": {
+						"description": "Get previous row index of a col index in current table. Add 2nd parameter to a specific rpw index, or uses AtRow if no row index assigned.",
+						"translated-name": "PreviousRow"
+						}
+				}
+			}
+		}
+	}
+}
