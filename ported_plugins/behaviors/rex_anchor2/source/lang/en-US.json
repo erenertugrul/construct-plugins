@@ -1,0 +1,117 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Anchor ratio.",
+	"text": {
+		"behaviors": {
+			"rex_anchor2": {
+				"name": "Anchor ratio",
+				"description": "Position objects relative to the size of the window.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_anchor2.html",
+				"properties": {
+					"horizontal-align-mode": {
+						"name": "Horizontal align mode",
+						"desc": "Anchor the object's left edge to window horizontal position.",
+						"items": {
+							"left edge":"Left edge",
+							"right edge":"Right edge",
+							"center":"Center",
+							"hotspot":"Hotspot",
+							"none":"None"
+							}
+						},
+					"horizontal-position": {
+						"name": "Horizontal position",
+						"desc": "Horizontal position of window, 0 - 1, 0 = window left, 0.5 = window center, 1 = window right."
+						},
+					"vertical-align-mode": {
+						"name": "Vertical align mode",
+						"desc": "Anchor the object's left edge to window vertical position.",
+						"items": {
+							"top edge":"Top edge",
+							"bottom edge":"Bottom edge",
+							"center":"Center",
+							"hotspot":"Hotspot",
+							"none":"None"
+							}
+						},
+					"vertical-position": {
+						"name": "Vertical position",
+						"desc": "Vertical position of window, 0 - 1, 0 = window top, 0.5 = window center, 1 = window bottom."
+						},
+					"ınitial-state": {
+						"name": "Initial state",
+						"desc": "Whether to initially have the behavior enabled or disabled.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"set-once": {
+						"name": "Set once",
+						"desc": "Enable to set position once when window size changed.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"anchor": "Anchor",
+					"horizontal": "Horizontal",
+					"vertical": "Vertical"
+				},
+				"conditions": {
+					"onanchored1": {
+						"list-name": "On anchored",
+						"display-text": "On {my} anchored",
+						"description": "Triggered when anchored."
+						}
+				},
+				"actions": {
+					"setenabled0": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} {0}",
+						"description": "Enable or disable the behavior.",
+						"params": {
+							"state2": { "name":"State", "desc":"Whether to enable or disable the behavior.", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					},
+					"sethorizontalalignmode1": {
+						"list-name": "Set horizontal align mode",
+						"display-text": "{my} set horizontal align mode to {0}",
+						"description": "Set horizontal align mode.",
+						"params": {
+							"mode4": { "name":"Mode", "desc":"Align mode of horizontal.", "items":{"left edge":"Left edge","right edge":"Right edge","center":"Center","hotspot":"Hotspot"}}
+						}
+					},
+					"sethorizontalposition2": {
+						"list-name": "Set horizontal position",
+						"display-text": "{my} set horizontal position to {0}",
+						"description": "Set horizontal position.",
+						"params": {
+							"position0": { "name":"Position", "desc":"position of window, 0 - 1, 0 = window left, 0.5 = window center, 1 = window right."}
+						}
+					},
+					"setverticalalignmode3": {
+						"list-name": "Set vertical align mode",
+						"display-text": "{my} set vertical align mode to {0}",
+						"description": "Set vertical align mode.",
+						"params": {
+							"mode4": { "name":"Mode", "desc":"Align mode of horizontal.", "items":{"top edge":"Top edge","bottom edge":"Bottom edge","center":"Center","hotspot":"Hotspot"}}
+						}
+					},
+					"setverticalposition4": {
+						"list-name": "Set vertical position",
+						"display-text": "{my} set vertical position to {0}",
+						"description": "Set vertical position.",
+						"params": {
+							"position0": { "name":"Position", "desc":"position of window, 0 - 1, 0 = window top, 0.5 = window center, 1 = window bottom."}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

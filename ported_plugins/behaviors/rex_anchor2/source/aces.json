@@ -1,0 +1,78 @@
+{
+	"anchor": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onanchored1",
+				"scriptName": "OnAnchored",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setenabled0",
+				"scriptName": "SetEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"horizontal": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "sethorizontalalignmode1",
+				"scriptName": "SetHorizontalAlignMode",
+				"highlight": false,
+				"params": [
+					{"id":"mode4", "type":"combo", "items":["left edge","right edge","center","hotspot"]}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "sethorizontalposition2",
+				"scriptName": "SetHorizontalPosition",
+				"highlight": false,
+				"params": [
+					{"id":"position0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"vertical": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "setverticalalignmode3",
+				"scriptName": "SetVerticalAlignMode",
+				"highlight": false,
+				"params": [
+					{"id":"mode4", "type":"combo", "items":["top edge","bottom edge","center","hotspot"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "setverticalposition4",
+				"scriptName": "SetVerticalPosition",
+				"highlight": false,
+				"params": [
+					{"id":"position0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}
