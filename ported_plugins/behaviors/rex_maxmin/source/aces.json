@@ -1,0 +1,147 @@
+{
+	"value": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onvaluechanging0",
+				"scriptName": "OnValueChanging",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "comparevalue1",
+				"scriptName": "CompareValue",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"value1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "ısvaluechanged2",
+				"scriptName": "IsValueChanged",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "comparedeltavalue3",
+				"scriptName": "CompareDeltaValue",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"value1", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setvalue0",
+				"scriptName": "SetValue",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number", "initialValue":"100"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "addto3",
+				"scriptName": "AddTo",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "subtractfrom4",
+				"scriptName": "SubtractFrom",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number", "initialValue":"1"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "value1",
+				"expressionName": "Value",
+				"scriptName": "Value",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "percentage4",
+				"expressionName": "Percentage",
+				"scriptName": "Percentage",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "prevalue5",
+				"expressionName": "PreValue",
+				"scriptName": "PreValue",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"bound": {
+		"conditions": [
+			{
+				"c2id": 4,
+				"id": "comparebound4",
+				"scriptName": "CompareBound",
+				"highlight": false,
+				"params": [
+					{"id":"bound2", "type":"combo", "items":["min","max"]},
+					{"id":"comparison3", "type":"cmp"},
+					{"id":"value4", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setmax1",
+				"scriptName": "SetMax",
+				"highlight": false,
+				"params": [
+					{"id":"max0", "type":"number", "initialValue":"100"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setmin2",
+				"scriptName": "SetMin",
+				"highlight": false,
+				"params": [
+					{"id":"min0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "max2",
+				"expressionName": "Max",
+				"scriptName": "Max",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "min3",
+				"expressionName": "Min",
+				"scriptName": "Min",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

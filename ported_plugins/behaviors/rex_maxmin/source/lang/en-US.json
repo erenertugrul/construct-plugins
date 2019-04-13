@@ -1,0 +1,135 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Max-min.",
+	"text": {
+		"behaviors": {
+			"rex_maxmin": {
+				"name": "Max-min",
+				"description": "A variable which clamped between maximum and minimum bound.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_maxmin.html",
+				"properties": {
+					"ınitial": {
+						"name": "Initial",
+						"desc": "Initial value."
+						},
+					"max": {
+						"name": "Max",
+						"desc": "Maximum bound."
+						},
+					"min": {
+						"name": "Min",
+						"desc": "Minimum bound."
+						}
+				},
+				"aceCategories": {
+					"value": "Value",
+					"bound": "Bound"
+				},
+				"conditions": {
+					"onvaluechanging0": {
+						"list-name": "On value changing",
+						"display-text": "On {my} changed",
+						"description": "Triggered when value changing."
+						},
+					"comparevalue1": {
+						"list-name": "Compare value",
+						"display-text": "{my} {0} {1}",
+						"description": "Compare the current value.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current value."},
+							"value1": { "name":"Value", "desc":"The value to compare the current value to."}
+						}
+						},
+					"ısvaluechanged2": {
+						"list-name": "Is value changed",
+						"display-text": "Is {my} changed",
+						"description": "Return true if value changed."
+						},
+					"comparedeltavalue3": {
+						"list-name": "Compare delta value",
+						"display-text": "Delta {my} {0} {1}",
+						"description": "Compare the delta value which is equal to current value - previous value.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current value."},
+							"value1": { "name":"Value", "desc":"The value to compare the delta value to."}
+						}
+						},
+					"comparebound4": {
+						"list-name": "Compare bound",
+						"display-text": "{my} [i]{0}[/i] {1} {2}",
+						"description": "Compare bound.",
+						"params": {
+							"bound2": { "name":"Bound", "desc":"Maximum bound or minimum bound to compare.", "items":{"min":"Min","max":"Max"}},
+							"comparison3": { "name":"Comparison", "desc":"Choose the way to compare the current value."},
+							"value4": { "name":"Value", "desc":"The value to compare the bound to."}
+						}
+						}
+				},
+				"actions": {
+					"setvalue0": {
+						"list-name": "Set value",
+						"display-text": "Set {my} to [i]{0}[/i]",
+						"description": "Set value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Value."}
+						}
+					},
+					"setmax1": {
+						"list-name": "Set maximum bound",
+						"display-text": "Set {my} maximum bound to [i]{0}[/i]",
+						"description": "Set maximum bound.",
+						"params": {
+							"max0": { "name":"Max", "desc":"Maximum bound."}
+						}
+					},
+					"setmin2": {
+						"list-name": "Set minimum bound",
+						"display-text": "Set {my} minimum bound to [i]{0}[/i]",
+						"description": "Set minimum bound.",
+						"params": {
+							"min0": { "name":"Min", "desc":"Minimum bound."}
+						}
+					},
+					"addto3": {
+						"list-name": "Add to",
+						"display-text": "Add [i]{0}[/i] to {my}",
+						"description": "Add to the value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Value to add to this variable."}
+						}
+					},
+					"subtractfrom4": {
+						"list-name": "Subtract from",
+						"display-text": "Subtract [i]{0}[/i] from {my}",
+						"description": "Subtract from the value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Value to subtract from this variable."}
+						}
+					}
+				},
+				"expressions": {
+					"value1": {
+						"description": "Get current value.",
+						"translated-name": "Value"
+						},
+					"max2": {
+						"description": "Get maximum bound.",
+						"translated-name": "Max"
+						},
+					"min3": {
+						"description": "Get minimum bound.",
+						"translated-name": "Min"
+						},
+					"percentage4": {
+						"description": "Get percentage of current value in bounds.",
+						"translated-name": "Percentage"
+						},
+					"prevalue5": {
+						"description": "Get previous value.",
+						"translated-name": "PreValue"
+						}
+				}
+			}
+		}
+	}
+}
