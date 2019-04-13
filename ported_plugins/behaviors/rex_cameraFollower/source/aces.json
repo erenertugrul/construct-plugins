@@ -1,0 +1,61 @@
+{
+	"mving_ratio": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setmovingratiox1",
+				"scriptName": "SetMovingRatioX",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setmovingratioy2",
+				"scriptName": "SetMovingRatioY",
+				"highlight": false,
+				"params": [
+					{"id":"y0", "type":"number", "initialValue":"1"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "movingratiox1",
+				"expressionName": "MovingRatioX",
+				"scriptName": "MovingRatioX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "movingratioy2",
+				"expressionName": "MovingRatioY",
+				"scriptName": "MovingRatioY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"follower": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 11,
+				"id": "setfollowingenable11",
+				"scriptName": "SetFollowingEnable",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

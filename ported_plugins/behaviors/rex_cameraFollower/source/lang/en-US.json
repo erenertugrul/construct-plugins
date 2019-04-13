@@ -1,0 +1,81 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Camera follower.",
+	"text": {
+		"behaviors": {
+			"rex_camerafollower": {
+				"name": "Camera follower",
+				"description": "Move object to follow camera with a ratio. It could be used to simulate parallax.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_camerafollower.html",
+				"properties": {
+					"type": {
+						"name": "Type",
+						"desc": "Object type.",
+						"items": {
+							"follower":"Follower",
+							"camera":"Camera"
+							}
+						},
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish follower followers camera.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"x": {
+						"name": "X",
+						"desc": "Moving ratio of position X of follower."
+						},
+					"y": {
+						"name": "Y",
+						"desc": "Moving ratio of position Y of follower."
+						}
+				},
+				"aceCategories": {
+					"mving_ratio": "Mving ratio",
+					"follower": "Follower"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setmovingratiox1": {
+						"list-name": "Set moving ratio X",
+						"display-text": "{my} set moving ratio X to [i]{0}[/i]",
+						"description": "Set moving ratio of position X.",
+						"params": {
+							"x0": { "name":"X", "desc":"Moving ratio of position X."}
+						}
+					},
+					"setmovingratioy2": {
+						"list-name": "Set moving ratio Y",
+						"display-text": "{my} set moving ratio Y to [i]{0}[/i]",
+						"description": "Set moving ratio of position Y.",
+						"params": {
+							"y0": { "name":"Y", "desc":"Moving ratio of position Y."}
+						}
+					},
+					"setfollowingenable11": {
+						"list-name": "Set following",
+						"display-text": "{my} set following to [i]{0}[/i]",
+						"description": "Enable or disable following.",
+						"params": {
+							"state2": { "name":"State", "desc":"Enable or disable following.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					}
+				},
+				"expressions": {
+					"movingratiox1": {
+						"description": "Get moving ratio of position X.",
+						"translated-name": "MovingRatioX"
+						},
+					"movingratioy2": {
+						"description": "Get moving ratio of position Y.",
+						"translated-name": "MovingRatioY"
+						}
+				}
+			}
+		}
+	}
+}
