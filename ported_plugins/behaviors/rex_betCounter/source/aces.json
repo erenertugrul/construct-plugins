@@ -1,0 +1,94 @@
+{
+	"beat": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "beat0",
+				"scriptName": "Beat",
+				"highlight": false,
+				"params": [
+					{"id":"count0", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "clean1",
+				"scriptName": "Clean",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"value": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "comparebetcount0",
+				"scriptName": "CompareBetCount",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"count1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "onvaluechanged1",
+				"scriptName": "OnValueChanged",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "onvaluechanged2",
+				"scriptName": "OnValueChanged",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"from0", "type":"number", "initialValue":"0"},
+					{"id":"to1", "type":"number", "initialValue":"1"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"bet_count": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "betcount0",
+				"expressionName": "BetCount",
+				"scriptName": "BetCount",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"beat_count": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "beatcount1",
+				"expressionName": "BeatCount",
+				"scriptName": "BeatCount",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

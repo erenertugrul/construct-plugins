@@ -1,0 +1,75 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Beat Counter.",
+	"text": {
+		"behaviors": {
+			"rex_betcounter": {
+				"name": "Beat Counter",
+				"description": "Get beat count in latest duration.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_betCounter.html",
+				"properties": {
+					"ınterval": {
+						"name": "Interval",
+						"desc": "Count interval, in second."
+						}
+				},
+				"aceCategories": {
+					"beat": "Beat",
+					"value": "Value",
+					"bet_count": "Bet count",
+					"beat_count": "Beat count"
+				},
+				"conditions": {
+					"comparebetcount0": {
+						"list-name": "Compare bet count",
+						"display-text": "{my} bet count {0} {1}",
+						"description": "Compare the bet count.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current speed."},
+							"count1": { "name":"Count", "desc":"Bet count."}
+						}
+						},
+					"onvaluechanged1": {
+						"list-name": "On value changed",
+						"display-text": "On {my} value changed",
+						"description": "Triggered when value changed."
+						},
+					"onvaluechanged2": {
+						"list-name": "On value changed from ...to ...",
+						"display-text": "On {my} value changed from [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Triggered when value changed.",
+						"params": {
+							"from0": { "name":"From", "desc":"Value changed from."},
+							"to1": { "name":"To", "desc":"Value changed to."}
+						}
+						}
+				},
+				"actions": {
+					"beat0": {
+						"list-name": "Beat",
+						"display-text": "{my} beat [i]{0}[/i]",
+						"description": "Increase beat counter.",
+						"params": {
+							"count0": { "name":"Count", "desc":"Bet count."}
+						}
+					},
+					"clean1": {
+						"list-name": "Clean",
+						"display-text": "{my} clean",
+						"description": "Clean beat counter."
+					}
+				},
+				"expressions": {
+					"betcount0": {
+						"description": "Get bet count.",
+						"translated-name": "BetCount"
+						},
+					"beatcount1": {
+						"description": "Get beat count.",
+						"translated-name": "BeatCount"
+						}
+				}
+			}
+		}
+	}
+}
