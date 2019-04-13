@@ -308,6 +308,66 @@ If you want to support me, you can make a donation on patreon or itch.io
 </tbody>
 <tbody>
 <tr>
+  <td>rex_anchor2</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_anchor2/dist/rex_anchor2.c3addon">rex_anchor2.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_anchor_mode</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_anchor_mode/dist/rex_anchor_mode.c3addon">rex_anchor_mode.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_anglelock</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_anglelock/dist/rex_anglelock.c3addon">rex_anglelock.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_betCounter</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_betCounter/dist/rex_betCounter.c3addon">rex_betCounter.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_cameraFollower</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_cameraFollower/dist/rex_cameraFollower.c3addon">rex_cameraFollower.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_maxmin</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_maxmin/dist/rex_maxmin.c3addon">rex_maxmin.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
   <td>rex_firebase</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/releases/download/rex_firebase/rex_firebase_pack.zip">rex_firebase_bundle.zip</a>
 </td>
