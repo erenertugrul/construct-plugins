@@ -1,0 +1,36 @@
+{
+	"enable": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setactivated0",
+				"scriptName": "SetActivated",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"angle": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setlockedangle1",
+				"scriptName": "SetLockedAngle",
+				"highlight": false,
+				"params": [
+					{"id":"angle0", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

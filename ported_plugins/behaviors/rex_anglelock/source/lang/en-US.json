@@ -1,0 +1,53 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Angle lock.",
+	"text": {
+		"behaviors": {
+			"rex_anglelock": {
+				"name": "Angle lock",
+				"description": "Lock the sprite angle.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_anglelock.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"angle": {
+						"name": "Angle",
+						"desc": "The angle of sprite, in degree."
+						}
+				},
+				"aceCategories": {
+					"enable": "Enable",
+					"angle": "Angle"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setactivated0": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} {0}",
+						"description": "Enable or disable the behavior.",
+						"params": {
+							"state2": { "name":"State", "desc":"Whether to enable or disable the behavior.", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					},
+					"setlockedangle1": {
+						"list-name": "Set locked angle",
+						"display-text": "Set {my} locked angle to {0}",
+						"description": "Set locked angle, in degree.",
+						"params": {
+							"angle0": { "name":"Angle", "desc":"The locked angle, in degree."}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

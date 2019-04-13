@@ -1,0 +1,32 @@
+{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "Angle lock",
+	"id": "rex_anglelock",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_anglelock.html",
+	"documentation": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_anglelock.html",
+	"description": "Lock the sprite angle.",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"c3runtime/behavior.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"behavior.js",
+		"type.js",
+		"instance.js"
+	]
+}
