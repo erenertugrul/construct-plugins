@@ -1,0 +1,87 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Anchor mod.",
+	"text": {
+		"behaviors": {
+			"rex_anchor_mod": {
+				"name": "Anchor mod",
+				"description": "Position objects relative to the size of the window.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_anchor_mod.html",
+				"properties": {
+					"left-edge": {
+						"name": "Left edge",
+						"desc": "Anchor the object's left edge to a window edge.",
+						"items": {
+							"window left":"Window left",
+							"window right":"Window right",
+							"none":"None"
+							}
+						},
+					"top-edge": {
+						"name": "Top edge",
+						"desc": "Anchor the object's top edge to a window edge.",
+						"items": {
+							"window top":"Window top",
+							"window bottom":"Window bottom",
+							"none":"None"
+							}
+						},
+					"right-edge": {
+						"name": "Right edge",
+						"desc": "Anchor the object's right edge.",
+						"items": {
+							"none":"None",
+							"window right":"Window right"
+							}
+						},
+					"bottom-edge": {
+						"name": "Bottom edge",
+						"desc": "Anchor the object's bottom edge.",
+						"items": {
+							"none":"None",
+							"window bottom":"Window bottom"
+							}
+						},
+					"ınitial-state": {
+						"name": "Initial state",
+						"desc": "Whether to initially have the behavior enabled or disabled.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"set-once": {
+						"name": "Set once",
+						"desc": "Enable to set position once when window size changed.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"anchor": "Anchor"
+				},
+				"conditions": {
+					"onanchored1": {
+						"list-name": "On anchored",
+						"display-text": "On {my} anchored",
+						"description": "Triggered when anchored."
+						}
+				},
+				"actions": {
+					"setenabled0": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} {0}",
+						"description": "Enable or disable the behavior.",
+						"params": {
+							"state2": { "name":"State", "desc":"Whether to enable or disable the behavior.", "items":{"disabled":"disabled","enabled":"enabled"}}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

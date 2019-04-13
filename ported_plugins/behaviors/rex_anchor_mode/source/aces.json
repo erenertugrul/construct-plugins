@@ -1,0 +1,26 @@
+{
+	"anchor": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onanchored1",
+				"scriptName": "OnAnchored",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setenabled0",
+				"scriptName": "SetEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}
