@@ -245,35 +245,35 @@ cr.plugins_.SweetAlert = function(runtime) {
         /////////////////////////////////////
         _swal({
             /////////////////////////////////////
-            ["type"]: self.getType(type_),
-            ["title"]: title_,
-            ["html"]: input,
+            "type": self.getType(type_),
+            "title": title_,
+            "html": input,
+            ///////////////////////////////////
+            "background": self["style"]["background"],
+            "color": self["style"]["color"],
+            "position": self["style"]["position"],
+            "width": self["style"]["width"],
+            ///////////////////////////////////
+            "buttonsStyling": true,
+            "focusConfirm": false,
+            "focusCancel": false,
+            "confirmButtonText": confirm_,
+            "showConfirmButton": (confirm_),
+            "cancelButtonText": cancel_,
+            "showCancelButton": (cancel_),
+            "confirmButtonColor": self["style"]["confirm"],
+            "cancelButtonColor": self["style"]["cancel"],
+            "reverseButtons": self["style"]["reverse"],
+            ///////////////////////////////////
+            "allowEscapeKey": allow_escapekey_,
+            "allowOutsideClick": allow_outsideclick_,
             /////////////////////////////////////
-            ["background"]: self["style"]["background"],
-            ["color"]: self["style"]["color"],
-            ["position"]: self["style"]["position"],
-            ["width"]: self["style"]["width"],
-            /////////////////////////////////////
-            ["buttonsStyling"]: true,
-            ["focusConfirm"]: false,
-            ["focusCancel"]: false,
-            ["confirmButtonText"]: confirm_,
-            ["showConfirmButton"]: (confirm_),
-            ["cancelButtonText"]: cancel_,
-            ["showCancelButton"]: (cancel_),
-            ["confirmButtonColor"]: self["style"]["confirm"],
-            ["cancelButtonColor"]: self["style"]["cancel"],
-            ["reverseButtons"]: self["style"]["reverse"],
-            /////////////////////////////////////
-            ["allowEscapeKey"]: allow_escapekey_,
-            ["allowOutsideClick"]: allow_outsideclick_,
-            /////////////////////////////////////
-            ["onOpen"]: function () {
+            "onOpen": function () {
                 self["open"] = 1;
                 self["tag"] = tag_;
                 self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnOpen, self);
             },
-            ["preConfirm"]: function() {
+            "preConfirm": function() {
                 return new Promise(function(resolve) {
                     for (var i = 0; i < params_.length; i++) {
                         var validate;
@@ -344,37 +344,37 @@ cr.plugins_.SweetAlert = function(runtime) {
         /////////////////////////////////////
 		_swal({
             /////////////////////////////////////
-            ["type"]: self.getType(type_),
-            ["title"]: title_,
-            ["text"]: text_,
-            ["input"]: 'radio',
-            ["inputOptions"]: inputOptions,
+            "type": self.getType(type_),
+            "title": title_,
+            "text": text_,
+            "input": 'radio',
+            "inputOptions": inputOptions,
+            ///////////////////////////////////
+            "background": self.style["background"],
+            "color": self.style["color"],
+            "position": self.style["position"],
+            "width": self.style["width"],
+            ///////////////////////////////////
+            "buttonsStyling": true,
+            "focusConfirm": false,
+            "focusCancel": false,
+            "confirmButtonText": confirm_,
+            "showConfirmButton": (confirm_),
+            "cancelButtonText": cancel_,
+            "showCancelButton": (cancel_),
+            "confirmButtonColor": self.style["confirm"],
+            "cancelButtonColor": self.style["cancel"],
+            "reverseButtons": self.style["reverse"],
+            ///////////////////////////////////
+            "allowEscapeKey": allow_escapekey_,
+            "allowOutsideClick": allow_outsideclick_,
             /////////////////////////////////////
-            ["background"]: self.style["background"],
-            ["color"]: self.style["color"],
-            ["position"]: self.style["position"],
-            ["width"]: self.style["width"],
-            /////////////////////////////////////
-            ["buttonsStyling"]: true,
-            ["focusConfirm"]: false,
-            ["focusCancel"]: false,
-            ["confirmButtonText"]: confirm_,
-            ["showConfirmButton"]: (confirm_),
-            ["cancelButtonText"]: cancel_,
-            ["showCancelButton"]: (cancel_),
-            ["confirmButtonColor"]: self.style["confirm"],
-            ["cancelButtonColor"]: self.style["cancel"],
-            ["reverseButtons"]: self.style["reverse"],
-            /////////////////////////////////////
-            ["allowEscapeKey"]: allow_escapekey_,
-            ["allowOutsideClick"]: allow_outsideclick_,
-            /////////////////////////////////////
-            ["onOpen"]: function () {
+            "onOpen": function () {
                 self["open"] = 1;
                 self["tag"] = tag_;
                 self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnOpen, self);
             },
-			["inputValidator"]: function (result) {
+			"inputValidator": function (result) {
 		    	return new Promise(function (resolve) {
 		    		if (!result && error_)
 		    			_swal["showValidationError"](self["error"]["radio"]);
@@ -404,29 +404,29 @@ cr.plugins_.SweetAlert = function(runtime) {
         /////////////////////////////////////
         _swal({
             /////////////////////////////////////
-            ["type"]: self.getType(type_),
-            ["title"]: title_,
-            ["text"]: text_,
-            ["timer"]: timer_ * 1000,
-            /////////////////////////////////////
-            ["background"]: self["style"]["background"],
-            ["color"]: self["style"]["color"],
-            ["position"]: self["style"]["position"],
-            ["width"]: self["style"]["width"],
-            /////////////////////////////////////
-            ["showConfirmButton"]: false,
-            ["showCancelButton"]: false,
-            /////////////////////////////////////
-            ["allowEscapeKey"]: allow_escapekey_,
-            ["allowOutsideClick"]: allow_outsideclick_,
-            /////////////////////////////////////
-            ["onOpen"]: function () {
+            "type": self.getType(type_),
+            "title": title_,
+            "text": text_,
+            "timer": timer_ * 1000,
+            ///////////////////////////////////
+            "background": self["style"]["background"],
+            "color": self["style"]["color"],
+            "position": self["style"]["position"],
+            "width": self["style"]["width"],
+            ///////////////////////////////////
+            "showConfirmButton": false,
+            "showCancelButton": false,
+            ///////////////////////////////////
+            "allowEscapeKey": allow_escapekey_,
+            "allowOutsideClick": allow_outsideclick_,
+            ///////////////////////////////////
+            "onOpen": function () {
                 _swal["showLoading"]();
                 self["open"] = 1;
                 self["tag"] = tag_;
                 self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnOpen, self);
             },
-            ["onClose"]: function () {
+            "onClose": function () {
             	self["open"] = 0;
             	self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnClose, self);
                 self.runtime.trigger(cr.plugins_.SweetAlert.prototype.cnds.OnTimeOut, self);
@@ -481,29 +481,29 @@ cr.plugins_.SweetAlert = function(runtime) {
         var setDefault = function(i) {
             _swal["setDefaults"]({
                 /////////////////////////////////////
-                ["html"]: params_[i]+"<br/>"+self.array[i]['html'],
-                ["currentProgressStep"]: i,
-                ["progressSteps"]: progressSteps,
-                /////////////////////////////////////
-                ["background"]: self["style"]["background"],
-                ["color"]: self["style"]["color"],
-                ["position"]: self["style"]["position"],
-                ["width"]: self["style"]["width"],
-                /////////////////////////////////////
-                ["buttonsStyling"]: true,
-                ["showCancelButton"]: true,
-                ["focusConfirm"]: false,
-                ["focusCancel"]: false,
-                ["confirmButtonText"]: i < steps.length - 1 ? next_ : confirm_,
-                ["cancelButtonText"]: i > 0 ? back_ : cancel_,
-                ["confirmButtonColor"]: self["style"]["confirm"],
-                ["cancelButtonColor"]: self["style"]["cancel"],
-                ["reverseButtons"]: self["style"]["reverse"],
-                /////////////////////////////////////
-                ["allowEscapeKey"]: allow_escapekey_,
-                ["allowOutsideClick"]: allow_outsideclick_,
-                /////////////////////////////////////
-                ["preConfirm"]: function() {
+                "html": params_[i]+"<br/>"+self.array[i]['html'],
+                "currentProgressStep": i,
+                "progressSteps": progressSteps,
+                ///////////////////////////////////
+                "background": self["style"]["background"],
+                "color": self["style"]["color"],
+                "position": self["style"]["position"],
+                "width": self["style"]["width"],
+                ///////////////////////////////////
+                "buttonsStyling": true,
+                "showCancelButton": true,
+                "focusConfirm": false,
+                "focusCancel": false,
+                "confirmButtonText": i < steps.length - 1 ? next_ : confirm_,
+                "cancelButtonText": i > 0 ? back_ : cancel_,
+                "confirmButtonColor": self["style"]["confirm"],
+                "cancelButtonColor": self["style"]["cancel"],
+                "reverseButtons": self["style"]["reverse"],
+                ///////////////////////////////////
+                "allowEscapeKey": allow_escapekey_,
+                "allowOutsideClick": allow_outsideclick_,
+                ///////////////////////////////////
+                "preConfirm": function() {
                     return new Promise(function(resolve) {
                     	var data = [];
                         var validate;
