@@ -1,0 +1,85 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for C3ScormPlugin.",
+	"text": {
+		"plugins": {
+			"scormc2": {
+				"name": "C3 Scorm Plugin",
+				"description": "A Scorm 1.2 and 2004 Plugin for Construct 3",
+				"properties": {
+				},
+				"aceCategories": {
+					"custom": "Custom"
+				},
+				"conditions": {
+					"isScormInitialised": {
+						"list-name": "Is scorm initialised",
+						"display-text": "Is scorm initialised",
+						"description": "Check if the game is connected to the LMS",
+						"params": {
+						}
+					},
+					"isScormOnError": {
+						"list-name": "Is scorm on error",
+						"display-text": "Is scorm on error",
+						"description": "Check if an error occured",
+						"params": {
+						}
+					}
+				},
+				"actions": {
+					"initialiseLMS": {
+						"list-name": "Initialise LMS",
+						"display-text": "Initialise LMS",
+						"description": "Initialise connexion to the LMS."
+					},
+					"setLMSValue": {
+						"list-name": "Set LMS Value",
+						"display-text": "Set LMS Value {0} - {1}",
+						"description": "Update a value on the LMS (refer on the Scorm 1.2 / 2004 documentation for possible values).",
+						"params": {
+							"name": {
+								"name": "Name",
+								"desc": "Name of the value to set."
+							},
+							"value": {
+								"name": "Value",
+								"desc": "The value."
+							}
+						}
+					},
+					"doLMSCommit": {
+						"list-name": "Do LMS Commit",
+						"display-text": "Do LMS Commit",
+						"description": "Commit the updated values on the LMS server side."
+					},
+					"doTerminate": {
+						"list-name": "Terminate",
+						"display-text": "Terminate",
+						"description": "Close the connexion with the LMS."
+					}
+				},
+				"expressions": {
+					"getLastError": {
+						"description": "Get the last Scorm error message.",
+						"translated-name": "getLastError"
+					},
+					"getLastErrorID": {
+						"description": "Get the last Scorm error ID.",
+						"translated-name": "getLastErrorID"
+					},
+					"getLMSValue": {
+						"description": "Get a value from the LMS (refer on the Scorm 1.2 / 2004 documentation for possible values).",
+						"translated-name": "getLMSValue",
+						"params": {
+							"name": {
+								"name": "Name",
+								"desc": "Name of the value to get."
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

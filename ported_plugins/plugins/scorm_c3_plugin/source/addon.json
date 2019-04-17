@@ -1,0 +1,16 @@
+﻿{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "C3 Scorm Plugin",
+	"id": "scormc2",
+	"version": "1.0.0.0",
+	"author": "Loïc Martinez",
+	"website": "https://www.construct.net",
+	"documentation": "https://www.construct.net",
+	"description": "A Scorm 1.2 and 2004 Plugin for Construct 3",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					]
+}

@@ -1,0 +1,86 @@
+﻿{
+	"custom": {
+		"conditions": [
+			{
+				"id": "isScormInitialised",
+				"c2id": 0,
+				"scriptName": "isScormInitialised",
+				"highlight": true
+			},
+			{
+				"id": "isScormOnError",
+				"c2id": 1,
+				"scriptName": "isScormOnError",
+				"highlight": true
+			}
+		],
+		"actions": [
+			{
+				"id": "initialiseLMS",
+				"c2id": 0,
+				"scriptName": "initialiseLMS",
+				"highlight": true
+			},
+			{
+				"id": "setLMSValue",
+				"c2id": 1,
+				"scriptName": "setLMSValue",
+				"highlight": true,
+				"params": [
+					{
+						"id": "name",
+						"type": "string"
+					},
+					{
+						"id": "value",
+						"type": "string"
+					}
+				]
+			},
+			{
+				"id": "doLMSCommit",
+				"c2id": 2,
+				"scriptName": "doLMSCommit",
+				"highlight": true
+			},
+			{
+				"id": "doTerminate",
+				"c2id": 3,
+				"scriptName": "doTerminate",
+				"highlight": true
+			}
+		],
+		"expressions": [
+			{
+				"id": "getLastError",
+				"c2id": 0,
+				"expressionName": "getLastError",
+				"scriptName": "getLastError",
+				"highlight": true,
+				"returnType": "string"
+			},
+			{
+				"id": "getLastErrorID",
+				"c2id": 1,
+				"expressionName": "getLastErrorID",
+				"scriptName": "getLastErrorID",
+				"highlight": true,
+				"returnType": "number"
+			},
+			{
+				"id": "getLMSValue",
+				"c2id": 2,
+				"expressionName": "getLMSValue",
+				"scriptName": "getLMSValue",
+				"highlight": true,
+				"returnType": "string",
+				"params": [
+					{
+						"id": "name",
+						"type": "string"
+					}
+				]
+			}
+		]
+	}
+}
