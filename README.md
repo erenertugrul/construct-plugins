@@ -418,7 +418,7 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tbody>
 
 <td style="text-align:center"><a href="https://www.patreon.com/oyun" target="_blank"><img src="https://i.imgur.com/mpU6Ee3.png"></img></a></td>
-<td style="text-align:center"><a href="buymeacoff.ee/eren" target="_blank"><img src="https://i.imgur.com/pjkMdHU.png"></img></a></td>
+<td style="text-align:center"><a href="https://buymeacoff.ee/eren" target="_blank"><img src="https://i.imgur.com/pjkMdHU.png"></img></a></td>
 
 </tr>
 </tbody>
