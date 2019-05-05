@@ -370,7 +370,7 @@ If you want to support me, you can make a donation on patreon or itch.io
 <tr>
 
 <td>pin+</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/pin_plus/c3/dist/pin+.c3addon">pin+.c3addon</a></td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/pin_plus/dist/pin+.c3addon">pin+.c3addon</a></td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
