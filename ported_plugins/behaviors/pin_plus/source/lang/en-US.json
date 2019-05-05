@@ -1,0 +1,423 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Pin+.",
+	"text": {
+		"behaviors": {
+			"pinplus": {
+				"name": "Pin+",
+				"description": "Similar to the Pin behavior but allowing more properties to be pinned.",
+				"help-url": "http://www.scirra.com/manual/99/pin",
+				"properties": {
+					"x": {
+						"name": "X",
+						"desc": "Copy x position of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled",
+							"enabled 2 (disregard distance when pinned)":"Enabled 2 (disregard distance when pinned)",
+							"enabled 3 (scale the pin coordinate)":"Enabled 3 (scale the pin coordinate)"
+							}
+						},
+					"y": {
+						"name": "Y",
+						"desc": "Copy y position of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled",
+							"enabled 2 (disregard distance when pinned)":"Enabled 2 (disregard distance when pinned)",
+							"enabled 3 (scale the pin coordinate)":"Enabled 3 (scale the pin coordinate)"
+							}
+						},
+					"zindex": {
+						"name": "Zindex",
+						"desc": "Copy zIndex of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"in front":"in front",
+							"behind":"behind"
+							}
+						},
+					"angle": {
+						"name": "Angle",
+						"desc": "Copy angle of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled",
+							"enabled 2 (disregard angle offset when pinned)":"Enabled 2 (disregard angle offset when pinned)"
+							}
+						},
+					"width": {
+						"name": "Width",
+						"desc": "Copy width of pinned object",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled",
+							"enabled 2 (width relative)":"Enabled 2 (Width relative)",
+							"enabled 3 (scale)":"Enabled 3 (Scale)",
+							"enabled 4 (scale relative)":"Enabled 4 (Scale relative)"
+							}
+						},
+					"height": {
+						"name": "Height",
+						"desc": "Copy height of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled",
+							"enabled 2 (height relative)":"Enabled 2 (Height relative)",
+							"enabled 3 (scale)":"Enabled 3 (Scale)",
+							"enabled 4 (scale relative)":"Enabled 4 (Scale relative)"
+							}
+						},
+					"opacity": {
+						"name": "Opacity",
+						"desc": "Copy opacity of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"visibility": {
+						"name": "Visibility",
+						"desc": "Copy visibility of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"collisions-enabled": {
+						"name": "Collisions Enabled",
+						"desc": "Copy collisions enabled of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"timescale": {
+						"name": "Timescale",
+						"desc": "Copy timescale of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"hotspot-x": {
+						"name": "Hotspot X",
+						"desc": "Copy hotspot X of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"hotspot-y": {
+						"name": "Hotspot Y",
+						"desc": "Copy hotspot Y of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"ımagepoint": {
+						"name": "Imagepoint",
+						"desc": "The imagepoint to pin to."
+						},
+					"animation": {
+						"name": "Animation",
+						"desc": "Copy animation of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled (set to current frame)":"Enabled (set to current frame)",
+							"enabled 2 (set to beginning of animation)":"Enabled 2 (set to beginning of animation)"
+							}
+						},
+					"frame": {
+						"name": "Frame",
+						"desc": "Copy frame of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"mirror": {
+						"name": "Mirror",
+						"desc": "Copy mirrored of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled",
+							"enabled 2 (mirror relative)":"Enabled 2 (mirror relative)",
+							"enabled 3 (mirror image & position)":"Enabled 3 (mirror image & position)",
+							"enabled 4 (mirror relative image & position)":"Enabled 4 (mirror relative image & position)",
+							"enabled 5 (mirror position only)":"Enabled 5 (mirror position only)"
+							}
+						},
+					"flip": {
+						"name": "Flip",
+						"desc": "Copy flipped of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled",
+							"enabled 2 (flip relative)":"Enabled 2 (flip relative)",
+							"enabled 3 (flip image & position)":"Enabled 3 (flip image & position)",
+							"enabled 4 (flip relative image & position)":"Enabled 4 (flip relative image & position)",
+							"enabled 5 (flip position only)":"Enabled 5 (flip position only)"
+							}
+						},
+					"destroy": {
+						"name": "Destroy",
+						"desc": "Copy destroy of pinned object.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"ıspinned0": {
+						"list-name": "Is pinned",
+						"display-text": "{my} is pinned",
+						"description": "Object is currently pinned to another object."
+						}
+				},
+				"actions": {
+					"pin0": {
+						"list-name": "Pin to object",
+						"display-text": "{my} Pin to {0} ({1})",
+						"description": "Pin the object to another object.",
+						"params": {
+							"pin_to0": { "name":"Pin to", "desc":"Choose the object to pin to."},
+							"mode6": { "name":"Mode", "desc":"Choose which properties of the object to update.", "items":{"position & angle":"Position & angle","position only":"Position only","angle only":"Angle only","rope style":"Rope style","bar style":"Bar style"}}
+						}
+					},
+					"unpin1": {
+						"list-name": "Unpin",
+						"display-text": "{my} Unpin",
+						"description": "Unpin the object."
+					},
+					"pinx2": {
+						"list-name": "pinX",
+						"display-text": "Pin X {0}",
+						"description": "Pin the X",
+						"params": {
+							"state4": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled","enabled 2 (disregard distance when pinned)":"Enabled 2 (disregard distance when pinned)","enabled 3 (scale the pin coordinate)":"Enabled 3 (scale the pin coordinate)"}}
+						}
+					},
+					"piny3": {
+						"list-name": "pinY",
+						"display-text": "Pin Y {0}",
+						"description": "Pin the Y",
+						"params": {
+							"state4": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled","enabled 2 (disregard distance when pinned)":"Enabled 2 (disregard distance when pinned)","enabled 3 (scale the pin coordinate)":"Enabled 3 (scale the pin coordinate)"}}
+						}
+					},
+					"pinzindex4": {
+						"list-name": "pinZindex",
+						"display-text": "Pin Zindex {0}",
+						"description": "Pin the z index/layer",
+						"params": {
+							"state3": { "name":"State", "desc":"Choose if Disabled or infront or behind.", "items":{"disabled":"Disabled","in front":"in front","behind":"behind"}}
+						}
+					},
+					"pinangle5": {
+						"list-name": "pinAngle",
+						"display-text": "Pin Angle {0}",
+						"description": "Pin the Angle",
+						"params": {
+							"state3": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled","enabled 2 (disregard angle offset when pinned)":"Enabled 2 (disregard angle offset when pinned)"}}
+						}
+					},
+					"pinwidth6": {
+						"list-name": "pinWidth",
+						"display-text": "Pin Width {0}",
+						"description": "Pin the Width",
+						"params": {
+							"state5": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled","enabled 2 (width relative)":"Enabled 2 (Width relative)","enabled 3 (scale)":"Enabled 3 (Scale)","enabled 4 (scale relative)":"Enabled 4 (Scale relative)"}}
+						}
+					},
+					"pinheight7": {
+						"list-name": "pinHeight",
+						"display-text": "Pin Height {0}",
+						"description": "Pin the Height",
+						"params": {
+							"state5": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled","enabled 2 (height relative)":"Enabled 2 (Height relative)","enabled 3 (scale)":"Enabled 3 (Scale)","enabled 4 (scale relative)":"Enabled 4 (Scale relative)"}}
+						}
+					},
+					"pinopacity8": {
+						"list-name": "pinOpacity",
+						"display-text": "Pin Opacity {0}",
+						"description": "Pin the Opacity",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"pinvisibility9": {
+						"list-name": "pinVisibility",
+						"display-text": "Pin Visibility {0}",
+						"description": "Pin the Visibility",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"pincollisionenabled10": {
+						"list-name": "pinCollisionEnabled",
+						"display-text": "Pin CollisionEnabled {0}",
+						"description": "Pin the CollisionEnabled",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"pintimescale11": {
+						"list-name": "pinTimescale",
+						"display-text": "Pin Timescale {0}",
+						"description": "Pin the Timescale",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"pinhotspotx12": {
+						"list-name": "pinHotspotX",
+						"display-text": "Pin HotspotX {0}",
+						"description": "Pin the HotspotX",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"pinhotspoty13": {
+						"list-name": "pinHotspotY",
+						"display-text": "Pin HotspotY {0}",
+						"description": "Pin the HotspotY",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"pinımagepoint14": {
+						"list-name": "pinImagepoint",
+						"display-text": "Pin Imagepoint {0}",
+						"description": "The imagepoint to pin to",
+						"params": {
+							"ımagepoint0": { "name":"Imagepoint", "desc":"The imagepoint to pin to."}
+						}
+					},
+					"pinanimation15": {
+						"list-name": "pinAnimation",
+						"display-text": "Pin Animation {0}",
+						"description": "Pin the Animation",
+						"params": {
+							"state3": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled (set to current frame)":"Enabled (set to current frame)","enabled 2 (set to beginning of animation)":"Enabled 2 (set to beginning of animation)"}}
+						}
+					},
+					"pinframe16": {
+						"list-name": "pinFrame",
+						"display-text": "Pin Frame {0}",
+						"description": "Pin the Frame",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"pinmirror17": {
+						"list-name": "pinMirror",
+						"display-text": "Pin Mirror {0}",
+						"description": "Pin the Mirror",
+						"params": {
+							"state6": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled","enabled 2 (mirror relative)":"Enabled 2 (mirror relative)","enabled 3 (mirror image & position)":"Enabled 3 (mirror image & position)","enabled 4 (mirror relative image & position)":"Enabled 4 (mirror relative image & position)","enabled 5 (mirror position only)":"Enabled 5 (mirror position only)"}}
+						}
+					},
+					"pinflip18": {
+						"list-name": "pinFlip",
+						"display-text": "Pin Flip {0}",
+						"description": "Pin the Flip",
+						"params": {
+							"state6": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled","enabled 2 (flip relative)":"Enabled 2 (flip relative)","enabled 3 (flip image & position)":"Enabled 3 (flip image & position)","enabled 4 (flip relative image & position)":"Enabled 4 (flip relative image & position)","enabled 5 (flip position only)":"Enabled 5 (flip position only)"}}
+						}
+					},
+					"pindestroy19": {
+						"list-name": "pinDestroy",
+						"display-text": "Pin Destroy {0}",
+						"description": "Pin the Destroy",
+						"params": {
+							"state2": { "name":"State", "desc":"Choose if Disabled or Enabled.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					}
+				},
+				"expressions": {
+					"pinneduıd0": {
+						"description": "Get the UID of the object pinned to, or -1 if not pinned.",
+						"translated-name": "PinnedUID"
+						},
+					"ispinnedx1": {
+						"description": "returns 0, 1, or 2,3 (disabled or enabled)",
+						"translated-name": "isPinnedX"
+						},
+					"ispinnedy2": {
+						"description": "returns 0, 1, or 2,3 (disabled or enabled)",
+						"translated-name": "isPinnedY"
+						},
+					"ispinnedzindex3": {
+						"description": "returns 0, 1, or 2 (disabled,in front, behind)",
+						"translated-name": "isPinnedZindex"
+						},
+					"ispinnedangle4": {
+						"description": "returns 0, 1, or 2 (disabled or enabled)",
+						"translated-name": "isPinnedAngle"
+						},
+					"ispinnedwidth5": {
+						"description": "returns 0 or 1,2,3,4 (disabled or enabled)",
+						"translated-name": "isPinnedWidth"
+						},
+					"ispinnedheight6": {
+						"description": "returns 0 or 1,2,3,4 (disabled or enabled)",
+						"translated-name": "isPinnedHeight"
+						},
+					"ispinnedopacity7": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedOpacity"
+						},
+					"ispinnedvisibility8": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedVisibility"
+						},
+					"ispinnedcollisionenabled9": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedCollisionEnabled"
+						},
+					"ispinnedtimescale10": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedTimescale"
+						},
+					"ispinnedhotspotx11": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedHotspotX"
+						},
+					"ispinnedhotspoty12": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedHotspotY"
+						},
+					"pinnedımagepoint13": {
+						"description": "returns the imagepoint pinned to",
+						"translated-name": "PinnedImagepoint"
+						},
+					"ispinnedanimation14": {
+						"description": "returns 0 or 1,2 (disabled or enabled)",
+						"translated-name": "isPinnedAnimation"
+						},
+					"ispinnedframe15": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedFrame"
+						},
+					"ispinnedmirror16": {
+						"description": "returns 0 or 1,2,3,4,5 (disabled or enabled)",
+						"translated-name": "isPinnedMirror"
+						},
+					"ispinnedflip17": {
+						"description": "returns 0 or 1,2,3,4,5 (disabled or enabled)",
+						"translated-name": "isPinnedFlip"
+						},
+					"ispinneddestroy18": {
+						"description": "returns 0 or 1 (disabled or enabled)",
+						"translated-name": "isPinnedDestroy"
+						}
+				}
+			}
+		}
+	}
+}

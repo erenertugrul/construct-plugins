@@ -1,0 +1,346 @@
+{
+	"": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "ıspinned0",
+				"scriptName": "IsPinned",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "pin0",
+				"scriptName": "Pin",
+				"highlight": false,
+				"params": [
+					{"id":"pin_to0", "type":"object"},
+					{"id":"mode6", "type":"combo", "items":["position & angle","position only","angle only","rope style","bar style"]}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "unpin1",
+				"scriptName": "Unpin",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "pinx2",
+				"scriptName": "pinX",
+				"highlight": false,
+				"params": [
+					{"id":"state4", "type":"combo", "items":["disabled","enabled","enabled 2 (disregard distance when pinned)","enabled 3 (scale the pin coordinate)"]}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "piny3",
+				"scriptName": "pinY",
+				"highlight": false,
+				"params": [
+					{"id":"state4", "type":"combo", "items":["disabled","enabled","enabled 2 (disregard distance when pinned)","enabled 3 (scale the pin coordinate)"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "pinzindex4",
+				"scriptName": "pinZindex",
+				"highlight": false,
+				"params": [
+					{"id":"state3", "type":"combo", "items":["disabled","in front","behind"]}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "pinangle5",
+				"scriptName": "pinAngle",
+				"highlight": false,
+				"params": [
+					{"id":"state3", "type":"combo", "items":["disabled","enabled","enabled 2 (disregard angle offset when pinned)"]}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "pinwidth6",
+				"scriptName": "pinWidth",
+				"highlight": false,
+				"params": [
+					{"id":"state5", "type":"combo", "items":["disabled","enabled","enabled 2 (width relative)","enabled 3 (scale)","enabled 4 (scale relative)"]}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "pinheight7",
+				"scriptName": "pinHeight",
+				"highlight": false,
+				"params": [
+					{"id":"state5", "type":"combo", "items":["disabled","enabled","enabled 2 (height relative)","enabled 3 (scale)","enabled 4 (scale relative)"]}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "pinopacity8",
+				"scriptName": "pinOpacity",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "pinvisibility9",
+				"scriptName": "pinVisibility",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "pincollisionenabled10",
+				"scriptName": "pinCollisionEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "pintimescale11",
+				"scriptName": "pinTimescale",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "pinhotspotx12",
+				"scriptName": "pinHotspotX",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "pinhotspoty13",
+				"scriptName": "pinHotspotY",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "pinımagepoint14",
+				"scriptName": "pinImagepoint",
+				"highlight": false,
+				"params": [
+					{"id":"ımagepoint0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "pinanimation15",
+				"scriptName": "pinAnimation",
+				"highlight": false,
+				"params": [
+					{"id":"state3", "type":"combo", "items":["disabled","enabled (set to current frame)","enabled 2 (set to beginning of animation)"]}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "pinframe16",
+				"scriptName": "pinFrame",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "pinmirror17",
+				"scriptName": "pinMirror",
+				"highlight": false,
+				"params": [
+					{"id":"state6", "type":"combo", "items":["disabled","enabled","enabled 2 (mirror relative)","enabled 3 (mirror image & position)","enabled 4 (mirror relative image & position)","enabled 5 (mirror position only)"]}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "pinflip18",
+				"scriptName": "pinFlip",
+				"highlight": false,
+				"params": [
+					{"id":"state6", "type":"combo", "items":["disabled","enabled","enabled 2 (flip relative)","enabled 3 (flip image & position)","enabled 4 (flip relative image & position)","enabled 5 (flip position only)"]}
+				]
+			},
+			{
+				"c2id": 19,
+				"id": "pindestroy19",
+				"scriptName": "pinDestroy",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "pinneduıd0",
+				"expressionName": "PinnedUID",
+				"scriptName": "PinnedUID",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 1,
+				"id": "ispinnedx1",
+				"expressionName": "isPinnedX",
+				"scriptName": "isPinnedX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "ispinnedy2",
+				"expressionName": "isPinnedY",
+				"scriptName": "isPinnedY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "ispinnedzindex3",
+				"expressionName": "isPinnedZindex",
+				"scriptName": "isPinnedZindex",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "ispinnedangle4",
+				"expressionName": "isPinnedAngle",
+				"scriptName": "isPinnedAngle",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "ispinnedwidth5",
+				"expressionName": "isPinnedWidth",
+				"scriptName": "isPinnedWidth",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 6,
+				"id": "ispinnedheight6",
+				"expressionName": "isPinnedHeight",
+				"scriptName": "isPinnedHeight",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 7,
+				"id": "ispinnedopacity7",
+				"expressionName": "isPinnedOpacity",
+				"scriptName": "isPinnedOpacity",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 8,
+				"id": "ispinnedvisibility8",
+				"expressionName": "isPinnedVisibility",
+				"scriptName": "isPinnedVisibility",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 9,
+				"id": "ispinnedcollisionenabled9",
+				"expressionName": "isPinnedCollisionEnabled",
+				"scriptName": "isPinnedCollisionEnabled",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 10,
+				"id": "ispinnedtimescale10",
+				"expressionName": "isPinnedTimescale",
+				"scriptName": "isPinnedTimescale",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 11,
+				"id": "ispinnedhotspotx11",
+				"expressionName": "isPinnedHotspotX",
+				"scriptName": "isPinnedHotspotX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "ispinnedhotspoty12",
+				"expressionName": "isPinnedHotspotY",
+				"scriptName": "isPinnedHotspotY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "pinnedımagepoint13",
+				"expressionName": "PinnedImagepoint",
+				"scriptName": "PinnedImagepoint",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "ispinnedanimation14",
+				"expressionName": "isPinnedAnimation",
+				"scriptName": "isPinnedAnimation",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 15,
+				"id": "ispinnedframe15",
+				"expressionName": "isPinnedFrame",
+				"scriptName": "isPinnedFrame",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 16,
+				"id": "ispinnedmirror16",
+				"expressionName": "isPinnedMirror",
+				"scriptName": "isPinnedMirror",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 17,
+				"id": "ispinnedflip17",
+				"expressionName": "isPinnedFlip",
+				"scriptName": "isPinnedFlip",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 18,
+				"id": "ispinneddestroy18",
+				"expressionName": "isPinnedDestroy",
+				"scriptName": "isPinnedDestroy",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}
