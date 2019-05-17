@@ -61,7 +61,7 @@
 	            for (var k in this.load_items)
 	                this.load_items_cnt += 1;
 	        }
-			ret.set_int(this.load_items_cnt);
+			return(this.load_items_cnt);
 		},
 	    
 		GenerateKey()
