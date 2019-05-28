@@ -410,21 +410,8 @@ If you want to support me, you can make a donation on patreon or itch.io
 -->
 </table>
 
-# W.I.P
-<table>
-<thead>
-<tr>
-<th>name</th>
-</thead>
-<tbody>
-<tr>
-<td>rojo_isometric</td>
-</tbody>
-<tbody>
-<tr>
-<td>discord_richpresence</td>
-</tbody>
-</table>
+# Request List
+https://trello.com/b/m5v94MWv/plugin-list
 
 # For donate
 <table>
