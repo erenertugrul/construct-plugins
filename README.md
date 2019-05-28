@@ -367,6 +367,15 @@ If you want to support me, you can make a donation on patreon or itch.io
 </tr>
 </tbody>
 <tbody>
+<tr>
+  <td>rex_tmx_importer</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_tmx/dist/rex_tmx_pack.zip">rex_tmx_pack.zip</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
 <tbody>
 <tr>
   <td>rex_firebase</td>

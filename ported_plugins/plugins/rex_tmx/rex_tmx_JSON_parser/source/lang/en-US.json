@@ -1,0 +1,23 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for TMX-JSON Parser.",
+	"text": {
+		"plugins": {
+			"rex_tmx_json_parser": {
+				"name": "TMX-JSON Parser",
+				"description": "A TMX-JSON parser.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_tmx_json_parser.html",
+				"properties": {
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

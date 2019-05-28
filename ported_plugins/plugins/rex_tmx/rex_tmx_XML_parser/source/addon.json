@@ -1,0 +1,27 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "TMX-XML Parser",
+	"id": "Rex_tmx_XML_parser",
+	"version": "0.11.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_tmx_xml_parser.html",
+	"documentation": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_tmx_xml_parser.html",
+	"description": "A TMX-XML parser.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"zlib_and_gzip.min.js",
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

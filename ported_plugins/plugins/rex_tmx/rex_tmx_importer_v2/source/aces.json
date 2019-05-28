@@ -1,0 +1,795 @@
+{
+	"0:_load": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "ımporttmx1",
+				"scriptName": "ImportTMX",
+				"highlight": false,
+				"params": [
+					{"id":"ınput0", "type":"string", "initialValue":"\"\""},
+					{"id":"parser1", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"one_tick_mode": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "createtiles2",
+				"scriptName": "CreateTiles",
+				"highlight": false,
+				"params": [
+					{"id":"tile0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "retrievetilearray7",
+				"scriptName": "RetrieveTileArray",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"release": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "releasetmx3",
+				"scriptName": "ReleaseTMX",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"setup": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 10,
+				"id": "setoposition10",
+				"scriptName": "SetOPosition",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"duration_mode": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 20,
+				"id": "createtilesduration20",
+				"scriptName": "CreateTilesDuration",
+				"highlight": false,
+				"params": [
+					{"id":"tile0", "type":"object"},
+					{"id":"processing_time1", "type":"number", "initialValue":"0.5"}
+				]
+			},
+			{
+				"c2id": 21,
+				"id": "retrievetilearrayduration21",
+				"scriptName": "RetrieveTileArrayDuration",
+				"highlight": false,
+				"params": [
+					{"id":"processing_time0", "type":"number", "initialValue":"0.5"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"tilemap": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 51,
+				"id": "resettilemap51",
+				"scriptName": "ResetTilemap",
+				"highlight": false,
+				"params": [
+					{"id":"layer0", "type":"string", "initialValue":"\"\""},
+					{"id":"tilemap1", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"callback:_create_tiless": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "oneachtilecell1",
+				"scriptName": "OnEachTileCell",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "oneachobject2",
+				"scriptName": "OnEachObject",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"for_each_property": {
+		"conditions": [
+			{
+				"c2id": 10,
+				"id": "foreachlayerproperty10",
+				"scriptName": "ForEachLayerProperty",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 11,
+				"id": "foreachtilesetproperty11",
+				"scriptName": "ForEachTilesetProperty",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "foreachtileproperty12",
+				"scriptName": "ForEachTileProperty",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 13,
+				"id": "foreachmapproperty13",
+				"scriptName": "ForEachMapProperty",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			},
+			{
+				"c2id": 15,
+				"id": "foreachobjectproperty15",
+				"scriptName": "ForEachObjectProperty",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"for_each_layer": {
+		"conditions": [
+			{
+				"c2id": 14,
+				"id": "foreachlayer14",
+				"scriptName": "ForEachLayer",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"duration": {
+		"conditions": [
+			{
+				"c2id": 20,
+				"id": "onretrievefinished20",
+				"scriptName": "OnRetrieveFinished",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 21,
+				"id": "onretrievedurationtick21",
+				"scriptName": "OnRetrieveDurationTick",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 70,
+				"id": "retrievingpercent70",
+				"expressionName": "RetrievingPercent",
+				"scriptName": "RetrievingPercent",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"logic_xy": {
+		"conditions": [
+			{
+				"c2id": 31,
+				"id": "foreachtileatlxy31",
+				"scriptName": "ForEachTileAtLXY",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"map": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "mapwidth1",
+				"expressionName": "MapWidth",
+				"scriptName": "MapWidth",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "mapheight2",
+				"expressionName": "MapHeight",
+				"scriptName": "MapHeight",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "tilewidth3",
+				"expressionName": "TileWidth",
+				"scriptName": "TileWidth",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "tileheight4",
+				"expressionName": "TileHeight",
+				"scriptName": "TileHeight",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "totalwidth5",
+				"expressionName": "TotalWidth",
+				"scriptName": "TotalWidth",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 6,
+				"id": "totalheight6",
+				"expressionName": "TotalHeight",
+				"scriptName": "TotalHeight",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 7,
+				"id": "ısısometric7",
+				"expressionName": "IsIsometric",
+				"scriptName": "IsIsometric",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 26,
+				"id": "mapprop26",
+				"expressionName": "MapProp",
+				"scriptName": "MapProp",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 28,
+				"id": "backgroundcolor28",
+				"expressionName": "BackgroundColor",
+				"scriptName": "BackgroundColor",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 101,
+				"id": "pox101",
+				"expressionName": "POX",
+				"scriptName": "POX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 102,
+				"id": "poy102",
+				"expressionName": "POY",
+				"scriptName": "POY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"tileset": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 8,
+				"id": "ımagesource8",
+				"expressionName": "ImageSource",
+				"scriptName": "ImageSource",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 9,
+				"id": "ımagewidth9",
+				"expressionName": "ImageWidth",
+				"scriptName": "ImageWidth",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 10,
+				"id": "ımageheight10",
+				"expressionName": "ImageHeight",
+				"scriptName": "ImageHeight",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 15,
+				"id": "tilesetprop15",
+				"expressionName": "TilesetProp",
+				"scriptName": "TilesetProp",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 25,
+				"id": "tilesetname25",
+				"expressionName": "TilesetName",
+				"scriptName": "TilesetName",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			}
+		]
+	},
+	"tile": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "tileıd11",
+				"expressionName": "TileID",
+				"scriptName": "TileID",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "logicx12",
+				"expressionName": "LogicX",
+				"scriptName": "LogicX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "logicy13",
+				"expressionName": "LogicY",
+				"scriptName": "LogicY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "layerprop14",
+				"expressionName": "LayerProp",
+				"scriptName": "LayerProp",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "tileprop16",
+				"expressionName": "TileProp",
+				"scriptName": "TileProp",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "physicalx17",
+				"expressionName": "PhysicalX",
+				"scriptName": "PhysicalX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 18,
+				"id": "physicaly18",
+				"expressionName": "PhysicalY",
+				"scriptName": "PhysicalY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 19,
+				"id": "layername19",
+				"expressionName": "LayerName",
+				"scriptName": "LayerName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 20,
+				"id": "layeropacity20",
+				"expressionName": "LayerOpacity",
+				"scriptName": "LayerOpacity",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 21,
+				"id": "ısmirrored21",
+				"expressionName": "IsMirrored",
+				"scriptName": "IsMirrored",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 22,
+				"id": "ısflipped22",
+				"expressionName": "IsFlipped",
+				"scriptName": "IsFlipped",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 23,
+				"id": "ınstuıd23",
+				"expressionName": "InstUID",
+				"scriptName": "InstUID",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 24,
+				"id": "frame24",
+				"expressionName": "Frame",
+				"scriptName": "Frame",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true
+			},
+			{
+				"c2id": 27,
+				"id": "tileangle27",
+				"expressionName": "TileAngle",
+				"scriptName": "TileAngle",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"for_each": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 30,
+				"id": "curlayerpropname30",
+				"expressionName": "CurLayerPropName",
+				"scriptName": "CurLayerPropName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 31,
+				"id": "curlayerpropvalue31",
+				"expressionName": "CurLayerPropValue",
+				"scriptName": "CurLayerPropValue",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 32,
+				"id": "curtilesetpropname32",
+				"expressionName": "CurTilesetPropName",
+				"scriptName": "CurTilesetPropName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 33,
+				"id": "curtilesetpropvalue33",
+				"expressionName": "CurTilesetPropValue",
+				"scriptName": "CurTilesetPropValue",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 34,
+				"id": "curtilepropname34",
+				"expressionName": "CurTilePropName",
+				"scriptName": "CurTilePropName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 35,
+				"id": "curtilepropvalue35",
+				"expressionName": "CurTilePropValue",
+				"scriptName": "CurTilePropValue",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 36,
+				"id": "curmappropname36",
+				"expressionName": "CurMapPropName",
+				"scriptName": "CurMapPropName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 37,
+				"id": "curmappropvalue37",
+				"expressionName": "CurMapPropValue",
+				"scriptName": "CurMapPropValue",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 38,
+				"id": "curobjectpropname38",
+				"expressionName": "CurObjectPropName",
+				"scriptName": "CurObjectPropName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 39,
+				"id": "curobjectpropvalue39",
+				"expressionName": "CurObjectPropValue",
+				"scriptName": "CurObjectPropValue",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"object:_object_group": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 40,
+				"id": "objgroupname40",
+				"expressionName": "ObjGroupName",
+				"scriptName": "ObjGroupName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 41,
+				"id": "objgroupwidth41",
+				"expressionName": "ObjGroupWidth",
+				"scriptName": "ObjGroupWidth",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 42,
+				"id": "objgroupheight42",
+				"expressionName": "ObjGroupHeight",
+				"scriptName": "ObjGroupHeight",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"object:_object": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 50,
+				"id": "objectname50",
+				"expressionName": "ObjectName",
+				"scriptName": "ObjectName",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 51,
+				"id": "objecttype51",
+				"expressionName": "ObjectType",
+				"scriptName": "ObjectType",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 52,
+				"id": "objectwidth52",
+				"expressionName": "ObjectWidth",
+				"scriptName": "ObjectWidth",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 53,
+				"id": "objectheight53",
+				"expressionName": "ObjectHeight",
+				"scriptName": "ObjectHeight",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 54,
+				"id": "objectx54",
+				"expressionName": "ObjectX",
+				"scriptName": "ObjectX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 55,
+				"id": "objecty55",
+				"expressionName": "ObjectY",
+				"scriptName": "ObjectY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 56,
+				"id": "objectprop56",
+				"expressionName": "ObjectProp",
+				"scriptName": "ObjectProp",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 57,
+				"id": "objectpx57",
+				"expressionName": "ObjectPX",
+				"scriptName": "ObjectPX",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 58,
+				"id": "objectpy58",
+				"expressionName": "ObjectPY",
+				"scriptName": "ObjectPY",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 59,
+				"id": "objectıd59",
+				"expressionName": "ObjectID",
+				"scriptName": "ObjectID",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 60,
+				"id": "objectrotation60",
+				"expressionName": "ObjectRotation",
+				"scriptName": "ObjectRotation",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 61,
+				"id": "objectrefgıd61",
+				"expressionName": "ObjectRefGID",
+				"scriptName": "ObjectRefGID",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"hex_layout": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 111,
+				"id": "ısup2down111",
+				"expressionName": "IsUp2Down",
+				"scriptName": "IsUp2Down",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 112,
+				"id": "ısındent112",
+				"expressionName": "IsIndent",
+				"scriptName": "IsIndent",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

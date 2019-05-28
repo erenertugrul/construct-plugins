@@ -1,0 +1,417 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for TMX Importer v2.",
+	"text": {
+		"plugins": {
+			"rex_tmx_importer_v2": {
+				"name": "TMX Importer v2",
+				"description": "Create sprites according to tmx exported file.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_tmx_importer_v2.html",
+				"properties": {
+					"x-at-(0,0)": {
+						"name": "X at (0,0)",
+						"desc": "Physical X co-ordinate at logic (0,0)."
+						},
+					"y-at-(0,0)": {
+						"name": "Y at (0,0)",
+						"desc": "Physical Y co-ordinate at logic (0,0)."
+						}
+				},
+				"aceCategories": {
+					"0:_load": "0: Load",
+					"one_tick_mode": "One tick mode",
+					"release": "Release",
+					"setup": "Setup",
+					"duration_mode": "Duration mode",
+					"tilemap": "Tilemap",
+					"callback:_create_tiless": "Callback: Create tiless",
+					"for_each_property": "For each property",
+					"for_each_layer": "For each layer",
+					"duration": "Duration",
+					"logic_xy": "Logic XY",
+					"map": "Map",
+					"tileset": "Tileset",
+					"tile": "Tile",
+					"for_each": "For Each",
+					"object:_object_group": "Object: Object group",
+					"object:_object": "Object: Object",
+					"hex_layout": "Hex layout"
+				},
+				"conditions": {
+					"oneachtilecell1": {
+						"list-name": "On each tile cell",
+						"display-text": "On each tile cell",
+						"description": "Triggered when retrieving each available tile cell."
+						},
+					"oneachobject2": {
+						"list-name": "On each object",
+						"display-text": "On each object",
+						"description": "Triggered when retrieving each avaiable object on 'object layer'."
+						},
+					"foreachlayerproperty10": {
+						"list-name": "For each layer property",
+						"display-text": "For each layer property",
+						"description": "Repeat the event for each layer property."
+						},
+					"foreachtilesetproperty11": {
+						"list-name": "For each tileset property",
+						"display-text": "For each tileset property",
+						"description": "Repeat the event for each tileset property."
+						},
+					"foreachtileproperty12": {
+						"list-name": "For each tile property",
+						"display-text": "For each tile property",
+						"description": "Repeat the event for each tile property."
+						},
+					"foreachmapproperty13": {
+						"list-name": "For each map property",
+						"display-text": "For each map property",
+						"description": "Repeat the event for each map property."
+						},
+					"foreachlayer14": {
+						"list-name": "For each layer",
+						"display-text": "For each layer",
+						"description": "Repeat the event for each layer."
+						},
+					"foreachobjectproperty15": {
+						"list-name": "For each object property",
+						"display-text": "For each object property",
+						"description": "Repeat the event for each object property."
+						},
+					"onretrievefinished20": {
+						"list-name": "On retrieving finished",
+						"display-text": "On retrieving finished",
+						"description": "Triggered when retrieving finished."
+						},
+					"onretrievedurationtick21": {
+						"list-name": "On retrieving duration",
+						"display-text": "On retrieving duration",
+						"description": "Triggered during retrieving duration tick."
+						},
+					"foreachtileatlxy31": {
+						"list-name": "For each tile at logic XY",
+						"display-text": "For each tile at logic ([i]{0}[/i],[i]{1}[/i])",
+						"description": "Repeat the event for each tile at logic XY.",
+						"params": {
+							"x0": { "name":"X", "desc":"Logic X."},
+							"y1": { "name":"Y", "desc":"Logic Y."}
+						}
+						}
+				},
+				"actions": {
+					"ımporttmx1": {
+						"list-name": "Import tmx",
+						"display-text": "Import tmx content [i]{0}[/i], with parser {1}",
+						"description": "Import tmx string.",
+						"params": {
+							"ınput0": { "name":"Input", "desc":"Input string."},
+							"parser1": { "name":"Parser", "desc":"Parser object."}
+						}
+					},
+					"createtiles2": {
+						"list-name": "Create tiles",
+						"display-text": "Create tiles [i]{0}[/i]",
+						"description": "Retrieve tile array and creating tiles. It will trigger \"Condition:On each tile cell\".",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."}
+						}
+					},
+					"releasetmx3": {
+						"list-name": "Release tmx object",
+						"display-text": "Release tmx object",
+						"description": "Release tmx object."
+					},
+					"retrievetilearray7": {
+						"list-name": "Retrieve tile array",
+						"display-text": "Retrieve tile array",
+						"description": "Retrieve tile array. It will trigger \"Condition:On each tile cell\""
+					},
+					"setoposition10": {
+						"list-name": "Set instance position of (0,0)",
+						"display-text": "Set instance position of (0,0) to ([i]{0}[/i],[i]{1}[/i])",
+						"description": "Set instance position of (0,0).",
+						"params": {
+							"x0": { "name":"X", "desc":"X co-ordinate of instance at Logic(0,0)."},
+							"y1": { "name":"Y", "desc":"Y co-ordinate of instance at Logic(0,0)."}
+						}
+					},
+					"createtilesduration20": {
+						"list-name": "Create tiles in a duration",
+						"display-text": "Create tiles [i]{0}[/i] in a duration {1}",
+						"description": "Retrieve tile array and creating tiles in a duration. It will trigger \"Condition:On each tile cell\".",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."},
+							"processing_time1": { "name":"Processing time", "desc":"Processing time per tick in percentage. A tick time is (1/60), 1 is using full tick time."}
+						}
+					},
+					"retrievetilearrayduration21": {
+						"list-name": "Retrieve tile array in a duration",
+						"display-text": "Retrieve tile array in a duration {0}",
+						"description": "Retrieve tile array in a duration. It will trigger \"Condition:On each tile cell\"",
+						"params": {
+							"processing_time0": { "name":"Processing time", "desc":"Processing time per tick in percentage. A tick time is (1/60), 1 is using full tick time."}
+						}
+					},
+					"resettilemap51": {
+						"list-name": "Reset tilemap",
+						"display-text": "Reset tilemap [i]{1}[/i] with tmx layer [i]{0}[/i]",
+						"description": "Reset tilemap by tile array of a layer.",
+						"params": {
+							"layer0": { "name":"Layer", "desc":"TMX layer."},
+							"tilemap1": { "name":"Tilemap", "desc":"Tilemap object."}
+						}
+					}
+				},
+				"expressions": {
+					"mapwidth1": {
+						"description": "Get map width in tile number.",
+						"translated-name": "MapWidth"
+						},
+					"mapheight2": {
+						"description": "Get map height in tile number.",
+						"translated-name": "MapHeight"
+						},
+					"tilewidth3": {
+						"description": "Get tile width in pixel.",
+						"translated-name": "TileWidth"
+						},
+					"tileheight4": {
+						"description": "Get tile height in pixel.",
+						"translated-name": "TileHeight"
+						},
+					"totalwidth5": {
+						"description": "Get total width in pixel.",
+						"translated-name": "TotalWidth"
+						},
+					"totalheight6": {
+						"description": "Get total height in pixel.",
+						"translated-name": "TotalHeight"
+						},
+					"ısısometric7": {
+						"description": "Get orientation. 1=Isometric, 0=Orthogonal",
+						"translated-name": "IsIsometric"
+						},
+					"ımagesource8": {
+						"description": "Get image source of tileset.",
+						"translated-name": "ImageSource"
+						},
+					"ımagewidth9": {
+						"description": "Get image width of tileset.",
+						"translated-name": "ImageWidth"
+						},
+					"ımageheight10": {
+						"description": "Get image height of tileset.",
+						"translated-name": "ImageHeight"
+						},
+					"tileıd11": {
+						"description": "Get tile id.",
+						"translated-name": "TileID"
+						},
+					"logicx12": {
+						"description": "Get logic X index of created instance.",
+						"translated-name": "LogicX"
+						},
+					"logicy13": {
+						"description": "Get logic Y index of created instance.",
+						"translated-name": "LogicY"
+						},
+					"layerprop14": {
+						"description": "Get layer properties of created instance. Add second parameters to set default value.",
+						"translated-name": "LayerProp",
+						"params": {
+							"name0": { "name":"Name", "desc":"Property name."}
+						}
+						},
+					"tilesetprop15": {
+						"description": "Get tileset properties of created instance.  Add second parameters to set default value.",
+						"translated-name": "TilesetProp",
+						"params": {
+							"name0": { "name":"Name", "desc":"Property name."}
+						}
+						},
+					"tileprop16": {
+						"description": "Get tile properties of created instance.  Add second parameters to set default value.",
+						"translated-name": "TileProp",
+						"params": {
+							"name0": { "name":"Name", "desc":"Property name."}
+						}
+						},
+					"physicalx17": {
+						"description": "Get physical X position (in pixel) of created instance.",
+						"translated-name": "PhysicalX"
+						},
+					"physicaly18": {
+						"description": "Get logic Y position (in pixel) of created instance.",
+						"translated-name": "PhysicalY"
+						},
+					"layername19": {
+						"description": "Get layer name of created instance.",
+						"translated-name": "LayerName"
+						},
+					"layeropacity20": {
+						"description": "Get layer opacity of created instance.",
+						"translated-name": "LayerOpacity"
+						},
+					"ısmirrored21": {
+						"description": "Get mirrored of created instance.",
+						"translated-name": "IsMirrored"
+						},
+					"ısflipped22": {
+						"description": "Get flipped of created instance.",
+						"translated-name": "IsFlipped"
+						},
+					"ınstuıd23": {
+						"description": "Get instance UID created by \"Action:Create tiles\".",
+						"translated-name": "InstUID"
+						},
+					"frame24": {
+						"description": "Get frame number, , add GID at 1st parameter to get frame number of that tile.",
+						"translated-name": "Frame"
+						},
+					"tilesetname25": {
+						"description": "Get tileset name, add GID at 1st parameter to get tileset name of that tile.",
+						"translated-name": "TilesetName"
+						},
+					"mapprop26": {
+						"description": "Get map properties. Add second parameters to set default value.",
+						"translated-name": "MapProp",
+						"params": {
+							"name0": { "name":"Name", "desc":"Property name."}
+						}
+						},
+					"tileangle27": {
+						"description": "Get angle of created instance.",
+						"translated-name": "TileAngle"
+						},
+					"backgroundcolor28": {
+						"description": "Get background color.",
+						"translated-name": "BackgroundColor"
+						},
+					"curlayerpropname30": {
+						"description": "Get the name of current layer property in a For Each loop.",
+						"translated-name": "CurLayerPropName"
+						},
+					"curlayerpropvalue31": {
+						"description": "Get the value of current layer property in a For Each loop.",
+						"translated-name": "CurLayerPropValue"
+						},
+					"curtilesetpropname32": {
+						"description": "Get the name of current tileset property in a For Each loop.",
+						"translated-name": "CurTilesetPropName"
+						},
+					"curtilesetpropvalue33": {
+						"description": "Get the value of current tileset property in a For Each loop.",
+						"translated-name": "CurTilesetPropValue"
+						},
+					"curtilepropname34": {
+						"description": "Get the name of current tile property in a For Each loop.",
+						"translated-name": "CurTilePropName"
+						},
+					"curtilepropvalue35": {
+						"description": "Get the value of current tile property in a For Each loop.",
+						"translated-name": "CurTilePropValue"
+						},
+					"curmappropname36": {
+						"description": "Get the name of current map property in a For Each loop.",
+						"translated-name": "CurMapPropName"
+						},
+					"curmappropvalue37": {
+						"description": "Get the value of current map property in a For Each loop.",
+						"translated-name": "CurMapPropValue"
+						},
+					"curobjectpropname38": {
+						"description": "Get the name of current object property in a For Each loop.",
+						"translated-name": "CurObjectPropName"
+						},
+					"curobjectpropvalue39": {
+						"description": "Get the value of current object property in a For Each loop.",
+						"translated-name": "CurObjectPropValue"
+						},
+					"objgroupname40": {
+						"description": "Get object group name.",
+						"translated-name": "ObjGroupName"
+						},
+					"objgroupwidth41": {
+						"description": "Get area width of object group.",
+						"translated-name": "ObjGroupWidth"
+						},
+					"objgroupheight42": {
+						"description": "Get area height of object group.",
+						"translated-name": "ObjGroupHeight"
+						},
+					"objectname50": {
+						"description": "Get object name.",
+						"translated-name": "ObjectName"
+						},
+					"objecttype51": {
+						"description": "Get object type.",
+						"translated-name": "ObjectType"
+						},
+					"objectwidth52": {
+						"description": "Get area width of object.",
+						"translated-name": "ObjectWidth"
+						},
+					"objectheight53": {
+						"description": "Get area height of object.",
+						"translated-name": "ObjectHeight"
+						},
+					"objectx54": {
+						"description": "Get position X of object.",
+						"translated-name": "ObjectX"
+						},
+					"objecty55": {
+						"description": "Get position Y of object.",
+						"translated-name": "ObjectY"
+						},
+					"objectprop56": {
+						"description": "Get object properties.  Add second parameters to set default value.",
+						"translated-name": "ObjectProp",
+						"params": {
+							"name0": { "name":"Name", "desc":"Property name."}
+						}
+						},
+					"objectpx57": {
+						"description": "Get physical X position (in pixel) of object.",
+						"translated-name": "ObjectPX"
+						},
+					"objectpy58": {
+						"description": "Get physical Y position (in pixel) of object.",
+						"translated-name": "ObjectPY"
+						},
+					"objectıd59": {
+						"description": "Get id of object.",
+						"translated-name": "ObjectID"
+						},
+					"objectrotation60": {
+						"description": "Get rotation of object, in degrees clockwise.",
+						"translated-name": "ObjectRotation"
+						},
+					"objectrefgıd61": {
+						"description": "Get gid of a reference tile.",
+						"translated-name": "ObjectRefGID"
+						},
+					"retrievingpercent70": {
+						"description": "Get percent of retrieving process.",
+						"translated-name": "RetrievingPercent"
+						},
+					"pox101": {
+						"description": "Get position X of logic (0,0).",
+						"translated-name": "POX"
+						},
+					"poy102": {
+						"description": "Get position Y of logic (0,0).",
+						"translated-name": "POY"
+						},
+					"ısup2down111": {
+						"description": "Return 1 if current hexagon map is up2down layout.",
+						"translated-name": "IsUp2Down"
+						},
+					"ısındent112": {
+						"description": "Return 1 if current hexagon map is indent first line.",
+						"translated-name": "IsIndent"
+						}
+				}
+			}
+		}
+	}
+}
