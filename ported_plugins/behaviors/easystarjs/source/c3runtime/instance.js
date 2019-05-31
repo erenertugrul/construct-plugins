@@ -241,12 +241,14 @@
 
 			this.easystarjs["calculate"]();
 		}
-		_OnInstanceDestroyed()
+		_OnInstanceDestroyed(a)
 		{
-			this.paths = {};
-			this.inst.setTileAt = this.baseSetTileAt;
+			if (this.inst == a)
+			{
+				this.paths = {};
+				this.inst.setTileAt = this.baseSetTileAt;
+			}
 		}
-		
 	};
 }
 
