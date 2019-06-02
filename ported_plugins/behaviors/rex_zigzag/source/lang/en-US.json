@@ -1,0 +1,325 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Zigzag.",
+	"text": {
+		"behaviors": {
+			"rex_zigzag": {
+				"name": "Zigzag",
+				"description": "Using LOGO-like script to move or rotate sprite.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_zigzag.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"start": {
+						"name": "Start",
+						"desc": "Enable if you wish this to start at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"rotatable": {
+						"name": "Rotatable",
+						"desc": "Enable to rotate sprite with command.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"repeat-count": {
+						"name": "Repeat count",
+						"desc": "The times to execute commands repeatly. 0 is infinity."
+						},
+					"commands": {
+						"name": "Commands",
+						"desc": "F=Move Forward, B=Move Backward, R=Turn Right, L=Turn Left, W=Wait. ex:\"F 100;L 60\""
+						},
+					"max-moving-speed": {
+						"name": "Max moving speed",
+						"desc": "Maximum moving speed, in pixel per second."
+						},
+					"moving-acceleration": {
+						"name": "Moving acceleration",
+						"desc": "Moving acceleration, in pixel per second per second."
+						},
+					"moving-deceleration": {
+						"name": "Moving deceleration",
+						"desc": "Moving deceleration, in pixel per second per second."
+						},
+					"max-rotation-speed": {
+						"name": "Max rotation speed",
+						"desc": "Maximum rotation speed, in degrees per second."
+						},
+					"rotation-acceleration": {
+						"name": "Rotation acceleration",
+						"desc": "Rotation acceleration, in degrees per second per second. 0 is using max speed directly."
+						},
+					"rotation-deceleration": {
+						"name": "Rotation deceleration",
+						"desc": "Rotation deceleration, in degrees per second per second. 0 is ignored deceleration"
+						},
+					"ınitial-angle": {
+						"name": "Initial angle",
+						"desc": "Initial zigzag angle for non-rotatable mode, in degrees."
+						},
+					"precise-mode": {
+						"name": "Precise mode",
+						"desc": "Force sprite move to target.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"continued-mode": {
+						"name": "Continued mode",
+						"desc": "Running zigzag as in continued-time.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"setting": "Setting",
+					"control": "Control",
+					"moving": "Moving",
+					"rotation": "Rotation",
+					"command_queue": "Command queue",
+					"command": "Command",
+					"current": "Current"
+				},
+				"conditions": {
+					"comparemovspeed0": {
+						"list-name": "Compare moving speed",
+						"display-text": "{my} moving speed {0} {1}",
+						"description": "Compare the current moving speed of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current moving speed."},
+							"speed1": { "name":"Speed", "desc":"The moving speed, in pixel per second, to compare the current speed to."}
+						}
+						},
+					"comparerotspeed1": {
+						"list-name": "Compare rotation speed",
+						"display-text": "{my} rotation speed {0} {1}",
+						"description": "Compare the current rotation speed of the object.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the current rotation speed."},
+							"speed1": { "name":"Speed", "desc":"The rotation speed, in degree per second, to compare the current speed to."}
+						}
+						},
+					"ıscmd2": {
+						"list-name": "Is executing command",
+						"display-text": "Is {my} executing [i]{0}[/i]",
+						"description": "Is executing command.",
+						"params": {
+							"command_type6": { "name":"Command Type", "desc":"Command Types.", "items":{"move (f)orward":"Move (F)orward","move (b)ackward":"Move (B)ackward","turn (r)ight":"Turn (R)ight","turn (l)eft":"Turn (L)eft","(w)ait":"(W)ait","any":"Any"}}
+						}
+						},
+					"oncmdqueuefinish3": {
+						"list-name": "On command queue finish",
+						"display-text": "On {my} command queue finish",
+						"description": "Triggered when command queue finish."
+						},
+					"oncmdstart4": {
+						"list-name": "On command start",
+						"display-text": "On {my} [i]{0}[/i] command start",
+						"description": "Triggered when command start.",
+						"params": {
+							"command_type6": { "name":"Command Type", "desc":"Command Types.", "items":{"move (f)orward":"Move (F)orward","move (b)ackward":"Move (B)ackward","turn (r)ight":"Turn (R)ight","turn (l)eft":"Turn (L)eft","(w)ait":"(W)ait","any":"Any"}}
+						}
+						},
+					"oncmdfinish5": {
+						"list-name": "On command finish",
+						"display-text": "On {my} [i]{0}[/i] command finish",
+						"description": "Triggered when command finish.",
+						"params": {
+							"command_type6": { "name":"Command Type", "desc":"Command Types.", "items":{"move (f)orward":"Move (F)orward","move (b)ackward":"Move (B)ackward","turn (r)ight":"Turn (R)ight","turn (l)eft":"Turn (L)eft","(w)ait":"(W)ait","any":"Any"}}
+						}
+						}
+				},
+				"actions": {
+					"setactivated0": {
+						"list-name": "Set activated",
+						"display-text": "Set {my} activated to [i]{0}[/i]",
+						"description": "Enable the object's Zigzag behavior.",
+						"params": {
+							"activated2": { "name":"Activated", "desc":"Enable the behavior.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"start1": {
+						"list-name": "Execution start",
+						"display-text": "Start {my} to execute commands",
+						"description": "Start to execute command."
+					},
+					"stop2": {
+						"list-name": "Execution stop",
+						"display-text": "Stop {my} to execute command",
+						"description": "Stop to execute command."
+					},
+					"setmaxmovspeed3": {
+						"list-name": "Set maximum moving speed",
+						"display-text": "Set {my} maximum moving speed to [i]{0}[/i]",
+						"description": "Set the object's maximum moving speed.",
+						"params": {
+							"max_moving_speed0": { "name":"Max moving speed", "desc":"Maximum moving speed, in pixel per second."}
+						}
+					},
+					"setmovacceleration4": {
+						"list-name": "Set moving acceleration",
+						"display-text": "Set {my} moving acceleration to [i]{0}[/i]",
+						"description": "Set the object's moving acceleration.",
+						"params": {
+							"moving_acceleration0": { "name":"Moving acceleration", "desc":"The moving acceleration setting, in pixel per second per second."}
+						}
+					},
+					"setmovdeceleration5": {
+						"list-name": "Set moving deceleration",
+						"display-text": "Set {my} moving deceleration to [i]{0}[/i]",
+						"description": "Set the object's moving deceleration.",
+						"params": {
+							"moving_deceleration0": { "name":"Moving deceleration", "desc":"The moving deceleration setting, in pixels per second per second."}
+						}
+					},
+					"setmaxrotspeed6": {
+						"list-name": "Set maximum rotation speed",
+						"display-text": "Set {my} maximum rotation speed to [i]{0}[/i]",
+						"description": "Set the object's maximum rotation speed.",
+						"params": {
+							"max_rotation_speed0": { "name":"Max rotation speed", "desc":"Maximum rotation speed, in degrees per second."}
+						}
+					},
+					"setrotacceleration7": {
+						"list-name": "Set rotation acceleration",
+						"display-text": "Set {my} rotation acceleration to [i]{0}[/i]",
+						"description": "Set the object's rotation acceleration.",
+						"params": {
+							"rotation_acceleration0": { "name":"Rotation acceleration", "desc":"The rotation acceleration setting, in pixels per second per second."}
+						}
+					},
+					"setrotdeceleration8": {
+						"list-name": "Set rotation deceleration",
+						"display-text": "Set {my} rotation deceleration to [i]{0}[/i]",
+						"description": "Set the object's rotation deceleration.",
+						"params": {
+							"rotation_deceleration0": { "name":"Rotation deceleration", "desc":"The rotation deceleration setting, in pixels per second per second."}
+						}
+					},
+					"setrepeatcount9": {
+						"list-name": "Set repeat count",
+						"display-text": "Set {my} repeat count to [i]{0}[/i]",
+						"description": "Set times to execute commands repeatly. 0 is infinity.",
+						"params": {
+							"repeat_count0": { "name":"Repeat count", "desc":"The times to execute commands repeatly. 0 is infinity."}
+						}
+					},
+					"cleancmdqueue10": {
+						"list-name": "Clean command queue",
+						"display-text": "Clean {my} command queue",
+						"description": "Clean command queue."
+					},
+					"addcmd11": {
+						"list-name": "Add command",
+						"display-text": "Add [i]{0}[/i] [i]{1}[/i] into {my} command queue",
+						"description": "Add a command into command queue.",
+						"params": {
+							"command_type5": { "name":"Command Type", "desc":"Command Types.", "items":{"move (f)orward":"Move (F)orward","move (b)ackward":"Move (B)ackward","turn (r)ight":"Turn (R)ight","turn (l)eft":"Turn (L)eft","(w)ait":"(W)ait"}},
+							"parameter6": { "name":"Parameter", "desc":"The parameter of command."}
+						}
+					},
+					"addcmdstring12": {
+						"list-name": "Add commands",
+						"display-text": "Add '[i]{0}[/i]' into {my} command queue",
+						"description": "Add commands string into command queue.",
+						"params": {
+							"commansd0": { "name":"Commansd", "desc":"Commands string. F=Move Forward, B=Move Backward, R=Turn Right, L=Turn Left, W=Wait. ex:\"F 100;L 60\""}
+						}
+					},
+					"setrotatable13": {
+						"list-name": "Set rotatable",
+						"display-text": "Set {my} rotatable to [i]{0}[/i]",
+						"description": "Set rotatable.",
+						"params": {
+							"rotatable2": { "name":"Rotatable", "desc":"Set rotatable.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"setmovingangle14": {
+						"list-name": "Set moving angle",
+						"display-text": "Set {my} moving angle to [i]{0}[/i]",
+						"description": "Set moving angle in degree. Also rotate sprite at rotatable mode",
+						"params": {
+							"angle0": { "name":"Angle", "desc":"The angle of moving direction."}
+						}
+					},
+					"setprecise15": {
+						"list-name": "Set precise",
+						"display-text": "Set {my} precise to [i]{0}[/i]",
+						"description": "Set precise.",
+						"params": {
+							"precise2": { "name":"Precise", "desc":"Set precise.", "items":{"no":"No","yes":"Yes"}}
+						}
+					}
+				},
+				"expressions": {
+					"activated0": {
+						"description": "The current activated state of behavior.",
+						"translated-name": "Activated"
+						},
+					"movspeed1": {
+						"description": "The current moving speed, in pixel per second.",
+						"translated-name": "MovSpeed"
+						},
+					"maxmovspeed2": {
+						"description": "The maximum moving speed setting, in pixel per second.",
+						"translated-name": "MaxMovSpeed"
+						},
+					"movacc3": {
+						"description": "The moving acceleration setting, in pixel per second per second.",
+						"translated-name": "MovAcc"
+						},
+					"movdec4": {
+						"description": "The moving deceleration setting, in pixel per second per second.",
+						"translated-name": "MovDec"
+						},
+					"rotspeed5": {
+						"description": "The current rotation speed, in degrees per second.",
+						"translated-name": "RotSpeed"
+						},
+					"maxrotspeed6": {
+						"description": "The maximum rotation speed setting, in degrees per second.",
+						"translated-name": "MaxRotSpeed"
+						},
+					"rotacc7": {
+						"description": "The acceleration setting, in degrees per second per second.",
+						"translated-name": "RotAcc"
+						},
+					"rotdec8": {
+						"description": "The rotation deceleration setting, in degrees per second per second.",
+						"translated-name": "RotDec"
+						},
+					"rotatable9": {
+						"description": "1 to rotate sprite with command.",
+						"translated-name": "Rotatable"
+						},
+					"repcnt10": {
+						"description": "The times to execute commands repeatly. 0 is infinity.",
+						"translated-name": "RepCnt"
+						},
+					"cmdındex11": {
+						"description": "Get current command index in command queue. 0 is the first command.",
+						"translated-name": "CmdIndex"
+						},
+					"movangle12": {
+						"description": "The moving angle, in degree.",
+						"translated-name": "MovAngle"
+						}
+				}
+			}
+		}
+	}
+}

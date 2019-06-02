@@ -1,0 +1,354 @@
+{
+	"setting": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setactivated0",
+				"scriptName": "SetActivated",
+				"highlight": false,
+				"params": [
+					{"id":"activated2", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "setprecise15",
+				"scriptName": "SetPrecise",
+				"highlight": false,
+				"params": [
+					{"id":"precise2", "type":"combo", "items":["no","yes"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "maxmovspeed2",
+				"expressionName": "MaxMovSpeed",
+				"scriptName": "MaxMovSpeed",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "movacc3",
+				"expressionName": "MovAcc",
+				"scriptName": "MovAcc",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "movdec4",
+				"expressionName": "MovDec",
+				"scriptName": "MovDec",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 6,
+				"id": "maxrotspeed6",
+				"expressionName": "MaxRotSpeed",
+				"scriptName": "MaxRotSpeed",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 7,
+				"id": "rotacc7",
+				"expressionName": "RotAcc",
+				"scriptName": "RotAcc",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 8,
+				"id": "rotdec8",
+				"expressionName": "RotDec",
+				"scriptName": "RotDec",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 9,
+				"id": "rotatable9",
+				"expressionName": "Rotatable",
+				"scriptName": "Rotatable",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 10,
+				"id": "repcnt10",
+				"expressionName": "RepCnt",
+				"scriptName": "RepCnt",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"control": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "start1",
+				"scriptName": "Start",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "stop2",
+				"scriptName": "Stop",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"moving": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "comparemovspeed0",
+				"scriptName": "CompareMovSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"speed1", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "setmaxmovspeed3",
+				"scriptName": "SetMaxMovSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"max_moving_speed0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "setmovacceleration4",
+				"scriptName": "SetMovAcceleration",
+				"highlight": false,
+				"params": [
+					{"id":"moving_acceleration0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "setmovdeceleration5",
+				"scriptName": "SetMovDeceleration",
+				"highlight": false,
+				"params": [
+					{"id":"moving_deceleration0", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"rotation": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "comparerotspeed1",
+				"scriptName": "CompareRotSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"speed1", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "setmaxrotspeed6",
+				"scriptName": "SetMaxRotSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"max_rotation_speed0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "setrotacceleration7",
+				"scriptName": "SetRotAcceleration",
+				"highlight": false,
+				"params": [
+					{"id":"rotation_acceleration0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "setrotdeceleration8",
+				"scriptName": "SetRotDeceleration",
+				"highlight": false,
+				"params": [
+					{"id":"rotation_deceleration0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "setrotatable13",
+				"scriptName": "SetRotatable",
+				"highlight": false,
+				"params": [
+					{"id":"rotatable2", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "setmovingangle14",
+				"scriptName": "SetMovingAngle",
+				"highlight": false,
+				"params": [
+					{"id":"angle0", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"command_queue": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 9,
+				"id": "setrepeatcount9",
+				"scriptName": "SetRepeatCount",
+				"highlight": false,
+				"params": [
+					{"id":"repeat_count0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "cleancmdqueue10",
+				"scriptName": "CleanCmdQueue",
+				"highlight": false
+			},
+			{
+				"c2id": 11,
+				"id": "addcmd11",
+				"scriptName": "AddCmd",
+				"highlight": false,
+				"params": [
+					{"id":"command_type5", "type":"combo", "items":["move (f)orward","move (b)ackward","turn (r)ight","turn (l)eft","(w)ait"]},
+					{"id":"parameter6", "type":"number"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "addcmdstring12",
+				"scriptName": "AddCmdString",
+				"highlight": false,
+				"params": [
+					{"id":"commansd0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"command": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "ıscmd2",
+				"scriptName": "IsCmd",
+				"highlight": false,
+				"params": [
+					{"id":"command_type6", "type":"combo", "items":["move (f)orward","move (b)ackward","turn (r)ight","turn (l)eft","(w)ait","any"]}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "oncmdqueuefinish3",
+				"scriptName": "OnCmdQueueFinish",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "oncmdstart4",
+				"scriptName": "OnCmdStart",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"command_type6", "type":"combo", "items":["move (f)orward","move (b)ackward","turn (r)ight","turn (l)eft","(w)ait","any"]}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "oncmdfinish5",
+				"scriptName": "OnCmdFinish",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"command_type6", "type":"combo", "items":["move (f)orward","move (b)ackward","turn (r)ight","turn (l)eft","(w)ait","any"]}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"current": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "activated0",
+				"expressionName": "Activated",
+				"scriptName": "Activated",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 1,
+				"id": "movspeed1",
+				"expressionName": "MovSpeed",
+				"scriptName": "MovSpeed",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "rotspeed5",
+				"expressionName": "RotSpeed",
+				"scriptName": "RotSpeed",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 11,
+				"id": "cmdındex11",
+				"expressionName": "CmdIndex",
+				"scriptName": "CmdIndex",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "movangle12",
+				"expressionName": "MovAngle",
+				"scriptName": "MovAngle",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}
