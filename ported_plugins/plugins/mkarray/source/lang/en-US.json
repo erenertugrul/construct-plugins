@@ -1,0 +1,391 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for mkArray.",
+	"text": {
+		"plugins": {
+			"mkarray": {
+				"name": "mkArray",
+				"description": "Create arrays on the go.",
+				"help-url": "http://mattkingz@gmail.com",
+				"properties": {
+				},
+				"aceCategories": {
+					"mkarray": "mkArray",
+					"for": "For"
+				},
+				"conditions": {
+					"ısempty0": {
+						"list-name": "Is array empty",
+						"display-text": "Is array [b]{0}[/b] empty",
+						"description": "Check if an array is empty.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."}
+						}
+						},
+					"comparelength1": {
+						"list-name": "Compare array length",
+						"display-text": "Is array [b]{0}[/b] length {1} [i]{2}[/i]",
+						"description": "Compare an array length.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"operator:1": { "name":"Operator:", "desc":"How to compare."},
+							"value:2": { "name":"Value:", "desc":"Value to compare."}
+						}
+						},
+					"compareat2": {
+						"list-name": "Compare at",
+						"display-text": "[b]{0}[/b][[i]{1}[/i]] {2} [i]{3}[/i]",
+						"description": "Compare a value of the array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"ındex:1": { "name":"Index:", "desc":"Position of the value."},
+							"operator:2": { "name":"Operator:", "desc":"How to compare."},
+							"value:3": { "name":"Value:", "desc":"Value to compare."}
+						}
+						},
+					"contains3": {
+						"list-name": "Contains value",
+						"display-text": "Array [b]{0}[/b] contains [i]{1}[/i]",
+						"description": "Check if the array contains a value.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"value:1": { "name":"Value:", "desc":"Value to check."}
+						}
+						},
+					"foreach4": {
+						"list-name": "For each",
+						"display-text": "For each value on [b]{0}[/b]",
+						"description": "For each element on an array. Use CurrentArray, CurrentIndex and CurrentValue.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."}
+						}
+						},
+					"for5": {
+						"list-name": "For",
+						"display-text": "For [i]{1}[/i] to [i]{2}[/i] on [b]{0}[/b] [i](step: {3})[/i]",
+						"description": "For loop on the array. Use CurrentArray, CurrentIndex and CurrentValue.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"start_ındex_(inclusive):1": { "name":"Start Index (inclusive):", "desc":"Index to start the loop."},
+							"finish_ındex_(inclusive):2": { "name":"Finish Index (inclusive):", "desc":"Index to finish the loop."},
+							"step:3": { "name":"Step:", "desc":"Step of the loop"}
+						}
+						},
+					"comparecurrentvalue6": {
+						"list-name": "Compare current value",
+						"display-text": "[i]CurrentValue[/i] {0} [i]{1}[/i]",
+						"description": "Compare the current value of the current loop.",
+						"params": {
+							"operator:0": { "name":"Operator:", "desc":"How to compare."},
+							"value:1": { "name":"Value:", "desc":"Value to compare."}
+						}
+						},
+					"comparecurrentındex7": {
+						"list-name": "Compare current index",
+						"display-text": "[i]CurrentIndex[/i] {0} [i]{1}[/i]",
+						"description": "Compare the current index of the current loop.",
+						"params": {
+							"operator:0": { "name":"Operator:", "desc":"How to compare."},
+							"value:1": { "name":"Value:", "desc":"Value to compare."}
+						}
+						}
+				},
+				"actions": {
+					"newarray0": {
+						"list-name": "New array",
+						"display-text": "Create array with name [b]{0}[/b]",
+						"description": "Create a new array. If an array with that name already exists is deleted.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the new array."}
+						}
+					},
+					"pushtoarray1": {
+						"list-name": "Push",
+						"display-text": "Push value [i]{1}[/i] on array [b]{0}[/b] [i]({2})[/i]",
+						"description": "Push value to array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to Push on."},
+							"value:1": { "name":"Value:", "desc":"Value to insert on the given array."},
+							"where:4": { "name":"Where:", "desc":"Wich side of the array to push the value.", "items":{"on top":"On top","on bottom":"On bottom"}}
+						}
+					},
+					"ınserttoarray2": {
+						"list-name": "Insert at",
+						"display-text": "Insert value [i]{1}[/i] on array [b]{0}[/b] in position [i]{2}[/i]",
+						"description": "Insert value to array on a given position.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to insert on."},
+							"value:1": { "name":"Value:", "desc":"Value to insert on the given array."},
+							"ındex:2": { "name":"Index:", "desc":"Position where to insert the value"}
+						}
+					},
+					"popfromarray3": {
+						"list-name": "Pop",
+						"display-text": "Pop a value from array [b]{0}[/b] [i]({1})[/i]",
+						"description": "Pop value from array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to Pop on."},
+							"where:3": { "name":"Where:", "desc":"Wich side of the array to pop a value.", "items":{"from top":"From top","from bottom":"From bottom"}}
+						}
+					},
+					"deletefromarray4": {
+						"list-name": "Remove at",
+						"display-text": "Remove value from array [b]{0}[/b] in position [i]{1}[/i]",
+						"description": "Delete value from array on a given position (decrease the size of the array).",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to delete from."},
+							"ındex:1": { "name":"Index:", "desc":"Position where to delete value."}
+						}
+					},
+					"setvalue5": {
+						"list-name": "Set at",
+						"display-text": "Set value [i]{1}[/i] on array [b]{0}[/b] in position [i]{2}[/i]",
+						"description": "Change a value in a array on the given position.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to edit."},
+							"value:1": { "name":"Value:", "desc":"Value to change on the given array."},
+							"ındex:2": { "name":"Index:", "desc":"Position where to edit the value"}
+						}
+					},
+					"cleararray6": {
+						"list-name": "Clear array",
+						"display-text": "Clear array [b]{0}[/b]",
+						"description": "Clear all values of an array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to clear."}
+						}
+					},
+					"deletearray7": {
+						"list-name": "Delete array",
+						"display-text": "Delete array [b]{0}[/b]",
+						"description": "Delete an array and all it's values.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to delete."}
+						}
+					},
+					"deleteall8": {
+						"list-name": "Delete all",
+						"display-text": "Delete all arrays",
+						"description": "Delete all arrays and their values."
+					},
+					"sortarray9": {
+						"list-name": "Sort",
+						"display-text": "Sort array [b]{0}[/b] [i]({1}, {2})[/i]",
+						"description": "Sort the values of an array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to sort."},
+							"order:3": { "name":"Order:", "desc":"Which order to sort the array", "items":{"ascending":"Ascending","descending":"Descending"}},
+							"how:6": { "name":"How:", "desc":"How are the values compared", "items":{"alphabetically":"Alphabetically","numerically":"Numerically"}}
+						}
+					},
+					"shufflearray10": {
+						"list-name": "Shuffle",
+						"display-text": "Shuffle array [b]{0}[/b]",
+						"description": "Shuffle the values of an array randomly.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array to shuffle."}
+						}
+					},
+					"log11": {
+						"list-name": "Log array",
+						"display-text": "console.log(array [b]{0}[/b])",
+						"description": "Log the values of an array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the array."}
+						}
+					},
+					"copy12": {
+						"list-name": "Copy array",
+						"display-text": "Create a new array [b]{1}[/b] with the values from array [b]{0}[/b]",
+						"description": "Copy an array intro a new array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the original array."},
+							"array:1": { "name":"Array:", "desc":"Name of the new array."}
+						}
+					},
+					"copyvalues13": {
+						"list-name": "Copy values",
+						"display-text": "Copy all the values of array [b]{0}[/b] and push them on array [b]{1}[/b]",
+						"description": "Copy values of an array en paste them on other array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Name of the original array."},
+							"array:1": { "name":"Array:", "desc":"Name of the target array."}
+						}
+					},
+					"removeıtem14": {
+						"list-name": "Remove item",
+						"display-text": "Remove items  [i][/i] of array [b]{0}[/b]",
+						"description": "Remove all the instances of item in the array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."}
+						}
+					},
+					"addnumbers15": {
+						"list-name": "Add numbers",
+						"display-text": "Add numbers from [i]{1}[/i] to [i]{2}[/i] to array [b]{0}[/b] [i](step {3})[/i]",
+						"description": "Push numbers to an array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"start_(inclusive):1": { "name":"Start (inclusive):", "desc":"Start index."},
+							"finish_(inclusive):2": { "name":"Finish (inclusive):", "desc":"Finish index."},
+							"step:3": { "name":"Step:", "desc":"Step."}
+						}
+					},
+					"addstrings16": {
+						"list-name": "Add strings",
+						"display-text": "Add strings to array [b]{0}[/b] [i]({1})[/i] [i]({2})[/i]",
+						"description": "Push strings to an array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"elements:1": { "name":"Elements:", "desc":"Add strings. (Defaul: separated by '|')."},
+							"separator:2": { "name":"Separator:", "desc":"Sparator. (Delfault: '|')"}
+						}
+					},
+					"replacevalues17": {
+						"list-name": "Replace item",
+						"display-text": "Replace items {1} [i]{2}[/i] with [i]{3}[/i] on array [b]{0}[/b]",
+						"description": "Replace values of an array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"operator:1": { "name":"Operator:", "desc":"Condition to replace."},
+							"ıtem_to_find:2": { "name":"Item to find:", "desc":"Item to find on array."},
+							"replace:3": { "name":"Replace:", "desc":"Replace all copies of item with."}
+						}
+					},
+					"addıtems18": {
+						"list-name": "Add items",
+						"display-text": "Add [i]{1}[/i] [i]({2} times)[/i] on array [b]{0}[/b]",
+						"description": "Push an item multiple times to an array.",
+						"params": {
+							"array:0": { "name":"Array:", "desc":"Array name."},
+							"ıtem:1": { "name":"Item:", "desc":"Item to add."},
+							"times:2": { "name":"Times:", "desc":"Times the item will be added."}
+						}
+					}
+				},
+				"expressions": {
+					"arraytostring0": {
+						"description": "Return the specified array as a string.",
+						"translated-name": "ArrayToString",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"length1": {
+						"description": "Get the length of the specified array.",
+						"translated-name": "Length",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"at2": {
+						"description": "Get value at specified position of an array.",
+						"translated-name": "At",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."},
+							"ındex1": { "name":"Index", "desc":"Position of value."}
+						}
+						},
+					"retrieve3": {
+						"description": "Get value at specified position and removes it from array.",
+						"translated-name": "Retrieve",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."},
+							"ındex1": { "name":"Index", "desc":"Position of value."}
+						}
+						},
+					"max4": {
+						"description": "Get max value of an array.",
+						"translated-name": "Max",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"min5": {
+						"description": "Get min value of an array.",
+						"translated-name": "Min",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"pop6": {
+						"description": "Pop value from top and removes it from array.",
+						"translated-name": "Pop",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"dequeue7": {
+						"description": "Pop value from bottom and removes it from array.",
+						"translated-name": "Dequeue",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"last8": {
+						"description": "Get value from top of array.",
+						"translated-name": "Last",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"first9": {
+						"description": "Get value from bottom of array.",
+						"translated-name": "First",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"random10": {
+						"description": "Get a random value from array.",
+						"translated-name": "Random",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"retrieverandom11": {
+						"description": "Get random value and removes it from array.",
+						"translated-name": "RetrieveRandom",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"count12": {
+						"description": "Count the especified item aparition on array.",
+						"translated-name": "Count",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."},
+							"ıtem1": { "name":"Item", "desc":"Item to find and count."}
+						}
+						},
+					"mode13": {
+						"description": "Get the most repeated item.",
+						"translated-name": "Mode",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"mean14": {
+						"description": "Get the Arithmetic mean.",
+						"translated-name": "Mean",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of the array."}
+						}
+						},
+					"currentarray15": {
+						"description": "Get the name of the current array in loop.",
+						"translated-name": "CurrentArray"
+						},
+					"currentındex16": {
+						"description": "Get the index of the current array in loop.",
+						"translated-name": "CurrentIndex"
+						},
+					"currentvalue17": {
+						"description": "Get the value of the current array in loop.",
+						"translated-name": "CurrentValue"
+						}
+				}
+			}
+		}
+	}
+}

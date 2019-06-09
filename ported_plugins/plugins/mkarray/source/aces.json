@@ -1,0 +1,485 @@
+{
+	"mkarray": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "ısempty0",
+				"scriptName": "IsEmpty",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "comparelength1",
+				"scriptName": "CompareLength",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"operator:1", "type":"cmp"},
+					{"id":"value:2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "compareat2",
+				"scriptName": "CompareAt",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"ındex:1", "type":"number"},
+					{"id":"operator:2", "type":"cmp"},
+					{"id":"value:3", "type":"any"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "contains3",
+				"scriptName": "Contains",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"value:1", "type":"any"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "newarray0",
+				"scriptName": "NewArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "pushtoarray1",
+				"scriptName": "PushToArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"value:1", "type":"any"},
+					{"id":"where:4", "type":"combo", "items":["on top","on bottom"]}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "ınserttoarray2",
+				"scriptName": "InsertToArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"value:1", "type":"any"},
+					{"id":"ındex:2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "popfromarray3",
+				"scriptName": "PopFromArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"where:3", "type":"combo", "items":["from top","from bottom"]}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "deletefromarray4",
+				"scriptName": "DeleteFromArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"ındex:1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "setvalue5",
+				"scriptName": "SetValue",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"value:1", "type":"any"},
+					{"id":"ındex:2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "cleararray6",
+				"scriptName": "ClearArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "deletearray7",
+				"scriptName": "DeleteArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "deleteall8",
+				"scriptName": "DeleteAll",
+				"highlight": false
+			},
+			{
+				"c2id": 9,
+				"id": "sortarray9",
+				"scriptName": "SortArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"order:3", "type":"combo", "items":["ascending","descending"]},
+					{"id":"how:6", "type":"combo", "items":["alphabetically","numerically"]}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "shufflearray10",
+				"scriptName": "ShuffleArray",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "log11",
+				"scriptName": "Log",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "copy12",
+				"scriptName": "Copy",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"array:1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "copyvalues13",
+				"scriptName": "CopyValues",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"array:1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "removeıtem14",
+				"scriptName": "RemoveItem",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "addnumbers15",
+				"scriptName": "AddNumbers",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"start_(inclusive):1", "type":"number", "initialValue":"0"},
+					{"id":"finish_(inclusive):2", "type":"number", "initialValue":"10"},
+					{"id":"step:3", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "addstrings16",
+				"scriptName": "AddStrings",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"elements:1", "type":"string", "initialValue":"\"item1|item2\""},
+					{"id":"separator:2", "type":"string", "initialValue":"\"|\""}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "replacevalues17",
+				"scriptName": "ReplaceValues",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"operator:1", "type":"cmp"},
+					{"id":"ıtem_to_find:2", "type":"any"},
+					{"id":"replace:3", "type":"any"}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "addıtems18",
+				"scriptName": "AddItems",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"ıtem:1", "type":"any"},
+					{"id":"times:2", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "arraytostring0",
+				"expressionName": "ArrayToString",
+				"scriptName": "ArrayToString",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "length1",
+				"expressionName": "Length",
+				"scriptName": "Length",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "at2",
+				"expressionName": "At",
+				"scriptName": "At",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"ındex1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "retrieve3",
+				"expressionName": "Retrieve",
+				"scriptName": "Retrieve",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"ındex1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "max4",
+				"expressionName": "Max",
+				"scriptName": "Max",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "min5",
+				"expressionName": "Min",
+				"scriptName": "Min",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "pop6",
+				"expressionName": "Pop",
+				"scriptName": "Pop",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "dequeue7",
+				"expressionName": "Dequeue",
+				"scriptName": "Dequeue",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "last8",
+				"expressionName": "Last",
+				"scriptName": "Last",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "first9",
+				"expressionName": "First",
+				"scriptName": "First",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "random10",
+				"expressionName": "Random",
+				"scriptName": "Random",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "retrieverandom11",
+				"expressionName": "RetrieveRandom",
+				"scriptName": "RetrieveRandom",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "count12",
+				"expressionName": "Count",
+				"scriptName": "Count",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"},
+					{"id":"ıtem1", "type":"any"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "mode13",
+				"expressionName": "Mode",
+				"scriptName": "Mode",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "mean14",
+				"expressionName": "Mean",
+				"scriptName": "Mean",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "currentarray15",
+				"expressionName": "CurrentArray",
+				"scriptName": "CurrentArray",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 16,
+				"id": "currentındex16",
+				"expressionName": "CurrentIndex",
+				"scriptName": "CurrentIndex",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 17,
+				"id": "currentvalue17",
+				"expressionName": "CurrentValue",
+				"scriptName": "CurrentValue",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"for": {
+		"conditions": [
+			{
+				"c2id": 4,
+				"id": "foreach4",
+				"scriptName": "ForEach",
+				"isLooping": "true",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "for5",
+				"scriptName": "For",
+				"isLooping": "true",
+				"highlight": false,
+				"params": [
+					{"id":"array:0", "type":"string"},
+					{"id":"start_ındex_(inclusive):1", "type":"number", "initialValue":"0"},
+					{"id":"finish_ındex_(inclusive):2", "type":"number"},
+					{"id":"step:3", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "comparecurrentvalue6",
+				"scriptName": "CompareCurrentValue",
+				"highlight": false,
+				"params": [
+					{"id":"operator:0", "type":"cmp"},
+					{"id":"value:1", "type":"any"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "comparecurrentındex7",
+				"scriptName": "CompareCurrentIndex",
+				"highlight": false,
+				"params": [
+					{"id":"operator:0", "type":"cmp"},
+					{"id":"value:1", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	}
+}
