@@ -3,7 +3,7 @@ Also convert construct2 plugins (c3runtime).
 
 You can free download my plugins and converted plugins.
 
-If you want to support me, you can make a donation on patreon or itch.io
+If you want to support me, you can make a donation on patreon or buymeacoffee.com
 
 # construct plugins
 <table>
