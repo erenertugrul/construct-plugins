@@ -452,6 +452,16 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 </tbody>
 <tbody>
 <tr>
+  <td>rex_slg_movement</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_slg_movement/dist/rex_slg_movement.c3addon">rex_ginstgroup.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
   <td>rex_grid_move</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_grid_move/dist/rex_grid_move.c3addon">rex_grid_move.c3addon</a>
 </td>
