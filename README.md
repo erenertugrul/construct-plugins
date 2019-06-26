@@ -389,7 +389,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_board</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board/dist/rex_board.c3addon">rex_board.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_pack/rex_board/dist/rex_board.c3addon">rex_board.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
@@ -398,7 +398,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_board_cubeTx</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_cubeTx/dist/rex_board_cubeTx.c3addon">rex_board_cubeTx.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_pack/rex_board_cubeTx/dist/rex_board_cubeTx.c3addon">rex_board_cubeTx.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
@@ -407,7 +407,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_board_hexShapeMap</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_hexShapeMap/dist/rex_board_hexShapeMap.c3addon">rex_board_hexShapeMap.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_pack/rex_board_hexShapeMap/dist/rex_board_hexShapeMap.c3addon">rex_board_hexShapeMap.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
@@ -416,7 +416,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_board_hexTx</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_hexTx/dist/rex_board_hexTx.c3addon">rex_board_hexTx.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_pack/rex_board_hexTx/dist/rex_board_hexTx.c3addon">rex_board_hexTx.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
@@ -425,7 +425,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_board_projectionTx</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_projectionTx/dist/rex_board_projectionTx.c3addon">rex_board_projectionTx.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_pack/rex_board_projectionTx/dist/rex_board_projectionTx.c3addon">rex_board_projectionTx.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
@@ -434,7 +434,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_board_squareTx</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_squareTx/dist/rex_board_squareTx.c3addon">rex_board_squareTx.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_board_pack/rex_board_squareTx/dist/rex_board_squareTx.c3addon">rex_board_squareTx.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
