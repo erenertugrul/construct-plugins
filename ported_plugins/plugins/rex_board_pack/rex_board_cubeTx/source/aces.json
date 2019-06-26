@@ -1,0 +1,65 @@
+{
+	"orientation": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setorientation1",
+				"scriptName": "SetOrientation",
+				"highlight": false,
+				"params": [
+					{"id":"orientation2", "type":"combo", "items":["orthogonal","ısometric"]}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setorientation2",
+				"scriptName": "SetOrientation",
+				"highlight": false,
+				"params": [
+					{"id":"ısometric0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"size": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "setcellsize3",
+				"scriptName": "SetCellSize",
+				"highlight": false,
+				"params": [
+					{"id":"width0", "type":"number", "initialValue":"0"},
+					{"id":"height1", "type":"number", "initialValue":"0"},
+					{"id":"deep2", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"position": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "setoffset4",
+				"scriptName": "SetOffset",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

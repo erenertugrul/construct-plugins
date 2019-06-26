@@ -1,0 +1,652 @@
+{
+	"configuration": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setactivated0",
+				"scriptName": "SetActivated",
+				"highlight": false,
+				"params": [
+					{"id":"activated2", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"c2id": 101,
+				"id": "setforcemoving101",
+				"scriptName": "SetForceMoving",
+				"highlight": false,
+				"params": [
+					{"id":"force_move2", "type":"combo", "items":["no","yes"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request:_square_grid": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "movetoneighbor1",
+				"scriptName": "MoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction8", "type":"combo", "items":["right","down","left","up","right-down","left-down","left-up","right-up"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request": {
+		"conditions": [
+			{
+				"c2id": 4,
+				"id": "onmovingrequestaccepted4",
+				"scriptName": "OnMovingRequestAccepted",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "onmovingrequestrejected5",
+				"scriptName": "OnMovingRequestRejected",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "ısmovingrequestaccepted6",
+				"scriptName": "IsMovingRequestAccepted",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "testmovetoneighbor8",
+				"scriptName": "TestMoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "movetooffset2",
+				"scriptName": "MoveToOffset",
+				"highlight": false,
+				"params": [
+					{"id":"x_offset0", "type":"number", "initialValue":"0"},
+					{"id":"y_offset1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "movetolxy7",
+				"scriptName": "MoveToLXY",
+				"highlight": false,
+				"params": [
+					{"id":"logic_x0", "type":"number", "initialValue":"0"},
+					{"id":"logic_y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "movetoneighbor10",
+				"scriptName": "MoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "movetotargetchess11",
+				"scriptName": "MoveToTargetChess",
+				"highlight": false,
+				"params": [
+					{"id":"target0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 40,
+				"id": "movetotargetchess40",
+				"scriptName": "MoveToTargetChess",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 8,
+				"id": "blockeruıd8",
+				"expressionName": "BlockerUID",
+				"scriptName": "BlockerUID",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 9,
+				"id": "direction9",
+				"expressionName": "Direction",
+				"scriptName": "Direction",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 10,
+				"id": "destinationlx10",
+				"expressionName": "DestinationLX",
+				"scriptName": "DestinationLX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 11,
+				"id": "destinationly11",
+				"expressionName": "DestinationLY",
+				"scriptName": "DestinationLY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "destinationlz12",
+				"expressionName": "DestinationLZ",
+				"scriptName": "DestinationLZ",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "sourcelx13",
+				"expressionName": "SourceLX",
+				"scriptName": "SourceLX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "sourcely14",
+				"expressionName": "SourceLY",
+				"scriptName": "SourceLY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 15,
+				"id": "sourcelz15",
+				"expressionName": "SourceLZ",
+				"scriptName": "SourceLZ",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"speed": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "setmaxspeed3",
+				"scriptName": "SetMaxSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"max_speed0", "type":"number", "initialValue":"400"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "setacceleration4",
+				"scriptName": "SetAcceleration",
+				"highlight": false,
+				"params": [
+					{"id":"acceleration0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "setdeceleration5",
+				"scriptName": "SetDeceleration",
+				"highlight": false,
+				"params": [
+					{"id":"deceleration0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "setcurrentspeed6",
+				"scriptName": "SetCurrentSpeed",
+				"highlight": false,
+				"params": [
+					{"id":"current_speed0", "type":"number", "initialValue":"400"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"swap": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 8,
+				"id": "swap8",
+				"scriptName": "Swap",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request:_hexagon_grid_(left-right)": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 9,
+				"id": "movetoneighbor9",
+				"scriptName": "MoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction6", "type":"combo", "items":["right","down-right","down-left","left","up-left","up-right"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"aı:_wander": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 12,
+				"id": "wander12",
+				"scriptName": "Wander",
+				"highlight": false
+			},
+			{
+				"c2id": 13,
+				"id": "setwanderrangex13",
+				"scriptName": "SetWanderRangeX",
+				"highlight": false,
+				"params": [
+					{"id":"range_x0", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "setwanderrangey14",
+				"scriptName": "SetWanderRangeY",
+				"highlight": false,
+				"params": [
+					{"id":"range_y0", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "setrandomgenerator15",
+				"scriptName": "SetRandomGenerator",
+				"highlight": false,
+				"params": [
+					{"id":"random_generator0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "resetwandercenter16",
+				"scriptName": "ResetWanderCenter",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"solid": {
+		"conditions": [
+			{
+				"c2id": 12,
+				"id": "ongetsolid12",
+				"scriptName": "OnGetSolid",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 17,
+				"id": "setdestinationsolid17",
+				"scriptName": "SetDestinationSolid",
+				"highlight": false,
+				"params": [
+					{"id":"solid2", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "setdestinationsolid18",
+				"scriptName": "SetDestinationSolid",
+				"highlight": false,
+				"params": [
+					{"id":"solid0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 21,
+				"id": "setdestinationmoveable21",
+				"scriptName": "SetDestinationMoveable",
+				"highlight": false,
+				"params": [
+					{"id":"move-able2", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "setdestinationmoveable22",
+				"scriptName": "SetDestinationMoveable",
+				"highlight": false,
+				"params": [
+					{"id":"move-able0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"collisions": {
+		"conditions": [
+			{
+				"c2id": 11,
+				"id": "oncollidedbegin11",
+				"scriptName": "OnCollidedBegin",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"chess0", "type":"object"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "oncollidedbegin14",
+				"scriptName": "OnCollidedBegin",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"chess0", "type":"object"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 20,
+				"id": "setınstancegroup20",
+				"scriptName": "SetInstanceGroup",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request:_hexagon_grid_(up-down)": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 23,
+				"id": "movetoneighbor23",
+				"scriptName": "MoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction6", "type":"combo", "items":["down-right","down","down-left","up-left","up","up-right"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"aı:_approach/depart": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 24,
+				"id": "approachordepart24",
+				"scriptName": "ApproachOrDepart",
+				"highlight": false,
+				"params": [
+					{"id":"chess0", "type":"object"},
+					{"id":"mode3", "type":"combo", "items":["approach to","depart from"]}
+				]
+			},
+			{
+				"c2id": 25,
+				"id": "approachordepart25",
+				"scriptName": "ApproachOrDepart",
+				"highlight": false,
+				"params": [
+					{"id":"chess_uıd0", "type":"any", "initialValue":"0"},
+					{"id":"mode3", "type":"combo", "items":["approach to","depart from"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"stop": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 30,
+				"id": "stop30",
+				"scriptName": "Stop",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"reach": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onhittarget0",
+				"scriptName": "OnHitTarget",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"move": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "onmoving2",
+				"scriptName": "OnMoving",
+				"isDeprecated": "true",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "ısmoving3",
+				"scriptName": "IsMoving",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"test": {
+		"conditions": [
+			{
+				"c2id": 7,
+				"id": "testmovetooffset7",
+				"scriptName": "TestMoveToOffset",
+				"highlight": false,
+				"params": [
+					{"id":"x_offset0", "type":"number", "initialValue":"0"},
+					{"id":"y_offset1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"test:_square_grid": {
+		"conditions": [
+			{
+				"c2id": 9,
+				"id": "testmovetoneighbor9",
+				"scriptName": "TestMoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction8", "type":"combo", "items":["right","down","left","up","right-down","left-down","left-up","right-up"]}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"test:_hexagon_grid_(left-right)": {
+		"conditions": [
+			{
+				"c2id": 10,
+				"id": "testmovetoneighbor10",
+				"scriptName": "TestMoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction6", "type":"combo", "items":["right","down-right","down-left","left","up-left","up-right"]}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"test:_hexagon_grid_(up-down)": {
+		"conditions": [
+			{
+				"c2id": 13,
+				"id": "testmovetoneighbor13",
+				"scriptName": "TestMoveToNeighbor",
+				"highlight": false,
+				"params": [
+					{"id":"direction6", "type":"combo", "items":["down-right","down","down-left","up-left","up","up-right"]}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"current": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "activated0",
+				"expressionName": "Activated",
+				"scriptName": "Activated",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 1,
+				"id": "speed1",
+				"expressionName": "Speed",
+				"scriptName": "Speed",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"setting": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 2,
+				"id": "maxspeed2",
+				"expressionName": "MaxSpeed",
+				"scriptName": "MaxSpeed",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "acc3",
+				"expressionName": "Acc",
+				"scriptName": "Acc",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "dec4",
+				"expressionName": "Dec",
+				"scriptName": "Dec",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"target": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 5,
+				"id": "targetx5",
+				"expressionName": "TargetX",
+				"scriptName": "TargetX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 6,
+				"id": "targety6",
+				"expressionName": "TargetY",
+				"scriptName": "TargetY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

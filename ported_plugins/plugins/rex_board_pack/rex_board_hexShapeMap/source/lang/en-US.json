@@ -1,0 +1,60 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Hex shape map.",
+	"text": {
+		"plugins": {
+			"rex_hexshapemap": {
+				"name": "Hex shape map",
+				"description": "Shape map of hex grid",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_hexshapemap.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"reset_board": "Reset board"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"resethexagon1": {
+						"list-name": "Reset in hexagon",
+						"display-text": "Reset board [i]{0}[/i] and fill tile [i]{1}[/i] on layer [i]{2}[/i] in hexagon shape with radius to [i]{3}[/i]",
+						"description": "Reset board and fill tile with hexagon shape.",
+						"params": {
+							"board0": { "name":"Board", "desc":"Board object"},
+							"tile1": { "name":"Tile", "desc":"Tile object."},
+							"layer2": { "name":"Layer", "desc":"Layer name of number."},
+							"radius3": { "name":"Radius", "desc":"Radius in grids."}
+						}
+					},
+					"resettriangle2": {
+						"list-name": "Reset in triangle",
+						"display-text": "Reset board [i]{0}[/i] and fill tile [i]{1}[/i] on layer [i]{2}[/i] in [i]{3}[/i] triangle shape with height to [i]{4}[/i]",
+						"description": "Reset board and fill tile with triangle shape.",
+						"params": {
+							"board0": { "name":"Board", "desc":"Board object"},
+							"tile1": { "name":"Tile", "desc":"Tile object."},
+							"layer2": { "name":"Layer", "desc":"Layer name of number."},
+							"face5": { "name":"Face", "desc":"Face of triangle.", "items":{"down/right":"Down/Right","top/left":"Top/Left"}},
+							"height6": { "name":"Height", "desc":"Height in grids."}
+						}
+					},
+					"resetparallelogram3": {
+						"list-name": "Reset in parallelogram",
+						"display-text": "Reset board [i]{0}[/i] and fill tile [i]{1}[/i] on layer [i]{2}[/i] in [i]{3}[/i] parallelogram shape with [i]{4}[/i]x[i]{5}[/i]",
+						"description": "Reset board and fill tile with parallelogram shape.",
+						"params": {
+							"board0": { "name":"Board", "desc":"Board object"},
+							"tile1": { "name":"Tile", "desc":"Tile object."},
+							"layer2": { "name":"Layer", "desc":"Layer name of number."},
+							"face6": { "name":"Face", "desc":"Type of parallelogram.", "items":{"type 0":"Type 0","type 1":"Type 1","type 2":"Type 2"}},
+							"width7": { "name":"Width", "desc":"Width in grids."},
+							"height8": { "name":"Height", "desc":"Height in grids."}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

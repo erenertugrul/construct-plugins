@@ -1,0 +1,341 @@
+{
+	"setup": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setup0",
+				"scriptName": "Setup",
+				"highlight": false,
+				"params": [
+					{"id":"board0", "type":"object"},
+					{"id":"group1", "type":"object"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "setpathmode7",
+				"scriptName": "SetPathMode",
+				"highlight": false,
+				"params": [
+					{"id":"path_mode7", "type":"combo", "items":["random","diagonal","straight","a*","line","a*-line","a*-random"]}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "setrandomgenerator11",
+				"scriptName": "SetRandomGenerator",
+				"highlight": false,
+				"params": [
+					{"id":"random_generator0", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"cost": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "oncostfn1",
+				"scriptName": "OnCostFn",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setcost1",
+				"scriptName": "SetCost",
+				"highlight": false,
+				"params": [
+					{"id":"cost0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "blockıng3",
+				"expressionName": "BLOCKING",
+				"scriptName": "BLOCKING",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"request:_moveable_area": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "getmoveablearea2",
+				"scriptName": "GetMoveableArea",
+				"highlight": false,
+				"params": [
+					{"id":"chess0", "type":"object"},
+					{"id":"moving_points1", "type":"number", "initialValue":"0"},
+					{"id":"moving_cost2", "type":"any", "initialValue":"0"},
+					{"id":"filter3", "type":"string", "initialValue":"\"\""},
+					{"id":"group4", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "getmoveablearea3",
+				"scriptName": "GetMoveableArea",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"},
+					{"id":"moving_points1", "type":"number", "initialValue":"0"},
+					{"id":"moving_cost2", "type":"any", "initialValue":"0"},
+					{"id":"filter3", "type":"string", "initialValue":"\"\""},
+					{"id":"group4", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request:_moving_path": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "getmovingpath4",
+				"scriptName": "GetMovingPath",
+				"highlight": false,
+				"params": [
+					{"id":"chess0", "type":"object"},
+					{"id":"tile/chess1", "type":"object"},
+					{"id":"moving_points2", "type":"number", "initialValue":"0"},
+					{"id":"moving_cost3", "type":"any", "initialValue":"0"},
+					{"id":"group4", "type":"string", "initialValue":"\"\""},
+					{"id":"exact7", "type":"combo", "items":["","nearest"]}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "getmovingpath5",
+				"scriptName": "GetMovingPath",
+				"highlight": false,
+				"params": [
+					{"id":"chess_uıd0", "type":"any", "initialValue":"0"},
+					{"id":"tile/chess_uıd1", "type":"any", "initialValue":"0"},
+					{"id":"moving_points2", "type":"number", "initialValue":"0"},
+					{"id":"moving_cost3", "type":"any", "initialValue":"0"},
+					{"id":"group4", "type":"string", "initialValue":"\"\""},
+					{"id":"exact7", "type":"combo", "items":["","nearest"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"filter": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "onfilterfn2",
+				"scriptName": "OnFilterFn",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "appendfilter6",
+				"scriptName": "AppendFilter",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"request": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "chessuıd1",
+				"expressionName": "ChessUID",
+				"scriptName": "ChessUID",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 2,
+				"id": "tileuıd2",
+				"expressionName": "TileUID",
+				"scriptName": "TileUID",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 4,
+				"id": "tilex4",
+				"expressionName": "TileX",
+				"scriptName": "TileX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "tiley5",
+				"expressionName": "TileY",
+				"scriptName": "TileY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 9,
+				"id": "starttileuıd9",
+				"expressionName": "StartTileUID",
+				"scriptName": "StartTileUID",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 21,
+				"id": "startx21",
+				"expressionName": "StartX",
+				"scriptName": "StartX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 22,
+				"id": "starty22",
+				"expressionName": "StartY",
+				"scriptName": "StartY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"moving_point": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 6,
+				"id": "ınfınıty6",
+				"expressionName": "INFINITY",
+				"scriptName": "INFINITY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"result": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 7,
+				"id": "uıd2pathcost7",
+				"expressionName": "UID2PathCost",
+				"scriptName": "UID2PathCost",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "nearesttileuıd8",
+				"expressionName": "NearestTileUID",
+				"scriptName": "NearestTileUID",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 31,
+				"id": "endtileuıd31",
+				"expressionName": "EndTileUID",
+				"scriptName": "EndTileUID",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 32,
+				"id": "endx32",
+				"expressionName": "EndX",
+				"scriptName": "EndX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 33,
+				"id": "endy33",
+				"expressionName": "EndY",
+				"scriptName": "EndY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"request:_previous": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "pretileuıd11",
+				"expressionName": "PreTileUID",
+				"scriptName": "PreTileUID",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 12,
+				"id": "pretilex12",
+				"expressionName": "PreTileX",
+				"scriptName": "PreTileX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "pretiley13",
+				"expressionName": "PreTileY",
+				"scriptName": "PreTileY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "pretilepathcost14",
+				"expressionName": "PreTilePathCost",
+				"scriptName": "PreTilePathCost",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

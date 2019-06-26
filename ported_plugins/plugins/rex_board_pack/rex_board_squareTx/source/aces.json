@@ -1,0 +1,257 @@
+{
+	"orientation": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setorientation1",
+				"scriptName": "SetOrientation",
+				"highlight": false,
+				"params": [
+					{"id":"orientation3", "type":"combo", "items":["orthogonal","ısometric","staggered"]}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setorientation2",
+				"scriptName": "SetOrientation",
+				"highlight": false,
+				"params": [
+					{"id":"ısometric0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"size": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "setcellsize3",
+				"scriptName": "SetCellSize",
+				"highlight": false,
+				"params": [
+					{"id":"width0", "type":"number", "initialValue":"0"},
+					{"id":"height1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"offset": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "setoffset4",
+				"scriptName": "SetOffset",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "pox3",
+				"expressionName": "POX",
+				"scriptName": "POX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "poy4",
+				"expressionName": "POY",
+				"scriptName": "POY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"directions": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 5,
+				"id": "setdirections5",
+				"scriptName": "SetDirections",
+				"highlight": false,
+				"params": [
+					{"id":"directions2", "type":"combo", "items":["4 directions","8 directions"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"cell": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "width1",
+				"expressionName": "Width",
+				"scriptName": "Width",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "height2",
+				"expressionName": "Height",
+				"scriptName": "Height",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"direction_code": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "dırrıght11",
+				"expressionName": "DIRRIGHT",
+				"scriptName": "DIRRIGHT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "dırdown12",
+				"expressionName": "DIRDOWN",
+				"scriptName": "DIRDOWN",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "dırleft13",
+				"expressionName": "DIRLEFT",
+				"scriptName": "DIRLEFT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "dırup14",
+				"expressionName": "DIRUP",
+				"scriptName": "DIRUP",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 15,
+				"id": "dırrıghtdown15",
+				"expressionName": "DIRRIGHTDOWN",
+				"scriptName": "DIRRIGHTDOWN",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 16,
+				"id": "dırleftdown16",
+				"expressionName": "DIRLEFTDOWN",
+				"scriptName": "DIRLEFTDOWN",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 17,
+				"id": "dırleftup17",
+				"expressionName": "DIRLEFTUP",
+				"scriptName": "DIRLEFTUP",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 18,
+				"id": "dırrıghtup18",
+				"expressionName": "DIRRIGHTUP",
+				"scriptName": "DIRRIGHTUP",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"physical": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 51,
+				"id": "lxy2px51",
+				"expressionName": "LXY2PX",
+				"scriptName": "LXY2PX",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 52,
+				"id": "lxy2py52",
+				"expressionName": "LXY2PY",
+				"scriptName": "LXY2PY",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"logic": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 53,
+				"id": "pxy2lx53",
+				"expressionName": "PXY2LX",
+				"scriptName": "PXY2LX",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 54,
+				"id": "pxy2ly54",
+				"expressionName": "PXY2LY",
+				"scriptName": "PXY2LY",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	}
+}

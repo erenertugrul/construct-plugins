@@ -1,0 +1,202 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Projection Tx.",
+	"text": {
+		"plugins": {
+			"rex_projectiontx": {
+				"name": "Projection Tx",
+				"description": "Transfer logic position to physical position with projection layout",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_board_projectiontx.html",
+				"properties": {
+					"origin": {
+						"name": "Origin",
+						"desc": "Position of Logic (0,0)."
+						},
+					"x-at-(0,0)": {
+						"name": "X at (0,0)",
+						"desc": "Physical X co-ordinate at logic (0,0)."
+						},
+					"y-at-(0,0)": {
+						"name": "Y at (0,0)",
+						"desc": "Physical Y co-ordinate at logic (0,0)."
+						},
+					"vector-u": {
+						"name": "Vector U",
+						"desc": "Offset from Logic (1,0) to Logic (0,0)."
+						},
+					"ux": {
+						"name": "UX",
+						"desc": "Physical X offset of Logic (1,0) - Logic (0,0)."
+						},
+					"uy": {
+						"name": "UY",
+						"desc": "Physical Y offset of Logic (1,0) - Logic (0,0)."
+						},
+					"vector-v": {
+						"name": "Vector V",
+						"desc": "Offset from Logic (0,1) to Logic (0,0)."
+						},
+					"vx": {
+						"name": "VX",
+						"desc": "Physical X offset of Logic (0,1) - Logic (0,0)."
+						},
+					"vy": {
+						"name": "VY",
+						"desc": "Physical Y offset of Logic (0,1) - Logic (0,0)."
+						},
+					"misc": {
+						"name": "Misc",
+						"desc": "Misc."
+						},
+					"directions": {
+						"name": "Directions",
+						"desc": "Directions of neighbots.",
+						"items": {
+							"4 directions":"4 directions",
+							"8 directions":"8 directions"
+							}
+						}
+				},
+				"aceCategories": {
+					"origin": "Origin",
+					"vector_uv": "Vector UV",
+					"directions": "Directions",
+					"vector_u": "Vector U",
+					"vector_v": "Vector V",
+					"direction_code": "Direction code",
+					"physical": "Physical",
+					"logic": "Logic"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setoffset1": {
+						"list-name": "Set origin",
+						"display-text": "Set origin to ([i]{0}[/i], [i]{1}[/i])",
+						"description": "Set Physical origin logic (0,0) position (position of logic (0,0)).",
+						"params": {
+							"x0": { "name":"X", "desc":"Physical X co-ordinate at logic (0,0)."},
+							"y1": { "name":"Y", "desc":"Physical Y co-ordinate at logic (0,0)."}
+						}
+					},
+					"setvectoru2": {
+						"list-name": "Set vector U",
+						"display-text": "Set vector U to ([i]{0}[/i], [i]{1}[/i])",
+						"description": "Set vector U, physical offset of Logic (1,0) - Logic (0,0).",
+						"params": {
+							"x0": { "name":"X", "desc":"Physical X offset of Logic (1,0) - Logic (0,0)."},
+							"y1": { "name":"Y", "desc":"Physical Y offset of Logic (1,0) - Logic (0,0)."}
+						}
+					},
+					"setvectorv3": {
+						"list-name": "Set vector V",
+						"display-text": "Set vector V to ([i]{0}[/i], [i]{1}[/i])",
+						"description": "Set vector V, physical offset of Logic (0,1) - Logic (0,0).",
+						"params": {
+							"x0": { "name":"X", "desc":"Physical X offset of Logic (0,1) - Logic (0,0)."},
+							"y1": { "name":"Y", "desc":"Physical Y offset of Logic (0,1) - Logic (0,0)."}
+						}
+					},
+					"setdirections5": {
+						"list-name": "Set directions",
+						"display-text": "Set directions to [i]{0}[/i]",
+						"description": "Set directions.",
+						"params": {
+							"directions2": { "name":"Directions", "desc":"Directions of neighbots", "items":{"4 directions":"4 directions","8 directions":"8 directions"}}
+						}
+					}
+				},
+				"expressions": {
+					"pox1": {
+						"description": "Get physical X co-ordinate at logic (0,0).",
+						"translated-name": "POX"
+						},
+					"poy2": {
+						"description": "Get physical Y co-ordinate at logic (0,0).",
+						"translated-name": "POY"
+						},
+					"ux3": {
+						"description": "Physical X offset of Logic (1,0) - Logic (0,0).",
+						"translated-name": "UX"
+						},
+					"uy4": {
+						"description": "Physical Y offset of Logic (1,0) - Logic (0,0).",
+						"translated-name": "UY"
+						},
+					"vx5": {
+						"description": "Physical X offset of Logic (0,1) - Logic (0,0).",
+						"translated-name": "VX"
+						},
+					"vy6": {
+						"description": "Physical Y offset of Logic (0,1) - Logic (0,0).",
+						"translated-name": "VY"
+						},
+					"dırrıght11": {
+						"description": "Direction code of right.",
+						"translated-name": "DIRRIGHT"
+						},
+					"dırdown12": {
+						"description": "Direction code of down.",
+						"translated-name": "DIRDOWN"
+						},
+					"dırleft13": {
+						"description": "Direction code of left.",
+						"translated-name": "DIRLEFT"
+						},
+					"dırup14": {
+						"description": "Direction code of up.",
+						"translated-name": "DIRUP"
+						},
+					"dırrıghtdown15": {
+						"description": "Direction code of right-down.",
+						"translated-name": "DIRRIGHTDOWN"
+						},
+					"dırleftdown16": {
+						"description": "Direction code of left-down.",
+						"translated-name": "DIRLEFTDOWN"
+						},
+					"dırleftup17": {
+						"description": "Direction code of left-up.",
+						"translated-name": "DIRLEFTUP"
+						},
+					"dırrıghtup18": {
+						"description": "Direction code of right-up.",
+						"translated-name": "DIRRIGHTUP"
+						},
+					"lxy2px51": {
+						"description": "Get physical X co-ordinate by logic X,Y index. Return (-1) if this position does not exist.",
+						"translated-name": "LXY2PX",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."}
+						}
+						},
+					"lxy2py52": {
+						"description": "Get physical Y co-ordinate by logic X,Y index. Return (-1) if this position does not exist.",
+						"translated-name": "LXY2PY",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."}
+						}
+						},
+					"pxy2lx53": {
+						"description": "Get logic X by physical X,Y co-ordinate.",
+						"translated-name": "PXY2LX",
+						"params": {
+							"x0": { "name":"X", "desc":"The physical X."},
+							"y1": { "name":"Y", "desc":"The physical Y."}
+						}
+						},
+					"pxy2ly54": {
+						"description": "Get logic Y by physical X,Y co-ordinate.",
+						"translated-name": "PXY2LY",
+						"params": {
+							"x0": { "name":"X", "desc":"The physical X."},
+							"y1": { "name":"Y", "desc":"The physical Y."}
+						}
+						}
+				}
+			}
+		}
+	}
+}

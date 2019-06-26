@@ -1,0 +1,49 @@
+{
+	"reset_board": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "resethexagon1",
+				"scriptName": "ResetHexagon",
+				"highlight": false,
+				"params": [
+					{"id":"board0", "type":"object"},
+					{"id":"tile1", "type":"object"},
+					{"id":"layer2", "type":"layer"},
+					{"id":"radius3", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "resettriangle2",
+				"scriptName": "ResetTriangle",
+				"highlight": false,
+				"params": [
+					{"id":"board0", "type":"object"},
+					{"id":"tile1", "type":"object"},
+					{"id":"layer2", "type":"layer"},
+					{"id":"face5", "type":"combo", "items":["down/right","top/left"]},
+					{"id":"height6", "type":"number", "initialValue":"1"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "resetparallelogram3",
+				"scriptName": "ResetParallelogram",
+				"highlight": false,
+				"params": [
+					{"id":"board0", "type":"object"},
+					{"id":"tile1", "type":"object"},
+					{"id":"layer2", "type":"layer"},
+					{"id":"face6", "type":"combo", "items":["type 0","type 1","type 2"]},
+					{"id":"width7", "type":"number", "initialValue":"1"},
+					{"id":"height8", "type":"number", "initialValue":"1"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

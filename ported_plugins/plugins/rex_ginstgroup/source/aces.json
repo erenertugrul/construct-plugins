@@ -1,0 +1,807 @@
+{
+	"group": {
+		"conditions": [
+			{
+				"c2id": 4,
+				"id": "ısıngroup4",
+				"scriptName": "IsInGroup",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "ısempty5",
+				"scriptName": "IsEmpty",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "destroyall0",
+				"scriptName": "DestroyAll",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "clean1",
+				"scriptName": "Clean",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "copy2",
+				"scriptName": "Copy",
+				"highlight": false,
+				"params": [
+					{"id":"source0", "type":"string", "initialValue":"\"\""},
+					{"id":"target1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "destroygroup5",
+				"scriptName": "DestroyGroup",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "ınstcnt3",
+				"expressionName": "InstCnt",
+				"scriptName": "InstCnt",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "randomındex14",
+				"expressionName": "RandomIndex",
+				"scriptName": "RandomIndex",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"group:_json": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "string2group3",
+				"scriptName": "String2Group",
+				"highlight": false,
+				"params": [
+					{"id":"json_string0", "type":"string", "initialValue":"\"\""},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "string2all4",
+				"scriptName": "String2All",
+				"highlight": false,
+				"params": [
+					{"id":"json_string0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"group:_add_instances": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "addınsts6",
+				"scriptName": "AddInsts",
+				"highlight": false,
+				"params": [
+					{"id":"ınstances0", "type":"object"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "addınstbyuıd7",
+				"scriptName": "AddInstByUID",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 28,
+				"id": "cleanadddınsts28",
+				"scriptName": "CleanAdddInsts",
+				"highlight": false,
+				"params": [
+					{"id":"ınstances0", "type":"object"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 29,
+				"id": "cleanadddınstbyuıd29",
+				"scriptName": "CleanAdddInstByUID",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"group:_reomve_instances": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 8,
+				"id": "removeınsts8",
+				"scriptName": "RemoveInsts",
+				"highlight": false,
+				"params": [
+					{"id":"ınstances0", "type":"object"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "removeınst9",
+				"scriptName": "RemoveInst",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"group:_set_operation": {
+		"conditions": [
+			{
+				"c2id": 7,
+				"id": "ıssubset7",
+				"scriptName": "IsSubset",
+				"highlight": false,
+				"params": [
+					{"id":"subset0", "type":"string", "initialValue":"\"\""},
+					{"id":"main_set1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 10,
+				"id": "union10",
+				"scriptName": "Union",
+				"highlight": false,
+				"params": [
+					{"id":"a0", "type":"string", "initialValue":"\"\""},
+					{"id":"b1", "type":"string", "initialValue":"\"\""},
+					{"id":"result2", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "complement11",
+				"scriptName": "Complement",
+				"highlight": false,
+				"params": [
+					{"id":"a0", "type":"string", "initialValue":"\"\""},
+					{"id":"b1", "type":"string", "initialValue":"\"\""},
+					{"id":"result2", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "ıntersection12",
+				"scriptName": "Intersection",
+				"highlight": false,
+				"params": [
+					{"id":"a0", "type":"string", "initialValue":"\"\""},
+					{"id":"b1", "type":"string", "initialValue":"\"\""},
+					{"id":"result2", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"list:_sort": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "onsortingfn1",
+				"scriptName": "OnSortingFn",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"function0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 13,
+				"id": "shuffle13",
+				"scriptName": "Shuffle",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "sortbyfn14",
+				"scriptName": "SortByFn",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"sorting_function1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "sortbyuıd18",
+				"scriptName": "SortByUID",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"order3", "type":"combo", "items":["descending","ascending"]}
+				]
+			},
+			{
+				"c2id": 19,
+				"id": "sortbyuıddec19",
+				"scriptName": "SortByUIDDec",
+				"isDeprecated": "true",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"list:_sort_function": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 15,
+				"id": "setcmpresultdirectly15",
+				"scriptName": "SetCmpResultDirectly",
+				"highlight": false,
+				"params": [
+					{"id":"result0", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "setcmpresultcombo16",
+				"scriptName": "SetCmpResultCombo",
+				"highlight": false,
+				"params": [
+					{"id":"result3", "type":"combo", "items":["<","=",">"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "cmpuıda1",
+				"expressionName": "CmpUIDA",
+				"scriptName": "CmpUIDA",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 2,
+				"id": "cmpuıdb2",
+				"expressionName": "CmpUIDB",
+				"scriptName": "CmpUIDB",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"sol:_group": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 17,
+				"id": "group2ınsts17",
+				"scriptName": "Group2Insts",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"object1", "type":"object"},
+					{"id":"operation4", "type":"combo", "items":["keep","pop"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"list": {
+		"conditions": [
+			{
+				"c2id": 2,
+				"id": "foreachuıd2",
+				"scriptName": "ForEachUID",
+				"isLooping": "true",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"variable0", "type":"string", "initialValue":"\"\""},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 20,
+				"id": "reverse20",
+				"scriptName": "Reverse",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 21,
+				"id": "slice21",
+				"scriptName": "Slice",
+				"highlight": false,
+				"params": [
+					{"id":"source0", "type":"string", "initialValue":"\"\""},
+					{"id":"start1", "type":"number", "initialValue":"0"},
+					{"id":"end2", "type":"number", "initialValue":"1"},
+					{"id":"target3", "type":"string", "initialValue":"\"\""},
+					{"id":"operation6", "type":"combo", "items":["copy","pop"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 4,
+				"id": "uıd2ındex4",
+				"expressionName": "UID2Index",
+				"scriptName": "UID2Index",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"uıd1", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "ındex2uıd5",
+				"expressionName": "Index2UID",
+				"scriptName": "Index2UID",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"ındex1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "pop11",
+				"expressionName": "Pop",
+				"scriptName": "Pop",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"ındex1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "firstuıd12",
+				"expressionName": "FirstUID",
+				"scriptName": "FirstUID",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "lastuıd13",
+				"expressionName": "LastUID",
+				"scriptName": "LastUID",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "randomındex2uıd15",
+				"expressionName": "RandomIndex2UID",
+				"scriptName": "RandomIndex2UID",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "randompop16",
+				"expressionName": "RandomPop",
+				"scriptName": "RandomPop",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"sol:_list": {
+		"conditions": [
+			{
+				"c2id": 6,
+				"id": "popınst6",
+				"scriptName": "PopInst",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"ındex1", "type":"number", "initialValue":"0"},
+					{"id":"object2", "type":"object"},
+					{"id":"operation5", "type":"combo", "items":["get","pop"]}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "randompopınstance8",
+				"scriptName": "RandomPopInstance",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"object1", "type":"object"},
+					{"id":"operation4", "type":"combo", "items":["get","pop"]}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 22,
+				"id": "popınst22",
+				"scriptName": "PopInst",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"ındex1", "type":"number", "initialValue":"0"},
+					{"id":"object2", "type":"object"},
+					{"id":"operation5", "type":"combo", "items":["get","pop"]}
+				]
+			},
+			{
+				"c2id": 30,
+				"id": "randompopınstance30",
+				"scriptName": "RandomPopInstance",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"object1", "type":"object"},
+					{"id":"operation4", "type":"combo", "items":["get","pop"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"setup": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 23,
+				"id": "setrandomgenerator23",
+				"scriptName": "SetRandomGenerator",
+				"highlight": false,
+				"params": [
+					{"id":"random_generator0", "type":"object"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"list:_push_&_ınsert": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 24,
+				"id": "pushınsts24",
+				"scriptName": "PushInsts",
+				"highlight": false,
+				"params": [
+					{"id":"where2", "type":"combo", "items":["back","front"]},
+					{"id":"ınstances3", "type":"object"},
+					{"id":"group4", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 25,
+				"id": "pushınstbyuıd25",
+				"scriptName": "PushInstByUID",
+				"highlight": false,
+				"params": [
+					{"id":"where2", "type":"combo", "items":["back","front"]},
+					{"id":"uıd3", "type":"any", "initialValue":"0"},
+					{"id":"group4", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 26,
+				"id": "ınsertınsts26",
+				"scriptName": "InsertInsts",
+				"highlight": false,
+				"params": [
+					{"id":"ınstances0", "type":"object"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""},
+					{"id":"ındex2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 27,
+				"id": "ınsertınstbyuıd27",
+				"scriptName": "InsertInstByUID",
+				"highlight": false,
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"0"},
+					{"id":"group1", "type":"string", "initialValue":"\"\""},
+					{"id":"ındex2", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"mapping_function": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onmappingfn0",
+				"scriptName": "OnMappingFn",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"function0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 31,
+				"id": "setmappingresult31",
+				"scriptName": "SetMappingResult",
+				"highlight": false,
+				"params": [
+					{"id":"result0", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "mapuıd0",
+				"expressionName": "MapUID",
+				"scriptName": "MapUID",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	},
+	"sol_-_mapping_function": {
+		"conditions": [
+			{
+				"c2id": 9,
+				"id": "popınstbymappingfunction9",
+				"scriptName": "PopInstByMappingFunction",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"object1", "type":"object"},
+					{"id":"operation4", "type":"combo", "items":["keep","pop"]},
+					{"id":"mapping5", "type":"string", "initialValue":"\"\""},
+					{"id":"value_type8", "type":"combo", "items":["minimum","maximum"]}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 32,
+				"id": "popınstbymappingfunction32",
+				"scriptName": "PopInstByMappingFunction",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"object1", "type":"object"},
+					{"id":"operation4", "type":"combo", "items":["keep","pop"]},
+					{"id":"mapping5", "type":"string", "initialValue":"\"\""},
+					{"id":"value_type8", "type":"combo", "items":["minimum","maximum"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"list:_sort_-_mapping_function": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 33,
+				"id": "sortbymappingfunction33",
+				"scriptName": "SortByMappingFunction",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"mapping1", "type":"string", "initialValue":"\"\""},
+					{"id":"order6", "type":"combo", "items":["descending","ascending","logical descending","logical ascending"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ınstance": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 41,
+				"id": "destroyınstanceıngroup41",
+				"scriptName": "DestroyInstanceInGroup",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"sol": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "group2ınsts3",
+				"scriptName": "Group2Insts",
+				"isInvertible": "false",
+				"highlight": false,
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""},
+					{"id":"object1", "type":"object"},
+					{"id":"operation4", "type":"combo", "items":["keep","pop"]}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"list:_for_each": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 6,
+				"id": "ıtem6",
+				"expressionName": "Item",
+				"scriptName": "Item",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"variable0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "ındex7",
+				"expressionName": "Index",
+				"scriptName": "Index",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"variable0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	},
+	"json": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 8,
+				"id": "grouptostring8",
+				"expressionName": "GroupToString",
+				"scriptName": "GroupToString",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"group0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "alltostring9",
+				"expressionName": "AllToString",
+				"scriptName": "AllToString",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"private_group": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 10,
+				"id": "privategroup10",
+				"expressionName": "PrivateGroup",
+				"scriptName": "PrivateGroup",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"uıd0", "type":"any", "initialValue":"\"\""},
+					{"id":"group1", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		]
+	}
+}

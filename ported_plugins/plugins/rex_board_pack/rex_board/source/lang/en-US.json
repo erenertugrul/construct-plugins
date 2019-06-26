@@ -1,0 +1,855 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Board.",
+	"text": {
+		"plugins": {
+			"rex_slgboard": {
+				"name": "Board",
+				"description": "Store the logical position of chess, based plugin of my board-series plugins/behaviors.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_board.html",
+				"properties": {
+					"width": {
+						"name": "Width",
+						"desc": "Initial number of elements on the X axis."
+						},
+					"height": {
+						"name": "Height",
+						"desc": "Initial number of elements on the Y axis."
+						},
+					"wrap": {
+						"name": "Wrap",
+						"desc": "Wrap the logical position.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"ınfinity": {
+						"name": "Infinity",
+						"desc": "Infinity board.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"board": "Board",
+					"add": "Add",
+					"destroy": "Destroy",
+					"remove": "Remove",
+					"move": "Move",
+					"layout": "Layout",
+					"create": "Create",
+					"pick_chess_by_lxyz": "Pick chess by lxyz",
+					"pick_chess": "Pick chess",
+					"pick_chess_above_tiles": "Pick chess above tiles",
+					"neighbors": "Neighbors",
+					"for_each_cell": "For each cell",
+					"empty": "Empty",
+					"logic": "Logic",
+					"kick": "Kick",
+					"neighborhood": "Neighborhood",
+					"for_each_lz": "For each LZ",
+					"chess_uid": "Chess uid",
+					"physical": "Physical",
+					"max-min": "Max-min"
+				},
+				"conditions": {
+					"foreachcell3": {
+						"list-name": "For each cell",
+						"display-text": "For each cell, [i]{0}[/i]",
+						"description": "Repeat the event for each cell in the board.",
+						"params": {
+							"direction4": { "name":"Direction", "desc":"Scan direction.", "items":{"top to bottom":"Top to bottom","bottom to top":"Bottom to top","left to right":"Left to right","right to left":"Right to left"}}
+						}
+						},
+					"ısoccupied4": {
+						"list-name": "Is occupied",
+						"display-text": "Cell [[i]{0}[/i],[i]{1}[/i],[i]{2}[/i]] is occupied",
+						"description": "Testing if cell is occupied.",
+						"params": {
+							"logic_x0": { "name":"Logic X", "desc":"The X index (0-based)."},
+							"logic_y1": { "name":"Logic Y", "desc":"The Y index (0-based)."},
+							"logic_z2": { "name":"Logic Z", "desc":"The Z index (0-based)."}
+						}
+						},
+					"ısempty5": {
+						"list-name": "Is empty",
+						"display-text": "Cell [[i]{0}[/i],[i]{1}[/i],[i]{2}[/i]] is empty",
+						"description": "Testing if cell is empty.",
+						"params": {
+							"logic_x0": { "name":"Logic X", "desc":"The X index (0-based)."},
+							"logic_y1": { "name":"Logic Y", "desc":"The Y index (0-based)."},
+							"logic_z2": { "name":"Logic Z", "desc":"The Z index (0-based)."}
+						}
+						},
+					"oncollided6": {
+						"list-name": "On collision",
+						"display-text": "On [i]{0}[/i] collided with [i]{1}[/i]",
+						"description": "Triggered when the object collides with another object.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object A."},
+							"chess1": { "name":"Chess", "desc":"Chess object B."}
+						}
+						},
+					"ısoverlapping7": {
+						"list-name": "Is overlapping",
+						"display-text": "Is [i]{0}[/i] overlapping with [i]{1}[/i]",
+						"description": "Test if the object is overlapping another object.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object A."},
+							"chess1": { "name":"Chess", "desc":"Chess object B."}
+						}
+						},
+					"pointısınboard8": {
+						"list-name": "Point is in board",
+						"display-text": "Point ([i]{0}[/i],[i]{1}[/i]) is in board",
+						"description": "Testing if point is in board.",
+						"params": {
+							"x0": { "name":"X", "desc":"The Physical X."},
+							"y1": { "name":"Y", "desc":"The Physical Y."}
+						}
+						},
+					"areneighbors9": {
+						"list-name": "Are neighbors (UID)",
+						"display-text": "Are [i]{0}[/i] and [i]{1}[/i] neighbors",
+						"description": "Testing if two chess are neighbors.",
+						"params": {
+							"uıd_of_chess0": { "name":"UID of chess", "desc":"UID of chess A."},
+							"uıd_of_chess1": { "name":"UID of chess", "desc":"UID of chess B."}
+						}
+						},
+					"pickallchess10": {
+						"list-name": "Pick all chess",
+						"display-text": "Pick all chess on the board",
+						"description": "Pick all chess on the board."
+						},
+					"onchesskicked11": {
+						"list-name": "On chess kicked",
+						"display-text": "On [i]{0}[/i] kicked",
+						"description": "Triggered when chess kicked by 'action:Add chess' or 'action:Move chess'.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Kicked chess object."}
+						}
+						},
+					"pickchessatlxy12": {
+						"list-name": "Pick chess at LX,LY",
+						"display-text": "Pick [i]{0}[/i] at [[i]{1}[/i],[i]{2}[/i]]",
+						"description": "Pick chess at Logic X,Y.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."}
+						}
+						},
+					"pickchessabovetile13": {
+						"list-name": "Pick chess above tile",
+						"display-text": "Pick [i]{0}[/i] above [i]{1}[/i]",
+						"description": "Pick chess above tile.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"tile1": { "name":"Tile", "desc":"Tile object."}
+						}
+						},
+					"pickchessabovetileuıd14": {
+						"list-name": "Pick chess above tile UID",
+						"display-text": "Pick [i]{0}[/i] above tile UID: [i]{1}[/i]",
+						"description": "Pick chess above tile UID.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"tile_uıd1": { "name":"Tile UID", "desc":"Tile UID. Can be tile UID/symbol or a tile UID list in JSON string."}
+						}
+						},
+					"ısontheboard15": {
+						"list-name": "On the board",
+						"display-text": "Is [i]{0}[/i] on the board",
+						"description": "Return true if the chess is on the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."}
+						}
+						},
+					"pickchessatlxyz16": {
+						"list-name": "Pick chess at LX,LY,LZ",
+						"display-text": "Pick [i]{0}[/i] at [[i]{1}[/i],[i]{2}[/i],[i]{3}[/i]]",
+						"description": "Pick chess at Logic X,Y,Z.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index (0-based) of the tile."}
+						}
+						},
+					"pickneighborchess17": {
+						"list-name": "Pick neighbor chess",
+						"display-text": "Pick neighbor chess {2} by origin to {0} , direction to [i]{1}[/i]",
+						"description": "Pick neighbor chess.",
+						"params": {
+							"origin0": { "name":"Origin", "desc":"Origin chess."},
+							"direction1": { "name":"Direction", "desc":"Direction of neighbor. (-1) for all directions"},
+							"neighbor2": { "name":"Neighbor", "desc":"Neighbor chess object for pickking"}
+						}
+						},
+					"pickemptycell18": {
+						"list-name": "Pick an empty cell",
+						"display-text": "Pick an empty cell with logic Z to [i]{0}[/i]",
+						"description": "Pick an empty cell randomly, return false if all cells are occupied.",
+						"params": {
+							"logic_z0": { "name":"Logic Z", "desc":"The Z index (0-based) of the chess to set. 0 is tile."}
+						}
+						},
+					"hasemptycell19": {
+						"list-name": "Has any empty cell",
+						"display-text": "Has any empty cell with logic Z to [i]{0}[/i]",
+						"description": "Return true if there has any empty cell.",
+						"params": {
+							"logic_z0": { "name":"Logic Z", "desc":"The Z index (0-based) of the chess to set. 0 is tile."}
+						}
+						},
+					"arewrappedneighbors20": {
+						"list-name": "Are wrapped neighbors (UID)",
+						"display-text": "Are [i]{0}[/i] and [i]{1}[/i] wrapped neighbors",
+						"description": "Testing if two chess are wrapped neighbors.",
+						"params": {
+							"uıd_of_chess0": { "name":"UID of chess", "desc":"UID of chess A."},
+							"uıd_of_chess1": { "name":"UID of chess", "desc":"UID of chess B."}
+						}
+						},
+					"pickchess21": {
+						"list-name": "Pick chess",
+						"display-text": "Pick chess [i]{0}[/i]",
+						"description": "Pick chess on board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."}
+						}
+						},
+					"pickchessatlx22": {
+						"list-name": "Pick chess at LX",
+						"display-text": "Pick [i]{0}[/i] at LX to [i]{1}[/i]",
+						"description": "Pick chess at Logic X.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."}
+						}
+						},
+					"pickchessatly23": {
+						"list-name": "Pick chess at LY",
+						"display-text": "Pick [i]{0}[/i] at LY to [i]{1}[/i]",
+						"description": "Pick chess at Logic Y.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_y1": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."}
+						}
+						},
+					"pickchessatlz24": {
+						"list-name": "Pick chess at LZ",
+						"display-text": "Pick [i]{0}[/i] at LZ to [i]{1}[/i]",
+						"description": "Pick chess at Logic Z.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_z1": { "name":"Logic Z", "desc":"The Z index (0-based) of the tile."}
+						}
+						},
+					"pickemptycellontiles25": {
+						"list-name": "Pick an empty cell on tiles",
+						"display-text": "Pick an empty cell on [i]{0}[/i] with logic Z to [i]{1}[/i]",
+						"description": "Pick an empty cell randomly on tiles, return false if all cells are occupied.",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."},
+							"logic_z1": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."}
+						}
+						},
+					"hasemptycellontiles26": {
+						"list-name": "Has any empty cell on tiles",
+						"display-text": "Has any empty cell on [i]{0}[/i] with logic Z to [i]{1}[/i]",
+						"description": "Return true if there has any empty cell on tiles.",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."},
+							"logic_z1": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."}
+						}
+						},
+					"pickchessınsidesquare27": {
+						"list-name": "Pick chess inside a square",
+						"display-text": "Pick [i]{0}[/i] inside a square - LX from [i]{1}[/i] to [i]{2}[/i], LY from [i]{3}[/i] to [i]{4}[/i]",
+						"description": "Pick chess inside a square.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x_of_left1": { "name":"Logic X of left", "desc":"The X index (0-based) of the left tile."},
+							"logic_x_of_right2": { "name":"Logic X of right", "desc":"The X index (0-based) of the right tile."},
+							"logic_y_of_top3": { "name":"Logic Y of top", "desc":"The Y index (0-based) of the top tile."},
+							"logic_y_of_bottom4": { "name":"Logic Y of bottom", "desc":"The Y index (0-based) of the bottom tile."}
+						}
+						},
+					"foreachlz28": {
+						"list-name": "For each LZ at LXY",
+						"display-text": "For each LZ at [[i]{0}[/i],[i]{1}[/i]]",
+						"description": "Repeat the event for each LZ at LXY.",
+						"params": {
+							"logic_x0": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y1": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."}
+						}
+						}
+				},
+				"actions": {
+					"resetboard0": {
+						"list-name": "Reset board",
+						"display-text": "Reset board with width to [i]{0}[/i], height to [i]{1}[/i]",
+						"description": "Reset board to empty.",
+						"params": {
+							"x0": { "name":"X", "desc":"Initial number of elements on the X axis. 0 is unchanged."},
+							"y1": { "name":"Y", "desc":"Initial number of elements on the Y axis. 0 is unchanged."}
+						}
+					},
+					"addtile1": {
+						"list-name": "Add tile",
+						"display-text": "Add tile [i]{0}[/i] to [[i]{1}[/i], [i]{2}[/i], 0]",
+						"description": "Add tile on the board.",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."}
+						}
+					},
+					"destroychess2": {
+						"list-name": "Destroy chess",
+						"display-text": "Destroy [i]{0}[/i]",
+						"description": "Destroy chess and remove them from the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."}
+						}
+					},
+					"addchess3": {
+						"list-name": "Add chess",
+						"display-text": "Add chess [i]{0}[/i] to [[i]{1}[/i], [i]{2}[/i], [i]{3}[/i]]",
+						"description": "Add chess on the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the chess."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the chess."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."}
+						}
+					},
+					"addchess4": {
+						"list-name": "Add chess by UID",
+						"display-text": "Add chess UID:[i]{0}[/i] to [[i]{1}[/i], [i]{2}[/i], [i]{3}[/i]]",
+						"description": "Add chess on the board.",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess, or a symbol of chess."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the chess."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the chess."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."}
+						}
+					},
+					"removechess5": {
+						"list-name": "Remove chess",
+						"display-text": "Remove chess [i]{0}[/i]",
+						"description": "Remove chess from the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."}
+						}
+					},
+					"removechess6": {
+						"list-name": "Remove chess by UID",
+						"display-text": "Remove chess UID:[i]{0}[/i]",
+						"description": "Remove chess by UID from the board.",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess"}
+						}
+					},
+					"movechess7": {
+						"list-name": "Move chess",
+						"display-text": "Move chess [i]{0}[/i] to tile [i]{1}[/i]",
+						"description": "Move chess on the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"tile1": { "name":"Tile", "desc":"Tile object."}
+						}
+					},
+					"movechess8": {
+						"list-name": "Move chess by UID",
+						"display-text": "Move chess UID:[i]{0}[/i] to tile UID:[i]{1}[/i]",
+						"description": "Move chess by UID on the board.",
+						"params": {
+							"chess_uıd0": { "name":"Chess UID", "desc":"The UID of chess"},
+							"tile_uıd1": { "name":"Tile UID", "desc":"The UID of tile"}
+						}
+					},
+					"movechess2lxyz9": {
+						"list-name": "Move chess to xyz",
+						"display-text": "Move chess [i]{0}[/i] to [[i]{1}[/i], [i]{2}[/i], [i]{3}[/i]]",
+						"description": "Move chess on the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the chess."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the chess."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."}
+						}
+					},
+					"movechess2ındex10": {
+						"list-name": "Move chess to xyz by UID",
+						"display-text": "Move chess UID:[i]{0}[/i] to [[i]{1}[/i], [i]{2}[/i], [i]{3}[/i]]",
+						"description": "Move chess to xyz index by UID on the board.",
+						"params": {
+							"chess_uıd0": { "name":"Chess UID", "desc":"The UID of chess"},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the chess."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the chess."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."}
+						}
+					},
+					"setuplayout11": {
+						"list-name": "Setup layout",
+						"display-text": "Set layout to [i]{0}[/i]",
+						"description": "Setup layout to transfer logic index to physical position.",
+						"params": {
+							"layout0": { "name":"Layout", "desc":"Layout to transfer logic index to physical position"}
+						}
+					},
+					"createtile12": {
+						"list-name": "Create tile",
+						"display-text": "Create tile [i]{0}[/i] to [[i]{1}[/i], [i]{2}[/i], 0] on layer [i]{3}[/i]",
+						"description": "Create tile on the board.",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."},
+							"layer3": { "name":"Layer", "desc":"Layer name of number."}
+						}
+					},
+					"pickchessatlxyz13": {
+						"list-name": "Pick chess at Logic X,Y,Z",
+						"display-text": "Pick [i]{0}[/i] at [[i]{1}[/i],[i]{2}[/i],[i]{3}[/i]]",
+						"description": "Pick chess at Logic X,Y,Z.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index (0-based) of the tile."}
+						}
+					},
+					"createchess14": {
+						"list-name": "Create chess",
+						"display-text": "Create chess [i]{0}[/i] to [[i]{1}[/i], [i]{2}[/i], [i]{3}[/i]] on layer [i]{4}[/i]",
+						"description": "Create chess on the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the chess."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the chess."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."},
+							"layer4": { "name":"Layer", "desc":"Layer name of number."}
+						}
+					},
+					"swapchess15": {
+						"list-name": "Swap chess by UID",
+						"display-text": "Swap chess UID [i]{0}[/i] with chess UID [i]{1}[/i]",
+						"description": "Swap two chess by UID.",
+						"params": {
+							"uıd_of_chess0": { "name":"UID of chess", "desc":"UID of chess A."},
+							"uıd_of_chess1": { "name":"UID of chess", "desc":"UID of chess B."}
+						}
+					},
+					"pickallchess16": {
+						"list-name": "Pick all chess",
+						"display-text": "Pick all chess on the board",
+						"description": "Pick all chess on the board."
+					},
+					"pickchessatlxy17": {
+						"list-name": "Pick chess at Logic X,Y",
+						"display-text": "Pick [i]{0}[/i] at [[i]{1}[/i],[i]{2}[/i]]",
+						"description": "Pick chess at Logic X,Y.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."}
+						}
+					},
+					"pickchessabovetile18": {
+						"list-name": "Pick chess above tile",
+						"display-text": "Pick [i]{0}[/i] above [i]{1}[/i]",
+						"description": "Pick chess above tile.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"tile1": { "name":"Tile", "desc":"Tile object."}
+						}
+					},
+					"pickchessabovetileuıd19": {
+						"list-name": "Pick chess above tile UID",
+						"display-text": "Pick [i]{0}[/i] above tile UID: [i]{1}[/i]",
+						"description": "Pick chess above tile UID.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"tile_uıd1": { "name":"Tile UID", "desc":"Tile UID. Can be number or a tile UID list in JSON string."}
+						}
+					},
+					"setboardwidth20": {
+						"list-name": "Set board width",
+						"display-text": "Set board width to [i]{0}[/i]",
+						"description": "Set board width.",
+						"params": {
+							"x0": { "name":"X", "desc":"Initial number of elements on the X axis. 0 is unchanged."}
+						}
+					},
+					"setboardheight21": {
+						"list-name": "Set board height",
+						"display-text": "Set board height to [i]{0}[/i]",
+						"description": "Set board height.",
+						"params": {
+							"y0": { "name":"Y", "desc":"Initial number of elements on the Y axis. 0 is unchanged."}
+						}
+					},
+					"pickneighborchess22": {
+						"list-name": "Pick neighbor chess",
+						"display-text": "Pick neighbor chess {2} by origin to {0} , direction to [i]{1}[/i]",
+						"description": "Pick neighbor chess.",
+						"params": {
+							"origin0": { "name":"Origin", "desc":"Origin chess."},
+							"direction1": { "name":"Direction", "desc":"Direction of neighbor. (-1) for all directions"},
+							"neighbor2": { "name":"Neighbor", "desc":"Neighbor chess object for pickking"}
+						}
+					},
+					"createchessabovetile23": {
+						"list-name": "Create chess above tile",
+						"display-text": "Create chess [i]{0}[/i] above tile [i]{1}[/i] at LZ to [i]{2}[/i], on layer [i]{3}[/i]",
+						"description": "Create chess above tile.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"tile1": { "name":"Tile", "desc":"Tile object."},
+							"logic_z2": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."},
+							"layer3": { "name":"Layer", "desc":"Layer name of number."}
+						}
+					},
+					"fillchess24": {
+						"list-name": "Fill tiles",
+						"display-text": "Fill tiles with [i]{0}[/i], on layer [i]{1}[/i]",
+						"description": "Fill tiles (LZ=0).",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."},
+							"layer1": { "name":"Layer", "desc":"Layer name of number."}
+						}
+					},
+					"setwrapmode25": {
+						"list-name": "Set wrap mode",
+						"display-text": "Set wrap mode to [i]{0}[/i]",
+						"description": "Set wrap mode.",
+						"params": {
+							"wrap2": { "name":"Wrap", "desc":"Wrap mode.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"fillchess26": {
+						"list-name": "Fill chess",
+						"display-text": "Fill LZ [i]{2}[/i] with [i]{0}[/i], on layer [i]{1}[/i]",
+						"description": "Fill chess.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"layer1": { "name":"Layer", "desc":"Layer name of number."},
+							"logic_z2": { "name":"Logic Z", "desc":"The Z index (0-based) of the chess."}
+						}
+					},
+					"pickchess27": {
+						"list-name": "Pick chess",
+						"display-text": "Pick chess [i]{0}[/i]",
+						"description": "Pick chess on board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."}
+						}
+					},
+					"pickchessatlx28": {
+						"list-name": "Pick chess at LX",
+						"display-text": "Pick [i]{0}[/i] at LX to [i]{1}[/i]",
+						"description": "Pick chess at Logic X.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."}
+						}
+					},
+					"pickchessatly29": {
+						"list-name": "Pick chess at LY",
+						"display-text": "Pick [i]{0}[/i] at LY to [i]{1}[/i]",
+						"description": "Pick chess at Logic Y.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_y1": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."}
+						}
+					},
+					"pickchessatlz30": {
+						"list-name": "Pick chess at LZ",
+						"display-text": "Pick [i]{0}[/i] at LZ to [i]{1}[/i]",
+						"description": "Pick chess at Logic Z.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_z1": { "name":"Logic Z", "desc":"The Z index (0-based) of the tile."}
+						}
+					},
+					"createchessabovetile31": {
+						"list-name": "Create chess above tile by UID",
+						"display-text": "Create chess [i]{0}[/i] above tile UID:[i]{1}[/i] at LZ to [i]{2}[/i], on layer [i]{3}[/i]",
+						"description": "Create chess above tile.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"tile_uıd1": { "name":"Tile UID", "desc":"Tile UID. Can be number or a tile UID list in JSON string."},
+							"logic_z2": { "name":"Logic Z", "desc":"The Z index (0-based) of the chess to set. 0 is tile."},
+							"layer3": { "name":"Layer", "desc":"Layer name of number."}
+						}
+					},
+					"movechesslz32": {
+						"list-name": "Move chess to z",
+						"display-text": "Move chess [i]{0}[/i] 's LZ to [i]{1}[/i]",
+						"description": "Move chess's LZ on the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_z1": { "name":"Logic Z", "desc":"The Z index of the chess to set. 0 is tile."}
+						}
+					},
+					"movechesslxy33": {
+						"list-name": "Move chess to xy",
+						"display-text": "Move chess [i]{0}[/i] 's LXY to [[i]{1}[/i],[i]{2}[/i]]",
+						"description": "Move chess to logic X,Y on the board.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the tile."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the tile."}
+						}
+					},
+					"pickchessınsidesquare34": {
+						"list-name": "Pick chess inside a square",
+						"display-text": "Pick [i]{0}[/i] inside a square - LX from [i]{1}[/i] to [i]{2}[/i], LY from [i]{3}[/i] to [i]{4}[/i]",
+						"description": "Pick chess inside a square.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"logic_x_of_left1": { "name":"Logic X of left", "desc":"The X index (0-based) of the left tile."},
+							"logic_x_of_right2": { "name":"Logic X of right", "desc":"The X index (0-based) of the right tile."},
+							"logic_y_of_top3": { "name":"Logic Y of top", "desc":"The Y index (0-based) of the top tile."},
+							"logic_y_of_bottom4": { "name":"Logic Y of bottom", "desc":"The Y index (0-based) of the bottom tile."}
+						}
+					}
+				},
+				"expressions": {
+					"uıd2lx1": {
+						"description": "Get X index of chess by UID. Return (-1) if the chess is not on the board.",
+						"translated-name": "UID2LX",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess."}
+						}
+						},
+					"uıd2ly2": {
+						"description": "Get Y index of chess by UID. Return (-1) if the chess is not on the board.",
+						"translated-name": "UID2LY",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess."}
+						}
+						},
+					"uıd2lz3": {
+						"description": "Get Z index of chess by UID. Return (-1) if the chess is not on the board.",
+						"translated-name": "UID2LZ",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess."}
+						}
+						},
+					"lxyz2uıd4": {
+						"description": "Get UID by XYZ index. Return (-1) if this position has no chess.",
+						"translated-name": "LXYZ2UID",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."},
+							"z2": { "name":"Z", "desc":"The logic Z."}
+						}
+						},
+					"lz2uıd5": {
+						"description": "Get UID by relative UID and Z. Return (-1) if this position has no chess.",
+						"translated-name": "LZ2UID",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess."},
+							"z1": { "name":"Z", "desc":"The logic Z."}
+						}
+						},
+					"lxy2px6": {
+						"description": "Get physical X co-ordinate by logic X,Y index. Return (-1) if this position does not exist.",
+						"translated-name": "LXY2PX",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."}
+						}
+						},
+					"lxy2py7": {
+						"description": "Get physical Y co-ordinate by logic X,Y index. Return (-1) if this position does not exist.",
+						"translated-name": "LXY2PY",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."}
+						}
+						},
+					"uıd2px8": {
+						"description": "Get X co-ordinate by UID. Return (-1) if the chess is not on the board.",
+						"translated-name": "UID2PX",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess."}
+						}
+						},
+					"uıd2py9": {
+						"description": "Get Y co-ordinate by UID. Return (-1) if the chess is not on the board.",
+						"translated-name": "UID2PY",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess."}
+						}
+						},
+					"uıd2la10": {
+						"description": "Get Logic angle by UID, in degree. (-1) is invalid angle.",
+						"translated-name": "UID2LA",
+						"params": {
+							"origin0": { "name":"Origin", "desc":"The UID of chess at origin."},
+							"faceto1": { "name":"FaceTo", "desc":"The UID of chess to face."}
+						}
+						},
+					"lxyz2px11": {
+						"description": "Get physical X co-ordinate by logic X,Y,Z index.",
+						"translated-name": "LXYZ2PX",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."},
+							"z2": { "name":"Z", "desc":"The logic Z."}
+						}
+						},
+					"lxyz2py12": {
+						"description": "Get physical Y co-ordinate by logic X,Y,Z index.",
+						"translated-name": "LXYZ2PY",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."},
+							"z2": { "name":"Z", "desc":"The logic Z."}
+						}
+						},
+					"uıd2zcnt13": {
+						"description": "Get z count at select chess by UID. Return 0 if the chess is not on the board.",
+						"translated-name": "UID2ZCnt",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess."}
+						}
+						},
+					"lxy2zcnt14": {
+						"description": "Get z count at logic X,Y index. Return 0 if this position does not exist.",
+						"translated-name": "LXY2ZCnt",
+						"params": {
+							"x0": { "name":"X", "desc":"The logic X."},
+							"y1": { "name":"Y", "desc":"The logic Y."}
+						}
+						},
+					"pxy2lx15": {
+						"description": "Get logic X by physical X,Y co-ordinate.",
+						"translated-name": "PXY2LX",
+						"params": {
+							"x0": { "name":"X", "desc":"The physical X."},
+							"y1": { "name":"Y", "desc":"The physical Y."}
+						}
+						},
+					"pxy2ly16": {
+						"description": "Get logic Y by physical X,Y co-ordinate.",
+						"translated-name": "PXY2LY",
+						"params": {
+							"x0": { "name":"X", "desc":"The physical X."},
+							"y1": { "name":"Y", "desc":"The physical Y."}
+						}
+						},
+					"dır2uıd17": {
+						"description": "Get neighbor UID by UID and direction. Add 3rd parameter to indicate z-index. Return (-1) if no chess picked.",
+						"translated-name": "DIR2UID",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of origin chess."},
+							"direction1": { "name":"Direction", "desc":"The direction."}
+						}
+						},
+					"boardwidth18": {
+						"description": "Get board width.",
+						"translated-name": "BoardWidth"
+						},
+					"boardheight19": {
+						"description": "Get board height.",
+						"translated-name": "BoardHeight"
+						},
+					"pxy2nearestpx20": {
+						"description": "Get nearest X co-ordinate of cell from physical position.",
+						"translated-name": "PXY2NearestPX",
+						"params": {
+							"x0": { "name":"X", "desc":"The physical X."},
+							"y1": { "name":"Y", "desc":"The physical Y."}
+						}
+						},
+					"pxy2nearestpy21": {
+						"description": "Get nearest Y co-ordinate of cell from physical position.",
+						"translated-name": "PXY2NearestPY",
+						"params": {
+							"x0": { "name":"X", "desc":"The physical X."},
+							"y1": { "name":"Y", "desc":"The physical Y."}
+						}
+						},
+					"logicdistance22": {
+						"description": "Get logic distance of two chess. Return (-1) if one of chess is not on the board.",
+						"translated-name": "LogicDistance",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess A."},
+							"uıd1": { "name":"UID", "desc":"The UID of chess B."}
+						}
+						},
+					"emptylx23": {
+						"description": "Get X co-ordinate of an empty cell under \"Condition:Pick an empty cell\". or \"Condition:Has any empty cell\".",
+						"translated-name": "EmptyLX"
+						},
+					"emptyly24": {
+						"description": "Get Y co-ordinate of an empty cell under \"Condition:Pick an empty cell\". or \"Condition:Has any empty cell\".",
+						"translated-name": "EmptyLY"
+						},
+					"dircount25": {
+						"description": "Get count of directions.",
+						"translated-name": "DirCount"
+						},
+					"neigboruıd2dır26": {
+						"description": "Get logic direction of two neighbor chess from chess A to chessB. Return (-1) if they are not on the board.",
+						"translated-name": "NeigborUID2DIR",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"The UID of chess A."},
+							"uıd1": { "name":"UID", "desc":"The UID of chess B."}
+						}
+						},
+					"alldırectıons27": {
+						"description": "Direction code for all directions (-1), used in \"Condition: Pick neighbor chess\".",
+						"translated-name": "ALLDIRECTIONS"
+						},
+					"pxy2uıd28": {
+						"description": "Get UID by physical X,Y co-ordinate. Add 3rd parameter to indicate z-index. Return (-1) if no chess picked.",
+						"translated-name": "PXY2UID",
+						"params": {
+							"x0": { "name":"X", "desc":"The physical X."},
+							"y1": { "name":"Y", "desc":"The physical Y."}
+						}
+						},
+					"curlx31": {
+						"description": "Get the current logic X index in a For Each loop.",
+						"translated-name": "CurLX"
+						},
+					"curly32": {
+						"description": "Get the current logic Y index in a For Each loop.",
+						"translated-name": "CurLY"
+						},
+					"curlz33": {
+						"description": "Get the current logic Z index in a For Each loop.",
+						"translated-name": "CurLZ"
+						},
+					"maxlx61": {
+						"description": "Get maximum of LX of all chess.",
+						"translated-name": "MaxLX"
+						},
+					"maxly62": {
+						"description": "Get maximum of LY of all chess.",
+						"translated-name": "MaxLY"
+						},
+					"minlx63": {
+						"description": "Get minimum of LX of all chess.",
+						"translated-name": "MinLX"
+						},
+					"minly64": {
+						"description": "Get minimum of LY of all chess.",
+						"translated-name": "MinLY"
+						}
+				}
+			}
+		}
+	}
+}

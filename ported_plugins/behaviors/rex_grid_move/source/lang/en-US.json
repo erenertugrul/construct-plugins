@@ -1,0 +1,468 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Grid Move.",
+	"text": {
+		"behaviors": {
+			"rex_gridmove": {
+				"name": "Grid Move",
+				"description": "Move sprite to neighbor on board object",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_grid_move.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"max-speed": {
+						"name": "Max speed",
+						"desc": "Maximum speed, in pixel per second."
+						},
+					"acceleration": {
+						"name": "Acceleration",
+						"desc": "Acceleration, in pixel per second per second."
+						},
+					"deceleration": {
+						"name": "Deceleration",
+						"desc": "Deceleration, in pixel per second per second."
+						},
+					"wander-range-x": {
+						"name": "Wander range x",
+						"desc": "Random moving in the boundary."
+						},
+					"wander-range-y": {
+						"name": "Wander range y",
+						"desc": "Random moving in the boundary."
+						},
+					"force-move": {
+						"name": "Force move",
+						"desc": "Enable if you wish to ignore solid checking. It will change z index when logical overlapping.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"moveto": {
+						"name": "MoveTo",
+						"desc": "Set Yes to move chess physically by built-in moveTo behavior. Set No will only change the logical position.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"continued-mode": {
+						"name": "Continued mode",
+						"desc": "Moving as in continued-time.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"configuration": "Configuration",
+					"request:_square_grid": "Request: Square grid",
+					"request": "Request",
+					"speed": "Speed",
+					"swap": "Swap",
+					"request:_hexagon_grid_(left-right)": "Request: Hexagon grid (Left-Right)",
+					"aı:_wander": "AI: Wander",
+					"solid": "Solid",
+					"collisions": "Collisions",
+					"request:_hexagon_grid_(up-down)": "Request: Hexagon grid (Up-Down)",
+					"aı:_approach/depart": "AI: Approach/Depart",
+					"stop": "Stop",
+					"reach": "Reach",
+					"move": "Move",
+					"test": "Test",
+					"test:_square_grid": "Test: Square grid",
+					"test:_hexagon_grid_(left-right)": "Test: Hexagon grid (Left-Right)",
+					"test:_hexagon_grid_(up-down)": "Test: Hexagon grid (Up-Down)",
+					"current": "Current",
+					"setting": "Setting",
+					"target": "Target"
+				},
+				"conditions": {
+					"onhittarget0": {
+						"list-name": "On reach target position",
+						"display-text": "On {my} reach target",
+						"description": "Triggered when reach target position."
+						},
+					"onmoving2": {
+						"list-name": "On moving",
+						"display-text": "On {my} moving",
+						"description": "Triggered when object moving."
+						},
+					"ısmoving3": {
+						"list-name": "Is moving",
+						"display-text": "Is {my} moving",
+						"description": "Test if object is moving."
+						},
+					"onmovingrequestaccepted4": {
+						"list-name": "On moving accepted",
+						"display-text": "On {my} moving request accepted",
+						"description": "Triggered when moving request accepted."
+						},
+					"onmovingrequestrejected5": {
+						"list-name": "On moving rejected",
+						"display-text": "On {my} moving request rejected",
+						"description": "Triggered when moving request rejected."
+						},
+					"ısmovingrequestaccepted6": {
+						"list-name": "Moving accepted",
+						"display-text": "Is {my} moving request accepted",
+						"description": "Return true if moving request accepted."
+						},
+					"testmovetooffset7": {
+						"list-name": "Can move to",
+						"display-text": "{my} can move to offset [[i]{0}[/i], [i]{1}[/i]]",
+						"description": "Test if object can move to relatived offset target.",
+						"params": {
+							"x_offset0": { "name":"X offset", "desc":"Relatived X offset."},
+							"y_offset1": { "name":"Y offset", "desc":"Relatived Y offset."}
+						}
+						},
+					"testmovetoneighbor8": {
+						"list-name": "Can move to neighbor",
+						"display-text": "{my} can move to direction [i]{0}[/i]",
+						"description": "Test if object can move to neighbor.",
+						"params": {
+							"direction0": { "name":"Direction", "desc":"The direction of neighbor."}
+						}
+						},
+					"testmovetoneighbor9": {
+						"list-name": "Can move to neighbor",
+						"display-text": "{my} can move to [i]{0}[/i]",
+						"description": "Test if object can move to neighbor.",
+						"params": {
+							"direction8": { "name":"Direction", "desc":"Moving direction.", "items":{"right":"Right","down":"Down","left":"Left","up":"Up","right-down":"Right-down","left-down":"Left-down","left-up":"Left-up","right-up":"Right-up"}}
+						}
+						},
+					"testmovetoneighbor10": {
+						"list-name": "Can move to neighbor",
+						"display-text": "{my} can move to [i]{0}[/i]",
+						"description": "Test if object can move to neighbor.",
+						"params": {
+							"direction6": { "name":"Direction", "desc":"Moving direction.", "items":{"right":"Right","down-right":"Down-right","down-left":"Down-left","left":"Left","up-left":"Up-left","up-right":"Up-right"}}
+						}
+						},
+					"oncollidedbegin11": {
+						"list-name": "On colliding begin - group",
+						"display-text": "On {my} colliding begin with [i]{0}[/i], put collided result to group [i]{1}[/i]",
+						"description": "Triggered when this chess collides begin with another chess.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"group1": { "name":"Group", "desc":"Put result in this group"}
+						}
+						},
+					"ongetsolid12": {
+						"list-name": "On get solid",
+						"display-text": "On {my} get solid",
+						"description": "Triggered by plugin to get solid property from event sheet."
+						},
+					"testmovetoneighbor13": {
+						"list-name": "Can move to neighbor",
+						"display-text": "{my} can move to [i]{0}[/i]",
+						"description": "Test if object can move to neighbor.",
+						"params": {
+							"direction6": { "name":"Direction", "desc":"Moving direction.", "items":{"down-right":"Down-right","down":"Down","down-left":"Down-left","up-left":"Up-left","up":"Up","up-right":"Up-right"}}
+						}
+						},
+					"oncollidedbegin14": {
+						"list-name": "On colliding begin",
+						"display-text": "On {my} colliding begin with [i]{0}[/i]",
+						"description": "Triggered when this chess collides begin with another chess.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."}
+						}
+						}
+				},
+				"actions": {
+					"setactivated0": {
+						"list-name": "Set activated",
+						"display-text": "Set {my} activated to [i]{0}[/i]",
+						"description": "Enable the object's Square-grid Move behavior.",
+						"params": {
+							"activated2": { "name":"Activated", "desc":"Enable the behavior.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"movetoneighbor1": {
+						"list-name": "Move to neighbor",
+						"display-text": "{my} move to [i]{0}[/i]",
+						"description": "Move to neighbor.",
+						"params": {
+							"direction8": { "name":"Direction", "desc":"Moving direction.", "items":{"right":"Right","down":"Down","left":"Left","up":"Up","right-down":"Right-down","left-down":"Left-down","left-up":"Left-up","right-up":"Right-up"}}
+						}
+					},
+					"movetooffset2": {
+						"list-name": "Move to offset",
+						"display-text": "{my} move to offset [[i]{0}[/i], [i]{1}[/i]]",
+						"description": "Move to relatived offset target.",
+						"params": {
+							"x_offset0": { "name":"X offset", "desc":"Relatived X offset."},
+							"y_offset1": { "name":"Y offset", "desc":"Relatived Y offset."}
+						}
+					},
+					"setmaxspeed3": {
+						"list-name": "Set maximum speed",
+						"display-text": "Set {my} maximum speed to [i]{0}[/i]",
+						"description": "Set the object's maximum speed.",
+						"params": {
+							"max_speed0": { "name":"Max speed", "desc":"Maximum speed, in pixel per second."}
+						}
+					},
+					"setacceleration4": {
+						"list-name": "Set acceleration",
+						"display-text": "Set {my} acceleration to [i]{0}[/i]",
+						"description": "Set the object's acceleration.",
+						"params": {
+							"acceleration0": { "name":"Acceleration", "desc":"The acceleration setting, in pixel per second per second."}
+						}
+					},
+					"setdeceleration5": {
+						"list-name": "Set deceleration",
+						"display-text": "Set {my} deceleration to [i]{0}[/i]",
+						"description": "Set the object's deceleration.",
+						"params": {
+							"deceleration0": { "name":"Deceleration", "desc":"The deceleration setting, in pixels per second per second."}
+						}
+					},
+					"setcurrentspeed6": {
+						"list-name": "Set current speed",
+						"display-text": "Set {my} current speed to [i]{0}[/i]",
+						"description": "Set the object's Current speed.",
+						"params": {
+							"current_speed0": { "name":"Current speed", "desc":"Current speed, in pixel per second."}
+						}
+					},
+					"movetolxy7": {
+						"list-name": "Move to LXY",
+						"display-text": "{my} move to [[i]{0}[/i], [i]{1}[/i]]",
+						"description": "Move to logical position.",
+						"params": {
+							"logic_x0": { "name":"Logic X", "desc":"The X index (0-based)."},
+							"logic_y1": { "name":"Logic Y", "desc":"The Y index (0-based)."}
+						}
+					},
+					"swap8": {
+						"list-name": "Swap",
+						"display-text": "{my} swap with chess UID [i]{0}[/i]",
+						"description": "Swap with target chess.",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"Target UID."}
+						}
+					},
+					"movetoneighbor9": {
+						"list-name": "Move to neighbor",
+						"display-text": "{my} move to [i]{0}[/i]",
+						"description": "Move to neighbor.",
+						"params": {
+							"direction6": { "name":"Direction", "desc":"Moving direction.", "items":{"right":"Right","down-right":"Down-right","down-left":"Down-left","left":"Left","up-left":"Up-left","up-right":"Up-right"}}
+						}
+					},
+					"movetoneighbor10": {
+						"list-name": "Move to neighbor",
+						"display-text": "{my} move to direction [i]{0}[/i]",
+						"description": "Move to neighbor.",
+						"params": {
+							"direction0": { "name":"Direction", "desc":"The direction of neighbor."}
+						}
+					},
+					"movetotargetchess11": {
+						"list-name": "Move to chess",
+						"display-text": "{my} move to [i]{0}[/i]",
+						"description": "Move to target chess/tile.",
+						"params": {
+							"target0": { "name":"Target", "desc":"Target object."}
+						}
+					},
+					"wander12": {
+						"list-name": "Wander",
+						"display-text": "Wander",
+						"description": "Random moving in the boundary."
+					},
+					"setwanderrangex13": {
+						"list-name": "Set range x",
+						"display-text": "Set {my} wander range x to [i]{0}[/i]",
+						"description": "Set the object's wander range x.",
+						"params": {
+							"range_x0": { "name":"Range x", "desc":"Wander range x, in logic unit"}
+						}
+					},
+					"setwanderrangey14": {
+						"list-name": "Set range y",
+						"display-text": "Set {my} wander range y to [i]{0}[/i]",
+						"description": "Set the object's wander range y.",
+						"params": {
+							"range_y0": { "name":"Range y", "desc":"Wander range y, in logic unit"}
+						}
+					},
+					"setrandomgenerator15": {
+						"list-name": "Set random generator",
+						"display-text": "Set random generator object to [i]{0}[/i]",
+						"description": "Set random generator object.",
+						"params": {
+							"random_generator0": { "name":"Random generator", "desc":"Random generator object"}
+						}
+					},
+					"resetwandercenter16": {
+						"list-name": "Reset center position",
+						"display-text": "{my} reset wander center position to current logic position",
+						"description": "Reset wander center position to current logic position."
+					},
+					"setdestinationsolid17": {
+						"list-name": "Set solid",
+						"display-text": "{my} set solid to [i]{0}[/i]",
+						"description": "Set solid. Used under 'condition: On get solid'.",
+						"params": {
+							"solid2": { "name":"Solid", "desc":"Solid property.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"setdestinationsolid18": {
+						"list-name": "Set solid by number",
+						"display-text": "{my} set solid to [i]{0}[/i]",
+						"description": "Set solid. Used under 'condition: On get solid'.",
+						"params": {
+							"solid0": { "name":"Solid", "desc":"Solid property. 0=Disable, 1=Enable."}
+						}
+					},
+					"setınstancegroup20": {
+						"list-name": "Set instance group",
+						"display-text": "Set instance group object to [i]{0}[/i]",
+						"description": "Set instance group object.",
+						"params": {
+							"group0": { "name":"Group", "desc":"Instance group object"}
+						}
+					},
+					"setdestinationmoveable21": {
+						"list-name": "Set move-able",
+						"display-text": "{my} set move-able to [i]{0}[/i]",
+						"description": "Set move-able. Used under 'condition: On get solid'.",
+						"params": {
+							"move-able2": { "name":"Move-able", "desc":"Move-able.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"setdestinationmoveable22": {
+						"list-name": "Set move-able by number",
+						"display-text": "{my} set move-able to [i]{0}[/i]",
+						"description": "Set move-able. Used under 'condition: On get solid'.",
+						"params": {
+							"move-able0": { "name":"Move-able", "desc":"Move-able. 0=Disable, 1=Enable."}
+						}
+					},
+					"movetoneighbor23": {
+						"list-name": "Move to neighbor",
+						"display-text": "{my} move to [i]{0}[/i]",
+						"description": "Move to neighbor.",
+						"params": {
+							"direction6": { "name":"Direction", "desc":"Moving direction.", "items":{"down-right":"Down-right","down":"Down","down-left":"Down-left","up-left":"Up-left","up":"Up","up-right":"Up-right"}}
+						}
+					},
+					"approachordepart24": {
+						"list-name": "Approach/Depart",
+						"display-text": "{my} [i]{1}[/i] [i]{0}[/i]",
+						"description": "Approach to chess or depart from chess.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object."},
+							"mode3": { "name":"Mode", "desc":"Approach or Depart.", "items":{"approach to":"Approach to","depart from":"Depart from"}}
+						}
+					},
+					"approachordepart25": {
+						"list-name": "Approach/Depart chess by UID",
+						"display-text": "{my} [i]{1}[/i] chess UID:[i]{0}[/i]",
+						"description": "Approach to chess or depart from chess.",
+						"params": {
+							"chess_uıd0": { "name":"Chess UID", "desc":"The UID of chess"},
+							"mode3": { "name":"Mode", "desc":"Approach or Depart.", "items":{"approach to":"Approach to","depart from":"Depart from"}}
+						}
+					},
+					"stop30": {
+						"list-name": "Stop",
+						"display-text": "{my} stop",
+						"description": "Stop moving."
+					},
+					"movetotargetchess40": {
+						"list-name": "Move to chess by UID",
+						"display-text": "{my} move to chess UID: [i]{0}[/i]",
+						"description": "Move to target chess/tile.",
+						"params": {
+							"uıd0": { "name":"UID", "desc":"Target chess UID"}
+						}
+					},
+					"setforcemoving101": {
+						"list-name": "Enable force moving",
+						"display-text": "Enable {my} force moving to [i]{0}[/i]",
+						"description": "Enable if you wish to ignore solid checking. It will change z index when logical overlapping.",
+						"params": {
+							"force_move2": { "name":"Force move", "desc":"Enable the force moving feature.", "items":{"no":"No","yes":"Yes"}}
+						}
+					}
+				},
+				"expressions": {
+					"activated0": {
+						"description": "The current activated state of behavior.",
+						"translated-name": "Activated"
+						},
+					"speed1": {
+						"description": "The current object speed, in pixel per second.",
+						"translated-name": "Speed"
+						},
+					"maxspeed2": {
+						"description": "The maximum speed setting, in pixel per second.",
+						"translated-name": "MaxSpeed"
+						},
+					"acc3": {
+						"description": "The acceleration setting, in pixel per second per second.",
+						"translated-name": "Acc"
+						},
+					"dec4": {
+						"description": "The deceleration setting, in pixel per second per second.",
+						"translated-name": "Dec"
+						},
+					"targetx5": {
+						"description": "The X co-ordinate of target position to move toward.",
+						"translated-name": "TargetX"
+						},
+					"targety6": {
+						"description": "The Y co-ordinate of target position to move toward.",
+						"translated-name": "TargetY"
+						},
+					"blockeruıd8": {
+						"description": "Get UID of blocker when moving request rejected.",
+						"translated-name": "BlockerUID"
+						},
+					"direction9": {
+						"description": "Get last moving direction of moving request. Return (-1) if not moving to neighbor.",
+						"translated-name": "Direction"
+						},
+					"destinationlx10": {
+						"description": "Get logic X of destination X when moving request.",
+						"translated-name": "DestinationLX"
+						},
+					"destinationly11": {
+						"description": "Get logic Y of destination when moving request.",
+						"translated-name": "DestinationLY"
+						},
+					"destinationlz12": {
+						"description": "Get logic Z of destination when moving request.",
+						"translated-name": "DestinationLZ"
+						},
+					"sourcelx13": {
+						"description": "Get logic X of source when moving request.",
+						"translated-name": "SourceLX"
+						},
+					"sourcely14": {
+						"description": "Get logic Y of source when moving request.",
+						"translated-name": "SourceLY"
+						},
+					"sourcelz15": {
+						"description": "Get logic Z of source when moving request.",
+						"translated-name": "SourceLZ"
+						}
+				}
+			}
+		}
+	}
+}

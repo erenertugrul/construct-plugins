@@ -1,0 +1,89 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Cube Tx.",
+	"text": {
+		"plugins": {
+			"rex_slgcubetx": {
+				"name": "Cube Tx",
+				"description": "Transfer logic position to physical position with 3D orthogonal or isometric layout",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_board_cubeTx.html",
+				"properties": {
+					"orientation": {
+						"name": "Orientation",
+						"desc": "Map orientation.",
+						"items": {
+							"orthogonal":"Orthogonal",
+							"ısometric":"Isometric"
+							}
+						},
+					"x-at-(0,0,0)": {
+						"name": "X at (0,0,0)",
+						"desc": "Physical X co-ordinate at logic (0,0,0)."
+						},
+					"y-at-(0,0,0)": {
+						"name": "Y at (0,0,0)",
+						"desc": "Physical Y co-ordinate at logic (0,0,0)."
+						},
+					"width": {
+						"name": "Width",
+						"desc": "Cell width in pixels."
+						},
+					"height": {
+						"name": "Height",
+						"desc": "Cell height in pixels."
+						},
+					"deep": {
+						"name": "Deep",
+						"desc": "Cell deep in pixels."
+						}
+				},
+				"aceCategories": {
+					"orientation": "Orientation",
+					"size": "Size",
+					"position": "Position"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setorientation1": {
+						"list-name": "Set orientation",
+						"display-text": "Set orientation to [i]{0}[/i]",
+						"description": "Set orientation.",
+						"params": {
+							"orientation2": { "name":"Orientation", "desc":"orientation of map", "items":{"orthogonal":"Orthogonal","ısometric":"Isometric"}}
+						}
+					},
+					"setorientation2": {
+						"list-name": "Set orientation by number",
+						"display-text": "Set orientation to [i]{0}[/i]",
+						"description": "Set orientation.",
+						"params": {
+							"ısometric0": { "name":"Isometric", "desc":"1=Isometric, 0=Orthogonal"}
+						}
+					},
+					"setcellsize3": {
+						"list-name": "Set cell size",
+						"display-text": "Set cell width to [i]{0}[/i], height to [i]{1}[/i], deep to [i]{2}[/i]",
+						"description": "Set cell size.",
+						"params": {
+							"width0": { "name":"Width", "desc":"Cell width in pixels."},
+							"height1": { "name":"Height", "desc":"Cell height in pixels."},
+							"deep2": { "name":"Deep", "desc":"Cell deep in pixels."}
+						}
+					},
+					"setoffset4": {
+						"list-name": "Set position offset",
+						"display-text": "Set offset to ([i]{0}[/i], [i]{1}[/i])",
+						"description": "Set Physical position offset (position of logic (0,0)).",
+						"params": {
+							"x0": { "name":"X", "desc":"Physical X co-ordinate at logic (0,0)."},
+							"y1": { "name":"Y", "desc":"Physical Y co-ordinate at logic (0,0)."}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

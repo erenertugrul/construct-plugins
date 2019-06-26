@@ -1,0 +1,274 @@
+{
+	"arrangement": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "setorientation1",
+				"scriptName": "SetOrientation",
+				"highlight": false,
+				"params": [
+					{"id":"axis2", "type":"combo", "items":["left-right","up-down"]},
+					{"id":"ındent5", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "setorientation2",
+				"scriptName": "SetOrientation",
+				"highlight": false,
+				"params": [
+					{"id":"axis0", "type":"number", "initialValue":"0"},
+					{"id":"ındent1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"size": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "setcellsize3",
+				"scriptName": "SetCellSize",
+				"highlight": false,
+				"params": [
+					{"id":"width0", "type":"number", "initialValue":"0"},
+					{"id":"height1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "width1",
+				"expressionName": "Width",
+				"scriptName": "Width",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "height2",
+				"expressionName": "Height",
+				"scriptName": "Height",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"offset": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "setoffset4",
+				"scriptName": "SetOffset",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "pox3",
+				"expressionName": "POX",
+				"scriptName": "POX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 4,
+				"id": "poy4",
+				"expressionName": "POY",
+				"scriptName": "POY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"direction_code_(left-right)": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 11,
+				"id": "dırlrrıght11",
+				"expressionName": "DIRLRRIGHT",
+				"scriptName": "DIRLRRIGHT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 12,
+				"id": "dırlrdownrıght12",
+				"expressionName": "DIRLRDOWNRIGHT",
+				"scriptName": "DIRLRDOWNRIGHT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 13,
+				"id": "dırlrdownleft13",
+				"expressionName": "DIRLRDOWNLEFT",
+				"scriptName": "DIRLRDOWNLEFT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 14,
+				"id": "dırlrleft14",
+				"expressionName": "DIRLRLEFT",
+				"scriptName": "DIRLRLEFT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 15,
+				"id": "dırlrupleft15",
+				"expressionName": "DIRLRUPLEFT",
+				"scriptName": "DIRLRUPLEFT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 16,
+				"id": "dırlruprıght16",
+				"expressionName": "DIRLRUPRIGHT",
+				"scriptName": "DIRLRUPRIGHT",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"direction_code_(up-down)": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 17,
+				"id": "dıruddownrıght17",
+				"expressionName": "DIRUDDOWNRIGHT",
+				"scriptName": "DIRUDDOWNRIGHT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 18,
+				"id": "dıruddown18",
+				"expressionName": "DIRUDDOWN",
+				"scriptName": "DIRUDDOWN",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 19,
+				"id": "dıruddownleft19",
+				"expressionName": "DIRUDDOWNLEFT",
+				"scriptName": "DIRUDDOWNLEFT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 20,
+				"id": "dırudupleft20",
+				"expressionName": "DIRUDUPLEFT",
+				"scriptName": "DIRUDUPLEFT",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 21,
+				"id": "dırudup21",
+				"expressionName": "DIRUDUP",
+				"scriptName": "DIRUDUP",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 22,
+				"id": "dıruduprıght22",
+				"expressionName": "DIRUDUPRIGHT",
+				"scriptName": "DIRUDUPRIGHT",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	},
+	"physical": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 51,
+				"id": "lxy2px51",
+				"expressionName": "LXY2PX",
+				"scriptName": "LXY2PX",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 52,
+				"id": "lxy2py52",
+				"expressionName": "LXY2PY",
+				"scriptName": "LXY2PY",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"logic": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 53,
+				"id": "pxy2lx53",
+				"expressionName": "PXY2LX",
+				"scriptName": "PXY2LX",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 54,
+				"id": "pxy2ly54",
+				"expressionName": "PXY2LY",
+				"scriptName": "PXY2LY",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number", "initialValue":"0"},
+					{"id":"y1", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	}
+}
