@@ -3,6 +3,9 @@ Rex_firebase bundle for c3runtime.
 official plugin repo
 https://github.com/rexrainbow/C3RexDoc/blob/master/repo/index.md
 
+here download all firebase_plugins
+
+https://github.com/erenertugrul/construct-plugins/releases/download/rex_firebase/rex_firebase_pack.zip
 <table>
 <thead>
 <tr>
