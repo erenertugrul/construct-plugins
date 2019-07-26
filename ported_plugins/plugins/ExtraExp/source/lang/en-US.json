@@ -1,0 +1,107 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Extra Expressions.",
+	"text": {
+		"plugins": {
+			"extraexps": {
+				"name": "Extra Expressions",
+				"description": "A collection of extra expressions. Release 30.10.2011",
+				"help-url": "http://www.scirra.com/forum/plugin-extra-expressions_topic45734.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"expressions": "Expressions",
+					"math": "Math",
+					"base64": "Base64"
+				},
+				"conditions": {
+				},
+				"actions": {
+				},
+				"expressions": {
+					"find0": {
+						"description": "Case sensitive alternative to System's find expression",
+						"translated-name": "find",
+						"params": {
+							"text0": { "name":"Text", "desc":"Enter the text to search for."},
+							"source1": { "name":"Source", "desc":"Enter where to find the text in."}
+						}
+						},
+					"char2code1": {
+						"description": "Returns code of the character.",
+						"translated-name": "char2code",
+						"params": {
+							"character0": { "name":"Character", "desc":"Enter the character you want to find the code for."}
+						}
+						},
+					"code2char2": {
+						"description": "Returns character based on code.",
+						"translated-name": "code2char",
+						"params": {
+							"charcode0": { "name":"Charcode", "desc":"Ender the character code."}
+						}
+						},
+					"cosp3": {
+						"description": "Cosine interpolation between points a and b.",
+						"translated-name": "cosp",
+						"params": {
+							"a0": { "name":"a", "desc":"Start position"},
+							"b1": { "name":"b", "desc":"End position"},
+							"t2": { "name":"t", "desc":"Interpolation coeficent"}
+						}
+						},
+					"offsetx4": {
+						"description": "Calculate X position at offset.",
+						"translated-name": "offsetX",
+						"params": {
+							"x0": { "name":"X", "desc":"Source X position to calculate offset from."},
+							"angle1": { "name":"Angle", "desc":"Angle to calculate the offset at."},
+							"distance2": { "name":"Distance", "desc":"Distance or size of the offset in pixels."}
+						}
+						},
+					"offsety5": {
+						"description": "Calculate Y position at offset.",
+						"translated-name": "offsetY",
+						"params": {
+							"y0": { "name":"Y", "desc":"Source Y position to calculate offset from."},
+							"angle1": { "name":"Angle", "desc":"Angle to calculate the offset at."},
+							"distance2": { "name":"Distance", "desc":"Distance or size of the offset in pixels."}
+						}
+						},
+					"snap6": {
+						"description": "Snap the number to grid size.",
+						"translated-name": "snap",
+						"params": {
+							"number0": { "name":"number", "desc":"Number you want to snap."},
+							"gridsize1": { "name":"gridsize", "desc":"The grid size you want to snap the number to."}
+						}
+						},
+					"encode7": {
+						"description": "Encode the string to Base64.",
+						"translated-name": "encode",
+						"params": {
+							"string0": { "name":"String", "desc":"String to encode to Base64."}
+						}
+						},
+					"decode8": {
+						"description": "Decode the string from Base64.",
+						"translated-name": "decode",
+						"params": {
+							"string0": { "name":"String", "desc":"String to decode from Base64."}
+						}
+						},
+					"findtoken9": {
+						"description": "Returns the index of a token within delimited string. Returns -1 if the token is not found.",
+						"translated-name": "findToken",
+						"params": {
+							"string0": { "name":"String", "desc":"String to search the token within"},
+							"token1": { "name":"Token", "desc":"Token to search for"},
+							"delimiter2": { "name":"Delimiter", "desc":"Split the string with this delimiter"},
+							"case_sensitivity3": { "name":"Case sensitivity", "desc":"0 - not case sensitive, 1 - case sensitive search"}
+						}
+						}
+				}
+			}
+		}
+	}
+}

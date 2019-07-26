@@ -1,0 +1,147 @@
+{
+	"expressions": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "find0",
+				"expressionName": "find",
+				"scriptName": "find",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"text0", "type":"string"},
+					{"id":"source1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "char2code1",
+				"expressionName": "char2code",
+				"scriptName": "char2code",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"character0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "code2char2",
+				"expressionName": "code2char",
+				"scriptName": "code2char",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"charcode0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "findtoken9",
+				"expressionName": "findToken",
+				"scriptName": "findToken",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"string0", "type":"string", "initialValue":""},
+					{"id":"token1", "type":"string", "initialValue":""},
+					{"id":"delimiter2", "type":"string", "initialValue":","},
+					{"id":"case_sensitivity3", "type":"number", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"math": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 3,
+				"id": "cosp3",
+				"expressionName": "cosp",
+				"scriptName": "cosp",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"a0", "type":"number"},
+					{"id":"b1", "type":"number"},
+					{"id":"t2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "offsetx4",
+				"expressionName": "offsetX",
+				"scriptName": "offsetX",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"x0", "type":"number"},
+					{"id":"angle1", "type":"number"},
+					{"id":"distance2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "offsety5",
+				"expressionName": "offsetY",
+				"scriptName": "offsetY",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"y0", "type":"number"},
+					{"id":"angle1", "type":"number"},
+					{"id":"distance2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "snap6",
+				"expressionName": "snap",
+				"scriptName": "snap",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"number0", "type":"number"},
+					{"id":"gridsize1", "type":"number"}
+				]
+			}
+		]
+	},
+	"base64": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 7,
+				"id": "encode7",
+				"expressionName": "encode",
+				"scriptName": "encode",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"string0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "decode8",
+				"expressionName": "decode",
+				"scriptName": "decode",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"string0", "type":"string"}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Extra Expressions",
+	"id": "ExtraExps",
+	"version": "1.1.0.0",
+	"author": "Miha Petelin",
+	"website": "http://www.scirra.com/forum/plugin-extra-expressions_topic45734.html",
+	"documentation": "http://www.scirra.com/forum/plugin-extra-expressions_topic45734.html",
+	"description": "A collection of extra expressions. Release 30.10.2011",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
