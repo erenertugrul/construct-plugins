@@ -503,7 +503,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_gfsm</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_gfsm/rex_gfsm.c3addon">rex_gfsm.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_gfsm/dist/rex_gfsm.c3addon">rex_gfsm.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
@@ -513,7 +513,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_ann</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_ann/rex_ann.c3addon">rex_ann.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_ann/dist/rex_ann.c3addon">rex_ann.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
