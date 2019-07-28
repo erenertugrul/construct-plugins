@@ -32,14 +32,36 @@ var __candidates = [];
 		
 		SaveToJson()
 		{
-			return {
-				// data to store for savegames
-			};
+			var i, len, obs = [];
+			for (i = 0, len = this.GetSdkType().GetObstacleTypes().length; i < len; i++)
+			{
+				obs.push(this.GetSdkType().GetObstacleTypes()[i]._sid);
+			}
+				return { "en": this.enabled,
+			         "mw": this.max_width,
+			         "hU": this.exp_HitUID,
+			         "om": this.obstacleMode,
+			         "obs": obs,
+		    }; 
 		}
 
 		LoadFromJson(o)
 		{
-			// load state for savegames
+		    this.enabled = o["en"];
+		    this.max_width = o["mw"];
+		    this.exp_HitUID = o["hU"];
+		    this.obstacleMode = o["om"];
+		    
+			// Reloaded by each instance but oh well
+			C3.clearArray(this.GetSdkType().GetObstacleTypes());
+			var obsarr = o["obs"];
+			var i, len, t;
+			for (i = 0, len = obsarr.length; i < len; i++)
+			{
+				t = this._runtime.GetObjectClassBySID(obsarr[i]);
+				if (t)
+					this.GetSdkType().GetObstacleTypes().push(t);
+			}	 
 		}
 		
 		width_set(w)
