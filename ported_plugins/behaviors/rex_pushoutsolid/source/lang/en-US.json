@@ -1,0 +1,89 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Push Out Solid.",
+	"text": {
+		"behaviors": {
+			"rex_pushoutsolid": {
+				"name": "Push Out Solid",
+				"description": "Push out from solid object.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_pushoutsolid.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"obstacles": {
+						"name": "Obstacles",
+						"desc": "Choose whether solids obstruct or if to use custom objects added by events.",
+						"items": {
+							"solids":"Solids",
+							"custom":"Custom"
+							}
+						}
+				},
+				"aceCategories": {
+					"enable": "Enable",
+					"obstacle": "Obstacle",
+					"push_out": "Push out"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setenabled0": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} [b]{0}[/b]",
+						"description": "Set whether this behavior is enabled.",
+						"params": {
+							"state2": { "name":"State", "desc":"Set whether to enable or disable the behavior.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"addobstacle11": {
+						"list-name": "Add obstacle",
+						"display-text": "Add {my} obstacle {0}",
+						"description": "Add a custom object as an obstacle to line-of-sight.",
+						"params": {
+							"obstacle0": { "name":"Obstacle", "desc":"Choose an object to add as an obstacle, obstructing line-of-sight."}
+						}
+					},
+					"clearobstacles12": {
+						"list-name": "Clear obstacles",
+						"display-text": "Clear {my} obstacles",
+						"description": "Remove all added obstacle objects."
+					},
+					"pushoutnearest21": {
+						"list-name": "Push out nearest",
+						"display-text": "{my} push out nearest {0}",
+						"description": "Push out nearest.",
+						"params": {
+							"max_push_distance0": { "name":"Max push distance", "desc":"Max push distance, in pixels."}
+						}
+					},
+					"pushoutangle22": {
+						"list-name": "Push out at angle",
+						"display-text": "{my} push out at angle {0} {1}",
+						"description": "Push out at angle.",
+						"params": {
+							"angle0": { "name":"Angle", "desc":"Angle, in degrees, to push the object out at."},
+							"max_push_distance1": { "name":"Max push distance", "desc":"Max push distance, in pixels."}
+						}
+					},
+					"pushouttopos23": {
+						"list-name": "Push out toward position",
+						"display-text": "{my} push toward ([i]{0}[/i], [i]{1}[/i])",
+						"description": "Push out toward position.",
+						"params": {
+							"x0": { "name":"X", "desc":"The X co-ordinate in the layout to accelerate toward."},
+							"y1": { "name":"Y", "desc":"The Y co-ordinate in the layout to accelerate toward."}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}
