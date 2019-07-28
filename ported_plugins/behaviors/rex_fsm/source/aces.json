@@ -1,0 +1,178 @@
+{
+	"request": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "request2",
+				"scriptName": "Request",
+				"highlight": false
+			},
+			{
+				"c2id": 11,
+				"id": "gotostate11",
+				"scriptName": "GotoState",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"setup": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 13,
+				"id": "setactivated13",
+				"scriptName": "SetActivated",
+				"highlight": false,
+				"params": [
+					{"id":"activated2", "type":"combo", "items":["no","yes"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"logic": {
+		"conditions": [
+			{
+				"c2id": 6,
+				"id": "onlogic6",
+				"scriptName": "OnLogic",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "ondefaultlogic9",
+				"scriptName": "OnDefaultLogic",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 14,
+				"id": "nextstateset14",
+				"scriptName": "NextStateSet",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"action": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onenter0",
+				"scriptName": "OnEnter",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "onexit1",
+				"scriptName": "OnExit",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "ontransfer2",
+				"scriptName": "OnTransfer",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""},
+					{"id":"name1", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "ondefaultenter3",
+				"scriptName": "OnDefaultEnter",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 4,
+				"id": "ondefaultexit4",
+				"scriptName": "OnDefaultExit",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "onstatechanged5",
+				"scriptName": "OnStateChanged",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"state": {
+		"conditions": [
+			{
+				"c2id": 7,
+				"id": "ıscurstate7",
+				"scriptName": "IsCurState",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "ısprestate8",
+				"scriptName": "IsPreState",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string", "initialValue":"\"\""}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "curstate0",
+				"expressionName": "CurState",
+				"scriptName": "CurState",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 1,
+				"id": "prestate1",
+				"expressionName": "PreState",
+				"scriptName": "PreState",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

@@ -1,0 +1,146 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for FSM.",
+	"text": {
+		"behaviors": {
+			"rex_fsm": {
+				"name": "FSM",
+				"description": "Finite state machine",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_fsm.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"ınitial-state": {
+						"name": "Initial state",
+						"desc": "Set initial state."
+						}
+				},
+				"aceCategories": {
+					"request": "Request",
+					"setup": "Setup",
+					"logic": "Logic",
+					"action": "Action",
+					"state": "State"
+				},
+				"conditions": {
+					"onenter0": {
+						"list-name": "On enter state",
+						"display-text": "On {my} enter to [i]{0}[/i]",
+						"description": "Triggered when enter state.",
+						"params": {
+							"name0": { "name":"Name", "desc":"State name"}
+						}
+						},
+					"onexit1": {
+						"list-name": "On exit state",
+						"display-text": "On {my} exit from [i]{0}[/i]",
+						"description": "Triggered when exit state.",
+						"params": {
+							"name0": { "name":"Name", "desc":"State name"}
+						}
+						},
+					"ontransfer2": {
+						"list-name": "On state transfer",
+						"display-text": "On {my} exit from [i]{0}[/i] and enter to [i]{1}[/i]",
+						"description": "Triggered when state transfer.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Exit from state"},
+							"name1": { "name":"Name", "desc":"Enter to state"}
+						}
+						},
+					"ondefaultenter3": {
+						"list-name": "On default enter",
+						"display-text": "On {my} enter to any state",
+						"description": "Triggered when no enter callback."
+						},
+					"ondefaultexit4": {
+						"list-name": "On default exit",
+						"display-text": "On {my} exit from any state",
+						"description": "Triggered when no exit callback."
+						},
+					"onstatechanged5": {
+						"list-name": "On state changed",
+						"display-text": "On {my} state changed",
+						"description": "Triggered when state changed. Useful when debugging."
+						},
+					"onlogic6": {
+						"list-name": "On transfer logic",
+						"display-text": "On {my} [i]{0}[/i] transfer logic",
+						"description": "Triggered to get next state.",
+						"params": {
+							"name0": { "name":"Name", "desc":"State name"}
+						}
+						},
+					"ıscurstate7": {
+						"list-name": "Compare current state",
+						"display-text": "{my} Current state = [i]{0}[/i]",
+						"description": "Compare current state.",
+						"params": {
+							"name0": { "name":"Name", "desc":"State name"}
+						}
+						},
+					"ısprestate8": {
+						"list-name": "Compare previous state",
+						"display-text": "Previous state = [i]{0}[/i]",
+						"description": "Compare previous state.",
+						"params": {
+							"name0": { "name":"Name", "desc":"State name"}
+						}
+						},
+					"ondefaultlogic9": {
+						"list-name": "On default logic",
+						"display-text": "On {my} default transfer logic",
+						"description": "Triggered to get next state if no matched \"condition:On transfer logic\" fired."
+						}
+				},
+				"actions": {
+					"request2": {
+						"list-name": "Request",
+						"display-text": "{my} request",
+						"description": "Request a state transfer."
+					},
+					"gotostate11": {
+						"list-name": "Go to state",
+						"display-text": "{my} go to state [i]{0}[/i]",
+						"description": "Assign next state.",
+						"params": {
+							"name0": { "name":"Name", "desc":"State name"}
+						}
+					},
+					"setactivated13": {
+						"list-name": "Set activated",
+						"display-text": "{my} set activated to [i]{0}[/i]",
+						"description": "Enable the object's fsm behavior.",
+						"params": {
+							"activated2": { "name":"Activated", "desc":"Enable the behavior.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"nextstateset14": {
+						"list-name": "Set next state",
+						"display-text": "{my} set next state to [i]{0}[/i]",
+						"description": "Set next state. Used in \"Condition: On transfer logic\"",
+						"params": {
+							"name0": { "name":"Name", "desc":"State name"}
+						}
+					}
+				},
+				"expressions": {
+					"curstate0": {
+						"description": "Get current state.",
+						"translated-name": "CurState"
+						},
+					"prestate1": {
+						"description": "Get previous state.",
+						"translated-name": "PreState"
+						}
+				}
+			}
+		}
+	}
+}
