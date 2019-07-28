@@ -1,0 +1,165 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for ANN.",
+	"text": {
+		"plugins": {
+			"rex_ann": {
+				"name": "ANN",
+				"description": "Artificial Neural Network, using back-propagation and one hidden layer.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_ann.html",
+				"properties": {
+					"rate": {
+						"name": "Rate",
+						"desc": "Learning rate."
+						},
+					"momentum": {
+						"name": "Momentum",
+						"desc": "Momentum factor."
+						},
+					"ınput-variables": {
+						"name": "Input variables",
+						"desc": "Input variables for Input layer like \"A\",\"B\""
+						},
+					"hidden-layer": {
+						"name": "Hidden layer",
+						"desc": "Node count of Hidden layer."
+						},
+					"output-variables": {
+						"name": "Output variables",
+						"desc": "Output variables for Output layer like \"O\""
+						}
+				},
+				"aceCategories": {
+					"define": "Define",
+					"define:_input": "Define: input",
+					"define:_output": "Define: output",
+					"define:_hidden_layer": "Define: hidden layer",
+					"ınput": "Input",
+					"target": "Target",
+					"train": "Train",
+					"recall": "Recall",
+					"reset": "Reset",
+					"json": "JSON"
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setratemoment0": {
+						"list-name": "Define learning rate and momentum factor",
+						"display-text": "Set learning rate to [i]{0}[/i], momentum factor to [i]{1}[/i]",
+						"description": "Set learning rate and momentum factor.",
+						"params": {
+							"rate0": { "name":"Rate", "desc":"Learning rate"},
+							"moment1": { "name":"Moment", "desc":"Momentum factor"}
+						}
+					},
+					"defineınput1": {
+						"list-name": "Define inputs",
+						"display-text": "Define inputs ([i]{0}[/i])",
+						"description": "Define input variables by name.",
+						"params": {
+							"ınput_n0": { "name":"Input {n}", "desc":"Name of input variables."}
+						}
+					},
+					"defineoutput2": {
+						"list-name": "Define outputs",
+						"display-text": "Define outputs ([i]{0}[/i])",
+						"description": "Define outputs variables by name.",
+						"params": {
+							"output_n0": { "name":"Output {n}", "desc":"Name of output variables."}
+						}
+					},
+					"definehiddennode3": {
+						"list-name": "Define hidden node count",
+						"display-text": "Define node count of hidden layer to [i]{0}[/i]",
+						"description": "Define node count of hidden layer.",
+						"params": {
+							"node_count0": { "name":"Node count", "desc":"Node count of hidden layer"}
+						}
+					},
+					"setınput4": {
+						"list-name": "Set input",
+						"display-text": "Set input [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Set input value.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of input variable"},
+							"value1": { "name":"Value", "desc":"Value of input variable"}
+						}
+					},
+					"settarget5": {
+						"list-name": "Set target",
+						"display-text": "Set target output [i]{0}[/i] to [i]{1}[/i]",
+						"description": "Set target output value for learning.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name of output variable"},
+							"value1": { "name":"Value", "desc":"Value of output variable"}
+						}
+					},
+					"train6": {
+						"list-name": "Train",
+						"display-text": "Train by current inputs and outputs",
+						"description": "Train by current inputs and outputs to adjust the weights."
+					},
+					"recall7": {
+						"list-name": "Recall",
+						"display-text": "Recall by current inputs",
+						"description": "Recall by current inputs, get output from \"expression:Output\"."
+					},
+					"resetweight8": {
+						"list-name": "Reset",
+						"display-text": "Reset weights",
+						"description": "Reset weights"
+					},
+					"jsonload9": {
+						"list-name": "Load",
+						"display-text": "Load from JSON string [i]{0}[/i]",
+						"description": "Load from an ANN previously encoded in JSON format.",
+						"params": {
+							"json0": { "name":"JSON", "desc":"A string of the JSON data to load."}
+						}
+					},
+					"defineınputbydict10": {
+						"list-name": "Define inputs by dictionary",
+						"display-text": "Define inputs by the keys of dictionary [i]{0}[/i]",
+						"description": "Define input variables by the keys of dictionary.",
+						"params": {
+							"dictionary0": { "name":"Dictionary", "desc":"Dictionary object"}
+						}
+					},
+					"defineoutputbydict11": {
+						"list-name": "Define outputs by dictionary",
+						"display-text": "Define outputs by the keys dictionary [i]{0}[/i]",
+						"description": "Define outputs variables by the keys of dictionary.",
+						"params": {
+							"dictionary0": { "name":"Dictionary", "desc":"Dictionary object"}
+						}
+					}
+				},
+				"expressions": {
+					"output1": {
+						"description": "Get output value.",
+						"translated-name": "Output",
+						"params": {
+							"output0": { "name":"Output", "desc":"Output name."}
+						}
+						},
+					"trainerr2": {
+						"description": "Get error result of training.",
+						"translated-name": "TrainErr"
+						},
+					"ınput3": {
+						"description": "Get input value.",
+						"translated-name": "Input",
+						"params": {
+							"ınput0": { "name":"Input", "desc":"Input name."}
+						}
+						},
+					"asjson4": {
+						"description": "Return the contents of the ANN in JSON format.",
+						"translated-name": "AsJSON"
+						}
+				}
+			}
+		}
+	}
+}
