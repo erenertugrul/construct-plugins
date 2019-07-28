@@ -491,6 +491,35 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 </tr>
 </tbody>
 <tbody>
+<tr>
+  <td>rex_fsm</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_fsm/dist/rex_fsm.c3addon">rex_fsm.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_gfsm</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_gfsm/rex_gfsm.zip">rex_gfsm.zip</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+  <td>rex_ann</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/rex_ann/rex_ann.zip">rex_ann.zip</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
 <tbody>
 <tr>
   <td>rex_tmx_importer</td>
