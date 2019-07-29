@@ -482,6 +482,16 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 </tbody>
 <tbody>
 <tr>
+  <td>trblsm_storage</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/plugins/trblsm_storage/dist/TRBLSM_storage.c3addon">trblsm_storage.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
   <td>rex_pushoutsolid</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_pushoutsolid/dist/rex_pushoutsolid.c3addon">rex_pushoutsolid.c3addon</a>
 </td>
