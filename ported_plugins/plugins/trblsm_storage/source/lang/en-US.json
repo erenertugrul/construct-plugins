@@ -1,0 +1,465 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Storage.",
+	"text": {
+		"plugins": {
+			"trblsm_storage": {
+				"name": "Storage",
+				"description": "<appears at the bottom of the insert object dialog>",
+				"help-url": "http://<your website or a manual entry on Scirra.com>",
+				"properties": {
+					"my-property": {
+						"name": "My property",
+						"desc": "An example property."
+						}
+				},
+				"aceCategories": {
+					"dynamic_storage": "Dynamic Storage",
+					"dynamic_storage_-_delete": "Dynamic Storage - Delete",
+					"dynamic_storage_-_merge_json": "Dynamic Storage - Merge JSON",
+					"dynamic_storage_-__debug_": "Dynamic Storage - _Debug_",
+					"dynamic_storage_-_returnvalue": "Dynamic Storage - ReturnValue",
+					"dynamic_storage_-_for_each": "Dynamic Storage - For Each",
+					"dynamic_storage_-_merg_custom": "Dynamic Storage - Merg Custom",
+					"dynamic_storage_-_list_groups": "Dynamic Storage - List Groups",
+					"dynamic_storage_-_sort": "Dynamic Storage - Sort",
+					"for_each_-_list": "For Each - List",
+					"for_each_-_field": "For Each - Field",
+					"compare": "Compare",
+					"data_get": "Data Get",
+					"for_each": "For Each",
+					"attributes": "Attributes",
+					"json": "JSON",
+					"return": "Return"
+				},
+				"conditions": {
+					"foreachlist0": {
+						"list-name": "For Each List in Table",
+						"display-text": "For each [b][i]List[/i][/b] in [b][{0}][/b]",
+						"description": "Loops through every list in a table. (Expressions) LoopIndex, StopLoop, CurrTable, CurrListKey, CurrListValueAt('field')",
+						"params": {
+							"foreach_list_in_table0": { "name":"ForEach List in Table", "desc":"Enter the name of the table to loop through."}
+						}
+						},
+					"foreachfield1": {
+						"list-name": "For Each Field in List",
+						"display-text": "For each [b][i]Field[/i][/b] in [b][{0}] [{1}][/b]",
+						"description": "Loops through each field in a list. (Expressions) LoopIndex, StopLoop, CurrTable, CurrListKey, CurrFieldKey, CurrFieldValue",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the name of the table the list is in."},
+							"foreach_field_in_list1": { "name":"ForEach Field in List", "desc":"Enter the name of the list to loop through."}
+						}
+						},
+					"comparetablecount2": {
+						"list-name": "Table Count",
+						"display-text": "If count of [b][i]Tables[/i][/b] in [i]Storage[/i] {0} [b]{1}[/b]",
+						"description": "Compare table count in this storage.",
+						"params": {
+							"ıf_count_of_tables0": { "name":"If count of tables", "desc":"Compare the number of tables in this storage."},
+							"count1": { "name":"Count", "desc":"Compare the number of tables in this storage."}
+						}
+						},
+					"comparelistcount3": {
+						"list-name": "List Count",
+						"display-text": "If Count of [b][i]Lists[/i][/b] in [b][{0}][/b] {1} [b]{2}[/b]",
+						"description": "Compare list count in this table.",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the name of the table to count lists in."},
+							"comparison1": { "name":"Comparison", "desc":"Compare the number of lists in this table."},
+							"count2": { "name":"Count", "desc":"Compare the number of lists in this table."}
+						}
+						},
+					"comparefieldcount4": {
+						"list-name": "Field Count",
+						"display-text": "If Count of [b][i]Fields[/i][/b] in [b][{0}] [{1}][/b] {2} [b]{3}[/b]",
+						"description": "Compare field count in this table list.",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the name of the table and list to count fields in."},
+							"ın_list1": { "name":"In List", "desc":"Enter the name of the table and list to count fields in."},
+							"comparison2": { "name":"Comparison", "desc":"Enter the name of the table and list to count fields in."},
+							"count3": { "name":"Count", "desc":"Enter the name of the table and list to count fields in."}
+						}
+						},
+					"comparevalue5": {
+						"list-name": "Compare Value",
+						"display-text": "If [b][{0}] [{1}] [{2}][/b] {3} [b]{4}[/b]",
+						"description": "Compare field value in this table list.",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the name of the table, list and field to compare value."},
+							"ın_list1": { "name":"In List", "desc":"Enter the name of the table, list and field to compare value."},
+							"ın_field2": { "name":"In Field", "desc":"Enter the name of the table, list and field to compare value."},
+							"comparison3": { "name":"Comparison", "desc":"Enter the name of the table and list to count fields in."},
+							"value4": { "name":"Value", "desc":"Enter the value to compare."}
+						}
+						},
+					"foreachlistwhere6": {
+						"list-name": "For Each List in Table (Where)",
+						"display-text": "For each [b][i]List[/i][/b] in [b][{0}][/b] [i]Where[/i] [b][{1}][/b] {2} [b][{3}][/b]",
+						"description": "Returns only the lists that match the expression.",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Foreach list in this table where field (=,!=,>, etc..) value."},
+							"where_field1": { "name":"Where Field", "desc":"Foreach list in this table where field (=,!=,>, etc..) value."},
+							"ıs2": { "name":"Is", "desc":"Foreach list in this table where field (=,!=,>, etc..) value."},
+							"value3": { "name":"Value", "desc":"Enter the value to compare."}
+						}
+						},
+					"foreachfieldwhere7": {
+						"list-name": "For Each Field in List (Where)",
+						"display-text": "For each [b][i]Field[/i][/b] in [b][{0}] [{1}][/b] [i]Where[/i] [b][i]Value[/i][/b] {2} [b][{3}][/b]",
+						"description": "Returns only the lists that match the expression.",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Foreach field in this list where field (=,!=,>, etc..) value."},
+							"ın_list1": { "name":"In List", "desc":"Foreach field in this list where field (=,!=,>, etc..) value."},
+							"where_field_ıs2": { "name":"Where Field Is", "desc":"Foreach list in this table where field (=,!=,>, etc..) value."},
+							"value3": { "name":"Value", "desc":"Enter the value to compare."}
+						}
+						},
+					"foreachlistcomparevalue8": {
+						"list-name": "Compare Field Value",
+						"display-text": "If [b][{0}][/b] {1} [b]{2}[/b]",
+						"description": "Compare field value in a foreach list loop.",
+						"params": {
+							"ıf_field0": { "name":"If Field", "desc":"Compare the value of a field in the current list of a for each loop."},
+							"ıs1": { "name":"Is", "desc":"Compare the value of a field in the current list of a for each loop."},
+							"value2": { "name":"Value", "desc":"Enter the value to compare."}
+						}
+						},
+					"picklistbygroup9": {
+						"list-name": "Pick List by Group",
+						"display-text": "Pick list [b][{0}][/b]",
+						"description": "Pick list(s) by assigned group id.",
+						"params": {
+							"group0": { "name":"Group", "desc":"The name of the group you wish to select."}
+						}
+						}
+				},
+				"actions": {
+					"setvalue0": {
+						"list-name": "Set Value",
+						"display-text": "[b]SetValue[/b] [{0}][{1}][[b][i]{2}[/i][/b]] = [b]{3}[/b]",
+						"description": "Set a value to a dynamic location",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the data is to be set. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the data is to be set. Storage(Table=>List=>Field = Value)"},
+							"field2": { "name":"Field", "desc":"Enter the FIELD name(string) where the data is to be set. Storage(Table=>List=>Field = Value)"},
+							"value3": { "name":"Value", "desc":"Enter the VALUE (any type) to be stored. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"addtovalue1": {
+						"list-name": "Add To Value",
+						"display-text": "[b]Add[/b] [b]{3}[/b] to [{0}][{1}][[b]{2}[/b]]",
+						"description": "Add to field value",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"},
+							"field2": { "name":"Field", "desc":"Enter the FIELD name(string) where the data is to be added. Storage(Table=>List=>Field = Value)"},
+							"add3": { "name":"Add", "desc":"Enter the VALUE (number) to be added to this field.)"}
+						}
+					},
+					"subfromvalue2": {
+						"list-name": "Subtract From Value",
+						"display-text": "[b]Subtract[/b] [b][i]{3}[/i][/b] from [{0}][{1}][[b]{2}[/b]]",
+						"description": "Subtract from field value",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"},
+							"field2": { "name":"Field", "desc":"Enter the FIELD name(string) where the data is to be added. Storage(Table=>List=>Field = Value)"},
+							"subtract3": { "name":"Subtract", "desc":"Enter the VALUE (number) to be added to this field.)"}
+						}
+					},
+					"deletefield3": {
+						"list-name": "Delete Field/Value",
+						"display-text": "[b]DeleteFieldValue[/b] [{0}][{1}][{2}]",
+						"description": "Delete Field/Value from List",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"},
+							"field2": { "name":"Field", "desc":"Enter the FIELD name(string) to be deleted. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"deletelist4": {
+						"list-name": "Delete List",
+						"display-text": "[b]DeleteList[/b] [{0}][{1}]",
+						"description": "Delete list from table",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"deletetable5": {
+						"list-name": "Delete Table",
+						"display-text": "[b]DeleteTable[/b] [{0}]",
+						"description": "Delete Table in Storage",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"deletestorage6": {
+						"list-name": "Delete All Storage",
+						"display-text": "[b]DeleteStorage[/b]",
+						"description": "Delete Entire Storage with out destroying"
+					},
+					"mergetolist18": {
+						"list-name": "Merge 1D JSON Object to Storage",
+						"display-text": "[b]Merge [i]Data AsJSON[/i][/b] [i]{0}[/i] to [b][i]List[/i][/b] [b][{1}] [{2}][/b]",
+						"description": "Merge a raw JSON data object to this storage.",
+						"params": {
+							"1d_json_string0": { "name":"1D JSON String", "desc":"1 Dimensional JSON string of data to be merged. This Does not delete existing data. It will only update or add to existing.\n\nExample {\"field1\":\"value1\",\"field2\":\"value2\"}"},
+							"to_table1": { "name":"To Table", "desc":"Enter the TABLE name(string) where the list is will be merged. This Does not delete existing data. It will only update or add to existing."},
+							"to_list2": { "name":"To List", "desc":"Enter the LIST name(string) where the list is will be merged. This Does not delete existing data. It will only update or add to existing."}
+						}
+					},
+					"SortList20": {
+						"list-name": "Sort List",
+						"display-text": "SortList [{0}][{1}] {2}",
+						"description": "Sort list in either ascending or descending order.",
+						"params": {
+							"table": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"list": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"},
+							"sort": { "name":"Sort", "desc":"Select to sort ascending or descending", "items":{"Ascending":"Ascending","Descending":"Descending"}}
+						}
+					},
+					"SortTable21": {
+						"list-name": "Sort Table on Field",
+						"display-text": "Sort [{0}] on [{1}] order by {2}",
+						"description": "Sort a table as if it were a table by one of the fields in either ascending or descending order.",
+						"params": {
+							"table": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"OnField": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"},
+							"sort": { "name":"Sort", "desc":"Select to sort ascending or descending", "items":{"Ascending":"Ascending","Descending":"Descending"}}
+						}
+					},
+					"mergetotable8": {
+						"list-name": "Merge 2D JSON Object to Storage",
+						"display-text": "[b]Merge [i]List(s) AsJSON[/i][/b] [i]{0}[/i] to [b][i]Table[/i][/b] [b][{1}][/b]",
+						"description": "Merge a raw JSON data object to this storage.",
+						"params": {
+							"2d_json_string0": { "name":"2D JSON String", "desc":"2 Dimensional JSON string of data to be merged. This Does not delete existing data. It will only update or add to existing.\n\nExample {\"list1\":{\"field1\":\"value1\",\"field2\":\"value2\"},\"list2\":{\"field1\":\"value1\",\"field2\":\"value2\"}}"},
+							"to_table1": { "name":"To Table", "desc":"Enter the TABLE name(string) where the list is will be merged. This Does not delete existing data. It will only update or add to existing."}
+						}
+					},
+					"mergetostorage7": {
+						"list-name": "Merge 3D JSON Object To Storage",
+						"display-text": "[b]Merge [i]Table(s) AsJSON[/i][/b] [i]{0}[/i] to [b][i]Storage[/i][/b]",
+						"description": "Merge a raw JSON data object to this storage.",
+						"params": {
+							"3d_json_string0": { "name":"3D JSON String", "desc":"3 Dimensional JSON string of data to be merged. This Does not delete existing data. It will only update or add to existing.\n\nExample {\"table1\":{\"list1\":{\"field1\":\"value1\",\"field2\":\"value2\"},\"list2\":{\"field1\":\"value1\",\"field2\":\"value2\"}}}"}
+						}
+					},
+					"mergedictionarytolist19": {
+						"list-name": "Merge C2 Dictionary",
+						"display-text": "[b]Merge [i]Dictionary[/i][/b] [i]{0}[/i] to [b][i]List[/i][/b] [b][{1}] [{2}][/b]",
+						"description": "Merge Dictionary AsJSON to this storage. If the table or list you enter does not already exist is will be created.",
+						"params": {
+							"c2_dictionary_asjson0": { "name":"C2 Dictionary AsJSON", "desc":"JSON string of data to be merged. This Does not delete existing data. It will only update or add to existing."},
+							"to_table1": { "name":"To Table", "desc":"Enter the TABLE name(string) where the list is will be merged. This Does not delete existing data. It will only update or add to existing."},
+							"to_list2": { "name":"To List", "desc":"Enter the LIST name(string) where the list is will be merged. This Does not delete existing data. It will only update or add to existing."}
+						}
+					},
+					"mergec2dearray25": {
+						"list-name": "Merge C2 Data Editor Array",
+						"display-text": "[b]Merge [i]C2 Data Editor Array AsJSON[/i][/b] [i]{0}[/i] to [b][i]Table[/i][/b] [b][{1}]",
+						"description": "Merge a C2 Data Editor Array AsJSON data object to this storage.",
+						"params": {
+							"c2_data_editor_array_asjson0": { "name":"C2 Data Editor Array AsJSON", "desc":"C2 Data Editor Array AsJSON string to be merged. This Does not delete existing data. It will only update or add to existing."},
+							"to_table1": { "name":"To Table", "desc":"Enter the TABLE name(string) where the list is will be merged. This Does not delete existing data. It will only update or add to existing."}
+						}
+					},
+					"debugstorage9": {
+						"list-name": "Debug Show All",
+						"display-text": "[b]Debug Entire [i]Storage[/i][/b]",
+						"description": "Adds Storage to Debug View."
+					},
+					"debugtable10": {
+						"list-name": "Debug Show Table",
+						"display-text": "[b]Debug [i]Table[/i][/b] - [b][{0}][/b]",
+						"description": "Adds Table to Debug View.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) to show in debug view. All List in table will be displayed"}
+						}
+					},
+					"debuglist11": {
+						"list-name": "Debug Show List",
+						"display-text": "[b]Debug [i]List[/i][/b] - [b][{0}] [{1}][/b]",
+						"description": "Adds Table to Debug View.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) to show in debug view. Only this list will be displayed"},
+							"list1": { "name":"List", "desc":"Enter the List name (string) to show in debug view. Only this list will be displayed"}
+						}
+					},
+					"debugtabledisabled12": {
+						"list-name": "Debug Hide Table",
+						"display-text": "[b]Remove Debug [i]Table[/i][/b] - [b][{0}][/b]",
+						"description": "Removes Table to Debug View.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) to hide from debug view."}
+						}
+					},
+					"get13": {
+						"list-name": "Get Value",
+						"display-text": "[b]ReturnValue[/b] = [{0}][{1}][[b][i]{2}[/i][/b]]",
+						"description": "Set return value",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where to get the value. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where to get the value. Storage(Table=>List=>Field = Value)"},
+							"field2": { "name":"Field", "desc":"Enter the FIELD name(string) where to get the value. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"stoploop14": {
+						"list-name": "Stop Loop",
+						"display-text": "[b]StopLoop[/b]",
+						"description": "Stop current loop"
+					},
+					"clearlist15": {
+						"list-name": "Clear List",
+						"display-text": "[b]ClearList[/b] [{0}][{1}]",
+						"description": "Deletes all fields in the list while still keeping it in the table.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"setcurrfieldvalue16": {
+						"list-name": "Set Current Field Value",
+						"display-text": "[b]SetCurrFieldValue[/b] = [b]{0}[/b]",
+						"description": "When in a For Each FIELD/VALUE condition you can use this to set the current field of the loop.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Enter the VALUE (any type) to be stored. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"setcurrlistvalueat17": {
+						"list-name": "Set Current List ValueAt()",
+						"display-text": "[b]SetCurrListValueAt[/b] [[b][i]{0}[/i][/b]] = [b]{1}[/b]",
+						"description": "When in a For Each LIST condition you can use this to set the a field of the current list loop.",
+						"params": {
+							"field0": { "name":"Field", "desc":"Enter the FIELD name(string) where to set the value. Storage(Table=>List=>Field = Value)"},
+							"value1": { "name":"Value", "desc":"Enter the VALUE (any type) to be stored. Storage(Table=>List=>Field = Value)"}
+						}
+					},
+					"createlistfromfields22": {
+						"list-name": "Select Fields To List",
+						"display-text": "[b]Select[/b] [{0}]'s from table[{1}] and create new List [[b][i]{2}[/i][/b]] in table[[b]{3}[/b]] {4} {5} {6} {7}",
+						"description": "Select fields to new list.",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the field is located. Storage(Table=>List=>Field = Value)"},
+							"table4": { "name":"Table", "desc":"Enter the TABLE name(string) where the list is located. Storage(Table=>List=>Field = Value)"},
+							"on_field5": { "name":"On Field", "desc":"Enter the FIELD name(string) to sort on. Storage(Table=>List=>Field = Value)"},
+							"select_[field]:7": { "name":"Select [Field]:", "desc":"Select the field to pull into a new list"},
+							"from_all_lists_in_[table]:8": { "name":"From all lists in [Table]:", "desc":"Select the table to pull it from"},
+							"and_create_new_[list]:9": { "name":"And create new [List]:", "desc":"Enter the name of the new list to create or merge to"},
+							"ın_[table]:10": { "name":"In [Table]:", "desc":"Enter the table the new list should be created or merge to"}
+						}
+					},
+					"getlistasdictionaryjson23": {
+						"list-name": "Get List As Dictionary JSON",
+						"display-text": "[b]ReturnValue[/b] = [{0}][{1}] As Dictionary JSON",
+						"description": "Set ReturnValue to Dictionary JSON of an exiting list",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string)"}
+						}
+					},
+					"setlistgroup24": {
+						"list-name": "Set List Group",
+						"display-text": "Set list group [{0}][{1}] = [{2}]",
+						"description": "Add list to group",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string)"},
+							"group_name2": { "name":"Group Name", "desc":"Set the name of the group to add this list to"}
+						}
+					}
+				},
+				"expressions": {
+					"get0": {
+						"description": "Get a value from a dynamic location.",
+						"translated-name": "Get",
+						"params": {
+							"table0": { "name":"Table", "desc":"Enter the TABLE name(string) where the data is located. Database(Table=>List=>Field = Value)"},
+							"list1": { "name":"List", "desc":"Enter the LIST name(string) where the data is located. Database(Table=>List=>Field = Value)"},
+							"field2": { "name":"Field", "desc":"Enter the FIELD name(string) where the data located. Database(Table=>List=>Field = Value)"}
+						}
+						},
+					"currlistkey1": {
+						"description": "Get the current list name in a for-each loop.",
+						"translated-name": "CurrListKey"
+						},
+					"currlistvalueat2": {
+						"description": "Get a field value for the current list in a for-each loop.",
+						"translated-name": "CurrListValueAt",
+						"params": {
+							"ın_field0": { "name":"In Field", "desc":"Enter the FIELD name(string) where the data located. Database(Table=>List=>Field = Value)"}
+						}
+						},
+					"currfieldkey3": {
+						"description": "Get the field name for the current for-each loop.",
+						"translated-name": "CurrFieldKey"
+						},
+					"currfieldvalue4": {
+						"description": "Get the field value for the current for-each loop.",
+						"translated-name": "CurrFieldValue"
+						},
+					"tablecount5": {
+						"description": "Get the total count of tables in this storage.",
+						"translated-name": "TableCount"
+						},
+					"listcount6": {
+						"description": "Get the total count of lists in a table.",
+						"translated-name": "ListCount",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the TABLE name(string) to count its lists"}
+						}
+						},
+					"fieldcount7": {
+						"description": "Get the total count of fields in a list.",
+						"translated-name": "FieldCount",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the TABLE name(string)"},
+							"ın_list1": { "name":"In List", "desc":"Enter the LIST name(string) to get its field count"}
+						}
+						},
+					"asjson8": {
+						"description": "Return the contents of the storage in RAW JSON format.",
+						"translated-name": "AsJSON"
+						},
+					"tableasjson10": {
+						"description": "Return the contents of a table in RAW JSON format.",
+						"translated-name": "TableAsJSON",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the TABLE name(string)"}
+						}
+						},
+					"listasjson11": {
+						"description": "Return the contents of a list in RAW JSON format.",
+						"translated-name": "ListAsJSON",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the TABLE name(string)"},
+							"ın_list1": { "name":"In List", "desc":"Enter the LIST name(string) to get"}
+						}
+						},
+					"loopındex12": {
+						"description": "Get the loop index of the current foreach loop.",
+						"translated-name": "LoopIndex"
+						},
+					"returnvalue13": {
+						"description": "Get the return value of a get action.",
+						"translated-name": "ReturnValue"
+						},
+					"listasdictionaryjson14": {
+						"description": "Return the contents of a list in C2 Dictionary JSON format.",
+						"translated-name": "ListAsDictionaryJSON",
+						"params": {
+							"ın_table0": { "name":"In Table", "desc":"Enter the TABLE name(string)"},
+							"ın_list1": { "name":"In List", "desc":"Enter the LIST name(string) to get"}
+						}
+						},
+					"currtable15": {
+						"description": "Get the current table name in a for-each loop.",
+						"translated-name": "CurrTable"
+						}
+				}
+			}
+		}
+	}
+}
