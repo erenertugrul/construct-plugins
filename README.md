@@ -59,6 +59,13 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
+<tr>
+<td>JSZip</td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/jszip/c3/dist/jszip_v1.c3addon">jszip_v1.c3addon</a></td>
+<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/jszip/c2/dist/jszip_v1.c2addon">jszip_v1.c2addon</a></td>
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
 </tbody>
 </table>
 

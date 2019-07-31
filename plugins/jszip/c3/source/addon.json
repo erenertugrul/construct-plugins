@@ -1,0 +1,35 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "JSZip",
+	"id": "eren_jszip",
+	"version": "1.0.0.0",
+	"author": "Eren Ertuğrul",
+	"website": "https://github.com/erenertugrul",
+	"documentation": "https://github.com/erenertugrul",
+	"description": "Create .zip files using JavaScript ",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"filesaver.js",
+		"jszip.js",
+		"jszip-utils.js",
+		"c2runtime/runtime.js",
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

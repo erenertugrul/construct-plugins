@@ -1,0 +1,292 @@
+{
+	"zip": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "oncreatedzip0",
+				"scriptName": "OnCreatedZip",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "onreadedzip1",
+				"scriptName": "OnReadedZip",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 2,
+				"id": "ondownloadedzip2",
+				"scriptName": "OnDownloadedZip",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 3,
+				"id": "onaddedfile3",
+				"scriptName": "OnAddedFile",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 11,
+				"id": "onclosedzip11",
+				"scriptName": "OnClosedZip",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 12,
+				"id": "onaddedsprite12",
+				"scriptName": "OnAddedSprite",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "createnewzipfile0",
+				"scriptName": "CreateNewZipFile",
+				"highlight": false
+			},
+			{
+				"c2id": 1,
+				"id": "readzipfile1",
+				"scriptName": "ReadZipFile",
+				"highlight": false,
+				"params": [
+					{"id":"zip_file0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "downloadzipfile2",
+				"scriptName": "DownloadZipFile",
+				"highlight": false,
+				"params": [
+					{"id":"zip_file0", "type":"string"},
+					{"id":"data_format8", "type":"combo", "items":["blob","binarystring","array","uint8array","arraybuffer","base64","nodebuffer"]},
+					{"id":"compression_level19", "type":"combo", "items":["no compression","1 (best speed)","2","3","4","5","6","7","8","9 (best compression)"]}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "closezipfile12",
+				"scriptName": "CloseZipFile",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"file": {
+		"conditions": [
+			{
+				"c2id": 4,
+				"id": "onreadedfile4",
+				"scriptName": "OnReadedFile",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 5,
+				"id": "onremovedfile5",
+				"scriptName": "OnRemovedFile",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 6,
+				"id": "oncreateddir6",
+				"scriptName": "OnCreatedDir",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 7,
+				"id": "foreachlist7",
+				"scriptName": "Foreachlist",
+				"isLooping": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "onerrorany8",
+				"scriptName": "OnErrorAny",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "fileaddstring3",
+				"scriptName": "FileAddString",
+				"highlight": false,
+				"params": [
+					{"id":"file_name0", "type":"string"},
+					{"id":"string1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "fileaddtourl4",
+				"scriptName": "FileAddtoUrl",
+				"highlight": false,
+				"params": [
+					{"id":"file_name0", "type":"string"},
+					{"id":"url1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "filechooseradd5",
+				"scriptName": "FilechooserAdd",
+				"highlight": false,
+				"params": [
+					{"id":"file_name0", "type":"string"},
+					{"id":"file_data1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "spriteadd6",
+				"scriptName": "SpriteAdd",
+				"highlight": false,
+				"params": [
+					{"id":"image_0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "fileread7",
+				"scriptName": "FileRead",
+				"highlight": false,
+				"params": [
+					{"id":"file_name1", "type":"string"},
+					{"id":"data_format10", "type":"combo", "items":["string","base64","array","blob","binarystring","arraybuffer","uint8array","nodebuffer"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"other": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 8,
+				"id": "directorycreate8",
+				"scriptName": "DirectoryCreate",
+				"highlight": false,
+				"params": [
+					{"id":"dir_name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "removefileordir9",
+				"scriptName": "RemoveFileorDir",
+				"highlight": false,
+				"params": [
+					{"id":"dir_name0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"node": {
+		"conditions": [
+			{
+				"c2id": 9,
+				"id": "onextractzip9",
+				"scriptName": "OnExtractZip",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"c2id": 10,
+				"id": "onwritedfile10",
+				"scriptName": "OnWritedFile",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 10,
+				"id": "extractzipfile10",
+				"scriptName": "ExtractZipFile",
+				"highlight": false,
+				"params": [
+					{"id":"zip_file0", "type":"string"},
+					{"id":"dir_name1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "writezipfile11",
+				"scriptName": "WriteZipFile",
+				"highlight": false,
+				"params": [
+					{"id":"file_name0", "type":"string"},
+					{"id":"compression_level11", "type":"combo", "items":["no compression","1 (best speed)","2","3","4","5","6","7","8","9 (best compression)"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"loop": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "item_list0",
+				"expressionName": "item_list",
+				"scriptName": "item_list",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 3,
+				"id": "item_url3",
+				"expressionName": "item_url",
+				"scriptName": "item_url",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	},
+	"main": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "item1",
+				"expressionName": "item",
+				"scriptName": "item",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "error2",
+				"expressionName": "error",
+				"scriptName": "error",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}

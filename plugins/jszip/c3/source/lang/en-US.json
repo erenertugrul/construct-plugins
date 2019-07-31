@@ -1,0 +1,216 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for JSZip.",
+	"text": {
+		"plugins": {
+			"eren_jszip": {
+				"name": "JSZip",
+				"description": "Create .zip files using JavaScript ",
+				"help-url": "https://github.com/erenertugrul",
+				"properties": {
+				},
+				"aceCategories": {
+					"zip": "Zip",
+					"file": "File",
+					"other": "Other",
+					"node": "Node",
+					"loop": "loop",
+					"main": "Main"
+				},
+				"conditions": {
+					"oncreatedzip0": {
+						"list-name": "On Created Zip",
+						"display-text": "On Created Zip",
+						"description": "Trigger when create new zip file action"
+						},
+					"onreadedzip1": {
+						"list-name": "On Readed Zip",
+						"display-text": "On Readed Zip",
+						"description": "Trigger when read zip file action"
+						},
+					"ondownloadedzip2": {
+						"list-name": "On Downloaded Zip",
+						"display-text": "On Downloaded Zip",
+						"description": "Trigger when download zip file action"
+						},
+					"onaddedfile3": {
+						"list-name": "On Added file",
+						"display-text": "On Added File",
+						"description": "Trigger when any add file."
+						},
+						"onaddedsprite12": {
+						"list-name": "On Added Sprite",
+						"display-text": "On Added Sprite",
+						"description": "Trigger when any add sprite."
+						},
+					"onclosedzip11": {
+						"list-name": "On Closed Zip",
+						"display-text": "On Closed Zip",
+						"description": "Trigger when close zip action"
+						},
+					"onreadedfile4": {
+						"list-name": "On Readed File",
+						"display-text": "On Readed File",
+						"description": "Trigger when read file action"
+						},
+					"onremovedfile5": {
+						"list-name": "On Removed File or Directory",
+						"display-text": "On Removed File or Directory",
+						"description": "Trigger when removed file action"
+						},
+					"oncreateddir6": {
+						"list-name": "On Created Directory",
+						"display-text": "On Created Directory",
+						"description": "Trigger when created directory action"
+						},
+					"foreachlist7": {
+						"list-name": "foreach file list",
+						"display-text": "foreach file list",
+						"description": "foreach file list"
+						},
+					"onerrorany8": {
+						"list-name": "On Errored",
+						"display-text": "On Errored",
+						"description": "Trigger when any error."
+						},
+					"onextractzip9": {
+						"list-name": "On Extract Zip",
+						"display-text": "On Extract Zip",
+						"description": "Trigger when Extract zip file action"
+						},
+					"onwritedfile10": {
+						"list-name": "On Write Zip",
+						"display-text": "On write Zip",
+						"description": "Trigger when write zip file action"
+						}
+				},
+				"actions": {
+					"createnewzipfile0": {
+						"list-name": "Create new zip file",
+						"display-text": "Created new zip file",
+						"description": "Create a new JSZip instance."
+					},
+					"readzipfile1": {
+						"list-name": "Read Zip File",
+						"display-text": "Read to {0} zip",
+						"description": "read zip file",
+						"params": {
+							"zip_file0": { "name":"zip file", "desc":"zip file"}
+						}
+					},
+					"downloadzipfile2": {
+						"list-name": "Download Zip file",
+						"display-text": "download {0} zip file {1} {2} compression level",
+						"description": "download zip file",
+						"params": {
+							"zip_file0": { "name":"zip file", "desc":"zip file"},
+							"data_format8": { "name":"Data Format", "desc":"zip data format", "items":{"blob":"blob","binarystring":"binarystring","array":"array","uint8array":"uint8array","arraybuffer":"arraybuffer","base64":"base64","nodebuffer":"nodebuffer"}},
+							"compression_level19": { "name":"Compression Level", "desc":"compression level", "items":{"no compression":"no compression","1 (best speed)":"1 (best speed)","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9 (best compression)":"9 (best compression)"}}
+						}
+					},
+					"fileaddstring3": {
+						"list-name": "Add string to zip file",
+						"display-text": "{0} name {1} file to the zip file.",
+						"description": "Add or update a string to the zip file.",
+						"params": {
+							"file_name0": { "name":"File Name", "desc":"File Name"},
+							"string1": { "name":"String", "desc":"String"}
+						}
+					},
+					"fileaddtourl4": {
+						"list-name": "Add file remote url",
+						"display-text": "{0} url {1} file to the zip file.",
+						"description": "File add remote url",
+						"params": {
+							"file_name0": { "name":"File Name", "desc":"File Name"},
+							"url1": { "name":"Url", "desc":"Url"}
+						}
+					},
+					"filechooseradd5": {
+						"list-name": "Add file with filechooser",
+						"display-text": "{0} {1} file to the zip file.",
+						"description": "Add or update a string to the zip file.",
+						"params": {
+							"file_name0": { "name":"File Name", "desc":"File Name"},
+							"file_data1": { "name":"File Data", "desc":"File Data"}
+						}
+					},
+					"spriteadd6": {
+						"list-name": "Add Sprite to zip file",
+						"display-text": "sprite {0} upload",
+						"description": "Add Sprite to zip file",
+						"params": {
+							"image_0": { "name":"Sprite", "desc":"A sprite object"}
+						}
+					},
+					"fileread7": {
+						"list-name": "File Read",
+						"display-text": "Read {0}  file to {1} format",
+						"description": "File Read",
+						"params": {
+							"file_name1": { "name":"File Name", "desc":"File Name"},
+							"data_format10": { "name":"Data Format", "desc":"zip data format", "items":{"string":"string","base64":"base64","array":"array","blob":"blob","binarystring":"binarystring","arraybuffer":"arraybuffer","uint8array":"uint8array","nodebuffer":"nodebuffer"}}
+						}
+					},
+					"directorycreate8": {
+						"list-name": "Create Empty Directory",
+						"display-text": "{0} directory name",
+						"description": "Create a empty directory",
+						"params": {
+							"dir_name0": { "name":"Dir Name", "desc":"Dir Name"}
+						}
+					},
+					"removefileordir9": {
+						"list-name": "Remove file or directory",
+						"display-text": "{0} Remove",
+						"description": "Remove file or directory",
+						"params": {
+							"dir_name0": { "name":"Dir Name", "desc":"Dir Name"}
+						}
+					},
+					"extractzipfile10": {
+						"list-name": "Extract Zip File",
+						"display-text": "{0} {1} Extract zip file",
+						"description": "Only worked node platform. (not browser)",
+						"params": {
+							"zip_file0": { "name":"zip file", "desc":"zip file"},
+							"dir_name1": { "name":"dir name", "desc":"dirname"}
+						}
+					},
+					"writezipfile11": {
+						"list-name": "Write Zip File",
+						"display-text": "{0} level {1} Write zip file",
+						"description": "Only worked node platform. (not browser)",
+						"params": {
+							"file_name0": { "name":"File Name", "desc":"file name"},
+							"compression_level11": { "name":"Compression Level", "desc":"compression level", "items":{"no compression":"no compression","1 (best speed)":"1 (best speed)","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9 (best compression)":"9 (best compression)"}}
+						}
+					},
+					"closezipfile12": {
+						"list-name": "Close Zip File",
+						"display-text": "Close Zip File",
+						"description": "Close Zip File"
+					}
+				},
+				"expressions": {
+					"item_list0": {
+						"description": "filelist loop",
+						"translated-name": "item_list"
+						},
+					"item1": {
+						"description": "get item",
+						"translated-name": "item"
+						},
+					"error2": {
+						"description": "return error msg",
+						"translated-name": "error"
+						},
+					"item_url3": {
+						"description": "return item urls",
+						"translated-name": "item_url"
+						}
+				}
+			}
+		}
+	}
+}
