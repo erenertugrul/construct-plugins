@@ -1,0 +1,128 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Shake mod.",
+	"text": {
+		"behaviors": {
+			"rex_shakemod": {
+				"name": "Shake mod",
+				"description": "Shake an object in the X and Y axis.",
+				"help-url": "http://c2rexplugins.weebly.com/rex_shakemod.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"mode": {
+						"name": "Mode",
+						"desc": "Effect mode only sets position for render.",
+						"items": {
+							"effect":"Effect",
+							"behavior":"Behavior"
+							}
+						},
+					"duration": {
+						"name": "Duration",
+						"desc": "The time the shake should last, in seconds."
+						},
+					"magnitude": {
+						"name": "Magnitude",
+						"desc": "The strength of the shake, in pixels."
+						},
+					"magnitude-mode": {
+						"name": "Magnitude mode",
+						"desc": "Decay or constant magnitude.",
+						"items": {
+							"constant":"Constant",
+							"decay":"Decay"
+							}
+						}
+				},
+				"aceCategories": {
+					"enable": "Enable",
+					"shake": "Shake",
+					"duration": "Duration",
+					"magnitude": "Magnitude",
+					"origin": "Origin"
+				},
+				"conditions": {
+					"onshackingend0": {
+						"list-name": "On shacking end",
+						"display-text": "On {my} shacking end",
+						"description": "Triggered when shacking end."
+						},
+					"isshaking3": {
+						"list-name": "Is shaking",
+						"display-text": "Is {my} shaking",
+						"description": "Is object shaking."
+						}
+				},
+				"actions": {
+					"setactivated0": {
+						"list-name": "Set activated",
+						"display-text": "Set {my} activated to [i]{0}[/i]",
+						"description": "Enable the object's rotation behavior.",
+						"params": {
+							"activated2": { "name":"Activated", "desc":"Enable the rotation behavior.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"start1": {
+						"list-name": "Start",
+						"display-text": "Shake {my}",
+						"description": "Shake object for a duration of time."
+					},
+					"stop2": {
+						"list-name": "Stop",
+						"display-text": "Stop {my}",
+						"description": "Stop shaking."
+					},
+					"setduration11": {
+						"list-name": "Set duration",
+						"display-text": "Set {my} duration to [i]{0}[/i]",
+						"description": "Set duration.",
+						"params": {
+							"duration0": { "name":"Duration", "desc":"The time the shake should last, in seconds."}
+						}
+					},
+					"setmagnitude12": {
+						"list-name": "Set magnitude",
+						"display-text": "Set {my} magnitude to [i]{0}[/i]",
+						"description": "Set magnitude.",
+						"params": {
+							"magnitude0": { "name":"Magnitude", "desc":"The strength of the shake, in pixels."}
+						}
+					},
+					"setmagnitudemode13": {
+						"list-name": "Set magnitude mode",
+						"display-text": "Set {my} magnitude mode to [i]{0}[/i]",
+						"description": "Set magnitude mode.",
+						"params": {
+							"mode2": { "name":"Mode", "desc":"Decay or constant magnitude.", "items":{"decay":"Decay","constant":"Constant"}}
+						}
+					}
+				},
+				"expressions": {
+					"ox1": {
+						"description": "Get X co-ordinate of shaking origin.",
+						"translated-name": "OX"
+						},
+					"oy2": {
+						"description": "Get Y co-ordinate of shaking origin.",
+						"translated-name": "OY"
+						},
+					"duration11": {
+						"description": "Get duration.",
+						"translated-name": "Duration"
+						},
+					"remainder12": {
+						"description": "Get remaining time.",
+						"translated-name": "Remainder"
+						}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "Shake mod",
+	"id": "Rex_ShakeMod",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "http://c2rexplugins.weebly.com/rex_shakemod.html",
+	"documentation": "http://c2rexplugins.weebly.com/rex_shakemod.html",
+	"description": "Shake an object in the X and Y axis.",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"behavior.js",
+		"type.js",
+		"instance.js"
+	]
+}
