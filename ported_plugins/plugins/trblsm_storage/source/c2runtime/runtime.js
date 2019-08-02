@@ -692,12 +692,14 @@ cr.plugins_.trblsm_storage = function (runtime) {
 	    this.DeleteField = function (table, list, field) {
 		if (isset(this.storage[table]) && isset(this.storage[table][list]) && isset(this.storage[table][list][field])) {
 		    this.storage[table][list][field] = null;
+		    delete this.storage[table][list][field];
 		    this.tableAttr[table][list]['fieldCount']--;
 		}
 	    }
 	    this.DeleteList = function (table, list) {
 		if (isset(this.storage[table]) && isset(this.storage[table][list])) {
-		    this.storage[table][list] = null
+		    this.storage[table][list] = null;
+		    delete this.storage[table][list];
 		    this.tableAttr[table]['listCount']--;
 		}
 	    }
@@ -707,6 +709,7 @@ cr.plugins_.trblsm_storage = function (runtime) {
 	    this.DeleteTable = function (table) {
 		if (isset(this.storage[table])) {
 		    this.storage[table] = null;
+		    delete this.storage[table];
 		    this.table_count--;
 		}
 	    }
