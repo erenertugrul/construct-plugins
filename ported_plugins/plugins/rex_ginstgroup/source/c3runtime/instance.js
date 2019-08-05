@@ -144,7 +144,7 @@
 			var group = this.groups[name];
 
 			if (group == null) {
-				group = new window.RexC2GroupKlass();
+				group = new globalThis.RexC2GroupKlass();
 				this.groups[name] = group;
 				this.appendPrivateGroup(name);
 			}
@@ -214,7 +214,7 @@
 			if (!objType)
 				return false;
 
-			return window.RexC2PickUIDs.call(this, uids, objType);
+			return globalThis.RexC2PickUIDs.call(this, uids, objType);
 		}
 
 		callMapFunction(fnName, uid) 

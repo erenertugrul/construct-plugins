@@ -21,7 +21,7 @@
 			super(opts);
 			(function () {
 				// general pick instances function
-				if (window.RexC2PickUIDs != null)
+				if (globalThis.RexC2PickUIDs != null)
 					return;
 
 				var _uidmap = {};
@@ -73,12 +73,12 @@
 					return (sol._instances.length > 0);
 				};
 
-				window.RexC2PickUIDs = PickUIDs;
+				globalThis.RexC2PickUIDs = PickUIDs;
 			}());
 
 			(function () {
 				// general group class
-				if (window.RexC2GroupKlass != null)
+				if (globalThis.RexC2GroupKlass != null)
 					return;
 
 				var GroupKlass = function () {
@@ -381,7 +381,7 @@
 					}
 				};
 
-				window.RexC2GroupKlass = GroupKlass;
+				globalThis.RexC2GroupKlass = GroupKlass;
 			}());
 		}
 		

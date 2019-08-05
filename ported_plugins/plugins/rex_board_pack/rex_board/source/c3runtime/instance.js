@@ -11,7 +11,7 @@
         	this._disposables = new C3.CompositeDisposable(C3.Disposable.From(b, "instancedestroy", (a) => this._OnInstanceDestroyed(a.instance)), C3.Disposable.From(b, "afterload", () => this._OnAfterLoad()))
     		
 			// Initialise object properties
-			this.board = new window.RexC2BoardKlass();
+			this.board = new globalThis.RexC2BoardKlass();
 	        this.check_name = "BOARD";
 
 
@@ -466,7 +466,7 @@
 		    var layout = this.GetLayout();
 		    var px = layout.LXYZ2PX(x, y, z);
 		    var py = layout.LXYZ2PY(x, y, z);
-		    var inst = window.RexC2CreateObject.call(this, objtype, layer, px, py, callback);
+		    var inst = globalThis.RexC2CreateObject.call(this, objtype, layer, px, py, callback);
 		    return inst;
 		}
 
@@ -554,7 +554,7 @@
 		            return (self.uid2xyz(uid) != null);
 		        }
 		    }
-		    return window.RexC2PickUIDs.call(this, uids, chess_type, check_callback);
+		    return globalThis.RexC2PickUIDs.call(this, uids, chess_type, check_callback);
 		}
 
 

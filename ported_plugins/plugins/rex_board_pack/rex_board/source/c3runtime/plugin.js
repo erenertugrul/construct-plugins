@@ -37,7 +37,7 @@
 			super(opts);
 			(function () {
 			    // class of board
-			    if (window.RexC2BoardKlass != null)
+			    if (globalThis.RexC2BoardKlass != null)
 			        return;
 
 			    var BoardKlass = function () {
@@ -52,7 +52,7 @@
 
 			    BoardKlassProto.Reset = function (ignore_recycle) {
 			        this.xyz2uid = {};
-			        window.RexC2BoardLXYZCache.freeLinesInDict(this.uid2xyz);
+			        globalThis.RexC2BoardLXYZCache.freeLinesInDict(this.uid2xyz);
 
 			        this.x_max = null;
 			        this.y_max = null;
@@ -82,7 +82,7 @@
 			        tmpy[z] = uid;
 
 			        // uid
-			        this.uid2xyz[uid] = window.RexC2BoardLXYZCache.allocLine(x, y, z);
+			        this.uid2xyz[uid] = globalThis.RexC2BoardLXYZCache.allocLine(x, y, z);
 
 			        this.x_max = null;
 			        this.y_max = null;
@@ -142,7 +142,7 @@
 
 			        // uid
 			        delete this.uid2xyz[uid];
-			        window.RexC2BoardLXYZCache.freeLine(xyz);
+			        globalThis.RexC2BoardLXYZCache.freeLine(xyz);
 
 			        this.x_max = null;
 			        this.y_max = null;
@@ -239,22 +239,22 @@
 			    BoardKlassProto.loadFromJSON = function (o) {
 			        this.xyz2uid = o["xyz2uid"];
 
-			        window.RexC2BoardLXYZCache.freeLinesInDict(this.uid2xyz);
+			        globalThis.RexC2BoardLXYZCache.freeLinesInDict(this.uid2xyz);
 			        var uid, uid2xyz = o["uid2xyz"],
 			            xyz;
 			        for (uid in uid2xyz) {
 			            xyz = uid2xyz[uid];
-			            this.uid2xyz[uid] = window.RexC2BoardLXYZCache.allocLine(xyz["x"], xyz["y"], xyz["z"]);
+			            this.uid2xyz[uid] = globalThis.RexC2BoardLXYZCache.allocLine(xyz["x"], xyz["y"], xyz["z"]);
 			        }
 			    };
 
-			    window.RexC2BoardKlass = BoardKlass;
+			    globalThis.RexC2BoardKlass = BoardKlass;
 
 			}());
 
 			(function () {
 			    // general CreateObject function which call a callback before "OnCreated" triggered
-			    if (window.RexC2CreateObject != null)
+			    if (globalThis.RexC2CreateObject != null)
 			        return;
 
 			    // copy from system action: CreateObject
@@ -313,12 +313,12 @@
 			        return inst;
 			    };
 
-			    window.RexC2CreateObject = CreateObject;
+			    globalThis.RexC2CreateObject = CreateObject;
 			}());
 
 			(function () {
 			    // general pick instances function
-			    if (window.RexC2PickUIDs != null)
+			    if (globalThis.RexC2PickUIDs != null)
 			        return;
 
 			    var _uidmap = {};
@@ -370,12 +370,12 @@
 			        return (sol._instances.length > 0);
 			    };
 
-			    window.RexC2PickUIDs = PickUIDs;
+			    globalThis.RexC2PickUIDs = PickUIDs;
 			}());
 
 			(function () {
 			    // logical XYZ structure recycle
-			    if (window.RexC2BoardLXYZCache != null)
+			    if (globalThis.RexC2BoardLXYZCache != null)
 			        return;
 
 			    var LXYZCacheKlass = function () {
@@ -406,7 +406,7 @@
 			            this.freeLine(arr[i]);
 			        arr.length = 0;
 			    };
-			    window.RexC2BoardLXYZCache = new LXYZCacheKlass();
+			    globalThis.RexC2BoardLXYZCache = new LXYZCacheKlass();
 			}());
 		}
 		
