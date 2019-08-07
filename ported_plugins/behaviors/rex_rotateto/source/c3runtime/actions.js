@@ -23,7 +23,7 @@
 		},
 		SetTargetAngle(angle,clockwise_mode)
 		{
-			this.SetTargetAngle(to_clamped_degrees(angle), clockwise_mode);
+			this.SetTargetAngle(to_clamped_radians(angle), clockwise_mode);
 		},
 		SetCurrentSpeed(s)
 		{
@@ -42,7 +42,7 @@
 		},
 		SetTargetAngleByDeltaAngle(dA,clockwise_mode)
 		{
-		    var dA_rad = to_clamped_degrees(dA);
+		    var dA_rad = to_clamped_radians(dA);
 		    if (clockwise_mode==0)
 		        dA_rad = -dA_rad;
 		    var angle = this.inst.GetAngle() + dA_rad;
