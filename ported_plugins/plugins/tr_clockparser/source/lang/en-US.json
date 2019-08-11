@@ -1,0 +1,56 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for TR_ClockParser.",
+	"text": {
+		"plugins": {
+			"tr_clockparser": {
+				"name": "TR_ClockParser",
+				"description": "Plugin that parses seconds to clock string.",
+				"help-url": "http://www.neexeen.com/",
+				"properties": {
+					"version:-1.1": {
+						"name": "Version: 1.1",
+						"desc": ""
+						}
+				},
+				"aceCategories": {
+					"time": "Time"
+				},
+				"conditions": {
+				},
+				"actions": {
+				},
+				"expressions": {
+					"minimal": {
+						"description": "Return the smallest possible clock string. e.g.: Minimal(30) -> \"30\", Minimal(90) -> \"01:30\", Minimal(4830) -> \"01:20:30\"",
+						"translated-name": "Minimal",
+						"params": {
+							"00": { "name":"0", "desc":"Number of seconds to parse."}
+						}
+						},
+					"mmss": {
+						"description": "Return the \"MM:SS\" clock string. e.g.: MMSS(30) -> \"00:30\", MMSS(90) -> \"01:30\", MMSS(4830) -> \"80:30\"",
+						"translated-name": "MMSS",
+						"params": {
+							"00": { "name":"0", "desc":"Number of seconds to parse."}
+						}
+						},
+					"hhmmss": {
+						"description": "Return the \"HH:MM:SS\" clock string. e.g.: HHMMSS(30) -> \"00:00:30\", HHMMSS(90) -> \"00:01:30\", HHMMSS(4830) -> \"01:20:30\"",
+						"translated-name": "HHMMSS",
+						"params": {
+							"00": { "name":"0", "desc":"Number of seconds to parse."}
+						}
+						},
+					"toseconds": {
+						"description": "Converts the specified clock string to seconds e.g.: \"01:03:30\" -> 3810, \"15:30\" -> 930, \"30\" -> 30",
+						"translated-name": "ToSeconds",
+						"params": {
+							"0": { "name":"", "desc":"String representation of time in one of the following formats: \"HH:MM:SS\", \"MM:SS\", \"SS\"."}
+						}
+						}
+				}
+			}
+		}
+	}
+}

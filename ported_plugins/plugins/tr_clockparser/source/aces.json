@@ -1,0 +1,54 @@
+{
+	"time": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "minimal",
+				"expressionName": "Minimal",
+				"scriptName": "Minimal",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"00", "type":"number"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "mmss",
+				"expressionName": "MMSS",
+				"scriptName": "MMSS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"00", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "hhmmss",
+				"expressionName": "HHMMSS",
+				"scriptName": "HHMMSS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"00", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "toseconds",
+				"expressionName": "ToSeconds",
+				"scriptName": "ToSeconds",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"0", "type":"string"}
+				]
+			}
+		]
+	}
+}

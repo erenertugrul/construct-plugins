@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "TR_ClockParser",
+	"id": "TR_ClockParser",
+	"version": "1.2.0.0",
+	"author": "Toby R",
+	"website": "http://www.neexeen.com/",
+	"documentation": "http://www.neexeen.com/",
+	"description": "Plugin that parses seconds to clock string.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
