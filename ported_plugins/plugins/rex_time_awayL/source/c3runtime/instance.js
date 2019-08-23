@@ -47,7 +47,7 @@
 
 					onCompleted(err, value);
 				}
-				localforage["getItem"](key, callback);
+				localforage2["getItem"](key, callback);
 			}
 		}
 	};

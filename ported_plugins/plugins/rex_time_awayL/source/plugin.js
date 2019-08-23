@@ -31,11 +31,9 @@
 			this._info.SetProperties([
 			]);
 			this._info.AddFileDependency({
-				filename: "c2runtime/localForage.js",
-				type: "inline-script",
-				filename: "c3runtime/localForage.js",
+				filename: "localForage.js",
 				type: "inline-script"
-			});			
+			});		
 			SDK.Lang.PopContext();		// .properties
 			SDK.Lang.PopContext();
 		}

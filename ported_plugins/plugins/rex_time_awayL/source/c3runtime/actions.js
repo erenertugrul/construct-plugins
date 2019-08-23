@@ -71,7 +71,7 @@
 				self.Trigger(C3.Plugins.Rex_TimeAwayL.Cnds.OnStartTimer);
 			}
 		};
-		localforage["setItem"](key, this.cache[key], onWriteTimer);
+		localforage2["setItem"](key, this.cache[key], onWriteTimer);
 	},
 	RemoveTimer(key) 
 	{
@@ -88,7 +88,7 @@
 				self.Trigger(C3.Plugins.Rex_TimeAwayL.Cnds.OnRemoveTimer);
 			}
 		};
-		localforage["removeItem"](key, callback);
+		localforage2["removeItem"](key, callback);
 	},
 	PauseTimer(key) 
 	{
@@ -113,7 +113,7 @@
 						self.Trigger(C3.Plugins.Rex_TimeAwayL.Cnds.OnPauseTimer);
 					}
 				};
-				localforage["setItem"](key, self.cache[key], onWriteTimer);
+				localforage2["setItem"](key, self.cache[key], onWriteTimer);
 			}
 		}
 		this.GetTimer(key, onGetTimer);
@@ -141,7 +141,7 @@
 						self.Trigger(C3.Plugins.Rex_TimeAwayL.Cnds.OnResumeTimer);
 					}
 				};
-				localforage["setItem"](key, self.cache[key], onWriteTimer);
+				localforage2["setItem"](key, self.cache[key], onWriteTimer);
 			}
 		}
 		this.GetTimer(key, onGetTimer);
@@ -168,7 +168,7 @@
 						self.Trigger(C3.Plugins.Rex_TimeAwayL.Cnds.OnGetTimer);
 					}
 				};
-				localforage["setItem"](key, self.cache[key], onWriteTimer);
+				localforage2["setItem"](key, self.cache[key], onWriteTimer);
 			}
 
 			// get timer

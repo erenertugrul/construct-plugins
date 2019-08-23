@@ -87,7 +87,7 @@ cr.plugins_.Rex_TimeAwayL = function (runtime) {
 
 				onCompleted(err, value);
 			}
-			localforage["getItem"](key, callback);
+			localforage2["getItem"](key, callback);
 		}
 	};
 
@@ -183,7 +183,7 @@ cr.plugins_.Rex_TimeAwayL = function (runtime) {
 				self.runtime.trigger(cr.plugins_.Rex_TimeAwayL.prototype.cnds.OnStartTimer, self);
 			}
 		};
-		localforage["setItem"](key, this.cache[key], onWriteTimer);
+		localforage2["setItem"](key, this.cache[key], onWriteTimer);
 	};
 
 	Acts.prototype.RemoveTimer = function (key) {
@@ -200,7 +200,7 @@ cr.plugins_.Rex_TimeAwayL = function (runtime) {
 				self.runtime.trigger(cr.plugins_.Rex_TimeAwayL.prototype.cnds.OnRemoveTimer, self);
 			}
 		};
-		localforage["removeItem"](key, callback);
+		localforage2["removeItem"](key, callback);
 	};
 
 
@@ -226,7 +226,7 @@ cr.plugins_.Rex_TimeAwayL = function (runtime) {
 						self.runtime.trigger(cr.plugins_.Rex_TimeAwayL.prototype.cnds.OnPauseTimer, self);
 					}
 				};
-				localforage["setItem"](key, self.cache[key], onWriteTimer);
+				localforage2["setItem"](key, self.cache[key], onWriteTimer);
 			}
 		}
 		this.GetTimer(key, onGetTimer);
@@ -254,7 +254,7 @@ cr.plugins_.Rex_TimeAwayL = function (runtime) {
 						self.runtime.trigger(cr.plugins_.Rex_TimeAwayL.prototype.cnds.OnResumeTimer, self);
 					}
 				};
-				localforage["setItem"](key, self.cache[key], onWriteTimer);
+				localforage2["setItem"](key, self.cache[key], onWriteTimer);
 			}
 		}
 		this.GetTimer(key, onGetTimer);
@@ -281,7 +281,7 @@ cr.plugins_.Rex_TimeAwayL = function (runtime) {
 						self.runtime.trigger(cr.plugins_.Rex_TimeAwayL.prototype.cnds.OnGetTimer, self);
 					}
 				};
-				localforage["setItem"](key, self.cache[key], onWriteTimer);
+				localforage2["setItem"](key, self.cache[key], onWriteTimer);
 			}
 
 			// get timer
