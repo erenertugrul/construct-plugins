@@ -142,7 +142,7 @@
 			if ((this.remainDistance <= 0) || (this.currentSpeed <= 0)) {
 				isHitTarget = true;
 				this.wi.SetX(this.target["x"]);
-				this.wi.GetY(this.target["y"]);
+				this.wi.SetY(this.target["y"]);
 
 				if (this.currentSpeed > 0)
 					this.remainDt = (-this.remainDistance) / this.currentSpeed;
