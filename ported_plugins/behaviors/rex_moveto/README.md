@@ -1,7 +1,9 @@
 rex_moveto for c3runtime.
 
-official plugin repo
+official plugin repo 
 https://github.com/rexrainbow/C3RexDoc/blob/master/repo/index.md
+
+warning: use the official "move_to" behavior for new projects.
 
 <table>
 <thead>
