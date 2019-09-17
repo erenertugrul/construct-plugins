@@ -1,0 +1,407 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Time Manager.",
+	"text": {
+		"plugins": {
+			"camftimemanager": {
+				"name": "Time Manager",
+				"description": "Time Manager is a plugin that helps you calculate and display time as a counter, with or without a time limit, or as a countdown. You can display the time in different ways like in hours, minutes, seconds and/or milliseconds. You can reset your time instance, pause it and resume it whenever you wish to!",
+				"help-url": "http://www.scirra.com/forum/plugin-time-manager_topic49030_post308144.html#308144",
+				"properties": {
+				},
+				"aceCategories": {
+					"time_counter": "Time counter",
+					"time_counter_options": "Time counter options",
+					"time_counter_activity": "Time counter activity",
+					"time_counter_convert": "Time counter Convert"
+				},
+				"conditions": {
+					"ıscounterfinished1": {
+						"list-name": "Is counter finished?",
+						"display-text": "Is {0} finished?",
+						"description": "If the counter has reached its designated value, if applicable.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"ıscounterpaused2": {
+						"list-name": "Is counter paused?",
+						"display-text": "Is {0} paused?",
+						"description": "If the counter is currently paused.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"ıscounterrunning4": {
+						"list-name": "Is counter running?",
+						"display-text": "Is {0} running?",
+						"description": "If the counter is currently running.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"ıscounterstopped5": {
+						"list-name": "Is counter stopped?",
+						"display-text": "Is {0} stopped?",
+						"description": "If the counter is currently stopped.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"checkcountervalue6": {
+						"list-name": "Check counter value",
+						"display-text": "Is {0} {1} {2}:{3}:{4}:{5}?",
+						"description": "Checks the counter value with the options given.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"check_state7": { "name":"Check state", "desc":"Choose the type of check you want to make. '<' means smaller than, '>', '!=' means not equal to and '==' means equal to.", "items":{"<":"<",">":">","!=":"!=","==":"==","<=":"<=",">=":">="}},
+							"hours8": { "name":"Hours", "desc":"Enter control value for hours"},
+							"minutes9": { "name":"Minutes", "desc":"Enter control value for minutes"},
+							"seconds10": { "name":"Seconds", "desc":"Enter control value for seconds"},
+							"milliseconds11": { "name":"Milliseconds", "desc":"Enter control value for milliseconds"}
+						}
+						}
+				},
+				"actions": {
+					"timecountdown0": {
+						"list-name": "Time countdown",
+						"display-text": "{1} is counting down from {0} ms and set to {2}",
+						"description": "Time countdown function that starts at a given value and stops at 0 (zero)",
+						"params": {
+							"countdown_time0": { "name":"Countdown time", "desc":"Enter time to countdown from (in milliseconds)"},
+							"label1": { "name":"Label", "desc":"Enter label for this counter"},
+							"state4": { "name":"State", "desc":"Set state if you want the counter to run from start, or if you want to start it manually later.", "items":{"started":"Started","stopped":"Stopped"}}
+						}
+					},
+					"timecountup1": {
+						"list-name": "Time counter",
+						"display-text": "{0} is counting up and set to {1}",
+						"description": "Time count function that keeps counting",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"state3": { "name":"State", "desc":"Set state if you want the counter to run from start, or if you want to start it manually later.", "items":{"started":"Started","stopped":"Stopped"}}
+						}
+					},
+					"timecountupwithlimit2": {
+						"list-name": "Limited time counter",
+						"display-text": "{1} is counting up to {0} ms and set to {2}",
+						"description": "Time count function that counts up to a given value",
+						"params": {
+							"max_count_time0": { "name":"Max count time", "desc":"Enter time to count to (in milliseconds)"},
+							"label1": { "name":"Label", "desc":"Enter label for this counter"},
+							"state4": { "name":"State", "desc":"Set state if you want the counter to run from start, or if you want to start it manually later.", "items":{"started":"Started","stopped":"Stopped"}}
+						}
+					},
+					"pausetimecount4": {
+						"list-name": "Pause counter",
+						"display-text": "{my} has set {0} to {1}",
+						"description": "Function that pauses or resumes a counter.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"state3": { "name":"State", "desc":"Set state if you want to pause the counter, or if you want to resume a already paused counter.", "items":{"pause":"Pause","resume":"Resume"}}
+						}
+					},
+					"resettimecount5": {
+						"list-name": "Restart counter",
+						"display-text": "{my} has resetted {0} to its original value",
+						"description": "Restarts a counter to its orginal given value.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+					},
+					"destroytimemanagerınstances6": {
+						"list-name": "Destroy Time Manager instances",
+						"display-text": "{my} has destroyed all Time Manager instances",
+						"description": "Removes all Time Manager instances from the system"
+					},
+					"stoptimecount7": {
+						"list-name": "Stop time counter",
+						"display-text": "{my} has stopped {0}",
+						"description": "Time count function that starts a counter. The counter will start from given default value.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+					},
+					"starttimecount8": {
+						"list-name": "Start time counter",
+						"display-text": "{my} has started {0}",
+						"description": "Time count function that stops a counter. The counter will be reverted to the given default value.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+					},
+					"pausetimecount9": {
+						"list-name": "Pause counter",
+						"display-text": "{my} has set {0} to {1}",
+						"description": "Function that pauses or resumes a counter.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"state3": { "name":"State", "desc":"Set state if you want to pause the counter, or if you want to resume a already paused counter.", "items":{"pause":"Pause","resume":"Resume"}}
+						}
+					},
+					"resettimecount10": {
+						"list-name": "Reset counter",
+						"display-text": "{my} has resetted {0} to its original value",
+						"description": "Resets a counter to its orginal given value.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+					},
+					"setminutebasevalue11": {
+						"list-name": "Change minute base value",
+						"display-text": "{0} has changed minute base value to {1}",
+						"description": "Sets the base value that the counter uses to calculate the minute and hour value.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"base_value1": { "name":"Base value", "desc":"Enter new base value"}
+						}
+					},
+					"setsecondbasevalue12": {
+						"list-name": "Change second base value",
+						"display-text": "{0} has changed second base value to {1}",
+						"description": "Sets the base value that the counter uses to calculate the second and minute value.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"base_value1": { "name":"Base value", "desc":"Enter new base value"}
+						}
+					},
+					"setmillisecondbasevalue13": {
+						"list-name": "Change millisecond base value",
+						"display-text": "{0} has changed millisecond base value to {1}",
+						"description": "Sets the base value that the counter uses to calculate the millisecond and seconds value.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"base_value1": { "name":"Base value", "desc":"Enter new base value"}
+						}
+					},
+					"removesinglecounter14": {
+						"list-name": "Destroy single Time Manager instance",
+						"display-text": "{0} has been removed",
+						"description": "Removes a single counter from the system.",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+					},
+					"timecountupwithstartvalue15": {
+						"list-name": "Time counter with start value",
+						"display-text": "{0} is counting up from {2} and set to {1}",
+						"description": "Time count function that starts at a given value and then keeps counting",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"state3": { "name":"State", "desc":"Set state if you want the counter to run from start, or if you want to start it manually later.", "items":{"started":"Started","stopped":"Stopped"}},
+							"start_value4": { "name":"Start value", "desc":"Enter start value (in milliseconds)."}
+						}
+					},
+					"calculatetimevalue16": {
+						"list-name": "Calculate counter",
+						"display-text": "{0} recalculates the time value using {1} and the value {2}",
+						"description": "Function that calculates a value with the given counter",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"},
+							"calculation3": { "name":"Calculation", "desc":"Choose which calculation you want to use.", "items":{"addition":"Addition","subtraction":"Subtraction"}},
+							"value4": { "name":"Value", "desc":"Enter value you want to calculate the time counter with (in milliseconds)."}
+						}
+					}
+				},
+				"expressions": {
+					"getstringhmsmtimevalue1": {
+						"description": "Get the Hour/Minute/Second/Millisecond time value as a string for a time counter",
+						"translated-name": "GetStringHMSMTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"getstringhmstimevalue8": {
+						"description": "Get the Hour/Minute/Second time value as a string for a time counter",
+						"translated-name": "GetStringHMSTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"getstringmsmtimevalue2": {
+						"description": "Get the Minute/Second/Millisecond time value as a string for a time counter",
+						"translated-name": "GetStringMSMTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"getstringmstimevalue7": {
+						"description": "Get the Minute/Second time value as a string for a time counter",
+						"translated-name": "GetStringMSTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"getstringsmtimevalue3": {
+						"description": "Get the Second/Millisecond time value as a string for a time counter",
+						"translated-name": "GetStringSMTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"getstringstimevalue4": {
+						"description": "Get the Seconds time value as a string for a time counter",
+						"translated-name": "GetStringSTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"getstringmtimevalue5": {
+						"description": "Get the Milliseconds time value as a string for a time counter",
+						"translated-name": "GetStringMTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"gettimevalue6": {
+						"description": "Get the time in milliseconds as a Number",
+						"translated-name": "GetTimeValue",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"hhmmssmm9": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. Adds a '0' in front for values under the value 10.",
+						"translated-name": "HHMMSSMM",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"hhmmss10": {
+						"description": "Get Hour/Minute/Second time value as a string. Adds a '0' in front for values under the value 10.",
+						"translated-name": "HHMMSS",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"mmssmm11": {
+						"description": "Get Minute/Second/Millisecond time value as a string. Adds a '0' in front for values under the value 10.",
+						"translated-name": "MMSSMM",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"mmss12": {
+						"description": "Get Minute/Second time value as a string. Adds a '0' in front for values under the value 10.",
+						"translated-name": "MMSS",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"ssmm13": {
+						"description": "Get Second/Millisecond time value as a string. Adds a '0' in front for values under the value 10.",
+						"translated-name": "SSMM",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"seconds14": {
+						"description": "Get Second time value as a string. Adds a '0' in front for Second under the value 10.",
+						"translated-name": "Seconds",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"singleseconds19": {
+						"description": "Get Second time value as a string. It DOES NOT add a '0' in front for seconds under the value 10.",
+						"translated-name": "SingleSeconds",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"milliseconds15": {
+						"description": "Get Millisecond time value as a string. Adds extra '0' in front for value under the value 100/10.",
+						"translated-name": "Milliseconds",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"hmmssmm16": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. It DOES NOT add a '0' in front for Hour under the value 10.",
+						"translated-name": "HMMSSMM",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"hmssmm17": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. It DOES NOT add a '0' in front for Hour/Minute under the value 10.",
+						"translated-name": "HMSSMM",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"hmsmm18": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. It DOES NOT add a '0' in front for Hour/Minute/Second under the value 10.",
+						"translated-name": "HMSMM",
+						"params": {
+							"label0": { "name":"Label", "desc":"Enter label for this counter"}
+						}
+						},
+					"convertnumbertohhmmssmm20": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. It adds a '0' in front for Hour/Minute/Second/Milliseconds under the value 10.",
+						"translated-name": "ConvertNumberToHHMMSSMM",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertohmmssmm21": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. It adds a '0' in front for Minute/Second/Milliseconds under the value 10.",
+						"translated-name": "ConvertNumberToHMMSSMM",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertohmssmm22": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. It adds a '0' in front for Second/Milliseconds under the value 10.",
+						"translated-name": "ConvertNumberToHMSSMM",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertohmsmm23": {
+						"description": "Get Hour/Minute/Second/Millisecond time value as a string. It DOES NOT add a '0' in front for Milliseconds under the value 10.",
+						"translated-name": "ConvertNumberToHMSMM",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertohhmmss24": {
+						"description": "Get Hour/Minute/Second time value as a string. It adds a '0' in front for Hour/Minute/Second under the value 10.",
+						"translated-name": "ConvertNumberToHHMMSS",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertohmmss25": {
+						"description": "Get Hour/Minute/Second time value as a string. It adds a '0' in front for Minute/Second under the value 10.",
+						"translated-name": "ConvertNumberToHMMSS",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertohmss26": {
+						"description": "Get Hour/Minute/Second time value as a string. It DOES NOT add a '0' in front for Second under the value 10.",
+						"translated-name": "ConvertNumberToHMSS",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertohms27": {
+						"description": "Get Hour/Minute/Second time value as a string. It DOES NOT add a '0' in front for Hour/Minute/Second under the value 10.",
+						"translated-name": "ConvertNumberToHMS",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						},
+					"convertnumbertommssmm28": {
+						"description": "Get Minute/Second/Millisecond time value as a string. It adds a '0' in front for Minute/Second/Milliseconds under the value 10.",
+						"translated-name": "ConvertNumberToMMSSMM",
+						"params": {
+							"timevalue0": { "name":"TimeValue", "desc":"Enter time value you wish to convert"}
+						}
+						}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,556 @@
+{
+	"time_counter": {
+		"conditions": [
+			{
+				"c2id": 1,
+				"id": "ıscounterfinished1",
+				"scriptName": "IsCounterFinished",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "ıscounterpaused2",
+				"scriptName": "IsCounterPaused",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "ıscounterrunning4",
+				"scriptName": "IsCounterRunning",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "ıscounterstopped5",
+				"scriptName": "IsCounterStopped",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "checkcountervalue6",
+				"scriptName": "CheckCounterValue",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"check_state7", "type":"combo", "items":["<",">","!=","==","<=",">="]},
+					{"id":"hours8", "type":"number", "initialValue":"0"},
+					{"id":"minutes9", "type":"number", "initialValue":"0"},
+					{"id":"seconds10", "type":"number", "initialValue":"0"},
+					{"id":"milliseconds11", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "timecountdown0",
+				"scriptName": "TimeCountDown",
+				"highlight": false,
+				"params": [
+					{"id":"countdown_time0", "type":"number", "initialValue":"0"},
+					{"id":"label1", "type":"string", "initialValue":""},
+					{"id":"state4", "type":"combo", "items":["started","stopped"]}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "timecountup1",
+				"scriptName": "TimeCountUp",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"state3", "type":"combo", "items":["started","stopped"]}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "timecountupwithlimit2",
+				"scriptName": "TimeCountUpWithLimit",
+				"highlight": false,
+				"params": [
+					{"id":"max_count_time0", "type":"number", "initialValue":"0"},
+					{"id":"label1", "type":"string", "initialValue":""},
+					{"id":"state4", "type":"combo", "items":["started","stopped"]}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "timecountupwithstartvalue15",
+				"scriptName": "TimeCountUpWithStartValue",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"state3", "type":"combo", "items":["started","stopped"]},
+					{"id":"start_value4", "type":"number", "initialValue":"1000"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "getstringhmsmtimevalue1",
+				"expressionName": "GetStringHMSMTimeValue",
+				"scriptName": "GetStringHMSMTimeValue",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "getstringhmstimevalue8",
+				"expressionName": "GetStringHMSTimeValue",
+				"scriptName": "GetStringHMSTimeValue",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "getstringmsmtimevalue2",
+				"expressionName": "GetStringMSMTimeValue",
+				"scriptName": "GetStringMSMTimeValue",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "getstringmstimevalue7",
+				"expressionName": "GetStringMSTimeValue",
+				"scriptName": "GetStringMSTimeValue",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "getstringsmtimevalue3",
+				"expressionName": "GetStringSMTimeValue",
+				"scriptName": "GetStringSMTimeValue",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "getstringstimevalue4",
+				"expressionName": "GetStringSTimeValue",
+				"scriptName": "GetStringSTimeValue",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "getstringmtimevalue5",
+				"expressionName": "GetStringMTimeValue",
+				"scriptName": "GetStringMTimeValue",
+				"isDeprecated": "true",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "gettimevalue6",
+				"expressionName": "GetTimeValue",
+				"scriptName": "GetTimeValue",
+				"highlight": false,
+				"returnType": "number",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "hhmmssmm9",
+				"expressionName": "HHMMSSMM",
+				"scriptName": "HHMMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "hhmmss10",
+				"expressionName": "HHMMSS",
+				"scriptName": "HHMMSS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "mmssmm11",
+				"expressionName": "MMSSMM",
+				"scriptName": "MMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "mmss12",
+				"expressionName": "MMSS",
+				"scriptName": "MMSS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "ssmm13",
+				"expressionName": "SSMM",
+				"scriptName": "SSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "seconds14",
+				"expressionName": "Seconds",
+				"scriptName": "Seconds",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 19,
+				"id": "singleseconds19",
+				"expressionName": "SingleSeconds",
+				"scriptName": "SingleSeconds",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 15,
+				"id": "milliseconds15",
+				"expressionName": "Milliseconds",
+				"scriptName": "Milliseconds",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "hmmssmm16",
+				"expressionName": "HMMSSMM",
+				"scriptName": "HMMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 17,
+				"id": "hmssmm17",
+				"expressionName": "HMSSMM",
+				"scriptName": "HMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 18,
+				"id": "hmsmm18",
+				"expressionName": "HMSMM",
+				"scriptName": "HMSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			}
+		]
+	},
+	"time_counter_options": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 4,
+				"id": "pausetimecount4",
+				"scriptName": "PauseTimeCount",
+				"isDeprecated": "true",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"state3", "type":"combo", "items":["pause","resume"]}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "resettimecount5",
+				"scriptName": "ResetTimeCount",
+				"isDeprecated": "true",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "destroytimemanagerınstances6",
+				"scriptName": "DestroyTimeManagerInstances",
+				"highlight": false
+			},
+			{
+				"c2id": 11,
+				"id": "setminutebasevalue11",
+				"scriptName": "SetMinuteBaseValue",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"base_value1", "type":"number", "initialValue":"60"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "setsecondbasevalue12",
+				"scriptName": "SetSecondBaseValue",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"base_value1", "type":"number", "initialValue":"60"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "setmillisecondbasevalue13",
+				"scriptName": "SetMillisecondBaseValue",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"base_value1", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "removesinglecounter14",
+				"scriptName": "RemoveSingleCounter",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 16,
+				"id": "calculatetimevalue16",
+				"scriptName": "CalculateTimeValue",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"calculation3", "type":"combo", "items":["addition","subtraction"]},
+					{"id":"value4", "type":"number", "initialValue":"1.0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"time_counter_activity": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 7,
+				"id": "stoptimecount7",
+				"scriptName": "StopTimeCount",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 8,
+				"id": "starttimecount8",
+				"scriptName": "StartTimeCount",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "pausetimecount9",
+				"scriptName": "PauseTimeCount",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""},
+					{"id":"state3", "type":"combo", "items":["pause","resume"]}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "resettimecount10",
+				"scriptName": "ResetTimeCount",
+				"highlight": false,
+				"params": [
+					{"id":"label0", "type":"string", "initialValue":""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"time_counter_convert": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 20,
+				"id": "convertnumbertohhmmssmm20",
+				"expressionName": "ConvertNumberToHHMMSSMM",
+				"scriptName": "ConvertNumberToHHMMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 21,
+				"id": "convertnumbertohmmssmm21",
+				"expressionName": "ConvertNumberToHMMSSMM",
+				"scriptName": "ConvertNumberToHMMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 22,
+				"id": "convertnumbertohmssmm22",
+				"expressionName": "ConvertNumberToHMSSMM",
+				"scriptName": "ConvertNumberToHMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 23,
+				"id": "convertnumbertohmsmm23",
+				"expressionName": "ConvertNumberToHMSMM",
+				"scriptName": "ConvertNumberToHMSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 24,
+				"id": "convertnumbertohhmmss24",
+				"expressionName": "ConvertNumberToHHMMSS",
+				"scriptName": "ConvertNumberToHHMMSS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 25,
+				"id": "convertnumbertohmmss25",
+				"expressionName": "ConvertNumberToHMMSS",
+				"scriptName": "ConvertNumberToHMMSS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 26,
+				"id": "convertnumbertohmss26",
+				"expressionName": "ConvertNumberToHMSS",
+				"scriptName": "ConvertNumberToHMSS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 27,
+				"id": "convertnumbertohms27",
+				"expressionName": "ConvertNumberToHMS",
+				"scriptName": "ConvertNumberToHMS",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			},
+			{
+				"c2id": 28,
+				"id": "convertnumbertommssmm28",
+				"expressionName": "ConvertNumberToMMSSMM",
+				"scriptName": "ConvertNumberToMMSSMM",
+				"highlight": false,
+				"returnType": "string",
+				"params": [
+					{"id":"timevalue0", "type":"number", "initialValue":"1000"}
+				]
+			}
+		]
+	}
+}

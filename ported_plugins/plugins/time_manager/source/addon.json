@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Time Manager",
+	"id": "CAMFTimeManager",
+	"version": "1.10.0.0",
+	"author": "Mikael Nilsson",
+	"website": "http://www.scirra.com/forum/plugin-time-manager_topic49030_post308144.html#308144",
+	"documentation": "http://www.scirra.com/forum/plugin-time-manager_topic49030_post308144.html#308144",
+	"description": "Time Manager is a plugin that helps you calculate and display time as a counter, with or without a time limit, or as a countdown. You can display the time in different ways like in hours, minutes, seconds and/or milliseconds. You can reset your time instance, pause it and resume it whenever you wish to!",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
