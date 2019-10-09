@@ -1,0 +1,318 @@
+{
+	"logic:_add": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "addchess1",
+				"scriptName": "AddChess",
+				"highlight": false,
+				"params": [
+					{"id":"board0", "type":"object"},
+					{"id":"logic_x1", "type":"number", "initialValue":"0"},
+					{"id":"logic_y2", "type":"number", "initialValue":"0"},
+					{"id":"logic_z3", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"logic:_remove": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "removechess2",
+				"scriptName": "RemoveChess",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	},
+	"logic:_move": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 3,
+				"id": "movechess3",
+				"scriptName": "MoveChess",
+				"highlight": false,
+				"params": [
+					{"id":"tile0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "movechess4",
+				"scriptName": "MoveChess",
+				"highlight": false,
+				"params": [
+					{"id":"tile_uıd0", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "movechess2ındex5",
+				"scriptName": "MoveChess2Index",
+				"highlight": false,
+				"params": [
+					{"id":"logic_x0", "type":"number", "initialValue":"0"},
+					{"id":"logic_y1", "type":"number", "initialValue":"0"},
+					{"id":"logic_z2", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"logic:_swap": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "swapchess6",
+				"scriptName": "SwapChess",
+				"highlight": false,
+				"params": [
+					{"id":"uıd_of_chess0", "type":"number", "initialValue":"0"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"logical_position": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "comparelx0",
+				"scriptName": "CompareLX",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"lx1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "comparely1",
+				"scriptName": "CompareLY",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"ly1", "type":"number"}
+				]
+			},
+			{
+				"c2id": 2,
+				"id": "comparelz2",
+				"scriptName": "CompareLZ",
+				"highlight": false,
+				"params": [
+					{"id":"comparison0", "type":"cmp"},
+					{"id":"lz1", "type":"number"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"chess": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "ıstile3",
+				"scriptName": "IsTile",
+				"highlight": false
+			},
+			{
+				"c2id": 9,
+				"id": "areneighbors9",
+				"scriptName": "AreNeighbors",
+				"highlight": false,
+				"params": [
+					{"id":"uıd_of_chess0", "type":"any", "initialValue":"0"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "lx1",
+				"expressionName": "LX",
+				"scriptName": "LX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "ly2",
+				"expressionName": "LY",
+				"scriptName": "LY",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 3,
+				"id": "lz3",
+				"expressionName": "LZ",
+				"scriptName": "LZ",
+				"highlight": false,
+				"returnType": "any"
+			},
+			{
+				"c2id": 4,
+				"id": "boarduıd4",
+				"expressionName": "BoardUID",
+				"scriptName": "BoardUID",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 5,
+				"id": "lz2uıd5",
+				"expressionName": "LZ2UID",
+				"scriptName": "LZ2UID",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"z0", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "uıd2la10",
+				"expressionName": "UID2LA",
+				"scriptName": "UID2LA",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"faceto0", "type":"any", "initialValue":"0"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "zcnt13",
+				"expressionName": "ZCnt",
+				"scriptName": "ZCnt",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 17,
+				"id": "dır2uıd17",
+				"expressionName": "DIR2UID",
+				"scriptName": "DIR2UID",
+				"highlight": false,
+				"returnType": "any",
+				"isVariadicParameters": true,
+				"params": [
+					{"id":"direction0", "type":"any", "initialValue":"0"}
+				]
+			}
+		]
+	},
+	"board": {
+		"conditions": [
+			{
+				"c2id": 4,
+				"id": "ısontheboard4",
+				"scriptName": "IsOnTheBoard",
+				"highlight": false,
+				"params": [
+					{"id":"board0", "type":"object"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"collisions": {
+		"conditions": [
+			{
+				"c2id": 6,
+				"id": "oncollided6",
+				"scriptName": "OnCollided",
+				"isTrigger": "true",
+				"highlight": false,
+				"params": [
+					{"id":"chess0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "ısoverlapping7",
+				"scriptName": "IsOverlapping",
+				"highlight": false,
+				"params": [
+					{"id":"chess0", "type":"object"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"empty": {
+		"conditions": [
+			{
+				"c2id": 10,
+				"id": "nochessabove10",
+				"scriptName": "NoChessAbove",
+				"highlight": false
+			},
+			{
+				"c2id": 11,
+				"id": "nochessabovelz11",
+				"scriptName": "NoChessAboveLZ",
+				"highlight": false,
+				"params": [
+					{"id":"logic_z0", "type":"any", "initialValue":"1"}
+				]
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+		]
+	},
+	"physical": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 6,
+				"id": "px6",
+				"expressionName": "PX",
+				"scriptName": "PX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 7,
+				"id": "py7",
+				"expressionName": "PY",
+				"scriptName": "PY",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

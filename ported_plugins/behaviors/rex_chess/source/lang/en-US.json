@@ -1,0 +1,209 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Chess.",
+	"text": {
+		"behaviors": {
+			"rex_chess": {
+				"name": "Chess",
+				"description": "Chess for board plugin.",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/behavior_rex_chess.html",
+				"properties": {
+				},
+				"aceCategories": {
+					"logic:_add": "Logic: Add",
+					"logic:_remove": "Logic: Remove",
+					"logic:_move": "Logic: Move",
+					"logic:_swap": "Logic: Swap",
+					"logical_position": "Logical position",
+					"chess": "Chess",
+					"board": "Board",
+					"collisions": "Collisions",
+					"empty": "Empty",
+					"physical": "Physical"
+				},
+				"conditions": {
+					"comparelx0": {
+						"list-name": "Compare LX",
+						"display-text": "{my} LX {0} {1}",
+						"description": "Compare the logical X.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the logical X."},
+							"lx1": { "name":"LX", "desc":"Logical X."}
+						}
+						},
+					"comparely1": {
+						"list-name": "Compare LY",
+						"display-text": "{my} LY {0} {1}",
+						"description": "Compare the logical Y.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the logical Y."},
+							"ly1": { "name":"LY", "desc":"Logical Y."}
+						}
+						},
+					"comparelz2": {
+						"list-name": "Compare LZ",
+						"display-text": "{my} LZ {0} {1}",
+						"description": "Compare the logical Z.",
+						"params": {
+							"comparison0": { "name":"Comparison", "desc":"Choose the way to compare the logical Z."},
+							"lz1": { "name":"LZ", "desc":"Logical Z."}
+						}
+						},
+					"ıstile3": {
+						"list-name": "Is a tile",
+						"display-text": "{my} is a tile",
+						"description": "Return true if z-index of this chess is 0."
+						},
+					"ısontheboard4": {
+						"list-name": "On the board",
+						"display-text": "Is {my} on [i]{0}[/i]",
+						"description": "Return true if the chess is on the board.",
+						"params": {
+							"board0": { "name":"Board", "desc":"Board object"}
+						}
+						},
+					"oncollided6": {
+						"list-name": "On collision",
+						"display-text": "On {my} collided with [i]{0}[/i]",
+						"description": "Triggered when the object collides with another object.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object B."}
+						}
+						},
+					"ısoverlapping7": {
+						"list-name": "Is overlapping",
+						"display-text": "Is {my} overlapping with [i]{0}[/i]",
+						"description": "Test if the object is overlapping another object.",
+						"params": {
+							"chess0": { "name":"Chess", "desc":"Chess object B."}
+						}
+						},
+					"areneighbors9": {
+						"list-name": "Are neighbors (UID)",
+						"display-text": "Are {my} and [i]{0}[/i] neighbors",
+						"description": "Testing if two chess are neighbors.",
+						"params": {
+							"uıd_of_chess0": { "name":"UID of chess", "desc":"UID of chess B."}
+						}
+						},
+					"nochessabove10": {
+						"list-name": "No chess above",
+						"display-text": "{my} has no chess above",
+						"description": "Return true if there has no chess above this tile."
+						},
+					"nochessabovelz11": {
+						"list-name": "No chess at LZ",
+						"display-text": "{my} has no chess at LZ to [i]{0}[/i]",
+						"description": "Return true if there has no chess above this tile at logical Z.",
+						"params": {
+							"logic_z0": { "name":"Logic Z", "desc":"The Z index (0-based) of the chess to set. 0 is tile."}
+						}
+						}
+				},
+				"actions": {
+					"addchess1": {
+						"list-name": "Add chess",
+						"display-text": "Add {my} on [i]{0}[/i], at [[i]{1}[/i], [i]{2}[/i], [i]{3}[/i]]",
+						"description": "{my} add chess on the board.",
+						"params": {
+							"board0": { "name":"Board", "desc":"Board object."},
+							"logic_x1": { "name":"Logic X", "desc":"The X index (0-based) of the chess to set."},
+							"logic_y2": { "name":"Logic Y", "desc":"The Y index (0-based) of the chess to set."},
+							"logic_z3": { "name":"Logic Z", "desc":"The Z index (0-based) of the chess to set. 0 is tile."}
+						}
+					},
+					"removechess2": {
+						"list-name": "Remove chess",
+						"display-text": "Remove {my} from board",
+						"description": "{my} remove chess from the board."
+					},
+					"movechess3": {
+						"list-name": "Move chess",
+						"display-text": "{my} move to tile [i]{0}[/i]",
+						"description": "Move chess on the board.",
+						"params": {
+							"tile0": { "name":"Tile", "desc":"Tile object."}
+						}
+					},
+					"movechess4": {
+						"list-name": "Move chess by UID",
+						"display-text": "{my} move to tile UID:[i]{0}[/i]",
+						"description": "Move chess by UID on the board.",
+						"params": {
+							"tile_uıd0": { "name":"Tile UID", "desc":"The UID of tile"}
+						}
+					},
+					"movechess2ındex5": {
+						"list-name": "Move chess to xyz",
+						"display-text": "{my} move to [[i]{0}[/i], [i]{1}[/i], [i]{2}[/i]]",
+						"description": "Move chess on the board.",
+						"params": {
+							"logic_x0": { "name":"Logic X", "desc":"The X index (0-based) of the chess to set."},
+							"logic_y1": { "name":"Logic Y", "desc":"The Y index (0-based) of the chess to set."},
+							"logic_z2": { "name":"Logic Z", "desc":"The Z index (0-based) of the chess to set. 0 is tile."}
+						}
+					},
+					"swapchess6": {
+						"list-name": "Swap chess by UID",
+						"display-text": "{my} swap with chess UID:[i][/i] {0}",
+						"description": "Swap two chess by UID.",
+						"params": {
+							"uıd_of_chess0": { "name":"UID of chess", "desc":"UID of chess B."}
+						}
+					}
+				},
+				"expressions": {
+					"lx1": {
+						"description": "Get X index of selected chess.",
+						"translated-name": "LX"
+						},
+					"ly2": {
+						"description": "Get Y index of selected chess.",
+						"translated-name": "LY"
+						},
+					"lz3": {
+						"description": "Get Z index of selected chess.",
+						"translated-name": "LZ"
+						},
+					"boarduıd4": {
+						"description": "Get board UID, return -1 if not in a board.",
+						"translated-name": "BoardUID"
+						},
+					"lz2uıd5": {
+						"description": "Get UID by Z.",
+						"translated-name": "LZ2UID",
+						"params": {
+							"z0": { "name":"Z", "desc":"The logic Z."}
+						}
+						},
+					"px6": {
+						"description": "Get physical X co-ordinate.",
+						"translated-name": "PX"
+						},
+					"py7": {
+						"description": "Get physical Y co-ordinate.",
+						"translated-name": "PY"
+						},
+					"uıd2la10": {
+						"description": "Get Logic angle by UID, in degree. (-1) is invalid angle.",
+						"translated-name": "UID2LA",
+						"params": {
+							"faceto0": { "name":"FaceTo", "desc":"The UID of instance to face."}
+						}
+						},
+					"zcnt13": {
+						"description": "Get z count.",
+						"translated-name": "ZCnt"
+						},
+					"dır2uıd17": {
+						"description": "Get neighbor UID by direction. Add 2nd parameter to indicate z-index. Return (-1) if no chess picked.",
+						"translated-name": "DIR2UID",
+						"params": {
+							"direction0": { "name":"Direction", "desc":"The direction."}
+						}
+						}
+				}
+			}
+		}
+	}
+}
