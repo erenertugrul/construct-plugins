@@ -66,6 +66,13 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
 <td style="text-align:right">:white_check_mark:</td>
 </tr>
+<tr>
+<td>DiscordRichPresence</td>
+<td style="text-align:center"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/discord_rich_presence/c3/dist/discord_richpresence.c3addon">discord_richpresence.c3addon</a></td>
+<td style="text-align:right"><a href="https://github.com/erenertugrul/construct-plugins/raw/master/plugins/discord_rich_presence/c2/dist/discord_richpresence.c2addon">discord_richpresence.c2addon</a></td>
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
 </tbody>
 </table>
 

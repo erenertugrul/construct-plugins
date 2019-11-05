@@ -1,0 +1,26 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "DiscordRPC",
+	"id": "eren_DiscordRPC",
+	"version": "1.0.0.0",
+	"author": "Eren Ertuğrul",
+	"website": "https://github.com/erenertugrul",
+	"documentation": "https://github.com/erenertugrul",
+	"description": "DiscordRichPresence for Construct3",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}

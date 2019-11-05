@@ -1,0 +1,66 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for DiscordRPC.",
+	"text": {
+		"plugins": {
+			"eren_discordrpc": {
+				"name": "DiscordRPC",
+				"description": "DiscordRichPresence for Construct2",
+				"help-url": "https://github.com/erenertugrul",
+				"properties": {
+					"client-id": {
+						"name": "client-id",
+						"desc": "get client-id 'https://discordapp.com/developers/applications/'"
+						}
+				},
+				"aceCategories": {
+					"discord": "discord"
+				},
+				"conditions": {
+					"onpresence0": {
+						"list-name": "On presence",
+						"display-text": "On presence",
+						"description": "Trigger when set presence"
+						}
+				},
+				"actions": {
+					"setactivity0": {
+						"list-name": "Set RichPresence",
+						"display-text": "{0},{1},{2},{3},{4},{5}",
+						"description": "Set RichPresence",
+						"params": {
+							"state0": { "name":"state", "desc":"currently status"},
+							"details1": { "name":"details", "desc":"Enter a string to alert."},
+							"largeimagekey2": { "name":"largeimagekey", "desc":"large image key name"},
+							"largeimagetext3": { "name":"largeimagetext", "desc":"large image text"},
+							"smallimagekey4": { "name":"smallimagekey", "desc":"small image  key name (optionally)"},
+							"smallimagetext5": { "name":"smallimagetext", "desc":"small image text (optionally)"}
+						}
+					}
+				},
+				"expressions": {
+					"username0": {
+						"description": "Return the discord username",
+						"translated-name": "username"
+						},
+					"avatar1": {
+						"description": "Return the discord avatar url",
+						"translated-name": "avatar"
+						},
+					"id2": {
+						"description": "Return the discord user id",
+						"translated-name": "id"
+						},
+					"premium3": {
+						"description": "Return the discord premium status (0:not subscribe 1:Nitro Classic 2: Nitro)",
+						"translated-name": "premium"
+						},
+					"usertag4": {
+						"description": "Return the discord tag",
+						"translated-name": "usertag"
+						}
+				}
+			}
+		}
+	}
+}

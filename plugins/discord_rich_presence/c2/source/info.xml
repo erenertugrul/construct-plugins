@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<c2addon>
+	<!-- One of: plugin, behavior, effect -->
+	<type>plugin</type>
+	
+	<name>DiscordRPC</name>	
+	<version>1.0</version>
+	<author>Eren Ertuğrul</author>
+	<website>http://www.github.com/erenertugrul</website>
+	<documentation>http://www.github.com/erenertugrul</documentation>
+	<description>DiscordRichPresence for Construct2</description>
+</c2addon>

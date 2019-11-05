@@ -1,0 +1,71 @@
+{
+	"discord": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "onpresence0",
+				"scriptName": "onpresence",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setactivity0",
+				"scriptName": "setactivity",
+				"highlight": false,
+				"params": [
+					{"id":"state0", "type":"string"},
+					{"id":"details1", "type":"string"},
+					{"id":"largeimagekey2", "type":"string"},
+					{"id":"largeimagetext3", "type":"string"},
+					{"id":"smallimagekey4", "type":"string"},
+					{"id":"smallimagetext5", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "username0",
+				"expressionName": "username",
+				"scriptName": "username",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 1,
+				"id": "avatar1",
+				"expressionName": "avatar",
+				"scriptName": "avatar",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 2,
+				"id": "id2",
+				"expressionName": "id",
+				"scriptName": "id",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 3,
+				"id": "premium3",
+				"expressionName": "premium",
+				"scriptName": "premium",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"c2id": 4,
+				"id": "usertag4",
+				"expressionName": "usertag",
+				"scriptName": "usertag",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}
