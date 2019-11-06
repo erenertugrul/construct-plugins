@@ -110,7 +110,8 @@ ACESDone();
 // new cr.Property(ept_link,		name,	link_text,		description, "firstonly")		// has no associated value; simply calls "OnPropertyChanged" on click
 
 var property_list = [
-	new cr.Property(ept_text, 	"client-id",		0,		"get client-id 'https://discordapp.com/developers/applications/'")
+	new cr.Property(ept_text, 	"client-id",		0,		"get client-id 'https://discordapp.com/developers/applications/'"),
+	new cr.Property(ept_combo,	"preview_mode",	"True",		"remember to turn it off when you export to nwjs.", "False|True"),
 	];
 	
 // Called by IDE when a new object type is to be created

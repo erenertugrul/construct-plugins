@@ -30,9 +30,10 @@ cr.plugins_.eren_DiscordRPC = function(runtime)
 	var instanceProto = pluginProto.Instance.prototype;
 	instanceProto.onCreate = function()
 	{
-		var client_id = this.properties[0];
-		if (!this.runtime.isPreview && this.runtime.isNWjs){
-		  	this.client = require('discord-rich-presence/')(client_id);
+		this.client_id = this.properties[0];
+		this.preview_mode = !!this.properties[1];
+		if (!this.preview_mode && this.runtime.isNWjs){
+		  	this.client = require('discord-rich-presence/')(this.client_id);
 			this.rpc = this.client.first;
 			this.avatar = null;
 			this.id = null;
@@ -40,8 +41,6 @@ cr.plugins_.eren_DiscordRPC = function(runtime)
 			this.premium = null;
 			this.usertag = null;
 		}
-		
-
 		
 	};
 	function Cnds() {};
@@ -54,11 +53,11 @@ cr.plugins_.eren_DiscordRPC = function(runtime)
 
 	Acts.prototype.setactivity = function (_state,_details,_largeimagekey,_largimagetext,_smallimagekey,_smallimagetext)
 	{
-		if (!this.runtime.isPreview && this.runtime.isNWjs)
+		if (!this.preview_mode && this.runtime.isNWjs)
 		{
 			if (this.client == null)
 			{
-				this.client = require('discord-rich-presence/')(client_id);
+				this.client = require('discord-rich-presence/')(this.client_id);
 			};
 		
 			if (this.username == null && this.client.second.user != null)
