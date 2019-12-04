@@ -5,7 +5,7 @@
 	{
 		PinnedUID()
 		{
-			return(this.pinObject ? this.pinObject.uid : -1);
+			return(this.pinObject ? this.pinObject.GetUID() : -1);
 		},
 		
 		isPinnedX()
