@@ -84,7 +84,6 @@
 			  var parsed = trim(parseText);
 			  parseText = trim(parseText);
 			  var value = this.value;
-			  
 			  if (parseText === "current") {
 			    switch (tweened) {
 			      case 0: parsed = this.inst.GetX() + "," + this.inst.GetY(); break;
@@ -96,12 +95,12 @@
 			      case 6: parsed = value + "," + value; break;
 			      case 7: parsed = this.inst.GetX() + "," + this.inst.GetY(); break;
 			      case 8: parsed = this.inst.GetX() + "," + this.inst.GetY(); break;
-			      case 9: 
-			        /*if  (this._inst.GetObjectClass().GetFirstAnimationFrame() !== undefined) todo fix it. 
-			          parsed = (this.inst.GetWidth()/this._inst.GetWorldInfo().GetInstance().GetCurrentImageInfo().GetWidth()) + "," +(this.inst.GetHeight()/this._inst.GetWorldInfo().GetInstance().GetCurrentImageInfo().GetHeight())
-			        else */
-			          parsed = "1,1"; 
-			        break;
+			      case 9:
+			      if (this._inst.GetSdkInstance() !== null)
+			        parsed = (this._inst.GetWorldInfo().GetWidth()/this._inst.GetSdkInstance().GetCurrentImageInfo().GetWidth()) + "," +(this._inst.GetWorldInfo().GetHeight()/this._inst.GetSdkInstance().GetCurrentImageInfo().GetHeight());
+		          else 
+		            parsed = "1,1"; 
+		          break;
 			      default:  break;
 			    }
 			  }
