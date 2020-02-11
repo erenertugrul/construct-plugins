@@ -5,7 +5,8 @@
 	{
 		OnHitTarget()
 		{
-			return (this._cmd_move_to.is_my_call);
+			//return (this._cmd_move_to.is_my_call);
+			return true;
 		},
 
 		OnMoving()

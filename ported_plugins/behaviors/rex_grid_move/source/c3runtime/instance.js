@@ -156,8 +156,10 @@
 		    else
 		        return null;
 		}    
-
-
+		construct_bug(uid)
+		{
+			this.Trigger(C3.Behaviors.Rex_GridMove.Cnds.OnHitTarget,uid);
+		}
 		target2dir(target_x, target_y, target_z)
 		{
 		    var my_xyz = this.chess_xyz_get();        

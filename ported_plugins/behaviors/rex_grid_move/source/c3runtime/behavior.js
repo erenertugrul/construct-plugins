@@ -41,7 +41,7 @@
 	};   
 	function GetThisBehavior(inst) //düzenle
 	{
- 		var d = this.inst.GetObjectClass().GetInstances();
+ 		var d = inst.GetObjectClass().GetInstances();
         for (var e of d) {
             var d = e.GetBehaviorSdkInstanceFromCtor(C3.Behaviors.Rex_GridMove);
             if (d)
@@ -230,7 +230,9 @@
 			        {                                    
 			            this.is_moving = false;             
 			            this.is_my_call = true;
-			            this.runtime.Trigger(C3.Behaviors.Rex_GridMove.Cnds.OnHitTarget,this.inst); 
+			            //this.runtime.Trigger(C3.Behaviors.Rex_GridMove.Cnds.OnHitTarget,this.inst); 
+			            var i = GetThisBehavior(this.inst);
+			            i.construct_bug(this);
 			            this.is_my_call = false;          
 			        } 
 				};	
