@@ -150,7 +150,6 @@ cr.behaviors.rex_Anchor_mod = function(runtime)
 		{
 			inst.update_bbox();
 			n = (layer.viewBottom - this.ybottom) - bbox.top;
-
 			if (n !== 0)
 			{
 				inst.y += n;

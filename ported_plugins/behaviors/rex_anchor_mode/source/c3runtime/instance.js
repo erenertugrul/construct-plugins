@@ -12,14 +12,11 @@
 			this.inst.GetWorldInfo()._UpdateBbox();
 			this.xleft = this.inst.GetWorldInfo().GetBoundingBox().getLeft();
 			this.ytop = this.inst.GetWorldInfo().GetBoundingBox().getTop();
-			this.xright = this._runtime.GetViewportWidth() - this.inst.GetWorldInfo().GetBoundingBox().getLeft();
-			this.ybottom = this._runtime.GetViewportHeight() - this.inst.GetWorldInfo().GetBoundingBox().getTop();
-			this.rdiff = this._runtime.GetViewportWidth() - this.inst.GetWorldInfo().GetBoundingBox().getRight();
-			this.bdiff = this._runtime.GetViewportHeight() - this.inst.GetWorldInfo().GetBoundingBox().getBottom();
+			this.xright = this._runtime.GetOriginalViewportWidth() - this.inst.GetWorldInfo().GetBoundingBox().getLeft();
+			this.ybottom = this._runtime.GetOriginalViewportHeight() - this.inst.GetWorldInfo().GetBoundingBox().getTop();
+			this.rdiff = this._runtime.GetOriginalViewportWidth() - this.inst.GetWorldInfo().GetBoundingBox().getRight();
+			this.bdiff = this._runtime.GetOriginalViewportHeight() - this.inst.GetWorldInfo().GetBoundingBox().getBottom();
 		
-		// extend
-		
-
 			if (properties)
 			{
 				this.anch_left = properties[0];		// 0 = left, 1 = right, 2 = none
@@ -75,16 +72,6 @@
 		           (this.viewTop_saved != layer.GetViewport().getTop()) ||
 		           (this.viewBottom_saved != layer.GetViewport().getBottom());
 		}	
-		/*
-		Tick()
-		{
-			const dt = this._runtime.GetDt(this._inst);
-			const wi = this._inst.GetWorldInfo();
-			
-			// ... code to run every tick for this behavior ...
-		}
-		*/
-
 		Tick()
 		{	   
 			if (!this.enabled)
@@ -187,7 +174,6 @@
 			{
 				inst.GetWorldInfo()._UpdateBbox();
 				n = (layer.GetViewport().getBottom() - this.bdiff) - bbox.getBottom();
-				
 				if (n !== 0)
 				{
 					inst.GetWorldInfo().SetHeight(inst.GetWorldInfo().GetHeight()+n);
