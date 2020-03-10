@@ -30,7 +30,7 @@
 			]);
 			this._info.AddFileDependency({
 				filename: "easystar-0.4.1-custom.js",
-				type: "external-script"
+				type: "external-runtime-script"
 				});
 			SDK.Lang.PopContext();		// .properties
 			SDK.Lang.PopContext();

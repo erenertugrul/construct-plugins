@@ -10,7 +10,7 @@
 			const b = this._runtime.Dispatcher();
 			this._disposables = new C3.CompositeDisposable(C3.Disposable.From(b, "instancedestroy", (a) => this._OnInstanceDestroyed(a.instance)));
 			
-			this.easystarjs = new EasyStar["js"]();
+			this.easystarjs = new globalThis["EasyStar"]["js"]();
 			this.paths = {};
 			this.curTag = "";
 			this.baseSetTileAt = this.inst.SetTileAt;
