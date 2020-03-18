@@ -11,7 +11,7 @@
 			var client_id = properties[0];
 			if (!this._runtime.IsPreview() && C3.Platform.IsDesktopApp){
 			  	this.client = require('discord-rich-presence/')(client_id);
-				this.rpc = this.client.first;
+				this.rpc = this.client["first"];
 				this.avatar = null;
 				this.id = null;
 				this.username = null;

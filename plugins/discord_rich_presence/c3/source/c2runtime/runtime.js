@@ -33,7 +33,7 @@ cr.plugins_.eren_DiscordRPC = function(runtime)
 		var client_id = this.properties[0];
 		if (!this.runtime.isPreview && this.runtime.isNWjs){
 		  	this.client = require('discord-rich-presence/')(client_id);
-			this.rpc = this.client.first;
+			this.rpc = this.client["first"];
 			this.avatar = null;
 			this.id = null;
 			this.username = null;
@@ -61,21 +61,21 @@ cr.plugins_.eren_DiscordRPC = function(runtime)
 				this.client = require('discord-rich-presence/')(client_id);
 			};
 		
-			if (this.username == null && this.client.second.user != null)
+			if (this.username == null && this.client["second"]["user"] != null)
 			{
-				this.username = this.client.second.user.username;
-				this.avatar = "https://cdn.discordapp.com/avatars/"+this.client.second.user.id+"/"+this.client.second.user.avatar+".png";
-				this.id = this.client.second.user.id;
-				this.premium = this.client.second.user.premium_type;
-				this.usertag = this.client.second.user.username+"#"+this.client.second.user.discriminator;
+				this.username = this.client["second"]["user"]["username"];
+				this.avatar = "https://cdn.discordapp.com/avatars/"+this.client["second"]["user"]["id"]+"/"+this.client["second"]["user"]["avatar"]+".png";
+				this.id = this.client["second"]["user"]["id"];
+				this.premium = this.client["second"]["user"]["premium_type"];
+				this.usertag = this.client["second"]["user"]["username"]+"#"+this.client["second"]["user"]["discriminator"];
 			};
-			this.rpc.updatePresence({
-				details: _details,
-				state: _state,
-				smallImageKey:_smallimagekey,
-				smallImageText:_smallimagetext,
-				largeImageKey:_largeimagekey,
-				largeImageText: _largimagetext
+			this.rpc["updatePresence"]({
+				["details"]: _details,
+				["state"]: _state,
+				["smallImageKey"]:_smallimagekey,
+				["smallImageText"]:_smallimagetext,
+				["largeImageKey"]:_largeimagekey,
+				["largeImageText"]: _largimagetext
 			});
 			this.runtime.trigger(cr.plugins_.eren_DiscordRPC.prototype.cnds.onpresence, this);
 		};

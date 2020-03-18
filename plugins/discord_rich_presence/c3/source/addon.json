@@ -3,7 +3,7 @@
 	"type": "plugin",
 	"name": "DiscordRPC",
 	"id": "eren_DiscordRPC",
-	"version": "1.0.0.0",
+	"version": "1.1.0.0",
 	"author": "Eren Ertuğrul",
 	"website": "https://github.com/erenertugrul",
 	"documentation": "https://github.com/erenertugrul",

@@ -3,7 +3,7 @@
 
 {
 	const PLUGIN_ID = "eren_DiscordRPC";
-	const PLUGIN_VERSION = "1.0.0.0";
+	const PLUGIN_VERSION = "1.1.0.0";
 	const PLUGIN_CATEGORY = "general";
 
 	let app = null;

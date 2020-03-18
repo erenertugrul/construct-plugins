@@ -3,7 +3,7 @@
 	return {
 		"name":			"DiscordRPC",				// as appears in 'insert object' dialog, can be changed as long as "id" stays the same
 		"id":			"eren_DiscordRPC",				// this is used to identify this plugin and is saved to the project; never change it
-		"version":		"1.0",					// (float in x.y format) Plugin version - C2 shows compatibility warnings based on this
+		"version":		"1.1",					// (float in x.y format) Plugin version - C2 shows compatibility warnings based on this
 		"description":	"DiscordRichPresence for Construct2",
 		"author":		"Eren Ertuğrul",
 		"help url":		"https://github.com/erenertugrul",
