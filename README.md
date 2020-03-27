@@ -223,6 +223,16 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 </tbody>
 <tbody>
 <tr>
+  <td>rex_platform_moveto</td>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_platform_moveto/dist/rex_platform_moveto.c3addon">rex_platform_moveto.c3addon</a>
+</td>
+
+<td style="text-align:center"> <center>:white_check_mark:</center></td>
+<td style="text-align:right">:white_check_mark:</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
   <td>rex_zigzag</td>
 <td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_zigzag/dist/rex_zigzag.c3addon">rex_zigzag.c3addon</a>
 </td>

@@ -1,0 +1,32 @@
+{
+	"is-c3-addon": true,
+	"type": "behavior",
+	"name": "Platform MoveTo",
+	"id": "Rex_Platform_MoveTo",
+	"version": "0.1.0.0",
+	"author": "Rex.Rainbow",
+	"website": "https://rexrainbow.github.io/C3RexDoc/plugins.md/index.html",
+	"documentation": "https://rexrainbow.github.io/C3RexDoc/plugins.md/rex_platform_moveto.html",
+	"description": "Move platformer to specific position",
+	"editor-scripts": [
+						"behavior.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"c3runtime/behavior.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"behavior.js",
+		"type.js",
+		"instance.js"
+	]
+}

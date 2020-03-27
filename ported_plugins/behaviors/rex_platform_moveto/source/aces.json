@@ -1,0 +1,115 @@
+{
+	"enable": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "set-activated",
+				"scriptName": "SetActivated",
+				"highlight": false,
+				"params": [
+					{"id":"activated2", "type":"combo", "items":["no","yes"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "activated",
+				"expressionName": "Activated",
+				"scriptName": "Activated",
+				"highlight": false,
+				"returnType": "number"
+			}			
+		]
+	},
+	"move-to": {
+		"conditions": [
+			{
+				"c2id": 3,
+				"id": "is-moving",
+				"scriptName": "IsMoving",
+				"highlight": false
+			}			
+		],
+		"actions": [
+			{
+				"c2id": 1,
+				"id": "set-target-position-x",
+				"scriptName": "SetTargetPosX",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "set-target-position-to-object",
+				"scriptName": "SetTargetPosOnObject",
+				"highlight": false,
+				"params": [
+					{"id":"target0", "type":"object"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "set-target-position-to-delta-x",
+				"scriptName": "SetTargetPosByDeltaX",
+				"highlight": false,
+				"params": [
+					{"id":"dx0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 6,
+				"id": "set-target-position-to-distance",
+				"scriptName": "SetTargetPosByDistance",
+				"highlight": false,
+				"params": [
+					{"id":"distance0", "type":"number"},
+					{"id":"direction3", "type":"combo", "items":["left","right"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"c2id": 1,
+				"id": "target-x",
+				"expressionName": "TargetX",
+				"scriptName": "TargetX",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"c2id": 2,
+				"id": "target-y",
+				"expressionName": "TargetY",
+				"scriptName": "TargetY",
+				"highlight": false,
+				"returnType": "number"
+			}			
+		]
+	},
+	"stop": {
+		"conditions": [
+			{
+				"c2id": 0,
+				"id": "on-reached-target",
+				"scriptName": "OnHitTarget",
+				"isTrigger": "true",
+				"highlight": false
+			}			
+		],
+		"actions": [
+			{
+				"c2id": 10,
+				"id": "stop",
+				"scriptName": "Stop",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	}
+}

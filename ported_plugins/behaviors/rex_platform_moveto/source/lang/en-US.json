@@ -1,0 +1,98 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Platform MoveTo.",
+	"text": {
+		"behaviors": {
+			"rex_platform_moveto": {
+				"name": "Platform MoveTo",
+				"description": "Move platformer to specific position",
+				"help-url": "https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/rex_platform_moveto.html",
+				"properties": {
+					"activated": {
+						"name": "Activated",
+						"desc": "Enable if you wish this to begin at the start of the layout."
+						}
+				},
+				"aceCategories": {
+					"enable": "Enable",
+					"move-to": "MoveTo",
+					"stop": "Stop"
+				},
+				"conditions": {
+					"on-reached-target": {
+						"list-name": "On hit target position",
+						"display-text": "On {my} hit target",
+						"description": "Triggered when hit target position."
+						},
+					"is-moving": {
+						"list-name": "Is moving",
+						"display-text": "Is {my} moving",
+						"description": "Is object moving."
+						}
+				},
+				"actions": {
+					"set-activated": {
+						"list-name": "Set activated",
+						"display-text": "Set {my} activated to [b]{0}[/b]",
+						"description": "Enable the object's MoveTo behavior.",
+						"params": {
+							"activated2": { "name":"Activated", "desc":"Enable the behavior.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"set-target-position-x": {
+						"list-name": "Move to X",
+						"display-text": "{my} move to X [b]{0}[/b]",
+						"description": "Move to specific position by X.",
+						"params": {
+							"x0": { "name":"X", "desc":"The X co-ordinate to move toward."}
+						}
+					},
+					"set-target-position-to-object": {
+						"list-name": "Move to object",
+						"display-text": "{my} move to [b]{0}[/b]",
+						"description": "Move to object.",
+						"params": {
+							"target0": { "name":"Target", "desc":"Target object."}
+						}
+					},
+					"set-target-position-to-delta-x": {
+						"list-name": "Move to delta X",
+						"display-text": "{my} move to delta X [b]{0}[/b]",
+						"description": "Move to specific position by deltaX.",
+						"params": {
+							"dx0": { "name":"dX", "desc":"The delta X to move toward, in pixel."}
+						}
+					},
+					"set-target-position-to-distance": {
+						"list-name": "Move to distance",
+						"display-text": "{my} move to (distance [b]{0}[/b], [b]{1}[/b] side)",
+						"description": "Move to specific position by distance.",
+						"params": {
+							"distance0": { "name":"Distance", "desc":"The destance to move toward, in pixel."},
+							"direction3": { "name":"Direction", "desc":"Direction of moving.", "items":{"left":"Left","right":"Right"}}
+						}
+					},
+					"stop": {
+						"list-name": "Stop",
+						"display-text": "{my} stop",
+						"description": "Stop moving."
+					}
+				},
+				"expressions": {
+					"activated": {
+						"description": "The current activated state of behavior.",
+						"translated-name": "Activated"
+						},
+					"target-x": {
+						"description": "The X co-ordinate of target position to move toward.",
+						"translated-name": "TargetX"
+						},
+					"target-y": {
+						"description": "The Y co-ordinate of target position to move toward.",
+						"translated-name": "TargetY"
+						}
+				}
+			}
+		}
+	}
+}
