@@ -7,6 +7,7 @@ https://www.construct.net/en/forum/construct-2/education-and-construct-20/scorm-
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

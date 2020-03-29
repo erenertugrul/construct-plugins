@@ -8,6 +8,7 @@ https://www.construct.net/en/forum/extending-construct-2/work-in-progress-addons
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

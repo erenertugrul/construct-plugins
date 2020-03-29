@@ -11,6 +11,7 @@ https://github.com/erenertugrul/construct-plugins/releases/download/rex_firebase
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

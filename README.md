@@ -658,6 +658,7 @@ https://trello.com/b/m5v94MWv/plugin-list
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 
 </thead>

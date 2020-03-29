@@ -5,6 +5,7 @@ imgur simple upload plugin for construct3 projects.
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

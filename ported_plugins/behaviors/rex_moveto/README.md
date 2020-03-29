@@ -10,6 +10,7 @@ warning: use the official "move_to" behavior for new projects.
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

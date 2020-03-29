@@ -18,6 +18,7 @@ http://csilva2810.github.io/notifier/docs/en/index.html
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

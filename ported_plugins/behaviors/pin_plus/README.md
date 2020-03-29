@@ -11,6 +11,7 @@ https://www.construct.net/en/forum/extending-construct-2/addons-29/behavior-pin-
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

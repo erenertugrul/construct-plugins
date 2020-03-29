@@ -11,6 +11,7 @@ this plugin back is not compatible. variable parameters are deleted.
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

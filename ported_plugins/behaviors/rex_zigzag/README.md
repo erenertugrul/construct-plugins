@@ -8,6 +8,7 @@ https://github.com/rexrainbow/C3RexDoc/blob/master/repo/index.md
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

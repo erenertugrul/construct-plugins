@@ -11,6 +11,7 @@ https://github.com/chemerisuk/cordova-plugin-firebase-config
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>

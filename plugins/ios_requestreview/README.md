@@ -18,6 +18,7 @@ https://www.npmjs.com/package/cordova-eren-requestreview
 <tr>
 <th>patreon</th>
 <th>buymeacoffee</th>
+<th>itchio</th>
 </tr>
 </thead>
 <tbody>
