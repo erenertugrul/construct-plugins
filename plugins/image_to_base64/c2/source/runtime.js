@@ -162,6 +162,27 @@ cr.plugins_.erenertugrul_base64_image = function(runtime)
 			}
 			xhr.send();
 		}
+		else
+		{
+			function toDataUrl(url, callback) {
+			    var xhr = new XMLHttpRequest();
+			    xhr.onload = function() {
+			        var reader = new FileReader();
+			        reader.onloadend = function() {
+			            callback(reader.result);
+			        }
+			        reader.readAsDataURL(xhr.response);
+			    };
+			    xhr.open('GET', url);
+			    xhr.responseType = 'blob';
+			    xhr.send();
+			};
+			toDataUrl(url, function(b) {
+			    console.log(b); // myBase64 is the base64 string
+			    base64_link = b;
+			    self.runtime.trigger(cr.plugins_.erenertugrul_base64_image.prototype.cnds.on_base64, self);
+			});
+		};
 	};
 	Acts.prototype.sprite_base64 = function (obj)
 	{

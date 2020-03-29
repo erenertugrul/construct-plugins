@@ -31,6 +31,26 @@
 				}
 				xhr.send();
 			}
+			else{
+				function toDataUrl(url, callback) {
+				    var xhr = new XMLHttpRequest();
+				    xhr.onload = function() {
+				        var reader = new FileReader();
+				        reader.onloadend = function() {
+				            callback(reader.result);
+				        }
+				        reader.readAsDataURL(xhr.response);
+				    };
+				    xhr.open('GET', url);
+				    xhr.responseType = 'blob';
+				    xhr.send();
+				};
+				toDataUrl(url, function(b) {
+				    console.log(b); // myBase64 is the base64 string
+				    base64_link = b;
+				    self.Trigger(C3.Plugins.erenertugrul_base64_image.Cnds.on_base64);
+				});
+			}
 		},
 		sprite_base64(obj)
 		{
