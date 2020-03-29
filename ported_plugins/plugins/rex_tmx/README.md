@@ -1,7 +1,7 @@
 rex_tmx_import pack
 
 official plugin repo
-https://github.com/rexrainbow/C3RexDoc/blob/master/repo/index.md
+https://github.com/rexrainbow/C2Plugins
 <table>
 <thead>
 <tr>

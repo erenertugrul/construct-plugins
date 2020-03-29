@@ -1,7 +1,7 @@
 rex_ann for c3runtime.
 
 official plugin repo
-https://github.com/rexrainbow/C3RexDoc/blob/master/repo/index.md
+https://github.com/rexrainbow/C2Plugins
 
 warning:
 this plugin back is not compatible. variable parameters are deleted.

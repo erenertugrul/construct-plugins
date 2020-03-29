@@ -1,7 +1,7 @@
 rex_grid_move for c3runtime.
 
 official plugin repo
-https://github.com/rexrainbow/C3RexDoc/blob/master/repo/index.md
+https://github.com/rexrainbow/C2Plugins
 <table>
 <thead>
 <tr>
