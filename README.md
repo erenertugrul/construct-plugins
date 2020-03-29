@@ -665,6 +665,8 @@ https://trello.com/b/m5v94MWv/plugin-list
 
 <td style="text-align:center"><a href="https://www.patreon.com/oyun" target="_blank"><img src="https://i.imgur.com/mpU6Ee3.png"></img></a></td>
 <td style="text-align:center"><a href="https://www.buymeacoffee.com/eren" target="_blank"><img src="https://i.imgur.com/pjkMdHU.png"></img></a></td>
+<td style="text-align:center"><a href="https://oyun.itch.io/construct-plugins" target="_blank"><img src="https://i.imgur.com/VukQbqA.png"></img></a></td>
+
 
 </tr>
 </tbody>
