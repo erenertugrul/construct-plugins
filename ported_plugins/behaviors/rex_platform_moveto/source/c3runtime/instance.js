@@ -65,12 +65,12 @@
 			var behavior_insts = this.inst.GetBehaviorInstances();
 			var i, len = behavior_insts.length;
 			for (i = 0; i < len; i++) {
-				if (behavior_insts[i].GetObjectInstance().GetBehaviorInstanceFromCtor(C3.Behaviors.Platform)) {
+				if (behavior_insts[i].GetSdkInstance() instanceof C3.Behaviors.Platform.Instance) {
 					this.platformBehaviorInst = behavior_insts[i];
 					return this.platformBehaviorInst;
 				}
 			}
-			
+
 			return;
 		}
 		move(dir)   // 0: left , 1: right
