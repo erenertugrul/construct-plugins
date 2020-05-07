@@ -54,22 +54,6 @@
 			this.target = o["t"];
 		}
 		
-		GetDebuggerProperties()
-		{
-			/*const Acts = C3.Behaviors.Rex_Platform_MoveTo;
-			const prefix = "Rex_Platform_MoveTo.";
-			return [{
-				title: prefix + ".Debug",
-				properties: [
-					{name: prefix + "Activated",	value: this.enabled },
-					{name: prefix + "Is moving",		value: this.isMoving},
-					{name: prefix + "Target X",			value:  this.target["x"] },
-					{name: prefix + "Target Y",				value:  this.target["y"] },
-					{name: prefix + "Current speed",		value: this.currentSpeed },
-					{name: prefix + "Remaining distance",	value: this.remainDistance}
-				]
-			}];*/
-		}
 		getPlatformBehaviorInst() 
 		{
 			if (this.platformBehaviorInst != null)
