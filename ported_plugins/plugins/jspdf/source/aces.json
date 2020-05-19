@@ -1,0 +1,209 @@
+{
+	"text": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 0,
+				"id": "setfontsize0",
+				"scriptName": "SetFontSize",
+				"highlight": false,
+				"params": [
+					{"id":"font_size0", "type":"number"}
+				]
+			},
+			{
+				"c2id": 1,
+				"id": "addtext1",
+				"scriptName": "AddText",
+				"highlight": false,
+				"params": [
+					{"id":"x_:0", "type":"number"},
+					{"id":"y_:1", "type":"number"},
+					{"id":"angle_:2", "type":"number"},
+					{"id":"string_:3", "type":"string"}
+				]
+			},
+			{
+				"c2id": 5,
+				"id": "setfont5",
+				"scriptName": "SetFont",
+				"highlight": false,
+				"params": [
+					{"id":"font_name0", "type":"string"},
+					{"id":"font_style1", "type":"string"}
+				]
+			},
+			{
+				"c2id": 12,
+				"id": "settextcolor12",
+				"scriptName": "SetTextColor",
+				"highlight": false,
+				"params": [
+					{"id":"r0", "type":"number"},
+					{"id":"g_:1", "type":"number"},
+					{"id":"b_:2", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"ımage": {
+		"conditions": [
+
+		],
+		"actions": [
+			{
+				"c2id": 2,
+				"id": "addımage2",
+				"scriptName": "AddImage",
+				"highlight": false,
+				"params": [
+					{"id":"x_:0", "type":"number"},
+					{"id":"y_:1", "type":"number"},
+					{"id":"width_:2", "type":"number"},
+					{"id":"height_:3", "type":"number"},
+					{"id":"dataurl_type4", "type":"string"},
+					{"id":"ımage_dataurl5", "type":"string"}
+				]
+			},
+			{
+				"c2id": 3,
+				"id": "addline3",
+				"scriptName": "AddLine",
+				"highlight": false,
+				"params": [
+					{"id":"x1_:0", "type":"number"},
+					{"id":"y1_:1", "type":"number"},
+					{"id":"x2_:2", "type":"number"},
+					{"id":"y2_:3", "type":"number"}
+				]
+			},
+			{
+				"c2id": 4,
+				"id": "addrect4",
+				"scriptName": "AddRect",
+				"highlight": false,
+				"params": [
+					{"id":"x_:0", "type":"number"},
+					{"id":"y_:1", "type":"number"},
+					{"id":"width_:2", "type":"number"},
+					{"id":"height_:3", "type":"number"},
+					{"id":"style4", "type":"string", "initialValue":"\"S\""}
+				]
+			},
+			{
+				"c2id": 10,
+				"id": "setfillcolor10",
+				"scriptName": "SetFillColor",
+				"highlight": false,
+				"params": [
+					{"id":"r_:0", "type":"number"},
+					{"id":"g_:1", "type":"number"},
+					{"id":"b_:2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 11,
+				"id": "setdrawcolor11",
+				"scriptName": "SetDrawColor",
+				"highlight": false,
+				"params": [
+					{"id":"r0", "type":"number"},
+					{"id":"g_:1", "type":"number"},
+					{"id":"b_:2", "type":"number"}
+				]
+			},
+			{
+				"c2id": 13,
+				"id": "addellipse13",
+				"scriptName": "AddEllipse",
+				"highlight": false,
+				"params": [
+					{"id":"x_:0", "type":"number"},
+					{"id":"y_:1", "type":"number"},
+					{"id":"rx_:2", "type":"number"},
+					{"id":"ry_:3", "type":"number"},
+					{"id":"style4", "type":"string", "initialValue":"\"S\""}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"document": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"c2id": 6,
+				"id": "savepdf6",
+				"scriptName": "SavePDF",
+				"highlight": false,
+				"params": [
+					{"id":"file_name0", "type":"string"}
+				]
+			},
+			{
+				"c2id": 7,
+				"id": "addpage7",
+				"scriptName": "AddPage",
+				"highlight": false
+			},
+			{
+				"c2id": 8,
+				"id": "setproperties8",
+				"scriptName": "SetProperties",
+				"highlight": false,
+				"params": [
+					{"id":"title0", "type":"string"},
+					{"id":"subject1", "type":"string"},
+					{"id":"author2", "type":"string"},
+					{"id":"keywords3", "type":"string"},
+					{"id":"creator4", "type":"string"}
+				]
+			},
+			{
+				"c2id": 9,
+				"id": "newdocument9",
+				"scriptName": "NewDocument",
+				"highlight": false,
+				"params": [
+					{"id":"orientation0", "type":"string", "initialValue":"\"p\""},
+					{"id":"unit1", "type":"string", "initialValue":"\"mm\""},
+					{"id":"format2", "type":"string", "initialValue":"\"a4\""}
+				]
+			},
+			{
+				"c2id": 14,
+				"id": "addfont14",
+				"scriptName": "AddFont",
+				"highlight": false,
+				"params": [
+					{"id":"post_script_name0", "type":"string"},
+					{"id":"font_name1", "type":"string"},
+					{"id":"font_style2", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"build": {
+		"conditions": [
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"c2id": 0,
+				"id": "dataurl0",
+				"expressionName": "dataurl",
+				"scriptName": "dataurl",
+				"highlight": false,
+				"returnType": "any"
+			}
+		]
+	}
+}

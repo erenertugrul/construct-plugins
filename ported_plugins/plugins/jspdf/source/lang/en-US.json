@@ -1,0 +1,183 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for jsPDF.",
+	"text": {
+		"plugins": {
+			"jspdf": {
+				"name": "jsPDF",
+				"description": "Generate PDF files in client-side JavaScript.",
+				"help-url": "https://github.com/MrRio/jsPDF",
+				"properties": {
+				},
+				"aceCategories": {
+					"text": "Text",
+					"ımage": "Image",
+					"document": "Document",
+					"build": "Build"
+				},
+				"conditions": {
+
+				},
+				"actions": {
+					"setfontsize0": {
+						"list-name": "Set Font Size",
+						"display-text": "Set fonts size {0}",
+						"description": "Sets font size",
+						"params": {
+							"font_size0": { "name":"Font Size", "desc":"Enter font size."}
+						}
+					},
+					"addtext1": {
+						"list-name": "Add text",
+						"display-text": "Add {3} at position ({0},{1}) {2}",
+						"description": "Add text string on PDF",
+						"params": {
+							"x_:0": { "name":"X :", "desc":"X position of the text string."},
+							"y_:1": { "name":"Y :", "desc":"Y position of the text string."},
+							"angle_:2": { "name":"Angle :", "desc":"Angle of the text string."},
+							"string_:3": { "name":"String :", "desc":"Text String"}
+						}
+					},
+					"addımage2": {
+						"list-name": "Add Image",
+						"display-text": "Add image at position ({0},{1}) {2} {3} {4} {5}",
+						"description": "Add image on PDF",
+						"params": {
+							"x_:0": { "name":"X :", "desc":"X position of the image."},
+							"y_:1": { "name":"Y :", "desc":"Y position of the image."},
+							"width_:2": { "name":"Width :", "desc":"Width of the image."},
+							"height_:3": { "name":"Height :", "desc":"Height of the image."},
+							"dataurl_type4": { "name":"DataURL type", "desc":"either JPEG, JPG or PNG"},
+							"ımage_dataurl5": { "name":"Image DataURL", "desc":"Base64 DataURL"}
+						}
+					},
+					"addline3": {
+						"list-name": "Draw a line",
+						"display-text": "Add line at ({0},{1}) , ({2},{3})",
+						"description": "Add line on PDF",
+						"params": {
+							"x1_:0": { "name":"X1 :", "desc":"x1"},
+							"y1_:1": { "name":"Y1 :", "desc":"y2"},
+							"x2_:2": { "name":"X2 :", "desc":"x2"},
+							"y2_:3": { "name":"Y2 :", "desc":"y2"}
+						}
+					},
+					"addrect4": {
+						"list-name": "Draw a rectangle",
+						"display-text": "Add rectangle pos({0},{1}),size:({2},{3}) {4}",
+						"description": "Add image on PDF",
+						"params": {
+							"x_:0": { "name":"X :", "desc":"X position of therect."},
+							"y_:1": { "name":"Y :", "desc":"Y position of the rect."},
+							"width_:2": { "name":"Width :", "desc":"Width of the rect."},
+							"height_:3": { "name":"Height :", "desc":"Height of the rect."},
+							"style4": { "name":"Style", "desc":"A string specifying the painting style or null.  Valid styles include: 'S' [default] - stroke, 'F' - fill,  and 'DF' (or 'FD') -  fill then stroke. A null value postpones setting the style so that a shape may be composed using multiple method calls. The last drawing method call used to define the shape should not have a null style argument."}
+						}
+					},
+					"setfont5": {
+						"list-name": "Set text font",
+						"display-text": "Set font {0} {1}",
+						"description": "Sets text font face, if font is not found, the above line blows up and we never go further",
+						"params": {
+							"font_name0": { "name":"font name", "desc":"Example: helvetica,times,courier, if font is not found, the above line blows up and we never go further"},
+							"font_style1": { "name":"font style", "desc":"Example: normal,bold,italic,bolditalic , if font is not found, the above line blows up and we never go further"}
+						}
+					},
+					"savepdf6": {
+						"list-name": "Save pdf",
+						"display-text": "Save pdf {0}",
+						"description": "Save pdf",
+						"params": {
+							"file_name0": { "name":"File Name", "desc":"File Name to save as"}
+						}
+					},
+					"addpage7": {
+						"list-name": "Add page",
+						"display-text": "Add page",
+						"description": "Add 1 page"
+					},
+					"setproperties8": {
+						"list-name": "Set properties",
+						"display-text": "Set properties {0} {1} {2} {3} {4}",
+						"description": "Set properties",
+						"params": {
+							"title0": { "name":"title", "desc":"title"},
+							"subject1": { "name":"subject", "desc":"subject"},
+							"author2": { "name":"author", "desc":"author"},
+							"keywords3": { "name":"keywords", "desc":"keywords"},
+							"creator4": { "name":"creator", "desc":"creator"}
+						}
+					},
+					"newdocument9": {
+						"list-name": "New",
+						"display-text": "Create new document ({0}),({1}),({2})",
+						"description": "New document",
+						"params": {
+							"orientation0": { "name":"orientation", "desc":"orientation (p,l)"},
+							"unit1": { "name":"unit", "desc":"unit (mm,pt,cm,in)"},
+							"format2": { "name":"format", "desc":"format (a0-a10,b0-b10,c0-c10,d1,letter,government-letter,legal,junior-legal,ledger,tabloid,credit-card)"}
+						}
+					},
+					"setfillcolor10": {
+						"list-name": "Set fill color",
+						"display-text": "Set fill color rgb({0},{1},{2})",
+						"description": "Sets the fill color for upcoming elements.",
+						"params": {
+							"r_:0": { "name":"R :", "desc":"Red component"},
+							"g_:1": { "name":"G :", "desc":"Green component"},
+							"b_:2": { "name":"B :", "desc":"Blue component"}
+						}
+					},
+					"setdrawcolor11": {
+						"list-name": "Set stroke color",
+						"display-text": "Set stroke color rgb({0},{1},{2})",
+						"description": "Sets the stroke color for upcoming elements.",
+						"params": {
+							"r0": { "name":"R", "desc":"Red component"},
+							"g_:1": { "name":"G :", "desc":"Green component"},
+							"b_:2": { "name":"B :", "desc":"Blue component"}
+						}
+					},
+					"settextcolor12": {
+						"list-name": "Set text color",
+						"display-text": "Set text color rgb({0},{1},{2})",
+						"description": "Set text color",
+						"params": {
+							"r0": { "name":"R", "desc":"Red component"},
+							"g_:1": { "name":"G :", "desc":"Green component"},
+							"b_:2": { "name":"B :", "desc":"Blue component"}
+						}
+					},
+					"addellipse13": {
+						"list-name": "Draw an ellipse",
+						"display-text": "Add ellipse pos({0},{1}),radius:({2},{3}) {4}",
+						"description": "Add ellipse on PDF",
+						"params": {
+							"x_:0": { "name":"X :", "desc":"x Coordinate (in units declared at inception of PDF document) against left edge of the page"},
+							"y_:1": { "name":"Y :", "desc":"y Coordinate (in units declared at inception of PDF document) against upper edge of the page"},
+							"rx_:2": { "name":"rx :", "desc":"rx Radius along x axis (in units declared at inception of PDF document)"},
+							"ry_:3": { "name":"ry :", "desc":"ry Radius along y axis (in units declared at inception of PDF document)"},
+							"style4": { "name":"Style", "desc":"A string specifying the painting style or null.  Valid styles include: 'S' [default] - stroke, 'F' - fill,  and 'DF' (or 'FD') -  fill then stroke. A null value postpones setting the style so that a shape may be composed using multiple method calls. The last drawing method call used to define the shape should not have a null style argument."}
+						}
+					},
+					"addfont14": {
+						"list-name": "Add font",
+						"display-text": "Add font {0},{1},{2}",
+						"description": "Add font",
+						"params": {
+							"post_script_name0": { "name":"Post script name", "desc":"Post script name"},
+							"font_name1": { "name":"Font name", "desc":"Font name"},
+							"font_style2": { "name":"Font style", "desc":"Font style"}
+						}
+					}
+				},
+				"expressions": {
+					"dataurl0": {
+						"description": "Pdf as url",
+						"translated-name": "dataurl"
+						}
+				}
+			}
+		}
+	}
+}

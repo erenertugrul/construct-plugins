@@ -1,0 +1,33 @@
+{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "jsPDF",
+	"id": "jsPDF",
+	"version": "1.2.0.0",
+	"author": "JohnnySheffield",
+	"website": "https://github.com/MrRio/jsPDF",
+	"documentation": "https://github.com/MrRio/jsPDF",
+	"description": "Generate PDF files in client-side JavaScript.",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c2runtime/runtime.js",
+		"jspdf.source.js",
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.png",
+		"plugin.js",
+		"type.js",
+		"instance.js"
+	]
+}
