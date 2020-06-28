@@ -164,7 +164,7 @@ If you want to support me, you can make a donation on patreon or buymeacoffee.co
 <tbody>
 <tr>
   <td>rex_rotateto</td>
-<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_rotateto/dist/rex_rotateto.c3addon">rex_rotateto.c3addon</a>
+<td style="text-align:center"colspan="2" ><a href="https://github.com/erenertugrul/construct-plugins/raw/master/ported_plugins/behaviors/rex_rotateto/dist/rex_rotate.c3addon">rex_rotateto.c3addon</a>
 </td>
 
 <td style="text-align:center"> <center>:white_check_mark:</center></td>
