@@ -683,4 +683,22 @@ https://trello.com/b/m5v94MWv/plugin-list
 </tbody>
 </table>
 
-
+# List of donator who support my plugins
+<table>
+<thead>
+<tbody>
+<tr><td>colonerjustice</td></tr>
+<tr><td>davidedistaso</td></tr>
+<tr><td>dop2000</td></tr>
+<tr><td>fabiogiame</td></tr>
+<tr><td>fatcaps</td></tr>
+<tr><td>jardasir</td></tr>
+<tr><td>justifun</td></tr>
+<tr><td>Lareviera</td></tr>
+<tr><td>matriax</td></tr>
+<tr><td>mikal</td></tr>
+<tr><td>peter</td></tr>
+<tr><td>renatoduchini</td></tr>
+<tr><td>skymen</td></tr>
+<tr><td>Tarek2</td></tr>
+</tbody>
