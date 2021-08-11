@@ -3,7 +3,9 @@ Also convert construct2 plugins (c3runtime).
 
 You can free download my plugins and converted plugins.
 
-If you want to support me, you can make a donation on patreon or buymeacoffee.com
+link for commercial addons
+
+https://oyun.itch.io/
 
 # construct plugins
 <table>
@@ -673,7 +675,10 @@ https://trello.com/b/m5v94MWv/plugin-list
 
 </thead>
 <tbody>
+link for commercial addons
 
+https://oyun.itch.io/
+  
 <td style="text-align:center"><a href="https://www.patreon.com/oyun" target="_blank"><img src="https://i.imgur.com/mpU6Ee3.png"></img></a></td>
 <td style="text-align:center"><a href="https://www.buymeacoffee.com/eren" target="_blank"><img src="https://i.imgur.com/pjkMdHU.png"></img></a></td>
 <td style="text-align:center"><a href="https://oyun.itch.io/construct-plugins" target="_blank"><img src="https://i.imgur.com/VukQbqA.png"></img></a></td>
@@ -687,6 +692,7 @@ https://trello.com/b/m5v94MWv/plugin-list
 <table>
 <thead>
 <tbody>
+ <tr><td>bilgekaan</td></tr>
 <tr><td>colonerjustice</td></tr>
 <tr><td>davidedistaso</td></tr>
 <tr><td>dop2000</td></tr>
